@@ -1,0 +1,6 @@
+{"name": "track_seed_193_j4_r0100_d0", "status": "boundary", "controls": 14, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 143.1}
+{"name": "track_seed_193_j4_r0100_d1", "status": "boundary", "controls": 14, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 151.9}
+{"name": "track_seed_193_j4_r0100_d2", "status": "boundary", "controls": 14, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 142.3}
+{"name": "track_seed_193_j4_r0300_d0", "status": "boundary", "controls": 14, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 137.7}
+{"name": "track_seed_193_j4_r0300_d1", "status": "boundary", "controls": 14, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 89.2}
+{"name": "track_seed_193_j4_r0300_d2", "status": "boundary", "controls": 14, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 93.5}

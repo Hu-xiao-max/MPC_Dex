@@ -1,0 +1,577 @@
+{
+  "status": "complete",
+  "pairs": 86,
+  "prior73_pairs_unchanged": true,
+  "new_policy_prefix_pairs": 8,
+  "new_mpc_pairs": 5,
+  "same_reset_labels_excluded": 1,
+  "source_manifests_verified": {
+    "previous73": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_common_noise_clock_0001",
+      "manifest_sha256": "5686fbb8ff12a7605cf1c5cfe89d9bf62f82b56ea093ecd1a7e652d1b2824ebb",
+      "files": 162
+    },
+    "actual_recovery": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/mpc_clock_actor_recovery_0001",
+      "manifest_sha256": "a8fbcc6512cdffb76e3b09d91b1f7d97163e84338790887d75f786e44e822837",
+      "files": 87
+    }
+  },
+  "all_source_transition_physics_bitexact": true,
+  "all_clock_columns_verified": true,
+  "clamp_epsilon": 0.01,
+  "clamp_changed_scalars": 0,
+  "action_abs_max": 0.9800992608070374,
+  "exact_duplicate_observations": 0,
+  "exact_label_conflicts": 0,
+  "nearest_new_pairs": [
+    {
+      "first": 2,
+      "second": 74,
+      "observation_l2": 3.7551633423688056e-06,
+      "observation_max_abs": 2.371496520936489e-06,
+      "action_max_abs": 6.556510925292969e-07,
+      "latent_l2": 1.8412125711169187e-06,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 2,
+        "source_label": "common_nominal",
+        "source_path": "inputs/common/nominal/transitions.npz",
+        "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+        "source_row_one_based": 2,
+        "origin": "original_teacher_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 74,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 2,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.10000000000000007
+      }
+    },
+    {
+      "first": 3,
+      "second": 75,
+      "observation_l2": 1.1302188864134609e-05,
+      "observation_max_abs": 5.7220458984375e-06,
+      "action_max_abs": 2.980232238769531e-07,
+      "latent_l2": 1.6668953848483076e-06,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 3,
+        "source_label": "common_nominal",
+        "source_path": "inputs/common/nominal/transitions.npz",
+        "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+        "source_row_one_based": 3,
+        "origin": "original_teacher_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 75,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 3,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.20000000000000015
+      }
+    },
+    {
+      "first": 28,
+      "second": 74,
+      "observation_l2": 0.00016948774845073497,
+      "observation_max_abs": 0.00010187126463279128,
+      "action_max_abs": 2.7835369110107422e-05,
+      "latent_l2": 5.528858326181336e-05,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 28,
+        "source_label": "recovery_17022",
+        "source_path": "inputs/recovery/seed_17022/transitions.npz",
+        "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+        "source_row_one_based": 2,
+        "origin": "recorded_fixed_mean_noisy_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 74,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 2,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.10000000000000007
+      }
+    },
+    {
+      "first": 37,
+      "second": 74,
+      "observation_l2": 0.0002046565967961156,
+      "observation_max_abs": 9.020988363772631e-05,
+      "action_max_abs": 2.0310282707214355e-05,
+      "latent_l2": 5.841945388057138e-05,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 37,
+        "source_label": "recovery_17023",
+        "source_path": "inputs/recovery/seed_17023/transitions.npz",
+        "source_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+        "source_row_one_based": 2,
+        "origin": "recorded_fixed_mean_noisy_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 74,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 2,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.10000000000000007
+      }
+    },
+    {
+      "first": 51,
+      "second": 74,
+      "observation_l2": 0.0002254475785351484,
+      "observation_max_abs": 0.00011998543050140142,
+      "action_max_abs": 1.341104507446289e-05,
+      "latent_l2": 4.948896515837585e-05,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 51,
+        "source_label": "recovery_17024",
+        "source_path": "inputs/recovery/seed_17024/transitions.npz",
+        "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+        "source_row_one_based": 2,
+        "origin": "recorded_fixed_mean_noisy_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 74,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 2,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.10000000000000007
+      }
+    },
+    {
+      "first": 13,
+      "second": 74,
+      "observation_l2": 0.00025479026992280396,
+      "observation_max_abs": 0.0001383768394589424,
+      "action_max_abs": 1.539289951324463e-05,
+      "latent_l2": 5.3081535736021066e-05,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 13,
+        "source_label": "recovery_17021",
+        "source_path": "inputs/recovery/seed_17021/transitions.npz",
+        "source_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+        "source_row_one_based": 2,
+        "origin": "recorded_fixed_mean_noisy_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 74,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 2,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.10000000000000007
+      }
+    },
+    {
+      "first": 62,
+      "second": 74,
+      "observation_l2": 0.0002881075564730275,
+      "observation_max_abs": 0.00020021485397592187,
+      "action_max_abs": 1.4871358871459961e-05,
+      "latent_l2": 5.024604450034239e-05,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 62,
+        "source_label": "recovery_17025",
+        "source_path": "inputs/recovery/seed_17025/transitions.npz",
+        "source_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+        "source_row_one_based": 2,
+        "origin": "recorded_fixed_mean_noisy_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 74,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 2,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.10000000000000007
+      }
+    },
+    {
+      "first": 52,
+      "second": 75,
+      "observation_l2": 0.00030615060545244885,
+      "observation_max_abs": 0.00015342235565185547,
+      "action_max_abs": 7.0035457611083984e-06,
+      "latent_l2": 3.537207611953882e-05,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 52,
+        "source_label": "recovery_17024",
+        "source_path": "inputs/recovery/seed_17024/transitions.npz",
+        "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+        "source_row_one_based": 3,
+        "origin": "recorded_fixed_mean_noisy_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 75,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 3,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.20000000000000015
+      }
+    },
+    {
+      "first": 14,
+      "second": 75,
+      "observation_l2": 0.000325639761495924,
+      "observation_max_abs": 0.00019550323486328125,
+      "action_max_abs": 8.58306884765625e-06,
+      "latent_l2": 5.2229262901910634e-05,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 14,
+        "source_label": "recovery_17021",
+        "source_path": "inputs/recovery/seed_17021/transitions.npz",
+        "source_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+        "source_row_one_based": 3,
+        "origin": "recorded_fixed_mean_noisy_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 75,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 3,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.20000000000000015
+      }
+    },
+    {
+      "first": 29,
+      "second": 75,
+      "observation_l2": 0.00037419822782916966,
+      "observation_max_abs": 0.00022232532501220703,
+      "action_max_abs": 1.5616416931152344e-05,
+      "latent_l2": 6.105628943817439e-05,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 29,
+        "source_label": "recovery_17022",
+        "source_path": "inputs/recovery/seed_17022/transitions.npz",
+        "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+        "source_row_one_based": 3,
+        "origin": "recorded_fixed_mean_noisy_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 75,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 3,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.20000000000000015
+      }
+    },
+    {
+      "first": 63,
+      "second": 75,
+      "observation_l2": 0.0004426602838453055,
+      "observation_max_abs": 0.00020503997802734375,
+      "action_max_abs": 1.4513731002807617e-05,
+      "latent_l2": 4.2112837450751506e-05,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 63,
+        "source_label": "recovery_17025",
+        "source_path": "inputs/recovery/seed_17025/transitions.npz",
+        "source_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+        "source_row_one_based": 3,
+        "origin": "recorded_fixed_mean_noisy_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 75,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 3,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.20000000000000015
+      }
+    },
+    {
+      "first": 38,
+      "second": 75,
+      "observation_l2": 0.0005030806933278575,
+      "observation_max_abs": 0.00033271312713623047,
+      "action_max_abs": 1.3917684555053711e-05,
+      "latent_l2": 4.248040217585086e-05,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 38,
+        "source_label": "recovery_17023",
+        "source_path": "inputs/recovery/seed_17023/transitions.npz",
+        "source_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+        "source_row_one_based": 3,
+        "origin": "recorded_fixed_mean_noisy_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 75,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 3,
+        "origin": "recorded_actual_clock_actor_prefix",
+        "recorded_original_origin": "recorded_actual_clock_actor_prefix",
+        "measured_decision_seconds": 0.20000000000000015
+      }
+    }
+  ],
+  "nearest_new_mpc_pairs": [
+    {
+      "first": 45,
+      "second": 82,
+      "observation_l2": 2.743614934735867,
+      "observation_max_abs": 1.4871995449066162,
+      "action_max_abs": 0.0020368099212646484,
+      "latent_l2": 0.004559581065580884,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 45,
+        "source_label": "recovery_17023",
+        "source_path": "inputs/recovery/seed_17023/transitions.npz",
+        "source_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+        "source_row_one_based": 10,
+        "origin": "actual_corrected_native_mpc"
+      },
+      "second_source": {
+        "dataset_row_one_based": 82,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 10,
+        "origin": "actual_clock_actor_state_mpc_correction",
+        "recorded_original_origin": "actual_corrected_native_mpc",
+        "measured_decision_seconds": 0.9000000000000007
+      }
+    },
+    {
+      "first": 46,
+      "second": 83,
+      "observation_l2": 3.027932036557352,
+      "observation_max_abs": 1.7071402072906494,
+      "action_max_abs": 1.1441721618175507,
+      "latent_l2": 4.596573086644704,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 46,
+        "source_label": "recovery_17023",
+        "source_path": "inputs/recovery/seed_17023/transitions.npz",
+        "source_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+        "source_row_one_based": 11,
+        "origin": "actual_corrected_native_mpc"
+      },
+      "second_source": {
+        "dataset_row_one_based": 83,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 11,
+        "origin": "actual_clock_actor_state_mpc_correction",
+        "recorded_original_origin": "actual_corrected_native_mpc",
+        "measured_decision_seconds": 1.0000000000000007
+      }
+    },
+    {
+      "first": 70,
+      "second": 82,
+      "observation_l2": 4.034980773481313,
+      "observation_max_abs": 1.8323044776916504,
+      "action_max_abs": 0.7080105841159821,
+      "latent_l2": 3.4340430393738512,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 70,
+        "source_label": "recovery_17025",
+        "source_path": "inputs/recovery/seed_17025/transitions.npz",
+        "source_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+        "source_row_one_based": 10,
+        "origin": "actual_corrected_native_mpc"
+      },
+      "second_source": {
+        "dataset_row_one_based": 82,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 10,
+        "origin": "actual_clock_actor_state_mpc_correction",
+        "recorded_original_origin": "actual_corrected_native_mpc",
+        "measured_decision_seconds": 0.9000000000000007
+      }
+    },
+    {
+      "first": 59,
+      "second": 82,
+      "observation_l2": 4.149716640990015,
+      "observation_max_abs": 2.208402931690216,
+      "action_max_abs": 0.7767446935176849,
+      "latent_l2": 2.2901573475883223,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 59,
+        "source_label": "recovery_17024",
+        "source_path": "inputs/recovery/seed_17024/transitions.npz",
+        "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+        "source_row_one_based": 10,
+        "origin": "actual_corrected_native_mpc"
+      },
+      "second_source": {
+        "dataset_row_one_based": 82,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 10,
+        "origin": "actual_clock_actor_state_mpc_correction",
+        "recorded_original_origin": "actual_corrected_native_mpc",
+        "measured_decision_seconds": 0.9000000000000007
+      }
+    },
+    {
+      "first": 36,
+      "second": 82,
+      "observation_l2": 4.257534288884935,
+      "observation_max_abs": 2.220353364944458,
+      "action_max_abs": 0.5574998259544373,
+      "latent_l2": 2.5314198761866646,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 36,
+        "source_label": "recovery_17022",
+        "source_path": "inputs/recovery/seed_17022/transitions.npz",
+        "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+        "source_row_one_based": 10,
+        "origin": "actual_corrected_native_mpc"
+      },
+      "second_source": {
+        "dataset_row_one_based": 82,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 10,
+        "origin": "actual_clock_actor_state_mpc_correction",
+        "recorded_original_origin": "actual_corrected_native_mpc",
+        "measured_decision_seconds": 0.9000000000000007
+      }
+    },
+    {
+      "first": 21,
+      "second": 82,
+      "observation_l2": 5.653957490204044,
+      "observation_max_abs": 3.3063783645629883,
+      "action_max_abs": 0.8354791402816772,
+      "latent_l2": 2.900606235867881,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 21,
+        "source_label": "recovery_17021",
+        "source_path": "inputs/recovery/seed_17021/transitions.npz",
+        "source_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+        "source_row_one_based": 10,
+        "origin": "actual_corrected_native_mpc"
+      },
+      "second_source": {
+        "dataset_row_one_based": 82,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 10,
+        "origin": "actual_clock_actor_state_mpc_correction",
+        "recorded_original_origin": "actual_corrected_native_mpc",
+        "measured_decision_seconds": 0.9000000000000007
+      }
+    },
+    {
+      "first": 73,
+      "second": 83,
+      "observation_l2": 7.2269228713993305,
+      "observation_max_abs": 2.632731556892395,
+      "action_max_abs": 1.9599997997283936,
+      "latent_l2": 7.840558961562811,
+      "clock_difference": 0.20000004768371582,
+      "first_source": {
+        "dataset_row_one_based": 73,
+        "source_label": "recovery_17025",
+        "source_path": "inputs/recovery/seed_17025/transitions.npz",
+        "source_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+        "source_row_one_based": 13,
+        "origin": "actual_corrected_native_mpc"
+      },
+      "second_source": {
+        "dataset_row_one_based": 83,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 11,
+        "origin": "actual_clock_actor_state_mpc_correction",
+        "recorded_original_origin": "actual_corrected_native_mpc",
+        "measured_decision_seconds": 1.0000000000000007
+      }
+    },
+    {
+      "first": 22,
+      "second": 83,
+      "observation_l2": 7.477515309804915,
+      "observation_max_abs": 5.552636727690697,
+      "action_max_abs": 1.486801266670227,
+      "latent_l2": 5.43650703555846,
+      "clock_difference": 0.0,
+      "first_source": {
+        "dataset_row_one_based": 22,
+        "source_label": "recovery_17021",
+        "source_path": "inputs/recovery/seed_17021/transitions.npz",
+        "source_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+        "source_row_one_based": 11,
+        "origin": "actual_corrected_native_mpc"
+      },
+      "second_source": {
+        "dataset_row_one_based": 83,
+        "source_label": "actual_clock_actor_recovery",
+        "source_path": "inputs/clock_recovery/recovery/transitions.npz",
+        "source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+        "source_row_one_based": 11,
+        "origin": "actual_clock_actor_state_mpc_correction",
+        "recorded_original_origin": "actual_corrected_native_mpc",
+        "measured_decision_seconds": 1.0000000000000007
+      }
+    }
+  ],
+  "distance_note": "Raw61D observation norm mixes physical units and elapsed seconds; descriptive only",
+  "source_recovery_force_angle": 6.498011614001375,
+  "source_recovery_post_success_hold": false,
+  "production_eligible": false,
+  "main_demonstrations": 0,
+  "online_updates": 0
+}

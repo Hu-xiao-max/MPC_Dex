@@ -1,0 +1,178 @@
+{
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 954,
+    "online_policy_interactions": 500,
+    "physical_prefix_controls": 1918,
+    "warmup_assisted_completed_episodes": 256,
+    "warmup_assisted_force_successes": 77,
+    "online_assisted_completed_episodes": 110,
+    "online_assisted_force_successes": 19,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 500,
+    "warmup_raw_reward_sum": 11486.563470659836,
+    "online_raw_reward_sum": -34.90309479701392,
+    "warmup_episodes_by_prefix": {
+      "3": 54,
+      "4+noise": 51,
+      "5+noise": 41,
+      "6+noise": 30,
+      "7+noise": 43,
+      "8+noise": 37
+    },
+    "warmup_force_successes_by_prefix": {
+      "3": 11,
+      "4+noise": 4,
+      "5+noise": 3,
+      "6+noise": 15,
+      "7+noise": 16,
+      "8+noise": 28
+    },
+    "online_episodes_by_prefix": {
+      "3": 23,
+      "4+noise": 25,
+      "5+noise": 21,
+      "6+noise": 13,
+      "7+noise": 13,
+      "8+noise": 15
+    },
+    "online_force_successes_by_prefix": {
+      "3": 1,
+      "4+noise": 1,
+      "5+noise": 1,
+      "6+noise": 3,
+      "7+noise": 2,
+      "8+noise": 11
+    },
+    "handoff_terminated_before_policy": 12
+  },
+  "label": "online_500",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 3000,
+    "online_updates": 10500
+  },
+  "normalized_alpha": 0.0007616875809617341,
+  "raw_equivalent_alpha": 0.1523375161923468,
+  "replay_rows": 1454,
+  "replay_pending_slot": 1453,
+  "unfinished_episode": true,
+  "inherited_learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 2500,
+    "online_updates": 10000
+  },
+  "optimizer_steps": {
+    "critic": [
+      13500
+    ],
+    "actor": [
+      10500
+    ],
+    "alpha": [
+      10500
+    ]
+  },
+  "replay_policy": "fresh-stage-only online replay plus immutable 6-row demonstration buffer (demonstrations_replay.npz); pretraining batches 0.30 / online batches 0.30 demonstration share; inherited open replay archived without insertion",
+  "auxiliary_rng_states": {
+    "prefix_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 45250053724762144537648456091730009483,
+        "inc": 277787571960139062779747645871512500609
+      },
+      "has_uint32": 1,
+      "uinteger": 26170971
+    },
+    "demonstration_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 252105430565232796601523240964432554882,
+        "inc": 15442456584747541523676618091130341711
+      },
+      "has_uint32": 0,
+      "uinteger": 2637762298
+    },
+    "handoff_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 4548054790061887373033490301491066098,
+        "inc": 176180653771163372256357156175804293123
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    }
+  },
+  "automatic_resume_supported": false,
+  "complete_update_boundary": true,
+  "environment_rng": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 95376830783351682500486580248632280039,
+      "inc": 332724090758049132448979897138935081983
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "environment_scalars": {
+    "start_angle": 0.30039143450192685,
+    "_last_wrapped": -1.9208645000025266,
+    "angle": 4.145289912858524,
+    "previous_angle": 5.521031153495251,
+    "steps": 8,
+    "rotations": 0,
+    "dwell": 0,
+    "goal": 0.19125740212220071,
+    "heading_error": 0.19125740212220071,
+    "_episode_over": false,
+    "_contactless_seconds": 0.0,
+    "_goal_rewarded": false,
+    "retained_angle": 3.9734943963111284,
+    "previous_retained_angle": 5.3492356369478555,
+    "retained_positive_step": 0.013102086323110166,
+    "retained_negative_step": -1.3888433269598395,
+    "_palm_support_violation": false,
+    "_peak_palm_support_force": 0.0
+  },
+  "observer_state": {
+    "last_time": 0.8000000000000006,
+    "initial_time": 0.0,
+    "previous_quaternion": [
+      -0.9835033791521222,
+      -0.048027933266426494,
+      0.17439180534396642,
+      0.0013852983017078827
+    ],
+    "initial_axis": [
+      0.008228909977884457,
+      0.9999609152058732,
+      0.0032331256096483152
+    ],
+    "initial_position": [
+      0.027748841103997047,
+      0.0005038665071184322,
+      0.2779894478599656
+    ],
+    "raw_angle": 4.1452899128585186,
+    "qualified_angle": 3.9734943963111222,
+    "force_qualified_angle": 3.9734943963111222,
+    "contactless_seconds": 0.0,
+    "independent_drop": false,
+    "initial_palm_normal_force": 0.0,
+    "initial_palm_support_violation": false,
+    "palm_support_violation": false,
+    "gravity_norm": 9.81,
+    "up": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "weight": 1.4715
+  },
+  "metrics_bytes": 2622252,
+  "metrics_sha256": "b79de2dc28a560092f3fba0bf1283b97b045ebe9a4ff62613d9585d667f329ab"
+}

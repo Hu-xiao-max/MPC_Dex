@@ -1,0 +1,75 @@
+{
+  "kind": "bounded-read-only-conditional-bootstrap-clock-SAC-integration-design",
+  "status": "complete",
+  "implementation_performed": false,
+  "training_performed": false,
+  "physics_performed": false,
+  "tests_run": false,
+  "existing_sources_changed": false,
+  "policy_success_claim": false,
+  "main_promotion": false,
+  "conditional_recommendation": "One rotation-only absolute-action elapsed-time adapter with shared semantic observation validation; preserve main60 and all force/provenance gates",
+  "source_conclusion": {
+    "companion_observation_layout_published": false,
+    "companion_60D_requirement_established": false,
+    "main_60D_explicit": true,
+    "clock_is_local_bootstrap_choice": true,
+    "evidence": "reviewed/artifacts/bootstrap_source_audit_0001/findings.json",
+    "companion_url": "https://arxiv.org/html/2609.14868v1#S3.SS2.SSS1.p3.1",
+    "main_url": "https://real-world-rl-with-mpc.github.io/"
+  },
+  "required_boundaries": [
+    "bootstrap environment factory/interface dispatch",
+    "initial actor semantic and dimension validation",
+    "fresh actor and critic input size",
+    "clock-origin and fullstate checkpoint/resume identity",
+    "interface-aware diagnostic evaluation",
+    "frozen collector recognized interface and dimension",
+    "trajectory clock-time/state validation"
+  ],
+  "optional_seed_boundary": "Only if seed replay is selected: actual physical episode preparation with measured61D clock data and unchanged demonstration/next-action gates",
+  "unchanged_components": [
+    "environment physical dynamics and success criteria",
+    "SAC/Soft-SARSA mathematical update rules",
+    "ReplayBuffer dimension-generic implementation",
+    "PCA of measured16-joint frames",
+    "main60D rotation actor and demonstration learning",
+    "positive actualSAC update and five-success frozen collection requirements"
+  ],
+  "clock_semantics": {
+    "base_dimension": 60,
+    "policy_dimension": 61,
+    "feature_index": 60,
+    "units": "seconds",
+    "dtype": "float32",
+    "formula": "float32(data.time - episode_time_origin)",
+    "origin": "actual episode reset simulator time; saved as float64",
+    "reset_only_on_real_episode_reset": true,
+    "no_handoff_success_resume_wrap_or_rebase": true,
+    "main_policy_compatible": false,
+    "not_reorientation_goal": true
+  },
+  "compatibility_note": "Existing immutable diagnostic descriptor lacks version/hash; any canonical schema mapping must be narrow, explicit, source-hash-preserving and recorded, never inferred fromdimension alone",
+  "risks_not_resolved": [
+    "physical noise sensitivity",
+    "feedback stability",
+    "clock extrapolation near/after nonterminal time-limit truncation",
+    "SAC critic calibration",
+    "post-success retention",
+    "population robustness"
+  ],
+  "targeted_test_groups": [
+    "physical/base60 parity and measuredclock lifecycle",
+    "semantic dimension/config/source rejection",
+    "mean-only61D import and fresh state/counts/std",
+    "replay/seed continuity and authentic successors",
+    "interrupted/resumed unfinished episode identity",
+    "fiveepisode collector/extractor/timestamp corruption rejection",
+    "main60/PCA/SACorigin separation",
+    "later zero-update runtime-bound actual importsmoke"
+  ],
+  "input_count": 28,
+  "all_snapshots_and_original_inputs_hash_verified": true,
+  "findings_sha256": "735417c6b32ba00b84e04b0ce392e84d295826a7a5e5127f11ecd30bb5003a0f",
+  "review_inputs_sha256": "aab3aca6e1881829af93e05fa7e8fd788e57938a214689dc0f72053841206630"
+}

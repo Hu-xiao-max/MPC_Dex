@@ -1,0 +1,308 @@
+{
+  "purpose": "Contact identity instrumentation of two already evaluated fixed command sequences",
+  "source_sha256": "bc9ead2d54e23a11cf526925c7183ab8ee831de94bf6b8f31d93b1a3e3cd4e10",
+  "geom_id_map": {
+    "0": {
+      "geom_name": "table",
+      "body_name": "world"
+    },
+    "1": {
+      "geom_name": null,
+      "body_name": "palm"
+    },
+    "2": {
+      "geom_name": null,
+      "body_name": "palm"
+    },
+    "3": {
+      "geom_name": null,
+      "body_name": "ff_base"
+    },
+    "4": {
+      "geom_name": null,
+      "body_name": "ff_base"
+    },
+    "5": {
+      "geom_name": null,
+      "body_name": "ff_proximal"
+    },
+    "6": {
+      "geom_name": null,
+      "body_name": "ff_proximal"
+    },
+    "7": {
+      "geom_name": null,
+      "body_name": "ff_medial"
+    },
+    "8": {
+      "geom_name": null,
+      "body_name": "ff_medial"
+    },
+    "9": {
+      "geom_name": null,
+      "body_name": "ff_distal"
+    },
+    "10": {
+      "geom_name": null,
+      "body_name": "ff_distal"
+    },
+    "11": {
+      "geom_name": null,
+      "body_name": "ff_tip"
+    },
+    "12": {
+      "geom_name": null,
+      "body_name": "ff_tip"
+    },
+    "13": {
+      "geom_name": null,
+      "body_name": "mf_base"
+    },
+    "14": {
+      "geom_name": null,
+      "body_name": "mf_base"
+    },
+    "15": {
+      "geom_name": null,
+      "body_name": "mf_proximal"
+    },
+    "16": {
+      "geom_name": null,
+      "body_name": "mf_proximal"
+    },
+    "17": {
+      "geom_name": null,
+      "body_name": "mf_medial"
+    },
+    "18": {
+      "geom_name": null,
+      "body_name": "mf_medial"
+    },
+    "19": {
+      "geom_name": null,
+      "body_name": "mf_distal"
+    },
+    "20": {
+      "geom_name": null,
+      "body_name": "mf_distal"
+    },
+    "21": {
+      "geom_name": null,
+      "body_name": "mf_tip"
+    },
+    "22": {
+      "geom_name": null,
+      "body_name": "mf_tip"
+    },
+    "23": {
+      "geom_name": null,
+      "body_name": "rf_base"
+    },
+    "24": {
+      "geom_name": null,
+      "body_name": "rf_base"
+    },
+    "25": {
+      "geom_name": null,
+      "body_name": "rf_proximal"
+    },
+    "26": {
+      "geom_name": null,
+      "body_name": "rf_proximal"
+    },
+    "27": {
+      "geom_name": null,
+      "body_name": "rf_medial"
+    },
+    "28": {
+      "geom_name": null,
+      "body_name": "rf_medial"
+    },
+    "29": {
+      "geom_name": null,
+      "body_name": "rf_distal"
+    },
+    "30": {
+      "geom_name": null,
+      "body_name": "rf_distal"
+    },
+    "31": {
+      "geom_name": null,
+      "body_name": "rf_tip"
+    },
+    "32": {
+      "geom_name": null,
+      "body_name": "rf_tip"
+    },
+    "33": {
+      "geom_name": null,
+      "body_name": "th_base"
+    },
+    "34": {
+      "geom_name": null,
+      "body_name": "th_base"
+    },
+    "35": {
+      "geom_name": null,
+      "body_name": "th_proximal"
+    },
+    "36": {
+      "geom_name": null,
+      "body_name": "th_proximal"
+    },
+    "37": {
+      "geom_name": null,
+      "body_name": "th_medial"
+    },
+    "38": {
+      "geom_name": null,
+      "body_name": "th_medial"
+    },
+    "39": {
+      "geom_name": null,
+      "body_name": "th_distal"
+    },
+    "40": {
+      "geom_name": null,
+      "body_name": "th_distal"
+    },
+    "41": {
+      "geom_name": null,
+      "body_name": "th_tip"
+    },
+    "42": {
+      "geom_name": null,
+      "body_name": "th_tip"
+    },
+    "43": {
+      "geom_name": "object_geom",
+      "body_name": "object"
+    }
+  },
+  "first_command_max_error": 1.0132789611816406e-06,
+  "first_step_qpos_max_error": 0.00046063623129689174,
+  "first_step_qvel_max_error": 0.01672267953568718,
+  "per_control_state_errors": [
+    {
+      "step": 1,
+      "time": 0.10000000000000007,
+      "qpos_max_error": 0.00046063623129689174,
+      "qvel_max_error": 0.01672267953568718
+    },
+    {
+      "step": 2,
+      "time": 0.20000000000000015,
+      "qpos_max_error": 0.025115554870508983,
+      "qvel_max_error": 5.301076743230608
+    },
+    {
+      "step": 3,
+      "time": 0.3000000000000002,
+      "qpos_max_error": 0.19954088499892217,
+      "qvel_max_error": 3.1204437638579345
+    },
+    {
+      "step": 4,
+      "time": 0.4000000000000003,
+      "qpos_max_error": 0.3028253088445169,
+      "qvel_max_error": 3.786044791029292
+    },
+    {
+      "step": 5,
+      "time": 0.5000000000000003,
+      "qpos_max_error": 0.6357294421838352,
+      "qvel_max_error": 5.157161192893436
+    },
+    {
+      "step": 6,
+      "time": 0.6000000000000004,
+      "qpos_max_error": 0.9406312199522886,
+      "qvel_max_error": 5.501943552647418
+    },
+    {
+      "step": 7,
+      "time": 0.7000000000000005,
+      "qpos_max_error": 1.122253961744934,
+      "qvel_max_error": 5.3027060683896075
+    },
+    {
+      "step": 8,
+      "time": 0.8000000000000006,
+      "qpos_max_error": 1.1664684944096289,
+      "qvel_max_error": 2.2345580411359185
+    },
+    {
+      "step": 9,
+      "time": 0.9000000000000007,
+      "qpos_max_error": 1.3347717071555798,
+      "qvel_max_error": 3.092594453142048
+    },
+    {
+      "step": 10,
+      "time": 1.0000000000000007,
+      "qpos_max_error": 1.5513545896186012,
+      "qvel_max_error": 4.049065915369343
+    },
+    {
+      "step": 11,
+      "time": 1.1000000000000008,
+      "qpos_max_error": 1.6807692116801276,
+      "qvel_max_error": 5.18731261339893
+    }
+  ],
+  "first_geometric_topology_difference": {
+    "physics_step": 55,
+    "time": 0.11000000000000008,
+    "exact": [
+      6,
+      8,
+      22,
+      40,
+      42
+    ],
+    "clipped": [
+      6,
+      22,
+      40,
+      42
+    ]
+  },
+  "first_loaded_topology_difference": {
+    "physics_step": 7,
+    "time": 0.014,
+    "exact": [
+      8,
+      12,
+      20,
+      22,
+      30,
+      32,
+      42
+    ],
+    "clipped": [
+      8,
+      10,
+      12,
+      20,
+      22,
+      30,
+      32,
+      42
+    ]
+  },
+  "first_fingers_topology_difference": {
+    "physics_step": 61,
+    "time": 0.1220000000000001,
+    "exact": [
+      "mf",
+      "th"
+    ],
+    "clipped": [
+      "ff",
+      "mf",
+      "th"
+    ]
+  },
+  "exact_replay_qpos_max_error": 0.0,
+  "clipped_1e6_replay_qpos_max_error": 0.0
+}

@@ -1,0 +1,13 @@
+{"name": "track_seed_193_j0_r0030_d0", "status": "boundary", "controls": 12, "mpc_controls": 11, "strict_force_success": true, "stored": true, "wall": 204.5}
+{"name": "track_seed_193_j0_r0030_d1", "status": "boundary", "controls": 11, "mpc_controls": 10, "strict_force_success": true, "stored": true, "wall": 210.4}
+{"name": "track_seed_193_j0_r0030_d2", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 372.0}
+{"name": "track_seed_193_j0_r0030_d3", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 201.6}
+{"name": "track_seed_193_j0_r0500_d0", "status": "boundary", "controls": 7, "mpc_controls": 6, "strict_force_success": true, "stored": true, "wall": 153.8}
+{"name": "track_seed_193_j0_r0500_d1", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 393.5}
+{"name": "track_seed_193_j0_r0500_d2", "status": "boundary", "controls": 11, "mpc_controls": 10, "strict_force_success": true, "stored": true, "wall": 280.8}
+{"name": "track_seed_193_j0_r0500_d3", "status": "boundary", "controls": 11, "mpc_controls": 10, "strict_force_success": true, "stored": true, "wall": 284.0}
+{"name": "track_seed_193_j1_r0030_d0", "status": "boundary", "controls": 13, "mpc_controls": 11, "strict_force_success": true, "stored": true, "wall": 382.0}
+{"name": "track_seed_193_j1_r0030_d1", "status": "boundary", "controls": 13, "mpc_controls": 11, "strict_force_success": true, "stored": true, "wall": 375.3}
+{"name": "track_seed_193_j1_r0030_d2", "status": "boundary", "controls": 11, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 246.1}
+{"name": "track_seed_193_j1_r0030_d3", "status": "boundary", "controls": 11, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 325.9}
+{"name": "track_seed_193_j1_r0500_d0", "status": "boundary", "controls": 11, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 324.0}

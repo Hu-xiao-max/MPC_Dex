@@ -1,0 +1,164 @@
+......................................FFF.......FF.........              [100%]
+=================================== FAILURES ===================================
+_______ test_native_exact_workspace_boundary_uses_python_comparison[-1] ________
+
+direction = -1
+
+    @pytest.mark.parametrize('direction', [-1, 0, 1])
+    def test_native_exact_workspace_boundary_uses_python_comparison(direction):
+        env = AllegroRotationEnv(EnvConfig(initial_grasp=GRASP))
+        env.reset(seed=0)
+        trial = mujoco.MjData(env.model)
+        mujoco.mj_copyData(trial, env.model, env.data)
+        mujoco.mj_step(env.model, trial)
+        mujoco.mj_forward(env.model, trial)
+        distance = np.linalg.norm(env.object_position(trial)-env.initial_position)
+        radius = np.nextafter(distance, -np.inf if direction < 0 else np.inf) if direction else distance
+        config = RolloutCostConfig(workers=2, workspace_radius=radius)
+        python = RecordingPython(env, .002, config)
+        try:
+            native = RecordingNative(env, .002, config, require_native=True)
+        except NativeBackendUnavailable as error:
+            python.close()
+            env.close()
+            pytest.skip(str(error))
+        try:
+            sequences = np.broadcast_to(env.data.ctrl, (5, 1, 16)).copy()
+            np.testing.assert_array_equal(native(sequences), python(sequences))
+>           assert native.last_diagnostics['native_boundary_fallback_candidates'] == 5
+E           assert 0 == 5
+
+tests/test_native_rollouts.py:183: AssertionError
+________ test_native_exact_workspace_boundary_uses_python_comparison[0] ________
+
+direction = 0
+
+    @pytest.mark.parametrize('direction', [-1, 0, 1])
+    def test_native_exact_workspace_boundary_uses_python_comparison(direction):
+        env = AllegroRotationEnv(EnvConfig(initial_grasp=GRASP))
+        env.reset(seed=0)
+        trial = mujoco.MjData(env.model)
+        mujoco.mj_copyData(trial, env.model, env.data)
+        mujoco.mj_step(env.model, trial)
+        mujoco.mj_forward(env.model, trial)
+        distance = np.linalg.norm(env.object_position(trial)-env.initial_position)
+        radius = np.nextafter(distance, -np.inf if direction < 0 else np.inf) if direction else distance
+        config = RolloutCostConfig(workers=2, workspace_radius=radius)
+        python = RecordingPython(env, .002, config)
+        try:
+            native = RecordingNative(env, .002, config, require_native=True)
+        except NativeBackendUnavailable as error:
+            python.close()
+            env.close()
+            pytest.skip(str(error))
+        try:
+            sequences = np.broadcast_to(env.data.ctrl, (5, 1, 16)).copy()
+            np.testing.assert_array_equal(native(sequences), python(sequences))
+>           assert native.last_diagnostics['native_boundary_fallback_candidates'] == 5
+E           assert 0 == 5
+
+tests/test_native_rollouts.py:183: AssertionError
+________ test_native_exact_workspace_boundary_uses_python_comparison[1] ________
+
+direction = 1
+
+    @pytest.mark.parametrize('direction', [-1, 0, 1])
+    def test_native_exact_workspace_boundary_uses_python_comparison(direction):
+        env = AllegroRotationEnv(EnvConfig(initial_grasp=GRASP))
+        env.reset(seed=0)
+        trial = mujoco.MjData(env.model)
+        mujoco.mj_copyData(trial, env.model, env.data)
+        mujoco.mj_step(env.model, trial)
+        mujoco.mj_forward(env.model, trial)
+        distance = np.linalg.norm(env.object_position(trial)-env.initial_position)
+        radius = np.nextafter(distance, -np.inf if direction < 0 else np.inf) if direction else distance
+        config = RolloutCostConfig(workers=2, workspace_radius=radius)
+        python = RecordingPython(env, .002, config)
+        try:
+            native = RecordingNative(env, .002, config, require_native=True)
+        except NativeBackendUnavailable as error:
+            python.close()
+            env.close()
+            pytest.skip(str(error))
+        try:
+            sequences = np.broadcast_to(env.data.ctrl, (5, 1, 16)).copy()
+            np.testing.assert_array_equal(native(sequences), python(sequences))
+>           assert native.last_diagnostics['native_boundary_fallback_candidates'] == 5
+E           assert 0 == 5
+
+tests/test_native_rollouts.py:183: AssertionError
+_________ test_native_palm_force_threshold_comparison_is_bit_exact[0] __________
+
+direction = 0
+
+    @pytest.mark.parametrize('direction', [-1, 0, 1])
+    def test_native_palm_force_threshold_comparison_is_bit_exact(direction):
+        env = AllegroRotationEnv(EnvConfig(initial_grasp=GRASP))
+        env.reset(seed=0)
+        _move_to_palm(env, supported=True)
+        trial = mujoco.MjData(env.model)
+        mujoco.mj_copyData(trial, env.model, env.data)
+        mujoco.mj_step(env.model, trial)
+        mujoco.mj_forward(env.model, trial)
+        force = env.palm_support_force(trial)
+        assert force > 1.
+        env.config.palm_support_force_tolerance = (
+            np.nextafter(force, -np.inf if direction < 0 else np.inf) if direction else force)
+        python = RecordingPython(env, .002, RolloutCostConfig(workers=1))
+        try:
+            native = RecordingNative(env, .002, RolloutCostConfig(workers=1), require_native=True)
+        except NativeBackendUnavailable as error:
+            python.close()
+            env.close()
+            pytest.skip(str(error))
+        try:
+            sequences = env.data.ctrl[None, None, :].copy()
+            np.testing.assert_array_equal(native(sequences), python(sequences))
+>           assert native.last_diagnostics['rejection_reasons'] == ['palm_support' if direction < 0 else None]
+E           AssertionError: assert ['palm_support'] == [None]
+E             
+E             At index 0 diff: 'palm_support' != None
+E             Use -v to get more diff
+
+tests/test_native_rollouts.py:280: AssertionError
+_________ test_native_palm_force_threshold_comparison_is_bit_exact[1] __________
+
+direction = 1
+
+    @pytest.mark.parametrize('direction', [-1, 0, 1])
+    def test_native_palm_force_threshold_comparison_is_bit_exact(direction):
+        env = AllegroRotationEnv(EnvConfig(initial_grasp=GRASP))
+        env.reset(seed=0)
+        _move_to_palm(env, supported=True)
+        trial = mujoco.MjData(env.model)
+        mujoco.mj_copyData(trial, env.model, env.data)
+        mujoco.mj_step(env.model, trial)
+        mujoco.mj_forward(env.model, trial)
+        force = env.palm_support_force(trial)
+        assert force > 1.
+        env.config.palm_support_force_tolerance = (
+            np.nextafter(force, -np.inf if direction < 0 else np.inf) if direction else force)
+        python = RecordingPython(env, .002, RolloutCostConfig(workers=1))
+        try:
+            native = RecordingNative(env, .002, RolloutCostConfig(workers=1), require_native=True)
+        except NativeBackendUnavailable as error:
+            python.close()
+            env.close()
+            pytest.skip(str(error))
+        try:
+            sequences = env.data.ctrl[None, None, :].copy()
+            np.testing.assert_array_equal(native(sequences), python(sequences))
+>           assert native.last_diagnostics['rejection_reasons'] == ['palm_support' if direction < 0 else None]
+E           AssertionError: assert ['palm_support'] == [None]
+E             
+E             At index 0 diff: 'palm_support' != None
+E             Use -v to get more diff
+
+tests/test_native_rollouts.py:280: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_native_rollouts.py::test_native_exact_workspace_boundary_uses_python_comparison[-1]
+FAILED tests/test_native_rollouts.py::test_native_exact_workspace_boundary_uses_python_comparison[0]
+FAILED tests/test_native_rollouts.py::test_native_exact_workspace_boundary_uses_python_comparison[1]
+FAILED tests/test_native_rollouts.py::test_native_palm_force_threshold_comparison_is_bit_exact[0]
+FAILED tests/test_native_rollouts.py::test_native_palm_force_threshold_comparison_is_bit_exact[1]
+5 failed, 54 passed in 2.39s

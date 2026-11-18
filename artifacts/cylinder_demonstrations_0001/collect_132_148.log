@@ -1,0 +1,5 @@
+{"period": 0.1, "seed": 132, "status": "terminated", "controls": 16, "strict_force_success": true, "wall_seconds": 138.13538799714297, "stored": true}
+{"period": 0.1, "seed": 133, "status": "no_feasible_plan", "controls": 38, "strict_force_success": false, "wall_seconds": 205.74918469879776, "stored": false}
+{"period": 0.1, "seed": 134, "status": "terminated", "controls": 25, "strict_force_success": true, "wall_seconds": 151.8826200151816, "stored": true}
+{"period": 0.1, "seed": 135, "status": "budget", "controls": 40, "strict_force_success": false, "wall_seconds": 458.8796417461708, "stored": false}
+{"period": 0.1, "seed": 136, "status": "terminated", "controls": 12, "strict_force_success": true, "wall_seconds": 109.41362299304456, "stored": true}

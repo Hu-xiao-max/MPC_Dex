@@ -1,0 +1,5 @@
+{"k": 0, "det": false, "stoch": "0/30", "max_angle": -0.363}
+{"k": 1, "det": false, "stoch": "0/30", "max_angle": -0.421}
+{"k": 2, "det": false, "stoch": "0/30", "max_angle": -0.421}
+{"k": 3, "det": false, "stoch": "0/30", "max_angle": -0.429}
+{"variant": "bootstrap_variant_0083_ms_shared_prefix_nosharedbc_from81", "checkpoint": "online_4000", "k0": "0/30", "k1": "0/30", "k2": "0/30", "k3": "0/30", "wall": 9.0}

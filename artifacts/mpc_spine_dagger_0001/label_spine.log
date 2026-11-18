@@ -1,0 +1,2 @@
+{"name": "dagger_seed_193_s10_b1", "status": "boundary", "controls": 19, "policy_controls": 1, "mpc_controls": 14, "strict_force_success": true, "stored": true, "wall": 279.1}
+{"name": "dagger_seed_193_s10_b2", "status": "boundary", "controls": 16, "policy_controls": 2, "mpc_controls": 10, "strict_force_success": true, "stored": true, "wall": 182.7}

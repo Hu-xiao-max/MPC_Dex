@@ -1,0 +1,50 @@
+{
+  "paper.html": {
+    "url": "https://arxiv.org/html/2609.14878v1",
+    "retrieved_at": "2026-09-23T17:19:26.771663+00:00",
+    "bytes": 140657,
+    "sha256": "f8bc24a91d77d832fe4203a76c28dd28b7f20f904a22b9f65bfae91f9fb8596a"
+  },
+  "project.html": {
+    "url": "https://real-world-rl-with-mpc.github.io/",
+    "retrieved_at": "2026-09-23T17:19:26.772556+00:00",
+    "bytes": 17752,
+    "sha256": "5b9b6a3fb3c3de0922af3267d8054c6316879445cb90e975eb85d11556d02924"
+  },
+  "planner-paper.html": {
+    "url": "https://arxiv.org/html/2609.14868v1",
+    "retrieved_at": "2026-09-23T17:19:26.771927+00:00",
+    "bytes": 168496,
+    "sha256": "d065102411a0abbb3337c65c25d3af2b2b32ccedcbaf19a737f6708e691f9da5"
+  },
+  "planner-project.html": {
+    "url": "https://primitive-informed-mpc.github.io/",
+    "retrieved_at": "2026-09-23T17:19:26.782870+00:00",
+    "bytes": 21439,
+    "sha256": "287fa1e17253a76dd8e3f9a6dcc2693c4f88372a381fcbfc19eceb2a80747e37"
+  },
+  "project-repositories.json": {
+    "url": "https://api.github.com/users/real-world-rl-with-mpc/repos?per_page=100",
+    "retrieved_at": "2026-09-23T17:19:26.980977+00:00",
+    "bytes": 6737,
+    "sha256": "b07dd403f57ae0d8aa3fb4e877b177b79d1bed964f16865d5015fa97aff9a680"
+  },
+  "planner-repositories.json": {
+    "url": "https://api.github.com/users/primitive-informed-mpc/repos?per_page=100",
+    "retrieved_at": "2026-09-23T17:19:26.981863+00:00",
+    "bytes": 6738,
+    "sha256": "4673b631eabc906f9e97818791e70b879c58c29bd97c42ae476452c840f475e2"
+  },
+  "project-tree.json": {
+    "url": "https://api.github.com/repos/real-world-rl-with-mpc/real-world-rl-with-mpc.github.io/git/trees/main?recursive=1",
+    "retrieved_at": "2026-09-23T17:19:26.936089+00:00",
+    "bytes": 5538,
+    "sha256": "9684d75fb555d6a575cbb63e73c7bf8fca9648988c61d61ccf8ce7790e60988b"
+  },
+  "planner-tree.json": {
+    "url": "https://api.github.com/repos/primitive-informed-mpc/primitive-informed-mpc.github.io/git/trees/main?recursive=1",
+    "retrieved_at": "2026-09-23T17:19:26.947317+00:00",
+    "bytes": 9234,
+    "sha256": "f6020bc96ae049d3b5583f21f2ecd20eb769428b5c2eab1bf105ba9b698be6cf"
+  }
+}

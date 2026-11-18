@@ -1,0 +1,9 @@
+# One86-pair clock corrective BC diagnostic
+
+The dataset preserves the prior73 authentic61D pairs and adds eight actual clock-policy prefix decisions (controls2–9) plus five actual MPC corrections (controls10–14) from the independently successful recovered trajectory. The repeated reset observation's slightly different actor label is excluded; the original nominal hold remains once. All observations, float32 actions and elapsed-time features match their recorded source rows. Independent transitions and2ms physics match bit for bit. Epsilon0.01 leaves every label unchanged; main epsilon0.02 is unchanged. No exact duplicate or conflicting observation labels remain.
+
+The nearest added prefix state differs from its nominal counterpart by observationL2=3.75516e-6 and actionmax=6.55651e-7. The nearest added MPC state differs from an earlier correction by observationL2=2.7436 and actionmax=0.00204. Raw norms mix units; these checks disclose nearby labels without claiming a smooth global optimal controller.
+
+One fresh61D seed17001 run used exactly the prior actor/critic initialization, architecture, mean-only Adam0.003, batch256, latentstd0.3, epsilon0.01 and12,000 updates. CUDA singleton audits at3k/6k/12k all failed on palm support after2/4/4 controls, with peak force-qualified rotations1.79369/4.15215/1.11922rad. The final actionMSE is2.82112185e-6 and maxerror0.01995947. All optimizer/counter/source and sampled-batch checks pass; critics, target critics and temperature remain unchanged.
+
+The predeclared optional frozen-head diagnostic is prepared but has not run: final feature design86x257 has rank86 and condition8.35169e7. It requires separate numerical review before the one residual solve. No extra epochs, head solve, SAC update, successful policy claim or main-stage demonstration was added by this artifact.

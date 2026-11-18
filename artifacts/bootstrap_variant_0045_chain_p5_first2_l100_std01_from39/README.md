@@ -1,0 +1,10 @@
+# Variant 45 `chain_p5_first2_l100_std01_from39`; prepared, not executed
+
+Chained prefix-5 stage inheriting the pinned-handoff checkpoint (bc_first_l100_std01 online_2000: prefix-6 deterministic pass and 9/10 stochastic, prefix-7/8 10/10, handoff std .01) with the same recipe at obs5 and obs6.
+
+Settings that differ from the SAC0004 baseline: `{"prefix_controls": 5, "prefix_set": [5, 6, 7, 8], "demonstration_include_mpc": false, "demonstration_recorded_rows": [5, 9], "actor_bc_lambda": 100.0, "actor_bc_rows": "first_k", "checkpoints": [250, 500, 750, 1000, 1250, 1500, 1750, 2000], "initial_from": ["bootstrap_variant_0039_bc_first_l100_std01", "online_2000"], "actor_bc_first_rows": 2, "eval_stochastic_trials": 10, "actor_bc_std_target": 0.01}`. Everything else (SAC0001 checkpoint, 256 warm-up episodes, entropy-free demonstration pretraining, 500 + 2,000 updates, evaluation schedule) matches SAC0004; see `protocol.json`. Seeds match SAC0004 (warm-up and on-policy pretraining draws reproduce it exactly when the collection settings coincide). Template: `bootstrap_variant_template_0001`.
+
+```bash
+.venv/bin/python -m pytest -q artifacts/bootstrap_variant_0045_chain_p5_first2_l100_std01_from39/test_protocol.py
+MUJOCO_GL=egl .venv/bin/python artifacts/bootstrap_variant_0045_chain_p5_first2_l100_std01_from39/run.py --execute > artifacts/bootstrap_variant_0045_chain_p5_first2_l100_std01_from39/run.log 2>&1
+```

@@ -1,0 +1,12 @@
+P0100ms_seed42.npz: period 0.1, 13 controls; perturb control 0 by 0.001; obs distance from the unperturbed replay after each control:
+  ray 0: 0.000 0.023 1.306 1.109 0.513 1.119 1.419 2.999 2.573 2.587 2.164 2.201  | >0.1 after 2 controls (0.2 s), >1.0 after 2 controls
+  ray 1: 0.000 0.040 1.783 1.868 1.574 2.320 2.907 3.518 4.513 5.857 5.182 5.246  | >0.1 after 2 controls (0.2 s), >1.0 after 2 controls
+  ray 2: 0.000 0.007 0.009 0.094 0.571 1.219 2.078 3.789 3.754 4.298 3.884 3.936  | >0.1 after 4 controls (0.4 s), >1.0 after 5 controls
+P0200ms_seed43.npz: period 0.2, 17 controls; perturb control 0 by 0.001; obs distance from the unperturbed replay after each control:
+  ray 0: 0.000 0.004 0.003 0.000 0.000 0.000 0.000 0.008 0.883 2.446 2.470 2.567  | >0.1 after 8 controls (1.6 s), >1.0 after 9 controls
+  ray 1: 0.000 0.003 0.002 0.000 0.000 0.000 0.000 0.008 0.896 2.432 2.280 2.475  | >0.1 after 8 controls (1.6 s), >1.0 after 9 controls
+  ray 2: 0.000 0.004 0.004 0.001 0.000 0.000 0.000 0.008 0.885 2.578 2.590 2.768  | >0.1 after 8 controls (1.6 s), >1.0 after 9 controls
+P0200ms_fs0.5_seed42.npz: period 0.2, 15 controls; perturb control 0 by 0.001; obs distance from the unperturbed replay after each control:
+  ray 0: 0.000 0.013 0.012 0.003 0.003 0.007 0.053 0.184 0.102 2.523  | >0.1 after 7 controls (1.4 s), >1.0 after 9 controls
+  ray 1: 0.000 0.015 0.017 0.006 0.073 0.133 0.204 0.268 0.182 0.948 1.383 8.075  | >0.1 after 5 controls (1.0 s), >1.0 after 10 controls
+  ray 2: 0.000 0.037 0.041 0.012 0.036 0.188 0.185 0.317 0.169 1.241 1.346 1.230  | >0.1 after 5 controls (1.0 s), >1.0 after 9 controls

@@ -1,0 +1,14 @@
+{
+  "engine_collision_convex.c": {
+    "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.14.0/src/engine/engine_collision_convex.c",
+    "sha256": "a5675a38fbea4148e7ee164e493c7c95bee599ddd5835212b1c6b28da99c074a"
+  },
+  "engine_forward.c": {
+    "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.14.0/src/engine/engine_forward.c",
+    "sha256": "7222023a85e29cf14d64d253562c1d9beeda5ef16b64c454515616809f0871f9"
+  },
+  "engine_solver.c": {
+    "url": "https://raw.githubusercontent.com/google-deepmind/mujoco/3.14.0/src/engine/engine_solver.c",
+    "sha256": "4d4afc77346eb436fc0caea1df5255675a0fb7d857061436d7a61cc8ebd89799"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "controls": 26,
+  "physics_rows": 1300,
+  "transition_fields": [
+    "obs",
+    "actions",
+    "next_obs",
+    "rewards",
+    "terminated",
+    "truncated",
+    "qpos",
+    "qvel",
+    "targets"
+  ],
+  "all_bitexact": true,
+  "force_qualified_angle": 6.260594097508785,
+  "time_seconds": 2.5999999999999353,
+  "verified_before_first_additional_hold": true
+}

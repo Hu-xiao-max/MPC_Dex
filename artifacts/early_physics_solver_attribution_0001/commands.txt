@@ -1,0 +1,2 @@
+OPENBLAS_NUM_THREADS=1 uv run --frozen python artifacts/early_physics_solver_attribution_0001/replay.py > artifacts/early_physics_solver_attribution_0001/replay.log 2>&1
+OPENBLAS_NUM_THREADS=1 uv run --frozen python artifacts/early_physics_solver_attribution_0001/analyze.py > artifacts/early_physics_solver_attribution_0001/analysis.log 2>&1

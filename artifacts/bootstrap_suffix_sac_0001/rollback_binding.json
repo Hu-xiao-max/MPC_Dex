@@ -1,0 +1,36 @@
+{
+  "selected_prefix_controls": 7,
+  "source_all_manifest_files_verified": true,
+  "files": {
+    "manifest.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/manifest.json",
+      "sha256": "a4eb33876f916a993673f39361dc87074b5f6087ca93eecc31208187c6dc25c7",
+      "local_path": "rollback_reference/manifest.json"
+    },
+    "recommendation.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/recommendation.json",
+      "sha256": "b721a58b4ee5763b2161dac9e02edd02b002f21deea356cbe4e06226dd4f7824",
+      "local_path": "rollback_reference/recommendation.json"
+    },
+    "summary.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/summary.json",
+      "sha256": "3339cc6202b42d744e6558b5d76dd00c24686f6462013daf9d48d36255b83432",
+      "local_path": "rollback_reference/summary.json"
+    },
+    "protocol.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/protocol.json",
+      "sha256": "d8f77c209130bc7a87207fe277c8fbe309bc122f78edfa0c2d94cca7f681270b",
+      "local_path": "rollback_reference/protocol.json"
+    },
+    "findings.md": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/findings.md",
+      "sha256": "cd85ef2bb810a9e2ce51fa0c1af80659e37873521022d041c3b43b324027f392",
+      "local_path": "rollback_reference/findings.md"
+    },
+    "sampling_verification.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/sampling_verification.json",
+      "sha256": "7bf9f5789f909aa420627f5046315bc37eb65596a4bd64e6c5f967cfe506a844",
+      "local_path": "rollback_reference/sampling_verification.json"
+    }
+  }
+}

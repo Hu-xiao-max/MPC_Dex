@@ -1,0 +1,21 @@
+{"k": 5, "policy": {"controls": 9, "failure": "drop", "success": false, "final_angle": 0.6472351250741399}}
+{"name": "dagger_seed_193_k5_b1", "status": "boundary", "controls": 14, "policy_controls": 1, "mpc_controls": 8, "strict_force_success": true, "stored": true, "dev": [0.005], "wall": 304.1}
+{"name": "dagger_seed_193_k5_b2", "status": "boundary", "controls": 14, "policy_controls": 2, "mpc_controls": 7, "strict_force_success": true, "stored": true, "dev": [0.005, 0.04], "wall": 267.9}
+{"name": "dagger_seed_193_k5_b3", "status": "boundary", "controls": 14, "policy_controls": 3, "mpc_controls": 6, "strict_force_success": true, "stored": true, "dev": [0.005, 0.04, 0.9], "wall": 219.9}
+{"name": "dagger_seed_193_k5_b4", "status": "boundary", "controls": 14, "policy_controls": 4, "mpc_controls": 5, "strict_force_success": true, "stored": true, "dev": [0.005, 0.04, 0.9, 0.755], "wall": 167.5}
+{"k": 6, "policy": {"controls": 5, "failure": "drop", "success": false, "final_angle": 2.204136379247454}}
+{"name": "dagger_seed_193_k6_b1", "status": "boundary", "controls": 13, "policy_controls": 1, "mpc_controls": 6, "strict_force_success": true, "stored": true, "dev": [0.007], "wall": 246.1}
+{"name": "dagger_seed_193_k6_b2", "status": "boundary", "controls": 14, "policy_controls": 2, "mpc_controls": 6, "strict_force_success": true, "stored": true, "dev": [0.007, 0.351], "wall": 272.2}
+{"name": "dagger_seed_193_k6_b3", "status": "boundary", "controls": 14, "policy_controls": 3, "mpc_controls": 5, "strict_force_success": true, "stored": true, "dev": [0.007, 0.351, 1.426], "wall": 213.5}
+{"name": "dagger_seed_193_k6_b4", "status": "boundary", "controls": 17, "policy_controls": 4, "mpc_controls": 7, "strict_force_success": true, "stored": true, "dev": [0.007, 0.351, 1.426, 2.24], "wall": 269.3}
+{"k": 7, "policy": {"controls": 11, "failure": "palm_support", "success": false, "final_angle": 3.869720151300055}}
+{"name": "dagger_seed_193_k7_b1", "status": "boundary", "controls": 13, "policy_controls": 1, "mpc_controls": 5, "strict_force_success": true, "stored": true, "dev": [0.022], "wall": 150.2}
+{"name": "dagger_seed_193_k7_b2", "status": "boundary", "controls": 14, "policy_controls": 2, "mpc_controls": 5, "strict_force_success": true, "stored": true, "dev": [0.022, 0.17], "wall": 112.1}
+{"name": "dagger_seed_193_k7_b3", "status": "boundary", "controls": 14, "policy_controls": 3, "mpc_controls": 4, "strict_force_success": true, "stored": true, "dev": [0.022, 0.17, 1.005], "wall": 121.9}
+{"name": "dagger_seed_193_k7_b4", "status": "boundary", "controls": 14, "policy_controls": 4, "mpc_controls": 3, "strict_force_success": true, "stored": true, "dev": [0.022, 0.17, 1.005, 0.834], "wall": 89.9}
+{"k": 8, "policy": {"controls": 8, "failure": "drop", "success": false, "final_angle": 1.2673113327361363}}
+{"name": "dagger_seed_193_k8_b1", "status": "boundary", "controls": 14, "policy_controls": 1, "mpc_controls": 5, "strict_force_success": true, "stored": true, "dev": [0.023], "wall": 133.1}
+{"name": "dagger_seed_193_k8_b2", "status": "boundary", "controls": 16, "policy_controls": 2, "mpc_controls": 6, "strict_force_success": true, "stored": true, "dev": [0.023, 0.835], "wall": 173.1}
+{"name": "dagger_seed_193_k8_b3", "status": "boundary", "controls": 17, "policy_controls": 3, "mpc_controls": 6, "strict_force_success": true, "stored": true, "dev": [0.023, 0.835, 1.588], "wall": 146.8}
+{"name": "dagger_seed_193_k8_b4", "status": "boundary", "controls": 15, "policy_controls": 4, "mpc_controls": 3, "strict_force_success": true, "stored": true, "dev": [0.023, 0.835, 1.588, 2.056], "wall": 61.4}
+{"k": 9, "policy": {"controls": 5, "failure": null, "success": true, "final_angle": 7.182132039376021}}

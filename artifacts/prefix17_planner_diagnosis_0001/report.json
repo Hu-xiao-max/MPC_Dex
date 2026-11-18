@@ -1,0 +1,340 @@
+{
+  "purpose": "One-plan hold-inclusion diagnosis, not a trained policy or production primitive",
+  "environment_contract": {
+    "action_high": [
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      1.396,
+      1.163,
+      1.644,
+      1.719
+    ],
+    "action_low": [
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      0.263,
+      -0.105,
+      -0.189,
+      -0.162
+    ],
+    "environment": {
+      "contact_loss_seconds": 0.05,
+      "control_seconds": 0.1,
+      "finger_friction": 0.8,
+      "goal_heading": null,
+      "horizon_steps": 900,
+      "initial_hand_q": [
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        1.2,
+        0.3,
+        0.5,
+        0.5
+      ],
+      "initial_object_position": [
+        0.055,
+        0.0,
+        0.075
+      ],
+      "joint_kp": 3.0,
+      "joint_kv": 0.1,
+      "max_joint_force": 0.7,
+      "object_diameter": 0.045,
+      "object_friction": 0.5,
+      "object_length": 0.12,
+      "object_mass": 0.15,
+      "object_shape": "hexagonal",
+      "palm_height": 0.35,
+      "palm_support_force_tolerance": 1e-06,
+      "success_axis_tolerance_degrees": 30.0,
+      "task": "rotation",
+      "terminate_on_success": true,
+      "timestep": 0.002
+    },
+    "environment_source_sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "grasp_sha256": "d846ae4cf06d8b38a51dbfdd50f031cdca7b453d9d2c5435678f53ced2d9b3bd",
+    "joint_order": [
+      "ffj0",
+      "ffj1",
+      "ffj2",
+      "ffj3",
+      "mfj0",
+      "mfj1",
+      "mfj2",
+      "mfj3",
+      "rfj0",
+      "rfj1",
+      "rfj2",
+      "rfj3",
+      "thj0",
+      "thj1",
+      "thj2",
+      "thj3"
+    ],
+    "observation": "q16,object_position_in_palm3,object_quaternion_in_palm_wxyz4,principal_angle1,previous_angle1,finite_difference_qvel16,finite_difference_object_vel3,previous_normalized_action16; reorientation appends goal1",
+    "robot_mesh_sha256": {
+      "base_link.stl": "4060e1ae52bca21367e15a1dfab16bc7c2e81849566631b7f55e2cf376b7bc85",
+      "link_0.0.stl": "32b90a6744d472a6ffaee02cbf32eb8a5600b1da0944e86aeb9f53503a9f8ac9",
+      "link_1.0.stl": "e3dfb35b6682f62f18ca6ed0b39cb94ff627b68e0e3373cf7212390574604680",
+      "link_12.0_right.stl": "c5418fc127311eefee1d8ee69dfcfde2157d038286900bee91608d2701b00f13",
+      "link_13.0.stl": "e906896afc078a12c9c377e3a2b07f375583d3b869581f9962030cabc888be29",
+      "link_14.0.stl": "a9e4983e4bff7fc7d868b4965c9865edb2669b946434095703766202b5de01ff",
+      "link_15.0.stl": "bf963adb775b79b27649f4f5dff4ced58ef676ce86cc677de49d3810382d11e0",
+      "link_15.0_tip.stl": "a7147c765d4b6d2eb16fa14bba2e8eceec4a750bc346260893ca02aca1fd7a63",
+      "link_2.0.stl": "9c98477c65b45f5a3de1df0e1b54281da2385f4eafd057d103ab40893771c2d0",
+      "link_3.0.stl": "fe333088176395aa7d8a913aa953d3cd649c4c77753224239b78b2c99e3e314c",
+      "link_3.0_tip.stl": "9c3fa04fea0dfa1257c8a1b02d2b7d982b0d985c1ddda1edf148827944835f39"
+    },
+    "robot_xml_sha256": "cec3efe34be49c8220c23afdae0cfacbce10164a5bc7c34075b6668ee0a862a6",
+    "schema_version": 1,
+    "target": "local-simulation"
+  },
+  "prefix_commands": 17,
+  "prefix": {
+    "angle": 6.264023571984642,
+    "retained_angle": 5.979139204695743,
+    "finger_contacts": 2,
+    "axis_tilt_radians": 0.08101695209147416,
+    "drop": false,
+    "success": false,
+    "palm_support_violation": false,
+    "palm_support_force": 0.0,
+    "peak_palm_support_force": 0.0,
+    "failure_reason": null
+  },
+  "recorded_state_match": "qpos and qvel bit-for-bit",
+  "cem": {
+    "horizon_seconds": 0.5,
+    "knots": 6,
+    "samples": 350,
+    "elites": 10,
+    "iterations": 3,
+    "timestep_seconds": 0.1,
+    "control_seconds": 0.1
+  },
+  "cost": {
+    "position_weight": 1000.0,
+    "principal_weight": 1.0,
+    "perpendicular_weight": 100.0,
+    "workspace_radius": 0.18,
+    "workers": 1,
+    "rotation_progress": "retained"
+  },
+  "seed": 42,
+  "workers": 1,
+  "prior_extraction": {
+    "frames": 111,
+    "joints": 16,
+    "units": "radians",
+    "requested_explained_variance": 0.9,
+    "retained_explained_variance": 0.9560550984848052,
+    "trajectories_float64_le_sha256": "5fba04f66e014260bfa906dd294ad98555ed4f3a0222c70a2874fb4708b52f2b"
+  },
+  "old_open_loop_sequence_available": false,
+  "continuation_caveat": "Only executed future controls were saved; they are not the original open-loop CEM forecast.",
+  "fresh_plan_caveat": "Planner resets its nominal trajectory at the current target; original iteration-18 warmstart/RNG state is unavailable.",
+  "sources": {
+    "artifacts/rotation_probe/orbit_0.8_s8_p1_f0.npz": "602078ae3af02f4e0e5c734847331705518a7ffd120e0a1a59b967513fa181d0",
+    "artifacts/mpc_partial_probe_0002/transitions.npz": "484e4b8b5a9f52b56a84eab80184db51061420224cedbbfd46ebc0b1031fac21",
+    "mpc_dex/env.py": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "mpc_dex/mpc.py": "02a276ec62688dd04ff50ea94eeecbf0f16036aee7a4f03bb0e363bc20f5d83b",
+    "mpc_dex/rollouts.py": "283e93f3bcb5e3d185f25e3c9f7927948d04fb9deb12a3f19ecd3fae0dc39143",
+    "mpc_dex/native_rollouts.py": "ab981bb1c29f6f252437d38d9c58d50b2339a9b6f371a08a7e816344ab91d789",
+    "mpc_dex/native/exact_rollout.cc": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+    "artifacts/prefix17_planner_diagnosis_0001/diagnose.py": "68fb7ce4b4cccd08ad4b7f22d6b6de4f611e66074b8c5f705a84aadbfaeea33f"
+  },
+  "comparisons": {
+    "exact_current_target_hold": {
+      "cost": 21.08852055538923,
+      "feasible": true,
+      "rejection_reason": null,
+      "evaluated_physics_steps": 250,
+      "raw_final_progress_range": [
+        0.6317054254710887,
+        0.6317054254710887
+      ],
+      "retained_final_progress_range": [
+        0.6218584235786867,
+        0.6218584235786867
+      ],
+      "final_simulation_time": 2.1999999999999793,
+      "final_palm_support_force": 0.0
+    },
+    "recorded_next_five_executed_controls": {
+      "cost": null,
+      "feasible": false,
+      "rejection_reason": "palm_support",
+      "evaluated_physics_steps": 106,
+      "raw_final_progress_range": null,
+      "retained_final_progress_range": null,
+      "final_simulation_time": 1.9120000000000015,
+      "final_palm_support_force": 9.212107763684761
+    },
+    "recorded_next_command_held_constant": {
+      "cost": null,
+      "feasible": false,
+      "rejection_reason": "contact_loss",
+      "evaluated_physics_steps": 116,
+      "raw_final_progress_range": null,
+      "retained_final_progress_range": null,
+      "final_simulation_time": 1.9320000000000015,
+      "final_palm_support_force": 0.0
+    }
+  },
+  "initial_nominal_max_difference_from_hold": 2.7755575615628914e-17,
+  "fresh_plan": {
+    "feasible": true,
+    "cost": 21.803663371037654,
+    "planner": {
+      "best_cost": 21.803663371037654,
+      "iterations": [
+        {
+          "iteration": 0,
+          "valid_candidates": 12,
+          "elite_count": 10,
+          "iteration_best_cost": 23.48206667881231,
+          "best_cost": 23.48206667881231
+        },
+        {
+          "iteration": 1,
+          "valid_candidates": 20,
+          "elite_count": 10,
+          "iteration_best_cost": 22.387454524184328,
+          "best_cost": 22.387454524184328
+        },
+        {
+          "iteration": 2,
+          "valid_candidates": 21,
+          "elite_count": 10,
+          "iteration_best_cost": 21.803663371037654,
+          "best_cost": 21.803663371037654
+        }
+      ],
+      "rollouts": 1050,
+      "horizon_steps": 5,
+      "timestep_seconds": 0.1,
+      "interpolation": "linear",
+      "valid_candidates": 53
+    },
+    "command_max_difference_from_hold": 0.2751472969438554,
+    "command_l2_difference_from_hold": 0.4134467640344472,
+    "first_command_after_execution": {
+      "angle": 6.24635076039847,
+      "retained_angle": 5.96146639310957,
+      "finger_contacts": 2,
+      "axis_tilt_radians": 0.1166193198882885,
+      "drop": false,
+      "success": false,
+      "palm_support_violation": false,
+      "palm_support_force": 0.0,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null
+    },
+    "reward": -0.6534562317234347,
+    "terminated": false,
+    "truncated": false
+  },
+  "sampled_batches": [
+    {
+      "iteration": 0,
+      "candidates": 350,
+      "valid_candidates": 12,
+      "best_cost": 23.48206667881231,
+      "minimum_sequence_max_difference_from_hold": 0.17291261243820188,
+      "exact_hold_candidates": 0,
+      "sampled_candidates_cheaper_than_hold": 0,
+      "rejection_counts": {
+        "contact_loss": 302,
+        "palm_support": 32,
+        "workspace": 4,
+        "None": 12
+      }
+    },
+    {
+      "iteration": 1,
+      "candidates": 350,
+      "valid_candidates": 20,
+      "best_cost": 22.387454524184328,
+      "minimum_sequence_max_difference_from_hold": 0.21413564114859984,
+      "exact_hold_candidates": 0,
+      "sampled_candidates_cheaper_than_hold": 0,
+      "rejection_counts": {
+        "contact_loss": 287,
+        "palm_support": 39,
+        "workspace": 4,
+        "None": 20
+      }
+    },
+    {
+      "iteration": 2,
+      "candidates": 350,
+      "valid_candidates": 21,
+      "best_cost": 21.803663371037654,
+      "minimum_sequence_max_difference_from_hold": 0.22599643290185834,
+      "exact_hold_candidates": 0,
+      "sampled_candidates_cheaper_than_hold": 0,
+      "rejection_counts": {
+        "contact_loss": 289,
+        "palm_support": 37,
+        "workspace": 3,
+        "None": 21
+      }
+    }
+  ],
+  "plan_calls": 1,
+  "wall_seconds": 19.595798691967502,
+  "native_build": {
+    "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+    "mujoco_version": "3.14.0",
+    "transition_abi_version": 2,
+    "mujoco_runtime_version": 3014000,
+    "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+    "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+    "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+    "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+    "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "compiler_flags": [
+      "-O3",
+      "-std=c++17",
+      "-fPIC",
+      "-shared",
+      "-fno-fast-math",
+      "-ffp-contract=off"
+    ],
+    "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+    "binary": "/home/autel001/code/mpc_dex/artifacts/prefix17_planner_diagnosis_0001/native_cache/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+    "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+  }
+}

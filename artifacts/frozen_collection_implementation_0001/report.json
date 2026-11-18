@@ -1,0 +1,27 @@
+{
+  "status": "implemented_and_tested",
+  "purpose": "Frozen SAC prerequisite collection, honest diagnostic policy origins, source/state/force/PCA consistency checks",
+  "full_regression": {
+    "passed": 247,
+    "warnings": 2,
+    "seconds": 37.26
+  },
+  "physical_positive_SAC_collection_available": false,
+  "actual_failed_integration": "artifacts/bootstrap_0005_frozen_collection_0001",
+  "independent_review": "artifacts/primitive_collection_review_0001/implementation_followup.md",
+  "source_sha256": {
+    "mpc_dex/trajectory_contracts.py": "5975a22926c0cafbddbd487ecbe0ee9987d98a865c54198a0ab04b0aba26b591",
+    "mpc_dex/cli.py": "618206772d0037c33b36babdcd646e3e237e067db06222999553214c6779edb0",
+    "scripts/collect_policy_trajectories.py": "6ce39b5318b2ee0e84adbb1b07c76b5adb90ccacdf0af691dbc28eee104cb517",
+    "scripts/train_bootstrap.py": "9d036adebdfd4f473076fb98aef1a32268f814bb4b8ddc61d18d30f21a610b09",
+    "tests/test_policy_collection.py": "3f9d8bf8627e211c0200c2cf378ccc214c2327ff837ce21b2f3a4937ccdd09e0",
+    "tests/test_cli_trajectories.py": "edd3ea6ddd7e88ea64cdce1060b47f06d3c5863ecb34ce8a3e0e2f4119d602b3",
+    "tests/test_cli_planner_backend.py": "b708433227666ff9a1f198f797bff8216ad26307f961cb90cc9a2e5ccb80ef92",
+    "tests/test_online_resume.py": "22c0f53b389404f4677efb2eaa8558c120a597bff38ccec70fbbf741a918fbde",
+    "tests/test_bootstrap.py": "8f3305366418b7b3e684b10f535a6e091d279c6d0a761478bf8a60422457a8b3",
+    "docs/primitive_collection.md": "fa195b074420d63a0599ae7ec018244ed3a37a9c1bcf2a5cd1e94fcf91e3ee0c",
+    "artifacts/validation_latest.txt": "51db2111d145ccbe2806f7764f601b4e6783bfec1e139b4f82da2efc4ebc53d5"
+  },
+  "main_method_counts_unchanged": true,
+  "environment_and_learning_numerics_changed": false
+}

@@ -1,0 +1,43 @@
+# environment and caches
+.venv/
+vendor/
+__pycache__/
+*.pyc
+.pytest_cache/
+MUJOCO_LOG.TXT
+
+# experiment artifacts: every findings.md, README, protocol.json, summary.json, manifest.json, evaluation summary,
+# 30-trial result file, verified demonstration collection and labelled branch is tracked; the bulky run data below
+# stays on disk only (see README "Repository contents").
+artifacts/**/*.pt
+artifacts/**/*.bin
+artifacts/**/*.so
+artifacts/**/*.mp4
+artifacts/**/*.jsonl.gz
+artifacts/**/metrics.jsonl
+artifacts/**/native_cache/
+artifacts/*/source/
+artifacts/*/sources/
+artifacts/*/inputs/
+artifacts/bootstrap_*/**/*.npz
+artifacts/bootstrap_*/*.npz
+artifacts/demo_sac_*/**/*.npz
+artifacts/demo_sac_*/*.npz
+artifacts/bootstrap_*/evaluations/*/*/
+artifacts/demo_sac_*/evaluations/*/*/
+artifacts/bootstrap_*/episodes/
+artifacts/demo_sac_*/episodes/
+artifacts/bootstrap_000*/checkpoint_*/
+artifacts/feedback_bc_0001/runs/*/agent.pt
+
+# the checkpoints named as reference results in README.md / docs/WORK_STATE.md are kept in the repository
+!artifacts/bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000/agent.pt
+!artifacts/bootstrap_variant_0041_bc_first_l100_std01_r2/checkpoints/online_2000/agent.pt
+!artifacts/bootstrap_variant_0068_ms_suffix123_from61/checkpoints/online_2000/agent.pt
+!artifacts/bootstrap_variant_0074_ms_suffix1to6_cont_from70/checkpoints/online_4000/agent.pt
+!artifacts/bootstrap_variant_0082_ms_shared_prefix_from81/checkpoints/online_4000/agent.pt
+!artifacts/bootstrap_variant_0089_cyl_ms_from82/checkpoints/online_2500/agent.pt
+!artifacts/bootstrap_variant_0094_cyl_ms_s1to6_all_from89/checkpoints/online_4000/agent.pt
+!artifacts/bootstrap_variant_0096_cyl_ms_s1to9_long_from94/checkpoints/online_4000/agent.pt
+!artifacts/bootstrap_variant_0099_cyl_spine172_from96/checkpoints/online_4000/agent.pt
+!artifacts/bootstrap_variant_0101_cyl_spine172_longrl_alphafreeze_from99/checkpoints/online_40000/agent.pt

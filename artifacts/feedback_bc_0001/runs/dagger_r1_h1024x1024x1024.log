@@ -1,0 +1,30 @@
+rows 1540 (distinct observations 1414; spine x10; training branches 198, held-out branches 57 with 382 correction rows)
+step 0 bc_loss 2.71056
+step 5000 bc_loss 0.02263
+step 10000 bc_loss 0.01416
+step 15000 bc_loss 0.01146
+step 20000 bc_loss 0.02435
+step 25000 bc_loss 0.01104
+step 30000 bc_loss 0.00811
+step 35000 bc_loss 0.01099
+step 40000 bc_loss 0.00584
+step 45000 bc_loss 0.00559
+step 50000 bc_loss 0.00706
+step 55000 bc_loss 0.00518
+step 60000 bc_loss 0.00919
+step 65000 bc_loss 0.00791
+step 70000 bc_loss 0.00026
+step 75000 bc_loss 0.00030
+step 80000 bc_loss 0.00009
+step 85000 bc_loss 0.00000
+step 90000 bc_loss 0.00008
+step 95000 bc_loss 0.00025
+step 99999 bc_loss 0.00588
+training fit over 1414 distinct rows: action-space L2 median 0.0145 p90 0.0282 max 0.929 (row spine); atanh-space MSE 0.00037 | spine rows [0.21199999749660492, 0.09600000083446503, 0.9290000200271606, 0.4699999988079071, 0.02199999988079071, 0.0020000000949949026, 0.03500000014901161, 0.009999999776482582, 0.01600000075995922, 0.00800000037997961, 0.008999999612569809, 0.007000000216066837, 0.014000000432133675, 0.004999999888241291]
+HELD-OUT regression (chaos-free generalisation): 382 rows, action-space L2 median 0.9224 p90 1.7638 max 3.442; atanh-space MSE 0.52347
+cold {'det': {'ok': False, 'controls': 4, 'angle': 1.26, 'fail': 'palm_support'}, 'stoch': [False, False, False, False, False]} 
+spine det k1.. [False, False, False, False, False, False, False, False, True, True, True, True, True] 
+spine stoch3 [0, 0, 0, 0, 0, 0, 0, 2, 1, 3, 2, 3, 3]
+training branches: corrected-state handoffs (deterministic) 3/24; informative cells j<=9: 1/22; by (order, j) {'o1j0': '0/3', 'o1j1': '0/3', 'o1j2': '0/1', 'o1j4': '0/2', 'o1j5': '0/1', 'o1j6': '0/1', 'o1j7': '0/2', 'o1j9': '1/1', 'o1j10': '1/1', 'o1j11': '1/1', 'o2j1': '0/4', 'o2j2': '0/2', 'o2j4': '0/2'}
+held-out branches: corrected-state handoffs (deterministic) 5/24; informative cells j<=9: 1/20; by (order, j) {'o1j0': '0/2', 'o1j1': '0/2', 'o1j2': '0/2', 'o1j5': '0/2', 'o1j6': '0/2', 'o1j7': '0/1', 'o1j8': '1/1', 'o1j9': '0/1', 'o1j10': '1/1', 'o1j11': '1/1', 'o1j12': '2/2', 'o2j1': '0/3', 'o2j2': '0/2', 'o2j3': '0/2'}
+wall 336.7

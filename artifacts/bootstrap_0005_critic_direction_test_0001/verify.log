@@ -1,0 +1,112 @@
+[
+  {
+    "seed": 17041,
+    "branch": "plus",
+    "steps": 2,
+    "actions_density_rng_exact": true,
+    "gaussian_baseline_common_steps": 2,
+    "terminal_return_exact": true,
+    "physics_control_states_exact": true,
+    "achieved_radius": 0.0050000017647850396,
+    "clipped_dimensions": 0
+  },
+  {
+    "seed": 17041,
+    "branch": "minus",
+    "steps": 2,
+    "actions_density_rng_exact": true,
+    "gaussian_baseline_common_steps": 2,
+    "terminal_return_exact": true,
+    "physics_control_states_exact": true,
+    "achieved_radius": 0.0050000017647850396,
+    "clipped_dimensions": 0
+  },
+  {
+    "seed": 17042,
+    "branch": "plus",
+    "steps": 2,
+    "actions_density_rng_exact": true,
+    "gaussian_baseline_common_steps": 2,
+    "terminal_return_exact": true,
+    "physics_control_states_exact": true,
+    "achieved_radius": 0.005000008762000614,
+    "clipped_dimensions": 0
+  },
+  {
+    "seed": 17042,
+    "branch": "minus",
+    "steps": 4,
+    "actions_density_rng_exact": true,
+    "gaussian_baseline_common_steps": 4,
+    "terminal_return_exact": true,
+    "physics_control_states_exact": true,
+    "achieved_radius": 0.005000008632532463,
+    "clipped_dimensions": 0
+  },
+  {
+    "seed": 17043,
+    "branch": "plus",
+    "steps": 3,
+    "actions_density_rng_exact": true,
+    "gaussian_baseline_common_steps": 3,
+    "terminal_return_exact": true,
+    "physics_control_states_exact": true,
+    "achieved_radius": 0.005000003447240465,
+    "clipped_dimensions": 0
+  },
+  {
+    "seed": 17043,
+    "branch": "minus",
+    "steps": 5,
+    "actions_density_rng_exact": true,
+    "gaussian_baseline_common_steps": 4,
+    "terminal_return_exact": true,
+    "physics_control_states_exact": true,
+    "achieved_radius": 0.005000003447240465,
+    "clipped_dimensions": 0
+  },
+  {
+    "seed": 17044,
+    "branch": "plus",
+    "steps": 3,
+    "actions_density_rng_exact": true,
+    "gaussian_baseline_common_steps": 3,
+    "terminal_return_exact": true,
+    "physics_control_states_exact": true,
+    "achieved_radius": 0.005000000973901492,
+    "clipped_dimensions": 0
+  },
+  {
+    "seed": 17044,
+    "branch": "minus",
+    "steps": 3,
+    "actions_density_rng_exact": true,
+    "gaussian_baseline_common_steps": 3,
+    "terminal_return_exact": true,
+    "physics_control_states_exact": true,
+    "achieved_radius": 0.005000000924598323,
+    "clipped_dimensions": 0
+  },
+  {
+    "seed": 17045,
+    "branch": "plus",
+    "steps": 5,
+    "actions_density_rng_exact": true,
+    "gaussian_baseline_common_steps": 2,
+    "terminal_return_exact": true,
+    "physics_control_states_exact": true,
+    "achieved_radius": 0.005000004318310234,
+    "clipped_dimensions": 0
+  },
+  {
+    "seed": 17045,
+    "branch": "minus",
+    "steps": 2,
+    "actions_density_rng_exact": true,
+    "gaussian_baseline_common_steps": 2,
+    "terminal_return_exact": true,
+    "physics_control_states_exact": true,
+    "achieved_radius": 0.004999994248075255,
+    "clipped_dimensions": 0
+  }
+]

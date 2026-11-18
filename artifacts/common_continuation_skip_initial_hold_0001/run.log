@@ -1,0 +1,7 @@
+{
+  "steps": 8,
+  "finger_supported_rotation_success": false,
+  "environment_failure_reason": null,
+  "max_force_qualified_angle": 5.288645472827198,
+  "final_force_qualified_angle": 4.126836225437737
+}

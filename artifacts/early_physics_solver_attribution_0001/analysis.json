@@ -1,0 +1,1108 @@
+{
+  "status": "complete",
+  "total_new_physics_steps": 300,
+  "extra_physics_in_analysis": 0,
+  "exact_reproduction": {
+    "nominal": {
+      "status": "complete",
+      "source_fields_bitexact": true,
+      "source_physics_rows_bitexact": 150,
+      "physics_steps": 150,
+      "controls": 3,
+      "diagnostics_records": 300,
+      "config_settings_unchanged": true,
+      "source_initial_integration_available": false,
+      "max_action_abs": 0.9799998998641968,
+      "final_info": {
+        "angle": 4.017249959518641,
+        "retained_angle": 3.845453485913442,
+        "success": false,
+        "drop": false,
+        "palm_support_violation": false
+      }
+    },
+    "head": {
+      "status": "complete",
+      "source_fields_bitexact": true,
+      "source_physics_rows_bitexact": 150,
+      "physics_steps": 150,
+      "controls": 3,
+      "diagnostics_records": 300,
+      "config_settings_unchanged": true,
+      "source_initial_integration_available": true,
+      "max_action_abs": 0.9799999594688416,
+      "final_info": {
+        "angle": 4.019251554988656,
+        "retained_angle": 3.8474553491720314,
+        "success": false,
+        "drop": false,
+        "palm_support_violation": false
+      }
+    }
+  },
+  "original_physics_and_solver_settings_unchanged": true,
+  "action_max_differences_by_control": [
+    2.905726432800293e-07,
+    3.5762786865234375e-07,
+    2.980232238769531e-07
+  ],
+  "target_max_differences_by_control": [
+    2.1994113919010516e-07,
+    3.299117088406689e-07,
+    2.1529197691272373e-07
+  ],
+  "actual_solver_summaries": {
+    "after_mj_step_pre_forward": {
+      "nominal": {
+        "solves": 153,
+        "iteration_histogram": {
+          "1": 50,
+          "3": 4,
+          "4": 22,
+          "5": 25,
+          "6": 15,
+          "7": 16,
+          "8": 11,
+          "9": 6,
+          "11": 3,
+          "15": 1
+        },
+        "max_iterations": 15,
+        "iteration_cap_hits": 0,
+        "max_last_gradient": 0.00024135095139684652,
+        "max_last_improvement": 0.03884001469515527,
+        "last_gradient_at_least_config_tolerance": 95,
+        "max_last_line_slope": 8.874767412601783e-11,
+        "max_recorded_linesearch_cost_evaluations": 24,
+        "max_stationarity_residual_norm": 0.00010892127963050997,
+        "warnings_observed": false,
+        "fwdinv_enabled": false,
+        "fwdinv_fields_not_used_as_convergence_evidence": true
+      },
+      "head": {
+        "solves": 153,
+        "iteration_histogram": {
+          "1": 50,
+          "3": 3,
+          "4": 22,
+          "5": 25,
+          "6": 18,
+          "7": 13,
+          "8": 12,
+          "9": 6,
+          "11": 3,
+          "15": 1
+        },
+        "max_iterations": 15,
+        "iteration_cap_hits": 0,
+        "max_last_gradient": 0.00024129492992153558,
+        "max_last_improvement": 0.03884154423228506,
+        "last_gradient_at_least_config_tolerance": 95,
+        "max_last_line_slope": 6.659273878750646e-11,
+        "max_recorded_linesearch_cost_evaluations": 24,
+        "max_stationarity_residual_norm": 0.00010889599725016475,
+        "warnings_observed": false,
+        "fwdinv_enabled": false,
+        "fwdinv_fields_not_used_as_convergence_evidence": true
+      }
+    },
+    "after_mj_forward": {
+      "nominal": {
+        "solves": 153,
+        "iteration_histogram": {
+          "1": 50,
+          "3": 4,
+          "4": 23,
+          "5": 25,
+          "6": 16,
+          "7": 16,
+          "8": 11,
+          "9": 5,
+          "11": 3
+        },
+        "max_iterations": 11,
+        "iteration_cap_hits": 0,
+        "max_last_gradient": 0.00024135095139684652,
+        "max_last_improvement": 0.03884001469515527,
+        "last_gradient_at_least_config_tolerance": 96,
+        "max_last_line_slope": 8.874767412601783e-11,
+        "max_recorded_linesearch_cost_evaluations": 24,
+        "max_stationarity_residual_norm": 0.00010892127963050997,
+        "warnings_observed": false,
+        "fwdinv_enabled": false,
+        "fwdinv_fields_not_used_as_convergence_evidence": true
+      },
+      "head": {
+        "solves": 153,
+        "iteration_histogram": {
+          "1": 50,
+          "3": 3,
+          "4": 23,
+          "5": 25,
+          "6": 19,
+          "7": 13,
+          "8": 12,
+          "9": 5,
+          "11": 3
+        },
+        "max_iterations": 11,
+        "iteration_cap_hits": 0,
+        "max_last_gradient": 0.00024129492992153558,
+        "max_last_improvement": 0.03884154423228506,
+        "last_gradient_at_least_config_tolerance": 96,
+        "max_last_line_slope": 6.659273878750646e-11,
+        "max_recorded_linesearch_cost_evaluations": 24,
+        "max_stationarity_residual_norm": 0.00010889599725016475,
+        "warnings_observed": false,
+        "fwdinv_enabled": false,
+        "fwdinv_fields_not_used_as_convergence_evidence": true
+      }
+    }
+  },
+  "early_zero_force_constraint_state_changes": [
+    {
+      "step": 120,
+      "time": 0.24000000000000019,
+      "rows": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "all_changed_constraint_forces_zero": true,
+      "nominal_state": [
+        4,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      "head_state": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "step": 121,
+      "time": 0.2420000000000002,
+      "rows": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "all_changed_constraint_forces_zero": true,
+      "nominal_state": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4
+      ],
+      "head_state": [
+        4,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "first_contact_set_difference": {
+    "step": 132,
+    "time": 0.2640000000000002,
+    "pair": {
+      "geom1": 6,
+      "body1": "ff_proximal",
+      "type1": "box",
+      "geom2": 43,
+      "body2": "object",
+      "type2": "mesh"
+    },
+    "contacts": {
+      "nominal": [
+        {
+          "dim": 4,
+          "dist": -0.0016761757863592945,
+          "geom1": 6,
+          "geom2": 43,
+          "efc_address": 4,
+          "exclude": 0,
+          "includemargin": 0.0,
+          "pos": [
+            0.02939995184604748,
+            0.06315226172161949,
+            0.32423098507905
+          ],
+          "frame": [
+            -0.6915651158533866,
+            0.02649586485860505,
+            -0.7218279986811861,
+            0.01833005111093619,
+            0.9996489229451481,
+            0.01913217397150488,
+            0.7220815049292998,
+            -1.734723475976807e-18,
+            -0.6918079937663613
+          ],
+          "friction": [
+            0.8,
+            0.8,
+            0.005,
+            0.0001,
+            0.0001
+          ],
+          "solref": [
+            0.02,
+            1.0
+          ],
+          "solreffriction": [
+            0.0,
+            0.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "mu": 0.2529822128134704,
+          "H": [
+            1.5035798439730814,
+            0.6539896247007924,
+            0.4607554748394823,
+            -0.005614168270289864,
+            0.6539896247007924,
+            3.04995305433657,
+            -0.6172357067641642,
+            0.007520833304069876,
+            0.4607554748394823,
+            -0.6172357067641642,
+            3.4911872182728865,
+            0.005298654580018309,
+            -0.005614168270289864,
+            0.007520833304069876,
+            0.005298654580018309,
+            8.879873904902764e-05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "force": [
+            7.068074283152963,
+            3.074294502101136,
+            2.165933479082459,
+            -0.026391254532698794,
+            0.0,
+            0.0
+          ],
+          "object_contact": true
+        }
+      ],
+      "head": [
+        {
+          "dim": 4,
+          "dist": -0.0016761550124877386,
+          "geom1": 6,
+          "geom2": 43,
+          "efc_address": 4,
+          "exclude": 0,
+          "includemargin": 0.0,
+          "pos": [
+            0.029399875116519158,
+            0.06315359756777784,
+            0.32423107993686084
+          ],
+          "frame": [
+            -0.6914286318380956,
+            0.024922900434031437,
+            -0.7220147478469222,
+            0.017237761406225197,
+            0.9996893762734279,
+            0.01800029299057928,
+            0.7222390924452936,
+            0.0,
+            -0.6916434727110483
+          ],
+          "friction": [
+            0.8,
+            0.8,
+            0.005,
+            0.0001,
+            0.0001
+          ],
+          "solref": [
+            0.02,
+            1.0
+          ],
+          "solreffriction": [
+            0.0,
+            0.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "mu": 0.2529822128134704,
+          "H": [
+            1.5035798439730814,
+            0.33093500151260336,
+            -0.38708703683921536,
+            -0.006810857465101688,
+            0.33093500151260336,
+            5.110151742895116,
+            0.3973068130565275,
+            0.006990676039522874,
+            -0.38708703683921536,
+            0.3973068130565275,
+            4.98510339482246,
+            -0.008176832493612058,
+            -0.006810857465101688,
+            0.006990676039522874,
+            -0.008176832493612058,
+            6.901109294435351e-05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "force": [
+            3.666534780658871,
+            0.8069971794627753,
+            -0.943925983978922,
+            -0.016608526565452236,
+            0.0,
+            0.0
+          ],
+          "object_contact": true
+        },
+        {
+          "dim": 4,
+          "dist": -0.0016324777934295064,
+          "geom1": 6,
+          "geom2": 43,
+          "efc_address": 8,
+          "exclude": 0,
+          "includemargin": 0.0,
+          "pos": [
+            0.030057045544815468,
+            0.03560553060517829,
+            0.3226205826538388
+          ],
+          "frame": [
+            -0.6914286318380941,
+            0.024922900434026812,
+            -0.7220147478469238,
+            0.01723776140622196,
+            0.9996893762734281,
+            0.018000292990575976,
+            0.7222390924452952,
+            0.0,
+            -0.6916434727110468
+          ],
+          "friction": [
+            0.8,
+            0.8,
+            0.005,
+            0.0001,
+            0.0001
+          ],
+          "solref": [
+            0.02,
+            1.0
+          ],
+          "solreffriction": [
+            0.0,
+            0.0
+          ],
+          "solimp": [
+            0.9,
+            0.95,
+            0.001,
+            0.5,
+            2.0
+          ],
+          "mu": 0.2529822128134704,
+          "H": [
+            1.5035798439730814,
+            0.15920899932465227,
+            1.1578061975915896,
+            -0.0017789876593899674,
+            0.15920899932465227,
+            2.295380341880728,
+            -0.17286435725556487,
+            0.00026560883759797066,
+            1.1578061975915896,
+            -0.17286435725556487,
+            1.06203953052814,
+            0.0019315714539411143,
+            -0.0017789876593899674,
+            0.00026560883759797066,
+            0.0019315714539411143,
+            8.76239370723807e-05,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "force": [
+            5.97353170179576,
+            0.6325171280322222,
+            4.599816932616973,
+            -0.007067691963992341,
+            0.0,
+            0.0
+          ],
+          "object_contact": true
+        }
+      ]
+    },
+    "head_contact_position_separation": 0.02760292679855376,
+    "first_difference_is_post_forward": true,
+    "next_integrated_step": 133,
+    "native_multicontact_enabled": true,
+    "ccd_tolerance": 1e-06,
+    "ccd_iteration_cap": 35,
+    "ccd_iteration_and_termination_status_not_exposed_in_mjData": true
+  },
+  "contact_set_difference_steps": [
+    132,
+    142,
+    144,
+    147,
+    149
+  ],
+  "first_solver_iteration_count_difference_step": 132,
+  "state_difference_crossings": {
+    "qpos_max_difference": {
+      "1e-08": {
+        "step": 1,
+        "time": 0.002,
+        "value": 1.3774734020088886e-08
+      },
+      "1e-06": {
+        "step": 106,
+        "time": 0.21200000000000016,
+        "value": 1.0495593713022444e-06
+      },
+      "1e-05": {
+        "step": 133,
+        "time": 0.2660000000000002,
+        "value": 0.00030508266634805825
+      },
+      "0.0001": {
+        "step": 133,
+        "time": 0.2660000000000002,
+        "value": 0.00030508266634805825
+      },
+      "0.001": {
+        "step": 143,
+        "time": 0.2860000000000002,
+        "value": 0.0010558137801269518
+      },
+      "0.01": null
+    },
+    "qvel_max_difference": {
+      "1e-08": {
+        "step": 1,
+        "time": 0.002,
+        "value": 1.1036698457608449e-05
+      },
+      "1e-06": {
+        "step": 1,
+        "time": 0.002,
+        "value": 1.1036698457608449e-05
+      },
+      "1e-05": {
+        "step": 1,
+        "time": 0.002,
+        "value": 1.1036698457608449e-05
+      },
+      "0.0001": {
+        "step": 103,
+        "time": 0.20600000000000016,
+        "value": 0.0001309832097291519
+      },
+      "0.001": {
+        "step": 133,
+        "time": 0.2660000000000002,
+        "value": 0.15266379419810938
+      },
+      "0.01": {
+        "step": 133,
+        "time": 0.2660000000000002,
+        "value": 0.15266379419810938
+      }
+    }
+  },
+  "selected_events": [
+    {
+      "physics_step": 1,
+      "time": 0.002,
+      "qpos_max_difference": 1.3774734020088886e-08,
+      "qvel_max_difference": 1.1036698457608449e-05,
+      "ncon": [
+        20,
+        20
+      ],
+      "nefc": [
+        80,
+        80
+      ],
+      "qacc_max_difference": 0.014853379618515294,
+      "constraint_force_vector_difference_norm": 1.9137774827049743e-05,
+      "stationarity_residual_norms": [
+        8.96476142644941e-16,
+        4.597966170054797e-16
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 1.1991204303708426e-05,
+          "gradient": 1.9815477680872967e-15,
+          "lineslope": 2.3944863969314955e-17,
+          "nactive": 80,
+          "nchange": 0,
+          "neval": 2,
+          "nupdate": 0
+        },
+        {
+          "improvement": 1.2857549307656843e-05,
+          "gradient": 1.0163226307933026e-15,
+          "lineslope": 1.9684692455748302e-17,
+          "nactive": 80,
+          "nchange": 0,
+          "neval": 2,
+          "nupdate": 0
+        }
+      ],
+      "iterations": [
+        1,
+        1
+      ]
+    },
+    {
+      "physics_step": 50,
+      "time": 0.10000000000000007,
+      "qpos_max_difference": 1.6244938716436508e-07,
+      "qvel_max_difference": 2.9590993489269496e-06,
+      "ncon": [
+        20,
+        20
+      ],
+      "nefc": [
+        80,
+        80
+      ],
+      "qacc_max_difference": 0.000759209012257317,
+      "constraint_force_vector_difference_norm": 3.54478452563431e-06,
+      "stationarity_residual_norms": [
+        9.372335688115708e-16,
+        2.093081257065629e-15
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 4.897616261922391e-07,
+          "gradient": 2.0716364317086583e-15,
+          "lineslope": 3.7021156052410456e-17,
+          "nactive": 80,
+          "nchange": 0,
+          "neval": 2,
+          "nupdate": 0
+        },
+        {
+          "improvement": 4.835604706106193e-07,
+          "gradient": 4.626489390224555e-15,
+          "lineslope": 7.325710188964275e-17,
+          "nactive": 80,
+          "nchange": 0,
+          "neval": 2,
+          "nupdate": 0
+        }
+      ],
+      "iterations": [
+        1,
+        1
+      ]
+    },
+    {
+      "physics_step": 100,
+      "time": 0.20000000000000015,
+      "qpos_max_difference": 3.518218867903933e-07,
+      "qvel_max_difference": 7.948076231834023e-06,
+      "ncon": [
+        12,
+        12
+      ],
+      "nefc": [
+        48,
+        48
+      ],
+      "qacc_max_difference": 0.003525730477747402,
+      "constraint_force_vector_difference_norm": 1.567093038597471e-05,
+      "stationarity_residual_norms": [
+        2.1193603944955745e-06,
+        2.1185794743935173e-06
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 6.969663567001637e-06,
+          "gradient": 4.688700104915521e-06,
+          "lineslope": 2.0549844424932682e-14,
+          "nactive": 48,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 40
+        },
+        {
+          "improvement": 6.966582500564552e-06,
+          "gradient": 4.686972460096408e-06,
+          "lineslope": 2.0540884464609262e-14,
+          "nactive": 48,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 40
+        }
+      ],
+      "iterations": [
+        6,
+        6
+      ]
+    },
+    {
+      "physics_step": 105,
+      "time": 0.21000000000000016,
+      "qpos_max_difference": 9.379962498390348e-07,
+      "qvel_max_difference": 0.0001347879334332447,
+      "ncon": [
+        7,
+        7
+      ],
+      "nefc": [
+        28,
+        28
+      ],
+      "qacc_max_difference": 0.008583376223668893,
+      "constraint_force_vector_difference_norm": 1.9894428869787715e-05,
+      "stationarity_residual_norms": [
+        0.00010892127963050997,
+        0.00010889599725016475
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 0.03884001469515527,
+          "gradient": 0.00024135095139684652,
+          "lineslope": 8.789666122747876e-13,
+          "nactive": 28,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 12
+        },
+        {
+          "improvement": 0.03884154423228506,
+          "gradient": 0.00024129492992153558,
+          "lineslope": 8.789287558132539e-13,
+          "nactive": 28,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 12
+        }
+      ],
+      "iterations": [
+        4,
+        4
+      ]
+    },
+    {
+      "physics_step": 106,
+      "time": 0.21200000000000016,
+      "qpos_max_difference": 1.0495593713022444e-06,
+      "qvel_max_difference": 0.0001338964575126056,
+      "ncon": [
+        2,
+        2
+      ],
+      "nefc": [
+        8,
+        8
+      ],
+      "qacc_max_difference": 0.02844592238398036,
+      "constraint_force_vector_difference_norm": 3.8574055557333575e-05,
+      "stationarity_residual_norms": [
+        1.2668162945058521e-09,
+        1.2670421434024327e-09
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 1.2959083163827649e-08,
+          "gradient": 2.8093347907617766e-09,
+          "lineslope": 3.561473879686603e-11,
+          "nactive": 8,
+          "nchange": 0,
+          "neval": 2,
+          "nupdate": 8
+        },
+        {
+          "improvement": 1.2962112995429898e-08,
+          "gradient": 2.8098356984544177e-09,
+          "lineslope": 3.562076378876676e-11,
+          "nactive": 8,
+          "nchange": 0,
+          "neval": 2,
+          "nupdate": 8
+        }
+      ],
+      "iterations": [
+        7,
+        7
+      ]
+    },
+    {
+      "physics_step": 120,
+      "time": 0.24000000000000019,
+      "qpos_max_difference": 2.5325630114148012e-06,
+      "qvel_max_difference": 0.0001612977015561512,
+      "ncon": [
+        11,
+        11
+      ],
+      "nefc": [
+        44,
+        44
+      ],
+      "qacc_max_difference": 0.05162250537409818,
+      "constraint_force_vector_difference_norm": 4.459421773504451e-05,
+      "stationarity_residual_norms": [
+        3.6511726640959277e-09,
+        3.662883922340928e-09
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 1.5983754799108993e-07,
+          "gradient": 8.085091014673466e-09,
+          "lineslope": 2.0496137919701888e-17,
+          "nactive": 32,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 32
+        },
+        {
+          "improvement": 1.6036671308524462e-07,
+          "gradient": 8.11102303883244e-09,
+          "lineslope": 2.0460786316813114e-17,
+          "nactive": 32,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 32
+        }
+      ],
+      "iterations": [
+        5,
+        5
+      ]
+    },
+    {
+      "physics_step": 121,
+      "time": 0.2420000000000002,
+      "qpos_max_difference": 2.7233077309896103e-06,
+      "qvel_max_difference": 0.00018318535235906097,
+      "ncon": [
+        11,
+        11
+      ],
+      "nefc": [
+        44,
+        44
+      ],
+      "qacc_max_difference": 0.09008497997797349,
+      "constraint_force_vector_difference_norm": 5.154832999462809e-05,
+      "stationarity_residual_norms": [
+        2.8207810397042413e-05,
+        2.8209542940363736e-05
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 0.0001438100185100768,
+          "gradient": 6.246310367020868e-05,
+          "lineslope": 1.5108888267924024e-13,
+          "nactive": 32,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 28
+        },
+        {
+          "improvement": 0.00014379898329708175,
+          "gradient": 6.246694018514422e-05,
+          "lineslope": 1.5103642097131637e-13,
+          "nactive": 32,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 28
+        }
+      ],
+      "iterations": [
+        4,
+        4
+      ]
+    },
+    {
+      "physics_step": 131,
+      "time": 0.2620000000000002,
+      "qpos_max_difference": 4.9632889117523504e-06,
+      "qvel_max_difference": 0.00020888550667308436,
+      "ncon": [
+        10,
+        10
+      ],
+      "nefc": [
+        40,
+        40
+      ],
+      "qacc_max_difference": 0.060761673877095745,
+      "constraint_force_vector_difference_norm": 7.851434335679707e-05,
+      "stationarity_residual_norms": [
+        2.690293902531795e-09,
+        2.6904880304634478e-09
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 2.7441991604208992e-08,
+          "gradient": 2.7344245926631383e-09,
+          "lineslope": 3.2329939188887246e-11,
+          "nactive": 24,
+          "nchange": 0,
+          "neval": 2,
+          "nupdate": 20
+        },
+        {
+          "improvement": 2.745025629393378e-08,
+          "gradient": 2.7355923990317657e-09,
+          "lineslope": 3.234285800540011e-11,
+          "nactive": 24,
+          "nchange": 0,
+          "neval": 2,
+          "nupdate": 20
+        }
+      ],
+      "iterations": [
+        5,
+        5
+      ]
+    },
+    {
+      "physics_step": 132,
+      "time": 0.2640000000000002,
+      "qpos_max_difference": 5.241009453704759e-06,
+      "qvel_max_difference": 0.00026664812734189525,
+      "ncon": [
+        11,
+        12
+      ],
+      "nefc": [
+        44,
+        48
+      ],
+      "qacc_max_difference": 373.40464351690184,
+      "constraint_force_vector_difference_norm": 0.7469922507816122,
+      "stationarity_residual_norms": [
+        1.4597449117586718e-08,
+        7.592413423697222e-05
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 1.20237144615887e-07,
+          "gradient": 3.232451721389796e-08,
+          "lineslope": 8.874767412601783e-11,
+          "nactive": 40,
+          "nchange": 0,
+          "neval": 2,
+          "nupdate": 28
+        },
+        {
+          "improvement": 0.00046751914937171493,
+          "gradient": 0.00016812601718911517,
+          "lineslope": 7.292286569672053e-12,
+          "nactive": 44,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 36
+        }
+      ],
+      "iterations": [
+        7,
+        8
+      ]
+    },
+    {
+      "physics_step": 133,
+      "time": 0.2660000000000002,
+      "qpos_max_difference": 0.00030508266634805825,
+      "qvel_max_difference": 0.15266379419810938,
+      "ncon": [
+        13,
+        13
+      ],
+      "nefc": [
+        52,
+        52
+      ],
+      "qacc_max_difference": 81.5075925795386,
+      "constraint_force_vector_difference_norm": 0.27999193961731855,
+      "stationarity_residual_norms": [
+        1.034518400517729e-06,
+        1.034073663180813e-05
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 4.792172412139018e-06,
+          "gradient": 2.290825509864703e-06,
+          "lineslope": 5.407023352574376e-15,
+          "nactive": 48,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 44
+        },
+        {
+          "improvement": 5.241308154861467e-05,
+          "gradient": 2.2898406635526236e-05,
+          "lineslope": 1.5486193466365325e-12,
+          "nactive": 48,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 44
+        }
+      ],
+      "iterations": [
+        6,
+        6
+      ]
+    },
+    {
+      "physics_step": 150,
+      "time": 0.3000000000000002,
+      "qpos_max_difference": 0.0017038126137716159,
+      "qvel_max_difference": 0.0692411963547368,
+      "ncon": [
+        15,
+        15
+      ],
+      "nefc": [
+        60,
+        60
+      ],
+      "qacc_max_difference": 328.50453006205635,
+      "constraint_force_vector_difference_norm": 0.041798363779024135,
+      "stationarity_residual_norms": [
+        6.233927703813165e-06,
+        2.2447531871194926e-08
+      ],
+      "last_solver_stats": [
+        {
+          "improvement": 5.598912924342092e-05,
+          "gradient": 1.3803997765699726e-05,
+          "lineslope": 1.091084227672601e-15,
+          "nactive": 60,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 28
+        },
+        {
+          "improvement": 4.260816750760552e-07,
+          "gradient": 4.9706295771372087e-08,
+          "lineslope": 1.3597689733899282e-17,
+          "nactive": 60,
+          "nchange": 0,
+          "neval": 3,
+          "nupdate": 28
+        }
+      ],
+      "iterations": [
+        4,
+        4
+      ]
+    }
+  ],
+  "interpretation": {
+    "iteration_cap_exhaustion_not_observed": true,
+    "large_first_state_branch_follows_loaded_contact_manifold_difference": true,
+    "tighter_constraint_or_collision_convergence_not_tested": true,
+    "continuum_contact_physics_or_solver_independence_not_established": true,
+    "solver_final_stop_reason_not_public": true,
+    "global_trace_scaled_residual_is_not_the_island_solver_stopping_field": true
+  }
+}

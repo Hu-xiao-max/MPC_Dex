@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0092_cyl_ms_s123_from89/run.py", line 1220, in <module>
+    main()
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0092_cyl_ms_s123_from89/run.py", line 961, in main
+    ec_source = EnvConfig(**src_env); metadata = validate_checkpoint(D / 'initial.pt', ec_source)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0092_cyl_ms_s123_from89/source/mpc_dex/contracts.py", line 61, in validate_checkpoint
+    raise ValueError('Checkpoint environment/action contract mismatch; geometry transfer requires an explicit adaptation path')
+ValueError: Checkpoint environment/action contract mismatch; geometry transfer requires an explicit adaptation path

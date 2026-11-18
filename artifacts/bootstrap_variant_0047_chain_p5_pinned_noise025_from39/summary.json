@@ -1,0 +1,97 @@
+{
+  "status": "complete_sac_stage",
+  "learning_started": true,
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 957,
+    "online_policy_interactions": 2000,
+    "physical_prefix_controls": 4386,
+    "warmup_assisted_completed_episodes": 256,
+    "warmup_assisted_force_successes": 59,
+    "online_assisted_completed_episodes": 431,
+    "online_assisted_force_successes": 66,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 2000,
+    "warmup_raw_reward_sum": 3087.836137659122,
+    "online_raw_reward_sum": -4937.489972550495,
+    "warmup_episodes_by_prefix": {
+      "5": 82,
+      "6+noise": 64,
+      "7+noise": 58,
+      "8+noise": 52
+    },
+    "warmup_force_successes_by_prefix": {
+      "5": 2,
+      "6+noise": 12,
+      "7+noise": 14,
+      "8+noise": 31
+    },
+    "online_episodes_by_prefix": {
+      "5": 123,
+      "6+noise": 108,
+      "7+noise": 93,
+      "8+noise": 107
+    },
+    "online_force_successes_by_prefix": {
+      "5": 3,
+      "6+noise": 2,
+      "7+noise": 4,
+      "8+noise": 57
+    },
+    "handoff_terminated_before_policy": 0
+  },
+  "runtime": {
+    "torch": "2.14.0+cu130",
+    "mujoco": "3.14.0",
+    "numpy": "2.4.6",
+    "python": "3.11.15 (main, Jun 23 2026, 15:19:43) [Clang 22.1.3 ]",
+    "device": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "threads": 1,
+    "interop_threads": 1,
+    "tf32": false,
+    "matmul_precision": "highest",
+    "frozen_execution_manifest_sha256": "376b30e9c108f3d7d41f3b4866f1cd1ec7d4782281ecb0968a88583541b8fbb4"
+  },
+  "alpha_frozen": false,
+  "alpha_override": null,
+  "demonstration_rows": 4,
+  "inherited_learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 1000,
+    "online_updates": 4000
+  },
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 1500,
+    "online_updates": 6000
+  },
+  "unfinished_last_suffix": false,
+  "prefix_set": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "primary_prefix_controls": 5,
+  "actor_bc_lambda": 100.0,
+  "actor_bc_rows": "first_k",
+  "actor_on_demonstration_states": true,
+  "handoff_noise_sigma": 0.025,
+  "handoff_noise_prefixes": [
+    6,
+    7,
+    8
+  ],
+  "pretrain_offline_fraction": 0.3,
+  "online_offline_fraction": 0.3,
+  "eligible_for_primitive": false,
+  "main_mpc_dataset_eligible": false,
+  "trajectory_exported": false,
+  "reward_divisor": 200.0,
+  "wall_seconds": 617.5289516060147,
+  "caveat": "Reward/entropy units remain those of SAC0001; inherited learned alpha is not reset. Warm-up calibration pools rows of all collected prefixes; only the held-out prefix-6 set is comparable across variants."
+}

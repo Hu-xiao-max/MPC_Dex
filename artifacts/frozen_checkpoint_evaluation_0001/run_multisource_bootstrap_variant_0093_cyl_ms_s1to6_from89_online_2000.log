@@ -1,0 +1,1 @@
+{"variant": "bootstrap_variant_0093_cyl_ms_s1to6_from89", "checkpoint": "online_2000", "s1": "60/150 det 2/5", "s1_holdout": "0/90", "s2": "48/150 det 2/5", "s2_holdout": "0/90", "s3": "60/150 det 3/5", "s3_holdout": "4/90", "s4": "18/150 det 1/5", "s4_holdout": "0/90", "s5": "1/150 det 0/5", "s5_holdout": "0/90", "s6": "3/150 det 0/5", "s6_holdout": "3/90", "wall": 385.2}

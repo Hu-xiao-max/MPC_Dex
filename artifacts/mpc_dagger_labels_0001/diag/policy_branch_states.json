@@ -1,0 +1,181 @@
+{
+ "seed_195_s1": [
+  {
+   "step": "handoff",
+   "fingers": 2,
+   "palm": 0.0,
+   "contactless": 0.0,
+   "height": -0.017118971004276142
+  },
+  {
+   "step": "policy1",
+   "ended": false,
+   "failure": null,
+   "l2_to_recorded": 2.8002219200134277,
+   "max_abs": 0.9985550045967102,
+   "fingers": 3,
+   "palm": 0.0,
+   "contactless": 0.0,
+   "height": -0.008245263483753552,
+   "finite_costs": 0,
+   "diag_keys": [
+    "backend",
+    "candidate_physics_steps",
+    "candidates",
+    "early_termination_implemented",
+    "evaluated_physics_steps",
+    "initial_palm_support_violation",
+    "invalid",
+    "joint_target_execution",
+    "max_target_mapping_delta_radians",
+    "native_boundary_fallback_candidates",
+    "native_build",
+    "palm_support_constraint"
+   ]
+  },
+  {
+   "step": "policy2",
+   "ended": true,
+   "failure": "palm_support",
+   "l2_to_recorded": null,
+   "max_abs": 0.9998296499252319,
+   "fingers": 2,
+   "palm": 0.0,
+   "contactless": 0.0,
+   "height": -0.012977178534947252
+  }
+ ],
+ "seed_196_s1": [
+  {
+   "step": "handoff",
+   "fingers": 3,
+   "palm": 0.0,
+   "contactless": 0.0,
+   "height": -0.00388198109436068
+  },
+  {
+   "step": "policy1",
+   "ended": false,
+   "failure": null,
+   "l2_to_recorded": 4.081750869750977,
+   "max_abs": 0.987298309803009,
+   "fingers": 0,
+   "palm": 0.0,
+   "contactless": 0.02800000000000001,
+   "height": 0.01703336040058938,
+   "finite_costs": 0,
+   "diag_keys": [
+    "backend",
+    "candidate_physics_steps",
+    "candidates",
+    "early_termination_implemented",
+    "evaluated_physics_steps",
+    "initial_palm_support_violation",
+    "invalid",
+    "joint_target_execution",
+    "max_target_mapping_delta_radians",
+    "native_boundary_fallback_candidates",
+    "native_build",
+    "palm_support_constraint"
+   ]
+  },
+  {
+   "step": "policy2",
+   "ended": true,
+   "failure": "drop",
+   "l2_to_recorded": null,
+   "max_abs": 0.9996656179428101,
+   "fingers": 0,
+   "palm": 0.0,
+   "contactless": 0.12800000000000009,
+   "height": 0.011912329303188043
+  }
+ ],
+ "seed_194_s3": [
+  {
+   "step": "handoff",
+   "fingers": 2,
+   "palm": 0.0,
+   "contactless": 0.0,
+   "height": 0.0047002175634303445
+  },
+  {
+   "step": "policy1",
+   "ended": false,
+   "failure": null,
+   "l2_to_recorded": 3.7712008953094482,
+   "max_abs": 0.9849544763565063,
+   "fingers": 4,
+   "palm": 0.0,
+   "contactless": 0.0,
+   "height": 0.005134541745854116,
+   "finite_costs": 16,
+   "diag_keys": [
+    "backend",
+    "candidate_physics_steps",
+    "candidates",
+    "early_termination_implemented",
+    "evaluated_physics_steps",
+    "initial_palm_support_violation",
+    "invalid",
+    "joint_target_execution",
+    "max_target_mapping_delta_radians",
+    "native_boundary_fallback_candidates",
+    "native_build",
+    "palm_support_constraint"
+   ]
+  },
+  {
+   "step": "policy2",
+   "ended": false,
+   "failure": null,
+   "l2_to_recorded": 2.831737518310547,
+   "max_abs": 0.9979274868965149,
+   "fingers": 3,
+   "palm": 0.0,
+   "contactless": 0.0,
+   "height": 0.009331053147785325,
+   "finite_costs": 112,
+   "diag_keys": [
+    "backend",
+    "candidate_physics_steps",
+    "candidates",
+    "early_termination_implemented",
+    "evaluated_physics_steps",
+    "initial_palm_support_violation",
+    "invalid",
+    "joint_target_execution",
+    "max_target_mapping_delta_radians",
+    "native_boundary_fallback_candidates",
+    "native_build",
+    "palm_support_constraint"
+   ]
+  },
+  {
+   "step": "policy3",
+   "ended": false,
+   "failure": null,
+   "l2_to_recorded": 2.5581278800964355,
+   "max_abs": 0.9980831742286682,
+   "fingers": 2,
+   "palm": 0.0,
+   "contactless": 0.0,
+   "height": 0.011951812773369139,
+   "finite_costs": 103,
+   "diag_keys": [
+    "backend",
+    "candidate_physics_steps",
+    "candidates",
+    "early_termination_implemented",
+    "evaluated_physics_steps",
+    "initial_palm_support_violation",
+    "invalid",
+    "joint_target_execution",
+    "max_target_mapping_delta_radians",
+    "native_boundary_fallback_candidates",
+    "native_build",
+    "palm_support_constraint"
+   ]
+  }
+ ]
+}

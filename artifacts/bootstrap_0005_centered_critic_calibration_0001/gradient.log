@@ -1,0 +1,105 @@
+{
+  "status": "complete",
+  "no_updates": true,
+  "observations": "Same256 actual pre-update observations for every probe",
+  "actions": "Same256 actual executed actions, reproduced with saved initial RNG and sequential trainer-shaped actor.sample calls",
+  "interpretation": "Frozen loss derivative magnitudes only; no claim about physically correct action direction.",
+  "results": [
+    {
+      "label": "original_initial",
+      "checkpoint_sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937",
+      "all_executed_actions_bitexact": true,
+      "groups": {
+        "trunk": {
+          "entropy_gradient_l2": 1.1979008913040161,
+          "negative_q_gradient_l2": 2.978883743286133,
+          "combined_gradient_l2": 4.14339017868042
+        },
+        "mean_head": {
+          "entropy_gradient_l2": 0.616856038570404,
+          "negative_q_gradient_l2": 0.7478761076927185,
+          "combined_gradient_l2": 1.015170693397522
+        },
+        "log_std_head": {
+          "entropy_gradient_l2": 0.7439415454864502,
+          "negative_q_gradient_l2": 0.004295369144529104,
+          "combined_gradient_l2": 0.7433183789253235
+        }
+      },
+      "negative_q_action_gradient_l2": 0.017253773286938667,
+      "negative_q_action_gradient_mean_abs": 0.00019730490748770535
+    },
+    {
+      "label": "centered_initial",
+      "checkpoint_sha256": "5e8e1104879309b5e2b6d3a50660fd672124ac6182db38570b91c0f19875ea4b",
+      "all_executed_actions_bitexact": true,
+      "groups": {
+        "trunk": {
+          "entropy_gradient_l2": 1.1979008913040161,
+          "negative_q_gradient_l2": 2.978883743286133,
+          "combined_gradient_l2": 4.14339017868042
+        },
+        "mean_head": {
+          "entropy_gradient_l2": 0.616856038570404,
+          "negative_q_gradient_l2": 0.7478761076927185,
+          "combined_gradient_l2": 1.015170693397522
+        },
+        "log_std_head": {
+          "entropy_gradient_l2": 0.7439415454864502,
+          "negative_q_gradient_l2": 0.004295369144529104,
+          "combined_gradient_l2": 0.7433183789253235
+        }
+      },
+      "negative_q_action_gradient_l2": 0.017253773286938667,
+      "negative_q_action_gradient_mean_abs": 0.00019730490748770535
+    },
+    {
+      "label": "uncentered_500",
+      "checkpoint_sha256": "4dcc2aa7caeebc84652ba41ff6100d5f78807d59bcc967e6b734db199911eaac",
+      "all_executed_actions_bitexact": true,
+      "groups": {
+        "trunk": {
+          "entropy_gradient_l2": 1.1979008913040161,
+          "negative_q_gradient_l2": 0.006134091876447201,
+          "combined_gradient_l2": 1.199842929840088
+        },
+        "mean_head": {
+          "entropy_gradient_l2": 0.616856038570404,
+          "negative_q_gradient_l2": 0.007297139149159193,
+          "combined_gradient_l2": 0.6191847324371338
+        },
+        "log_std_head": {
+          "entropy_gradient_l2": 0.7439415454864502,
+          "negative_q_gradient_l2": 0.0005612035747617483,
+          "combined_gradient_l2": 0.7444328665733337
+        }
+      },
+      "negative_q_action_gradient_l2": 0.0009523290791548789,
+      "negative_q_action_gradient_mean_abs": 8.84058499650564e-06
+    },
+    {
+      "label": "centered_500",
+      "checkpoint_sha256": "611d85c52effb2325e209168e0545a3e2633877409beaf0572ac358b0594d818",
+      "all_executed_actions_bitexact": true,
+      "groups": {
+        "trunk": {
+          "entropy_gradient_l2": 1.1979008913040161,
+          "negative_q_gradient_l2": 2332.072998046875,
+          "combined_gradient_l2": 2330.917724609375
+        },
+        "mean_head": {
+          "entropy_gradient_l2": 0.616856038570404,
+          "negative_q_gradient_l2": 558.2804565429688,
+          "combined_gradient_l2": 558.1222534179688
+        },
+        "log_std_head": {
+          "entropy_gradient_l2": 0.7439415454864502,
+          "negative_q_gradient_l2": 5.694981575012207,
+          "combined_gradient_l2": 6.198910236358643
+        }
+      },
+      "negative_q_action_gradient_l2": 17.422298431396484,
+      "negative_q_action_gradient_mean_abs": 0.09137777984142303
+    }
+  ]
+}

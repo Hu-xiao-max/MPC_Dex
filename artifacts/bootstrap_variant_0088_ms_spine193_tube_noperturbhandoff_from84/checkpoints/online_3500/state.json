@@ -1,0 +1,242 @@
+{
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 1134,
+    "online_policy_interactions": 3500,
+    "physical_prefix_controls": 7251,
+    "warmup_assisted_completed_episodes": 248,
+    "warmup_assisted_force_successes": 69,
+    "online_assisted_completed_episodes": 532,
+    "online_assisted_force_successes": 168,
+    "warmup_cold_completed_episodes": 8,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 20,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 3500,
+    "warmup_raw_reward_sum": 9762.12265560822,
+    "online_raw_reward_sum": 31496.17991681535,
+    "warmup_episodes_by_prefix": {
+      "s1": 23,
+      "s2": 27,
+      "s3": 22,
+      "s4": 20,
+      "s5": 11,
+      "s6": 18,
+      "s7": 11,
+      "s8": 18,
+      "k0": 7,
+      "k1": 6,
+      "k2": 12,
+      "k3": 4,
+      "k4": 13,
+      "k5": 8,
+      "k6": 7,
+      "k7": 10,
+      "k8": 9,
+      "k9": 3,
+      "k10": 5,
+      "k11": 7,
+      "k12": 7,
+      "k13": 8
+    },
+    "warmup_force_successes_by_prefix": {
+      "s1": 17,
+      "s2": 14,
+      "s3": 7,
+      "s4": 3,
+      "s5": 1,
+      "s6": 0,
+      "s7": 0,
+      "s8": 0,
+      "k0": 0,
+      "k1": 0,
+      "k2": 0,
+      "k3": 0,
+      "k4": 0,
+      "k5": 0,
+      "k6": 0,
+      "k7": 0,
+      "k8": 0,
+      "k9": 0,
+      "k10": 5,
+      "k11": 7,
+      "k12": 7,
+      "k13": 8
+    },
+    "online_episodes_by_prefix": {
+      "s1": 50,
+      "s2": 57,
+      "s3": 60,
+      "s4": 57,
+      "s5": 34,
+      "s6": 24,
+      "s7": 29,
+      "s8": 29,
+      "k0": 18,
+      "k1": 24,
+      "k2": 8,
+      "k3": 9,
+      "k4": 16,
+      "k5": 14,
+      "k6": 11,
+      "k7": 14,
+      "k8": 17,
+      "k9": 22,
+      "k10": 19,
+      "k11": 17,
+      "k12": 8,
+      "k13": 15
+    },
+    "online_force_successes_by_prefix": {
+      "s1": 42,
+      "s2": 26,
+      "s3": 16,
+      "s4": 11,
+      "s5": 4,
+      "s6": 0,
+      "s7": 3,
+      "s8": 0,
+      "k0": 0,
+      "k1": 0,
+      "k2": 0,
+      "k3": 0,
+      "k4": 0,
+      "k5": 1,
+      "k6": 1,
+      "k7": 2,
+      "k8": 0,
+      "k9": 7,
+      "k10": 15,
+      "k11": 17,
+      "k12": 8,
+      "k13": 15
+    },
+    "handoff_terminated_before_policy": 0
+  },
+  "label": "online_3500",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 7000,
+    "online_updates": 39250
+  },
+  "normalized_alpha": 0.013504358939826488,
+  "raw_equivalent_alpha": 2.7008717879652977,
+  "replay_rows": 4634,
+  "replay_pending_slot": 4633,
+  "unfinished_episode": true,
+  "inherited_learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 6500,
+    "online_updates": 35750
+  },
+  "optimizer_steps": {
+    "critic": [
+      46250
+    ],
+    "actor": [
+      39250
+    ],
+    "alpha": [
+      39250
+    ]
+  },
+  "replay_policy": "fresh-stage-only online replay plus immutable 2060-row demonstration buffer (demonstrations_replay.npz); pretraining batches 0.30 / online batches 0.30 demonstration share; inherited open replay archived without insertion",
+  "auxiliary_rng_states": {
+    "prefix_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 121203959461230420257891458993128317247,
+        "inc": 277787571960139062779747645871512500609
+      },
+      "has_uint32": 1,
+      "uinteger": 3307464620
+    },
+    "demonstration_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 8865886653928575395871190404490368878,
+        "inc": 15442456584747541523676618091130341711
+      },
+      "has_uint32": 0,
+      "uinteger": 2047042241
+    },
+    "handoff_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 132327820196608648539748663834619376082,
+        "inc": 176180653771163372256357156175804293123
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    }
+  },
+  "automatic_resume_supported": false,
+  "complete_update_boundary": true,
+  "environment_rng": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 95376830783351682500486580248632280039,
+      "inc": 332724090758049132448979897138935081983
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "environment_scalars": {
+    "start_angle": 0.30039143450192685,
+    "_last_wrapped": -1.3846017218565325,
+    "angle": 4.599169300788556,
+    "previous_angle": 4.404912014388767,
+    "steps": 13,
+    "rotations": 0,
+    "dwell": 0,
+    "goal": 0.19125740212220071,
+    "heading_error": 0.19125740212220071,
+    "_episode_over": false,
+    "_contactless_seconds": 0.0,
+    "_goal_rewarded": false,
+    "retained_angle": 4.599169300788556,
+    "previous_retained_angle": 4.404912014388767,
+    "retained_positive_step": 0.23546759910754161,
+    "retained_negative_step": -0.041210312707751336,
+    "_palm_support_violation": false,
+    "_peak_palm_support_force": 0.0
+  },
+  "observer_state": {
+    "last_time": 1.300000000000001,
+    "initial_time": 0.0,
+    "previous_quaternion": [
+      -0.9955162144621146,
+      -0.017468045134726995,
+      -0.09295719318117816,
+      0.0011377073745678463
+    ],
+    "initial_axis": [
+      0.008228909977884457,
+      0.9999609152058732,
+      0.0032331256096483152
+    ],
+    "initial_position": [
+      0.027748841103997047,
+      0.0005038665071184322,
+      0.2779894478599656
+    ],
+    "raw_angle": 4.599169300788555,
+    "qualified_angle": 4.599169300788555,
+    "force_qualified_angle": 4.599169300788555,
+    "contactless_seconds": 0.0,
+    "independent_drop": false,
+    "initial_palm_normal_force": 0.0,
+    "initial_palm_support_violation": false,
+    "palm_support_violation": false,
+    "gravity_norm": 9.81,
+    "up": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "weight": 1.4715
+  },
+  "metrics_bytes": 12342710,
+  "metrics_sha256": "72f39f10ff7bcf4732979274130dd1e63ea23cfcd813b96c9e1d1c627b4c2d84"
+}

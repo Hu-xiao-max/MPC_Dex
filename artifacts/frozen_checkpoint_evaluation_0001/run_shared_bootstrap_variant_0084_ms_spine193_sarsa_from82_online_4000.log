@@ -1,0 +1,15 @@
+{"k": 0, "det": false, "stoch": "0/30", "max_angle": 1.332}
+{"k": 1, "det": false, "stoch": "0/30", "max_angle": 1.282}
+{"k": 2, "det": false, "stoch": "0/30", "max_angle": 1.4}
+{"k": 3, "det": false, "stoch": "0/30", "max_angle": 1.244}
+{"k": 4, "det": false, "stoch": "0/30", "max_angle": 3.38}
+{"k": 5, "det": false, "stoch": "0/30", "max_angle": 4.125}
+{"k": 6, "det": false, "stoch": "0/30", "max_angle": 4.176}
+{"k": 7, "det": false, "stoch": "0/30", "max_angle": 6.327}
+{"k": 8, "det": false, "stoch": "0/30", "max_angle": 5.821}
+{"k": 9, "det": true, "stoch": "1/30", "max_angle": 6.483}
+{"k": 10, "det": true, "stoch": "30/30", "max_angle": 7.814}
+{"k": 11, "det": true, "stoch": "30/30", "max_angle": 7.408}
+{"k": 12, "det": true, "stoch": "30/30", "max_angle": 6.559}
+{"k": 13, "det": true, "stoch": "30/30", "max_angle": 6.527}
+{"variant": "bootstrap_variant_0084_ms_spine193_sarsa_from82", "checkpoint": "online_4000", "k0": "0/30", "k1": "0/30", "k2": "0/30", "k3": "0/30", "k4": "0/30", "k5": "0/30", "k6": "0/30", "k7": "0/30", "k8": "0/30", "k9": "1/30 D", "k10": "30/30 D", "k11": "30/30 D", "k12": "30/30 D", "k13": "30/30 D", "wall": 549.9}

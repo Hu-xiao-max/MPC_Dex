@@ -1,0 +1,20 @@
+{
+  "purpose": "Visualization of previously recorded independent physics audits",
+  "inputs": {
+    "policy": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_clock_actor_recovery_0001/inputs/clock_actor/independent_audit/physics.npz",
+      "sha256": "e181fbdfb953f783145a055778594860ef020de8ea6ddea8d11c1a2a686dd1d0"
+    },
+    "recovery": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_clock_actor_recovery_0001/recovery/independent_audit/physics.npz",
+      "sha256": "d097c86e5c331abd5506cb6e894cecd0c0eeff50849c2f1619bf51083ebd86c2"
+    }
+  },
+  "common_prefix_physics_rows_bitexact": 450,
+  "new_physics_steps": 0,
+  "new_optimizer_updates": 0,
+  "source_policy_has_sac_updates": false,
+  "mpc_assisted_recovery_is_policy_success": false,
+  "matplotlib_version": "3.10.8",
+  "numpy_version": "2.4.6"
+}

@@ -1,0 +1,49 @@
+{
+  "environment": {
+    "object_shape": "hexagonal",
+    "object_diameter": 0.04,
+    "object_length": 0.12,
+    "object_mass": 0.15,
+    "object_friction": 0.5,
+    "finger_friction": 0.8,
+    "timestep": 0.002,
+    "control_seconds": 0.1,
+    "horizon_steps": 100,
+    "terminate_on_success": true,
+    "joint_kp": 3.0,
+    "joint_kv": 0.1,
+    "max_joint_force": 0.7,
+    "contact_loss_seconds": 0.05,
+    "success_axis_tolerance_degrees": 30.0,
+    "palm_support_force_tolerance": 1e-06,
+    "palm_height": 0.35,
+    "initial_object_position": [
+      0.055,
+      0.0,
+      0.075
+    ],
+    "initial_hand_q": [
+      0.0,
+      0.7,
+      0.7,
+      0.5,
+      0.0,
+      0.7,
+      0.7,
+      0.5,
+      0.0,
+      0.7,
+      0.7,
+      0.5,
+      1.2,
+      0.3,
+      0.5,
+      0.5
+    ],
+    "initial_grasp": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_head_0001/source/assets/initial_grasp_40mm.npz",
+    "task": "rotation",
+    "goal_heading": null,
+    "render_width": 640,
+    "render_height": 480
+  }
+}

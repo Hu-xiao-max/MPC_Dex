@@ -1,0 +1,16 @@
+{
+  "source": "artifacts/rotation_probe/orbit_1.4_s8_p1_f0.8.npz",
+  "sample_period_seconds": 0.002,
+  "target_period_seconds": 0.1,
+  "final_angle": 1.0323459445087073,
+  "minimum_contacts_every_physics_step": 1,
+  "maximum_tilt_every_physics_step": 0.05034221532817975,
+  "forbidden_support": false,
+  "dropped": false,
+  "terminated": false,
+  "applied_object_force_max": 0.0,
+  "applied_generalized_force_max": 0.0,
+  "replay_angle_error": 0.0,
+  "completed_targets": 110,
+  "total_targets": 110
+}

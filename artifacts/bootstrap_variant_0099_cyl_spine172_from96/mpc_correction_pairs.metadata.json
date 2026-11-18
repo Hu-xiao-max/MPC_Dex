@@ -1,0 +1,52 @@
+{
+  "kind": "diagnostic-prefix6-handoff-mpc-correction-supervised-pairs",
+  "rows": 5,
+  "prefix_rows_excluded": 6,
+  "strict_force_success_of_source_episode": true,
+  "data_sha256": "911561b96b913c2e5a757861d165db2f538cec29c7aaff73411513a6a312e37a",
+  "source_trajectory": "recovery/transitions.npz",
+  "source_trajectory_sha256": "072c8633a22213120887f611e143a2e49a68a8ed202daa66bb3eec2d9b130fb2",
+  "observation_dimension": 60,
+  "policy_interface": {
+    "kind": "absolute_joint_target"
+  },
+  "no_next_actions_fabricated": true,
+  "not_a_cold_reset_replay_dataset": true,
+  "source_prefix_sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f",
+  "production_eligible": false,
+  "main_demonstrations": 0,
+  "SAC_successes": 0,
+  "learning_updates": 0,
+  "row_provenance": [
+    {
+      "row": 0,
+      "source_transition_row_0based": 6,
+      "source_control_1based": 7,
+      "origin": "actually_executed_corrected_native_mpc"
+    },
+    {
+      "row": 1,
+      "source_transition_row_0based": 7,
+      "source_control_1based": 8,
+      "origin": "actually_executed_corrected_native_mpc"
+    },
+    {
+      "row": 2,
+      "source_transition_row_0based": 8,
+      "source_control_1based": 9,
+      "origin": "actually_executed_corrected_native_mpc"
+    },
+    {
+      "row": 3,
+      "source_transition_row_0based": 9,
+      "source_control_1based": 10,
+      "origin": "actually_executed_corrected_native_mpc"
+    },
+    {
+      "row": 4,
+      "source_transition_row_0based": 10,
+      "source_control_1based": 11,
+      "origin": "actually_executed_corrected_native_mpc"
+    }
+  ]
+}

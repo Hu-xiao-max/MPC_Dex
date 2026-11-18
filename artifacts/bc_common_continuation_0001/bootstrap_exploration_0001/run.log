@@ -1,0 +1,5 @@
+{"seed": 17021, "steps": 6, "success": false, "drop": true, "palm": false, "max_force_qualified_angle": 0.06369560292780717}
+{"seed": 17022, "steps": 5, "success": false, "drop": true, "palm": false, "max_force_qualified_angle": 0.11258671763934677}
+{"seed": 17023, "steps": 3, "success": false, "drop": false, "palm": true, "max_force_qualified_angle": 0.22514891973975285}
+{"seed": 17024, "steps": 3, "success": false, "drop": false, "palm": true, "max_force_qualified_angle": 0.7441571777179823}
+{"seed": 17025, "steps": 7, "success": false, "drop": true, "palm": false, "max_force_qualified_angle": 1.3494828197625253}

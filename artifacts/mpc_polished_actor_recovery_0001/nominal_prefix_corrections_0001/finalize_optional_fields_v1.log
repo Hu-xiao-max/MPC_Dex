@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/mpc_polished_actor_recovery_0001/nominal_prefix_corrections_0001/finalize.py", line 81, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/mpc_polished_actor_recovery_0001/nominal_prefix_corrections_0001/finalize.py", line 43, in main
+    for key in keys:assert np.array_equal(executed[key][:6],teacher[key][:6]),key
+                                                            ~~~~~~~^^^^^
+KeyError: 'terminated'

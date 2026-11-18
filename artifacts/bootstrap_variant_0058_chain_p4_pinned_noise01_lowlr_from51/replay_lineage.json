@@ -1,0 +1,9 @@
+{
+  "policy": "fresh-stage-only online replay plus separate immutable demonstration buffer",
+  "inherited_rows_imported": 0,
+  "prior_replay_sha256": "095bba13cc6818c4d68abdf17722cc759aab47f981b0ed6bfa295d7af80d051e",
+  "prior_rows": 2668,
+  "prior_final_open_row_preserved": true,
+  "prior_row_closed_or_linked_to_new_reset": false,
+  "inherited_checkpoint": "bootstrap_variant_0051_chain_p5_pinned_noise01_from39/checkpoints/online_1750"
+}

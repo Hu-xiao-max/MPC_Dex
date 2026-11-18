@@ -1,0 +1,52 @@
+{
+  "type": "AssertionError",
+  "message": "",
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 1026,
+    "online_policy_interactions": 67,
+    "physical_prefix_controls": 1580,
+    "warmup_assisted_completed_episodes": 256,
+    "warmup_assisted_force_successes": 54,
+    "online_assisted_completed_episodes": 15,
+    "online_assisted_force_successes": 3,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 67,
+    "warmup_raw_reward_sum": 2186.8719162726748,
+    "online_raw_reward_sum": 99.87625326028007,
+    "warmup_episodes_by_prefix": {
+      "4": 63,
+      "5+noise": 56,
+      "6+noise": 46,
+      "7+noise": 47,
+      "8+noise": 44
+    },
+    "warmup_force_successes_by_prefix": {
+      "4": 0,
+      "5+noise": 2,
+      "6+noise": 8,
+      "7+noise": 18,
+      "8+noise": 26
+    },
+    "online_episodes_by_prefix": {
+      "4": 5,
+      "5+noise": 3,
+      "6+noise": 2,
+      "7+noise": 1,
+      "8+noise": 4
+    },
+    "online_force_successes_by_prefix": {
+      "4": 0,
+      "5+noise": 0,
+      "6+noise": 0,
+      "7+noise": 0,
+      "8+noise": 3
+    },
+    "handoff_terminated_before_policy": 7
+  },
+  "current_state_not_published_as_committed": true
+}

@@ -1,0 +1,10 @@
+{
+  "argv": [
+    ".venv/bin/python",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/run.py"
+  ],
+  "cwd": "/home/autel001/code/mpc_dex",
+  "environment": {
+    "PYTHONHASHSEED": "0"
+  }
+}

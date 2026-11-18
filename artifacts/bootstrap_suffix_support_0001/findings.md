@@ -1,0 +1,7 @@
+# Fixed eight-control prefix support probe
+
+All five prescribed stochastic suffix trials complete the remaining turn on their first policy-controlled action, with final force-qualified angles 6.630436–6.705911 radians. They use the unchanged bootstrap0005 initial actor at latent std .05, with BC12000 and zero SAC updates. At handoff the trace has 5.20801449 force-qualified radians and still needs 1.07517 radians. These are eight recorded controls plus one stochastic policy control, not cold-start policy successes or a robustness-rate estimate.
+
+The deterministic control reproduces the original nine-control successful trace bit-for-bit. Every trial physically executes its prefix from cold reset, and all eight prefix transition/integration fields and 400 physics samples match the archived source exactly. Sampling starts only at the actual handoff; no policy RNG draws are assigned to the recorded prefix. Full boundary states, raw and qualified progress, contact forces, sampled actions/log probabilities, and RNG states are preserved. All six episodes truly terminate under the original force/no-palm/drop criteria.
+
+No model, reward, physics, observation, success threshold or learner parameter changed. No MPC queries, optimization, post-success hold or fabricated reset states were used. The result supports testing a reverse-prefix learning curriculum: it supplies actual positive stochastic suffix experience under a noise scale that failed from cold reset. Main-stage data and frozen-policy primitive eligibility remain unchanged.

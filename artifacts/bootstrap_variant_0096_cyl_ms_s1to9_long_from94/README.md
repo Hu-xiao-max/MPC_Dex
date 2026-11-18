@@ -1,0 +1,10 @@
+# Variant 96 `cyl_ms_s1to9_long_from94`; prepared, not executed
+
+Long-suffix emphasis from 0094 online_4000: lengths 1-9 weighted 1:1:1:2:2:2:2:2:2 over all 54 sources, so two thirds of the episodes hand off at least four controls before the end and, for the 8-9-control sources (seeds 172, 116, 174), a suffix of 8-9 is the cold reset itself; evaluated on those three shortest sources plus the held-out trio, with the cold reset at every checkpoint. Tests whether the frontier can be pushed through the short sources, whose intolerant prefix is three to six decisions.
+
+Settings that differ from the SAC0004 baseline: `{"prefix_set": [8], "demonstration_include_mpc": false, "actor_bc_lambda": 100.0, "online_policy_interactions": 4000, "checkpoints": [500, 1000, 1500, 2000, 2500, 3000, 3500, 4000], "initial_from": ["bootstrap_variant_0094_cyl_ms_s1to6_all_from89", "online_4000"], "actor_lr_override": 0.0001, "eval_stochastic_trials": 3, "actor_bc_std_target": 0.01, "prefix_sources": ["cylinder_demonstrations_0001", 120], "suffix_set": [1, 2, 3, 4, 5, 6, 7, 8, 9], "demonstration_suffix_rows": 9, "suffix_weights": [1, 1, 1, 2, 2, 2, 2, 2, 2], "holdout_source_names": ["seed_153", "seed_154", "seed_155"], "eval_source_names": ["seed_172", "seed_116", "seed_174"], "env_overrides": {"object_shape": "circular"}, "eval_recorded_prefixes": false, "eval_cold_every_point": true}`. Everything else (SAC0001 checkpoint, 256 warm-up episodes, entropy-free demonstration pretraining, 500 + 2,000 updates, evaluation schedule) matches SAC0004; see `protocol.json`. Seeds match SAC0004 (warm-up and on-policy pretraining draws reproduce it exactly when the collection settings coincide). Template: `bootstrap_variant_template_0001`.
+
+```bash
+.venv/bin/python -m pytest -q artifacts/bootstrap_variant_0096_cyl_ms_s1to9_long_from94/test_protocol.py
+MUJOCO_GL=egl .venv/bin/python artifacts/bootstrap_variant_0096_cyl_ms_s1to9_long_from94/run.py --execute > artifacts/bootstrap_variant_0096_cyl_ms_s1to9_long_from94/run.log 2>&1
+```

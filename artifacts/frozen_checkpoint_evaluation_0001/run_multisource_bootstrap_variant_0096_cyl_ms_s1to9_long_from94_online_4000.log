@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/frozen_checkpoint_evaluation_0001/evaluate_multisource.py", line 35, in <module>
+    ep = r.Episode(env, prefix, sources[name]['source'], sources[name]['physics'], protocol['physical_reset_seed'], f'{name}_s{s}', seed, protocol['raw_reward_divisor'])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0096_cyl_ms_s1to9_long_from94/run.py", line 581, in __init__
+    assert exact >= 0
+           ^^^^^^^^^^
+AssertionError

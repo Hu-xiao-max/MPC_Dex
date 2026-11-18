@@ -1,0 +1,71 @@
+{
+  "aggregate_controls_2_to_4": {
+    "controls": [
+      2,
+      3,
+      4
+    ],
+    "relative_l2_taylor_error": 0.008910027510185018,
+    "squared_change_explained": 0.9999206114097677,
+    "group_projection_fraction_of_predicted_change": {
+      "joint_position": -0.004112148940968239,
+      "object_position": -1.087827827153402e-05,
+      "object_quaternion": 0.010218490607072979,
+      "principal_angles": 0.02478673637063428,
+      "joint_velocity": 0.929307559602578,
+      "object_velocity": 0.04084885614199851,
+      "previous_action": -0.0010386155030440236
+    },
+    "group_projection_fraction_of_actual_change": {
+      "joint_position": -0.004102281633637167,
+      "object_position": -9.843528012875217e-06,
+      "object_quaternion": 0.010162183738905092,
+      "principal_angles": 0.024654989467256947,
+      "joint_velocity": 0.927286112808641,
+      "object_velocity": 0.041203074405077006,
+      "previous_action": -0.0011685565360146654
+    }
+  },
+  "aggregate_controls_5_to_8": {
+    "controls": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "relative_l2_taylor_error": 0.3046859089748252,
+    "squared_change_explained": 0.9071664968721845,
+    "group_projection_fraction_of_predicted_change": {
+      "joint_position": 0.02749447430010997,
+      "object_position": -0.0018857766305972578,
+      "object_quaternion": 0.1126266253813062,
+      "principal_angles": 0.12002210028124878,
+      "joint_velocity": 0.72785068267516,
+      "object_velocity": 0.013871425207834309,
+      "previous_action": 2.0468784938018786e-05
+    },
+    "group_projection_fraction_of_actual_change": {
+      "joint_position": 0.03180132627403692,
+      "object_position": -0.002678653633878228,
+      "object_quaternion": 0.11327141352817954,
+      "principal_angles": 0.11817215861258078,
+      "joint_velocity": 0.579374809374108,
+      "object_velocity": -0.013304960782271969,
+      "previous_action": -0.0001475138490938643
+    }
+  },
+  "derivative_check": {
+    "control": 8,
+    "central_difference_fraction": 0.015625,
+    "relative_l2_error": 0.00021942617796454056,
+    "note": "Arithmetic check using policy evaluations only, no new physical transitions"
+  }
+}
+{"control": 1, "observed_teacher_action_error_max_abs": 1.4901161193847656e-07, "linear_action_change_max_abs": 0.0, "relative_l2_taylor_error": null, "squared_change_explained": null, "cosine_alignment": null}
+{"control": 2, "observed_teacher_action_error_max_abs": 9.775161743164062e-06, "linear_action_change_max_abs": 9.611498974137697e-06, "relative_l2_taylor_error": 0.01564451249022483, "squared_change_explained": 0.9997552492289432, "cosine_alignment": 0.9999598710710109}
+{"control": 3, "observed_teacher_action_error_max_abs": 2.238154411315918e-05, "linear_action_change_max_abs": 2.2390090881070797e-05, "relative_l2_taylor_error": 0.00484670617219009, "squared_change_explained": 0.9999765094392804, "cosine_alignment": 0.9999890189037538}
+{"control": 4, "observed_teacher_action_error_max_abs": 1.9729137420654297e-05, "linear_action_change_max_abs": 1.9792925236405967e-05, "relative_l2_taylor_error": 0.005456696019503016, "squared_change_explained": 0.9999702244685508, "cosine_alignment": 0.9999863709054159}
+{"control": 5, "observed_teacher_action_error_max_abs": 0.0001049041748046875, "linear_action_change_max_abs": 0.00010494761636667665, "relative_l2_taylor_error": 0.002005463731454125, "squared_change_explained": 0.9999959781152218, "cosine_alignment": 0.9999980403325347}
+{"control": 6, "observed_teacher_action_error_max_abs": 0.0009226202964782715, "linear_action_change_max_abs": 0.0009131138277928873, "relative_l2_taylor_error": 0.009636311896832096, "squared_change_explained": 0.999907141493027, "cosine_alignment": 0.9999893132335631}
+{"control": 7, "observed_teacher_action_error_max_abs": 0.000661998987197876, "linear_action_change_max_abs": 0.0006631852805756466, "relative_l2_taylor_error": 0.0012759332811641314, "squared_change_explained": 0.999998371994262, "cosine_alignment": 0.999999470784042}
+{"control": 8, "observed_teacher_action_error_max_abs": 0.011350750923156738, "linear_action_change_max_abs": 0.010216417462480346, "relative_l2_taylor_error": 0.3056746866545991, "squared_change_explained": 0.9065629859386126, "cosine_alignment": 0.9567746096320654}

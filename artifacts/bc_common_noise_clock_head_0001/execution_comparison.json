@@ -1,0 +1,556 @@
+{
+  "status": "complete",
+  "candidate_sha256": "fbc238202c323ecf6e2b97e5bd5c764ff085489260e3f083474bc608ef154715",
+  "nominal_source_path": "/home/autel001/code/mpc_dex/artifacts/bc_common_noise_clock_0001/inputs/common/nominal/transitions.npz",
+  "nominal_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+  "actual_transition_sha256": "b3bf0e5b410a2555eb0be2a5e4141176c9a2cfcaef82063cb976972e8b5cc0bb",
+  "saved_actions_recomputed_bitexact": true,
+  "new_physics_steps": 0,
+  "new_optimizer_steps": 0,
+  "actual_inference": "CUDA float32 singleton, one thread, TF32off",
+  "step2": {
+    "control_one_based": 2,
+    "elapsed_seconds": 0.10000000000000007,
+    "observation_l2": 3.7551633423688056e-06,
+    "observation_max_abs": 2.371496520936489e-06,
+    "clock_difference": 0.0,
+    "action_l2": 1.2527614567866148e-06,
+    "action_max_abs": 6.556510925292969e-07,
+    "latent_l2": 1.8143349382111313e-06,
+    "latent_max_abs": 9.5367431640625e-07,
+    "post_control_qpos_max_abs": 5.597678170987663e-07,
+    "post_control_qvel_max_abs": 2.5663160211131242e-05,
+    "observation_groups": {
+      "q": {
+        "l2": 3.5308321865715115e-07,
+        "max_abs": 2.384185791015625e-07
+      },
+      "position": {
+        "l2": 4.139297338566051e-09,
+        "max_abs": 3.725290298461914e-09
+      },
+      "quaternion": {
+        "l2": 1.1581423110465007e-07,
+        "max_abs": 1.1012889444828033e-07
+      },
+      "angles": {
+        "l2": 4.819594323635101e-08,
+        "max_abs": 4.819594323635101e-08
+      },
+      "qvel": {
+        "l2": 3.7110326939486803e-06,
+        "max_abs": 2.371496520936489e-06
+      },
+      "object_velocity": {
+        "l2": 4.6602106273374845e-08,
+        "max_abs": 3.398236003704369e-08
+      },
+      "previous_action": {
+        "l2": 4.3231428134493686e-07,
+        "max_abs": 2.086162567138672e-07
+      },
+      "clock_seconds": {
+        "l2": 0.0,
+        "max_abs": 0.0
+      }
+    },
+    "actual_raw_mean": [
+      -0.4593467712402344,
+      -0.2235453724861145,
+      0.7733416557312012,
+      0.28418228030204773,
+      0.6111372709274292,
+      -0.2352633774280548,
+      0.73959881067276,
+      1.1604340076446533,
+      1.0806958675384521,
+      -0.5980508327484131,
+      2.2975571155548096,
+      -0.17801016569137573,
+      2.2975571155548096,
+      -0.2675127685070038,
+      0.4587417244911194,
+      0.15066176652908325
+    ],
+    "actual_action": [
+      -0.4295516908168793,
+      -0.2198946177959442,
+      0.6488683819770813,
+      0.2767714262008667,
+      0.5449272394180298,
+      -0.2310168445110321,
+      0.6289027333259583,
+      0.8211812973022461,
+      0.79345703125,
+      -0.5356611609458923,
+      0.9799998998641968,
+      -0.17615346610546112,
+      0.9799998998641968,
+      -0.2613089382648468,
+      0.42905816435813904,
+      0.14953207969665527
+    ],
+    "nominal_latent_target": [
+      -0.4593459963798523,
+      -0.22354549169540405,
+      0.773341715335846,
+      0.28418290615081787,
+      0.6111367344856262,
+      -0.2352636754512787,
+      0.7395992875099182,
+      1.1604349613189697,
+      1.080695390701294,
+      -0.5980513095855713,
+      2.2975573539733887,
+      -0.1780097484588623,
+      2.2975573539733887,
+      -0.26751285791397095,
+      0.4587417244911194,
+      0.150661900639534
+    ],
+    "nominal_action": [
+      -0.42955103516578674,
+      -0.21989473700523376,
+      0.6488683819770813,
+      0.27677199244499207,
+      0.5449267625808716,
+      -0.23101714253425598,
+      0.6289029717445374,
+      0.82118159532547,
+      0.7934567928314209,
+      -0.5356614589691162,
+      0.9799998998641968,
+      -0.1761530488729477,
+      0.9799998998641968,
+      -0.26130902767181396,
+      0.42905813455581665,
+      0.14953219890594482
+    ]
+  },
+  "first9_rows": [
+    {
+      "control_one_based": 1,
+      "elapsed_seconds": 0.0,
+      "observation_l2": 0.0,
+      "observation_max_abs": 0.0,
+      "clock_difference": 0.0,
+      "action_l2": 4.3231428134493686e-07,
+      "action_max_abs": 2.086162567138672e-07,
+      "latent_l2": 4.5692549636424605e-07,
+      "latent_max_abs": 2.2351741790771484e-07,
+      "post_control_qpos_max_abs": 2.3714999497492784e-07,
+      "post_control_qvel_max_abs": 4.01687080934859e-06,
+      "observation_groups": {
+        "q": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "position": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "quaternion": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "angles": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "qvel": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "object_velocity": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "previous_action": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        },
+        "clock_seconds": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    {
+      "control_one_based": 2,
+      "elapsed_seconds": 0.10000000000000007,
+      "observation_l2": 3.7551633423688056e-06,
+      "observation_max_abs": 2.371496520936489e-06,
+      "clock_difference": 0.0,
+      "action_l2": 1.2527614567866148e-06,
+      "action_max_abs": 6.556510925292969e-07,
+      "latent_l2": 1.8143349382111313e-06,
+      "latent_max_abs": 9.5367431640625e-07,
+      "post_control_qpos_max_abs": 5.597678170987663e-07,
+      "post_control_qvel_max_abs": 2.5663160211131242e-05,
+      "observation_groups": {
+        "q": {
+          "l2": 3.5308321865715115e-07,
+          "max_abs": 2.384185791015625e-07
+        },
+        "position": {
+          "l2": 4.139297338566051e-09,
+          "max_abs": 3.725290298461914e-09
+        },
+        "quaternion": {
+          "l2": 1.1581423110465007e-07,
+          "max_abs": 1.1012889444828033e-07
+        },
+        "angles": {
+          "l2": 4.819594323635101e-08,
+          "max_abs": 4.819594323635101e-08
+        },
+        "qvel": {
+          "l2": 3.7110326939486803e-06,
+          "max_abs": 2.371496520936489e-06
+        },
+        "object_velocity": {
+          "l2": 4.6602106273374845e-08,
+          "max_abs": 3.398236003704369e-08
+        },
+        "previous_action": {
+          "l2": 4.3231428134493686e-07,
+          "max_abs": 2.086162567138672e-07
+        },
+        "clock_seconds": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    {
+      "control_one_based": 3,
+      "elapsed_seconds": 0.20000000000000015,
+      "observation_l2": 1.1302188864134609e-05,
+      "observation_max_abs": 5.7220458984375e-06,
+      "clock_difference": 0.0,
+      "action_l2": 4.256623046721727e-07,
+      "action_max_abs": 2.980232238769531e-07,
+      "latent_l2": 1.6641335020439287e-06,
+      "latent_max_abs": 9.5367431640625e-07,
+      "post_control_qpos_max_abs": 0.001703971622454059,
+      "post_control_qvel_max_abs": 0.06924263305040979,
+      "observation_groups": {
+        "q": {
+          "l2": 1.1481632372793996e-06,
+          "max_abs": 5.364418029785156e-07
+        },
+        "position": {
+          "l2": 4.614029345808637e-08,
+          "max_abs": 4.583853296935558e-08
+        },
+        "quaternion": {
+          "l2": 4.435442705791359e-07,
+          "max_abs": 3.725290298461914e-07
+        },
+        "angles": {
+          "l2": 4.792666526972992e-07,
+          "max_abs": 4.76837158203125e-07
+        },
+        "qvel": {
+          "l2": 1.1143996561205065e-05,
+          "max_abs": 5.7220458984375e-06
+        },
+        "object_velocity": {
+          "l2": 4.843208712582702e-07,
+          "max_abs": 4.759058356285095e-07
+        },
+        "previous_action": {
+          "l2": 1.2527614567866148e-06,
+          "max_abs": 6.556510925292969e-07
+        },
+        "clock_seconds": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    {
+      "control_one_based": 4,
+      "elapsed_seconds": 0.3000000000000002,
+      "observation_l2": 0.02382781093132834,
+      "observation_max_abs": 0.017039239406585693,
+      "clock_difference": 0.0,
+      "action_l2": 0.0001400974034947171,
+      "action_max_abs": 9.235739707946777e-05,
+      "latent_l2": 0.00021492118772094626,
+      "latent_max_abs": 0.0001170039176940918,
+      "post_control_qpos_max_abs": 0.0019916933133375114,
+      "post_control_qvel_max_abs": 0.030951591719663912,
+      "observation_groups": {
+        "q": {
+          "l2": 0.002352969624184733,
+          "max_abs": 0.0017038583755493164
+        },
+        "position": {
+          "l2": 8.408182892794611e-05,
+          "max_abs": 6.305426359176636e-05
+        },
+        "quaternion": {
+          "l2": 0.001971204894448303,
+          "max_abs": 0.0016230680048465729
+        },
+        "angles": {
+          "l2": 0.0020065308183771567,
+          "max_abs": 0.00200653076171875
+        },
+        "qvel": {
+          "l2": 0.023528754524521862,
+          "max_abs": 0.017039239406585693
+        },
+        "object_velocity": {
+          "l2": 0.0008407934677717928,
+          "max_abs": 0.000630594789981842
+        },
+        "previous_action": {
+          "l2": 4.256623046721727e-07,
+          "max_abs": 2.980232238769531e-07
+        },
+        "clock_seconds": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    {
+      "control_one_based": 5,
+      "elapsed_seconds": 0.4000000000000003,
+      "observation_l2": 0.025195425725090544,
+      "observation_max_abs": 0.01587498188018799,
+      "clock_difference": 0.0,
+      "action_l2": 0.00011453511958370213,
+      "action_max_abs": 8.14199447631836e-05,
+      "latent_l2": 0.00030995746338456783,
+      "latent_max_abs": 0.0001933574676513672,
+      "post_control_qpos_max_abs": 0.021401941665147292,
+      "post_control_qvel_max_abs": 1.2305905493508598,
+      "observation_groups": {
+        "q": {
+          "l2": 0.003564406761525352,
+          "max_abs": 0.0018200874328613281
+        },
+        "position": {
+          "l2": 7.580695966496749e-05,
+          "max_abs": 6.370246410369873e-05
+        },
+        "quaternion": {
+          "l2": 0.0021868060392764895,
+          "max_abs": 0.0016872286796569824
+        },
+        "angles": {
+          "l2": 0.0044924978021685,
+          "max_abs": 0.004019498825073242
+        },
+        "qvel": {
+          "l2": 0.02441930298366121,
+          "max_abs": 0.01587498188018799
+        },
+        "object_velocity": {
+          "l2": 0.0009011617865826808,
+          "max_abs": 0.0006656162440776825
+        },
+        "previous_action": {
+          "l2": 0.0001400974034947171,
+          "max_abs": 9.235739707946777e-05
+        },
+        "clock_seconds": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    {
+      "control_one_based": 6,
+      "elapsed_seconds": 0.5000000000000003,
+      "observation_l2": 0.4163824120866039,
+      "observation_max_abs": 0.21153593063354492,
+      "clock_difference": 0.0,
+      "action_l2": 0.00013181940473850875,
+      "action_max_abs": 0.00011044740676879883,
+      "latent_l2": 0.0004021308330804047,
+      "latent_max_abs": 0.00022459030151367188,
+      "post_control_qpos_max_abs": 0.06084745416129933,
+      "post_control_qvel_max_abs": 3.081387485706193,
+      "observation_groups": {
+        "q": {
+          "l2": 0.041619425855665644,
+          "max_abs": 0.021401941776275635
+        },
+        "position": {
+          "l2": 0.001332542097341325,
+          "max_abs": 0.0009920410811901093
+        },
+        "quaternion": {
+          "l2": 0.018226104325992844,
+          "max_abs": 0.012802481651306152
+        },
+        "angles": {
+          "l2": 0.0313414464935949,
+          "max_abs": 0.031082630157470703
+        },
+        "qvel": {
+          "l2": 0.4124657188120929,
+          "max_abs": 0.21153593063354492
+        },
+        "object_velocity": {
+          "l2": 0.014067741729896983,
+          "max_abs": 0.01055745780467987
+        },
+        "previous_action": {
+          "l2": 0.00011453511958370213,
+          "max_abs": 8.14199447631836e-05
+        },
+        "clock_seconds": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    {
+      "control_one_based": 7,
+      "elapsed_seconds": 0.6000000000000004,
+      "observation_l2": 0.874315411432141,
+      "observation_max_abs": 0.7816274166107178,
+      "clock_difference": 0.0,
+      "action_l2": 0.0002868361288977274,
+      "action_max_abs": 0.00019280612468719482,
+      "latent_l2": 0.0008026194591960296,
+      "latent_max_abs": 0.00038051605224609375,
+      "post_control_qpos_max_abs": 0.08815369587770383,
+      "post_control_qvel_max_abs": 3.155771365570615,
+      "observation_groups": {
+        "q": {
+          "l2": 0.07358582474047572,
+          "max_abs": 0.06084740161895752
+        },
+        "position": {
+          "l2": 0.007354432085798331,
+          "max_abs": 0.006368648260831833
+        },
+        "quaternion": {
+          "l2": 0.05312884292541515,
+          "max_abs": 0.044650062918663025
+        },
+        "angles": {
+          "l2": 0.06128089815378745,
+          "max_abs": 0.052813053131103516
+        },
+        "qvel": {
+          "l2": 0.8651997126100037,
+          "max_abs": 0.7816274166107178
+        },
+        "object_velocity": {
+          "l2": 0.061724345989216535,
+          "max_abs": 0.05480249226093292
+        },
+        "previous_action": {
+          "l2": 0.00013181940473850875,
+          "max_abs": 0.00011044740676879883
+        },
+        "clock_seconds": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    {
+      "control_one_based": 8,
+      "elapsed_seconds": 0.7000000000000005,
+      "observation_l2": 1.952860247653294,
+      "observation_max_abs": 1.4900115728378296,
+      "clock_difference": 0.0,
+      "action_l2": 0.00182645574520246,
+      "action_max_abs": 0.0008988380432128906,
+      "latent_l2": 0.004414972280504563,
+      "latent_max_abs": 0.0025157928466796875,
+      "post_control_qpos_max_abs": 0.8120934497379514,
+      "post_control_qvel_max_abs": 2.859969603083104,
+      "observation_groups": {
+        "q": {
+          "l2": 0.15882562919864626,
+          "max_abs": 0.08815371990203857
+        },
+        "position": {
+          "l2": 0.008210881697128544,
+          "max_abs": 0.005946091812802479
+        },
+        "quaternion": {
+          "l2": 0.09956718531127065,
+          "max_abs": 0.09573782980442047
+        },
+        "angles": {
+          "l2": 0.25027329014750666,
+          "max_abs": 0.24463748931884766
+        },
+        "qvel": {
+          "l2": 1.927199335414205,
+          "max_abs": 1.4900115728378296
+        },
+        "object_velocity": {
+          "l2": 0.041502324608499085,
+          "max_abs": 0.029669854789972305
+        },
+        "previous_action": {
+          "l2": 0.0002868361288977274,
+          "max_abs": 0.00019280612468719482
+        },
+        "clock_seconds": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    {
+      "control_one_based": 9,
+      "elapsed_seconds": 0.8000000000000006,
+      "observation_l2": 2.7559801901742054,
+      "observation_max_abs": 1.7209341526031494,
+      "clock_difference": 0.0,
+      "action_l2": 0.003293270293530542,
+      "action_max_abs": 0.0020383894443511963,
+      "latent_l2": 0.0052278260484845095,
+      "latent_max_abs": 0.0022787153720855713,
+      "post_control_qpos_max_abs": 0.584134275150509,
+      "post_control_qvel_max_abs": 2.6006299735118357,
+      "observation_groups": {
+        "q": {
+          "l2": 0.2043972721010273,
+          "max_abs": 0.10706079006195068
+        },
+        "position": {
+          "l2": 0.01690539660855766,
+          "max_abs": 0.016513027250766754
+        },
+        "quaternion": {
+          "l2": 0.8140702832893858,
+          "max_abs": 0.5837534070014954
+        },
+        "angles": {
+          "l2": 1.7382352714106768,
+          "max_abs": 1.7209341526031494
+        },
+        "qvel": {
+          "l2": 1.954315655344796,
+          "max_abs": 1.0626518726348877
+        },
+        "object_velocity": {
+          "l2": 0.22324307330454327,
+          "max_abs": 0.22070586681365967
+        },
+        "previous_action": {
+          "l2": 0.00182645574520246,
+          "max_abs": 0.0008988380432128906
+        },
+        "clock_seconds": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    }
+  ],
+  "interpretation": "Comparison uses actual decisions at matching elapsed times. Zero clock differences do not imply equal physical states. Small initial command errors and later state-dependent command divergence remain; no robustness inference."
+}

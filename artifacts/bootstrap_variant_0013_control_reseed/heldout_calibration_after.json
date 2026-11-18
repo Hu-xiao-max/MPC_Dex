@@ -1,0 +1,35 @@
+{
+  "role": "heldout-phase-baseline",
+  "terminal_rows": 15,
+  "target_normalized_mean": -0.36457711958156935,
+  "target_raw_mean": -72.91542391631387,
+  "critic_normalized_bias": [
+    -0.027950800426136395,
+    -0.038757404652566656
+  ],
+  "critic_normalized_rmse": [
+    0.08238520547820322,
+    0.08647079552777724
+  ],
+  "critic_raw_equivalent_rmse": [
+    16.477041095640644,
+    17.294159105555448
+  ],
+  "inherited_online_alpha_normalized": 0.00030585992499254644,
+  "pretrain_alpha_normalized": 0.0001,
+  "pretrain_target_normalized_mean": -0.3534867960150433,
+  "pretrain_alpha_critic_normalized_bias": [
+    -0.03904112399266242,
+    -0.049847728219092675
+  ],
+  "pretrain_alpha_critic_normalized_rmse": [
+    0.0870386818288895,
+    0.09387252969252965
+  ],
+  "pretrain_alpha_critic_raw_equivalent_rmse": [
+    17.4077363657779,
+    18.774505938505932
+  ],
+  "alpha_convention": "Both empirical targets exclude current-action entropy and terminal bootstrap; pretrain_alpha fields match inherited SoftSARSA config, other fields use frozen inherited learned online alpha. Cross-alpha differences are not solely fitting error.",
+  "evaluation_rows_used_for_training": false
+}

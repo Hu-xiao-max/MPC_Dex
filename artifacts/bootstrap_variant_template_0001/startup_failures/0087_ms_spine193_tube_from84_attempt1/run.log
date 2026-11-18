@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0087_ms_spine193_tube_from84/run.py", line 1203, in <module>
+    main()
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0087_ms_spine193_tube_from84/run.py", line 983, in main
+    sources = load_sources(protocol)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0087_ms_spine193_tube_from84/run.py", line 239, in load_sources
+    assert item.get('policy_rows') == int((origin == 'policy').sum()) and origin[-1] == 'mpc'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,395 @@
+{
+  "schema_version": 2,
+  "kind": "diagnostic-prefix-assisted-suffix-sac-variant",
+  "variant": "chain_p5_pinned_noise025_from39",
+  "variant_index": 47,
+  "hypothesis": "Pinned recipe at obs5/obs6 from the confirmed checkpoint plus sigma .025 noise on the final control of prefixes 6-8: the pinned chained stages keep prefix 6 but stay at 2-4/10 at prefix 5, while the wave-2 chained stage with noise on 6-8 reached the best prefix-5 rate (11/30), consistent with control 6 landing near rather than on the recorded prefix-6 state.",
+  "status": "frozen-ready-for-separate-explicit-execution",
+  "settings_differing_from_sac0004": {
+    "prefix_controls": 5,
+    "prefix_set": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "demonstration_include_mpc": false,
+    "demonstration_recorded_rows": [
+      5,
+      9
+    ],
+    "actor_bc_lambda": 100.0,
+    "actor_bc_rows": "first_k",
+    "handoff_noise_sigma": 0.025,
+    "handoff_noise_prefixes": [
+      6,
+      7,
+      8
+    ],
+    "checkpoints": [
+      250,
+      500,
+      750,
+      1000,
+      1250,
+      1500,
+      1750,
+      2000
+    ],
+    "initial_from": [
+      "bootstrap_variant_0039_bc_first_l100_std01",
+      "online_2000"
+    ],
+    "actor_bc_first_rows": 2,
+    "eval_stochastic_trials": 10,
+    "actor_bc_std_target": 0.01
+  },
+  "prefix_controls": 5,
+  "prefix_set": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "prefix_seed": 17493,
+  "prefix_sampling": "uniform over prefix_set per episode with a dedicated numpy Generator (row-level mix is episode-length weighted); every exact prefix control is physically replayed and verified bit-for-bit against the recorded source",
+  "handoff_noise_sigma": 0.025,
+  "handoff_noise_prefixes": [
+    6,
+    7,
+    8
+  ],
+  "handoff_noise_seed": 17494,
+  "handoff_noise": "when sigma > 0 and the sampled prefix is listed, the final prefix control is executed as recorded action + N(0, sigma^2) per dimension in normalized action space, clipped to [-1, 1], from the bit-exact recorded state before it; it is a non-policy row, never appended to any buffer, and its episode is counted under key \"<prefix>+noise\"",
+  "fixed_prefix_stage": false,
+  "automatic_stage_advancement": false,
+  "motivation": "SAC0003/SAC0004 (fixed prefix 6, 8 demonstration rows mixed 30/70) produced no frozen success and lost prefix-7 retention by online 500 even with correct demonstration values. Read-only probes (review workflow, 2026-09-25) found the MPC continuation unfinishable by this actor, a narrow success basin around recorded control 7, and critic-led forgetting without prefix-7 rows. This family varies named factors from the same SAC0001 checkpoint.",
+  "seed_matched_to_sac0004": true,
+  "train_seed": 17491,
+  "demonstration_seed": 17492,
+  "physical_reset_seed": 42,
+  "warmup_complete_episodes": 256,
+  "learning_gate": "Verified off-policy demonstration rows in the fixed demonstration buffer; warm-up policy successes are recorded but not required.",
+  "demonstration_include_mpc": false,
+  "demonstration_recorded_rows": [
+    5,
+    9
+  ],
+  "demonstration_rows": 4,
+  "demonstration_rows_mpc": 0,
+  "demonstration_rows_recorded": 4,
+  "demonstration_episodes": 1,
+  "demonstration_sources": {
+    "mpc": "excluded",
+    "recorded": "prefix_transitions.npz rows 5-8: recorded BC-origin source controls 6-9, terminal success"
+  },
+  "demonstration_and_prefix_overlap": "demonstration rows [5, 6, 7] are the same source transitions that prefix replay re-executes for prefixes above 5; they are present once in the demonstration buffer and never appended to the online replay",
+  "collected_prefix_rows_policy": "physically replayed and perturbed prefix controls of collected episodes are never appended to the online replay and never count as policy interactions",
+  "pretrain_offline_fraction": 0.3,
+  "online_offline_fraction": 0.3,
+  "mixing": "runner mixed_batch_with_origin reproducing mpc_dex.replay.sample_mixed draw order with a per-row origin mask: pretraining 77 demonstration + 179 online rows per batch; online 77 + 179",
+  "actor_bc_lambda": 100.0,
+  "actor_bc_rows": "first_k",
+  "actor_bc_first_rows": 2,
+  "actor_lr_override": null,
+  "actor_bc_std_target": 0.01,
+  "actor_bc_std_lambda": 100.0,
+  "actor_bc_std_term": "lambda_std * MSE(actor log-std at the supervised rows, log(0.01)) added to the same actor step",
+  "actor_bc_term": "lambda * MSE(actor mean(obs), atanh(clip(action, +-(1 - .02)))) over the first 2 rows of each demonstration episode, added to the single SAC actor step",
+  "actor_lr": "inherited 3e-4",
+  "actor_on_demonstration_states": true,
+  "actor_loss_rows": "all batch rows",
+  "pretrain": "entropy_masked_pretrain_step on mixed batches: on-policy rows unchanged SoftSARSA with pretrain alpha .0001; demonstration rows entropy-free; sampled raw rewards / 200",
+  "online": "runner_update replicating SACAgent.update call-for-call (bit-identical when actor_bc_lambda=0 and actor_on_demonstration_states=true) with the protocol additions above; sampled raw rewards / 200; one update per actual policy step; cumulative LR ramp",
+  "critic_pretrain_updates": 500,
+  "online_policy_interactions": 2000,
+  "checkpoints": [
+    250,
+    500,
+    750,
+    1000,
+    1250,
+    1500,
+    1750,
+    2000
+  ],
+  "inherited_checkpoint": "bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000",
+  "prior_replay_lineage": {
+    "rows": 2812,
+    "open_episode": true
+  },
+  "inherited_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 1000,
+    "online_updates": 4000
+  },
+  "expected_final_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 1500,
+    "online_updates": 6000
+  },
+  "inherited_optimizer_steps": {
+    "critic": 5000,
+    "actor": 4000,
+    "alpha": 4000
+  },
+  "expected_final_optimizer_steps": {
+    "critic": 7500,
+    "actor": 6000,
+    "alpha": 6000
+  },
+  "alpha_freeze": false,
+  "alpha_override": null,
+  "temperature": "learned from the inherited value",
+  "batch_size": 256,
+  "utd": 1,
+  "replay_capacity": 100000,
+  "raw_reward_divisor": 200.0,
+  "inherited_learned_alpha": 0.0003881131124217063,
+  "pretrain_alpha": 0.0001,
+  "actor_warmup_updates": 5000,
+  "eval_deterministic_seed": 42,
+  "eval_prefixes": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "eval_stochastic_seeds_by_prefix": {
+    "5": [
+      17611,
+      17612,
+      17613,
+      17614,
+      17615,
+      22051,
+      22052,
+      22053,
+      22054,
+      22055
+    ],
+    "6": [
+      17501,
+      17502,
+      17503,
+      17504,
+      17505,
+      22061,
+      22062,
+      22063,
+      22064,
+      22065
+    ],
+    "7": [
+      17521,
+      17522,
+      17523,
+      17524,
+      17525,
+      22071,
+      22072,
+      22073,
+      22074,
+      22075
+    ],
+    "8": [
+      17531,
+      17532,
+      17533,
+      17534,
+      17535,
+      22081,
+      22082,
+      22083,
+      22084,
+      22085
+    ]
+  },
+  "eval_noisy_prefixes": [
+    6,
+    7,
+    8
+  ],
+  "eval_noisy_seeds_by_prefix": {
+    "6": [
+      17861,
+      17862,
+      17863,
+      17864,
+      17865
+    ],
+    "7": [
+      17541,
+      17542,
+      17543,
+      17544,
+      17545
+    ],
+    "8": [
+      17551,
+      17552,
+      17553,
+      17554,
+      17555
+    ]
+  },
+  "eval_final_cold_stochastic_seeds": [
+    17511,
+    17512,
+    17513,
+    17514,
+    17515
+  ],
+  "eval_cold_stochastic_every_point": false,
+  "evaluation_points": [
+    "pretraining_baseline",
+    "online_250",
+    "online_500",
+    "online_750",
+    "online_1000",
+    "online_1250",
+    "online_1500",
+    "online_1750",
+    "online_2000"
+  ],
+  "evaluation": "each point: for every prefix in eval_prefixes one deterministic and five stochastic trials; for every noisy prefix five stochastic trials whose final prefix control is perturbed with a Generator seeded by the trial seed; cold deterministic; five cold stochastic trials at the final point (every point when 0 is in prefix_set); evaluations restore training RNG and never enter replay",
+  "physical_horizon_including_prefix": 100,
+  "policy_interface": {
+    "kind": "absolute_joint_target"
+  },
+  "learner_import": "Full exact network, target, optimizer, counter, learned alpha and learned std import from bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000; no resets",
+  "replay": "Fresh empty online replay for actual new-stage policy suffix transitions; separate immutable demonstration buffer; SAC0001 replay copied as lineage only",
+  "prior_open_replay_semantics": "Preserve source open row unchanged; never import, finish, discard in source, or connect it to a new reset",
+  "sampling": "Singleton batch (1,60) CUDA float32 actor.sample; direct sampled log probability; global seed 17491",
+  "demonstration_calibration": "Critic values on the demonstration rows versus entropy-free discounted raw returns / 200, deterministic actor-mean distance to each demonstration episode's first action (flagged when that row is the prefix-6 handoff), actor log density of demonstration actions, at baseline, after pretraining and at each online checkpoint",
+  "normalization_caveat": "Reward/entropy units remain those of SAC0001; inherited learned alpha is not reset. Warm-up calibration pools rows of all collected prefixes; only the held-out prefix-6 set is comparable across variants.",
+  "complete_episode_definition": "Environment terminated or horizon truncated; any truncated return tail remains unknown",
+  "warmup_alpha_for_calibration": 0.0003881131124217063,
+  "pretrain_calibration_alpha_caveat": "Report inherited learned online alpha separately from unchanged .0001 SoftSARSA objective.",
+  "no_trajectory_export": true,
+  "eligible_for_primitive": false,
+  "main_mpc_dataset_eligible": false,
+  "new_bc_updates": 0,
+  "head_refinement": false,
+  "extra_epochs": false,
+  "post_success_continuation": false,
+  "resume_implementation": false,
+  "checkpoint_semantics": "New curriculum stage with fresh reset/replay/RNG; full learner continuation, not exact environment resume",
+  "future_checkpoint_use": "A later trained 60D checkpoint requires a new frozen cold-policy collection; assisted and demonstration-mixed episodes are never primitive evidence.",
+  "template_run_sha256": "6362f73887b216c07b502cf144887f648c445e54eadadf68f57bc131168ef965",
+  "source_bindings": {
+    "source/": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/source",
+      "files": 51,
+      "inherited_execution_manifest_sha256": "9f321326581e50252d13867a21b67a90498f13579079200beef35e9b6a65a70a"
+    },
+    "source_config.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/source_config.json",
+      "sha256": "8177e7272e6da812e01da5cb62b0f0fe2ee241277015268dd802bde5af55d105",
+      "inherited_from": "bootstrap_suffix_sac_0004"
+    },
+    "initial_grasp.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/initial_grasp.npz",
+      "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+      "inherited_from": "bootstrap_suffix_sac_0004"
+    },
+    "prefix_transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_transitions.npz",
+      "sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f",
+      "inherited_from": "bootstrap_suffix_sac_0004"
+    },
+    "prefix_physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_physics.npz",
+      "sha256": "366fb79a431efb8b218d9dc7d6c39730aab9168553c736783f988c14b2a6672e",
+      "inherited_from": "bootstrap_suffix_sac_0004"
+    },
+    "prefix_report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_report.json",
+      "sha256": "1faeeea26d930d16720ee66993a217bc8e1a3404476d0037a51a627658c9b29f",
+      "inherited_from": "bootstrap_suffix_sac_0004"
+    },
+    "mpc_correction_pairs.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_correction_pairs.npz",
+      "sha256": "911561b96b913c2e5a757861d165db2f538cec29c7aaff73411513a6a312e37a",
+      "inherited_from": "bootstrap_suffix_sac_0004"
+    },
+    "mpc_correction_pairs.metadata.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_correction_pairs.metadata.json",
+      "sha256": "44c7da2eb5891c9461d0aeb882c907948458a9c6b661e107c69e643cc9c77a2a",
+      "inherited_from": "bootstrap_suffix_sac_0004"
+    },
+    "mpc_recovery_transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_recovery_transitions.npz",
+      "sha256": "072c8633a22213120887f611e143a2e49a68a8ed202daa66bb3eec2d9b130fb2",
+      "inherited_from": "bootstrap_suffix_sac_0004"
+    },
+    "initial.pt": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000/agent.pt",
+      "sha256": "6d887e03dcf3d6c42ec1ec7a78aa5fd2c66df1ae72e9b483ceb671c9a5913faf",
+      "inherited_from": "bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000"
+    },
+    "initial.pt.metadata.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000/agent.pt.metadata.json",
+      "sha256": "f4ecfb09a755d1b3c750f6048c51d452a90d212c838f4431df3591157f6f9762",
+      "inherited_from": "bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000"
+    },
+    "inherited_state.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000/state.json",
+      "sha256": "0e24a2deeb793de01bbc9a8ac9b4d37089f5e4888c7fd4da0cdd23cdb3aca2a0",
+      "inherited_from": "bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000"
+    },
+    "prior_replay_lineage_only.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000/replay.npz",
+      "sha256": "1c0c2b5f6dfdcd084d8be3af71c5e85d46ea3c8ab156ee6612b38092ad945ae9",
+      "inherited_from": "bootstrap_variant_0039_bc_first_l100_std01/checkpoints/online_2000"
+    },
+    "inputs/inherited_stage/summary.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0039_bc_first_l100_std01/summary.json",
+      "sha256": "418d09a0f47ef19cf9901f68e35c762381151699d9292e9dd5cfc4e430f72b0b"
+    },
+    "inputs/inherited_stage/protocol.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0039_bc_first_l100_std01/protocol.json",
+      "sha256": "dfc2a24895e00df1284a9c59ff799f06c2490eea3afe7713311b2ead6e3f8ea4"
+    },
+    "inputs/inherited_stage/findings.md": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0039_bc_first_l100_std01/findings.md",
+      "absent_at_stamp_time": true
+    },
+    "inputs/sac0004/findings.md": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/findings.md",
+      "sha256": "c777240baab4dcf89dff2de05e6edd86ad80814a157d2392e7d261bdf7e624f4"
+    },
+    "inputs/sac0004/summary.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/summary.json",
+      "sha256": "ee8ba0e1d3c4865e9264b02107bce863b23cb59d561329ee31fca158f6fadbb8"
+    },
+    "inputs/sac0004/protocol.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/protocol.json",
+      "sha256": "bc691749205945309f11ee30cabae5352788e6a5bf95691e2e4c24908fa81d1d"
+    },
+    "run.py": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/run.py",
+      "sha256": "6362f73887b216c07b502cf144887f648c445e54eadadf68f57bc131168ef965",
+      "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+      "pinned": true
+    },
+    "test_protocol.py": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/test_protocol.py",
+      "sha256": "e400c592ab1a7b093b6bd024aa2dfab72efbbe240fd691014adfd8b7955a4a04",
+      "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+      "pinned": true
+    },
+    "inputs/template/prepare.py": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/prepare.py",
+      "sha256": "ce8ed4fd34b460eb2b940d61c0f219134218065664e48cedc95233706ef7004a",
+      "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+      "pinned": false
+    },
+    "inputs/template/README.md": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/README.md",
+      "sha256": "851595ce5af7ef77b321547d9989028d1d49ea814a095386aa315554c589c8e7",
+      "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+      "pinned": false
+    }
+  }
+}

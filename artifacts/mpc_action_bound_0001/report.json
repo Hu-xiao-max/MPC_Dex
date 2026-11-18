@@ -1,0 +1,533 @@
+{
+  "purpose": "exploratory measured-prior MPC diagnostic",
+  "production_eligible": false,
+  "environment_contract": {
+    "action_high": [
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      1.396,
+      1.163,
+      1.644,
+      1.719
+    ],
+    "action_low": [
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      0.263,
+      -0.105,
+      -0.189,
+      -0.162
+    ],
+    "environment": {
+      "contact_loss_seconds": 0.05,
+      "control_seconds": 0.1,
+      "finger_friction": 0.8,
+      "goal_heading": null,
+      "horizon_steps": 900,
+      "initial_hand_q": [
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        1.2,
+        0.3,
+        0.5,
+        0.5
+      ],
+      "initial_object_position": [
+        0.055,
+        0.0,
+        0.075
+      ],
+      "joint_kp": 3.0,
+      "joint_kv": 0.1,
+      "max_joint_force": 0.7,
+      "object_diameter": 0.04,
+      "object_friction": 0.5,
+      "object_length": 0.12,
+      "object_mass": 0.15,
+      "object_shape": "hexagonal",
+      "palm_height": 0.35,
+      "palm_support_force_tolerance": 1e-06,
+      "success_axis_tolerance_degrees": 30.0,
+      "task": "rotation",
+      "terminate_on_success": false,
+      "timestep": 0.002
+    },
+    "environment_source_sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "grasp_sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+    "joint_order": [
+      "ffj0",
+      "ffj1",
+      "ffj2",
+      "ffj3",
+      "mfj0",
+      "mfj1",
+      "mfj2",
+      "mfj3",
+      "rfj0",
+      "rfj1",
+      "rfj2",
+      "rfj3",
+      "thj0",
+      "thj1",
+      "thj2",
+      "thj3"
+    ],
+    "observation": "q16,object_position_in_palm3,object_quaternion_in_palm_wxyz4,principal_angle1,previous_angle1,finite_difference_qvel16,finite_difference_object_vel3,previous_normalized_action16; reorientation appends goal1",
+    "robot_mesh_sha256": {
+      "base_link.stl": "4060e1ae52bca21367e15a1dfab16bc7c2e81849566631b7f55e2cf376b7bc85",
+      "link_0.0.stl": "32b90a6744d472a6ffaee02cbf32eb8a5600b1da0944e86aeb9f53503a9f8ac9",
+      "link_1.0.stl": "e3dfb35b6682f62f18ca6ed0b39cb94ff627b68e0e3373cf7212390574604680",
+      "link_12.0_right.stl": "c5418fc127311eefee1d8ee69dfcfde2157d038286900bee91608d2701b00f13",
+      "link_13.0.stl": "e906896afc078a12c9c377e3a2b07f375583d3b869581f9962030cabc888be29",
+      "link_14.0.stl": "a9e4983e4bff7fc7d868b4965c9865edb2669b946434095703766202b5de01ff",
+      "link_15.0.stl": "bf963adb775b79b27649f4f5dff4ced58ef676ce86cc677de49d3810382d11e0",
+      "link_15.0_tip.stl": "a7147c765d4b6d2eb16fa14bba2e8eceec4a750bc346260893ca02aca1fd7a63",
+      "link_2.0.stl": "9c98477c65b45f5a3de1df0e1b54281da2385f4eafd057d103ab40893771c2d0",
+      "link_3.0.stl": "fe333088176395aa7d8a913aa953d3cd649c4c77753224239b78b2c99e3e314c",
+      "link_3.0_tip.stl": "9c3fa04fea0dfa1257c8a1b02d2b7d982b0d985c1ddda1edf148827944835f39"
+    },
+    "robot_xml_sha256": "cec3efe34be49c8220c23afdae0cfacbce10164a5bc7c34075b6668ee0a862a6",
+    "schema_version": 1,
+    "target": "local-simulation"
+  },
+  "primitive": {
+    "schema_version": 1,
+    "method": "mean_centered_joint_trajectory_pca",
+    "provenance": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_matched40_reference_0001/source/input_trajectory.npz",
+      "source_sha256": "1d8229b86ae66ab986db226199626b3012b12200bbd89e929a200efdc2a1a526",
+      "purpose": "measured coordination prior for bootstrap diagnostic only",
+      "successful_policy": false
+    },
+    "extraction": {
+      "frames": 23,
+      "joints": 16,
+      "units": "radians",
+      "requested_explained_variance": 0.9,
+      "retained_explained_variance": 0.926117314400639,
+      "trajectories_float64_le_sha256": "0af6aa5c4b36a0a75b25f67e203c185ac6fdc1516538c40677f27666eae4fc02"
+    }
+  },
+  "diagnostic_basis": {
+    "mean": [
+      0.0412887838667565,
+      1.208057113366608,
+      1.032459980591452,
+      0.2680343011657989,
+      0.038803328241543734,
+      1.243366116160094,
+      0.845967432167714,
+      0.9194554653516862,
+      0.10881094641088421,
+      1.1052132892889077,
+      0.40427435440505793,
+      -0.10126409811951723,
+      1.361013321776298,
+      0.09498400803001471,
+      1.6980577375084547,
+      0.28983894731255594
+    ],
+    "basis": [
+      [
+        -0.1478089551699117,
+        -0.09642780709316723,
+        -0.01102848118688278,
+        -0.03612581382259337,
+        -0.28849924796743287,
+        0.3010882306578841
+      ],
+      [
+        0.07321140400161247,
+        -0.21993739778353746,
+        -0.020367830539869507,
+        -0.05531312415499277,
+        -0.24510453499426055,
+        0.1054200280420172
+      ],
+      [
+        -0.08722801533746417,
+        0.18412065463695362,
+        -0.39036168484821215,
+        0.4921881225593569,
+        0.17249197328472635,
+        -0.03278712432060305
+      ],
+      [
+        0.49645372204954225,
+        0.141691584259541,
+        0.4956139936603109,
+        -0.0770052643762241,
+        0.25062928110858645,
+        0.46682816295460144
+      ],
+      [
+        -0.14318751366194382,
+        0.004930779021128332,
+        0.0001715972768264001,
+        -0.04481327164639593,
+        -0.40502200679903194,
+        0.1179348390512787
+      ],
+      [
+        0.22715456745091528,
+        -0.1262686582010746,
+        -0.22121214122970553,
+        -0.12704877726273003,
+        -0.17932569587732,
+        0.020027289821481956
+      ],
+      [
+        -0.38184688517485077,
+        -0.08704336096949583,
+        0.054756690914376745,
+        0.529617958905481,
+        0.19830082218902353,
+        0.4675768553127348
+      ],
+      [
+        0.5809364784928043,
+        0.4193510716851725,
+        -0.2286931557169063,
+        0.38704451695129166,
+        -0.1476009652328354,
+        -0.09266002942287309
+      ],
+      [
+        -0.0834240860678289,
+        -0.00616412293710147,
+        -0.4090014101084779,
+        -0.3285127095549918,
+        0.501639619776213,
+        0.0215441468608284
+      ],
+      [
+        0.1040690496068782,
+        -0.3658638476619809,
+        -0.028881463712640533,
+        0.2033743918016498,
+        -0.2937898578041161,
+        -0.17779076425640006
+      ],
+      [
+        -0.2574449610079549,
+        0.6710015489269711,
+        -0.17522861833250072,
+        -0.28493709760798924,
+        -0.29976242181932916,
+        0.24710124700161365
+      ],
+      [
+        -0.17090604192154185,
+        0.1947154435381369,
+        0.2884710705381737,
+        0.09273642524495666,
+        -0.019355446813159424,
+        -0.42158826701256186
+      ],
+      [
+        0.021337035739219832,
+        -0.030398357573640927,
+        0.0011273054538800346,
+        0.09953375752534642,
+        0.022485260117235246,
+        0.2523973631425839
+      ],
+      [
+        -0.032125111374927094,
+        0.05893123035068427,
+        0.06964509582803981,
+        -0.05252803358469055,
+        0.24707947120835239,
+        -0.24064431729922922
+      ],
+      [
+        0.08870801995367321,
+        -0.1480115093376712,
+        -0.20697881646653393,
+        0.09939119987031968,
+        -0.09545454324454782,
+        0.1277683918479703
+      ],
+      [
+        -0.20171352939300144,
+        0.20148561467502019,
+        0.40924991451948917,
+        0.19337128011536825,
+        -0.08922604924361296,
+        -0.16999109660597583
+      ]
+    ],
+    "coefficient_min": [
+      -1.0443447162736443,
+      -1.3370228681971075,
+      -0.9542332967680446,
+      -0.3942968018608186,
+      -0.41417991067210885,
+      -0.5045209150229151
+    ],
+    "coefficient_max": [
+      1.418200477923245,
+      1.4509247574631317,
+      1.1057696891239708,
+      0.5871290263123852,
+      0.5656695303817754,
+      0.6205146170854442
+    ],
+    "explained_variance_ratio": [
+      0.3093576954661413,
+      0.2569949194207901,
+      0.21558378089173652,
+      0.06575728220414367,
+      0.04129785155149622,
+      0.0371257848663313
+    ]
+  },
+  "components": 6,
+  "cem": {
+    "horizon_seconds": 0.5,
+    "knots": 6,
+    "samples": 350,
+    "elites": 10,
+    "iterations": 3,
+    "timestep_seconds": 0.1,
+    "control_seconds": 0.1
+  },
+  "cost": {
+    "position_weight": 1000.0,
+    "principal_weight": 1.0,
+    "perpendicular_weight": 100.0,
+    "workspace_radius": 0.18,
+    "workers": 1,
+    "rotation_progress": "retained"
+  },
+  "seed": 42,
+  "max_target_delta": null,
+  "action_search": {
+    "requested_bound": 0.98,
+    "effective_bound": 0.9799998998641968,
+    "low": [
+      -0.46059995293617245,
+      -0.1779399095773697,
+      -0.15516990572214126,
+      -0.20854990762472153,
+      -0.46059995293617245,
+      -0.1779399095773697,
+      -0.15516990572214126,
+      -0.20854990762472153,
+      -0.46059995293617245,
+      -0.1779399095773697,
+      -0.15516990572214126,
+      -0.20854990762472153,
+      0.27433005672693256,
+      -0.09231993651390075,
+      -0.17066990822553635,
+      -0.14318990582227709
+    ],
+    "high": [
+      0.4605999529361725,
+      1.5919399095773699,
+      1.6901699057221413,
+      1.5995499076247217,
+      0.4605999529361725,
+      1.5919399095773699,
+      1.6901699057221413,
+      1.5995499076247217,
+      0.4605999529361725,
+      1.5919399095773699,
+      1.6901699057221413,
+      1.5995499076247217,
+      1.3846699432730674,
+      1.1503199365139007,
+      1.6256699082255361,
+      1.7001899058222771
+    ],
+    "source_choice": "independent diagnostic action restriction; not a paper parameter",
+    "local_diagnostic_change": true
+  },
+  "reference_candidates": true,
+  "sampling": {
+    "exploration": 175,
+    "random_refinement": 173,
+    "deterministic_references": 2,
+    "reference_types": [
+      "warm_start_nominal",
+      "exact_current_target_hold"
+    ],
+    "local_diagnostic_change": true
+  },
+  "requested_backend": "native",
+  "native_build": {
+    "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+    "mujoco_version": "3.14.0",
+    "transition_abi_version": 2,
+    "mujoco_runtime_version": 3014000,
+    "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+    "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+    "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+    "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+    "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "compiler_flags": [
+      "-O3",
+      "-std=c++17",
+      "-fPIC",
+      "-shared",
+      "-fno-fast-math",
+      "-ffp-contract=off"
+    ],
+    "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+    "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+    "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+  },
+  "source_hashes": {
+    "scripts/probe_mpc.py": "b015062e20a929a1c04d11680441f786faf0bc63c024dfc6ca09cc8fd8332dd9",
+    "scripts/audit_policy.py": "cf1496d88454de19fb20dfeb4726b5e9d15e66289d235723bd2b86ece7f236fe",
+    "mpc_dex/env.py": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "mpc_dex/mpc.py": "02a276ec62688dd04ff50ea94eeecbf0f16036aee7a4f03bb0e363bc20f5d83b",
+    "mpc_dex/primitives.py": "571b5a350b943900bbdec61fbe518f3964867d48181a3ecb8a0b74f24c48b6a2",
+    "mpc_dex/rollouts.py": "283e93f3bcb5e3d185f25e3c9f7927948d04fb9deb12a3f19ecd3fae0dc39143",
+    "mpc_dex/native_rollouts.py": "ab981bb1c29f6f252437d38d9c58d50b2339a9b6f371a08a7e816344ab91d789",
+    "mpc_dex/native/exact_rollout.cc": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+    "uv.lock": "ef825f66abe35c8696c809b9053b2bcbd8275b74b8219b821062441fd816085b",
+    "config": "2d81f94560cf02fef046d7ad7fcf46943fd5fd668557e0c05f87efe3a6d81210",
+    "input_trajectory": "1d8229b86ae66ab986db226199626b3012b12200bbd89e929a200efdc2a1a526"
+  },
+  "source_sha256": "b015062e20a929a1c04d11680441f786faf0bc63c024dfc6ca09cc8fd8332dd9",
+  "evaluator_sha256": "283e93f3bcb5e3d185f25e3c9f7927948d04fb9deb12a3f19ecd3fae0dc39143",
+  "status": "diagnostic_budget_exhausted",
+  "steps": [
+    {
+      "step": 1,
+      "planning_seconds": 8.128826349973679,
+      "angle": 0.0013055022887588665,
+      "retained_angle": 0.0013055022887588665,
+      "force_qualified_angle": 0.0013055022887595883,
+      "contacts": 4,
+      "tilt": 0.00017433117193327383,
+      "drop": false,
+      "success": false,
+      "reward": -0.27388995422482265,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 0.0,
+      "action_abs_max": 0.6794583797454834,
+      "executed_target_in_search_bounds": true,
+      "planner": {
+        "best_cost": 19.7190358373712,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 6,
+            "elite_count": 6,
+            "iteration_best_cost": 19.7190358373712,
+            "best_cost": 19.7190358373712
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 14,
+            "elite_count": 10,
+            "iteration_best_cost": 19.7190358373712,
+            "best_cost": 19.7190358373712
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 17,
+            "elite_count": 10,
+            "iteration_best_cost": 19.7190358373712,
+            "best_cost": 19.7190358373712
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 37
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.013947580009698868,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.0063301848763921325,
+          0.0063301848763921325
+        ],
+        "retained_final_progress_range": [
+          0.0063301848763921325,
+          0.0063301848763921325
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    }
+  ],
+  "wall_seconds": 8.129240061854944
+}

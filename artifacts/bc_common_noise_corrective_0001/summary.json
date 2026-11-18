@@ -1,0 +1,218 @@
+{
+  "status": "complete",
+  "diagnostic_kind": "authentic-corrective-feedback-pair-mean-only-BC",
+  "source_dataset_pairs": 73,
+  "source_common_pairs": 12,
+  "noisy_prefix_pairs": 40,
+  "actual_new_mpc_pairs": 21,
+  "omitted_noisy_reset_labels": 5,
+  "bc_updates": 12000,
+  "critic_updates": 0,
+  "online_updates": 0,
+  "fresh_seed": 17001,
+  "batch_size": 256,
+  "bc_lr": 0.003,
+  "diagnostic_bc_epsilon": 0.01,
+  "main_bc_epsilon": 0.02,
+  "diagnostic_clipping_identity": true,
+  "main_clipping_changed_scalars": 99,
+  "sampled_batches_verified": true,
+  "critics_targets_alpha_unchanged": true,
+  "fresh_initial_actor_matches_common_seed_bitexact": true,
+  "std_at_checkpoints": 0.30000001192092896,
+  "source_inputs_unchanged": true,
+  "head_polish_updates": 0,
+  "extra_epochs": 0,
+  "strict_checkpoint_evaluations": 3,
+  "successful_strict_evaluations": 0,
+  "conditional_continuations": 0,
+  "main_demonstrations": 0,
+  "production_eligible": false,
+  "sac_success_claim": false,
+  "actual_wall_seconds": 11.656277097063139,
+  "results": [
+    {
+      "bc_updates": 3000,
+      "checkpoint": "bc/checkpoint_03000.pt",
+      "checkpoint_sha256": "65f2954ea7c578ece6f241b0201e1a217168b196d1895b758bce4b8276f151ee",
+      "steps": 4,
+      "failure_reason": "palm_support",
+      "final_force_qualified_angle": 3.2915024791239595,
+      "peak_force_qualified_angle": 4.174268823367732,
+      "independent_drop": false,
+      "palm_support_violation": true,
+      "fit": {
+        "all73": {
+          "action_mse": 0.002660796332625674,
+          "action_max_abs_error": 0.839727133512497,
+          "latent_mse": 0.008729146498379614,
+          "latent_max_abs_error": 1.8873258233070374
+        },
+        "original_common12": {
+          "action_mse": 0.014306871832004494,
+          "action_max_abs_error": 0.839727133512497,
+          "latent_mse": 0.04342241692105658,
+          "latent_max_abs_error": 1.8873258233070374
+        },
+        "original_teacher_prefix6": {
+          "action_mse": 0.028298533785325247,
+          "action_max_abs_error": 0.839727133512497,
+          "latent_mse": 0.08572062165603257,
+          "latent_max_abs_error": 1.8873258233070374
+        },
+        "original_mpc6": {
+          "action_mse": 0.0003152098786837423,
+          "action_max_abs_error": 0.061820730566978455,
+          "latent_mse": 0.001124212186080569,
+          "latent_max_abs_error": 0.08823537826538086
+        },
+        "new_noisy_prefix40": {
+          "action_mse": 0.00043157596502364635,
+          "action_max_abs_error": 0.07237444818019867,
+          "latent_mse": 0.0025152565516643726,
+          "latent_max_abs_error": 0.28397274017333984
+        },
+        "new_mpc_corrections21": {
+          "action_mse": 0.00025203008079401946,
+          "action_max_abs_error": 0.07779224216938019,
+          "latent_mse": 0.0007404013934503842,
+          "latent_max_abs_error": 0.08235406875610352
+        }
+      }
+    },
+    {
+      "bc_updates": 6000,
+      "checkpoint": "bc/checkpoint_06000.pt",
+      "checkpoint_sha256": "1981b7ac937d865d364673098b3ab54aecd0bb25801203141ca59c2a9e845726",
+      "steps": 3,
+      "failure_reason": "palm_support",
+      "final_force_qualified_angle": -0.2159985873196161,
+      "peak_force_qualified_angle": 1.2903913088465715,
+      "independent_drop": false,
+      "palm_support_violation": true,
+      "fit": {
+        "all73": {
+          "action_mse": 0.0025020052698139727,
+          "action_max_abs_error": 0.8331710994243622,
+          "latent_mse": 0.008257591849498739,
+          "latent_max_abs_error": 1.7999221682548523
+        },
+        "original_common12": {
+          "action_mse": 0.013306673604966436,
+          "action_max_abs_error": 0.8331710994243622,
+          "latent_mse": 0.03960509126040155,
+          "latent_max_abs_error": 1.7999221682548523
+        },
+        "original_teacher_prefix6": {
+          "action_mse": 0.026453815021441507,
+          "action_max_abs_error": 0.8331710994243622,
+          "latent_mse": 0.07887670359228931,
+          "latent_max_abs_error": 1.7999221682548523
+        },
+        "original_mpc6": {
+          "action_mse": 0.0001595321884913632,
+          "action_max_abs_error": 0.06584379076957703,
+          "latent_mse": 0.00033347892851379933,
+          "latent_max_abs_error": 0.0684458315372467
+        },
+        "new_noisy_prefix40": {
+          "action_mse": 0.00048639994247613873,
+          "action_max_abs_error": 0.0968349277973175,
+          "latent_mse": 0.00296784430424986,
+          "latent_max_abs_error": 0.37164783477783203
+        },
+        "new_mpc_corrections21": {
+          "action_mse": 0.00016715732084653535,
+          "action_max_abs_error": 0.064484603703022,
+          "latent_mse": 0.0004204446532664248,
+          "latent_max_abs_error": 0.07198271155357361
+        }
+      }
+    },
+    {
+      "bc_updates": 12000,
+      "checkpoint": "bc/checkpoint_12000.pt",
+      "checkpoint_sha256": "c8de948d0c9a72bd564e4c3e644b2bb16ac90598190210f526018be732487d6b",
+      "steps": 5,
+      "failure_reason": "drop",
+      "final_force_qualified_angle": 0.4114445368172987,
+      "peak_force_qualified_angle": 1.3925836906641498,
+      "independent_drop": true,
+      "palm_support_violation": false,
+      "fit": {
+        "all73": {
+          "action_mse": 0.0024901088598110366,
+          "action_max_abs_error": 0.8417669832706451,
+          "latent_mse": 0.00812868523973351,
+          "latent_max_abs_error": 1.9178233742713928
+        },
+        "original_common12": {
+          "action_mse": 0.014182548149983598,
+          "action_max_abs_error": 0.8417669832706451,
+          "latent_mse": 0.04384909026115916,
+          "latent_max_abs_error": 1.9178233742713928
+        },
+        "original_teacher_prefix6": {
+          "action_mse": 0.02828608706772837,
+          "action_max_abs_error": 0.8417669832706451,
+          "latent_mse": 0.08739481161201024,
+          "latent_max_abs_error": 1.9178233742713928
+        },
+        "original_mpc6": {
+          "action_mse": 7.900923223882415e-05,
+          "action_max_abs_error": 0.032251641154289246,
+          "latent_mse": 0.0003033689103080753,
+          "latent_max_abs_error": 0.07093095779418945
+        },
+        "new_noisy_prefix40": {
+          "action_mse": 0.0002314705884554436,
+          "action_max_abs_error": 0.0681714117527008,
+          "latent_mse": 0.0015217103924204038,
+          "latent_max_abs_error": 0.2539188861846924
+        },
+        "new_mpc_corrections21": {
+          "action_mse": 0.00011088311562784678,
+          "action_max_abs_error": 0.06022068113088608,
+          "latent_mse": 0.0003017392223723871,
+          "latent_max_abs_error": 0.060941994190216064
+        }
+      }
+    }
+  ],
+  "startup_diagnosis": {
+    "dataset_rows_one_based": [
+      1,
+      2,
+      13,
+      28,
+      37,
+      51,
+      62
+    ],
+    "label_counts": {
+      "initial_hold": 1,
+      "nearby_move": 6
+    },
+    "exact_duplicate_observations": false,
+    "reset_action_error_max": 0.8417669832706451,
+    "reset_prediction_to_nominal_move_action_max": 0.06840327382087708,
+    "reset_to_nominal_move_prediction_max": 0.0008510351181030273,
+    "reset_to_nominal_move_latent_prediction_l2": 0.001961501759635373,
+    "reset_latent_error_l2": 2.8652258984238452,
+    "reset_prediction_to_cluster_mean_latent_l2": 0.07628270226300082,
+    "per_row_action_error_max": [
+      0.8417669832706451,
+      0.06814378499984741,
+      0.06815499067306519,
+      0.0681714117527008,
+      0.0681525468826294,
+      0.06814739108085632,
+      0.06814610958099365
+    ],
+    "interpretation": "The one startup hold is poorly fit while six nearby move labels receive similar predictions. Mixed-unit distance and this training outcome support a conditioning/weighting explanation, not a proof of architectural impossibility."
+  },
+  "dataset_sha256": "f4a086de7041dea85a6d6206f879d75bbbac56fa077e619110f1257b8ad03b77",
+  "protocol_sha256": "3879d43bdfb3ed0537efc37a9bc7911f0df52db6d1c4198b0efcdc0a7399f1f2",
+  "final_checkpoint_sha256": "c8de948d0c9a72bd564e4c3e644b2bb16ac90598190210f526018be732487d6b",
+  "source_training_script_sha256": "85ea7cbfb7b609188cf83e174ea9af1aa519bc787b67b4f4cc0423d8edfda40c"
+}

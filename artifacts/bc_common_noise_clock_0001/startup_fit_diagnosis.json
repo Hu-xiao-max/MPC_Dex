@@ -1,0 +1,92 @@
+{
+  "startup": {
+    "dataset_rows_one_based": [
+      1,
+      2,
+      13,
+      28,
+      37,
+      51,
+      62
+    ],
+    "label_counts": {
+      "initial_hold": 1,
+      "nearby_move": 6
+    },
+    "exact_duplicate_observations": false,
+    "reset_action_error_max": 0.0063562095165252686,
+    "reset_prediction_to_nominal_move_action_max": 0.881691962480545,
+    "reset_to_nominal_move_prediction_max": 0.8815360963344574,
+    "reset_to_nominal_move_latent_prediction_l2": 3.271310398766019,
+    "reset_latent_error_l2": 0.011505182629865043,
+    "reset_prediction_to_cluster_mean_latent_l2": 2.7987590291317725,
+    "per_row_action_error_max": [
+      0.0063562095165252686,
+      0.004116833209991455,
+      0.0039708614349365234,
+      0.004059910774230957,
+      0.004162609577178955,
+      0.004154831171035767,
+      0.00410422682762146
+    ],
+    "interpretation": "Clock input permits separate startup hold and move predictions, sharply improving the inherited gross fit error. Remaining milliscale imitation errors and failed physical rollouts prevent a policy-success or robustness claim."
+  },
+  "closest_pairs_involving_actual_new_mpc": [
+    {
+      "first_row_one_based": 36,
+      "second_row_one_based": 59,
+      "raw_observation_l2": 0.7557529579733085,
+      "action_max_abs": 0.6556402742862701,
+      "latent_l2": 2.5754272200186774
+    },
+    {
+      "first_row_one_based": 59,
+      "second_row_one_based": 70,
+      "raw_observation_l2": 1.9223804870559087,
+      "action_max_abs": 1.2609799802303314,
+      "latent_l2": 4.023767539160873
+    },
+    {
+      "first_row_one_based": 36,
+      "second_row_one_based": 70,
+      "raw_observation_l2": 2.1334284625391158,
+      "action_max_abs": 1.2655104100704193,
+      "latent_l2": 4.825378685281771
+    },
+    {
+      "first_row_one_based": 45,
+      "second_row_one_based": 59,
+      "raw_observation_l2": 2.2954473478889255,
+      "action_max_abs": 0.7775863111019135,
+      "latent_l2": 2.2925355085454724
+    },
+    {
+      "first_row_one_based": 45,
+      "second_row_one_based": 70,
+      "raw_observation_l2": 2.340112738987639,
+      "action_max_abs": 0.7059737741947174,
+      "latent_l2": 3.4331007394890882
+    },
+    {
+      "first_row_one_based": 36,
+      "second_row_one_based": 45,
+      "raw_observation_l2": 2.5475266047593315,
+      "action_max_abs": 0.5595366358757019,
+      "latent_l2": 2.5335874567692547
+    },
+    {
+      "first_row_one_based": 21,
+      "second_row_one_based": 59,
+      "raw_observation_l2": 3.4020360514515575,
+      "action_max_abs": 0.7189172208309174,
+      "latent_l2": 4.134179630229105
+    },
+    {
+      "first_row_one_based": 21,
+      "second_row_one_based": 45,
+      "raw_observation_l2": 3.537150998812084,
+      "action_max_abs": 0.8363207578659058,
+      "latent_l2": 2.9015413783642
+    }
+  ]
+}

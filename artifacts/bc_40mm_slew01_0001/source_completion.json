@@ -1,0 +1,13 @@
+{
+  "generation_complete": true,
+  "planner_agent_audits_complete": true,
+  "status": "diagnostic_budget_exhausted",
+  "controls": 60,
+  "source_transitions_sha256": "ef0111dc8f985a6bf9fe48eeb821736a4aecf7a97ac48c93ad90ed2178a487f4",
+  "source_report_sha256": "9697b7bc0a369fb0d48975822611cb0ac0049b9066599a26d611d42a96a7f2f9",
+  "independent_audit_hashes": {
+    "independent_exact_replay/report.json": "d7a712c5a96ea0d6422c16976112c311d878710869dc00135613f76a7c9e527c",
+    "independent_after_hold_2s/report.json": "da6ecf90374191a39b5958c9f434d0a6e66fddcd1f3f7ef0aa005a3b23cc3ba9"
+  },
+  "numerical_provenance": "Archived generation imports; excludes later live rollout canonicalization and CLI changes"
+}

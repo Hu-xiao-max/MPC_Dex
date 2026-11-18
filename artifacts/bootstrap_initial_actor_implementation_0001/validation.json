@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "utc": "2026-09-23T20:33:07.246773+00:00",
+  "changed_files": {
+    "scripts/train_bootstrap.py": "6e28ade575940b88a4c7299968aa4b8152a2212cfbc97046ed997b8e58174146",
+    "tests/test_bootstrap_initial_actor.py": "27719d4aa2fe99dde0c1cf535ce808d773452c7f86eda37e55ecd5cfc75d9b90"
+  },
+  "unchanged_numerical_sources": {
+    "mpc_dex/env.py": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "mpc_dex/learning.py": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c"
+  },
+  "validation": {
+    "command": ".venv/bin/python -m pytest -q tests/test_bootstrap_initial_actor.py tests/test_bootstrap.py tests/test_bootstrap_control.py tests/test_bootstrap_seed.py tests/test_bootstrap_demonstrations.py",
+    "passed": 51,
+    "failed": 0,
+    "seconds": 11.98,
+    "new_importer_and_runtime_tests": 17
+  },
+  "independent_review": "native_rollouts reviewed core importer and runtime fingerprint; no further material issues found",
+  "semantics": {
+    "imported_components": [
+      "actor.trunk",
+      "actor.mean_head"
+    ],
+    "fresh_components": [
+      "critics",
+      "target_critics",
+      "bc_optimizer",
+      "actor_optimizer",
+      "critic_optimizer",
+      "alpha_optimizer",
+      "log_alpha"
+    ],
+    "std": "Initialize from bootstrap learner config",
+    "bc_counter": "Preserve truthful sourceBC count and separate imported provenance; reject nonzero seed BC",
+    "critic_seed": "Explicit fixed replay and critic pretraining allowed",
+    "resume": "Restore committed run without reimport/std reset/seed training; verify original checkpoint+metadata hashes and actual numerical runtime"
+  },
+  "jobs_launched": [],
+  "cuda_runner_smoke": "Deferred to root as requested; this agent ran only focused tests and read-only review",
+  "full_suite": "Not run per root instruction; relevant bootstrap checks completed"
+}

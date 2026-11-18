@@ -1,0 +1,16 @@
+{
+ "control6_at_s5 r=0.0": "1/1 det; fails at []",
+ "control6_at_s5 r=0.01": "4/8 det; fails at [4, 4, 4, 4]",
+ "control6_at_s5 r=0.02": "3/8 det; fails at [4, 4, 4, 4, 4]",
+ "control6_at_s5 r=0.05": "2/8 det; fails at [4, 5, 5, 4, 4, 4]",
+ "control6_at_s5 r=0.1": "0/8 det; fails at [4, 4, 5, 4, 4, 4, 4, 4]",
+ "control6_at_s5 exact + stochastic policy": "9/10",
+ "control7_at_s6 r=0.0": "1/1 det; fails at []",
+ "control7_at_s6 r=0.01": "8/8 det; fails at []",
+ "control7_at_s6 r=0.02": "6/8 det; fails at [2, 3]",
+ "control7_at_s6 r=0.05": "4/8 det; fails at [3, 4, 3, 3]",
+ "control7_at_s6 r=0.1": "1/8 det; fails at [3, 3, 3, 3, 2, 3, 3]",
+ "control7_at_s6 exact + stochastic policy": "10/10",
+ "policy from prefix 5: det, stoch": "False (5 ctrls, drop); 2/10",
+ "policy mean at s5 vs recorded control 6: L2, maxabs": "0.4777, 0.4132"
+}

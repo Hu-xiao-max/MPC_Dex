@@ -1,0 +1,24 @@
+The recorded 45 mm full turn could not be reproduced by the bounded closed-loop BC experiment. All six prespecified actor audits failed. Exact teacher replay still completes the strict, force-qualified, no-palm turn; its observations match the training inputs bit for bit.
+
+The diagnostic uses the existing `SACAgent` 60/16 architecture with two 256-unit LayerNorm/tanh layers and two unused critics. Both conditions start from identical actor weights with seed 17001. Each receives exactly 6,000 full-batch mean-only BC updates on the same 19 actual transitions, Adam learning rate 3e-4, CUDA, one Torch CPU thread. No critic, target critic, temperature, or online update occurs; hashes verify those components are unchanged. Deterministic independent physics audits run at 1,000/3,000/6,000 updates with a 100-control cap. All terminate earlier from strict failure. This is a single-trajectory feasibility diagnostic, not a trained SAC policy, production primitive, or generalization benchmark.
+
+| BC clipping epsilon | Updates | Teacher action MSE | Max teacher action error | Peak force-qualified angle | Failure |
+|---|---:|---:|---:|---:|---|
+| .02 | 1,000 | 4.58e-5 | .0200000 | 2.04868 rad | Drop at .7 s |
+| .02 | 3,000 | 4.58e-5 | .0200000 | 2.04877 rad | Drop at .7 s |
+| .02 | 6,000 | 4.58e-5 | .0200000 | 2.35897 rad | Drop at .7 s |
+| 1e-6 | 1,000 | 1.94e-13 | 2.07e-6 | 3.09555 rad | Drop at 1.1 s |
+| 1e-6 | 3,000 | 1.27e-13 | 1.01e-6 | 2.68362 rad | Palm contact at .9 s |
+| 1e-6 | 6,000 | 1.43e-13 | 1.01e-6 | 3.27970 rad | Palm contact at .8 s |
+
+There are 34 exactly saturated scalar actions among 304 recorded values, concentrated in the thumb; 35 values exceed .98 magnitude. Epsilon .02 clips 35 values, caps latent target magnitude at 2.29756, and changes joint targets by up to .01883 rad even with perfect latent fitting. Epsilon 1e-6 clips 34 values, caps latent targets at 7.24773 in float32, and changes joint targets by up to 9.54e-7 rad. The latter is explicitly a diagnostic bootstrap setting, not the paper BC setting.
+
+Replaying clipped teacher commands separates target distortion from learned feedback. The .02-clipped commands reach only 1.83994 force-qualified radians and hit the palm at .9 s. The 1e-6-clipped commands reach 6.09123 radians and drop at 1.7 s. These open-loop trials use the existing recorded commands with only the stated clipping; they perform no optimization or object-state manipulation.
+
+The tiny-clipping divergence begins after the first control. Command 1 contains no saturated values, so its action, qpos, qvel, and observation differences are exactly zero. After command 2, qpos max error is 3.661e-7 and qvel max error 8.749e-7. The first changed object contact-partner set occurs at **1.238 s**, when the clipped run adds loaded contact with the middle-finger distal geom. The first changed loaded-finger set occurs at **1.414 s**: exact replay has index finger plus thumb; clipped replay has all four fingers. By 1.4 s qpos/qvel max errors are .006657/.175862, and by 1.6 s they are 1.5463/32.2918. Contact-identity replays reproduce the earlier saved qpos traces exactly.
+
+The learned feedback amplifies error earlier. For epsilon 1e-6 at update 1,000, actual action max error against the time-aligned teacher grows from 4.17e-7 at control 1 to 1.86e-4 at control 6, .001810 at control 7, and .052523 at control 8. Its first different loaded-finger count is at .648 s. The equivalent first differences at updates 3,000 and 6,000 occur at .512 and .642 s. Batched versus singleton inference itself differs by about 2.6–3.6e-7 in normalized actions, comparable to the residual teacher-fitting error, but this does not establish a GPU-specific failure: even direct clipped-command replay fails.
+
+These results support insufficient robustness and trajectory coverage, rather than insufficient BC fitting, as the immediate limitation. More updates on these same 19 states do not resolve it. They do not establish that every successful physical trajectory is equally sensitive, or that broader closed-loop data could not work. No further hyperparameter settings were tested. No BC actor qualified for the conditional post-success two-second aftermath audit.
+
+`report.json` contains all prescribed evaluation results, stage counts, and source/input hashes. `error_growth.json` contains control-by-control closed-loop errors. `contact_divergence.json` and the two contact trace NPZ files record the exact contact-identity comparison. Each evaluation directory preserves actual observations, actions, next observations, rewards, qpos/qvel, initial joint frame, commands, and every 2 ms independent physics sample. `source/` preserves the executed numerical code and assets; `manifest.json` hashes the complete diagnostic artifacts. Shared sources and live MPC jobs were not modified.

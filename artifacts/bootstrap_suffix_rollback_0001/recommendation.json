@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "recommended_training_prefix_controls": 7,
+  "reason": "Prespecified first below-gate phase has both actual positive and failed stochastic suffixes",
+  "stochastic_successes": 2,
+  "stochastic_episodes": 5,
+  "not_a_reliability_estimate": true,
+  "prefixes_tested": [
+    7
+  ],
+  "prefixes_not_tested": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "actual_controls": 65,
+  "actual_prefix_controls": 42,
+  "actual_suffix_controls": 23,
+  "actual_physics_rows": 3250,
+  "all_assisted": true,
+  "new_training_updates": 0,
+  "eligible_primitive": false,
+  "new_heldout_seeds_required": true
+}

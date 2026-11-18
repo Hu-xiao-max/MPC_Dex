@@ -1,0 +1,101 @@
+{
+  "targets": {
+    "min": -195.51197319607434,
+    "max": 6.551186859965021,
+    "mean": -75.82502275722553,
+    "std": 40.021498882905604,
+    "quantiles": [
+      -195.51197319607434,
+      -135.40404852773906,
+      -106.2548597947571,
+      -57.636532172825255,
+      -50.0,
+      -42.197815690881804,
+      6.551186859965021
+    ]
+  },
+  "checkpoints": [
+    {
+      "label": "initial",
+      "critics": [
+        {
+          "critic": 1,
+          "training_q_min": -76.35771942138672,
+          "training_q_max": -74.7265625,
+          "training_q_mean": -75.66950988769531,
+          "training_bias": 0.15551510470437457,
+          "training_rmse": 40.073215472245685,
+          "output_weight_l1": 7.708080291748047,
+          "output_bias": -75.77466583251953,
+          "output_weight_delta_max": 0.0,
+          "output_weight_delta_mean_abs": 0.0,
+          "output_bias_delta": 0.0,
+          "exact_head_global_q_lower_bound": -83.48274612426758,
+          "fraction_training_targets_below_global_bound": 0.37109375,
+          "best_possible_train_rmse_with_fixed_output_head_bounds": 33.727237867836976,
+          "penultimate_features_mean_abs": 0.5602208971977234,
+          "penultimate_features_abs_gt_099_fraction": 0.0068359375
+        },
+        {
+          "critic": 2,
+          "training_q_min": -76.44961547851562,
+          "training_q_max": -75.17926788330078,
+          "training_q_mean": -75.7643051147461,
+          "training_bias": 0.06071817892121767,
+          "training_rmse": 40.06772193908358,
+          "output_weight_l1": 8.245000839233398,
+          "output_bias": -75.77811431884766,
+          "output_weight_delta_max": 0.0,
+          "output_weight_delta_mean_abs": 0.0,
+          "output_bias_delta": 0.0,
+          "exact_head_global_q_lower_bound": -84.02311515808105,
+          "fraction_training_targets_below_global_bound": 0.37109375,
+          "best_possible_train_rmse_with_fixed_output_head_bounds": 33.307867369223715,
+          "penultimate_features_mean_abs": 0.5583811402320862,
+          "penultimate_features_abs_gt_099_fraction": 0.0071868896484375
+        }
+      ]
+    },
+    {
+      "label": "after_500",
+      "critics": [
+        {
+          "critic": 1,
+          "training_q_min": -110.2041244506836,
+          "training_q_max": -44.11084747314453,
+          "training_q_mean": -73.47637176513672,
+          "training_bias": 2.3486527653269724,
+          "training_rmse": 22.467593050132482,
+          "output_weight_l1": 40.73596954345703,
+          "output_bias": -75.87052154541016,
+          "output_weight_delta_max": 0.1536705493927002,
+          "output_weight_delta_mean_abs": 0.12919938564300537,
+          "output_bias_delta": -0.095855712890625,
+          "exact_head_global_q_lower_bound": -116.60649108886719,
+          "fraction_training_targets_below_global_bound": 0.1953125,
+          "best_possible_train_rmse_with_fixed_output_head_bounds": 14.574709150246937,
+          "penultimate_features_mean_abs": 0.7137713432312012,
+          "penultimate_features_abs_gt_099_fraction": 0.0039215087890625
+        },
+        {
+          "critic": 2,
+          "training_q_min": -110.66130828857422,
+          "training_q_max": -43.95954132080078,
+          "training_q_mean": -73.64158630371094,
+          "training_bias": 2.183433324270721,
+          "training_rmse": 22.14388454069234,
+          "output_weight_l1": 41.34740447998047,
+          "output_bias": -75.87712097167969,
+          "output_weight_delta_max": 0.15122054517269135,
+          "output_weight_delta_mean_abs": 0.12941668927669525,
+          "output_bias_delta": -0.09900665283203125,
+          "exact_head_global_q_lower_bound": -117.22452545166016,
+          "fraction_training_targets_below_global_bound": 0.1953125,
+          "best_possible_train_rmse_with_fixed_output_head_bounds": 14.322248777018995,
+          "penultimate_features_mean_abs": 0.7070276737213135,
+          "penultimate_features_abs_gt_099_fraction": 0.003997802734375
+        }
+      ]
+    }
+  ]
+}

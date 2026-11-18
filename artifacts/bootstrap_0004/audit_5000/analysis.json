@@ -1,0 +1,12 @@
+{
+  "inference_device": "cpu",
+  "note": "Supplemental readings derived from immutable per-physics/control traces; five reset seeds have identical physical initial conditions.",
+  "peak_retained_time_seconds": 15.040000000001692,
+  "peak_retained_angle_radians": 1.2711536586451953,
+  "peak_retained_displacement_meters": 0.05030852266402315,
+  "first_fewer_than_two_fingers_seconds": 15.890000000001976,
+  "first_zero_contacts_seconds": 15.958000000001999,
+  "first_torque_limit_seconds": 11.26200000000043,
+  "first_axis_violation_seconds": null,
+  "first_command_target_error_over_0_15_step": 94
+}

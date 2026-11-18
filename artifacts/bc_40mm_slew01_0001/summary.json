@@ -1,0 +1,14 @@
+{
+  "status": "complete_stopped_at_failed_noise_gate",
+  "qualified_noise_cases": 0,
+  "required_qualified_cases": 3,
+  "bc_updates": 0,
+  "head_refinement_solves": 0,
+  "critic_updates": 0,
+  "online_updates": 0,
+  "production_eligible": false,
+  "initial_plan_preserved_as_historical_record": true,
+  "audit_report_sha256": "e588c4a7b9faa241487bf277eb282b584d9cecc8d734ee1df601c92216fd5ed2",
+  "noise_gate_report_sha256": "8ca9809b1edd5956b45555ab54c6eee7a99cbeec674cbbdff8b68cb0e9476eeb",
+  "source_completed_and_independently_audited_before_use": true
+}

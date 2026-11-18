@@ -1,0 +1,12 @@
+{
+  "original_terminal_manifest_sha256": "6be146375bf8642422fc918f18dd5edf0ea651b64c88fa8d8cbbbb4e3c857b40",
+  "final_source_manifest_sha256": "258842818fa0087aa70566996fad768fa088c1e6e3102d533c1c40f3e48edfc0",
+  "original_entries": 4418,
+  "final_entries": 4419,
+  "every_original_entry_unchanged": true,
+  "added_files": [
+    "findings.md"
+  ],
+  "plotted_source_data_unchanged": true,
+  "plots_not_rerendered": true
+}

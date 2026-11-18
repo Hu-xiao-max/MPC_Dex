@@ -1,0 +1,10 @@
+{
+  "torch": "2.14.0+cu130",
+  "mujoco": "3.14.0",
+  "numpy": "2.4.6",
+  "device": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "torch_threads": 1,
+  "interop_threads": 1,
+  "tf32": false,
+  "matmul_precision": "highest"
+}

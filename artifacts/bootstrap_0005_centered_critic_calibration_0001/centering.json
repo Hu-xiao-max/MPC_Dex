@@ -1,0 +1,11 @@
+{
+  "empirical_training_target_mean": -75.82502275722553,
+  "initial_checkpoint_sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937",
+  "centered_initial_sha256": "5e8e1104879309b5e2b6d3a50660fd672124ac6182db38570b91c0f19875ea4b",
+  "changed_parameters": [
+    "critics.networks.0.1.bias",
+    "critics.networks.1.1.bias",
+    "target_critics.networks.0.1.bias",
+    "target_critics.networks.1.1.bias"
+  ]
+}

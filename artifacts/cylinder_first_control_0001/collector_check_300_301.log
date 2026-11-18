@@ -1,0 +1,2 @@
+{"seed": 300, "status": "no_feasible_plan", "controls": 1, "strict_force_success": false, "failure_reason": null, "final_force_qualified_angle": 1.3906112903193346, "planning_seconds_total": 5.510148702189326}
+{"seed": 301, "status": "budget", "controls": 40, "strict_force_success": false, "failure_reason": null, "final_force_qualified_angle": 1.6454322120536538, "planning_seconds_total": 234.5413684938103}

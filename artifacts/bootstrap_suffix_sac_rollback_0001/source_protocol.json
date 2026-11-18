@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "kind": "diagnostic-prefix-assisted-suffix-sac",
+  "status": "frozen-ready-for-separate-explicit-execution",
+  "prefix_controls": 7,
+  "fixed_prefix_stage": true,
+  "automatic_stage_advancement": false,
+  "train_seed": 17081,
+  "physical_reset_seed": 42,
+  "warmup_complete_episodes": 256,
+  "critic_pretrain_updates": 500,
+  "online_policy_interactions": 2000,
+  "checkpoints": [
+    500,
+    1000,
+    2000
+  ],
+  "batch_size": 256,
+  "utd": 1,
+  "replay_capacity": 100000,
+  "raw_reward_divisor": 200.0,
+  "initial_alpha": 0.00025,
+  "pretrain_alpha": 0.0001,
+  "initial_std": 0.05,
+  "critic_lr": 0.0003,
+  "actor_lr": 0.0003,
+  "actor_warmup_updates": 5000,
+  "eval_deterministic_seed": 42,
+  "eval_phase_stochastic_seeds": [
+    17101,
+    17102,
+    17103,
+    17104,
+    17105
+  ],
+  "eval_final_cold_stochastic_seeds": [
+    17111,
+    17112,
+    17113,
+    17114,
+    17115
+  ],
+  "retention_prefix_controls": 8,
+  "retention_stochastic_seeds": [
+    17121,
+    17122,
+    17123,
+    17124,
+    17125
+  ],
+  "retention_evaluation_points": [
+    "pretraining_baseline",
+    "online_2000"
+  ],
+  "evaluation_points": [
+    "pretraining_baseline",
+    "online_500",
+    "online_1000",
+    "online_2000"
+  ],
+  "physical_horizon_including_prefix": 100,
+  "policy_interface": {
+    "kind": "absolute_joint_target"
+  },
+  "replay": "only executed policy suffix transitions; raw rewards; uniform transition sampling",
+  "pretrain": "unchanged SACAgent.pretrain_critic_step; actual next actions; sampled rewards / 200",
+  "online": "unchanged SACAgent.update; sampled rewards / 200; one update per actual policy step",
+  "sampling": "singleton batch (1,60) CUDA float32 actor.sample; direct returned log probability",
+  "normalization_caveat": "Curriculum and reward/temperature scaling both change; not a pure curriculum causal comparison. Alpha scaling preserves intended relative reward/entropy weight, not bit-exact algorithm invariance.",
+  "complete_episode_definition": "environment terminated or horizon truncated; truncated return tail remains unknown",
+  "warmup_alpha_for_calibration": 0.00025,
+  "pretrain_calibration_alpha_caveat": "Empirical calibration uses frozen initial alpha; SoftSARSA uses separately specified .02/200",
+  "no_prefix_rows_in_replay": true,
+  "no_trajectory_export": true,
+  "eligible_for_primitive": false,
+  "main_mpc_dataset_eligible": false,
+  "new_bc_updates": 0,
+  "head_refinement": false,
+  "extra_epochs": false,
+  "post_success_continuation": false,
+  "resume_implementation": false,
+  "checkpoint_semantics": "Exact evidence snapshot at completed optimizer boundary; no automatic resume implementation",
+  "future_checkpoint_use": "Any later genuinely trained 60D checkpoint requires a new frozen cold-policy collection; assisted episode evidence is never exported as a primitive source.",
+  "source_bindings": {
+    "initial.pt": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/checkpoint.pt",
+      "sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937"
+    },
+    "initial.pt.metadata.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/checkpoint.pt.metadata.json",
+      "sha256": "fe2dce5849299bcaabf92870c1f2ac9f35f7893edcb4dc4c5b51b8af5f35b356"
+    },
+    "source_config.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/config.json",
+      "sha256": "67b955f71b9a5b22696cc0de859752f78a82498e150940b510495e826bd43d7c"
+    },
+    "initial_grasp.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/initial_grasp.npz",
+      "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54"
+    },
+    "source_report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/report.json",
+      "sha256": "7316bcf01a85d096b4a1a2086cf59be8078dc4f19045c4bd7e29c4ac2cfea1dc"
+    },
+    "prefix_transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/deterministic_strict/transitions.npz",
+      "sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f"
+    },
+    "prefix_physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/deterministic_strict/physics.npz",
+      "sha256": "366fb79a431efb8b218d9dc7d6c39730aab9168553c736783f988c14b2a6672e"
+    },
+    "prefix_report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/deterministic_strict/report.json",
+      "sha256": "1faeeea26d930d16720ee66993a217bc8e1a3404476d0037a51a627658c9b29f"
+    }
+  },
+  "rollback_binding": {
+    "selected_prefix_controls": 7,
+    "source_all_manifest_files_verified": true,
+    "files": {
+      "manifest.json": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/manifest.json",
+        "sha256": "a4eb33876f916a993673f39361dc87074b5f6087ca93eecc31208187c6dc25c7",
+        "local_path": "rollback_reference/manifest.json"
+      },
+      "recommendation.json": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/recommendation.json",
+        "sha256": "b721a58b4ee5763b2161dac9e02edd02b002f21deea356cbe4e06226dd4f7824",
+        "local_path": "rollback_reference/recommendation.json"
+      },
+      "summary.json": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/summary.json",
+        "sha256": "3339cc6202b42d744e6558b5d76dd00c24686f6462013daf9d48d36255b83432",
+        "local_path": "rollback_reference/summary.json"
+      },
+      "protocol.json": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/protocol.json",
+        "sha256": "d8f77c209130bc7a87207fe277c8fbe309bc122f78edfa0c2d94cca7f681270b",
+        "local_path": "rollback_reference/protocol.json"
+      },
+      "findings.md": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/findings.md",
+        "sha256": "cd85ef2bb810a9e2ce51fa0c1af80659e37873521022d041c3b43b324027f392",
+        "local_path": "rollback_reference/findings.md"
+      },
+      "sampling_verification.json": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_rollback_0001/sampling_verification.json",
+        "sha256": "7bf9f5789f909aa420627f5046315bc37eb65596a4bd64e6c5f967cfe506a844",
+        "local_path": "rollback_reference/sampling_verification.json"
+      }
+    }
+  }
+}

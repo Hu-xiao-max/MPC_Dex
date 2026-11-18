@@ -1,0 +1,16 @@
+{"period": 0.1, "seed": 180, "status": "terminated", "controls": 16, "strict_force_success": true, "wall_seconds": 158.84728685813025, "stored": true}
+{"period": 0.1, "seed": 181, "status": "terminated", "controls": 20, "strict_force_success": true, "wall_seconds": 210.42470065876842, "stored": true}
+{"period": 0.1, "seed": 182, "status": "budget", "controls": 40, "strict_force_success": false, "wall_seconds": 86.62798485718668, "stored": false}
+{"period": 0.1, "seed": 183, "status": "terminated", "controls": 18, "strict_force_success": true, "wall_seconds": 55.44364981725812, "stored": true}
+{"period": 0.1, "seed": 184, "status": "terminated", "controls": 13, "strict_force_success": true, "wall_seconds": 127.30672979401425, "stored": true}
+{"period": 0.1, "seed": 185, "status": "terminated", "controls": 10, "strict_force_success": true, "wall_seconds": 50.073204822838306, "stored": true}
+{"period": 0.1, "seed": 186, "status": "terminated", "controls": 33, "strict_force_success": true, "wall_seconds": 203.39847165392712, "stored": true}
+{"period": 0.1, "seed": 187, "status": "terminated", "controls": 30, "strict_force_success": true, "wall_seconds": 289.1970134000294, "stored": true}
+{"period": 0.1, "seed": 188, "status": "terminated", "controls": 11, "strict_force_success": true, "wall_seconds": 66.11174543807283, "stored": true}
+{"period": 0.1, "seed": 189, "status": "terminated", "controls": 16, "strict_force_success": true, "wall_seconds": 164.24506183573976, "stored": true}
+{"period": 0.1, "seed": 190, "status": "terminated", "controls": 18, "strict_force_success": true, "wall_seconds": 174.98245299234986, "stored": true}
+{"period": 0.1, "seed": 191, "status": "terminated", "controls": 18, "strict_force_success": true, "wall_seconds": 112.76365867862478, "stored": true}
+{"period": 0.1, "seed": 192, "status": "terminated", "controls": 20, "strict_force_success": true, "wall_seconds": 97.27601315500215, "stored": true}
+{"period": 0.1, "seed": 193, "status": "terminated", "controls": 10, "strict_force_success": true, "wall_seconds": 29.0018027741462, "stored": true}
+{"period": 0.1, "seed": 194, "status": "terminated", "controls": 20, "strict_force_success": true, "wall_seconds": 126.19393023569137, "stored": true}
+{"period": 0.1, "seed": 195, "status": "terminated", "controls": 11, "strict_force_success": true, "wall_seconds": 58.830444771796465, "stored": true}

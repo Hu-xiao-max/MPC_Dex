@@ -1,0 +1,13 @@
+{"state_weight": 0.0, "salt": 1000005, "status": "boundary", "success": true, "controls": 14, "wall": 342, "action_dev": [0.023, 0.006, 0.029, 0.024, 0.024, 0.013, 0.019], "obs_dev": [0.02, 0.27, 0.47, 0.45, 1.85, 3.77, 2.47]}
+{"state_weight": 0.0, "salt": 1000006, "status": "boundary", "success": true, "controls": 14, "wall": 379, "action_dev": [0.008, 0.011, 0.032, 0.029, 0.0, 0.014, 0.009], "obs_dev": [0.02, 0.05, 0.13, 0.2, 0.87, 2.02, 2.34]}
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/mpc_spine_tube_0001/smoke_sw/run.py", line 6, in <module>
+    rep, rows, init, physics, origins = C.tube_branch(src, phys, 6, 0.003, 0, 25, mode=dict(name='tracking', floor_scale=0.005, horizon=1.5, track_weight=10000., state_weight=w), seed_salt=salt)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/mpc_spine_tube_0001/collect_tube.py", line 85, in tube_branch
+    if sw > 0 and mode['name'] == 'tracking': ev_ = StateTrackingPenaltyEvaluator(ev_, pl, sw, ref_q, dims)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/mpc_spine_tube_0001/tracking_cem.py", line 67, in __init__
+    self._states = None; original = inner._simulate_candidates
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'TrackingPenaltyEvaluator' object has no attribute '_simulate_candidates'

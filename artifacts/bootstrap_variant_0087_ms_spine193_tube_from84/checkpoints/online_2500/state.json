@@ -1,0 +1,246 @@
+{
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 1098,
+    "online_policy_interactions": 2500,
+    "physical_prefix_controls": 6015,
+    "warmup_assisted_completed_episodes": 248,
+    "warmup_assisted_force_successes": 74,
+    "online_assisted_completed_episodes": 436,
+    "online_assisted_force_successes": 128,
+    "warmup_cold_completed_episodes": 8,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 14,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 2500,
+    "warmup_raw_reward_sum": 10466.929128533346,
+    "online_raw_reward_sum": 21531.454699655824,
+    "warmup_episodes_by_prefix": {
+      "s1": 12,
+      "s2": 16,
+      "s3": 15,
+      "s4": 14,
+      "s5": 7,
+      "s6": 10,
+      "s7": 8,
+      "s8": 11,
+      "k0": 8,
+      "k1": 9,
+      "k2": 13,
+      "k3": 7,
+      "k4": 5,
+      "k5": 9,
+      "k6": 9,
+      "k7": 4,
+      "k8": 10,
+      "k9": 5,
+      "k10": 9,
+      "k11": 10,
+      "k12": 11,
+      "k13": 7,
+      "c": 47
+    },
+    "warmup_force_successes_by_prefix": {
+      "s1": 11,
+      "s2": 9,
+      "s3": 3,
+      "s4": 6,
+      "s5": 1,
+      "s6": 0,
+      "s7": 0,
+      "s8": 0,
+      "k0": 0,
+      "k1": 0,
+      "k2": 0,
+      "k3": 0,
+      "k4": 0,
+      "k5": 0,
+      "k6": 0,
+      "k7": 0,
+      "k8": 0,
+      "k9": 1,
+      "k10": 9,
+      "k11": 10,
+      "k12": 11,
+      "k13": 7,
+      "c": 6
+    },
+    "online_episodes_by_prefix": {
+      "s1": 37,
+      "s2": 28,
+      "s3": 29,
+      "s4": 33,
+      "s5": 16,
+      "s6": 9,
+      "s7": 15,
+      "s8": 19,
+      "k0": 13,
+      "k1": 10,
+      "k2": 10,
+      "k3": 16,
+      "k4": 11,
+      "k5": 16,
+      "k6": 14,
+      "k7": 3,
+      "k8": 10,
+      "k9": 11,
+      "k10": 8,
+      "k11": 9,
+      "k12": 13,
+      "k13": 15,
+      "c": 105
+    },
+    "online_force_successes_by_prefix": {
+      "s1": 31,
+      "s2": 10,
+      "s3": 6,
+      "s4": 3,
+      "s5": 0,
+      "s6": 0,
+      "s7": 0,
+      "s8": 0,
+      "k0": 0,
+      "k1": 0,
+      "k2": 0,
+      "k3": 0,
+      "k4": 0,
+      "k5": 0,
+      "k6": 0,
+      "k7": 0,
+      "k8": 1,
+      "k9": 1,
+      "k10": 5,
+      "k11": 9,
+      "k12": 13,
+      "k13": 15,
+      "c": 34
+    },
+    "handoff_terminated_before_policy": 0
+  },
+  "label": "online_2500",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 7000,
+    "online_updates": 38250
+  },
+  "normalized_alpha": 0.0122232586145401,
+  "raw_equivalent_alpha": 2.44465172290802,
+  "replay_rows": 3598,
+  "replay_pending_slot": null,
+  "unfinished_episode": false,
+  "inherited_learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 6500,
+    "online_updates": 35750
+  },
+  "optimizer_steps": {
+    "critic": [
+      45250
+    ],
+    "actor": [
+      38250
+    ],
+    "alpha": [
+      38250
+    ]
+  },
+  "replay_policy": "fresh-stage-only online replay plus immutable 2060-row demonstration buffer (demonstrations_replay.npz); pretraining batches 0.30 / online batches 0.30 demonstration share; inherited open replay archived without insertion",
+  "auxiliary_rng_states": {
+    "prefix_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 157434774513943155773584551845158019116,
+        "inc": 277787571960139062779747645871512500609
+      },
+      "has_uint32": 0,
+      "uinteger": 4126102348
+    },
+    "demonstration_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 119551377639784063239445196438956721930,
+        "inc": 15442456584747541523676618091130341711
+      },
+      "has_uint32": 0,
+      "uinteger": 3635892052
+    },
+    "handoff_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 132327820196608648539748663834619376082,
+        "inc": 176180653771163372256357156175804293123
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    }
+  },
+  "automatic_resume_supported": false,
+  "complete_update_boundary": true,
+  "environment_rng": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 95376830783351682500486580248632280039,
+      "inc": 332724090758049132448979897138935081983
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "environment_scalars": {
+    "start_angle": 0.30039143450192685,
+    "_last_wrapped": -0.038306359847192106,
+    "angle": 5.901743172017892,
+    "previous_angle": 5.742087179450987,
+    "steps": 14,
+    "rotations": 0,
+    "dwell": 0,
+    "goal": 0.19125740212220071,
+    "heading_error": 0.19125740212220071,
+    "_episode_over": true,
+    "_contactless_seconds": 0.0,
+    "_goal_rewarded": false,
+    "retained_angle": 5.731656454052173,
+    "previous_retained_angle": 5.742087179450987,
+    "retained_positive_step": 0.020840212189893625,
+    "retained_negative_step": -0.031270937588708796,
+    "_palm_support_violation": true,
+    "_peak_palm_support_force": 16.896932808474777
+  },
+  "observer_state": {
+    "last_time": 1.400000000000001,
+    "initial_time": 0.0,
+    "previous_quaternion": [
+      -0.7144005747499333,
+      -0.08848650712884627,
+      -0.6811819190063483,
+      -0.13339096698026903
+    ],
+    "initial_axis": [
+      0.008228909977884457,
+      0.9999609152058732,
+      0.0032331256096483152
+    ],
+    "initial_position": [
+      0.027748841103997047,
+      0.0005038665071184322,
+      0.2779894478599656
+    ],
+    "raw_angle": 5.901743172017888,
+    "qualified_angle": 5.731656454052169,
+    "force_qualified_angle": 5.731656454052169,
+    "contactless_seconds": 0.0,
+    "independent_drop": false,
+    "initial_palm_normal_force": 0.0,
+    "initial_palm_support_violation": false,
+    "palm_support_violation": true,
+    "gravity_norm": 9.81,
+    "up": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "weight": 1.4715
+  },
+  "metrics_bytes": 9620203,
+  "metrics_sha256": "b7a25e6fb700d248b6f40250532768057319a7c3ac61acc360ec8908835b84ae"
+}

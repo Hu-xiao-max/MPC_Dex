@@ -1,0 +1,123 @@
+{
+  "status": "complete",
+  "protocol": {
+    "purpose": "Five prescribed physical MPC recoveries from actual noisy fixed-mean visited states; diagnostic corrective teacher coverage only",
+    "seeds": [
+      17021,
+      17022,
+      17023,
+      17024,
+      17025
+    ],
+    "prefix_controls": 9,
+    "max_mpc_controls_per_branch": 20,
+    "planner_seed": 42,
+    "reset_seed": "source seed per branch",
+    "action_bound": 0.98,
+    "workers": 8,
+    "cem": {
+      "samples": 350,
+      "elites": 10,
+      "iterations": 3,
+      "knots": 6,
+      "horizon_seconds": 0.5,
+      "timestep_seconds": 0.1,
+      "control_seconds": 0.1
+    },
+    "cost": {
+      "position_weight": 1000.0,
+      "principal_weight": 1.0,
+      "perpendicular_weight": 100.0,
+      "workspace_radius": 0.18,
+      "rotation_progress": "retained",
+      "workers": 8
+    },
+    "reference_candidates": "archived ProjectedReferenceCEM: warm nominal plus explicitly projected bounded target reference when current actual target lies out of search; live state never reset/clipped",
+    "stop": [
+      "strict environment and independent force-supported full turn",
+      "environment termination/failure",
+      "no feasible plan",
+      "20 added MPC controls"
+    ],
+    "no_hold_or_other_prefix_branches": true,
+    "training_updates": 0,
+    "production_eligible": false,
+    "main_demonstrations": 0,
+    "source_noise_manifest_sha256": "add8a046f392e9e30253a5fcbe4b53800415a97ed6939e8b7408883037cad6fe",
+    "source_recipe_sha256": "59b99e050f8b9e15482eaebeb02d535117c2d064ac4afc984546e53be30691a2",
+    "source_prior_sha256": "1d8229b86ae66ab986db226199626b3012b12200bbd89e929a200efdc2a1a526",
+    "input_provenance_sha256": "e486013e1185b3d20c4cd32720888b504359daa05f91d7844b38de3aa1878be0"
+  },
+  "outcomes": [
+    {
+      "seed": 17021,
+      "status": "environment_boundary",
+      "mpc_controls": 7,
+      "strict_force_success": true,
+      "branch_force_qualified_angle": 3.683945202688155,
+      "final_force_qualified_angle": 6.636884726045375,
+      "maximum_force_qualified_angle": 6.636884726045375,
+      "drop": false,
+      "palm": false,
+      "no_external_support": true,
+      "report_path": "seed_17021/report.json"
+    },
+    {
+      "seed": 17022,
+      "status": "environment_boundary",
+      "mpc_controls": 1,
+      "strict_force_success": true,
+      "branch_force_qualified_angle": 5.646855008263025,
+      "final_force_qualified_angle": 6.4290238022426305,
+      "maximum_force_qualified_angle": 6.4290238022426305,
+      "drop": false,
+      "palm": false,
+      "no_external_support": true,
+      "report_path": "seed_17022/report.json"
+    },
+    {
+      "seed": 17023,
+      "status": "environment_boundary",
+      "mpc_controls": 6,
+      "strict_force_success": true,
+      "branch_force_qualified_angle": 4.559690095226062,
+      "final_force_qualified_angle": 6.472274470950402,
+      "maximum_force_qualified_angle": 6.472274470950402,
+      "drop": false,
+      "palm": false,
+      "no_external_support": true,
+      "report_path": "seed_17023/report.json"
+    },
+    {
+      "seed": 17024,
+      "status": "environment_boundary",
+      "mpc_controls": 3,
+      "strict_force_success": true,
+      "branch_force_qualified_angle": 5.413046938190781,
+      "final_force_qualified_angle": 6.480114119489824,
+      "maximum_force_qualified_angle": 6.511749659184527,
+      "drop": false,
+      "palm": false,
+      "no_external_support": true,
+      "report_path": "seed_17024/report.json"
+    },
+    {
+      "seed": 17025,
+      "status": "environment_boundary",
+      "mpc_controls": 4,
+      "strict_force_success": true,
+      "branch_force_qualified_angle": 4.5245526285974105,
+      "final_force_qualified_angle": 6.6203392629852775,
+      "maximum_force_qualified_angle": 6.6203392629852775,
+      "drop": false,
+      "palm": false,
+      "no_external_support": true,
+      "report_path": "seed_17025/report.json"
+    }
+  ],
+  "production_eligible": false,
+  "learning_updates": 0,
+  "main_demonstrations": 0,
+  "completed_branches": 5,
+  "strict_force_successes": 5
+}

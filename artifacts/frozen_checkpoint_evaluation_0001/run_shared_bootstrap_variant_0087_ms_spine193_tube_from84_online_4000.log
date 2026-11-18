@@ -1,0 +1,15 @@
+{"k": 0, "det": false, "stoch": "0/30", "max_angle": 0.112}
+{"k": 1, "det": false, "stoch": "0/30", "max_angle": 1.528}
+{"k": 2, "det": false, "stoch": "0/30", "max_angle": 2.182}
+{"k": 3, "det": false, "stoch": "0/30", "max_angle": 1.13}
+{"k": 4, "det": false, "stoch": "0/30", "max_angle": 5.749}
+{"k": 5, "det": false, "stoch": "1/30", "max_angle": 6.322}
+{"k": 6, "det": false, "stoch": "1/30", "max_angle": 6.439}
+{"k": 7, "det": false, "stoch": "3/30", "max_angle": 7.759}
+{"k": 8, "det": false, "stoch": "2/30", "max_angle": 7.589}
+{"k": 9, "det": false, "stoch": "1/30", "max_angle": 6.937}
+{"k": 10, "det": false, "stoch": "18/30", "max_angle": 7.534}
+{"k": 11, "det": true, "stoch": "30/30", "max_angle": 7.206}
+{"k": 12, "det": true, "stoch": "30/30", "max_angle": 6.52}
+{"k": 13, "det": true, "stoch": "30/30", "max_angle": 6.534}
+{"variant": "bootstrap_variant_0087_ms_spine193_tube_from84", "checkpoint": "online_4000", "k0": "0/30", "k1": "0/30", "k2": "0/30", "k3": "0/30", "k4": "0/30", "k5": "1/30", "k6": "1/30", "k7": "3/30", "k8": "2/30", "k9": "1/30", "k10": "18/30", "k11": "30/30 D", "k12": "30/30 D", "k13": "30/30 D", "wall": 188.4}

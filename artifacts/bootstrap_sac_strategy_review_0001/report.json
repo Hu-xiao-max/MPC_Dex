@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "kind": "read_only_strategy_review",
+  "recommended_next_route": "One fixed prefix7 physical-prelude SAC test, with prefix8 retention and cold-policy evaluation separately",
+  "evidence": {
+    "prefix8_stochastic_assisted_successes": 5,
+    "prefix8_episodes": 5,
+    "prefix7_stochastic_assisted_successes": 2,
+    "prefix7_episodes": 5,
+    "rollback_stopped_after_first_stage": true,
+    "eligible_primitive": false
+  },
+  "source_status": "Companion requires simulation SAC40mm/no dynamics randomization; reset/training recipe unpublished. Local curriculum is an explicitly independent implementation choice.",
+  "new_experiments_in_this_review": 0,
+  "executed_support_screen_is_separate_artifact": "artifacts/bootstrap_suffix_rollback_0001",
+  "proposed_learning_budget": {
+    "suffix_interactions": 2000,
+    "max_sac_updates": 1745,
+    "learning_starts": 256,
+    "batch_size": 256,
+    "utd": 1,
+    "prefix_controls": 7,
+    "physical_reset_history_preserved": true,
+    "new_heldout_seeds_required": true,
+    "automatic_extension": false
+  },
+  "fallback": "Budgeted MPC scaffold with actual policy-visited states and executed-action replay, if measured suffix learning is unhelpful; not another unbounded sparse BC/head sweep",
+  "unproven": [
+    "General stochastic support from new seeds",
+    "Useful critic action gradients",
+    "SAC policy improvement",
+    "Transfer to earlier phases/cold start",
+    "Post-success policy retention",
+    "Five eligible frozen SAC-policy collection trajectories",
+    "Main deployment"
+  ],
+  "source_files_modified": false
+}

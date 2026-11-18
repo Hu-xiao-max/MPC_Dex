@@ -1,0 +1,46 @@
+[
+  {
+    "custom_critic_calibration_updates": 1,
+    "minibatch_loss": 1823.51953125
+  },
+  {
+    "custom_critic_calibration_updates": 50,
+    "minibatch_loss": 1400.3497314453125
+  },
+  {
+    "custom_critic_calibration_updates": 100,
+    "minibatch_loss": 1038.357177734375
+  },
+  {
+    "custom_critic_calibration_updates": 150,
+    "minibatch_loss": 1185.5078125
+  },
+  {
+    "custom_critic_calibration_updates": 200,
+    "minibatch_loss": 1061.905517578125
+  },
+  {
+    "custom_critic_calibration_updates": 250,
+    "minibatch_loss": 810.9190063476562
+  },
+  {
+    "custom_critic_calibration_updates": 300,
+    "minibatch_loss": 758.6555786132812
+  },
+  {
+    "custom_critic_calibration_updates": 350,
+    "minibatch_loss": 623.0036010742188
+  },
+  {
+    "custom_critic_calibration_updates": 400,
+    "minibatch_loss": 607.2717895507812
+  },
+  {
+    "custom_critic_calibration_updates": 450,
+    "minibatch_loss": 577.960693359375
+  },
+  {
+    "custom_critic_calibration_updates": 500,
+    "minibatch_loss": 484.7588195800781
+  }
+]

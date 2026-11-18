@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "candidate_checkpoint_sha256": "fbc238202c323ecf6e2b97e5bd5c764ff085489260e3f083474bc608ef154715",
+  "strict_audits": 1,
+  "strict_max_controls": 100,
+  "seed": 42,
+  "conditional_continuations": 1,
+  "conditional_seconds": 2,
+  "continuation": "actual policy with fresh cold reset",
+  "additional_solves": 0,
+  "additional_bc_updates": 0,
+  "additional_sac_updates": 0,
+  "authority": "Parent task approval after reported rank/conditioning/norms/actual float32 fit",
+  "approved_text": "Candidate reasonable enough for prescribed physical test: proceed ONE strict full policy clock audit max100 controls unchanged physics/seed42. If strict qualified full turn, exactly one2s continuation using actual policy."
+}

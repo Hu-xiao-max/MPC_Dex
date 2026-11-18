@@ -1,0 +1,123 @@
+{
+  "status": "bounded_partial_no_full_turn",
+  "production_eligible": false,
+  "policy_only_success": false,
+  "training_updates": 0,
+  "environment_unchanged": true,
+  "worktree_sources_unchanged": {
+    "mpc_dex/env.py": true,
+    "mpc_dex/rollouts.py": true,
+    "mpc_dex/mpc.py": true,
+    "mpc_dex/primitives.py": true,
+    "mpc_dex/native_rollouts.py": true,
+    "mpc_dex/native/exact_rollout.cc": true,
+    "scripts/probe_mpc.py": true,
+    "scripts/audit_policy.py": true,
+    "scripts/audit_recorded_controls.py": true
+  },
+  "source_snapshot": "artifacts/mpc_skip_initial_hold_recovery_0001/source",
+  "prefix_verification": {
+    "prefix_controls": 8,
+    "transition_fields": [
+      "obs",
+      "actions",
+      "rewards",
+      "next_obs",
+      "terminated",
+      "truncated",
+      "qpos",
+      "qvel",
+      "targets"
+    ],
+    "max_error": 0.0,
+    "physics_rows": 400,
+    "physics_bitexact": true,
+    "time_seconds": 0.8000000000000006,
+    "force_qualified_angle": 4.126836225437737,
+    "info": {
+      "retained_angle": 4.126836225437739,
+      "finger_contacts": 4,
+      "axis_tilt_radians": 0.3220917926337388,
+      "success": false,
+      "drop": false,
+      "palm_support_violation": false
+    }
+  },
+  "budget": {
+    "prefix_controls": 8,
+    "mpc_controls_allowed": 20,
+    "mpc_controls_executed": 20,
+    "total_controls": 28,
+    "physical_seconds": 2.7999999999999132,
+    "planning_wall_seconds": 59.30930055701174
+  },
+  "protocol": {
+    "seed": 42,
+    "workers": 8,
+    "candidates_per_iteration": 350,
+    "iterations": 3,
+    "horizon_seconds": 0.5,
+    "exploration_candidates": 175,
+    "random_refinement_candidates": 173,
+    "reference_candidates": 2,
+    "reference_kinds": [
+      "current_nominal",
+      "exact_current_target_hold"
+    ],
+    "action_bound_requested": 0.98,
+    "action_bound_effective": 0.9799998998641968,
+    "rotation_progress": "retained",
+    "tilt_weight": 100.0,
+    "extra_slew_limit": null,
+    "reference_projection_events": 0,
+    "prior_components": 6
+  },
+  "outcome": {
+    "success": false,
+    "final_raw_angle": 6.3512192667248595,
+    "final_force_qualified_angle": 5.996036960238608,
+    "peak_force_qualified_angle": 6.2654695578805475,
+    "peak_time_seconds": 2.591999999999936,
+    "peak_shortfall_to_full_turn_radians": 0.01771574929903874,
+    "final_loaded_fingers": 3,
+    "final_tilt_radians": 0.18684524593769986,
+    "drop": false,
+    "palm_support_violation": false,
+    "peak_external_support_normals": {
+      "palm": 0.0,
+      "table": 0.0,
+      "other": 0.0
+    },
+    "no_external_support": true
+  },
+  "replay": {
+    "all28_transition_fields_bitexact": [
+      "obs",
+      "actions",
+      "rewards",
+      "next_obs",
+      "terminated",
+      "truncated",
+      "qpos",
+      "qvel",
+      "targets"
+    ],
+    "all1400_physics_rows_bitexact": true
+  },
+  "hold_audit": {
+    "executed": false,
+    "reason": "No strict success within the fixed MPC budget; the instruction made the extra 2 s hold conditional on success."
+  },
+  "input_and_output_sha256": {
+    "prefix_transitions.npz": "a120a416b2d10afeda4deabac09b03829787f186e43883af85987ff2e6467127",
+    "prefix_physics.npz": "59cb7ef0c823572238a0c59626ab1480f147c70b25c0511b706eb27edcedbbb8",
+    "prefix_verification.json": "73959aa3dae1fc7746d9e9f93f3c7b20420f5dbfa76746327551b76397951179",
+    "recover.py": "43a911de64c93d7e0536c3503394cdb427f909b264f65ea35738b5d22ba1e39b",
+    "config.json": "4d8cda816ac0d664d64987691c829501f6d42a2c72a8df4358110f3540e9644c",
+    "diagnostic_prior.npz": "9829cd5d999705be9578c835f6745fe981a9ceaf4a224719e09a2fea236dcdfa",
+    "transitions.npz": "31e53d231efc90c2f2ebd2b804a5a6feeffaf20ff5f8ad6f1fac455439a0fefa",
+    "physics.npz": "2e0e30cf5d8d0f5abf199d75addb0c01da0e1fc1d43007d505e85f04897b58ac",
+    "report.json": "27d0ef2b6c62162f830a6b295ac31f8d531ce1bf3a2b8133cfde93d1be257c08",
+    "independent_audit/report.json": "b67da6ee54096f819a9cd67f41ba468e9416767c9843cc85a78c3deb40b5ae44"
+  }
+}

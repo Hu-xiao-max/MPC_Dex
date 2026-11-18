@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0088_ms_spine193_tube_noperturbhandoff_from84/run.py", line 1203, in <module>
+    main()
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0088_ms_spine193_tube_noperturbhandoff_from84/run.py", line 988, in main
+    demonstrations = multisource_demonstrations(protocol, sources)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0088_ms_spine193_tube_noperturbhandoff_from84/run.py", line 271, in multisource_demonstrations
+    assert depth == 0 or rows[0] == 0, 'shared prefix rows must be buffered'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: shared prefix rows must be buffered

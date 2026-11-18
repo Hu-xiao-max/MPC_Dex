@@ -1,0 +1,276 @@
+{
+  "corresponding": [
+    {
+      "first": "nominal_7",
+      "second": "actor_correction_7",
+      "observation": {
+        "l2": 0.01308414622573447,
+        "max_abs": 0.006674766540527344
+      },
+      "action": {
+        "l2": 0.0,
+        "max_abs": 0.0
+      },
+      "latent_target": {
+        "l2": 0.0,
+        "max_abs": 0.0
+      },
+      "action_l2_per_raw_observation_l2": 0.0,
+      "latent_l2_per_raw_observation_l2": 0.0,
+      "observation_groups": [
+        {
+          "group": "joint_position",
+          "units": "rad",
+          "l2": 0.0011854482302306947,
+          "max_abs": 0.0007683038711547852
+        },
+        {
+          "group": "object_position",
+          "units": "m",
+          "l2": 0.0002023031303124647,
+          "max_abs": 0.0001881420612335205
+        },
+        {
+          "group": "object_quaternion",
+          "units": "dimensionless wxyz",
+          "l2": 0.00369101412637015,
+          "max_abs": 0.002875030040740967
+        },
+        {
+          "group": "principal_angles",
+          "units": "rad",
+          "l2": 0.006862142387353813,
+          "max_abs": 0.006674766540527344
+        },
+        {
+          "group": "joint_velocity",
+          "units": "rad/s; finite differences",
+          "l2": 0.010208462359973277,
+          "max_abs": 0.006331205368041992
+        },
+        {
+          "group": "object_velocity",
+          "units": "m/s; finite differences",
+          "l2": 0.001905385171124635,
+          "max_abs": 0.0017745643854141235
+        },
+        {
+          "group": "previous_action",
+          "units": "normalized absolute joint targets",
+          "l2": 0.0010921943794927641,
+          "max_abs": 0.0009226202964782715
+        }
+      ]
+    },
+    {
+      "first": "nominal_8",
+      "second": "actor_correction_8",
+      "observation": {
+        "l2": 0.2849748190334548,
+        "max_abs": 0.23353493213653564
+      },
+      "action": {
+        "l2": 0.0,
+        "max_abs": 0.0
+      },
+      "latent_target": {
+        "l2": 0.0,
+        "max_abs": 0.0
+      },
+      "action_l2_per_raw_observation_l2": 0.0,
+      "latent_l2_per_raw_observation_l2": 0.0,
+      "observation_groups": [
+        {
+          "group": "joint_position",
+          "units": "rad",
+          "l2": 0.027945366958966246,
+          "max_abs": 0.022920280694961548
+        },
+        {
+          "group": "object_position",
+          "units": "m",
+          "l2": 0.0005277882794325905,
+          "max_abs": 0.00044927000999450684
+        },
+        {
+          "group": "object_quaternion",
+          "units": "dimensionless wxyz",
+          "l2": 0.013059191488175656,
+          "max_abs": 0.011760786175727844
+        },
+        {
+          "group": "principal_angles",
+          "units": "rad",
+          "l2": 0.025763872173384425,
+          "max_abs": 0.02488422393798828
+        },
+        {
+          "group": "joint_velocity",
+          "units": "rad/s; finite differences",
+          "l2": 0.28204675310020677,
+          "max_abs": 0.23353493213653564
+        },
+        {
+          "group": "object_velocity",
+          "units": "m/s; finite differences",
+          "l2": 0.0066884125284523525,
+          "max_abs": 0.006374117452651262
+        },
+        {
+          "group": "previous_action",
+          "units": "normalized absolute joint targets",
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      ]
+    },
+    {
+      "first": "nominal_9",
+      "second": "actor_correction_9",
+      "observation": {
+        "l2": 0.525219041844123,
+        "max_abs": 0.32366345077753067
+      },
+      "action": {
+        "l2": 0.0,
+        "max_abs": 0.0
+      },
+      "latent_target": {
+        "l2": 0.0,
+        "max_abs": 0.0
+      },
+      "action_l2_per_raw_observation_l2": 0.0,
+      "latent_l2_per_raw_observation_l2": 0.0,
+      "observation_groups": [
+        {
+          "group": "joint_position",
+          "units": "rad",
+          "l2": 0.0370243454843366,
+          "max_abs": 0.015432775020599365
+        },
+        {
+          "group": "object_position",
+          "units": "m",
+          "l2": 0.0015627609222997163,
+          "max_abs": 0.0014702411135658622
+        },
+        {
+          "group": "object_quaternion",
+          "units": "dimensionless wxyz",
+          "l2": 0.004027952578739692,
+          "max_abs": 0.0035634059458971024
+        },
+        {
+          "group": "principal_angles",
+          "units": "rad",
+          "l2": 0.02507733170330521,
+          "max_abs": 0.02488422393798828
+        },
+        {
+          "group": "joint_velocity",
+          "units": "rad/s; finite differences",
+          "l2": 0.5229342131509979,
+          "max_abs": 0.32366345077753067
+        },
+        {
+          "group": "object_velocity",
+          "units": "m/s; finite differences",
+          "l2": 0.019403847150175346,
+          "max_abs": 0.016466470435261726
+        },
+        {
+          "group": "previous_action",
+          "units": "normalized absolute joint targets",
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      ]
+    }
+  ],
+  "startup": {
+    "first": "nominal_1",
+    "second": "nominal_2",
+    "observation": {
+      "l2": 0.005414867059235589,
+      "max_abs": 0.003089159494265914
+    },
+    "action": {
+      "l2": 1.7702717880169658,
+      "max_abs": 0.8814503140747547
+    },
+    "latent_target": {
+      "l2": 3.2731085550190664,
+      "max_abs": 2.1716747879981995
+    },
+    "action_l2_per_raw_observation_l2": 326.9280240218627,
+    "latent_l2_per_raw_observation_l2": 604.4670200049432,
+    "observation_groups": [
+      {
+        "group": "joint_position",
+        "units": "rad",
+        "l2": 0.0005180549327431444,
+        "max_abs": 0.0003089308738708496
+      },
+      {
+        "group": "object_position",
+        "units": "m",
+        "l2": 2.9000174399071e-05,
+        "max_abs": 2.8461217880249023e-05
+      },
+      {
+        "group": "object_quaternion",
+        "units": "dimensionless wxyz",
+        "l2": 0.0006585570087565231,
+        "max_abs": 0.0006454437971115112
+      },
+      {
+        "group": "principal_angles",
+        "units": "rad",
+        "l2": 0.001305502257309854,
+        "max_abs": 0.001305502257309854
+      },
+      {
+        "group": "joint_velocity",
+        "units": "rad/s; finite differences",
+        "l2": 0.005179713588675338,
+        "max_abs": 0.003089159494265914
+      },
+      {
+        "group": "object_velocity",
+        "units": "m/s; finite differences",
+        "l2": 0.0002899948403137103,
+        "max_abs": 0.0002846077550202608
+      },
+      {
+        "group": "previous_action",
+        "units": "normalized absolute joint targets",
+        "l2": 0.0,
+        "max_abs": 0.0
+      }
+    ]
+  },
+  "physical": {
+    "nominal": {
+      "strict_controls": 9,
+      "strict_force_qualified_angle": 6.649846605355571,
+      "strict_success": true,
+      "strict_drop": false,
+      "strict_palm_force": 0.0,
+      "hold_force_qualified_angle": 7.5735683677319745,
+      "hold_completed_seconds": 1.9999999999999023,
+      "hold_minimum_loaded_fingers": 3,
+      "hold_no_external_support": true
+    },
+    "actor_recovery": {
+      "strict_controls": 9,
+      "strict_force_qualified_angle": 6.685409148598043,
+      "strict_success": true,
+      "strict_drop": false,
+      "strict_palm_force": 0.0,
+      "hold_force_qualified_angle": 7.5795963431587134,
+      "hold_completed_seconds": 1.9999999999999023,
+      "hold_minimum_loaded_fingers": null,
+      "hold_no_external_support": true
+    }
+  }
+}

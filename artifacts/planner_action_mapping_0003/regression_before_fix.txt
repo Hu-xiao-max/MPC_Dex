@@ -1,0 +1,98 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_ test_unrounded_joint_targets_predict_executed_float32_actions_exactly[python] _
+
+backend = 'python'
+
+    @pytest.mark.parametrize('backend', ['python', 'native'])
+    def test_unrounded_joint_targets_predict_executed_float32_actions_exactly(backend):
+        env = AllegroRotationEnv(EnvConfig(
+            initial_grasp=str(Path(__file__).resolve().parents[1] / 'assets/initial_grasp.npz')))
+        env.reset(seed=4)
+        evaluator = None
+        try:
+            cls = NativeMujocoRolloutEvaluator if backend == 'native' else MujocoRolloutEvaluator
+            options = {'require_native': True} if backend == 'native' else {}
+            try:
+                evaluator = cls(env, .1, RolloutCostConfig(workers=1), **options)
+            except NativeBackendUnavailable as error:
+                pytest.skip(str(error))
+            # CEM produces float64 joint commands, not pre-rounded actions. These
+            # real commands stay close to the verified grasp while exercising the
+            # lossy normalization boundary on every control interval.
+            commands = np.stack([np.clip(env.data.ctrl + np.linspace(-1e-4, 1e-4, 16) * k,
+                                        env.low, env.high) for k in (1, 2, 3)])
+            actions = env.to_action(commands)
+            executed = env.to_joint_targets(actions)
+            assert actions.dtype == np.float32
+            assert not np.array_equal(commands, executed)
+            original_commands = commands.copy()
+            before = env.data.__getstate__()
+            costs = evaluator(commands[None])
+            assert np.isfinite(costs[0])
+            assert env.data.__getstate__() == before
+            np.testing.assert_array_equal(commands, original_commands)
+            predicted = evaluator.worker_data[0].__getstate__()
+            prediction = evaluator.last_diagnostics
+            for action in actions:
+                _, _, terminated, truncated, _ = env.step(action)
+                assert not (terminated or truncated)
+            # Full mjData includes derived contacts and solver state in addition to
+            # qpos/qvel, preventing a partial-state comparison from hiding drift.
+>           assert env.data.__getstate__() == predicted
+E           AssertionError: assert b'\x01\x01\x0...x8693\x94\xbe' == b'\x01\x01\x0...\xba$\x94\xbe'
+E             
+E             At index 3022682 diff: b'&' != b'\xc0'
+E             Use -v to get more diff
+
+tests/test_rollout_action_mapping.py:48: AssertionError
+_ test_unrounded_joint_targets_predict_executed_float32_actions_exactly[native] _
+
+backend = 'native'
+
+    @pytest.mark.parametrize('backend', ['python', 'native'])
+    def test_unrounded_joint_targets_predict_executed_float32_actions_exactly(backend):
+        env = AllegroRotationEnv(EnvConfig(
+            initial_grasp=str(Path(__file__).resolve().parents[1] / 'assets/initial_grasp.npz')))
+        env.reset(seed=4)
+        evaluator = None
+        try:
+            cls = NativeMujocoRolloutEvaluator if backend == 'native' else MujocoRolloutEvaluator
+            options = {'require_native': True} if backend == 'native' else {}
+            try:
+                evaluator = cls(env, .1, RolloutCostConfig(workers=1), **options)
+            except NativeBackendUnavailable as error:
+                pytest.skip(str(error))
+            # CEM produces float64 joint commands, not pre-rounded actions. These
+            # real commands stay close to the verified grasp while exercising the
+            # lossy normalization boundary on every control interval.
+            commands = np.stack([np.clip(env.data.ctrl + np.linspace(-1e-4, 1e-4, 16) * k,
+                                        env.low, env.high) for k in (1, 2, 3)])
+            actions = env.to_action(commands)
+            executed = env.to_joint_targets(actions)
+            assert actions.dtype == np.float32
+            assert not np.array_equal(commands, executed)
+            original_commands = commands.copy()
+            before = env.data.__getstate__()
+            costs = evaluator(commands[None])
+            assert np.isfinite(costs[0])
+            assert env.data.__getstate__() == before
+            np.testing.assert_array_equal(commands, original_commands)
+            predicted = evaluator.worker_data[0].__getstate__()
+            prediction = evaluator.last_diagnostics
+            for action in actions:
+                _, _, terminated, truncated, _ = env.step(action)
+                assert not (terminated or truncated)
+            # Full mjData includes derived contacts and solver state in addition to
+            # qpos/qvel, preventing a partial-state comparison from hiding drift.
+>           assert env.data.__getstate__() == predicted
+E           AssertionError: assert b'\x01\x01\x0...x8693\x94\xbe' == b'\x01\x01\x0...\xba$\x94\xbe'
+E             
+E             At index 3022682 diff: b'&' != b'\xc0'
+E             Use -v to get more diff
+
+tests/test_rollout_action_mapping.py:48: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_rollout_action_mapping.py::test_unrounded_joint_targets_predict_executed_float32_actions_exactly[python]
+FAILED tests/test_rollout_action_mapping.py::test_unrounded_joint_targets_predict_executed_float32_actions_exactly[native]
+2 failed in 1.40s

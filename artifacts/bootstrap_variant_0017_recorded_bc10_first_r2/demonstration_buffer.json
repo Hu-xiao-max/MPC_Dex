@@ -1,0 +1,22 @@
+{
+  "rows": 3,
+  "episodes": 1,
+  "sources": [
+    {
+      "origin": "recorded_source_controls_7_to_9",
+      "file": "prefix_transitions.npz",
+      "sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f",
+      "rows": 3,
+      "raw_return": 226.96823726083534
+    }
+  ],
+  "pretrain_offline_fraction": 0.3,
+  "online_offline_fraction": 0.3,
+  "batch_demonstration_rows": {
+    "pretrain": 77,
+    "online": 77
+  },
+  "collected_prefix_rows_never_appended": "physically replayed (and, when enabled, perturbed) prefix controls of collected episodes are never appended to the online replay; the demonstration buffer separately holds the recorded source rows listed in demonstration_recorded_rows, which may coincide with source transitions that prefix replay re-executes",
+  "immutable_during_stage": true,
+  "replay_sha256": "fdfbb480203f4b91715388b285c4abc87611047d141e2a71dd23ae527c06cfec"
+}

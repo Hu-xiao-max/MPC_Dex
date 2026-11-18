@@ -1,0 +1,4 @@
+Training replay, all episode physics records, and checkpoint optimizers verified.
+All 2,500 minibatches, 2,808 training actions, episode/checkpoint global RNG states verified.
+All 45 saved evaluations: exact singleton actions, direct log probabilities, and RNG verified.
+{"status": "complete", "training_episodes": 1010, "evaluations": 45, "new_physics_steps": 0, "new_optimizer_steps": 0}

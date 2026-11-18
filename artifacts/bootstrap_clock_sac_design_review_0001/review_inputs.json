@@ -1,0 +1,142 @@
+{
+  "mpc_dex/bootstrap_env.py": {
+    "source": "/home/autel001/code/mpc_dex/mpc_dex/bootstrap_env.py",
+    "copy": "reviewed/mpc_dex/bootstrap_env.py",
+    "sha256": "69a06e73d70e9e58780bbefde790dd57c22966b1e8c0134201ee497e8876fc6b"
+  },
+  "mpc_dex/contracts.py": {
+    "source": "/home/autel001/code/mpc_dex/mpc_dex/contracts.py",
+    "copy": "reviewed/mpc_dex/contracts.py",
+    "sha256": "07c7f652a0271d76a49a3447d75f162a238e3395b95bec28fe5bf87cf0ee7063"
+  },
+  "mpc_dex/env.py": {
+    "source": "/home/autel001/code/mpc_dex/mpc_dex/env.py",
+    "copy": "reviewed/mpc_dex/env.py",
+    "sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae"
+  },
+  "mpc_dex/learning.py": {
+    "source": "/home/autel001/code/mpc_dex/mpc_dex/learning.py",
+    "copy": "reviewed/mpc_dex/learning.py",
+    "sha256": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c"
+  },
+  "mpc_dex/replay.py": {
+    "source": "/home/autel001/code/mpc_dex/mpc_dex/replay.py",
+    "copy": "reviewed/mpc_dex/replay.py",
+    "sha256": "e503f61fadd58a5780fed7f6ff82d33b599d3eef00dfdaea6b9dd636cfc84311"
+  },
+  "mpc_dex/cli.py": {
+    "source": "/home/autel001/code/mpc_dex/mpc_dex/cli.py",
+    "copy": "reviewed/mpc_dex/cli.py",
+    "sha256": "618206772d0037c33b36babdcd646e3e237e067db06222999553214c6779edb0"
+  },
+  "mpc_dex/trajectory_contracts.py": {
+    "source": "/home/autel001/code/mpc_dex/mpc_dex/trajectory_contracts.py",
+    "copy": "reviewed/mpc_dex/trajectory_contracts.py",
+    "sha256": "5975a22926c0cafbddbd487ecbe0ee9987d98a865c54198a0ab04b0aba26b591"
+  },
+  "mpc_dex/primitives.py": {
+    "source": "/home/autel001/code/mpc_dex/mpc_dex/primitives.py",
+    "copy": "reviewed/mpc_dex/primitives.py",
+    "sha256": "571b5a350b943900bbdec61fbe518f3964867d48181a3ecb8a0b74f24c48b6a2"
+  },
+  "scripts/train_bootstrap.py": {
+    "source": "/home/autel001/code/mpc_dex/scripts/train_bootstrap.py",
+    "copy": "reviewed/scripts/train_bootstrap.py",
+    "sha256": "9d036adebdfd4f473076fb98aef1a32268f814bb4b8ddc61d18d30f21a610b09"
+  },
+  "scripts/collect_policy_trajectories.py": {
+    "source": "/home/autel001/code/mpc_dex/scripts/collect_policy_trajectories.py",
+    "copy": "reviewed/scripts/collect_policy_trajectories.py",
+    "sha256": "6ce39b5318b2ee0e84adbb1b07c76b5adb90ccacdf0af691dbc28eee104cb517"
+  },
+  "scripts/prepare_bootstrap_demonstrations.py": {
+    "source": "/home/autel001/code/mpc_dex/scripts/prepare_bootstrap_demonstrations.py",
+    "copy": "reviewed/scripts/prepare_bootstrap_demonstrations.py",
+    "sha256": "8b36990fb6384ef838dc4be7176d36770b3fc7b92fd688e1c9aa131ea7db19ad"
+  },
+  "scripts/audit_policy.py": {
+    "source": "/home/autel001/code/mpc_dex/scripts/audit_policy.py",
+    "copy": "reviewed/scripts/audit_policy.py",
+    "sha256": "cf1496d88454de19fb20dfeb4726b5e9d15e66289d235723bd2b86ece7f236fe"
+  },
+  "tests/test_bootstrap.py": {
+    "source": "/home/autel001/code/mpc_dex/tests/test_bootstrap.py",
+    "copy": "reviewed/tests/test_bootstrap.py",
+    "sha256": "8f3305366418b7b3e684b10f535a6e091d279c6d0a761478bf8a60422457a8b3"
+  },
+  "tests/test_bootstrap_initial_actor.py": {
+    "source": "/home/autel001/code/mpc_dex/tests/test_bootstrap_initial_actor.py",
+    "copy": "reviewed/tests/test_bootstrap_initial_actor.py",
+    "sha256": "27719d4aa2fe99dde0c1cf535ce808d773452c7f86eda37e55ecd5cfc75d9b90"
+  },
+  "tests/test_bootstrap_control.py": {
+    "source": "/home/autel001/code/mpc_dex/tests/test_bootstrap_control.py",
+    "copy": "reviewed/tests/test_bootstrap_control.py",
+    "sha256": "2d64e5b1a865ba7f665c5db1f1659682ae7ca6596b2c5802e31f57e5b325f28e"
+  },
+  "tests/test_bootstrap_demonstrations.py": {
+    "source": "/home/autel001/code/mpc_dex/tests/test_bootstrap_demonstrations.py",
+    "copy": "reviewed/tests/test_bootstrap_demonstrations.py",
+    "sha256": "62c638838a1da0ee3c53629ac3833b0c0c1909c465d5774e6ae844ce7362182e"
+  },
+  "tests/test_policy_collection.py": {
+    "source": "/home/autel001/code/mpc_dex/tests/test_policy_collection.py",
+    "copy": "reviewed/tests/test_policy_collection.py",
+    "sha256": "3f9d8bf8627e211c0200c2cf378ccc214c2327ff837ce21b2f3a4937ccdd09e0"
+  },
+  "tests/test_cli_trajectories.py": {
+    "source": "/home/autel001/code/mpc_dex/tests/test_cli_trajectories.py",
+    "copy": "reviewed/tests/test_cli_trajectories.py",
+    "sha256": "edd3ea6ddd7e88ea64cdce1060b47f06d3c5863ecb34ce8a3e0e2f4119d602b3"
+  },
+  "tests/test_replay.py": {
+    "source": "/home/autel001/code/mpc_dex/tests/test_replay.py",
+    "copy": "reviewed/tests/test_replay.py",
+    "sha256": "142837b08664356603982c9ee76cd7efc37b076695560e0236e19223f052a1b0"
+  },
+  "artifacts/bootstrap_source_audit_0001/report.md": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_source_audit_0001/report.md",
+    "copy": "reviewed/artifacts/bootstrap_source_audit_0001/report.md",
+    "sha256": "bceca316981ecbd8d1022a44bf68ef0e1b1089a8f976ac40942c55e5e5bdc908"
+  },
+  "artifacts/bootstrap_source_audit_0001/findings.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_source_audit_0001/findings.json",
+    "copy": "reviewed/artifacts/bootstrap_source_audit_0001/findings.json",
+    "sha256": "2c60bbd8552c467153687301da90f9f9c3b43e62a625edab0cb838ae0baf6b43"
+  },
+  "artifacts/sources/planner-paper.html": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/sources/planner-paper.html",
+    "copy": "reviewed/artifacts/sources/planner-paper.html",
+    "sha256": "d065102411a0abbb3337c65c25d3af2b2b32ccedcbaf19a737f6708e691f9da5"
+  },
+  "artifacts/sources/planner-project.html": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/sources/planner-project.html",
+    "copy": "reviewed/artifacts/sources/planner-project.html",
+    "sha256": "287fa1e17253a76dd8e3f9a6dcc2693c4f88372a381fcbfc19eceb2a80747e37"
+  },
+  "artifacts/sources/project.html": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/sources/project.html",
+    "copy": "reviewed/artifacts/sources/project.html",
+    "sha256": "5b9b6a3fb3c3de0922af3267d8054c6316879445cb90e975eb85d11556d02924"
+  },
+  "artifacts/bc_common_noise_clock_head_0001/policy_interface.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bc_common_noise_clock_head_0001/policy_interface.json",
+    "copy": "reviewed/artifacts/bc_common_noise_clock_head_0001/policy_interface.json",
+    "sha256": "9b35ed2d9cfd0bb989738f3950c8668c9ff55f2e17a4d53f40eaec065310a149"
+  },
+  "artifacts/bc_common_noise_clock_head_0001/audit.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bc_common_noise_clock_head_0001/audit.py",
+    "copy": "reviewed/artifacts/bc_common_noise_clock_head_0001/audit.py",
+    "sha256": "e9cb1b76014b43eb7e1e1c72d68b8f460b8b82673685ed5789a9a18af4c567cd"
+  },
+  "artifacts/bc_common_noise_clock_head_0001/manifest.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bc_common_noise_clock_head_0001/manifest.json",
+    "copy": "reviewed/artifacts/bc_common_noise_clock_head_0001/manifest.json",
+    "sha256": "69810f439e29dd46879b5a346a6a2b7de6d0c748a4887bffe62f30a797596af0"
+  },
+  "artifacts/mpc_clock_actor_recovery_0001/final_report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/mpc_clock_actor_recovery_0001/final_report.json",
+    "copy": "reviewed/artifacts/mpc_clock_actor_recovery_0001/final_report.json",
+    "sha256": "aad47c50449ae6379da9cc5a18374b3f1345c250b3e6722a87a7995af9d96dcd"
+  }
+}

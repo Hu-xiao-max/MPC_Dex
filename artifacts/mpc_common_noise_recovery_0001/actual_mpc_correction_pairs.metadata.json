@@ -1,0 +1,226 @@
+{
+  "kind": "diagnostic-actual-mpc-correction-supervised-pairs",
+  "rows": 21,
+  "source_branches": 5,
+  "noisy_prefix_rows_excluded": 45,
+  "no_fabricated_next_actions": true,
+  "no_next_action_field": true,
+  "not_a_cold_reset_replay_dataset": true,
+  "production_eligible": false,
+  "main_demonstrations": 0,
+  "SAC_successes": 0,
+  "learning_updates": 0,
+  "data_sha256": "93549697c87732d146df43ace7b3a6b271abc11af9d96cfc967e31aea97ed27a",
+  "row_provenance": [
+    {
+      "row": 0,
+      "seed": 17021,
+      "source_control_1based": 10,
+      "source_transition_row_0based": 9,
+      "source_trajectory": "seed_17021/transitions.npz",
+      "source_trajectory_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 1,
+      "seed": 17021,
+      "source_control_1based": 11,
+      "source_transition_row_0based": 10,
+      "source_trajectory": "seed_17021/transitions.npz",
+      "source_trajectory_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 2,
+      "seed": 17021,
+      "source_control_1based": 12,
+      "source_transition_row_0based": 11,
+      "source_trajectory": "seed_17021/transitions.npz",
+      "source_trajectory_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 3,
+      "seed": 17021,
+      "source_control_1based": 13,
+      "source_transition_row_0based": 12,
+      "source_trajectory": "seed_17021/transitions.npz",
+      "source_trajectory_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 4,
+      "seed": 17021,
+      "source_control_1based": 14,
+      "source_transition_row_0based": 13,
+      "source_trajectory": "seed_17021/transitions.npz",
+      "source_trajectory_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 5,
+      "seed": 17021,
+      "source_control_1based": 15,
+      "source_transition_row_0based": 14,
+      "source_trajectory": "seed_17021/transitions.npz",
+      "source_trajectory_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 6,
+      "seed": 17021,
+      "source_control_1based": 16,
+      "source_transition_row_0based": 15,
+      "source_trajectory": "seed_17021/transitions.npz",
+      "source_trajectory_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 7,
+      "seed": 17022,
+      "source_control_1based": 10,
+      "source_transition_row_0based": 9,
+      "source_trajectory": "seed_17022/transitions.npz",
+      "source_trajectory_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 8,
+      "seed": 17023,
+      "source_control_1based": 10,
+      "source_transition_row_0based": 9,
+      "source_trajectory": "seed_17023/transitions.npz",
+      "source_trajectory_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 9,
+      "seed": 17023,
+      "source_control_1based": 11,
+      "source_transition_row_0based": 10,
+      "source_trajectory": "seed_17023/transitions.npz",
+      "source_trajectory_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 10,
+      "seed": 17023,
+      "source_control_1based": 12,
+      "source_transition_row_0based": 11,
+      "source_trajectory": "seed_17023/transitions.npz",
+      "source_trajectory_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 11,
+      "seed": 17023,
+      "source_control_1based": 13,
+      "source_transition_row_0based": 12,
+      "source_trajectory": "seed_17023/transitions.npz",
+      "source_trajectory_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 12,
+      "seed": 17023,
+      "source_control_1based": 14,
+      "source_transition_row_0based": 13,
+      "source_trajectory": "seed_17023/transitions.npz",
+      "source_trajectory_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 13,
+      "seed": 17023,
+      "source_control_1based": 15,
+      "source_transition_row_0based": 14,
+      "source_trajectory": "seed_17023/transitions.npz",
+      "source_trajectory_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 14,
+      "seed": 17024,
+      "source_control_1based": 10,
+      "source_transition_row_0based": 9,
+      "source_trajectory": "seed_17024/transitions.npz",
+      "source_trajectory_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 15,
+      "seed": 17024,
+      "source_control_1based": 11,
+      "source_transition_row_0based": 10,
+      "source_trajectory": "seed_17024/transitions.npz",
+      "source_trajectory_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 16,
+      "seed": 17024,
+      "source_control_1based": 12,
+      "source_transition_row_0based": 11,
+      "source_trajectory": "seed_17024/transitions.npz",
+      "source_trajectory_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 17,
+      "seed": 17025,
+      "source_control_1based": 10,
+      "source_transition_row_0based": 9,
+      "source_trajectory": "seed_17025/transitions.npz",
+      "source_trajectory_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 18,
+      "seed": 17025,
+      "source_control_1based": 11,
+      "source_transition_row_0based": 10,
+      "source_trajectory": "seed_17025/transitions.npz",
+      "source_trajectory_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 19,
+      "seed": 17025,
+      "source_control_1based": 12,
+      "source_transition_row_0based": 11,
+      "source_trajectory": "seed_17025/transitions.npz",
+      "source_trajectory_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    },
+    {
+      "row": 20,
+      "seed": 17025,
+      "source_control_1based": 13,
+      "source_transition_row_0based": 12,
+      "source_trajectory": "seed_17025/transitions.npz",
+      "source_trajectory_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+      "origin": "actually_executed_corrected_native_mpc",
+      "successful_source_branch": true
+    }
+  ]
+}

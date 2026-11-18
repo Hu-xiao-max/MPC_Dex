@@ -1,0 +1,53 @@
+{
+  "status": "prepared",
+  "purpose": "One artifact-local elapsed-time representation diagnostic on identical73 authentic pairs",
+  "seed": 17001,
+  "updates": 12000,
+  "bc_lr": 0.003,
+  "bc_action_epsilon": 0.01,
+  "source_main_bc_action_epsilon": 0.02,
+  "batch_size": 256,
+  "sampling": "Uniform with replacement over all73 pairs",
+  "hidden_sizes": [
+    256,
+    256
+  ],
+  "diagnostic_unused_critics": 2,
+  "critic_updates": 0,
+  "online_updates": 0,
+  "initial_std": 0.3,
+  "evaluation_updates": [
+    3000,
+    6000,
+    12000
+  ],
+  "evaluation_seed": 42,
+  "evaluation_max_controls": 100,
+  "evaluation_if_success": "One same-checkpoint deterministic closed-loop continuation for2s using fresh policy actions",
+  "head_polish_allowed": false,
+  "additional_epochs_allowed": false,
+  "device": "cuda",
+  "torch_threads": 1,
+  "torch_interop_threads": 1,
+  "matmul_tf32": false,
+  "cudnn_tf32": false,
+  "source_main_parameters_unchanged": true,
+  "dataset_sha256": "bd59e49c547c96c07202a5a91e56555137247766f623284a0b51803614f2fdf3",
+  "dataset_validation_sha256": "6be44e0329240c375ac0e3d931f5a1086f952c494295ca6a86140f7b5918661e",
+  "policy_interface": {
+    "kind": "diagnostic_bootstrap_elapsed_time_absolute_joint_target",
+    "observation_dimension": 61,
+    "base_observation_dimension": 60,
+    "task": "rotation",
+    "appended_feature": "actual reset-relative decision elapsed seconds",
+    "clock_dtype": "float32",
+    "goal_feature": false,
+    "main_policy_compatible": false,
+    "production_eligible": false
+  },
+  "observation_dimension": 61,
+  "fresh_network": true,
+  "import_60D_weights": false,
+  "initialization_caveat": "Extra input changes architecture and RNG consumption; same seed is not a pure causal control",
+  "source60D_summary_sha256": "28f83a53cc4cf6e8618000fd5d748cf7b8f59737f5fce914f5b4d8d44c33ec75"
+}

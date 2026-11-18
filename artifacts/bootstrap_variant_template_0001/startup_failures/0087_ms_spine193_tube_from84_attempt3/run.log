@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0087_ms_spine193_tube_from84/run.py", line 1203, in <module>
+    main()
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0087_ms_spine193_tube_from84/run.py", line 1089, in main
+    complete_episode(current, 'warmup')
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0087_ms_spine193_tube_from84/run.py", line 1040, in complete_episode
+    counts[phase + '_episodes_by_prefix'][key] += 1
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+KeyError: 's12'

@@ -1,0 +1,19 @@
+{
+  "compatibility.log": "c10d750c1ab46589cc426cbb21ffc133d7ba61f12e9f8c4afab76c5dbb2a1224",
+  "compatibility.py": "73a46ce296dbc204581de31ce34a5a3e8e98270d865e6eb05c11ddaf8869f34d",
+  "config.json": "d1cc3404c2deaa309452ca86eb6dc4eb5b6bda70ec77d3a0e4874505c62e3edb",
+  "finalize.py": "b57b58555ab7bf1332c6f864754f003b9a5760c42a0baaed0b00a380f3e84527",
+  "finalize_optional_fields_v1.log": "ad033429e3f58cbf39de0111c5c97e6ed32d07dbb58028dcb00a6b8dc492d8bf",
+  "finalize_optional_fields_v1.py": "cd7b9944954bf637b0fc12edb2834439031950c11705b79e8a41280d5848f40b",
+  "post_success_hold_2s/commands.json": "0268542c357518e9fda1177d2f518e14c33cd9391cffeee64911df729047be47",
+  "post_success_hold_2s/physics.npz": "718eb268f1f6922465c09aafa8c751c1c8e33878a47e5b3797b1dd01ac2508b2",
+  "post_success_hold_2s/report.json": "d112cba0a1442cd1179f164a7a3850701c888445bb58735c7700c31391059829",
+  "post_success_hold_2s/transitions.npz": "0448ab07586bec5233200870be754972ed5bc120ccdc238beea001ff7370179e",
+  "report.json": "43646732202d3fd80f0cebb8010c6ec31e465cce31f7f839fc45ee643faf408f",
+  "source_recovery_transitions.npz": "d0481128c1f1f9f942757e9dc0d04ef4adcd69067bec0ee6f673daca59fedfda",
+  "source_teacher_transitions.npz": "f360aca4e95d8a11ba6109ae0efbf678d88c67d8138881ad9e26bea386752148",
+  "strict_audit/commands.json": "35ae72986750f5c6e4dc1d8b914eeecabf18294d2b2ae67b1136fa801f03d3e8",
+  "strict_audit/physics.npz": "20e02587038f84fb5fd4169352b4daafc0cc226dd1121418059e054b42b0393b",
+  "strict_audit/report.json": "abb9365bea0be8dc0b4ceaac4f1aad0628163563d4570f9efc366ab07e9a1d05",
+  "strict_audit/transitions.npz": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb"
+}

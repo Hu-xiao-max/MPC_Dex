@@ -1,0 +1,21 @@
+[
+  {
+    "command": ".venv/bin/python artifacts/bc_common_continuation_0001/prepare.py",
+    "log": "prepare.log",
+    "role": "Four bitwise physical source validations and exact12-pair dataset"
+  },
+  {
+    "command": ".venv/bin/python artifacts/bc_common_continuation_0001/train.py",
+    "log": "train.log",
+    "role": "Fresh BC12k with three prescribed strict policy audits"
+  },
+  {
+    "command": ".venv/bin/python artifacts/bc_common_continuation_0001/polish.py",
+    "log": "polish.log",
+    "role": "One gated head solve and conditional continued-policy audit"
+  },
+  {
+    "command": ".venv/bin/python artifacts/bc_common_continuation_0001/finalize.py",
+    "role": "Read-only invariant checks and final artifact manifest"
+  }
+]

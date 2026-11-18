@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "code_bug_found": false,
+  "no_training_or_source_changes": true,
+  "proposed_experiment": "Frozen actor and fixed alpha;2000 actual strict interactions, fresh critics only,1745 expected critic-only updates; no automatic unfreeze",
+  "method_status": "Explicit local bootstrap diagnostic, not a published companion recipe",
+  "inputs_sha256": {
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/config.json": "79be503a14b369d9eb91f44aba289ce3e5e42b5132f4889407e8244e1223561c",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/run/metrics.jsonl": "28ab7d4e321d97408632db16d12ebe2dd0322639c7870815890ce09462c81369",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/state.json": "53c8e3ab459d823da2fa365840d0db44080ae29954ef513ff140049680faec1b",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/replay_0.npz": "e3763345aa2a14357c40a1751838529aa80bfd887fa3d4c81485bb8669d84c30",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000006/replay_0.npz": "066b12419d91f2f6f99ed98d143a4b5187a9b9da13e5a5053bf801cfd49290f6",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/source/mpc_dex/learning.py": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/source/scripts/train_bootstrap.py": "6e28ade575940b88a4c7299968aa4b8152a2212cfbc97046ed997b8e58174146",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/source/mpc_dex/replay.py": "e503f61fadd58a5780fed7f6ff82d33b599d3eef00dfdaea6b9dd636cfc84311",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/source/mpc_dex/env.py": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/agent.pt": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000003/agent.pt": "1e89273ed847e11cb41a9c6ee908ac002283a53bb7e1cb73b63592b7ed32df58",
+    "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000006/agent.pt": "386be7a4e915a3b54e7bd7fc534c5b9502b84f35fd5e7139f7ec3c6ddeabc220"
+  },
+  "gradient_probe_seed": 19061,
+  "source_hashes": {
+    "sources/companion_project.html": "287fa1e17253a76dd8e3f9a6dcc2693c4f88372a381fcbfc19eceb2a80747e37",
+    "sources/learning.py": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c",
+    "sources/main_project.html": "5b9b6a3fb3c3de0922af3267d8054c6316879445cb90e975eb85d11556d02924",
+    "sources/metrics.jsonl": "28ab7d4e321d97408632db16d12ebe2dd0322639c7870815890ce09462c81369",
+    "sources/replay.py": "e503f61fadd58a5780fed7f6ff82d33b599d3eef00dfdaea6b9dd636cfc84311",
+    "sources/run_config.json": "79be503a14b369d9eb91f44aba289ce3e5e42b5132f4889407e8244e1223561c",
+    "sources/train_bootstrap.py": "6e28ade575940b88a4c7299968aa4b8152a2212cfbc97046ed997b8e58174146"
+  }
+}

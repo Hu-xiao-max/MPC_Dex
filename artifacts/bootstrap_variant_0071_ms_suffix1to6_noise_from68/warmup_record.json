@@ -1,0 +1,9 @@
+{
+  "learning_gate": "verified off-policy demonstration rows",
+  "passed": true,
+  "demonstration_rows": 138,
+  "demonstration_episodes": 23,
+  "warmup_force_successes_informational": 79,
+  "complete_warmup_episodes": 256,
+  "warmup_successes_not_required": true
+}

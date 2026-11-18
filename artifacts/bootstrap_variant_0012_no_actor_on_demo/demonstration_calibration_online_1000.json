@@ -1,0 +1,92 @@
+{
+  "alpha_convention": "targets are discounted raw returns / divisor without entropy terms; not the SAC backup",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 1000,
+    "online_updates": 3000
+  },
+  "episodes": {
+    "mpc": {
+      "rows": 5,
+      "target_normalized": [
+        1.0820567052508618,
+        1.0901335945505393,
+        1.1251311723782762,
+        1.0764218422834793,
+        1.04743422981994
+      ],
+      "q_normalized": [
+        [
+          0.6521413922309875,
+          0.6053454279899597,
+          0.7737627029418945,
+          0.9487442970275879,
+          1.0379838943481445
+        ],
+        [
+          0.6778587698936462,
+          0.5902413725852966,
+          0.7701159119606018,
+          0.9461504220962524,
+          1.0348358154296875
+        ]
+      ],
+      "critic_normalized_bias": [
+        -0.28063996594890445,
+        -0.28039505046352237
+      ],
+      "critic_normalized_rmse": [
+        0.33457358189890307,
+        0.33359658350185717
+      ],
+      "first_row_deterministic_action_max_abs_difference": 1.5206265449523926,
+      "first_row_deterministic_action_l2_difference": 2.628173828125,
+      "first_row_latent_std_mean": 0.5785627365112305,
+      "first_row_is_prefix6_handoff": true,
+      "actor_log_prob_of_demonstration_actions": [
+        -82.01696014404297,
+        -797.7599487304688,
+        -1163.5699462890625,
+        -252.33114624023438,
+        -216.45957946777344
+      ]
+    },
+    "recorded": {
+      "rows": 3,
+      "target_normalized": [
+        1.1235722751873969,
+        1.1109271354283923,
+        1.142855087927612
+      ],
+      "q_normalized": [
+        [
+          0.6908926367759705,
+          0.38953515887260437,
+          1.1288617849349976
+        ],
+        [
+          0.7139994502067566,
+          0.3887781500816345,
+          1.0924060344696045
+        ]
+      ],
+      "critic_normalized_bias": [
+        -0.3893549726532763,
+        -0.3940569545951352
+      ],
+      "critic_normalized_rmse": [
+        0.4857344493525766,
+        0.4802062622786112
+      ],
+      "first_row_deterministic_action_max_abs_difference": 1.5115362405776978,
+      "first_row_deterministic_action_l2_difference": 2.3942174911499023,
+      "first_row_latent_std_mean": 0.5785627365112305,
+      "first_row_is_prefix6_handoff": true,
+      "actor_log_prob_of_demonstration_actions": [
+        -39.282955169677734,
+        -1048.103515625,
+        -879.1197509765625
+      ]
+    }
+  }
+}

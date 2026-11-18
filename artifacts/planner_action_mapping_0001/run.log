@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/planner_action_mapping_0001/run.py", line 39, in <module>
+    prior=PrimitiveBasis.from_trajectories(np.vstack((initial,prior_q[:,env.q_ids])))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PrimitiveBasis.from_trajectories() missing 1 required keyword-only argument: 'provenance'

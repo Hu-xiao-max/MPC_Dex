@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/frozen_checkpoint_evaluation_0001/evaluate_multisource.py", line 21, in <module>
+    n = sources[name]['length']
+        ~~~~~~~^^^^^^
+KeyError: 'seed_136'
+exit=1
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/frozen_checkpoint_evaluation_0001/evaluate_multisource.py", line 20, in <module>
+    rep_ = json.loads((COLL / name / 'report.json').read_text()); assert rep_['strict_force_success'] and rep_['stored']
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_133/report.json'
+exit=1
+{"variant": "bootstrap_variant_0068_ms_suffix123_from61", "checkpoint": "online_2000", "s1": "61/120 det 2/4", "s1_holdout": "61/120", "s2": "0/120 det 0/4", "s2_holdout": "0/120", "s3": "3/120 det 0/4", "s3_holdout": "3/120", "wall": 526.7}
+exit=0
+{"variant": "bootstrap_variant_0079_ms_suffix1to8_weighted_from74", "checkpoint": "online_4000", "s1": "0/90 det 0/3", "s1_holdout": "0/90", "s2": "0/90 det 0/3", "s2_holdout": "0/90", "s3": "0/90 det 0/3", "s3_holdout": "0/90", "s4": "0/90 det 0/3", "s4_holdout": "0/90", "s5": "0/90 det 0/3", "s5_holdout": "0/90", "s6": "0/90 det 0/3", "s6_holdout": "0/90", "s7": "0/90 det 0/3", "s7_holdout": "0/90", "s8": "0/90 det 0/3", "s8_holdout": "0/90", "wall": 293.9}
+ms-holdout-0079 exit=0

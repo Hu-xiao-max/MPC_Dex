@@ -1,0 +1,12 @@
+{
+  "torch": "2.14.0+cu130",
+  "mujoco": "3.14.0",
+  "numpy": "2.4.6",
+  "python": "3.11.15 (main, Jun 23 2026, 15:19:43) [Clang 22.1.3 ]",
+  "device": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "threads": 1,
+  "interop_threads": 1,
+  "tf32": false,
+  "matmul_precision": "highest",
+  "frozen_execution_manifest_sha256": "ab85c5938b4cfd49964ec8516a84fe9f17e2fffebba2b98698479c2a364cb2a9"
+}

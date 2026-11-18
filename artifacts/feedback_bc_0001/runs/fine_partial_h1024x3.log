@@ -1,0 +1,30 @@
+rows 705 (distinct observations 579; spine x10; training branches 94, held-out branches 17 with 101 correction rows)
+step 0 bc_loss 3.52732
+step 5000 bc_loss 0.01793
+step 10000 bc_loss 0.01776
+step 15000 bc_loss 0.01123
+step 20000 bc_loss 0.00058
+step 25000 bc_loss 0.00061
+step 30000 bc_loss 0.00037
+step 35000 bc_loss 0.01154
+step 40000 bc_loss 0.00046
+step 45000 bc_loss 0.00024
+step 50000 bc_loss 0.00020
+step 55000 bc_loss 0.00016
+step 60000 bc_loss 0.00032
+step 65000 bc_loss 0.00005
+step 70000 bc_loss 0.00006
+step 75000 bc_loss 0.00010
+step 80000 bc_loss 0.00010
+step 85000 bc_loss 0.00003
+step 90000 bc_loss 0.00002
+step 95000 bc_loss 0.00001
+step 99999 bc_loss 0.00005
+training fit over 579 distinct rows: action-space L2 median 0.0053 p90 0.0115 max 0.043 (row track_seed_193_j12_r0030_d1); atanh-space MSE 0.00007 | spine rows [0.00800000037997961, 0.010999999940395355, 0.009999999776482582, 0.017999999225139618, 0.008999999612569809, 0.006000000052154064, 0.006000000052154064, 0.007000000216066837, 0.006000000052154064, 0.004999999888241291, 0.0020000000949949026, 0.008999999612569809, 0.003000000026077032, 0.006000000052154064]
+HELD-OUT regression (chaos-free generalisation): 101 rows, action-space L2 median 0.0959 p90 0.2716 max 2.046; atanh-space MSE 0.03657
+cold {'det': {'ok': False, 'controls': 6, 'angle': -0.05, 'fail': 'palm_support'}, 'stoch': [False, False, False, False, False]} 
+spine det k1.. [False, False, False, False, False, False, False, False, True, True, False, True, True] 
+spine stoch3 [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 3, 3, 3]
+training branches: corrected-state handoffs (deterministic) 10/24; informative cells j<=9: 2/16; by (order, j) {'o1j0': '0/3', 'o1j3': '0/4', 'o1j6': '0/4', 'o1j7': '1/2', 'o1j9': '1/3', 'o1j10': '4/4', 'o1j11': '4/4'}
+held-out branches: corrected-state handoffs (deterministic) 6/17; informative cells j<=9: 0/11; by (order, j) {'o1j0': '0/2', 'o1j3': '0/2', 'o1j6': '0/3', 'o1j7': '0/1', 'o1j9': '0/3', 'o1j10': '3/3', 'o1j11': '3/3'}
+wall 456.1

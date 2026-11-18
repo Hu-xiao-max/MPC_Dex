@@ -1,0 +1,6 @@
+{
+  "valid_for_training": false,
+  "valid_for_primitive_extraction": false,
+  "reason": "Success test admitted ballistic releases and Euler-projection tumbling. Six inspected stochastic successes had zero hand contacts and dropped 2\u201330 ms afterward. Preserve as diagnostic evidence only.",
+  "replacement": "Corrected incremental body-principal-axis rotation and contact-retention criteria; fresh training required."
+}

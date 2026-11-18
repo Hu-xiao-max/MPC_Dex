@@ -1,0 +1,20 @@
+{
+ "variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57",
+ "checkpoint": "online_2000",
+ "control4_at_s3 r=0.0": "1/1 det; failing suffix lengths []",
+ "control4_at_s3 r=0.005": "3/8 det; failing suffix lengths [6, 6, 6, 6, 8]",
+ "control4_at_s3 r=0.01": "2/8 det; failing suffix lengths [6, 6, 4, 6, 6, 6]",
+ "control4_at_s3 r=0.02": "3/8 det; failing suffix lengths [11, 6, 6, 5, 6]",
+ "control4_at_s3 r=0.05": "0/8 det; failing suffix lengths [6, 6, 6, 8, 1, 6, 1, 6]",
+ "control4_at_s3 exact + stochastic policy": "4/10",
+ "policy mean at s3 vs recorded control 4: L2": "0.0122",
+ "policy from prefix 3: det, stoch": "False (7 ctrls, drop); 4/10",
+ "control5_at_s4 r=0.0": "1/1 det; failing suffix lengths []",
+ "control5_at_s4 r=0.005": "6/8 det; failing suffix lengths [5, 5]",
+ "control5_at_s4 r=0.01": "4/8 det; failing suffix lengths [5, 6, 5, 4]",
+ "control5_at_s4 r=0.02": "1/8 det; failing suffix lengths [6, 5, 4, 6, 6, 12, 5]",
+ "control5_at_s4 r=0.05": "1/8 det; failing suffix lengths [5, 5, 0, 4, 6, 5, 5]",
+ "control5_at_s4 exact + stochastic policy": "6/10",
+ "policy mean at s4 vs recorded control 5: L2": "0.0230",
+ "policy from prefix 4: det, stoch": "True (5 ctrls, None); 4/10"
+}

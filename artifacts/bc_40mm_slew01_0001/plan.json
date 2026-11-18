@@ -1,0 +1,13 @@
+{
+  "status": "waiting_for_completed_source_and_independent_audits",
+  "source": "artifacts/mpc_matched40_slew01_0001",
+  "no_data_loaded": true,
+  "noise_seeds": [
+    17011,
+    17012,
+    17013
+  ],
+  "uniform_noise_amplitude": 0.0001,
+  "required_qualified_noise_cases": 3,
+  "conditional_training": "Paper BC .02/.003/batch256/12000 updates, then one frozen-trunk least-squares correction only if all three noise cases qualify"
+}

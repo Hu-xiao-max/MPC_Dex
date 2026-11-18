@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "heldout_policy_checks": [
+    {
+      "seed": 17041,
+      "actions_and_actual_logprobs_bitexact_under_trainer_shape": true,
+      "final_rng_bitexact": true
+    },
+    {
+      "seed": 17042,
+      "actions_and_actual_logprobs_bitexact_under_trainer_shape": true,
+      "final_rng_bitexact": true
+    },
+    {
+      "seed": 17043,
+      "actions_and_actual_logprobs_bitexact_under_trainer_shape": true,
+      "final_rng_bitexact": true
+    },
+    {
+      "seed": 17044,
+      "actions_and_actual_logprobs_bitexact_under_trainer_shape": true,
+      "final_rng_bitexact": true
+    },
+    {
+      "seed": 17045,
+      "actions_and_actual_logprobs_bitexact_under_trainer_shape": true,
+      "final_rng_bitexact": true
+    }
+  ],
+  "actor_alpha_counters_optimizer_states_bitexact": true,
+  "all_critic_adam_parameters_step_500": true,
+  "critic_parameter_states": 20,
+  "fullphysics_control_state_alignment_exact": true
+}

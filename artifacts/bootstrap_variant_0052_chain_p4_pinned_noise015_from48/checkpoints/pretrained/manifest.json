@@ -1,0 +1,13 @@
+{
+  "agent.pt": "fbb0a58f54bb94e23cf8efd3f55906311404f2ec73f4906e5372c704c4a657bd",
+  "agent.pt.metadata.json": "70689fef6675e58fc1b109b10955353456a239897dc4e6cbe80d8c5499fe759d",
+  "current_episode/physics.npz": "59a727762ef2c9041f94b165ae5f5b1ba2497dce4225684071c7e1a8ac08f182",
+  "current_episode/report.json": "9500233ce333cbaeb04153444cd863e56c9a3badba08764ed3577cb36e4b8077",
+  "current_episode/rng_initial.pt": "d113b2a3082f9973bfa971581391baf9fae2353118dd9a6428aac911084df3eb",
+  "current_episode/transitions.npz": "b1448380ceac5d8c95acdc4b305dfa25bb381043b7b6de12a5b6fab90345ddcf",
+  "environment.bin": "dba6db63a314680a2c8ed105abb68501cfaff06cd9b4f5fbe9c88e5c0cb8aefe",
+  "environment.npz": "681d57065bd3934be38a59e44d4d97b25bbbea3b3362898e1aa79334d2490a4f",
+  "replay.npz": "afc50d1b7d8cb6efaf7a0ab44ae558412cf509170ce91f3cb8059c347f252736",
+  "rng.pt": "2f488526ab16998f7d27659745320f66a4db9fe73621fccd5bdd236af5e7e57d",
+  "state.json": "8701e528a15fe2cfe6e8375f151d52bf680058267cd850ecc90009902e1404ec"
+}

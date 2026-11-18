@@ -1,0 +1,525 @@
+{
+  "rows": 587,
+  "episodes": 51,
+  "sources": [
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_101",
+      "rows": 10,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 327.4461282400953,
+      "first_row_is_handoff_for_suffix": 10,
+      "bc_rows": 6,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_102",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 350.44699507635823,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_103",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 330.91457256111823,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_104",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 340.8288063247928,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_105",
+      "rows": 11,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 335.98525511922423,
+      "first_row_is_handoff_for_suffix": 11,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_106",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 333.8816640931949,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_107",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 344.05970025542655,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 7,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_108",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 345.50244216088976,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_109",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 346.6280229008811,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_110",
+      "rows": 10,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 345.6914139034358,
+      "first_row_is_handoff_for_suffix": 10,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_116",
+      "rows": 9,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 350.9771692797802,
+      "first_row_is_handoff_for_suffix": 9,
+      "bc_rows": 5,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_117",
+      "rows": 10,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 328.5034371052307,
+      "first_row_is_handoff_for_suffix": 10,
+      "bc_rows": 7,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_119",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 290.38675252645464,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_120",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 348.1084793748897,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_121",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 306.8683053318139,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_122",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 301.5180918853757,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_132",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 296.98060597475654,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_134",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 339.87128190446305,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_136",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 333.1597093786039,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_149",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 367.88227130699306,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_152",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 311.503475494443,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_164",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 329.07478183234895,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 5,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_165",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 353.0060347082605,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_166",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 322.7833281952953,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_167",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 350.6194624630014,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_168",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 367.0820131067019,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 4,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_169",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 306.1309063799444,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_170",
+      "rows": 11,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 339.8650912133839,
+      "first_row_is_handoff_for_suffix": 11,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_172",
+      "rows": 8,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 335.21187318570355,
+      "first_row_is_handoff_for_suffix": 8,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 8
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_173",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 325.53506993195924,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_174",
+      "rows": 9,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 334.4416162502338,
+      "first_row_is_handoff_for_suffix": 9,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_175",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 335.2446441466702,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_176",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 344.91943911356356,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_177",
+      "rows": 11,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 325.64148025737626,
+      "first_row_is_handoff_for_suffix": 11,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_178",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 362.1171352730186,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_179",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 301.47760274780995,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_180",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 310.9586585738682,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_181",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 300.23708786506677,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_183",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 414.4592826366964,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 5,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_184",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 331.5866898705004,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_185",
+      "rows": 10,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 338.1407626903616,
+      "first_row_is_handoff_for_suffix": 10,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_186",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 282.2017272054743,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_187",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 252.81606591385443,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_188",
+      "rows": 11,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 336.6378860437226,
+      "first_row_is_handoff_for_suffix": 11,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_189",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 321.3019991317281,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_190",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 283.62161160110475,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_191",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 344.06573984963126,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_192",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 306.8093354407024,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_193",
+      "rows": 10,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 365.31799523969323,
+      "first_row_is_handoff_for_suffix": 10,
+      "bc_rows": 6,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_194",
+      "rows": 12,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 275.885137069674,
+      "first_row_is_handoff_for_suffix": 12,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_195",
+      "rows": 11,
+      "rows_before_mpc_segment_excluded": 0,
+      "raw_return": 325.69730121322146,
+      "first_row_is_handoff_for_suffix": 11,
+      "bc_rows": 8,
+      "bc_shared_prefix_rows": 0
+    }
+  ],
+  "pretrain_offline_fraction": 0.3,
+  "online_offline_fraction": 0.3,
+  "batch_demonstration_rows": {
+    "pretrain": 77,
+    "online": 77
+  },
+  "collected_prefix_rows_never_appended": "physically replayed (and, when enabled, perturbed) prefix controls of collected episodes are never appended to the online replay; the demonstration buffer separately holds the recorded source rows listed in demonstration_recorded_rows, which may coincide with source transitions that prefix replay re-executes",
+  "immutable_during_stage": true,
+  "replay_sha256": "55b3dc60d36c8087f60744c8098539f9a50b4d9e76e7dabede94fb116f7f24f6"
+}

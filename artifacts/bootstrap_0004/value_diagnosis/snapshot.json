@@ -1,0 +1,11 @@
+{
+  "source_directory": "artifacts/bootstrap_0004/checkpoint_00000009",
+  "environment_steps": 40000,
+  "hashes": {
+    "agent_40000.pt": "a90ad390f5af7aaaeec2ce93640d0a34e0351a5bd1786c64f453729438b93b64",
+    "agent_40000.pt.metadata.json": "2e4d57d3406402881f1976da7087d211433cae28e68d7e6ed31d9d09a90ab01b",
+    "replay_0_40000.npz": "b819b1c707af72c04d9a0fc114c7d9eb4389c72c00f42df2b1f1e1bbef5e63f5",
+    "state_40000.json": "1785570a5d41740255157b1a1ccd67c39120747bc785f974d8cfa3f748876d38"
+  },
+  "production_state_mutated": false
+}

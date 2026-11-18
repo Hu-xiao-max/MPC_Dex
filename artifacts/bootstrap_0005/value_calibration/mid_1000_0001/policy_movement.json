@@ -1,0 +1,27 @@
+{
+  "latent_std_min": 0.06188367307186127,
+  "latent_std_max": 0.12671050429344177,
+  "cold_reset_std_min": 0.11448462307453156,
+  "cold_reset_std_max": 0.12641102075576782,
+  "baseline_checkpoint_sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937",
+  "raw_mean_max_abs_change": 2.8308571577072144,
+  "raw_mean_rms_change": 1.1332368882850998,
+  "mean_action_max_abs_change": 1.4694409370422363,
+  "mean_action_rms_change": 0.5195138500422082,
+  "latent_std_max_abs_change": 0.07671050354838371,
+  "latent_std_rms_change": 0.04529708415042665,
+  "actor_parameter_max_abs_change": {
+    "trunk.0.weight": 0.03582260012626648,
+    "trunk.0.bias": 0.03084605187177658,
+    "trunk.1.weight": 0.03396749496459961,
+    "trunk.1.bias": 0.034677840769290924,
+    "trunk.3.weight": 0.03880636766552925,
+    "trunk.3.bias": 0.0343986377120018,
+    "trunk.4.weight": 0.03366009145975113,
+    "trunk.4.bias": 0.037232086062431335,
+    "mean_head.weight": 0.03878232464194298,
+    "mean_head.bias": 0.029123887419700623,
+    "log_std_head.weight": 0.03529135882854462,
+    "log_std_head.bias": 0.01721668243408203
+  }
+}

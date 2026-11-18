@@ -1,0 +1,53 @@
+{
+  "original_teacher_row_one_based": 7,
+  "first_recovery_row_one_based": 7,
+  "combined_dataset_correction_row_one_based": 23,
+  "nearby_conflicting_pair": {
+    "observation": {
+      "l2_difference": 0.01308414622573447,
+      "max_abs_difference": 0.006674766540527344
+    },
+    "action": {
+      "l2_difference": 1.7760324378825865,
+      "max_abs_difference": 0.7654857635498047
+    },
+    "latent_target": {
+      "l2_difference": 5.149750300023213,
+      "max_abs_difference": 2.0796589851379395
+    },
+    "frozen_feature": {
+      "l2_difference": 0.0024490786707904747,
+      "max_abs_difference": 0.0011600181460380554
+    },
+    "minimum_linear_head_gain_for_latent_pair": 2102.729635206475
+  },
+  "head_norms": {
+    "baseline_head_weight_frobenius": 5.148232555500956,
+    "polished_head_weight_frobenius": 3697.953702638771
+  },
+  "polished_actual_error_growth": [
+    {
+      "step": 1,
+      "observation_max_error": 0.0,
+      "action_max_error": 0.00020838528871536255,
+      "next_qpos_max_error": 0.00013839750141353413,
+      "next_qvel_max_error": 0.0020939211600978294
+    },
+    {
+      "step": 2,
+      "observation_max_error": 0.001383975031785667,
+      "action_max_error": 1.793456792831421,
+      "next_qpos_max_error": 1.1892400349024337,
+      "next_qvel_max_error": 9.795550676710171
+    },
+    {
+      "step": 3,
+      "observation_max_error": 11.892118453979492,
+      "action_max_error": 1.9799998998641968,
+      "next_qpos_max_error": 1.8041880345953452,
+      "next_qvel_max_error": 8.270758803621638
+    }
+  ],
+  "no_additional_rollouts_or_updates": true,
+  "clamp_note": "The actual float32 Torch clamp leaves every teacher scalar bitwise unchanged. Legacy metrics named pure_clipping_action_mse/maxerror also include NumPy float32 atanh/tanh reconstruction and are not evidence of clamp modification."
+}

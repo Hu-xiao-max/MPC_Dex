@@ -1,0 +1,10 @@
+{
+  "warmup_steps": 100,
+  "comparison_steps": 50,
+  "max_observation_error": 0.0,
+  "max_qpos_error": 0.0,
+  "max_reward_error": 0.0,
+  "max_retained_angle_error": 0.0,
+  "episode_return_restored": true,
+  "frames_restored": true
+}

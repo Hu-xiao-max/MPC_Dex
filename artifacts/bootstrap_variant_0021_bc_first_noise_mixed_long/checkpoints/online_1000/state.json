@@ -1,0 +1,166 @@
+{
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 734,
+    "online_policy_interactions": 1000,
+    "physical_prefix_controls": 3520,
+    "warmup_assisted_completed_episodes": 256,
+    "warmup_assisted_force_successes": 58,
+    "online_assisted_completed_episodes": 252,
+    "online_assisted_force_successes": 56,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 1000,
+    "warmup_raw_reward_sum": -2060.034475812956,
+    "online_raw_reward_sum": 249.0044747775547,
+    "warmup_episodes_by_prefix": {
+      "6": 105,
+      "7+noise": 71,
+      "8+noise": 80
+    },
+    "warmup_force_successes_by_prefix": {
+      "6": 0,
+      "7+noise": 14,
+      "8+noise": 44
+    },
+    "online_episodes_by_prefix": {
+      "6": 99,
+      "7+noise": 71,
+      "8+noise": 82
+    },
+    "online_force_successes_by_prefix": {
+      "6": 8,
+      "7+noise": 9,
+      "8+noise": 39
+    },
+    "handoff_terminated_before_policy": 0
+  },
+  "label": "online_1000",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 1000,
+    "online_updates": 3000
+  },
+  "normalized_alpha": 0.00034046327346004546,
+  "raw_equivalent_alpha": 0.06809265469200909,
+  "replay_rows": 1734,
+  "replay_pending_slot": 1733,
+  "unfinished_episode": true,
+  "inherited_learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 500,
+    "online_updates": 2000
+  },
+  "optimizer_steps": {
+    "critic": [
+      4000
+    ],
+    "actor": [
+      3000
+    ],
+    "alpha": [
+      3000
+    ]
+  },
+  "replay_policy": "fresh-stage-only online replay plus immutable 3-row demonstration buffer (demonstrations_replay.npz); pretraining batches 0.30 / online batches 0.30 demonstration share; inherited open replay archived without insertion",
+  "auxiliary_rng_states": {
+    "prefix_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 338448080377126626906108315833408847738,
+        "inc": 277787571960139062779747645871512500609
+      },
+      "has_uint32": 1,
+      "uinteger": 2083389632
+    },
+    "demonstration_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 101483981628755364107454667265883609980,
+        "inc": 15442456584747541523676618091130341711
+      },
+      "has_uint32": 0,
+      "uinteger": 1901595657
+    },
+    "handoff_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 176723256159876242551089618735982620449,
+        "inc": 176180653771163372256357156175804293123
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    }
+  },
+  "automatic_resume_supported": false,
+  "complete_update_boundary": true,
+  "environment_rng": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 95376830783351682500486580248632280039,
+      "inc": 332724090758049132448979897138935081983
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "environment_scalars": {
+    "start_angle": 0.30039143450192685,
+    "_last_wrapped": -1.637481273393903,
+    "angle": 4.432574247420425,
+    "previous_angle": 5.476041069362677,
+    "steps": 10,
+    "rotations": 0,
+    "dwell": 0,
+    "goal": 0.19125740212220071,
+    "heading_error": 0.19125740212220071,
+    "_episode_over": false,
+    "_contactless_seconds": 0.0,
+    "_goal_rewarded": false,
+    "retained_angle": 4.26077873087303,
+    "previous_retained_angle": 5.304245552815281,
+    "retained_positive_step": 0.04657560235524261,
+    "retained_negative_step": -1.0900424242974922,
+    "_palm_support_violation": false,
+    "_peak_palm_support_force": 0.0
+  },
+  "observer_state": {
+    "last_time": 1.0000000000000007,
+    "initial_time": 0.0,
+    "previous_quaternion": [
+      -0.9957713117033395,
+      0.010583497730603256,
+      0.03206724119386089,
+      0.08543521760147228
+    ],
+    "initial_axis": [
+      0.008228909977884457,
+      0.9999609152058732,
+      0.0032331256096483152
+    ],
+    "initial_position": [
+      0.027748841103997047,
+      0.0005038665071184322,
+      0.2779894478599656
+    ],
+    "raw_angle": 4.432574247420427,
+    "qualified_angle": 4.260778730873032,
+    "force_qualified_angle": 4.260778730873032,
+    "contactless_seconds": 0.0,
+    "independent_drop": false,
+    "initial_palm_normal_force": 0.0,
+    "initial_palm_support_violation": false,
+    "palm_support_violation": false,
+    "gravity_norm": 9.81,
+    "up": [
+      -0.0,
+      -0.0,
+      1.0
+    ],
+    "weight": 1.4715
+  },
+  "metrics_bytes": 3532412,
+  "metrics_sha256": "85682924bec907504852d0e01a629482be5395e6296066a7b84dee64b558e43e"
+}

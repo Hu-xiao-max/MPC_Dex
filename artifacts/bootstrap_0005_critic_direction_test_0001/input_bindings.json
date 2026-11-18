@@ -1,0 +1,126 @@
+{
+  "checkpoint.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/diagnostic_calibrated_critics.pt",
+    "sha256": "611d85c52effb2325e209168e0545a3e2633877409beaf0572ac358b0594d818"
+  },
+  "checkpoint.pt.metadata.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/diagnostic_calibrated_critics.pt.metadata.json",
+    "sha256": "e3704013bfe1d2a6ad5bad4bac0654f97d0443eff9e5b0e16ddd6d8d4d3ac2f0"
+  },
+  "initial_agent.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/initial_agent.pt",
+    "sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937"
+  },
+  "initial_grasp.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/initial_grasp.npz",
+    "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54"
+  },
+  "source_config.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/config.json",
+    "sha256": "0a8474a601bc837d61ae1acab5650420e88413e6e76a7d467b7aa3940d1d02f1"
+  },
+  "critic_source_manifest.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/manifest.json",
+    "sha256": "7fb994949c2ae82c25fa2227fd945fdf56a70e1f89c59f984b9fd2469e15b0bf"
+  },
+  "baseline_17041/transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17041/transitions.npz",
+    "sha256": "8309b40f5c03d8eb3e5e2c03e21d5f41a1b82a1d1a4d5b32acef78169b7886ce"
+  },
+  "baseline_17041/physics.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17041/physics.npz",
+    "sha256": "a536bb1d2572fc9bcb6b70887414edb7cab75acf7d40e0643f2599dfd7124d02"
+  },
+  "baseline_17041/report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17041/report.json",
+    "sha256": "9a0af1f5d630b687e0cc040fdb4fb4f2eac9a1fd34acd21b2af7b88a90b1c570"
+  },
+  "baseline_17041/torch_rng_initial.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17041/torch_rng_initial.pt",
+    "sha256": "fb6b92901ac9627a3e87c03d13d58cba5555f83a305d0b6bfb10172eed7612f6"
+  },
+  "baseline_17041/torch_rng_final.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17041/torch_rng_final.pt",
+    "sha256": "1c1ba3a71045f28e898df7d16bf6d2a1d5762d1fab9d910fef4529cdf0274803"
+  },
+  "baseline_17042/transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17042/transitions.npz",
+    "sha256": "da0e4891177fe7e83f3cdddaff29956189255f2433b859a2fd3f351e4b695667"
+  },
+  "baseline_17042/physics.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17042/physics.npz",
+    "sha256": "0738ba7ea7e905c8ec93bb1c9de8aac59d9f0d806082adebc00a142c876549b0"
+  },
+  "baseline_17042/report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17042/report.json",
+    "sha256": "13dc37a2948e10248c58f1aecd18642a49a2ea8d456230e8694a2640c424a157"
+  },
+  "baseline_17042/torch_rng_initial.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17042/torch_rng_initial.pt",
+    "sha256": "12e107ed0d65575e9011428c1ac4a4a9743a680d81554a4ba385d85216f0d97e"
+  },
+  "baseline_17042/torch_rng_final.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17042/torch_rng_final.pt",
+    "sha256": "05089b8cdfd65afa4aef3328fcc60dc5c3e47559add51a96e2d0236bbe821359"
+  },
+  "baseline_17043/transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17043/transitions.npz",
+    "sha256": "66dfe24d8b3cf0a49074c07644003d91528bc2e91cb7ca64ea44bc05bcc1808a"
+  },
+  "baseline_17043/physics.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17043/physics.npz",
+    "sha256": "4259315775302ecd96cee42e03bccb2804b44db3ecb599d9d5a821a23514cee7"
+  },
+  "baseline_17043/report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17043/report.json",
+    "sha256": "558999006287db11f0aab43179a2a26e6c692a0b26660afda394ec75cdfb6825"
+  },
+  "baseline_17043/torch_rng_initial.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17043/torch_rng_initial.pt",
+    "sha256": "725fa91cbcfb68837b0b43e20bbea7dc46f5a15683c2a5898377ebfd8dd71d47"
+  },
+  "baseline_17043/torch_rng_final.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17043/torch_rng_final.pt",
+    "sha256": "9f20d7b321eff82b215d61c42c5e3dbaf30cd1b31d35e1d1eec422e22730baef"
+  },
+  "baseline_17044/transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17044/transitions.npz",
+    "sha256": "0a0d2754574b20e3e8e193bab5d84198cc63f710ad747f219c721f795dfe546f"
+  },
+  "baseline_17044/physics.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17044/physics.npz",
+    "sha256": "f84a7ab1f0babdde178922141a4e3c44eafccda3943da648a403d6f0d9f5d840"
+  },
+  "baseline_17044/report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17044/report.json",
+    "sha256": "9cef4b0bf7734827c298a12dcf69770d0ef88b47376cf3f7c42e713b5f108e10"
+  },
+  "baseline_17044/torch_rng_initial.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17044/torch_rng_initial.pt",
+    "sha256": "4dd56045c278df7d193efa489967d79e39f259da5129927c21d2bb69ebadead7"
+  },
+  "baseline_17044/torch_rng_final.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17044/torch_rng_final.pt",
+    "sha256": "d77fe480b2f6ea14288faa61730e1dcbf1c713350e529c1e1b33718afdf7b836"
+  },
+  "baseline_17045/transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17045/transitions.npz",
+    "sha256": "8229a224a59545a27bdc7e770796b1f89eae8852ddd9eaaa5b807c6f1d3e2e95"
+  },
+  "baseline_17045/physics.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17045/physics.npz",
+    "sha256": "0b3b09a1ce6cea9519fc41722ff8271720eaf69d8120fc571b13393038d7fcef"
+  },
+  "baseline_17045/report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17045/report.json",
+    "sha256": "88a7ac6f7e9e4a646678d2cbab88b745ebec5f7b69983b8d1f6af35d78c48569"
+  },
+  "baseline_17045/torch_rng_initial.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17045/torch_rng_initial.pt",
+    "sha256": "d7ca9775917832da611090f272c302e761eafe7651441a4092d0fccd2048ef63"
+  },
+  "baseline_17045/torch_rng_final.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005_centered_critic_calibration_0001/inputs/heldout_17045/torch_rng_final.pt",
+    "sha256": "e874ceae279522a7960c750b2a6723dc47c102deb23a954fbca71aa97c2b6a50"
+  }
+}

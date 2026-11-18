@@ -1,0 +1,37 @@
+{
+  "label": "first_19",
+  "training_rows": 19,
+  "training_input_sha256": "0e0ae7d3e814956804491414992b0d576c85652da2bcd593d8e1ecdfb3ea9bf3",
+  "learner_config": {
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "ensemble_size": 2,
+    "online_target_critics": 2,
+    "actor_critic_reduction": "mean",
+    "min_std": 1e-05,
+    "max_std": 5.0,
+    "bc_lr": 0.0003,
+    "bc_action_epsilon": 1e-06,
+    "initial_std": 0.3,
+    "critic_lr": 3e-05,
+    "actor_lr": 0.0003,
+    "actor_warmup_updates": 200000,
+    "alpha_lr": 0.0001,
+    "initial_alpha": 0.05,
+    "pretrain_alpha": 0.02,
+    "discount": 0.995,
+    "tau": 0.01,
+    "target_entropy": -16.0
+  },
+  "invariant_initial": {
+    "critics": "63088c1139aa6e510a44b3d6410a5c87aa46cd72355c095d05d984ed3f466041",
+    "target_critics": "63088c1139aa6e510a44b3d6410a5c87aa46cd72355c095d05d984ed3f466041",
+    "log_alpha": "686f9be6fe367d393e94697e12ee0fe33c5e7cfb86c677d5dbab18f640544714"
+  },
+  "initial_actor_sha256": "547452d86f053dcfa1e749e7c85db879de80dd39d2bb2a703ce41704767903d9",
+  "teacher_saturation_count": 104,
+  "teacher_scalar_action_count": 304,
+  "results": []
+}

@@ -1,0 +1,9 @@
+{
+  "policy": "fresh-stage-only online replay plus separate immutable demonstration buffer",
+  "inherited_rows_imported": 0,
+  "prior_replay_sha256": "07109be1a6ed6d9f14846c740dd4a9f95a4799a78e03eadc09ecba6182677916",
+  "prior_rows": 4958,
+  "prior_final_open_row_preserved": true,
+  "prior_row_closed_or_linked_to_new_reset": false,
+  "inherited_checkpoint": "bootstrap_variant_0084_ms_spine193_sarsa_from82/checkpoints/online_4000"
+}

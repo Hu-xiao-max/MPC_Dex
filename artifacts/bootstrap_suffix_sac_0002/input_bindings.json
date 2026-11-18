@@ -1,0 +1,61 @@
+{
+  "initial.pt": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_2000/agent.pt",
+    "sha256": "e4a73d890963a70afc9337db7d29d345c38e192218a7b81dbd51cd6589232892",
+    "inherited_manifest_key": "checkpoints/online_2000/agent.pt"
+  },
+  "initial.pt.metadata.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_2000/agent.pt.metadata.json",
+    "sha256": "b42fafa2ba23e130da3714b293307dfc6ccf36924b84fabc6b587513be7c3602",
+    "inherited_manifest_key": "checkpoints/online_2000/agent.pt.metadata.json"
+  },
+  "inherited_state.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_2000/state.json",
+    "sha256": "1203098effd0c68c703a4b6921e0f416214e96b5dc1b19485ab4bd3c1cd54e85",
+    "inherited_manifest_key": "checkpoints/online_2000/state.json"
+  },
+  "prior_replay_lineage_only.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_2000/replay.npz",
+    "sha256": "6c981e8f943d238f76e5bb5ca0ff22cee8bf17ecee5c91c0618f02fdba6b9920",
+    "inherited_manifest_key": "checkpoints/online_2000/replay.npz"
+  },
+  "source_config.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/config.json",
+    "sha256": "8177e7272e6da812e01da5cb62b0f0fe2ee241277015268dd802bde5af55d105",
+    "inherited_manifest_key": "config.json"
+  },
+  "initial_grasp.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/initial_grasp.npz",
+    "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+    "inherited_manifest_key": "initial_grasp.npz"
+  },
+  "source_summary.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/summary.json",
+    "sha256": "c3ff68e65308cda8abf3733f9bce1c97ff6c2bbf7d87d7edeb4f71f36f8abd93",
+    "inherited_manifest_key": "summary.json"
+  },
+  "source_protocol.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/protocol.json",
+    "sha256": "d2129fcf68413d7eaf77aac428d4d00098634fef54d9ed0e7753bb32e506e1f2",
+    "inherited_manifest_key": "protocol.json"
+  },
+  "prefix_transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/prefix_transitions.npz",
+    "sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f",
+    "inherited_manifest_key": "prefix_transitions.npz"
+  },
+  "prefix_physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/prefix_physics.npz",
+    "sha256": "366fb79a431efb8b218d9dc7d6c39730aab9168553c736783f988c14b2a6672e",
+    "inherited_manifest_key": "prefix_physics.npz"
+  },
+  "prefix_report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/prefix_report.json",
+    "sha256": "1faeeea26d930d16720ee66993a217bc8e1a3404476d0037a51a627658c9b29f",
+    "inherited_manifest_key": "prefix_report.json"
+  },
+  "source_manifest.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/manifest.json",
+    "sha256": "258842818fa0087aa70566996fad768fa088c1e6e3102d533c1c40f3e48edfc0"
+  }
+}

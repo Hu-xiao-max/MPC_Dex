@@ -1,0 +1,9 @@
+{
+  "production_eligible": false,
+  "reason": "Object requires force-bearing palm contact during the turn; companion task explicitly excludes palm support. Recorded motion and prior audits remain valid measurements of this unsupported variant, not paper-valid rotation evidence.",
+  "source_url": "https://arxiv.org/html/2609.14868v1#S3.SS2.SSS1.p2",
+  "turn_peak_palm_resultant_force_newtons": 26.5665,
+  "hold_peak_palm_resultant_force_newtons": 43.7201,
+  "full_turn_env_gate_version": "incremental-principal-twist-with-grasp-retention-v2",
+  "decision": "Do not use for production primitive extraction, MPC demonstration collection, or successful-policy claims."
+}

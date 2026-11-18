@@ -1,0 +1,62 @@
+{
+  "kind": "diagnostic-actual-feedback-state-mpc-correction-supervised-pairs",
+  "rows": 5,
+  "actor_prefix_rows_excluded": 9,
+  "data_sha256": "2687cbe0a413c0d9523fabfff970a37b98a1a591583344fc025acb964d9675dc",
+  "source_trajectory": "recovery/transitions.npz",
+  "source_trajectory_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+  "observation_dimension": 61,
+  "raw_environment_observation_dimension": 60,
+  "clock": "float32 actual reset-relative decision elapsed seconds; observed, not synthetic step timestamps",
+  "policy_interface": {
+    "kind": "diagnostic_bootstrap_elapsed_time_absolute_joint_target",
+    "observation_dimension": 61,
+    "base_observation_dimension": 60,
+    "task": "rotation",
+    "appended_feature": "actual reset-relative decision elapsed seconds",
+    "clock_dtype": "float32",
+    "goal_feature": false,
+    "main_policy_compatible": false,
+    "production_eligible": false
+  },
+  "no_next_actions_fabricated": true,
+  "not_a_cold_reset_replay_dataset": true,
+  "source_actor_checkpoint_sha256": "fbc238202c323ecf6e2b97e5bd5c764ff085489260e3f083474bc608ef154715",
+  "source_actor_trace_sha256": "b3bf0e5b410a2555eb0be2a5e4141176c9a2cfcaef82063cb976972e8b5cc0bb",
+  "production_eligible": false,
+  "main_demonstrations": 0,
+  "SAC_successes": 0,
+  "learning_updates": 0,
+  "row_provenance": [
+    {
+      "row": 0,
+      "source_transition_row_0based": 9,
+      "source_control_1based": 10,
+      "origin": "actually_executed_corrected_native_mpc"
+    },
+    {
+      "row": 1,
+      "source_transition_row_0based": 10,
+      "source_control_1based": 11,
+      "origin": "actually_executed_corrected_native_mpc"
+    },
+    {
+      "row": 2,
+      "source_transition_row_0based": 11,
+      "source_control_1based": 12,
+      "origin": "actually_executed_corrected_native_mpc"
+    },
+    {
+      "row": 3,
+      "source_transition_row_0based": 12,
+      "source_control_1based": 13,
+      "origin": "actually_executed_corrected_native_mpc"
+    },
+    {
+      "row": 4,
+      "source_transition_row_0based": 13,
+      "source_control_1based": 14,
+      "origin": "actually_executed_corrected_native_mpc"
+    }
+  ]
+}

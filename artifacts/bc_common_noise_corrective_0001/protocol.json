@@ -1,0 +1,37 @@
+{
+  "status": "prepared",
+  "purpose": "One fresh mean-only BC fit on authentic feedback-state corrections; no SAC/primitive claim",
+  "seed": 17001,
+  "updates": 12000,
+  "bc_lr": 0.003,
+  "bc_action_epsilon": 0.01,
+  "source_main_bc_action_epsilon": 0.02,
+  "batch_size": 256,
+  "sampling": "Uniform with replacement over all73 pairs",
+  "hidden_sizes": [
+    256,
+    256
+  ],
+  "diagnostic_unused_critics": 2,
+  "critic_updates": 0,
+  "online_updates": 0,
+  "initial_std": 0.3,
+  "evaluation_updates": [
+    3000,
+    6000,
+    12000
+  ],
+  "evaluation_seed": 42,
+  "evaluation_max_controls": 100,
+  "evaluation_if_success": "One same-checkpoint deterministic closed-loop continuation for2s using fresh policy actions",
+  "head_polish_allowed": false,
+  "additional_epochs_allowed": false,
+  "device": "cuda",
+  "torch_threads": 1,
+  "torch_interop_threads": 1,
+  "matmul_tf32": false,
+  "cudnn_tf32": false,
+  "source_main_parameters_unchanged": true,
+  "dataset_sha256": "f4a086de7041dea85a6d6206f879d75bbbac56fa077e619110f1257b8ad03b77",
+  "dataset_validation_sha256": "6387b18e9663ea644a2caff6c342411beeff5e08a8b666dc2fd504308859c962"
+}

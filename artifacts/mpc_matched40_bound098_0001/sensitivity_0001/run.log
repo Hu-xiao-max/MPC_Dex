@@ -1,0 +1,10 @@
+{"uniform_noise_amplitude": 0.0, "noise_seed": 17011, "steps": 22, "finger_supported_rotation_success": true, "max_force_qualified_angle": 6.287874648934319, "environment_failure_reason": null}
+{"uniform_noise_amplitude": 1e-06, "noise_seed": 17011, "steps": 22, "finger_supported_rotation_success": true, "max_force_qualified_angle": 6.423648936380885, "environment_failure_reason": null}
+{"uniform_noise_amplitude": 1e-06, "noise_seed": 17012, "steps": 23, "finger_supported_rotation_success": false, "max_force_qualified_angle": 6.187068327143096, "environment_failure_reason": "palm_support"}
+{"uniform_noise_amplitude": 1e-06, "noise_seed": 17013, "steps": 19, "finger_supported_rotation_success": true, "max_force_qualified_angle": 6.313300608152196, "environment_failure_reason": null}
+{"uniform_noise_amplitude": 0.0001, "noise_seed": 17011, "steps": 24, "finger_supported_rotation_success": false, "max_force_qualified_angle": 5.580858403860407, "environment_failure_reason": "palm_support"}
+{"uniform_noise_amplitude": 0.0001, "noise_seed": 17012, "steps": 20, "finger_supported_rotation_success": false, "max_force_qualified_angle": 5.205048192398221, "environment_failure_reason": "drop"}
+{"uniform_noise_amplitude": 0.0001, "noise_seed": 17013, "steps": 5, "finger_supported_rotation_success": false, "max_force_qualified_angle": 3.8569149171981225, "environment_failure_reason": "palm_support"}
+{"uniform_noise_amplitude": 0.001, "noise_seed": 17011, "steps": 4, "finger_supported_rotation_success": false, "max_force_qualified_angle": 4.2290904719854066, "environment_failure_reason": "palm_support"}
+{"uniform_noise_amplitude": 0.001, "noise_seed": 17012, "steps": 60, "finger_supported_rotation_success": false, "max_force_qualified_angle": 5.662075121374409, "environment_failure_reason": null}
+{"uniform_noise_amplitude": 0.001, "noise_seed": 17013, "steps": 55, "finger_supported_rotation_success": false, "max_force_qualified_angle": 4.593241937793429, "environment_failure_reason": "palm_support"}

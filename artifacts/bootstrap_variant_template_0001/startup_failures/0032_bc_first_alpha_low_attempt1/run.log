@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0032_bc_first_alpha_low/run.py", line 982, in <module>
+    main()
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0032_bc_first_alpha_low/run.py", line 914, in main
+    assert torch.equal(agent.log_alpha, source_log_alpha)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+exit=1

@@ -1,0 +1,35 @@
+{
+  "role": "training-warmup",
+  "terminal_rows": 919,
+  "target_normalized_mean": -0.08508546307604621,
+  "target_raw_mean": -17.017092615209243,
+  "critic_normalized_bias": [
+    0.04482200863914708,
+    0.016068191768484664
+  ],
+  "critic_normalized_rmse": [
+    0.3519581629381695,
+    0.3366075938581846
+  ],
+  "critic_raw_equivalent_rmse": [
+    70.39163258763391,
+    67.32151877163692
+  ],
+  "inherited_online_alpha_normalized": 0.0003881131124217063,
+  "pretrain_alpha_normalized": 0.0001,
+  "pretrain_target_normalized_mean": -0.0572432872379438,
+  "pretrain_alpha_critic_normalized_bias": [
+    0.016979832801044665,
+    -0.011773984069617749
+  ],
+  "pretrain_alpha_critic_normalized_rmse": [
+    0.3455303384146393,
+    0.33393972588039056
+  ],
+  "pretrain_alpha_critic_raw_equivalent_rmse": [
+    69.10606768292786,
+    66.78794517607811
+  ],
+  "alpha_convention": "Both empirical targets exclude current-action entropy and terminal bootstrap; pretrain_alpha fields match inherited SoftSARSA config, other fields use frozen inherited learned online alpha. Cross-alpha differences are not solely fitting error.",
+  "evaluation_rows_used_for_training": null
+}

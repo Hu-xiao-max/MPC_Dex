@@ -1,0 +1,1208 @@
+{
+  "option": {
+    "ccd_iterations": 35,
+    "ccd_tolerance": 1e-06,
+    "cone": 1,
+    "density": 0.0,
+    "disableactuator": 0,
+    "disableflags": 0,
+    "enableflags": 0,
+    "gravity": [
+      0.0,
+      0.0,
+      -9.81
+    ],
+    "impratio": 10.0,
+    "integrator": 3,
+    "iterations": 50,
+    "jacobian": 2,
+    "ls_iterations": 50,
+    "ls_tolerance": 0.01,
+    "magnetic": [
+      0.0,
+      -0.5,
+      0.0
+    ],
+    "noslip_iterations": 0,
+    "noslip_tolerance": 1e-06,
+    "o_friction": [
+      1.0,
+      1.0,
+      0.005,
+      0.0001,
+      0.0001
+    ],
+    "o_margin": 0.0,
+    "o_solimp": [
+      0.9,
+      0.95,
+      0.001,
+      0.5,
+      2.0
+    ],
+    "o_solref": [
+      0.02,
+      1.0
+    ],
+    "sdf_initpoints": 40,
+    "sdf_iterations": 10,
+    "sleep_tolerance": 0.001,
+    "solver": 2,
+    "timestep": 0.002,
+    "tolerance": 1e-08,
+    "viscosity": 0.0,
+    "wind": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "geoms": [
+    {
+      "id": 0,
+      "name": "table",
+      "body": "world",
+      "type": 0,
+      "friction": [
+        0.5,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 1,
+      "name": null,
+      "body": "palm",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 2,
+      "name": null,
+      "body": "palm",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 3,
+      "name": null,
+      "body": "ff_base",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 4,
+      "name": null,
+      "body": "ff_base",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 5,
+      "name": null,
+      "body": "ff_proximal",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 6,
+      "name": null,
+      "body": "ff_proximal",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 7,
+      "name": null,
+      "body": "ff_medial",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 8,
+      "name": null,
+      "body": "ff_medial",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 9,
+      "name": null,
+      "body": "ff_distal",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 10,
+      "name": null,
+      "body": "ff_distal",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 11,
+      "name": null,
+      "body": "ff_tip",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 12,
+      "name": null,
+      "body": "ff_tip",
+      "type": 3,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 13,
+      "name": null,
+      "body": "mf_base",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 14,
+      "name": null,
+      "body": "mf_base",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 15,
+      "name": null,
+      "body": "mf_proximal",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 16,
+      "name": null,
+      "body": "mf_proximal",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 17,
+      "name": null,
+      "body": "mf_medial",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 18,
+      "name": null,
+      "body": "mf_medial",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 19,
+      "name": null,
+      "body": "mf_distal",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 20,
+      "name": null,
+      "body": "mf_distal",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 21,
+      "name": null,
+      "body": "mf_tip",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 22,
+      "name": null,
+      "body": "mf_tip",
+      "type": 3,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 23,
+      "name": null,
+      "body": "rf_base",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 24,
+      "name": null,
+      "body": "rf_base",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 25,
+      "name": null,
+      "body": "rf_proximal",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 26,
+      "name": null,
+      "body": "rf_proximal",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 27,
+      "name": null,
+      "body": "rf_medial",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 28,
+      "name": null,
+      "body": "rf_medial",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 29,
+      "name": null,
+      "body": "rf_distal",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 30,
+      "name": null,
+      "body": "rf_distal",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 31,
+      "name": null,
+      "body": "rf_tip",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 32,
+      "name": null,
+      "body": "rf_tip",
+      "type": 3,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 33,
+      "name": null,
+      "body": "th_base",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 34,
+      "name": null,
+      "body": "th_base",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 35,
+      "name": null,
+      "body": "th_proximal",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 36,
+      "name": null,
+      "body": "th_proximal",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 37,
+      "name": null,
+      "body": "th_medial",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 38,
+      "name": null,
+      "body": "th_medial",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 39,
+      "name": null,
+      "body": "th_distal",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 40,
+      "name": null,
+      "body": "th_distal",
+      "type": 6,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 41,
+      "name": null,
+      "body": "th_tip",
+      "type": 7,
+      "friction": [
+        1.0,
+        0.005,
+        0.0001
+      ],
+      "condim": 3,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 42,
+      "name": null,
+      "body": "th_tip",
+      "type": 3,
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "id": 43,
+      "name": "object_geom",
+      "body": "object",
+      "type": 7,
+      "friction": [
+        0.5,
+        0.005,
+        0.0001
+      ],
+      "condim": 4,
+      "margin": 0.0,
+      "gap": 0.0,
+      "solref": [
+        0.02,
+        1.0
+      ],
+      "solimp": [
+        0.9,
+        0.95,
+        0.001,
+        0.5,
+        2.0
+      ]
+    }
+  ],
+  "qpos_addresses": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "qvel_addresses": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "object_qpos_address": 16,
+  "object_dof_address": 16,
+  "object_geom": 43,
+  "nv": 22,
+  "nq": 23,
+  "integrator_name": "implicitfast",
+  "solver_name": "Newton",
+  "cone_name": "elliptic",
+  "fwdinv_diagnostics_enabled": false,
+  "solver_statistics_both_phases": true
+}

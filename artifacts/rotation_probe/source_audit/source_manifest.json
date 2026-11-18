@@ -1,0 +1,22 @@
+{
+  "rl_official.mp4": {
+    "url": "https://real-world-rl-with-mpc.github.io/static/videos/Real_world_RL_video_compressed.mp4",
+    "bytes": 19828996,
+    "sha256": "1021ee435e8f816a56656655103e92318254398b954217e76ca4c83a0c979bcf"
+  },
+  "grasp_official.mp4": {
+    "url": "https://primitive-informed-mpc.github.io/static/videos/grasping_wPrimitive.mp4",
+    "bytes": 2401897,
+    "sha256": "8f9899006355dce6c39ee92bca436d9afa49ef51ba2a91afc1399fdcc0fc08b0"
+  },
+  "planner_setup.png": {
+    "url": "https://primitive-informed-mpc.github.io/static/images/experimental_setup.png",
+    "bytes": 874697,
+    "sha256": "8a906559b330e9e419f425577080cfe525cc13d4ed61d4f33aae7a3c1423c943"
+  },
+  "planner_rotation_official.mp4": {
+    "url": "https://primitive-informed-mpc.github.io/static/videos/InHandRot_Ours.mp4",
+    "bytes": 23407530,
+    "sha256": "05f77f8b33d0ce6af46f0ef2f82745d1130d9d01e952f37d0b6021e29d103eec"
+  }
+}

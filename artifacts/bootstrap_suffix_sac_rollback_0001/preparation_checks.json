@@ -1,0 +1,8 @@
+{
+  "source_manifest_bound": true,
+  "all_copied_inputs_source_hash_verified": true,
+  "final_checkpoint_hash_verified": true,
+  "artifact_harness_compiles": true,
+  "no_source_numeric_edit": true,
+  "no_physics_before_freeze": true
+}

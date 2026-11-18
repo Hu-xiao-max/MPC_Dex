@@ -1,0 +1,65 @@
+{
+  "episodes": [
+    {
+      "name": "seed_100",
+      "rows": 25,
+      "raw_return": 323.5939767890575
+    },
+    {
+      "name": "seed_101",
+      "rows": 13,
+      "raw_return": 338.3188422068061
+    },
+    {
+      "name": "seed_102",
+      "rows": 20,
+      "raw_return": 368.8832699472375
+    },
+    {
+      "name": "seed_104",
+      "rows": 19,
+      "raw_return": 324.0681628313133
+    },
+    {
+      "name": "seed_105",
+      "rows": 14,
+      "raw_return": 365.6203798767717
+    },
+    {
+      "name": "seed_106",
+      "rows": 10,
+      "raw_return": 333.67020210462033
+    },
+    {
+      "name": "seed_110",
+      "rows": 15,
+      "raw_return": 341.29436147961894
+    },
+    {
+      "name": "seed_112",
+      "rows": 23,
+      "raw_return": 320.2766252684428
+    },
+    {
+      "name": "seed_120",
+      "rows": 27,
+      "raw_return": 328.73773293188094
+    },
+    {
+      "name": "seed_130",
+      "rows": 32,
+      "raw_return": 316.95053369983316
+    },
+    {
+      "name": "seed_131",
+      "rows": 11,
+      "raw_return": 335.44264086245073
+    },
+    {
+      "name": "seed_132",
+      "rows": 12,
+      "raw_return": 401.62993186752607
+    }
+  ],
+  "rows": 221
+}

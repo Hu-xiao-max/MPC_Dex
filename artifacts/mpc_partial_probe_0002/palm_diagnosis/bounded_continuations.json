@@ -1,0 +1,687 @@
+{
+  "purpose": "Bounded non-training diagnostic; physically replayed original prefixes, then held a blended/rate-limited next target for at most0.3s. No object-state mutation, geometry change, or criterion weakening.",
+  "environment_source_sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+  "input_sha256": "484e4b8b5a9f52b56a84eab80184db51061420224cedbbfd46ebc0b1031fac21",
+  "results": [
+    {
+      "prefix_steps": 17,
+      "mode": "blend",
+      "value": 0.0,
+      "extra_steps": 2,
+      "max_control_endpoint_qualified_angle": 6.715092167316991,
+      "final": {
+        "angle": 7.009823536498292,
+        "retained_angle": 6.715092167316991,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.13845667504877715,
+        "drop": false,
+        "success": true,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 6.5166295252785895,
+          "retained_angle": 6.231745157989691,
+          "finger_contacts": 3,
+          "axis_tilt_radians": 0.07103287339112371,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 7.009823536498292,
+          "retained_angle": 6.715092167316991,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.13845667504877715,
+          "drop": false,
+          "success": true,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.0
+    },
+    {
+      "prefix_steps": 17,
+      "mode": "blend",
+      "value": 0.25,
+      "extra_steps": 3,
+      "max_control_endpoint_qualified_angle": 6.059073077029338,
+      "final": {
+        "angle": 6.323423878933359,
+        "retained_angle": 6.03853951164446,
+        "finger_contacts": 3,
+        "axis_tilt_radians": 0.07825769069782629,
+        "drop": false,
+        "success": false,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 6.297856715826837,
+          "retained_angle": 6.0129723485379385,
+          "finger_contacts": 3,
+          "axis_tilt_radians": 0.08981810321222022,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 6.343957444318237,
+          "retained_angle": 6.059073077029338,
+          "finger_contacts": 3,
+          "axis_tilt_radians": 0.08572161076968039,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 6.323423878933359,
+          "retained_angle": 6.03853951164446,
+          "finger_contacts": 3,
+          "axis_tilt_radians": 0.07825769069782629,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.11371642839163543
+    },
+    {
+      "prefix_steps": 17,
+      "mode": "blend",
+      "value": 0.5,
+      "extra_steps": 2,
+      "max_control_endpoint_qualified_angle": 6.37993707686411,
+      "final": {
+        "angle": 6.6648214441530085,
+        "retained_angle": 6.37993707686411,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.12850232382844326,
+        "drop": false,
+        "success": true,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 6.490040021622784,
+          "retained_angle": 6.205155654333885,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.11643178905902665,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 6.6648214441530085,
+          "retained_angle": 6.37993707686411,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.12850232382844326,
+          "drop": false,
+          "success": true,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.22743285678327085
+    },
+    {
+      "prefix_steps": 17,
+      "mode": "blend",
+      "value": 0.75,
+      "extra_steps": 1,
+      "max_control_endpoint_qualified_angle": 6.627901548587037,
+      "final": {
+        "angle": 6.9127859158759355,
+        "retained_angle": 6.627901548587037,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.1768085697797813,
+        "drop": false,
+        "success": true,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 6.9127859158759355,
+          "retained_angle": 6.627901548587037,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.1768085697797813,
+          "drop": false,
+          "success": true,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.3411492851749063
+    },
+    {
+      "prefix_steps": 17,
+      "mode": "blend",
+      "value": 1.0,
+      "extra_steps": 3,
+      "max_control_endpoint_qualified_angle": 7.101545700819818,
+      "final": {
+        "angle": 8.675825702422093,
+        "retained_angle": 7.101545700819818,
+        "finger_contacts": 0,
+        "axis_tilt_radians": 0.6353238218820954,
+        "drop": true,
+        "success": false,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 6.345056377006566,
+          "retained_angle": 6.060172009717667,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.31699748950236817,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 7.724003604432114,
+          "retained_angle": 7.101545700819818,
+          "finger_contacts": 0,
+          "axis_tilt_radians": 0.411986031185581,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 8.675825702422093,
+          "retained_angle": 7.101545700819818,
+          "finger_contacts": 0,
+          "axis_tilt_radians": 0.6353238218820954,
+          "drop": true,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.4548657135665417
+    },
+    {
+      "prefix_steps": 17,
+      "mode": "delta",
+      "value": 0.1,
+      "extra_steps": 3,
+      "max_control_endpoint_qualified_angle": 6.053515705307863,
+      "final": {
+        "angle": 6.313620455783717,
+        "retained_angle": 6.028736088494818,
+        "finger_contacts": 3,
+        "axis_tilt_radians": 0.025972524525846318,
+        "drop": false,
+        "success": false,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 6.323367836981207,
+          "retained_angle": 6.038483469692308,
+          "finger_contacts": 3,
+          "axis_tilt_radians": 0.0556702339237193,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 6.3384000725967615,
+          "retained_angle": 6.053515705307863,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.044229219523080524,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 6.313620455783717,
+          "retained_angle": 6.028736088494818,
+          "finger_contacts": 3,
+          "axis_tilt_radians": 0.025972524525846318,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.10000000000000009
+    },
+    {
+      "prefix_steps": 17,
+      "mode": "delta",
+      "value": 0.2,
+      "extra_steps": 1,
+      "max_control_endpoint_qualified_angle": 6.308191971655438,
+      "final": {
+        "angle": 6.5930763389443365,
+        "retained_angle": 6.308191971655438,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.18917959530282064,
+        "drop": false,
+        "success": true,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 6.5930763389443365,
+          "retained_angle": 6.308191971655438,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.18917959530282064,
+          "drop": false,
+          "success": true,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.2
+    },
+    {
+      "prefix_steps": 17,
+      "mode": "delta",
+      "value": 0.4,
+      "extra_steps": 2,
+      "max_control_endpoint_qualified_angle": 6.441659802125772,
+      "final": {
+        "angle": 6.72654416941467,
+        "retained_angle": 6.441659802125772,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.4449441025290507,
+        "drop": false,
+        "success": true,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 6.542986851188089,
+          "retained_angle": 6.25810248389919,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.3453957288074207,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 6.72654416941467,
+          "retained_angle": 6.441659802125772,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.4449441025290507,
+          "drop": false,
+          "success": true,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.40000000000000013
+    },
+    {
+      "prefix_steps": 18,
+      "mode": "blend",
+      "value": 0.0,
+      "extra_steps": 2,
+      "max_control_endpoint_qualified_angle": 7.101545700819818,
+      "final": {
+        "angle": 8.675825702422093,
+        "retained_angle": 7.101545700819818,
+        "finger_contacts": 0,
+        "axis_tilt_radians": 0.6353238218820954,
+        "drop": true,
+        "success": false,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 7.724003604432114,
+          "retained_angle": 7.101545700819818,
+          "finger_contacts": 0,
+          "axis_tilt_radians": 0.411986031185581,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 8.675825702422093,
+          "retained_angle": 7.101545700819818,
+          "finger_contacts": 0,
+          "axis_tilt_radians": 0.6353238218820954,
+          "drop": true,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.0
+    },
+    {
+      "prefix_steps": 18,
+      "mode": "blend",
+      "value": 0.25,
+      "extra_steps": 2,
+      "max_control_endpoint_qualified_angle": 6.060172009717667,
+      "final": {
+        "angle": 6.348508495376264,
+        "retained_angle": 6.03034080562447,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.47918231201334255,
+        "drop": false,
+        "success": false,
+        "palm_support_violation": true,
+        "peak_palm_support_force": 1.0128338440565872
+      },
+      "trace": [
+        {
+          "angle": 6.31404768600401,
+          "retained_angle": 6.029163318715111,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.4210026286931344,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 6.348508495376264,
+          "retained_angle": 6.03034080562447,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.47918231201334255,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": true,
+          "peak_palm_support_force": 1.0128338440565872
+        }
+      ],
+      "target_delta_max": 0.3166026625782252
+    },
+    {
+      "prefix_steps": 18,
+      "mode": "blend",
+      "value": 0.5,
+      "extra_steps": 2,
+      "max_control_endpoint_qualified_angle": 6.060172009717667,
+      "final": {
+        "angle": 4.813923796132357,
+        "retained_angle": 4.525414428542238,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.3311287126919257,
+        "drop": false,
+        "success": false,
+        "palm_support_violation": true,
+        "peak_palm_support_force": 3.6791159830876965
+      },
+      "trace": [
+        {
+          "angle": 4.955640683822619,
+          "retained_angle": 4.67075631653372,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.33129039719797093,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 4.813923796132357,
+          "retained_angle": 4.525414428542238,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.3311287126919257,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": true,
+          "peak_palm_support_force": 3.6791159830876965
+        }
+      ],
+      "target_delta_max": 0.6332053251564503
+    },
+    {
+      "prefix_steps": 18,
+      "mode": "blend",
+      "value": 0.75,
+      "extra_steps": 2,
+      "max_control_endpoint_qualified_angle": 6.060172009717667,
+      "final": {
+        "angle": 5.284505210564808,
+        "retained_angle": 4.955034797305812,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.4185010565738638,
+        "drop": false,
+        "success": false,
+        "palm_support_violation": true,
+        "peak_palm_support_force": 2.722655336051641
+      },
+      "trace": [
+        {
+          "angle": 5.105730362035951,
+          "retained_angle": 4.820845994747051,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.23271331275369175,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 5.284505210564808,
+          "retained_angle": 4.955034797305812,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.4185010565738638,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": true,
+          "peak_palm_support_force": 2.722655336051641
+        }
+      ],
+      "target_delta_max": 0.9498079877346755
+    },
+    {
+      "prefix_steps": 18,
+      "mode": "blend",
+      "value": 1.0,
+      "extra_steps": 2,
+      "max_control_endpoint_qualified_angle": 6.060172009717667,
+      "final": {
+        "angle": 5.312403970519732,
+        "retained_angle": 4.890733557979455,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.4422985794235755,
+        "drop": false,
+        "success": false,
+        "palm_support_violation": true,
+        "peak_palm_support_force": 3.607512137129094
+      },
+      "trace": [
+        {
+          "angle": 5.202821619605737,
+          "retained_angle": 4.917937252316838,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.3462410373410951,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 5.312403970519732,
+          "retained_angle": 4.890733557979455,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.4422985794235755,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": true,
+          "peak_palm_support_force": 3.607512137129094
+        }
+      ],
+      "target_delta_max": 1.2664106503129007
+    },
+    {
+      "prefix_steps": 18,
+      "mode": "delta",
+      "value": 0.1,
+      "extra_steps": 3,
+      "max_control_endpoint_qualified_angle": 6.097049299608701,
+      "final": {
+        "angle": 6.3590851392805705,
+        "retained_angle": 6.074200771991672,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.33750173900121067,
+        "drop": false,
+        "success": false,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 6.3819336668975994,
+          "retained_angle": 6.097049299608701,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.2233433319267529,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 6.267293159304899,
+          "retained_angle": 5.982408792016,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.23974858965675275,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 6.3590851392805705,
+          "retained_angle": 6.074200771991672,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.33750173900121067,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.10000000000000009
+    },
+    {
+      "prefix_steps": 18,
+      "mode": "delta",
+      "value": 0.2,
+      "extra_steps": 3,
+      "max_control_endpoint_qualified_angle": 6.060172009717667,
+      "final": {
+        "angle": 5.2664452331305505,
+        "retained_angle": 4.981560865841652,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.21290031242379376,
+        "drop": false,
+        "success": false,
+        "palm_support_violation": false,
+        "peak_palm_support_force": 0.0
+      },
+      "trace": [
+        {
+          "angle": 5.166145711628379,
+          "retained_angle": 4.88126134433948,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.08679372759342956,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 4.970353085200648,
+          "retained_angle": 4.685468717911749,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.13891547969487816,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 5.2664452331305505,
+          "retained_angle": 4.981560865841652,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.21290031242379376,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        }
+      ],
+      "target_delta_max": 0.2
+    },
+    {
+      "prefix_steps": 18,
+      "mode": "delta",
+      "value": 0.4,
+      "extra_steps": 3,
+      "max_control_endpoint_qualified_angle": 6.060172009717667,
+      "final": {
+        "angle": 5.079549771080308,
+        "retained_angle": 4.716040325488961,
+        "finger_contacts": 2,
+        "axis_tilt_radians": 0.314049444208244,
+        "drop": false,
+        "success": false,
+        "palm_support_violation": true,
+        "peak_palm_support_force": 3.2511084272069355
+      },
+      "trace": [
+        {
+          "angle": 4.96242111853605,
+          "retained_angle": 4.6775367512471515,
+          "finger_contacts": 3,
+          "axis_tilt_radians": 0.20439920652798732,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 5.022625369951984,
+          "retained_angle": 4.7377410026630855,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.3736656333420005,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": false,
+          "peak_palm_support_force": 0.0
+        },
+        {
+          "angle": 5.079549771080308,
+          "retained_angle": 4.716040325488961,
+          "finger_contacts": 2,
+          "axis_tilt_radians": 0.314049444208244,
+          "drop": false,
+          "success": false,
+          "palm_support_violation": true,
+          "peak_palm_support_force": 3.2511084272069355
+        }
+      ],
+      "target_delta_max": 0.4
+    }
+  ]
+}

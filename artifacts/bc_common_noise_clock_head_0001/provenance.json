@@ -1,0 +1,17 @@
+{
+  "source_artifact": "/home/autel001/code/mpc_dex/artifacts/bc_common_noise_clock_0001",
+  "source_manifest_sha256": "5686fbb8ff12a7605cf1c5cfe89d9bf62f82b56ea093ecd1a7e652d1b2824ebb",
+  "baseline_sha256": "22b0bdca5f3fcc2a6d46ca3e58d8132ba0aaa30fee016f2f572ad019d8792d81",
+  "dataset_sha256": "bd59e49c547c96c07202a5a91e56555137247766f623284a0b51803614f2fdf3",
+  "prior_completed_bc_updates": 12000,
+  "new_bc_updates": 0,
+  "pretrain_updates": 0,
+  "online_updates": 0,
+  "authorized_residual_solves": 1,
+  "physical_evaluation_authorized": false,
+  "method": "One float64 minimum-norm residual solve with frozen features; cast/add correction to float32 head once",
+  "no_ridge_sweep": true,
+  "no_scale_sweep": true,
+  "no_iterative_solves": true,
+  "production_eligible": false
+}

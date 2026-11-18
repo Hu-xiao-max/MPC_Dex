@@ -1,0 +1,12 @@
+{
+  "replay_sha256": "fdfc5087956d8ec534a323333281e2bd36e02fe9f8605b9289630ec3042eed41",
+  "metadata_sha256": "a79e2bac4b97a558943926f2f1ba6c248d2ad39c28f6032b893b2dfa53e58d60",
+  "matching_imported_actor_contract": true,
+  "transitions": 9,
+  "demonstration_successes": 1,
+  "all_recorded_states_bitexact": true,
+  "bootstrap_environment_steps": 0,
+  "SAC_successes": 0,
+  "source_actions_float32_exact": true,
+  "primitive_eligible": false
+}

@@ -1,0 +1,92 @@
+{
+  "startup": {
+    "dataset_rows_one_based": [
+      1,
+      2,
+      13,
+      28,
+      37,
+      51,
+      62
+    ],
+    "label_counts": {
+      "initial_hold": 1,
+      "nearby_move": 6
+    },
+    "exact_duplicate_observations": false,
+    "reset_action_error_max": 0.8417669832706451,
+    "reset_prediction_to_nominal_move_action_max": 0.06840327382087708,
+    "reset_to_nominal_move_prediction_max": 0.0008510351181030273,
+    "reset_to_nominal_move_latent_prediction_l2": 0.001961501759635373,
+    "reset_latent_error_l2": 2.8652258984238452,
+    "reset_prediction_to_cluster_mean_latent_l2": 0.07628270226300082,
+    "per_row_action_error_max": [
+      0.8417669832706451,
+      0.06814378499984741,
+      0.06815499067306519,
+      0.0681714117527008,
+      0.0681525468826294,
+      0.06814739108085632,
+      0.06814610958099365
+    ],
+    "interpretation": "The one startup hold is poorly fit while six nearby move labels receive similar predictions. Mixed-unit distance and this training outcome support a conditioning/weighting explanation, not a proof of architectural impossibility."
+  },
+  "closest_pairs_involving_actual_new_mpc": [
+    {
+      "first_row_one_based": 36,
+      "second_row_one_based": 59,
+      "raw_observation_l2": 0.7557529579733085,
+      "action_max_abs": 0.6556402742862701,
+      "latent_l2": 2.5754272200186774
+    },
+    {
+      "first_row_one_based": 59,
+      "second_row_one_based": 70,
+      "raw_observation_l2": 1.9223804870559087,
+      "action_max_abs": 1.2609799802303314,
+      "latent_l2": 4.023767539160873
+    },
+    {
+      "first_row_one_based": 36,
+      "second_row_one_based": 70,
+      "raw_observation_l2": 2.1334284625391158,
+      "action_max_abs": 1.2655104100704193,
+      "latent_l2": 4.825378685281771
+    },
+    {
+      "first_row_one_based": 45,
+      "second_row_one_based": 59,
+      "raw_observation_l2": 2.2954473478889255,
+      "action_max_abs": 0.7775863111019135,
+      "latent_l2": 2.2925355085454724
+    },
+    {
+      "first_row_one_based": 45,
+      "second_row_one_based": 70,
+      "raw_observation_l2": 2.340112738987639,
+      "action_max_abs": 0.7059737741947174,
+      "latent_l2": 3.4331007394890882
+    },
+    {
+      "first_row_one_based": 36,
+      "second_row_one_based": 45,
+      "raw_observation_l2": 2.5475266047593315,
+      "action_max_abs": 0.5595366358757019,
+      "latent_l2": 2.5335874567692547
+    },
+    {
+      "first_row_one_based": 21,
+      "second_row_one_based": 59,
+      "raw_observation_l2": 3.4020360514515575,
+      "action_max_abs": 0.7189172208309174,
+      "latent_l2": 4.134179630229105
+    },
+    {
+      "first_row_one_based": 21,
+      "second_row_one_based": 45,
+      "raw_observation_l2": 3.537150998812084,
+      "action_max_abs": 0.8363207578659058,
+      "latent_l2": 2.9015413783642
+    }
+  ]
+}

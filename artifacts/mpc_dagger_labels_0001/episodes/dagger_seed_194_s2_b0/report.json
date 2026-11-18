@@ -1,0 +1,52 @@
+{
+  "status": "boundary",
+  "strict_force_success": true,
+  "controls": 20,
+  "demo_prefix_controls": 16,
+  "policy_controls": 0,
+  "mpc_controls": 4,
+  "handoff_target_within_search_bounds": true,
+  "failure_reason": null,
+  "final_force_qualified_angle": 7.372272487758085,
+  "planning_seconds_total": 25.49986593495123,
+  "wall_seconds": 26.8595954219345,
+  "hand_joint_qpos_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "name": "dagger_seed_194_s2_b0",
+  "demo": "seed_194",
+  "suffix": 2,
+  "policy_outcome": {
+    "controls": 3,
+    "failure": "drop",
+    "success": false
+  },
+  "policy_checkpoint": {
+    "variant": "bootstrap_variant_0079_ms_suffix1to8_weighted_from74",
+    "checkpoint": "online_4000",
+    "agent_sha256": "bf81a1988a1ff70fa90f59f6583d9db450e573e9d9b467b762300271ebc58725"
+  },
+  "independent_audit": {
+    "bitexact_replay": true,
+    "strict_force_success": true,
+    "final_force_qualified_angle": 7.372272487758085
+  },
+  "transitions_sha256": "363ea58addcd061d3e1746de95567789e05260bf2fe50ea6e773aecfdd3e68bb",
+  "physics_sha256": "148348f690ab11ae0279e08913b598c60e419720fdf8cafafc66e96c00b4787c",
+  "stored": true
+}

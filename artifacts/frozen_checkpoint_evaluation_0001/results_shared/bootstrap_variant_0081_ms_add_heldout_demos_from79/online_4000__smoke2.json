@@ -1,0 +1,42 @@
+{
+ "variant": "bootstrap_variant_0081_ms_add_heldout_demos_from79",
+ "checkpoint": "online_4000",
+ "agent_sha256": "0c7ea7abb7e82425893352d848d8aecb546119e89f9af0cbc463bd9e83a34bd2",
+ "trials_per_cell": 2,
+ "cells": {
+  "k0": {
+   "representative": null,
+   "group_size": 1,
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 2,
+   "rows": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 5,
+     "failure": "drop",
+     "final_force_qualified_angle": -2.828044681280424
+    },
+    {
+     "seed": 50001,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "palm_support",
+     "final_force_qualified_angle": -0.9642986799862993
+    },
+    {
+     "seed": 50002,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "palm_support",
+     "final_force_qualified_angle": -1.2034552742044082
+    }
+   ]
+  }
+ },
+ "wall_seconds": 0.5759803659748286
+}

@@ -1,0 +1,34 @@
+{
+  "checkpoint.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/agent.pt",
+    "sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937"
+  },
+  "checkpoint.pt.metadata.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/agent.pt.metadata.json",
+    "sha256": "fe2dce5849299bcaabf92870c1f2ac9f35f7893edcb4dc4c5b51b8af5f35b356"
+  },
+  "source_config.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/config.json",
+    "sha256": "79be503a14b369d9eb91f44aba289ce3e5e42b5132f4889407e8244e1223561c"
+  },
+  "source_runner_state.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/state.json",
+    "sha256": "53c8e3ab459d823da2fa365840d0db44080ae29954ef513ff140049680faec1b"
+  },
+  "baseline.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/head_polish/polished.pt",
+    "sha256": "bc00ed2358e2d50e33d9634da22e8bb350bda149b56644c4dfad268bfbddd77b"
+  },
+  "baseline.pt.metadata.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/head_polish/polished.pt.metadata.json",
+    "sha256": "99d63bc4931501dba277364d898a43f18b2fbf4cc2f0066a2f1f57412c2e20eb"
+  },
+  "reference_transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/head_polish/independent_audit/transitions.npz",
+    "sha256": "bea7b655dc699e109e0b7eb0d95b40843c2d86df385ddc0e64e78f9a0fbfb422"
+  },
+  "initial_grasp.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/source/assets/initial_grasp_40mm.npz",
+    "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54"
+  }
+}

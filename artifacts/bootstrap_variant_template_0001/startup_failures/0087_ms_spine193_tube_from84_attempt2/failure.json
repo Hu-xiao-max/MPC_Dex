@@ -1,0 +1,1 @@
+{"failure": "multisource_demonstrations assertion at start: tube branches were bucketed into the spine shared groups (they copy its prefix bit-for-bit) and got a shared depth although their buffered rows start after the perturbed control; no learning update ran", "fix": "prepare.py builds shared groups and shared-state depths over unlabelled sources only; re-stamped"}

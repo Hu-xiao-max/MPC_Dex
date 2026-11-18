@@ -1,0 +1,10 @@
+{
+  "python": "3.11.15",
+  "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "mujoco": "3.14.0",
+  "mujoco_runtime": 3014000,
+  "library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+  "compiled_model_sha256": "4fa992db15ca993fdb11c63d6687914394dd3fe8cff60f3dd583fd11d72ea146",
+  "total_physics_steps": 300
+}

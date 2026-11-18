@@ -1,0 +1,1 @@
+{"failure": "load_sources assertion at start: 12 tube branches at spine control 13 end the turn with the perturbed control itself and carry no MPC rows (origin[-1] != mpc); no learning update ran", "fix": "prepare.py skips labelled branches without correction rows (skipped_labelless_sources); re-stamped"}

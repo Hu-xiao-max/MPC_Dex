@@ -1,0 +1,11 @@
+{
+  "config.json": "d1cc3404c2deaa309452ca86eb6dc4eb5b6bda70ec77d3a0e4874505c62e3edb",
+  "counterfactual.py": "1d80de8ae49a8bcbdfcd291a9c76774bfbbe46d9dce4a18dbee59c29ec22552a",
+  "report.json": "2ff784eaa3c9b2dcd72de3db0aba00bbb29d273bf2a656e66025761efe17bffb",
+  "source_actor_transitions.npz": "7f7ec220e2f7752ccc4810d2914c0580967ca1ba54d87289cf2e4b2e07b8a534",
+  "source_teacher_transitions.npz": "f360aca4e95d8a11ba6109ae0efbf678d88c67d8138881ad9e26bea386752148",
+  "strict_audit/commands.json": "374452c46964e96aa3612ac5609e2b32f95d73106a5cd2581101f922ab71b051",
+  "strict_audit/physics.npz": "dd83df2315afe8740c764f9f7f8ffdef7bec1f15026d95d32f89fb0fcfdd5346",
+  "strict_audit/report.json": "c81e3e1da1b5e51fb460af94f075eabb8912fe4fa65cace990e47accc13bef5f",
+  "strict_audit/transitions.npz": "3492b04c3e854a01a7f95ee771a2ed076eed2f774c2f5dd70b4c6aa207039c53"
+}

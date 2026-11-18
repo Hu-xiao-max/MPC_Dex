@@ -1,0 +1,4 @@
+{"period": 0.3, "seed": 42, "status": "budget", "controls": 17, "strict_force_success": false, "failure_reason": null, "wall_seconds": 93.90204065619037}
+{"period": 0.3, "seed": 43, "status": "budget", "controls": 17, "strict_force_success": false, "failure_reason": null, "wall_seconds": 105.7470080582425}
+{"period": 0.3, "seed": 44, "status": "budget", "controls": 17, "strict_force_success": false, "failure_reason": null, "wall_seconds": 147.9429595847614}
+{"period": 0.3, "seed": 45, "status": "budget", "controls": 17, "strict_force_success": false, "failure_reason": null, "wall_seconds": 180.01417296286672}

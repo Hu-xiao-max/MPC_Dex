@@ -1,0 +1,12 @@
+{
+  "prepare.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/prepare.py",
+    "sha256": "22630f9869149fe052cb33d9aad3b985309a9ef12a44622c4ff33773b8b4d37f",
+    "syntax_parse": "passed"
+  },
+  "run.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/run.py",
+    "sha256": "267e0e9eebd031dcac35f62a774b4268c80e6cb2af809dfbbaac633ca0264e24",
+    "syntax_parse": "passed"
+  }
+}

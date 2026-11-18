@@ -1,0 +1,115 @@
+{
+  "source/": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/source",
+    "files": 51,
+    "inherited_execution_manifest_sha256": "9f321326581e50252d13867a21b67a90498f13579079200beef35e9b6a65a70a"
+  },
+  "source_config.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/source_config.json",
+    "sha256": "8177e7272e6da812e01da5cb62b0f0fe2ee241277015268dd802bde5af55d105",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "initial_grasp.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/initial_grasp.npz",
+    "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "prefix_transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_transitions.npz",
+    "sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "prefix_physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_physics.npz",
+    "sha256": "366fb79a431efb8b218d9dc7d6c39730aab9168553c736783f988c14b2a6672e",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "prefix_report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_report.json",
+    "sha256": "1faeeea26d930d16720ee66993a217bc8e1a3404476d0037a51a627658c9b29f",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "mpc_correction_pairs.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_correction_pairs.npz",
+    "sha256": "911561b96b913c2e5a757861d165db2f538cec29c7aaff73411513a6a312e37a",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "mpc_correction_pairs.metadata.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_correction_pairs.metadata.json",
+    "sha256": "44c7da2eb5891c9461d0aeb882c907948458a9c6b661e107c69e643cc9c77a2a",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "mpc_recovery_transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_recovery_transitions.npz",
+    "sha256": "072c8633a22213120887f611e143a2e49a68a8ed202daa66bb3eec2d9b130fb2",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "initial.pt": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/checkpoints/online_2000/agent.pt",
+    "sha256": "b95aabc4b69bb74a6c5b0859deeeecd975988fef699ee5952b1b3f55f123f944",
+    "inherited_from": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/checkpoints/online_2000"
+  },
+  "initial.pt.metadata.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/checkpoints/online_2000/agent.pt.metadata.json",
+    "sha256": "e5c916a34fd8ad1d8fd579055fda9485bc8d1bc44dc27df56d9ef2a334197556",
+    "inherited_from": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/checkpoints/online_2000"
+  },
+  "inherited_state.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/checkpoints/online_2000/state.json",
+    "sha256": "d7a3da2b28bedee51e474561b116c5319b4c897825bf98c823d854f9c8346ef9",
+    "inherited_from": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/checkpoints/online_2000"
+  },
+  "prior_replay_lineage_only.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/checkpoints/online_2000/replay.npz",
+    "sha256": "206e9785dbe5b819644a4fab5965c1455e0238a155b9c6f8bb6cd5115ce3aaee",
+    "inherited_from": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/checkpoints/online_2000"
+  },
+  "inputs/inherited_stage/summary.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/summary.json",
+    "sha256": "ba1e1182b652674a7c66bb6126d1b4428df6eced91359cdcf8de5a9fb55ecf37"
+  },
+  "inputs/inherited_stage/protocol.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/protocol.json",
+    "sha256": "89b2dfdf0069bfdb23513542cd730d35129bcc9f7247aa873b362f6975c4287a"
+  },
+  "inputs/inherited_stage/findings.md": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0059_chain_p3_pinned_lowlr_from57/findings.md",
+    "absent_at_stamp_time": true
+  },
+  "inputs/sac0004/findings.md": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/findings.md",
+    "sha256": "c777240baab4dcf89dff2de05e6edd86ad80814a157d2392e7d261bdf7e624f4"
+  },
+  "inputs/sac0004/summary.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/summary.json",
+    "sha256": "ee8ba0e1d3c4865e9264b02107bce863b23cb59d561329ee31fca158f6fadbb8"
+  },
+  "inputs/sac0004/protocol.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/protocol.json",
+    "sha256": "bc691749205945309f11ee30cabae5352788e6a5bf95691e2e4c24908fa81d1d"
+  },
+  "run.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/run.py",
+    "sha256": "9621cd5514b89673f52423e62a387eec24f72c3e810853e1a0a6d66e94fa01ec",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": true
+  },
+  "test_protocol.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/test_protocol.py",
+    "sha256": "40bcf8b9cc71730b43133ed0a248d098072542d4fa48e0ef9bd3279f42ec6f88",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": true
+  },
+  "inputs/template/prepare.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/prepare.py",
+    "sha256": "7b9a3b170068c5d06bc308a6c96a36128dbd860b9a7e48d6ca499dd0c09ad30f",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": false
+  },
+  "inputs/template/README.md": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/README.md",
+    "sha256": "851595ce5af7ef77b321547d9989028d1d49ea814a095386aa315554c589c8e7",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": false
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "checkpoint": "checkpoints/online_2000",
+  "files": {
+    "agent.pt": "5f4b9faa24e72ffa53b968681feb91176178753250e1a5bdae85b58495274ba0",
+    "agent.pt.metadata.json": "8b0c4f8f45c2c36eef66e0bc0497635b0bdb14e9b89c8a3bc27cebc05ea3348c",
+    "current_episode/physics.npz": "669af2d4a8b5b6abcdcb64f0cc4539d329a1c1a1039438d8ae375a7cf9118559",
+    "current_episode/report.json": "ff1cfa11aa4415331ffd88e98f1d9c4ce2dbd93f722fe021d14eb61afd0701d3",
+    "current_episode/rng_initial.pt": "00ba7fb828d8d1de4ee6b24351ccc2ac1254f1c2c6c480e95010f7c62c385eb9",
+    "current_episode/transitions.npz": "05e4ac4a22c1c62e6decd906a010df6a9dc618a308dcddd3129e3505847bcc6b",
+    "environment.bin": "fe861c5d53e9584804aadaf4e5270bca6aefc2e5a47c72aa820cddc4bcfe0084",
+    "environment.npz": "515cbf01242b93ef7e85d3193d8f8fc8b3ffe97f36881252764bc2a65b646fcb",
+    "replay.npz": "ad6c5f074522a5546cf794db994d1f34b5fcb8845807f36e61715b2ebc27c257",
+    "rng.pt": "71ff21e36b5405063ecd8e184008ab9c92c87b34e79218cf5ab122dbc13cbd79",
+    "state.json": "266d8873b207be4c38d6ad6c2b977e3ad5236948f72e339f2d5e83c114200e22"
+  },
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 812,
+    "online_policy_interactions": 2000,
+    "physical_prefix_controls": 2514,
+    "warmup_assisted_completed_episodes": 256,
+    "warmup_assisted_force_successes": 0,
+    "online_assisted_completed_episodes": 162,
+    "online_assisted_force_successes": 0,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 2000,
+    "warmup_raw_reward_sum": -24784.282436023794,
+    "online_raw_reward_sum": -10988.234500029654,
+    "warmup_episodes_by_prefix": {
+      "6": 256
+    },
+    "warmup_force_successes_by_prefix": {
+      "6": 0
+    },
+    "online_episodes_by_prefix": {
+      "6": 162
+    },
+    "online_force_successes_by_prefix": {
+      "6": 0
+    },
+    "handoff_terminated_before_policy": 0
+  }
+}

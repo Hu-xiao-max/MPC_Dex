@@ -1,0 +1,14 @@
+control 0: r=0.0: hold 4/4 tail 4/4 policy 0/4 | r=0.003: hold 0/4 tail 0/4 policy 0/4 | r=0.01: hold 0/4 tail 0/4 policy 0/4 | r=0.03: hold 0/4 tail 0/4 policy 0/4
+control 1: r=0.0: hold 4/4 tail 4/4 policy 0/4 | r=0.003: hold 0/4 tail 0/4 policy 0/4 | r=0.01: hold 0/4 tail 0/4 policy 0/4 | r=0.03: hold 0/4 tail 0/4 policy 0/4
+control 2: r=0.0: hold 4/4 tail 4/4 policy 0/4 | r=0.003: hold 0/4 tail 0/4 policy 0/4 | r=0.01: hold 0/4 tail 0/4 policy 0/4 | r=0.03: hold 0/4 tail 0/4 policy 0/4
+control 3: r=0.0: hold 4/4 tail 4/4 policy 0/4 | r=0.003: hold 0/4 tail 0/4 policy 0/4 | r=0.01: hold 0/4 tail 0/4 policy 0/4 | r=0.03: hold 0/4 tail 0/4 policy 0/4
+control 4: r=0.0: hold 4/4 tail 4/4 policy 0/4 | r=0.003: hold 0/4 tail 0/4 policy 0/4 | r=0.01: hold 0/4 tail 0/4 policy 0/4 | r=0.03: hold 0/4 tail 0/4 policy 0/4
+control 5: r=0.0: hold 4/4 tail 4/4 policy 0/4 | r=0.003: hold 0/4 tail 0/4 policy 0/4 | r=0.01: hold 0/4 tail 0/4 policy 0/4 | r=0.03: hold 0/4 tail 0/4 policy 0/4
+control 6: r=0.0: hold 4/4 tail 4/4 policy 0/4 | r=0.003: hold 0/4 tail 0/4 policy 0/4 | r=0.01: hold 0/4 tail 0/4 policy 0/4 | r=0.03: hold 1/4 tail 0/4 policy 0/4
+control 7: r=0.0: hold 4/4 tail 4/4 policy 0/4 | r=0.003: hold 0/4 tail 0/4 policy 0/4 | r=0.01: hold 0/4 tail 0/4 policy 0/4 | r=0.03: hold 0/4 tail 0/4 policy 0/4
+control 8: r=0.0: hold 4/4 tail 4/4 policy 0/4 | r=0.003: hold 1/4 tail 1/4 policy 0/4 | r=0.01: hold 1/4 tail 1/4 policy 1/4 | r=0.03: hold 0/4 tail 0/4 policy 0/4
+control 9: r=0.0: hold 4/4 tail 4/4 policy 4/4 | r=0.003: hold 3/4 tail 3/4 policy 3/4 | r=0.01: hold 2/4 tail 0/4 policy 0/4 | r=0.03: hold 2/4 tail 0/4 policy 0/4
+control 10: r=0.0: hold 4/4 tail 4/4 policy 4/4 | r=0.003: hold 4/4 tail 4/4 policy 4/4 | r=0.01: hold 4/4 tail 4/4 policy 4/4 | r=0.03: hold 4/4 tail 2/4 policy 2/4
+control 11: r=0.0: hold 4/4 tail 4/4 policy 4/4 | r=0.003: hold 4/4 tail 4/4 policy 4/4 | r=0.01: hold 4/4 tail 4/4 policy 4/4 | r=0.03: hold 3/4 tail 4/4 policy 4/4
+control 12: r=0.0: hold 4/4 tail 4/4 policy 4/4 | r=0.003: hold 4/4 tail 4/4 policy 4/4 | r=0.01: hold 4/4 tail 4/4 policy 4/4 | r=0.03: hold 4/4 tail 4/4 policy 4/4
+control 13: r=0.0: hold 4/4 tail 4/4 policy 4/4 | r=0.003: hold 4/4 tail 4/4 policy 4/4 | r=0.01: hold 4/4 tail 4/4 policy 4/4 | r=0.03: hold 4/4 tail 4/4 policy 4/4

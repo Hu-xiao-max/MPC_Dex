@@ -1,0 +1,14 @@
+{"name": "track2_j0_r0100_d3_i1_r0300_d0", "status": "boundary", "controls": 5, "mpc_controls": 3, "strict_force_success": true, "stored": true, "wall": 34.9}
+{"name": "track2_j0_r0100_d3_i1_r0300_d1", "status": "boundary", "controls": 6, "mpc_controls": 4, "strict_force_success": true, "stored": true, "wall": 79.3}
+{"name": "track2_j0_r0100_d3_i3_r0300_d0", "status": "boundary", "controls": 6, "mpc_controls": 2, "strict_force_success": true, "stored": true, "wall": 54.8}
+{"name": "track2_j0_r0100_d3_i3_r0300_d1", "status": "boundary", "controls": 6, "mpc_controls": 2, "strict_force_success": true, "stored": true, "wall": 56.4}
+{"name": "track2_j0_r0300_d3_i1_r0300_d0", "status": "boundary", "controls": 11, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 200.1}
+{"name": "track2_j0_r0300_d3_i1_r0300_d1", "status": "boundary", "controls": 12, "mpc_controls": 10, "strict_force_success": true, "stored": true, "wall": 285.0}
+{"name": "track2_j0_r0300_d3_i3_r0300_d0", "status": "boundary", "controls": 11, "mpc_controls": 7, "strict_force_success": true, "stored": true, "wall": 143.4}
+{"name": "track2_j0_r0300_d3_i3_r0300_d1", "status": "boundary", "controls": 13, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 204.4}
+{"name": "track2_j0_r1000_d3_i1_r0300_d0", "status": "budget", "controls": 27, "mpc_controls": 25, "strict_force_success": false, "stored": false, "wall": 666.6}
+{"name": "track2_j0_r1000_d3_i1_r0300_d1", "status": "boundary", "controls": 14, "mpc_controls": 12, "strict_force_success": true, "stored": true, "wall": 423.1}
+{"name": "track2_j0_r1000_d3_i3_r0300_d0", "status": "boundary", "controls": 11, "mpc_controls": 7, "strict_force_success": true, "stored": true, "wall": 251.0}
+{"name": "track2_j0_r1000_d3_i3_r0300_d1", "status": "boundary", "controls": 13, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 338.3}
+{"name": "track2_j1_r0100_d3_i2_r0300_d0", "status": "boundary", "controls": 11, "mpc_controls": 8, "strict_force_success": true, "stored": true, "wall": 247.4}
+{"name": "track2_j1_r0100_d3_i2_r0300_d1", "status": "boundary", "controls": 11, "mpc_controls": 8, "strict_force_success": true, "stored": true, "wall": 375.3}

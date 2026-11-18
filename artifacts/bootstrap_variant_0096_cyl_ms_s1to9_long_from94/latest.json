@@ -1,0 +1,79 @@
+{
+  "checkpoint": "checkpoints/online_4000",
+  "files": {
+    "agent.pt": "ec94e3995a1d21b92b3c668f3064a7259385b7cc63899c20a6f98d391525a0ba",
+    "agent.pt.metadata.json": "98d50851b05ae5456966e6b39dc83fa53af0013ba001dce9fbfdfabadda6a338",
+    "current_episode/physics.npz": "cce35383634db215f8573e51a4e1d239fba28d05689d0e1d085ff8f3eb7581a7",
+    "current_episode/report.json": "02fd538478109b8b5a7dcd3ecfd227f9613f2288536e5a5902064085f38ecf72",
+    "current_episode/rng_initial.pt": "d8e842263055693c220d2f63fc1ea44d56569a8fd4c0b85761ff94ac10a0d988",
+    "current_episode/transitions.npz": "ca435fa7ed6e95ed38ae8a4bfdf4b12e315b58029fd245b298451452b93c97fb",
+    "environment.bin": "6c0c9ef4a0a940d9131911f2e29410318a33e69eb6dae8f0a1c49f277f2befff",
+    "environment.npz": "496c9fb6585016241f728fd1e4cfb18b863d76325e0d36b2a1e79907d9031cb0",
+    "replay.npz": "26b74867ca4a803b30cc249c80a6ef145cf57ccfc5bbf1ed94430eb5e717a236",
+    "rng.pt": "6bb7f13c7823fec1421ad680ac2b1d68050d0189b5963fb4cf4605da60fa0786",
+    "state.json": "823dd304b1b3ee97c54e5ec69e3c764de234f235bb6da15d71c8f871ef0a7b1b"
+  },
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 1068,
+    "online_policy_interactions": 4000,
+    "physical_prefix_controls": 10678,
+    "warmup_assisted_completed_episodes": 253,
+    "warmup_assisted_force_successes": 63,
+    "online_assisted_completed_episodes": 802,
+    "online_assisted_force_successes": 161,
+    "warmup_cold_completed_episodes": 3,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 13,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 4000,
+    "warmup_raw_reward_sum": 7099.042148871618,
+    "online_raw_reward_sum": 17422.823160645727,
+    "warmup_episodes_by_prefix": {
+      "s1": 24,
+      "s2": 14,
+      "s3": 18,
+      "s4": 34,
+      "s5": 37,
+      "s6": 28,
+      "s7": 29,
+      "s8": 37,
+      "s9": 35
+    },
+    "warmup_force_successes_by_prefix": {
+      "s1": 24,
+      "s2": 8,
+      "s3": 12,
+      "s4": 12,
+      "s5": 3,
+      "s6": 3,
+      "s7": 1,
+      "s8": 0,
+      "s9": 0
+    },
+    "online_episodes_by_prefix": {
+      "s1": 62,
+      "s2": 58,
+      "s3": 42,
+      "s4": 108,
+      "s5": 97,
+      "s6": 98,
+      "s7": 107,
+      "s8": 115,
+      "s9": 128
+    },
+    "online_force_successes_by_prefix": {
+      "s1": 55,
+      "s2": 37,
+      "s3": 20,
+      "s4": 22,
+      "s5": 11,
+      "s6": 5,
+      "s7": 3,
+      "s8": 6,
+      "s9": 2
+    },
+    "handoff_terminated_before_policy": 0
+  }
+}

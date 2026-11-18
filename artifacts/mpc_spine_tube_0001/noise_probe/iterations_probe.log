@@ -1,0 +1,3 @@
+horizon | t | spine state: |a_seed - a_t| median (pure noise) | perturbed r: |mean corr| vs seed spread | ratio | valid candidates/plan (spine, perturbed)
+ 1.0 it 3 |  4 | 0.0031 (n=6) | 0.0119 vs 0.0178 (n=6) | 0.66 | 489, 447
+ 1.0 it 8 |  4 | 0.0353 (n=6) | 0.0160 vs 0.0208 (n=6) | 0.77 | 1375, 1288

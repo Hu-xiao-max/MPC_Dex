@@ -1,0 +1,76 @@
+{
+  "kind": "read-only-support-reconciliation",
+  "priority": "bounded reverse-prefix curriculum; per-state MPC labels remain fallback",
+  "new_physics_runs": 0,
+  "new_teacher_queries": 0,
+  "new_training_updates": 0,
+  "checkpoint_sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937",
+  "policy_observation_dim": 60,
+  "latent_std": 0.05,
+  "suffix_total_six_episode_wall_seconds": 1.576691706199199,
+  "results": [
+    {
+      "seed": 17041,
+      "cold_controls": 2,
+      "cold_failure_reason": "drop",
+      "cold_final_force_qualified_angle": -2.5435567659722906,
+      "assisted_policy_controls": 1,
+      "assisted_final_force_qualified_angle": 6.683531315342512,
+      "assisted_strict_success": true,
+      "prefix_bitexact": true
+    },
+    {
+      "seed": 17042,
+      "cold_controls": 5,
+      "cold_failure_reason": "drop",
+      "cold_final_force_qualified_angle": -4.0678148391058215,
+      "assisted_policy_controls": 1,
+      "assisted_final_force_qualified_angle": 6.697374190999747,
+      "assisted_strict_success": true,
+      "prefix_bitexact": true
+    },
+    {
+      "seed": 17043,
+      "cold_controls": 4,
+      "cold_failure_reason": "drop",
+      "cold_final_force_qualified_angle": -1.0738669691964438,
+      "assisted_policy_controls": 1,
+      "assisted_final_force_qualified_angle": 6.705910615347167,
+      "assisted_strict_success": true,
+      "prefix_bitexact": true
+    },
+    {
+      "seed": 17044,
+      "cold_controls": 3,
+      "cold_failure_reason": "palm_support",
+      "cold_final_force_qualified_angle": -2.3962588740555333,
+      "assisted_policy_controls": 1,
+      "assisted_final_force_qualified_angle": 6.630435592745521,
+      "assisted_strict_success": true,
+      "prefix_bitexact": true
+    },
+    {
+      "seed": 17045,
+      "cold_controls": 2,
+      "cold_failure_reason": "palm_support",
+      "cold_final_force_qualified_angle": -0.4827548395962569,
+      "assisted_policy_controls": 1,
+      "assisted_final_force_qualified_angle": 6.683805930977544,
+      "assisted_strict_success": true,
+      "prefix_bitexact": true
+    }
+  ],
+  "source_sha256": {
+    "artifacts/bootstrap_suffix_support_0001/summary.json": "43b4acd0ec0ba7ff0d457604760a70f2a2d4ff263a74289c93d642ad72d0cda3",
+    "artifacts/bootstrap_suffix_support_0001/protocol.json": "4eb5897c48993bb4d234b5b7c1a4d9b4c184bbc298b3ea43691d39203818d201",
+    "artifacts/bootstrap_suffix_support_0001/run.py": "ad3b52bcdecf0135cd3f18fce73c786b5da7210f24a5e9250ea24c7fac3c8746",
+    "artifacts/bootstrap_suffix_support_0001/manifest.json": "4509bc98dde5b6bbf15642c00df0c8482074af3d2966244d03ad1c2219cd11f9",
+    "artifacts/bootstrap_0005/value_calibration/initial_0001/report.json": "7316bcf01a85d096b4a1a2086cf59be8078dc4f19045c4bd7e29c4ac2cfea1dc",
+    "artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17041/report.json": "9a0af1f5d630b687e0cc040fdb4fb4f2eac9a1fd34acd21b2af7b88a90b1c570",
+    "artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17042/report.json": "13dc37a2948e10248c58f1aecd18642a49a2ea8d456230e8694a2640c424a157",
+    "artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17043/report.json": "558999006287db11f0aab43179a2a26e6c692a0b26660afda394ec75cdfb6825",
+    "artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17044/report.json": "9cef4b0bf7734827c298a12dcf69770d0ef88b47376cf3f7c42e713b5f108e10",
+    "artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17045/report.json": "88a7ac6f7e9e4a646678d2cbab88b745ebec5f7b69983b8d1f6af35d78c48569"
+  },
+  "randomness_caveat": "Same seeds, fresh first sampling draw at suffix; not ninth draw from uninterrupted cold stochastic policy."
+}

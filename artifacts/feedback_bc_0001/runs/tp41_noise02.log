@@ -1,0 +1,30 @@
+rows 413 (distinct observations 287; spine x10; training branches 36, held-out branches 5 with 40 correction rows)
+step 0 bc_loss 3.62494
+step 5000 bc_loss 0.03313
+step 10000 bc_loss 0.03308
+step 15000 bc_loss 0.03516
+step 20000 bc_loss 0.02721
+step 25000 bc_loss 0.02994
+step 30000 bc_loss 0.03150
+step 35000 bc_loss 0.02904
+step 40000 bc_loss 0.03275
+step 45000 bc_loss 0.03981
+step 50000 bc_loss 0.04070
+step 55000 bc_loss 0.03425
+step 60000 bc_loss 0.03060
+step 65000 bc_loss 0.02901
+step 70000 bc_loss 0.03736
+step 75000 bc_loss 0.01952
+step 80000 bc_loss 0.02857
+step 85000 bc_loss 0.03420
+step 90000 bc_loss 0.01983
+step 95000 bc_loss 0.03716
+step 99999 bc_loss 0.03197
+training fit over 287 distinct rows: action-space L2 median 0.0072 p90 0.0161 max 1.562 (row spine); atanh-space MSE 0.00623 | spine rows [1.1319999694824219, 1.1469999551773071, 1.1619999408721924, 1.562000036239624, 0.014000000432133675, 0.003000000026077032, 0.004999999888241291, 0.004000000189989805, 0.009999999776482582, 0.00800000037997961, 0.00800000037997961, 0.004000000189989805, 0.006000000052154064, 0.006000000052154064]
+HELD-OUT regression (chaos-free generalisation): 40 rows, action-space L2 median 0.0178 p90 0.0637 max 1.561; atanh-space MSE 0.02955
+cold {'det': {'ok': False, 'controls': 9, 'angle': 0.82, 'fail': 'drop'}, 'stoch': [False, False, False, False, False]} 
+spine det k1.. [False, False, False, False, False, False, False, False, False, True, True, True, True] 
+spine stoch3 [0, 0, 0, 0, 0, 0, 0, 1, 0, 3, 3, 3, 3]
+training branches: corrected-state handoffs (deterministic) 0/24; informative cells j<=9: 0/24; by (order, j) {'o1j0': '0/2', 'o1j3': '0/5', 'o1j6': '0/5', 'o1j8': '0/12'}
+held-out branches: corrected-state handoffs (deterministic) 0/5; informative cells j<=9: 0/5; by (order, j) {'o1j0': '0/1', 'o1j3': '0/1', 'o1j6': '0/1', 'o1j8': '0/2'}
+wall 417.4

@@ -1,0 +1,86 @@
+{
+  "status": "complete",
+  "physical_intervention_episodes": 10,
+  "new_baseline_physical_episodes": 0,
+  "new_learning_updates": 0,
+  "normalized_action_l2_radius": 0.005,
+  "achieved_radius_range": [
+    0.004999994248075255,
+    0.005000008762000614
+  ],
+  "clipped_dimensions": 0,
+  "full_turns": 0,
+  "all_true_terminal": true,
+  "predicted_plus_better_than_minus": 5,
+  "observed_plus_better_than_minus": 2,
+  "pairs": [
+    {
+      "seed": 17041,
+      "predicted_plus_minus": 1.546600341796875,
+      "actual_plus_minus": -2.1005384640436446,
+      "predicted_plus_vs_baseline": 0.8344573974609375,
+      "predicted_minus_vs_baseline": -0.7121429443359375,
+      "actual_plus_vs_baseline": -2.5159650542183982,
+      "actual_minus_vs_baseline": -0.4154265901747536,
+      "plus_steps": 2,
+      "minus_steps": 2,
+      "plus_failure": "drop",
+      "minus_failure": "drop"
+    },
+    {
+      "seed": 17042,
+      "predicted_plus_minus": 11.110370635986328,
+      "actual_plus_minus": 16.32325748645915,
+      "predicted_plus_vs_baseline": 5.923496246337891,
+      "predicted_minus_vs_baseline": -5.186870574951172,
+      "actual_plus_vs_baseline": 65.53115674301455,
+      "actual_minus_vs_baseline": 49.20789925655541,
+      "plus_steps": 2,
+      "minus_steps": 4,
+      "plus_failure": "palm_support",
+      "minus_failure": "drop"
+    },
+    {
+      "seed": 17043,
+      "predicted_plus_minus": 1.2887821197509766,
+      "actual_plus_minus": 6.258227352304054,
+      "predicted_plus_vs_baseline": 0.5875282287597656,
+      "predicted_minus_vs_baseline": -0.7012519836425781,
+      "actual_plus_vs_baseline": 16.603682266461426,
+      "actual_minus_vs_baseline": 10.345454914157372,
+      "plus_steps": 3,
+      "minus_steps": 5,
+      "plus_failure": "drop",
+      "minus_failure": "drop"
+    },
+    {
+      "seed": 17044,
+      "predicted_plus_minus": 5.49432373046875,
+      "actual_plus_minus": -0.7761396786209929,
+      "predicted_plus_vs_baseline": 3.0802154541015625,
+      "predicted_minus_vs_baseline": -2.4141082763671875,
+      "actual_plus_vs_baseline": -0.49201111931549235,
+      "actual_minus_vs_baseline": 0.2841285593055005,
+      "plus_steps": 3,
+      "minus_steps": 3,
+      "plus_failure": "palm_support",
+      "minus_failure": "palm_support"
+    },
+    {
+      "seed": 17045,
+      "predicted_plus_minus": 2.3555755615234375,
+      "actual_plus_minus": -15.0805733186249,
+      "predicted_plus_vs_baseline": 1.2532844543457031,
+      "predicted_minus_vs_baseline": -1.1022911071777344,
+      "actual_plus_vs_baseline": -15.879314413164082,
+      "actual_minus_vs_baseline": -0.7987410945391815,
+      "plus_steps": 5,
+      "minus_steps": 2,
+      "plus_failure": "palm_support",
+      "minus_failure": "palm_support"
+    }
+  ],
+  "interpretation": "Five fixed-seed paired interventions: fitted Q direction does not consistently agree with actual return direction here. This is not a robustness or policy-success rate and does not establish general gradient correctness.",
+  "policy_only": false,
+  "sac_success_claim": false
+}

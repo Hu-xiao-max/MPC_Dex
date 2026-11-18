@@ -1,0 +1,6 @@
+{
+  "reason": "Initialization-only experiment; bootstrap observation now exposes qualified retained progress. No online training or full-turn successes occurred. Original source retained.",
+  "environment_steps": 0,
+  "bc_updates": 5000,
+  "critic_updates": 5000
+}

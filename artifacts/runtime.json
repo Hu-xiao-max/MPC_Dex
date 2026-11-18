@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-23T17:20:10.463023+00:00",
+  "scope": "Local simulation dependencies only; no paper controller or robot is deployed.",
+  "python": "3.11.15",
+  "mujoco": "3.14.0",
+  "numpy": "2.4.6",
+  "render_backend": "egl",
+  "cpu_logical_count": 32,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU, 580.178.04, 12282 MiB",
+  "physics": {
+    "passed": true,
+    "steps": 500,
+    "final_height_m": 0.049632818157393635
+  },
+  "rendering": {
+    "passed": true,
+    "shape": [
+      120,
+      160,
+      3
+    ],
+    "renderer": "Mesa Intel(R) Graphics (RPL-S)",
+    "vendor": "Intel"
+  },
+  "runtime_ready": true,
+  "paper_deployed": false
+}

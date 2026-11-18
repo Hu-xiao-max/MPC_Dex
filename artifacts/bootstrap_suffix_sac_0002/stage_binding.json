@@ -1,0 +1,43 @@
+{
+  "selected_prefix_controls": 6,
+  "selected_by": "Explicit root selection for gated actual warm-up, not supported-stage claim",
+  "screen_stochastic_successes": 0,
+  "screen_stochastic_episodes": 5,
+  "screen_deterministic_success": false,
+  "screen_all_manifest_files_verified": true,
+  "screen_manifest_sha256": "c3a10cea3d4f509d51e40e3965f76119df5e2ff86274cf694dbd7d0944c12ad8",
+  "screen_checkpoint_sha256": "e4a73d890963a70afc9337db7d29d345c38e192218a7b81dbd51cd6589232892",
+  "original_prefix_transitions_sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f",
+  "files": {
+    "manifest.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/manifest.json",
+      "local_path": "stage_reference/manifest.json",
+      "sha256": "c3a10cea3d4f509d51e40e3965f76119df5e2ff86274cf694dbd7d0944c12ad8"
+    },
+    "recommendation.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/recommendation.json",
+      "local_path": "stage_reference/recommendation.json",
+      "sha256": "d5233a26574f2728236fcda2ca0782b010987a234033fe1a486f9abeb85df637"
+    },
+    "summary.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/summary.json",
+      "local_path": "stage_reference/summary.json",
+      "sha256": "0447e734bbdc3b6c1e87dbec9c3013983fb1404c02ab99abfe43d102281899c8"
+    },
+    "protocol.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/protocol.json",
+      "local_path": "stage_reference/protocol.json",
+      "sha256": "ee65f2cf5b8ab4818031b5d91e06f7a4bea57ccc617032ccd5ce0effd25e0b83"
+    },
+    "findings.md": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/findings.md",
+      "local_path": "stage_reference/findings.md",
+      "sha256": "4a16996c80f9b673159ae4c2ba33ac989ef1265f0d95ff9f2b6e99e8d5675b3a"
+    },
+    "sampling_verification.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/sampling_verification.json",
+      "local_path": "stage_reference/sampling_verification.json",
+      "sha256": "4ab23be88c37474a6bb552fa7feb1c370ec947091aa2781b18204ced747190b9"
+    }
+  }
+}

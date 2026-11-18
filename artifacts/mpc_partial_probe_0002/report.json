@@ -1,0 +1,1866 @@
+{
+  "purpose": "exploratory partial-prior MPC diagnostic",
+  "production_eligible": false,
+  "environment_contract": {
+    "action_high": [
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      1.396,
+      1.163,
+      1.644,
+      1.719
+    ],
+    "action_low": [
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      0.263,
+      -0.105,
+      -0.189,
+      -0.162
+    ],
+    "environment": {
+      "contact_loss_seconds": 0.05,
+      "control_seconds": 0.1,
+      "finger_friction": 0.8,
+      "goal_heading": null,
+      "horizon_steps": 900,
+      "initial_hand_q": [
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        1.2,
+        0.3,
+        0.5,
+        0.5
+      ],
+      "initial_object_position": [
+        0.055,
+        0.0,
+        0.075
+      ],
+      "joint_kp": 3.0,
+      "joint_kv": 0.1,
+      "max_joint_force": 0.7,
+      "object_diameter": 0.045,
+      "object_friction": 0.5,
+      "object_length": 0.12,
+      "object_mass": 0.15,
+      "object_shape": "hexagonal",
+      "palm_height": 0.35,
+      "success_axis_tolerance_degrees": 30.0,
+      "task": "rotation",
+      "terminate_on_success": true,
+      "timestep": 0.002
+    },
+    "environment_source_sha256": "cb3e1b9630630b454338fc3a14001d7488618e31dc379647d7536b09cf2b5abe",
+    "grasp_sha256": "d846ae4cf06d8b38a51dbfdd50f031cdca7b453d9d2c5435678f53ced2d9b3bd",
+    "joint_order": [
+      "ffj0",
+      "ffj1",
+      "ffj2",
+      "ffj3",
+      "mfj0",
+      "mfj1",
+      "mfj2",
+      "mfj3",
+      "rfj0",
+      "rfj1",
+      "rfj2",
+      "rfj3",
+      "thj0",
+      "thj1",
+      "thj2",
+      "thj3"
+    ],
+    "observation": "q16,object_position_in_palm3,object_quaternion_in_palm_wxyz4,principal_angle1,previous_angle1,finite_difference_qvel16,finite_difference_object_vel3,previous_normalized_action16; reorientation appends goal1",
+    "robot_mesh_sha256": {
+      "base_link.stl": "4060e1ae52bca21367e15a1dfab16bc7c2e81849566631b7f55e2cf376b7bc85",
+      "link_0.0.stl": "32b90a6744d472a6ffaee02cbf32eb8a5600b1da0944e86aeb9f53503a9f8ac9",
+      "link_1.0.stl": "e3dfb35b6682f62f18ca6ed0b39cb94ff627b68e0e3373cf7212390574604680",
+      "link_12.0_right.stl": "c5418fc127311eefee1d8ee69dfcfde2157d038286900bee91608d2701b00f13",
+      "link_13.0.stl": "e906896afc078a12c9c377e3a2b07f375583d3b869581f9962030cabc888be29",
+      "link_14.0.stl": "a9e4983e4bff7fc7d868b4965c9865edb2669b946434095703766202b5de01ff",
+      "link_15.0.stl": "bf963adb775b79b27649f4f5dff4ced58ef676ce86cc677de49d3810382d11e0",
+      "link_15.0_tip.stl": "a7147c765d4b6d2eb16fa14bba2e8eceec4a750bc346260893ca02aca1fd7a63",
+      "link_2.0.stl": "9c98477c65b45f5a3de1df0e1b54281da2385f4eafd057d103ab40893771c2d0",
+      "link_3.0.stl": "fe333088176395aa7d8a913aa953d3cd649c4c77753224239b78b2c99e3e314c",
+      "link_3.0_tip.stl": "9c3fa04fea0dfa1257c8a1b02d2b7d982b0d985c1ddda1edf148827944835f39"
+    },
+    "robot_xml_sha256": "cec3efe34be49c8220c23afdae0cfacbce10164a5bc7c34075b6668ee0a862a6",
+    "schema_version": 1,
+    "target": "local-simulation"
+  },
+  "primitive": {
+    "schema_version": 1,
+    "method": "mean_centered_joint_trajectory_pca",
+    "provenance": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/rotation_probe/orbit_0.8_s8_p1_f0.npz",
+      "source_sha256": "602078ae3af02f4e0e5c734847331705518a7ffd120e0a1a59b967513fa181d0",
+      "purpose": "partial coordination prior for diagnostic only",
+      "successful_policy": false
+    },
+    "extraction": {
+      "frames": 111,
+      "joints": 16,
+      "units": "radians",
+      "requested_explained_variance": 0.9,
+      "retained_explained_variance": 0.9560550984848052,
+      "trajectories_float64_le_sha256": "5fba04f66e014260bfa906dd294ad98555ed4f3a0222c70a2874fb4708b52f2b"
+    }
+  },
+  "components": 1,
+  "cem": {
+    "horizon_seconds": 0.5,
+    "knots": 6,
+    "samples": 350,
+    "elites": 10,
+    "iterations": 3,
+    "timestep_seconds": 0.1,
+    "control_seconds": 0.1
+  },
+  "cost": {
+    "position_weight": 1000.0,
+    "principal_weight": 1.0,
+    "perpendicular_weight": 100.0,
+    "workspace_radius": 0.18,
+    "workers": 4,
+    "rotation_progress": "retained"
+  },
+  "seed": 42,
+  "max_target_delta": null,
+  "source_sha256": "b3f25eb2a4e8be695277d67d24e065c6956f2ecf43cbbaedd93b35c04772c7d1",
+  "evaluator_sha256": "5abcc37f4de37508a2cb4e733a5903a0039a07ab5be614f31c9d1b01890bf63e",
+  "status": "environment_boundary",
+  "steps": [
+    {
+      "step": 1,
+      "planning_seconds": 4.347455993993208,
+      "angle": 0.0525533491920231,
+      "retained_angle": 0.04787722689105096,
+      "force_qualified_angle": 0.0478772268910499,
+      "contacts": 3,
+      "tilt": 0.06944594664537096,
+      "drop": false,
+      "success": false,
+      "reward": 0.751066983840462,
+      "target_delta_max": 0.20380196357635838,
+      "planner": {
+        "best_cost": 16.74807947283761,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 36,
+            "elite_count": 10,
+            "iteration_best_cost": 19.02457701996945,
+            "best_cost": 19.02457701996945
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 58,
+            "elite_count": 10,
+            "iteration_best_cost": 16.74807947283761,
+            "best_cost": 16.74807947283761
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 81,
+            "elite_count": 10,
+            "iteration_best_cost": 18.657580877924012,
+            "best_cost": 16.74807947283761
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 175
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.03035417594946921,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.3523439352455409,
+          1.3523439352455409
+        ],
+        "retained_final_progress_range": [
+          1.3476678105968865,
+          1.3476678105968865
+        ]
+      }
+    },
+    {
+      "step": 2,
+      "planning_seconds": 5.261102940887213,
+      "angle": 0.42522977736155904,
+      "retained_angle": 0.4205536550605869,
+      "force_qualified_angle": 0.42055365506058573,
+      "contacts": 3,
+      "tilt": 0.05551877313690047,
+      "drop": false,
+      "success": false,
+      "reward": 7.1535285633907195,
+      "target_delta_max": 0.24682334053516364,
+      "planner": {
+        "best_cost": 17.63519279847993,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 91,
+            "elite_count": 10,
+            "iteration_best_cost": 18.339643714712317,
+            "best_cost": 18.339643714712317
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 129,
+            "elite_count": 10,
+            "iteration_best_cost": 17.737752394435766,
+            "best_cost": 17.737752394435766
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 120,
+            "elite_count": 10,
+            "iteration_best_cost": 17.63519279847993,
+            "best_cost": 17.63519279847993
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 340
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.031092391116544604,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.4759942932431563,
+          0.4759942932431563
+        ],
+        "retained_final_progress_range": [
+          0.4759942932431563,
+          0.4759942932431563
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "planning_seconds": 5.768960013985634,
+      "angle": 0.7504238055068709,
+      "retained_angle": 0.7457476832058988,
+      "force_qualified_angle": 0.7457476832058973,
+      "contacts": 3,
+      "tilt": 0.05073026112353692,
+      "drop": false,
+      "success": false,
+      "reward": 6.203880562906238,
+      "target_delta_max": 0.4538528995407449,
+      "planner": {
+        "best_cost": 14.489911017266968,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 73,
+            "elite_count": 10,
+            "iteration_best_cost": 17.845376975036928,
+            "best_cost": 17.845376975036928
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 98,
+            "elite_count": 10,
+            "iteration_best_cost": 17.057298727250643,
+            "best_cost": 17.057298727250643
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 106,
+            "elite_count": 10,
+            "iteration_best_cost": 14.489911017266968,
+            "best_cost": 14.489911017266968
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 277
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.032785385847091675,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          3.1217973468343154,
+          3.1217973468343154
+        ],
+        "retained_final_progress_range": [
+          2.623023192564503,
+          2.623023192564503
+        ]
+      }
+    },
+    {
+      "step": 4,
+      "planning_seconds": 6.488603457110003,
+      "angle": 1.2538421100301296,
+      "retained_angle": 1.2491659877291574,
+      "force_qualified_angle": 1.2491659877291565,
+      "contacts": 4,
+      "tilt": 0.09810818764196243,
+      "drop": false,
+      "success": false,
+      "reward": 9.768366090465172,
+      "target_delta_max": 0.400739451802809,
+      "planner": {
+        "best_cost": 14.798358965530767,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 57,
+            "elite_count": 10,
+            "iteration_best_cost": 18.20445767242758,
+            "best_cost": 18.20445767242758
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 89,
+            "elite_count": 10,
+            "iteration_best_cost": 14.798358965530767,
+            "best_cost": 14.798358965530767
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 87,
+            "elite_count": 10,
+            "iteration_best_cost": 16.70592599171032,
+            "best_cost": 14.798358965530767
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 233
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.03948071482591331,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.0005119838537773,
+          1.0005119838537773
+        ],
+        "retained_final_progress_range": [
+          0.9869348318441127,
+          0.9869348318441127
+        ]
+      }
+    },
+    {
+      "step": 5,
+      "planning_seconds": 6.242098405957222,
+      "angle": 2.181951445658764,
+      "retained_angle": 2.1772753233577915,
+      "force_qualified_angle": 2.1772753233577897,
+      "contacts": 4,
+      "tilt": 0.01921587369061125,
+      "drop": false,
+      "success": false,
+      "reward": 18.262186712572685,
+      "target_delta_max": 0.7265499873082487,
+      "planner": {
+        "best_cost": 17.920778164013615,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 14,
+            "elite_count": 10,
+            "iteration_best_cost": 21.535182279173483,
+            "best_cost": 21.535182279173483
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 42,
+            "elite_count": 10,
+            "iteration_best_cost": 18.756341982161814,
+            "best_cost": 18.756341982161814
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 66,
+            "elite_count": 10,
+            "iteration_best_cost": 17.920778164013615,
+            "best_cost": 17.920778164013615
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 122
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.04369536601006985,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.06824054025271842,
+          0.06824054025271842
+        ],
+        "retained_final_progress_range": [
+          0.06450559457036525,
+          0.06450559457036525
+        ]
+      }
+    },
+    {
+      "step": 6,
+      "planning_seconds": 6.07167943008244,
+      "angle": 2.4616323008301095,
+      "retained_angle": 2.396843068159803,
+      "force_qualified_angle": 2.396843068159802,
+      "contacts": 3,
+      "tilt": 0.11015679867678142,
+      "drop": false,
+      "success": false,
+      "reward": 5.2936171034269135,
+      "target_delta_max": 0.646414762153593,
+      "planner": {
+        "best_cost": 19.39043369932713,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 33,
+            "elite_count": 10,
+            "iteration_best_cost": 21.67494622062924,
+            "best_cost": 21.67494622062924
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 40,
+            "elite_count": 10,
+            "iteration_best_cost": 19.39043369932713,
+            "best_cost": 19.39043369932713
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 61,
+            "elite_count": 10,
+            "iteration_best_cost": 21.88569830497994,
+            "best_cost": 19.39043369932713
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 134
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.04069584794342518,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.08249335934505238,
+          0.08249335934505238
+        ],
+        "retained_final_progress_range": [
+          0.0160137378155012,
+          0.0160137378155012
+        ]
+      }
+    },
+    {
+      "step": 7,
+      "planning_seconds": 5.250410957029089,
+      "angle": 2.62895738128937,
+      "retained_angle": 2.5641681486190637,
+      "force_qualified_angle": 2.564168148619064,
+      "contacts": 4,
+      "tilt": 0.03093203538674422,
+      "drop": false,
+      "success": false,
+      "reward": 3.046501609185211,
+      "target_delta_max": 0.38829744744539685,
+      "planner": {
+        "best_cost": 19.044289873327717,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 29,
+            "elite_count": 10,
+            "iteration_best_cost": 19.044289873327717,
+            "best_cost": 19.044289873327717
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 24,
+            "elite_count": 10,
+            "iteration_best_cost": 19.804599153284595,
+            "best_cost": 19.044289873327717
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 43,
+            "elite_count": 10,
+            "iteration_best_cost": 19.467374742350316,
+            "best_cost": 19.044289873327717
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 96
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.04179378808476031,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -0.19079980252490153,
+          -0.19079980252490153
+        ],
+        "retained_final_progress_range": [
+          -0.19424784005507023,
+          -0.19424784005507023
+        ]
+      }
+    },
+    {
+      "step": 8,
+      "planning_seconds": 7.436824845150113,
+      "angle": 2.9995981434485035,
+      "retained_angle": 2.934808910778197,
+      "force_qualified_angle": 2.9348089107781963,
+      "contacts": 4,
+      "tilt": 0.21046273451616718,
+      "drop": false,
+      "success": false,
+      "reward": 7.112815243182669,
+      "target_delta_max": 0.423599480351194,
+      "planner": {
+        "best_cost": 18.890937999383713,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 43,
+            "elite_count": 10,
+            "iteration_best_cost": 19.53538669397319,
+            "best_cost": 19.53538669397319
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 71,
+            "elite_count": 10,
+            "iteration_best_cost": 18.890937999383713,
+            "best_cost": 18.890937999383713
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 74,
+            "elite_count": 10,
+            "iteration_best_cost": 18.942429358378273,
+            "best_cost": 18.890937999383713
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 188
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.04258225206285715,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.3529399119708914,
+          0.3529399119708914
+        ],
+        "retained_final_progress_range": [
+          0.3339376758202589,
+          0.3339376758202589
+        ]
+      }
+    },
+    {
+      "step": 9,
+      "planning_seconds": 7.315657464088872,
+      "angle": 2.927497680985242,
+      "retained_angle": 2.862708448314936,
+      "force_qualified_angle": 2.862708448314934,
+      "contacts": 3,
+      "tilt": 0.07730958912272073,
+      "drop": false,
+      "success": false,
+      "reward": -1.742009249265226,
+      "target_delta_max": 0.4630587782105919,
+      "planner": {
+        "best_cost": 20.29541327012501,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 66,
+            "elite_count": 10,
+            "iteration_best_cost": 21.114907714526485,
+            "best_cost": 21.114907714526485
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 78,
+            "elite_count": 10,
+            "iteration_best_cost": 20.29541327012501,
+            "best_cost": 20.29541327012501
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 91,
+            "elite_count": 10,
+            "iteration_best_cost": 20.34920919973155,
+            "best_cost": 20.29541327012501
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 235
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.04464862309396267,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.2724324216190939,
+          0.2724324216190939
+        ],
+        "retained_final_progress_range": [
+          0.2391795660127743,
+          0.2391795660127743
+        ]
+      }
+    },
+    {
+      "step": 10,
+      "planning_seconds": 6.900545438984409,
+      "angle": 3.924884365762084,
+      "retained_angle": 3.860095133091778,
+      "force_qualified_angle": 3.8600951330917743,
+      "contacts": 4,
+      "tilt": 0.22342061388601275,
+      "drop": false,
+      "success": false,
+      "reward": 19.64773369553684,
+      "target_delta_max": 0.39017244069144774,
+      "planner": {
+        "best_cost": 16.405791681643684,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 52,
+            "elite_count": 10,
+            "iteration_best_cost": 16.405791681643684,
+            "best_cost": 16.405791681643684
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 80,
+            "elite_count": 10,
+            "iteration_best_cost": 16.69949570540741,
+            "best_cost": 16.405791681643684
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 74,
+            "elite_count": 10,
+            "iteration_best_cost": 17.086185874444077,
+            "best_cost": 16.405791681643684
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 206
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.04276743112131953,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.1557121645368686,
+          1.1557121645368686
+        ],
+        "retained_final_progress_range": [
+          1.1527513935545235,
+          1.1527513935545235
+        ]
+      }
+    },
+    {
+      "step": 11,
+      "planning_seconds": 9.05124546890147,
+      "angle": 3.8446532875427204,
+      "retained_angle": 3.779864054872414,
+      "force_qualified_angle": 3.77986405487241,
+      "contacts": 3,
+      "tilt": 0.17890768365747084,
+      "drop": false,
+      "success": false,
+      "reward": -1.9046215643872764,
+      "target_delta_max": 0.5475460715357829,
+      "planner": {
+        "best_cost": 19.362592920277944,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 110,
+            "elite_count": 10,
+            "iteration_best_cost": 21.397822844105743,
+            "best_cost": 21.397822844105743
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 129,
+            "elite_count": 10,
+            "iteration_best_cost": 21.004089227820035,
+            "best_cost": 21.004089227820035
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 144,
+            "elite_count": 10,
+            "iteration_best_cost": 19.362592920277944,
+            "best_cost": 19.362592920277944
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 383
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.0449443981051445,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.7702633033134921,
+          0.7702633033134921
+        ],
+        "retained_final_progress_range": [
+          0.5627473809390454,
+          0.5627473809390454
+        ]
+      }
+    },
+    {
+      "step": 12,
+      "planning_seconds": 9.546251405030489,
+      "angle": 3.9249810870064072,
+      "retained_angle": 3.835756008353573,
+      "force_qualified_angle": 3.8357560083535702,
+      "contacts": 3,
+      "tilt": 0.11373450265361812,
+      "drop": false,
+      "success": false,
+      "reward": 1.3065559892737368,
+      "target_delta_max": 0.5867822179699458,
+      "planner": {
+        "best_cost": 18.73800197616258,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 103,
+            "elite_count": 10,
+            "iteration_best_cost": 19.603457862400354,
+            "best_cost": 19.603457862400354
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 114,
+            "elite_count": 10,
+            "iteration_best_cost": 18.765655758958374,
+            "best_cost": 18.765655758958374
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 106,
+            "elite_count": 10,
+            "iteration_best_cost": 18.73800197616258,
+            "best_cost": 18.73800197616258
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 323
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.04555255803279579,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.1156487340516374,
+          1.1156487340516374
+        ],
+        "retained_final_progress_range": [
+          1.0912128883810124,
+          1.0912128883810124
+        ]
+      }
+    },
+    {
+      "step": 13,
+      "planning_seconds": 10.655842087930068,
+      "angle": 4.210441471490565,
+      "retained_angle": 4.121216392837731,
+      "force_qualified_angle": 4.12121639283773,
+      "contacts": 4,
+      "tilt": 0.02669296458184792,
+      "drop": false,
+      "success": false,
+      "reward": 5.409207689683158,
+      "target_delta_max": 0.6962769703732312,
+      "planner": {
+        "best_cost": 17.1313003378309,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 124,
+            "elite_count": 10,
+            "iteration_best_cost": 17.959338165873884,
+            "best_cost": 17.959338165873884
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 128,
+            "elite_count": 10,
+            "iteration_best_cost": 17.1313003378309,
+            "best_cost": 17.1313003378309
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 129,
+            "elite_count": 10,
+            "iteration_best_cost": 17.934217164086597,
+            "best_cost": 17.1313003378309
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 381
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.04932127194479108,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          2.1145781687931233,
+          2.1145781687931233
+        ],
+        "retained_final_progress_range": [
+          1.7238966709173917,
+          1.7238966709173917
+        ]
+      }
+    },
+    {
+      "step": 14,
+      "planning_seconds": 9.06293810508214,
+      "angle": 4.529953697975352,
+      "retained_angle": 4.319381759937449,
+      "force_qualified_angle": 4.31938175993745,
+      "contacts": 4,
+      "tilt": 0.3340679153962996,
+      "drop": false,
+      "success": false,
+      "reward": 6.090244529695739,
+      "target_delta_max": 0.7166812581717967,
+      "planner": {
+        "best_cost": 18.51084673859807,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 104,
+            "elite_count": 10,
+            "iteration_best_cost": 18.551091157236694,
+            "best_cost": 18.551091157236694
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 88,
+            "elite_count": 10,
+            "iteration_best_cost": 19.06123976588384,
+            "best_cost": 18.551091157236694
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 97,
+            "elite_count": 10,
+            "iteration_best_cost": 18.51084673859807,
+            "best_cost": 18.51084673859807
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 289
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.04873946402221918,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.4617201402638662,
+          1.4617201402638662
+        ],
+        "retained_final_progress_range": [
+          0.7833205746158214,
+          0.7833205746158214
+        ]
+      }
+    },
+    {
+      "step": 15,
+      "planning_seconds": 7.948139320127666,
+      "angle": 5.315752084048715,
+      "retained_angle": 5.105180146010812,
+      "force_qualified_angle": 5.105180146010813,
+      "contacts": 3,
+      "tilt": 0.03060742821180301,
+      "drop": false,
+      "success": false,
+      "reward": 15.415967721467265,
+      "target_delta_max": 1.0888830164503942,
+      "planner": {
+        "best_cost": 17.976937074239395,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 34,
+            "elite_count": 10,
+            "iteration_best_cost": 17.976937074239395,
+            "best_cost": 17.976937074239395
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 53,
+            "elite_count": 10,
+            "iteration_best_cost": 18.349403490820908,
+            "best_cost": 17.976937074239395
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 48,
+            "elite_count": 10,
+            "iteration_best_cost": 18.55079870221115,
+            "best_cost": 17.976937074239395
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 135
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.05118677788414061,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.45105769475840285,
+          0.45105769475840285
+        ],
+        "retained_final_progress_range": [
+          0.3141238542900942,
+          0.3141238542900942
+        ]
+      }
+    },
+    {
+      "step": 16,
+      "planning_seconds": 7.824867272051051,
+      "angle": 5.972963388983203,
+      "retained_angle": 5.688079021694304,
+      "force_qualified_angle": 5.688079021694305,
+      "contacts": 2,
+      "tilt": 0.04967355564141137,
+      "drop": false,
+      "success": false,
+      "reward": 12.844226098689752,
+      "target_delta_max": 0.7818755816199483,
+      "planner": {
+        "best_cost": 20.559492849893093,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 16,
+            "elite_count": 10,
+            "iteration_best_cost": 20.793248534552834,
+            "best_cost": 20.793248534552834
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 43,
+            "elite_count": 10,
+            "iteration_best_cost": 20.559492849893093,
+            "best_cost": 20.559492849893093
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 50,
+            "elite_count": 10,
+            "iteration_best_cost": 20.773009712883688,
+            "best_cost": 20.559492849893093
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 109
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.049759685061872005,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.5277322939893826,
+          0.5277322939893826
+        ],
+        "retained_final_progress_range": [
+          0.36082285061710817,
+          0.36082285061710817
+        ]
+      }
+    },
+    {
+      "step": 17,
+      "planning_seconds": 5.791470488999039,
+      "angle": 6.264023571984642,
+      "retained_angle": 5.979139204695743,
+      "force_qualified_angle": 5.979139204695747,
+      "contacts": 2,
+      "tilt": 0.08101695209147416,
+      "drop": false,
+      "success": false,
+      "reward": 5.5212036600287755,
+      "target_delta_max": 0.611944459872068,
+      "planner": {
+        "best_cost": 25.24819765998059,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 1,
+            "elite_count": 1,
+            "iteration_best_cost": 27.17344368671968,
+            "best_cost": 27.17344368671968
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 8,
+            "elite_count": 8,
+            "iteration_best_cost": 25.813710665474886,
+            "best_cost": 25.813710665474886
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 5,
+            "elite_count": 5,
+            "iteration_best_cost": 25.24819765998059,
+            "best_cost": 25.24819765998059
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 14
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.05555944610387087,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -1.1173132783770288,
+          -1.1173132783770288
+        ],
+        "retained_final_progress_range": [
+          -1.1239141799877612,
+          -1.1239141799877612
+        ]
+      }
+    },
+    {
+      "step": 18,
+      "planning_seconds": 5.064443229930475,
+      "angle": 6.345056377006566,
+      "retained_angle": 6.060172009717667,
+      "force_qualified_angle": 6.06017200971767,
+      "contacts": 2,
+      "tilt": 0.31699748950236817,
+      "drop": false,
+      "success": false,
+      "reward": 1.3206561004384845,
+      "target_delta_max": 0.4548657157912337,
+      "planner": {
+        "best_cost": 34.9989521306386,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 3,
+            "elite_count": 3,
+            "iteration_best_cost": 40.60391681114539,
+            "best_cost": 40.60391681114539
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 1,
+            "elite_count": 1,
+            "iteration_best_cost": 46.68235624517776,
+            "best_cost": 40.60391681114539
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 7,
+            "elite_count": 7,
+            "iteration_best_cost": 34.9989521306386,
+            "best_cost": 34.9989521306386
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 11
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.048558622831478715,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -1.1140452975996695,
+          -1.1140452975996695
+        ],
+        "retained_final_progress_range": [
+          -1.3041126450994422,
+          -1.3041126450994422
+        ]
+      }
+    },
+    {
+      "step": 19,
+      "planning_seconds": 3.852699583861977,
+      "angle": 5.202821619605737,
+      "retained_angle": 4.917937252316838,
+      "force_qualified_angle": 4.9179372523168405,
+      "contacts": 2,
+      "tilt": 0.3462410373410951,
+      "drop": false,
+      "success": false,
+      "reward": -23.144695148016588,
+      "target_delta_max": 1.2664106550643819,
+      "planner": {
+        "best_cost": 35.763625144797224,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 1,
+            "elite_count": 1,
+            "iteration_best_cost": 70.54640534203614,
+            "best_cost": 70.54640534203614
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 1,
+            "elite_count": 1,
+            "iteration_best_cost": 47.280068301786166,
+            "best_cost": 47.280068301786166
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 15,
+            "elite_count": 10,
+            "iteration_best_cost": 35.763625144797224,
+            "best_cost": 35.763625144797224
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 17
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.027773916954174638,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -1.2920226107843997,
+          -1.2920226107843997
+        ],
+        "retained_final_progress_range": [
+          -1.6760840882364931,
+          -1.6760840882364931
+        ]
+      }
+    },
+    {
+      "step": 20,
+      "planning_seconds": 5.561222352087498,
+      "angle": 5.48059922135451,
+      "retained_angle": 5.139176596979635,
+      "force_qualified_angle": 5.1391765969796355,
+      "contacts": 2,
+      "tilt": 0.23588597795940908,
+      "drop": false,
+      "success": false,
+      "reward": 5.25555203497546,
+      "target_delta_max": 1.4909025834396457,
+      "planner": {
+        "best_cost": 22.058228774262638,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 57,
+            "elite_count": 10,
+            "iteration_best_cost": 27.86567438665221,
+            "best_cost": 27.86567438665221
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 46,
+            "elite_count": 10,
+            "iteration_best_cost": 23.541973463690155,
+            "best_cost": 23.541973463690155
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 106,
+            "elite_count": 10,
+            "iteration_best_cost": 22.058228774262638,
+            "best_cost": 22.058228774262638
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 209
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.028499622829258442,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.3732481421832939,
+          0.3732481421832939
+        ],
+        "retained_final_progress_range": [
+          0.017671188001185216,
+          0.017671188001185216
+        ]
+      }
+    },
+    {
+      "step": 21,
+      "planning_seconds": 7.615257349098101,
+      "angle": 5.472301380410143,
+      "retained_angle": 5.123946113916592,
+      "force_qualified_angle": 5.081687623003628,
+      "contacts": 1,
+      "tilt": 0.05463156420955981,
+      "drop": false,
+      "success": false,
+      "reward": -0.46595681888732726,
+      "target_delta_max": 1.7069896956682207,
+      "planner": {
+        "best_cost": 20.43372101089282,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 198,
+            "elite_count": 10,
+            "iteration_best_cost": 20.43372101089282,
+            "best_cost": 20.43372101089282
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 200,
+            "elite_count": 10,
+            "iteration_best_cost": 21.444831577451495,
+            "best_cost": 20.43372101089282
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 241,
+            "elite_count": 10,
+            "iteration_best_cost": 20.6312794846314,
+            "best_cost": 20.43372101089282
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 639
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.024721201974898577,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          2.520881949857943,
+          2.520881949857943
+        ],
+        "retained_final_progress_range": [
+          1.0344383298545428,
+          1.0344383298545428
+        ]
+      }
+    },
+    {
+      "step": 22,
+      "planning_seconds": 9.514610106125474,
+      "angle": 5.950935785305438,
+      "retained_angle": 5.573401689015273,
+      "force_qualified_angle": 5.531143198102308,
+      "contacts": 2,
+      "tilt": 0.14914370970035534,
+      "drop": false,
+      "success": false,
+      "reward": 9.272688097905892,
+      "target_delta_max": 1.883,
+      "planner": {
+        "best_cost": 17.93119276489473,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 272,
+            "elite_count": 10,
+            "iteration_best_cost": 19.970765924446393,
+            "best_cost": 19.970765924446393
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 291,
+            "elite_count": 10,
+            "iteration_best_cost": 18.35023834092789,
+            "best_cost": 18.35023834092789
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 269,
+            "elite_count": 10,
+            "iteration_best_cost": 17.93119276489473,
+            "best_cost": 17.93119276489473
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 832
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.024221074068918824,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.0701972392651098,
+          1.0701972392651098
+        ],
+        "retained_final_progress_range": [
+          0.8063441775400638,
+          0.8063441775400638
+        ]
+      }
+    },
+    {
+      "step": 23,
+      "planning_seconds": 10.041265671839938,
+      "angle": 6.525067509663627,
+      "retained_angle": 6.0862765114367114,
+      "force_qualified_angle": 6.044018020523747,
+      "contacts": 2,
+      "tilt": 0.18142899432153453,
+      "drop": false,
+      "success": false,
+      "reward": 11.182634487163778,
+      "target_delta_max": 1.8119639063200959,
+      "planner": {
+        "best_cost": 18.84293202210334,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 266,
+            "elite_count": 10,
+            "iteration_best_cost": 19.674331332875692,
+            "best_cost": 19.674331332875692
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 288,
+            "elite_count": 10,
+            "iteration_best_cost": 19.06302241339998,
+            "best_cost": 19.06302241339998
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 321,
+            "elite_count": 10,
+            "iteration_best_cost": 18.84293202210334,
+            "best_cost": 18.84293202210334
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 875
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.031014573061838746,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.6006443239068433,
+          0.6006443239068433
+        ],
+        "retained_final_progress_range": [
+          0.531383033758576,
+          0.531383033758576
+        ]
+      }
+    },
+    {
+      "step": 24,
+      "planning_seconds": 13.097312872996554,
+      "angle": 6.7628813666930325,
+      "retained_angle": 6.273554949403314,
+      "force_qualified_angle": 6.225445310943612,
+      "contacts": 2,
+      "tilt": 0.13301161327427047,
+      "drop": false,
+      "success": false,
+      "reward": 4.4562771405881145,
+      "target_delta_max": 1.883,
+      "planner": {
+        "best_cost": 18.827324560420205,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 286,
+            "elite_count": 10,
+            "iteration_best_cost": 19.15487808171777,
+            "best_cost": 19.15487808171777
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 296,
+            "elite_count": 10,
+            "iteration_best_cost": 18.92760136714715,
+            "best_cost": 18.92760136714715
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 269,
+            "elite_count": 10,
+            "iteration_best_cost": 18.827324560420205,
+            "best_cost": 18.827324560420205
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 851
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.049092057859525084,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.0207378528881699,
+          1.0207378528881699
+        ],
+        "retained_final_progress_range": [
+          0.7618199692574258,
+          0.7618199692574258
+        ]
+      }
+    },
+    {
+      "step": 25,
+      "planning_seconds": 16.233865179819986,
+      "angle": 7.225706275314659,
+      "retained_angle": 6.710086916676148,
+      "force_qualified_angle": 6.5888560118055555,
+      "contacts": 3,
+      "tilt": 0.017338191596251426,
+      "drop": false,
+      "success": true,
+      "reward": 208.95649817243253,
+      "target_delta_max": 1.883,
+      "planner": {
+        "best_cost": 15.47076000693037,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 252,
+            "elite_count": 10,
+            "iteration_best_cost": 18.489819295319005,
+            "best_cost": 18.489819295319005
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 295,
+            "elite_count": 10,
+            "iteration_best_cost": 15.47076000693037,
+            "best_cost": 15.47076000693037
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 289,
+            "elite_count": 10,
+            "iteration_best_cost": 16.055536221053078,
+            "best_cost": 15.47076000693037
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 836
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "wall_seconds": 0.040907155023887753,
+        "early_termination_implemented": true,
+        "backend": "exact_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.1762126519482154,
+          1.1762126519482154
+        ],
+        "retained_final_progress_range": [
+          1.128617860997963,
+          1.128617860997963
+        ]
+      }
+    }
+  ],
+  "wall_seconds": 191.96710453787819
+}

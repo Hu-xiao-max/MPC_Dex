@@ -1,0 +1,3 @@
+# Planner noise probes
+
+`planner_noise.py <floor> <seeds> <t_from> <t_to>`: at each spine control t, plan once from the exact spine state with several CEM seeds (required correction zero; any deviation is sampling noise) and from one r = .01 perturbed state (mean correction versus seed spread). `horizon_noise.py <floor> <seeds> <r> <t list> <horizons>`: the same at several planning horizons. Result 2026-10-06 (floor .005, 6 seeds): noise 0.048-0.068 at the spine state, signal-to-noise 0.4-0.95 at perturbed states with the archived 0.5 s horizon; see `../findings.md` and `feedback_bc_0001/findings.md`.

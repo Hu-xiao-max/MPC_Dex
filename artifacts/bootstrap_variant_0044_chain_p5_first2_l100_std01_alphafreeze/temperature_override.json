@@ -1,0 +1,8 @@
+{
+  "inherited_normalized_alpha": 0.0003769643371924758,
+  "normalized_alpha": 0.0003769643371924758,
+  "raw_equivalent_alpha": 0.07539286743849516,
+  "frozen": true,
+  "applied_after": "checkpoints/initialized",
+  "alpha_optimizer_state_untouched": true
+}

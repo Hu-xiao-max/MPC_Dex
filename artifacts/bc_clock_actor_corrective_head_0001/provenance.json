@@ -1,0 +1,17 @@
+{
+  "source_artifact": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_0001",
+  "source_manifest_sha256": "5972a17aac32f57ac78b20730e53a04aba465c1e3f512136862c0869d4c0ec73",
+  "baseline_sha256": "6ea4979bf46616899e4cc12e9d1232528c01d281fba7240635f2e1878c69bfac",
+  "dataset_sha256": "b2d267279e233d709950321562ec229672fe16fedeba8449a4ad5446f51a0f4d",
+  "prior_completed_bc_updates": 12000,
+  "new_bc_updates": 0,
+  "pretrain_updates": 0,
+  "online_updates": 0,
+  "authorized_residual_solves": 1,
+  "physical_evaluation_authorized": false,
+  "method": "One float64 minimum-norm residual solve with frozen features; cast/add correction to float32 head once",
+  "no_ridge_sweep": true,
+  "no_scale_sweep": true,
+  "no_iterative_solves": true,
+  "production_eligible": false
+}

@@ -1,0 +1,42 @@
+{
+  "seed": 140,
+  "status": "boundary",
+  "controls": 23,
+  "strict_force_success": true,
+  "environment_success": true,
+  "failure_reason": null,
+  "final_force_qualified_angle": 6.746376557888506,
+  "palm": false,
+  "drop": false,
+  "no_external_support": true,
+  "planning_seconds_total": 177.36323440796696,
+  "wall_seconds": 178.82358244201168,
+  "raw_return": 328.99944977194076,
+  "hand_joint_qpos_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "independent_audit": {
+    "bitexact_replay": true,
+    "strict_force_success": true,
+    "final_force_qualified_angle": 6.746376557888506,
+    "final_force_bearing_fingers": 2
+  },
+  "transitions_sha256": "2a2726566714f1ef7c4d3d8b1c50a9334bfe368a936add2d073b4fc43e9bb525",
+  "physics_sha256": "66acaf9571cc4b4293d91b059761bfa3bb59d41ea5d84a3c02c67223f2b85499",
+  "stored": true
+}

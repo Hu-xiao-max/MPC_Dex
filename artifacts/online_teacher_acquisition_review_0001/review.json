@@ -1,0 +1,46 @@
+{
+  "review_only": true,
+  "physics_runs": 0,
+  "training_updates": 0,
+  "source_edits": 0,
+  "recommended_protocol": {
+    "episodes": 2,
+    "max_controls_per_episode": 20,
+    "reset_seed": 42,
+    "planner_seed": 42,
+    "mixing": [
+      "actor_teacher_alternating",
+      "teacher_actor_alternating"
+    ],
+    "queries_per_actual_decision": 1,
+    "maximum_queries": 40,
+    "maximum_actual_transitions": 40,
+    "maximum_executed_teacher_actions": 20,
+    "post_success_continuations": 0
+  },
+  "observed_planning_seconds": {
+    "queries": 26,
+    "total": 126.2604331721086,
+    "mean": 4.856170506619562,
+    "median": 4.592162667540833,
+    "max": 7.892232703976333,
+    "estimated40queries": 194.24682026478249
+  },
+  "inputs": {
+    "mpc_dex/mpc.py": "02a276ec62688dd04ff50ea94eeecbf0f16036aee7a4f03bb0e363bc20f5d83b",
+    "mpc_dex/rollouts.py": "dfc4c9efe7b3e8a603901e0c302bbc233c01cd726d746309e917133b6c0f9dd8",
+    "mpc_dex/native_rollouts.py": "ab981bb1c29f6f252437d38d9c58d50b2339a9b6f371a08a7e816344ab91d789",
+    "mpc_dex/online_checkpoint.py": "9936a49e3592bd908593d4edaa39ac0c30bbe4347428a8a1aa9e5b704aa263b2",
+    "mpc_dex/replay.py": "e503f61fadd58a5780fed7f6ff82d33b599d3eef00dfdaea6b9dd636cfc84311",
+    "artifacts/mpc_clock_actor_recovery_0001/run_recovery.py": "999bec836f6731b2da8d8c067529b4d2d6c15b74b8baef2f308fec996ee33af5",
+    "artifacts/mpc_clock_actor_recovery_0001/recovery_recipe.py": "59b99e050f8b9e15482eaebeb02d535117c2d064ac4afc984546e53be30691a2",
+    "artifacts/mpc_common_noise_recovery_0001/seed_17021/report.json": "875495bde6c49bb85b7672d74a5189bab8adcde11a85fcce1bf7fb7ac6e5182d",
+    "artifacts/mpc_common_noise_recovery_0001/seed_17022/report.json": "153a0a0bb5322ae0793a3c857828c0f0684885df258e2ad26ac2716a491dacdd",
+    "artifacts/mpc_common_noise_recovery_0001/seed_17023/report.json": "dad7629e31909233a6c584464ae05868c46c42fabd2dfea64c0b930d87a09915",
+    "artifacts/mpc_common_noise_recovery_0001/seed_17024/report.json": "b9c9804a0fbd173c08eb8e42ebd4bbea2b810e63a8014df646fdf1d370b977b9",
+    "artifacts/mpc_common_noise_recovery_0001/seed_17025/report.json": "9775ba2b1116f0c44e6f8a182f38796ac4ba79ebe920ec77abd3465bbc7e93ae",
+    "artifacts/mpc_clock_actor_recovery_0001/recovery/report.json": "b2f70700c2c28d8fa9ba8de9fd72d1e14cb51300e38777c27c6962796bf39b62"
+  },
+  "production_eligible": false,
+  "main_demonstrations": 0
+}

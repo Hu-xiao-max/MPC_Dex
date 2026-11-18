@@ -1,0 +1,11 @@
+{
+  "kind": "diagnostic_bootstrap_elapsed_time_absolute_joint_target",
+  "observation_dimension": 61,
+  "base_observation_dimension": 60,
+  "task": "rotation",
+  "appended_feature": "actual reset-relative decision elapsed seconds",
+  "clock_dtype": "float32",
+  "goal_feature": false,
+  "main_policy_compatible": false,
+  "production_eligible": false
+}

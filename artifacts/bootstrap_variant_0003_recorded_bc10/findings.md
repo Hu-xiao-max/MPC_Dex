@@ -1,0 +1,32 @@
+# Recorded-only demonstrations with lambda-10 actor supervision: one deterministic prefix-6 pass at online 500, not sustained; 34 assisted training successes, prefix-7/8 retention kept deterministically
+
+**The supervised pull toward recorded control 7 did what the hypothesis asked of the actor mean and no more:** the deterministic prefix-6 trial passed at online 500 (3 policy controls, 4 loaded fingers, 6.557 rad), then dropped at online 1,000 and braced on the palm at online 2,000; every stochastic prefix-6 trial failed at every checkpoint (0/20). Deterministic prefix-7 and prefix-8 retention passed at all four evaluation points, whereas SAC0004 lost its deterministic and stochastic prefix-7 retention (0/6) at online 500 and never regained it (SAC0003 measured prefix-7 retention only at baseline, 6/6, and online 2,000, 0/6; neither earlier stage evaluated prefix 8). The changing policy completed 34 of 454 assisted training episodes. Cold trials fail at control 1–2 throughout. The stage completed its full budget (exit 0, 510.4 s).
+
+## Actual execution
+
+- Inherited SAC0001 final checkpoint (SHA `e4a73d89…`, counters BC 12,000 / pretraining 500 / online 2,000); final counters BC 12,000 / pretraining 1,000 / online 4,000, optimizer steps critic 5,000, actor/alpha 4,000, as prescribed. Seeds matched to SAC0004 (train 17491, demonstration 17492, prefix 17493).
+- Warm-up: 256 frozen-actor prefix-6 episodes, 812 suffix rows, all 256 drops after 2–5 controls, zero successes (informational; gate is the demonstration buffer).
+- Demonstration buffer: 3 recorded rows only (source controls 7–9, raw return 226.97), no MPC rows; 77 demonstration and 179 online rows per batch in pretraining and online. Actor BC term: lambda 10 MSE on all 3 rows, in the single SAC actor step.
+- Pretraining: 500 entropy-free critic updates (40–64 bootstrapped demonstration rows per batch, median 51; the terminal row does not bootstrap); demonstration critic bias fell from −.677/−.619 to −.0003/+.008 (RMSE .012/.012); 812-row warm-up RMSE .319/.336 → .078/.076; 15-row held-out RMSE .329/.339 → .026/.027.
+- Online: 2,000 interactions, 2,000 updates, 454 completed assisted prefix-6 episodes, 34 strict force-qualified successes (33 in 3 suffix controls, one in 5; 3 by online 500 of 106 episodes, 14 by 1,000 of 222, 34 by 2,000), 316 drops, 103 palm-support failures, one episode (76) with environment success but force-qualified angle 6.241 rad < 2π, no truncations. Episode 454 remains open (3 rows); replay holds 2,812 rows. All 4,266 physical prefix controls passed the bit-exact replay assertions and never entered replay.
+- actor_bc_loss .110 at the first online update, .00035 at update 500, .00036 at 1,000, .00031 at 2,000; per-update values averaged .0011 over updates 101–500 (max .0054), .00036 over 501–1,000 (max .00065) and .00049 over 1,001–2,000 (max .0012). Deterministic L2 distance to recorded control 7 at the handoff .413 → .042 (500) → .028 (1,000) → .023 (2,000) while latent std rose .067 → .089 → .138 → .144. Learned alpha .000305860 → .000375383 (raw-equivalent .0751). Demonstration critic bias drifted back to −.25/−.48 (500), −.42/−.39 (1,000), −.16/−.15 (2,000).
+
+## Frozen evaluations
+
+| Checkpoint (online counter) | Prefix-6 deterministic | Prefix-6 stochastic 17501–17505 | Prefix-7 det. / stochastic 17521–17525 | Prefix-8 det. / stochastic 17531–17535 | Cold deterministic | Cold stochastic 17511–17515 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Baseline (2,000) | Drop, 3 controls | 0/5, all drops after 3 controls | Pass (2 controls) / 5/5 | Pass (1 control) / 5/5 | Drop, control 1 | not scheduled |
+| Online 500 (2,500) | Pass: 3 controls, 4 loaded fingers, 6.557 rad | 0/5 (4 drops, 1 palm; 4–5 controls) | Pass / 4/5 (17525 drop) | Pass / 2/5 (17533–17535 drop) | Drop, control 2 | not scheduled |
+| Online 1,000 (3,000) | Drop, 4 controls (peak 5.39 rad) | 0/5, all drops (4–5 controls) | Pass / 1/5 (17521, 17523–17525 palm) | Pass / 2/5 (17533–17535 drop) | Drop, control 2 | not scheduled |
+| Online 2,000 (4,000) | Palm support, 4 controls (peak palm force 13.55) | 0/5 (4 drops, 1 palm; 4–6 controls) | Pass / 3/5 (17523, 17524 drop) | Pass / 5/5 | Drop, control 2 | 0/5, all drops after 1–2 controls |
+
+No noisy (perturbed-handoff) trials were scheduled (eval_noisy_prefixes empty). All 81 evaluation trials terminated (none truncated), prefix_physics_bitexact true, handoff_terminated_before_policy false, training RNG restored and learner tensors/counters unchanged at every point.
+
+## Interpretation and scope
+
+The hypothesis predicted a deterministic prefix-6 pass with stochastic trials limited by the narrow basin. Part of that held: the mean reached the recorded control (L2 .02–.04) and the deterministic trial passed at one of the three online checkpoints (online 500); stochastic prefix-6 trials never passed. The pass did not survive further updates even though the BC loss at the checkpoints stayed at .0003–.0004 (per-update values fluctuated up to .0012), so a mean within .023 of the recorded control at the handoff is not sufficient; the remaining 2–3 controls are executed by an actor whose latent std roughly doubled and whose critic values on the demonstration rows were pulled back below target (bias −.15 to −.48) during the failure-dominated online stream. Removing the MPC rows and adding the pull (two factors changed together from SAC0004; this stage does not separate them) coincided with deterministic prefix-7 and prefix-8 retention at every point, whereas SAC0004 lost prefix-7 retention (0/6) at online 500; stochastic prefix-7/8 retention fluctuated here (prefix 7: 5/5, 4/5, 1/5, 3/5; prefix 8: 5/5, 2/5, 2/5, 5/5). SAC0003 and SAC0004 never evaluated prefix 8, so no prefix-8 comparison exists.
+
+Single seed; no replicate. The 34 successes are changing-policy, prefix-replayed episodes and are not primitive evidence; no demonstration-mixed or assisted row is eligible. Cold results (0/1 deterministic at every point, 0/5 stochastic at 2,000) decide deployment eligibility: none. Inputs and results: `protocol.json`, `summary.json`, `warmup_record.json`, `metrics.jsonl`, `episodes/`, `evaluations/`, `checkpoints/`, `demonstration_calibration_*.json`, `warmup_calibration_*`, `heldout_calibration_*`, `unfinished_suffix/`; hashes in `manifest.json`.
+
+
+_Audit note: drafted by an auditing agent from the artifact files and independently refuted-checked; 3 claim(s) corrected by the verifier before writing._

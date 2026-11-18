@@ -1,0 +1,468 @@
+{"variant": "bootstrap_variant_0004_recorded_bc10_first", "checkpoint": "pretrained", "p5": "0/30", "p6": "0/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 68.2}
+{"variant": "bootstrap_variant_0015_bc_first_noise_mixed", "checkpoint": "online_500", "p5": "0/30", "p6": "2/30", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 68.4}
+{"variant": "bootstrap_variant_0015_bc_first_noise_mixed", "checkpoint": "pretrained", "p5": "0/30", "p6": "0/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 69.3}
+{"variant": "bootstrap_variant_0015_bc_first_noise_mixed", "checkpoint": "online_250", "p5": "0/30", "p6": "5/30D", "p7": "13/30D", "p8": "15/30D", "p0": "0/30", "wall": 69.9}
+{"variant": "bootstrap_variant_0004_recorded_bc10_first", "checkpoint": "online_1000", "p5": "0/30", "p6": "16/30D", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 72.9}
+{"variant": "bootstrap_variant_0016_bc_first_noise_mixed_r2", "checkpoint": "online_1000", "p5": "0/30", "p6": "2/30", "p7": "12/30D", "p8": "24/30D", "p0": "0/30", "wall": 73.6}
+{"variant": "bootstrap_variant_0004_recorded_bc10_first", "checkpoint": "online_2000", "p5": "0/30", "p6": "20/30D", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 75.4}
+{"variant": "bootstrap_variant_0004_recorded_bc10_first", "checkpoint": "online_500", "p5": "0/30", "p6": "12/30", "p7": "21/30", "p8": "30/30D", "p0": "0/30", "wall": 75.1}
+{"variant": "bootstrap_variant_0015_bc_first_noise_mixed", "checkpoint": "online_1500", "p5": "1/30", "p6": "2/30", "p7": "19/30D", "p8": "26/30D", "p0": "0/30", "wall": 76.0}
+{"variant": "bootstrap_variant_0015_bc_first_noise_mixed", "checkpoint": "online_750", "p5": "1/30", "p6": "6/30D", "p7": "15/30", "p8": "28/30D", "p0": "0/30", "wall": 79.0}
+{"variant": "bootstrap_variant_0015_bc_first_noise_mixed", "checkpoint": "online_2000", "p5": "3/30", "p6": "4/30", "p7": "28/30D", "p8": "28/30D", "p0": "0/30", "wall": 83.4}
+{"variant": "bootstrap_variant_0015_bc_first_noise_mixed", "checkpoint": "online_1750", "p5": "1/30", "p6": "3/30", "p7": "25/30D", "p8": "26/30D", "p0": "0/30", "wall": 83.6}
+{"variant": "bootstrap_variant_0015_bc_first_noise_mixed", "checkpoint": "online_1000", "p5": "1/30", "p6": "8/30", "p7": "11/30D", "p8": "25/30D", "p0": "0/30", "wall": 89.3}
+{"variant": "bootstrap_variant_0015_bc_first_noise_mixed", "checkpoint": "online_1250", "p5": "1/30", "p6": "11/30D", "p7": "18/30D", "p8": "27/30D", "p0": "0/30", "wall": 91.1}
+{"variant": "bootstrap_variant_0016_bc_first_noise_mixed_r2", "checkpoint": "pretrained", "p5": "0/30", "p6": "0/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 91.5}
+{"variant": "bootstrap_variant_0016_bc_first_noise_mixed_r2", "checkpoint": "online_1500", "p5": "0/30", "p6": "10/30D", "p7": "21/30D", "p8": "23/30D", "p0": "0/30", "wall": 106.4}
+{"variant": "bootstrap_variant_0017_recorded_bc10_first_r2", "checkpoint": "online_1000", "p5": "0/30", "p6": "6/30", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 99.2}
+{"variant": "bootstrap_variant_0016_bc_first_noise_mixed_r2", "checkpoint": "online_1750", "p5": "0/30", "p6": "5/30", "p7": "18/30D", "p8": "26/30D", "p0": "0/30", "wall": 109.0}
+{"variant": "bootstrap_variant_0016_bc_first_noise_mixed_r2", "checkpoint": "online_1250", "p5": "0/30", "p6": "5/30", "p7": "17/30D", "p8": "24/30D", "p0": "0/30", "wall": 111.7}
+{"variant": "bootstrap_variant_0016_bc_first_noise_mixed_r2", "checkpoint": "online_2000", "p5": "0/30", "p6": "2/30", "p7": "17/30D", "p8": "27/30D", "p0": "0/30", "wall": 110.9}
+{"variant": "bootstrap_variant_0016_bc_first_noise_mixed_r2", "checkpoint": "online_500", "p5": "0/30", "p6": "11/30D", "p7": "8/30", "p8": "22/30D", "p0": "0/30", "wall": 108.2}
+{"variant": "bootstrap_variant_0016_bc_first_noise_mixed_r2", "checkpoint": "online_250", "p5": "0/30", "p6": "0/30", "p7": "1/30", "p8": "23/30D", "p0": "0/30", "wall": 110.8}
+{"variant": "bootstrap_variant_0017_recorded_bc10_first_r2", "checkpoint": "online_1250", "p5": "0/30", "p6": "2/30", "p7": "14/30D", "p8": "30/30D", "p0": "0/30", "wall": 106.6}
+{"variant": "bootstrap_variant_0017_recorded_bc10_first_r2", "checkpoint": "online_1750", "p5": "0/30", "p6": "8/30D", "p7": "28/30", "p8": "30/30D", "p0": "0/30", "wall": 101.2}
+{"variant": "bootstrap_variant_0016_bc_first_noise_mixed_r2", "checkpoint": "online_750", "p5": "2/30", "p6": "6/30", "p7": "14/30", "p8": "21/30D", "p0": "0/30", "wall": 114.9}
+{"variant": "bootstrap_variant_0017_recorded_bc10_first_r2", "checkpoint": "online_1500", "p5": "0/30", "p6": "13/30D", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 109.1}
+{"variant": "bootstrap_variant_0017_recorded_bc10_first_r2", "checkpoint": "online_2000", "p5": "0/30", "p6": "5/30", "p7": "21/30D", "p8": "30/30D", "p0": "0/30", "wall": 108.4}
+{"variant": "bootstrap_variant_0017_recorded_bc10_first_r2", "checkpoint": "online_250", "p5": "0/30", "p6": "5/30", "p7": "1/30", "p8": "30/30D", "p0": "0/30", "wall": 111.5}
+{"variant": "bootstrap_variant_0017_recorded_bc10_first_r2", "checkpoint": "online_500", "p5": "0/30", "p6": "11/30D", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 86.0}
+{"variant": "bootstrap_variant_0017_recorded_bc10_first_r2", "checkpoint": "pretrained", "p5": "0/30", "p6": "0/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 82.8}
+{"variant": "bootstrap_variant_0017_recorded_bc10_first_r2", "checkpoint": "online_750", "p5": "0/30", "p6": "8/30D", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 85.8}
+{"variant": "bootstrap_variant_0019_bc_first_mixed", "checkpoint": "online_1250", "p5": "0/30", "p6": "10/30", "p7": "25/30D", "p8": "25/30D", "p0": "0/30", "wall": 89.5}
+{"variant": "bootstrap_variant_0019_bc_first_mixed", "checkpoint": "online_250", "p5": "0/30", "p6": "7/30D", "p7": "14/30D", "p8": "23/30D", "p0": "0/30", "wall": 85.4}
+{"variant": "bootstrap_variant_0019_bc_first_mixed", "checkpoint": "online_500", "p5": "0/30", "p6": "14/30D", "p7": "26/30D", "p8": "23/30D", "p0": "0/30", "wall": 86.2}
+{"variant": "bootstrap_variant_0019_bc_first_mixed", "checkpoint": "online_1000", "p5": "0/30", "p6": "6/30", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 92.6}
+{"variant": "bootstrap_variant_0019_bc_first_mixed", "checkpoint": "pretrained", "p5": "0/30", "p6": "0/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 81.1}
+{"variant": "bootstrap_variant_0019_bc_first_mixed", "checkpoint": "online_1500", "p5": "0/30", "p6": "16/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 93.5}
+{"variant": "bootstrap_variant_0019_bc_first_mixed", "checkpoint": "online_2000", "p5": "0/30", "p6": "0/30", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 92.0}
+{"variant": "bootstrap_variant_0019_bc_first_mixed", "checkpoint": "online_750", "p5": "0/30", "p6": "9/30", "p7": "19/30", "p8": "29/30D", "p0": "0/30", "wall": 93.8}
+{"variant": "bootstrap_variant_0019_bc_first_mixed", "checkpoint": "online_1750", "p5": "0/30", "p6": "19/30D", "p7": "29/30D", "p8": "29/30D", "p0": "0/30", "wall": 101.5}
+{"variant": "bootstrap_variant_0020_bc_first_long", "checkpoint": "online_1000", "p5": "0/30", "p6": "16/30D", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 94.7}
+{"variant": "bootstrap_variant_0020_bc_first_long", "checkpoint": "online_1500", "p5": "0/30", "p6": "4/30", "p7": "13/30D", "p8": "30/30D", "p0": "0/30", "wall": 93.8}
+{"variant": "bootstrap_variant_0020_bc_first_long", "checkpoint": "online_2000", "p5": "0/30", "p6": "20/30D", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 95.9}
+{"variant": "bootstrap_variant_0020_bc_first_long", "checkpoint": "online_2500", "p5": "0/30", "p6": "14/30", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 98.5}
+{"variant": "bootstrap_variant_0020_bc_first_long", "checkpoint": "online_3000", "p5": "0/30", "p6": "7/30D", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 96.7}
+{"variant": "bootstrap_variant_0020_bc_first_long", "checkpoint": "pretrained", "p5": "0/30", "p6": "0/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 90.8}
+{"variant": "bootstrap_variant_0020_bc_first_long", "checkpoint": "online_500", "p5": "0/30", "p6": "12/30", "p7": "21/30", "p8": "30/30D", "p0": "0/30", "wall": 96.0}
+{"variant": "bootstrap_variant_0020_bc_first_long", "checkpoint": "online_3500", "p5": "0/30", "p6": "3/30D", "p7": "17/30D", "p8": "30/30D", "p0": "0/30", "wall": 105.3}
+{"variant": "bootstrap_variant_0020_bc_first_long", "checkpoint": "online_4000", "p5": "0/30", "p6": "6/30D", "p7": "21/30D", "p8": "30/30D", "p0": "0/30", "wall": 104.9}
+{"variant": "bootstrap_variant_0021_bc_first_noise_mixed_long", "checkpoint": "online_1500", "p5": "1/30", "p6": "2/30", "p7": "19/30D", "p8": "26/30D", "p0": "0/30", "wall": 109.6}
+{"variant": "bootstrap_variant_0021_bc_first_noise_mixed_long", "checkpoint": "online_1000", "p5": "1/30", "p6": "8/30", "p7": "11/30D", "p8": "25/30D", "p0": "0/30", "wall": 118.1}
+{"variant": "bootstrap_variant_0021_bc_first_noise_mixed_long", "checkpoint": "online_2000", "p5": "3/30", "p6": "4/30", "p7": "28/30D", "p8": "28/30D", "p0": "0/30", "wall": 116.1}
+{"variant": "bootstrap_variant_0021_bc_first_noise_mixed_long", "checkpoint": "online_4000", "p5": "0/30D", "p6": "13/30", "p7": "15/30", "p8": "29/30D", "p0": "0/30", "wall": 120.8}
+{"variant": "bootstrap_variant_0021_bc_first_noise_mixed_long", "checkpoint": "online_3000", "p5": "2/30", "p6": "5/30", "p7": "8/30D", "p8": "28/30D", "p0": "0/30", "wall": 136.6}
+{"variant": "bootstrap_variant_0021_bc_first_noise_mixed_long", "checkpoint": "online_3500", "p5": "0/30", "p6": "8/30", "p7": "22/30D", "p8": "29/30D", "p0": "0/30", "wall": 131.4}
+{"variant": "bootstrap_variant_0021_bc_first_noise_mixed_long", "checkpoint": "pretrained", "p5": "0/30", "p6": "0/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 86.9}
+{"variant": "bootstrap_variant_0021_bc_first_noise_mixed_long", "checkpoint": "online_500", "p5": "0/30", "p6": "2/30", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 102.2}
+{"variant": "bootstrap_variant_0021_bc_first_noise_mixed_long", "checkpoint": "online_2500", "p5": "1/30", "p6": "11/30D", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 175.1}
+{"variant": "bootstrap_variant_0023_bc_first_noise015_mixed", "checkpoint": "online_1000", "p5": "2/30", "p6": "6/30D", "p7": "15/30D", "p8": "30/30D", "p0": "0/30", "wall": 105.8}
+{"variant": "bootstrap_variant_0023_bc_first_noise015_mixed", "checkpoint": "online_1250", "p5": "2/30", "p6": "11/30D", "p7": "10/30", "p8": "24/30D", "p0": "0/30", "wall": 103.7}
+{"variant": "bootstrap_variant_0023_bc_first_noise015_mixed", "checkpoint": "online_1750", "p5": "2/30D", "p6": "5/30D", "p7": "26/30D", "p8": "28/30D", "p0": "0/30", "wall": 95.9}
+{"variant": "bootstrap_variant_0023_bc_first_noise015_mixed", "checkpoint": "online_2000", "p5": "4/30D", "p6": "16/30D", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 94.6}
+{"variant": "bootstrap_variant_0023_bc_first_noise015_mixed", "checkpoint": "online_1500", "p5": "6/30", "p6": "1/30", "p7": "14/30", "p8": "26/30D", "p0": "0/30", "wall": 106.5}
+{"variant": "bootstrap_variant_0023_bc_first_noise015_mixed", "checkpoint": "online_500", "p5": "0/30", "p6": "10/30", "p7": "27/30D", "p8": "24/30D", "p0": "0/30", "wall": 93.2}
+{"variant": "bootstrap_variant_0023_bc_first_noise015_mixed", "checkpoint": "online_250", "p5": "0/30", "p6": "4/30D", "p7": "11/30D", "p8": "17/30D", "p0": "0/30", "wall": 101.4}
+{"variant": "bootstrap_variant_0023_bc_first_noise015_mixed", "checkpoint": "online_750", "p5": "0/30", "p6": "5/30D", "p7": "18/30D", "p8": "21/30D", "p0": "0/30", "wall": 101.5}
+{"variant": "bootstrap_variant_0023_bc_first_noise015_mixed", "checkpoint": "pretrained", "p5": "0/30", "p6": "0/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 88.5}
+{"variant": "bootstrap_variant_0024_chain_p5_from_bc_first", "checkpoint": "online_1000", "p5": "2/30D", "p6": "8/30", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 99.6}
+{"variant": "bootstrap_variant_0024_chain_p5_from_bc_first", "checkpoint": "online_1250", "p5": "3/30", "p6": "5/30", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 104.5}
+{"variant": "bootstrap_variant_0024_chain_p5_from_bc_first", "checkpoint": "online_1500", "p5": "3/30", "p6": "9/30D", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 99.5}
+{"variant": "bootstrap_variant_0024_chain_p5_from_bc_first", "checkpoint": "online_2000", "p5": "3/30", "p6": "7/30", "p7": "13/30", "p8": "30/30D", "p0": "0/30", "wall": 97.6}
+{"variant": "bootstrap_variant_0024_chain_p5_from_bc_first", "checkpoint": "online_1750", "p5": "4/30", "p6": "6/30", "p7": "23/30D", "p8": "30/30D", "p0": "0/30", "wall": 100.3}
+{"variant": "bootstrap_variant_0024_chain_p5_from_bc_first", "checkpoint": "online_250", "p5": "0/30", "p6": "7/30", "p7": "17/30", "p8": "30/30D", "p0": "0/30", "wall": 100.1}
+{"variant": "bootstrap_variant_0024_chain_p5_from_bc_first", "checkpoint": "online_500", "p5": "0/30", "p6": "1/30", "p7": "13/30D", "p8": "30/30D", "p0": "0/30", "wall": 100.1}
+{"variant": "bootstrap_variant_0024_chain_p5_from_bc_first", "checkpoint": "online_750", "p5": "6/30", "p6": "7/30", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 100.2}
+{"variant": "bootstrap_variant_0024_chain_p5_from_bc_first", "checkpoint": "pretrained", "p5": "0/30", "p6": "20/30D", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 100.7}
+{"variant": "bootstrap_variant_0025_chain_p5_from_bc_first_noise", "checkpoint": "online_1000", "p5": "5/30D", "p6": "13/30D", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 98.1}
+{"variant": "bootstrap_variant_0025_chain_p5_from_bc_first_noise", "checkpoint": "online_1250", "p5": "1/30", "p6": "7/30", "p7": "16/30", "p8": "30/30D", "p0": "0/30", "wall": 99.1}
+{"variant": "bootstrap_variant_0025_chain_p5_from_bc_first_noise", "checkpoint": "online_1500", "p5": "1/30", "p6": "8/30", "p7": "18/30D", "p8": "30/30D", "p0": "0/30", "wall": 96.1}
+{"variant": "bootstrap_variant_0025_chain_p5_from_bc_first_noise", "checkpoint": "online_1750", "p5": "5/30", "p6": "7/30", "p7": "19/30D", "p8": "30/30D", "p0": "0/30", "wall": 100.7}
+{"variant": "bootstrap_variant_0025_chain_p5_from_bc_first_noise", "checkpoint": "online_2000", "p5": "4/30", "p6": "14/30", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 98.0}
+{"variant": "bootstrap_variant_0025_chain_p5_from_bc_first_noise", "checkpoint": "online_250", "p5": "1/30", "p6": "2/30", "p7": "9/30", "p8": "30/30D", "p0": "0/30", "wall": 94.3}
+{"variant": "bootstrap_variant_0025_chain_p5_from_bc_first_noise", "checkpoint": "online_500", "p5": "8/30", "p6": "6/30", "p7": "4/30", "p8": "30/30D", "p0": "0/30", "wall": 88.9}
+{"variant": "bootstrap_variant_0025_chain_p5_from_bc_first_noise", "checkpoint": "online_750", "p5": "3/30", "p6": "5/30", "p7": "4/30", "p8": "30/30D", "p0": "0/30", "wall": 85.1}
+{"variant": "bootstrap_variant_0025_chain_p5_from_bc_first_noise", "checkpoint": "pretrained", "p5": "0/30", "p6": "20/30D", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 80.4}
+exit=0
+{"variant": "bootstrap_variant_0028_chain_p5_first2", "checkpoint": "online_1250", "p5": "0/30", "p6": "3/30", "p7": "23/30D", "p8": "30/30D", "p0": "0/30", "wall": 86.4}
+{"variant": "bootstrap_variant_0028_chain_p5_first2", "checkpoint": "online_1000", "p5": "0/30", "p6": "11/30", "p7": "23/30D", "p8": "30/30D", "p0": "0/30", "wall": 89.7}
+{"variant": "bootstrap_variant_0028_chain_p5_first2", "checkpoint": "online_250", "p5": "0/30", "p6": "5/30", "p7": "21/30", "p8": "30/30D", "p0": "0/30", "wall": 89.6}
+{"variant": "bootstrap_variant_0028_chain_p5_first2", "checkpoint": "online_1500", "p5": "2/30", "p6": "5/30", "p7": "17/30D", "p8": "30/30D", "p0": "0/30", "wall": 91.1}
+{"variant": "bootstrap_variant_0028_chain_p5_first2", "checkpoint": "online_2000", "p5": "0/30", "p6": "11/30D", "p7": "21/30D", "p8": "30/30D", "p0": "0/30", "wall": 95.5}
+{"variant": "bootstrap_variant_0028_chain_p5_first2", "checkpoint": "online_1750", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 96.3}
+{"variant": "bootstrap_variant_0026_bc_first_lowlr", "checkpoint": "online_1750", "p5": "0/30", "p6": "10/30", "p7": "21/30D", "p8": "30/30D", "p0": "0/30", "wall": 85.2}
+{"variant": "bootstrap_variant_0026_bc_first_lowlr", "checkpoint": "online_1250", "p5": "0/30", "p6": "20/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 91.5}
+{"variant": "bootstrap_variant_0026_bc_first_lowlr", "checkpoint": "online_1500", "p5": "0/30", "p6": "5/30", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 94.2}
+{"variant": "bootstrap_variant_0026_bc_first_lowlr", "checkpoint": "online_1000", "p5": "1/30", "p6": "2/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 97.6}
+{"variant": "bootstrap_variant_0028_chain_p5_first2", "checkpoint": "online_500", "p5": "0/30", "p6": "2/30D", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 89.8}
+{"variant": "bootstrap_variant_0029_chain_p5_first2_noise", "checkpoint": "online_1500", "p5": "4/30D", "p6": "12/30D", "p7": "19/30D", "p8": "30/30D", "p0": "0/30", "wall": 84.5}
+{"variant": "bootstrap_variant_0029_chain_p5_first2_noise", "checkpoint": "online_1250", "p5": "6/30", "p6": "6/30", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 87.9}
+{"variant": "bootstrap_variant_0028_chain_p5_first2", "checkpoint": "online_750", "p5": "6/30", "p6": "4/30", "p7": "25/30D", "p8": "30/30D", "p0": "0/30", "wall": 92.2}
+{"variant": "bootstrap_variant_0029_chain_p5_first2_noise", "checkpoint": "online_1000", "p5": "7/30", "p6": "5/30", "p7": "13/30D", "p8": "30/30D", "p0": "0/30", "wall": 99.9}
+{"variant": "bootstrap_variant_0026_bc_first_lowlr", "checkpoint": "online_2000", "p5": "0/30", "p6": "8/30D", "p7": "23/30D", "p8": "30/30D", "p0": "0/30", "wall": 89.1}
+{"variant": "bootstrap_variant_0029_chain_p5_first2_noise", "checkpoint": "online_1750", "p5": "10/30", "p6": "5/30", "p7": "21/30D", "p8": "30/30D", "p0": "0/30", "wall": 96.5}
+{"variant": "bootstrap_variant_0026_bc_first_lowlr", "checkpoint": "online_750", "p5": "0/30", "p6": "17/30D", "p7": "20/30D", "p8": "30/30D", "p0": "0/30", "wall": 87.3}
+{"variant": "bootstrap_variant_0026_bc_first_lowlr", "checkpoint": "online_500", "p5": "0/30", "p6": "3/30", "p7": "2/30", "p8": "30/30D", "p0": "0/30", "wall": 91.7}
+{"variant": "bootstrap_variant_0026_bc_first_lowlr", "checkpoint": "online_250", "p5": "0/30", "p6": "3/30", "p7": "4/30", "p8": "30/30D", "p0": "0/30", "wall": 97.9}
+{"variant": "bootstrap_variant_0029_chain_p5_first2_noise", "checkpoint": "online_750", "p5": "8/30D", "p6": "6/30", "p7": "5/30", "p8": "30/30D", "p0": "0/30", "wall": 84.7}
+{"variant": "bootstrap_variant_0029_chain_p5_first2_noise", "checkpoint": "online_250", "p5": "2/30", "p6": "3/30", "p7": "9/30", "p8": "30/30D", "p0": "0/30", "wall": 89.4}
+{"variant": "bootstrap_variant_0029_chain_p5_first2_noise", "checkpoint": "online_500", "p5": "2/30", "p6": "7/30", "p7": "15/30D", "p8": "30/30D", "p0": "0/30", "wall": 91.3}
+{"variant": "bootstrap_variant_0029_chain_p5_first2_noise", "checkpoint": "online_2000", "p5": "11/30", "p6": "10/30D", "p7": "21/30D", "p8": "30/30D", "p0": "0/30", "wall": 94.3}
+{"variant": "bootstrap_variant_0031_bc_first_alphafreeze", "checkpoint": "online_1000", "p5": "0/30", "p6": "8/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 91.5}
+{"variant": "bootstrap_variant_0030_chain_p5_first2_lowlr", "checkpoint": "online_1000", "p5": "3/30", "p6": "3/30", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 90.0}
+{"variant": "bootstrap_variant_0031_bc_first_alphafreeze", "checkpoint": "online_1250", "p5": "0/30", "p6": "9/30D", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 90.3}
+{"variant": "bootstrap_variant_0030_chain_p5_first2_lowlr", "checkpoint": "online_1500", "p5": "0/30", "p6": "7/30", "p7": "16/30D", "p8": "30/30D", "p0": "0/30", "wall": 86.4}
+{"variant": "bootstrap_variant_0030_chain_p5_first2_lowlr", "checkpoint": "online_1250", "p5": "4/30", "p6": "2/30", "p7": "21/30D", "p8": "30/30D", "p0": "0/30", "wall": 89.4}
+{"variant": "bootstrap_variant_0030_chain_p5_first2_lowlr", "checkpoint": "online_1750", "p5": "2/30", "p6": "4/30D", "p7": "18/30D", "p8": "30/30D", "p0": "0/30", "wall": 85.8}
+{"variant": "bootstrap_variant_0031_bc_first_alphafreeze", "checkpoint": "online_1500", "p5": "0/30", "p6": "10/30", "p7": "23/30D", "p8": "30/30D", "p0": "0/30", "wall": 84.3}
+{"variant": "bootstrap_variant_0031_bc_first_alphafreeze", "checkpoint": "online_500", "p5": "0/30", "p6": "14/30D", "p7": "4/30", "p8": "30/30D", "p0": "0/30", "wall": 81.8}
+{"variant": "bootstrap_variant_0030_chain_p5_first2_lowlr", "checkpoint": "online_2000", "p5": "6/30", "p6": "16/30D", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 83.1}
+{"variant": "bootstrap_variant_0031_bc_first_alphafreeze", "checkpoint": "online_1750", "p5": "0/30", "p6": "3/30", "p7": "19/30D", "p8": "30/30D", "p0": "0/30", "wall": 98.2}
+{"variant": "bootstrap_variant_0031_bc_first_alphafreeze", "checkpoint": "online_2000", "p5": "0/30", "p6": "12/30D", "p7": "11/30D", "p8": "30/30D", "p0": "0/30", "wall": 93.3}
+{"variant": "bootstrap_variant_0031_bc_first_alphafreeze", "checkpoint": "online_750", "p5": "0/30", "p6": "12/30D", "p7": "23/30D", "p8": "30/30D", "p0": "0/30", "wall": 88.1}
+{"variant": "bootstrap_variant_0031_bc_first_alphafreeze", "checkpoint": "online_250", "p5": "0/30", "p6": "0/30", "p7": "3/30", "p8": "30/30D", "p0": "0/30", "wall": 101.2}
+{"variant": "bootstrap_variant_0030_chain_p5_first2_lowlr", "checkpoint": "online_250", "p5": "0/30", "p6": "2/30", "p7": "20/30", "p8": "30/30D", "p0": "0/30", "wall": 87.1}
+{"variant": "bootstrap_variant_0030_chain_p5_first2_lowlr", "checkpoint": "online_500", "p5": "1/30", "p6": "12/30", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 87.7}
+{"variant": "bootstrap_variant_0030_chain_p5_first2_lowlr", "checkpoint": "online_750", "p5": "3/30", "p6": "13/30", "p7": "21/30D", "p8": "30/30D", "p0": "0/30", "wall": 91.9}
+{"variant": "bootstrap_variant_0034_chain_p5_first2_alphafreeze", "checkpoint": "online_1000", "p5": "0/30", "p6": "4/30", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 84.0}
+{"variant": "bootstrap_variant_0034_chain_p5_first2_alphafreeze", "checkpoint": "online_1250", "p5": "0/30", "p6": "13/30D", "p7": "8/30", "p8": "30/30D", "p0": "0/30", "wall": 85.6}
+{"variant": "bootstrap_variant_0034_chain_p5_first2_alphafreeze", "checkpoint": "online_1750", "p5": "1/30", "p6": "9/30D", "p7": "25/30D", "p8": "30/30D", "p0": "0/30", "wall": 87.8}
+{"variant": "bootstrap_variant_0034_chain_p5_first2_alphafreeze", "checkpoint": "online_1500", "p5": "0/30", "p6": "1/30", "p7": "11/30", "p8": "30/30D", "p0": "0/30", "wall": 88.9}
+{"variant": "bootstrap_variant_0032_bc_first_alpha_low", "checkpoint": "online_1000", "p5": "0/30", "p6": "7/30", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 89.4}
+{"variant": "bootstrap_variant_0034_chain_p5_first2_alphafreeze", "checkpoint": "online_2000", "p5": "3/30", "p6": "1/30", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 85.0}
+{"variant": "bootstrap_variant_0034_chain_p5_first2_alphafreeze", "checkpoint": "online_250", "p5": "2/30", "p6": "4/30", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 90.8}
+{"variant": "bootstrap_variant_0032_bc_first_alpha_low", "checkpoint": "online_1750", "p5": "0/30", "p6": "2/30", "p7": "12/30", "p8": "30/30D", "p0": "0/30", "wall": 82.2}
+{"variant": "bootstrap_variant_0032_bc_first_alpha_low", "checkpoint": "online_1500", "p5": "0/30", "p6": "1/30", "p7": "12/30", "p8": "30/30D", "p0": "0/30", "wall": 93.1}
+{"variant": "bootstrap_variant_0032_bc_first_alpha_low", "checkpoint": "online_1250", "p5": "0/30", "p6": "7/30", "p7": "13/30", "p8": "30/30D", "p0": "0/30", "wall": 95.0}
+{"variant": "bootstrap_variant_0034_chain_p5_first2_alphafreeze", "checkpoint": "online_500", "p5": "2/30", "p6": "3/30D", "p7": "25/30", "p8": "30/30D", "p0": "0/30", "wall": 73.9}
+{"variant": "bootstrap_variant_0034_chain_p5_first2_alphafreeze", "checkpoint": "online_750", "p5": "0/30", "p6": "6/30", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.9}
+batch2 exit=0
+{"variant": "bootstrap_variant_0032_bc_first_alpha_low", "checkpoint": "online_2000", "p5": "0/30", "p6": "2/30", "p7": "14/30D", "p8": "30/30D", "p0": "0/30", "wall": 71.1}
+{"variant": "bootstrap_variant_0032_bc_first_alpha_low", "checkpoint": "online_750", "p5": "0/30", "p6": "0/30D", "p7": "1/30", "p8": "30/30D", "p0": "0/30", "wall": 66.6}
+{"variant": "bootstrap_variant_0032_bc_first_alpha_low", "checkpoint": "online_500", "p5": "0/30", "p6": "3/30", "p7": "15/30D", "p8": "30/30D", "p0": "0/30", "wall": 69.2}
+{"variant": "bootstrap_variant_0032_bc_first_alpha_low", "checkpoint": "online_250", "p5": "0/30", "p6": "1/30", "p7": "4/30", "p8": "30/30D", "p0": "0/30", "wall": 82.8}
+{"variant": "bootstrap_variant_0033_bc_first_alphafreeze_lowlr", "checkpoint": "online_1000", "p5": "0/30", "p6": "10/30D", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 63.5}
+{"variant": "bootstrap_variant_0033_bc_first_alphafreeze_lowlr", "checkpoint": "online_1250", "p5": "0/30", "p6": "3/30", "p7": "20/30D", "p8": "30/30D", "p0": "0/30", "wall": 64.6}
+{"variant": "bootstrap_variant_0033_bc_first_alphafreeze_lowlr", "checkpoint": "online_1500", "p5": "0/30", "p6": "7/30", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 62.3}
+{"variant": "bootstrap_variant_0033_bc_first_alphafreeze_lowlr", "checkpoint": "online_1750", "p5": "0/30", "p6": "9/30D", "p7": "22/30", "p8": "30/30D", "p0": "0/30", "wall": 63.9}
+{"variant": "bootstrap_variant_0033_bc_first_alphafreeze_lowlr", "checkpoint": "online_2000", "p5": "0/30", "p6": "11/30D", "p7": "20/30D", "p8": "30/30D", "p0": "0/30", "wall": 56.9}
+{"variant": "bootstrap_variant_0033_bc_first_alphafreeze_lowlr", "checkpoint": "online_250", "p5": "0/30", "p6": "2/30", "p7": "5/30", "p8": "30/30D", "p0": "0/30", "wall": 54.5}
+{"variant": "bootstrap_variant_0033_bc_first_alphafreeze_lowlr", "checkpoint": "online_500", "p5": "0/30", "p6": "4/30D", "p7": "7/30", "p8": "30/30D", "p0": "0/30", "wall": 56.4}
+{"variant": "bootstrap_variant_0033_bc_first_alphafreeze_lowlr", "checkpoint": "online_750", "p5": "0/30", "p6": "11/30D", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 51.3}
+batch3 exit=0
+{"variant": "bootstrap_variant_0027_bc_first_lowlr_long", "checkpoint": "online_3000", "p5": "0/30", "p6": "19/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.8}
+{"variant": "bootstrap_variant_0027_bc_first_lowlr_long", "checkpoint": "online_1000", "p5": "1/30", "p6": "2/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 80.8}
+{"variant": "bootstrap_variant_0027_bc_first_lowlr_long", "checkpoint": "online_2500", "p5": "0/30", "p6": "7/30", "p7": "25/30D", "p8": "30/30D", "p0": "0/30", "wall": 81.9}
+{"variant": "bootstrap_variant_0027_bc_first_lowlr_long", "checkpoint": "online_2000", "p5": "0/30", "p6": "8/30D", "p7": "23/30D", "p8": "30/30D", "p0": "0/30", "wall": 82.4}
+{"variant": "bootstrap_variant_0027_bc_first_lowlr_long", "checkpoint": "online_1500", "p5": "0/30", "p6": "5/30", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 91.6}
+{"variant": "bootstrap_variant_0027_bc_first_lowlr_long", "checkpoint": "online_3500", "p5": "0/30", "p6": "1/30", "p7": "20/30", "p8": "30/30D", "p0": "0/30", "wall": 96.9}
+{"variant": "bootstrap_variant_0027_bc_first_lowlr_long", "checkpoint": "online_4000", "p5": "0/30", "p6": "5/30D", "p7": "16/30", "p8": "30/30D", "p0": "0/30", "wall": 81.1}
+{"variant": "bootstrap_variant_0035_chain_p5_first2_alphafreeze_lowlr", "checkpoint": "online_1250", "p5": "2/30", "p6": "12/30", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 82.9}
+{"variant": "bootstrap_variant_0027_bc_first_lowlr_long", "checkpoint": "online_500", "p5": "0/30", "p6": "3/30", "p7": "2/30", "p8": "30/30D", "p0": "0/30", "wall": 90.2}
+{"variant": "bootstrap_variant_0035_chain_p5_first2_alphafreeze_lowlr", "checkpoint": "online_1000", "p5": "2/30", "p6": "1/30", "p7": "23/30D", "p8": "30/30D", "p0": "0/30", "wall": 90.0}
+{"variant": "bootstrap_variant_0035_chain_p5_first2_alphafreeze_lowlr", "checkpoint": "online_1750", "p5": "5/30", "p6": "16/30D", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 77.5}
+{"variant": "bootstrap_variant_0035_chain_p5_first2_alphafreeze_lowlr", "checkpoint": "online_1500", "p5": "2/30", "p6": "7/30", "p7": "17/30", "p8": "30/30D", "p0": "0/30", "wall": 86.5}
+{"variant": "bootstrap_variant_0035_chain_p5_first2_alphafreeze_lowlr", "checkpoint": "online_2000", "p5": "4/30", "p6": "16/30D", "p7": "24/30", "p8": "30/30D", "p0": "0/30", "wall": 74.7}
+{"variant": "bootstrap_variant_0035_chain_p5_first2_alphafreeze_lowlr", "checkpoint": "online_250", "p5": "1/30", "p6": "13/30D", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 78.7}
+{"variant": "bootstrap_variant_0035_chain_p5_first2_alphafreeze_lowlr", "checkpoint": "online_500", "p5": "2/30", "p6": "10/30D", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 71.7}
+{"variant": "bootstrap_variant_0035_chain_p5_first2_alphafreeze_lowlr", "checkpoint": "online_750", "p5": "3/30", "p6": "3/30", "p7": "11/30", "p8": "30/30D", "p0": "0/30", "wall": 75.9}
+{"variant": "bootstrap_variant_0036_bc_first_l100", "checkpoint": "online_1000", "p5": "5/30", "p6": "16/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 86.2}
+{"variant": "bootstrap_variant_0036_bc_first_l100", "checkpoint": "online_1250", "p5": "5/30", "p6": "12/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 85.1}
+{"variant": "bootstrap_variant_0036_bc_first_l100", "checkpoint": "online_250", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 74.3}
+{"variant": "bootstrap_variant_0036_bc_first_l100", "checkpoint": "online_1500", "p5": "3/30", "p6": "8/30", "p7": "18/30", "p8": "30/30D", "p0": "0/30", "wall": 94.7}
+{"variant": "bootstrap_variant_0036_bc_first_l100", "checkpoint": "online_1750", "p5": "1/30", "p6": "19/30", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 81.7}
+{"variant": "bootstrap_variant_0036_bc_first_l100", "checkpoint": "online_750", "p5": "0/30", "p6": "19/30D", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 70.5}
+{"variant": "bootstrap_variant_0036_bc_first_l100", "checkpoint": "online_500", "p5": "0/30", "p6": "11/30D", "p7": "14/30", "p8": "30/30D", "p0": "0/30", "wall": 78.1}
+{"variant": "bootstrap_variant_0036_bc_first_l100", "checkpoint": "online_2000", "p5": "3/30", "p6": "12/30", "p7": "20/30D", "p8": "30/30D", "p0": "0/30", "wall": 102.8}
+{"variant": "bootstrap_variant_0037_bc_first_std02", "checkpoint": "online_1250", "p5": "0/30", "p6": "8/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 72.5}
+{"variant": "bootstrap_variant_0037_bc_first_std02", "checkpoint": "online_1000", "p5": "0/30", "p6": "7/30", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 74.3}
+{"variant": "bootstrap_variant_0037_bc_first_std02", "checkpoint": "online_1500", "p5": "0/30", "p6": "3/30", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.4}
+{"variant": "bootstrap_variant_0037_bc_first_std02", "checkpoint": "online_2000", "p5": "0/30", "p6": "6/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 74.9}
+{"variant": "bootstrap_variant_0037_bc_first_std02", "checkpoint": "online_1750", "p5": "0/30", "p6": "5/30", "p7": "7/30", "p8": "30/30D", "p0": "0/30", "wall": 80.0}
+{"variant": "bootstrap_variant_0037_bc_first_std02", "checkpoint": "online_250", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 78.5}
+{"variant": "bootstrap_variant_0038_bc_first_std01", "checkpoint": "online_1250", "p5": "0/30", "p6": "19/30D", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 66.7}
+{"variant": "bootstrap_variant_0038_bc_first_std01", "checkpoint": "online_1000", "p5": "2/30", "p6": "0/30", "p7": "25/30D", "p8": "30/30D", "p0": "0/30", "wall": 81.0}
+{"variant": "bootstrap_variant_0037_bc_first_std02", "checkpoint": "online_750", "p5": "0/30", "p6": "11/30D", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 81.8}
+{"variant": "bootstrap_variant_0037_bc_first_std02", "checkpoint": "online_500", "p5": "0/30", "p6": "6/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 84.3}
+{"variant": "bootstrap_variant_0038_bc_first_std01", "checkpoint": "online_1500", "p5": "1/30", "p6": "16/30", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 89.7}
+{"variant": "bootstrap_variant_0038_bc_first_std01", "checkpoint": "online_1750", "p5": "0/30", "p6": "9/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 80.0}
+{"variant": "bootstrap_variant_0038_bc_first_std01", "checkpoint": "online_250", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 69.6}
+{"variant": "bootstrap_variant_0038_bc_first_std01", "checkpoint": "online_2000", "p5": "1/30", "p6": "3/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 76.3}
+{"variant": "bootstrap_variant_0038_bc_first_std01", "checkpoint": "online_750", "p5": "1/30", "p6": "0/30D", "p7": "14/30D", "p8": "30/30D", "p0": "0/30", "wall": 72.8}
+{"variant": "bootstrap_variant_0038_bc_first_std01", "checkpoint": "online_500", "p5": "1/30", "p6": "4/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 77.6}
+{"variant": "bootstrap_variant_0039_bc_first_l100_std01", "checkpoint": "online_1250", "p5": "1/30", "p6": "8/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.1}
+{"variant": "bootstrap_variant_0039_bc_first_l100_std01", "checkpoint": "online_1000", "p5": "3/30", "p6": "12/30D", "p7": "25/30D", "p8": "30/30D", "p0": "0/30", "wall": 76.9}
+{"variant": "bootstrap_variant_0039_bc_first_l100_std01", "checkpoint": "online_1500", "p5": "1/30", "p6": "16/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 62.5}
+{"variant": "bootstrap_variant_0039_bc_first_l100_std01", "checkpoint": "online_1750", "p5": "0/30", "p6": "22/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 65.4}
+{"variant": "bootstrap_variant_0039_bc_first_l100_std01", "checkpoint": "online_2000", "p5": "0/30", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 70.5}
+{"variant": "bootstrap_variant_0039_bc_first_l100_std01", "checkpoint": "online_250", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 73.0}
+{"variant": "bootstrap_variant_0039_bc_first_l100_std01", "checkpoint": "online_500", "p5": "1/30", "p6": "3/30", "p7": "2/30", "p8": "30/30D", "p0": "0/30", "wall": 67.1}
+{"variant": "bootstrap_variant_0039_bc_first_l100_std01", "checkpoint": "online_750", "p5": "0/30", "p6": "19/30D", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 64.7}
+{"variant": "bootstrap_variant_0040_bc_first_l100_std01_alphafreeze", "checkpoint": "online_1000", "p5": "0/30", "p6": "16/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 66.3}
+{"variant": "bootstrap_variant_0040_bc_first_l100_std01_alphafreeze", "checkpoint": "online_1250", "p5": "1/30", "p6": "17/30", "p7": "25/30D", "p8": "30/30D", "p0": "0/30", "wall": 63.9}
+{"variant": "bootstrap_variant_0040_bc_first_l100_std01_alphafreeze", "checkpoint": "online_1500", "p5": "1/30", "p6": "22/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 65.2}
+{"variant": "bootstrap_variant_0040_bc_first_l100_std01_alphafreeze", "checkpoint": "online_1750", "p5": "1/30", "p6": "18/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 62.8}
+{"variant": "bootstrap_variant_0040_bc_first_l100_std01_alphafreeze", "checkpoint": "online_2000", "p5": "0/30", "p6": "0/30", "p7": "15/30D", "p8": "30/30D", "p0": "0/30", "wall": 59.8}
+{"variant": "bootstrap_variant_0040_bc_first_l100_std01_alphafreeze", "checkpoint": "online_250", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 63.2}
+{"variant": "bootstrap_variant_0040_bc_first_l100_std01_alphafreeze", "checkpoint": "online_500", "p5": "0/30", "p6": "3/30", "p7": "1/30", "p8": "30/30D", "p0": "0/30", "wall": 51.5}
+{"variant": "bootstrap_variant_0040_bc_first_l100_std01_alphafreeze", "checkpoint": "online_750", "p5": "0/30", "p6": "16/30", "p7": "24/30", "p8": "30/30D", "p0": "0/30", "wall": 48.0}
+batch4 exit=0
+{"variant": "bootstrap_variant_0041_bc_first_l100_std01_r2", "checkpoint": "online_1250", "p5": "0/30", "p6": "25/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 57.7}
+{"variant": "bootstrap_variant_0041_bc_first_l100_std01_r2", "checkpoint": "online_750", "p5": "1/30", "p6": "14/30", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 62.5}
+{"variant": "bootstrap_variant_0041_bc_first_l100_std01_r2", "checkpoint": "online_2000", "p5": "2/30", "p6": "27/30D", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 62.5}
+{"variant": "bootstrap_variant_0041_bc_first_l100_std01_r2", "checkpoint": "online_1000", "p5": "0/30", "p6": "17/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 62.7}
+{"variant": "bootstrap_variant_0041_bc_first_l100_std01_r2", "checkpoint": "online_1750", "p5": "1/30", "p6": "23/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 65.2}
+{"variant": "bootstrap_variant_0041_bc_first_l100_std01_r2", "checkpoint": "online_1500", "p5": "0/30", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 68.3}
+{"variant": "bootstrap_variant_0041_bc_first_l100_std01_r2", "checkpoint": "online_500", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 70.5}
+{"variant": "bootstrap_variant_0041_bc_first_l100_std01_r2", "checkpoint": "online_250", "p5": "0/30", "p6": "4/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 76.0}
+{"variant": "bootstrap_variant_0042_bc_first_l100_std01_alphafreeze_r2", "checkpoint": "online_2000", "p5": "6/30", "p6": "21/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 71.9}
+{"variant": "bootstrap_variant_0042_bc_first_l100_std01_alphafreeze_r2", "checkpoint": "online_1500", "p5": "2/30", "p6": "24/30", "p7": "22/30D", "p8": "30/30D", "p0": "0/30", "wall": 75.1}
+{"variant": "bootstrap_variant_0042_bc_first_l100_std01_alphafreeze_r2", "checkpoint": "online_1000", "p5": "0/30", "p6": "25/30D", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 80.1}
+{"variant": "bootstrap_variant_0042_bc_first_l100_std01_alphafreeze_r2", "checkpoint": "online_1750", "p5": "3/30", "p6": "23/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 77.6}
+{"variant": "bootstrap_variant_0042_bc_first_l100_std01_alphafreeze_r2", "checkpoint": "online_750", "p5": "5/30", "p6": "27/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 71.0}
+{"variant": "bootstrap_variant_0042_bc_first_l100_std01_alphafreeze_r2", "checkpoint": "online_1250", "p5": "4/30", "p6": "4/30", "p7": "9/30", "p8": "30/30D", "p0": "0/30", "wall": 89.1}
+{"variant": "bootstrap_variant_0042_bc_first_l100_std01_alphafreeze_r2", "checkpoint": "online_250", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 86.2}
+{"variant": "bootstrap_variant_0042_bc_first_l100_std01_alphafreeze_r2", "checkpoint": "online_500", "p5": "0/30", "p6": "1/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 89.3}
+{"variant": "bootstrap_variant_0043_chain_p5_first2_l100_std01", "checkpoint": "online_1500", "p5": "2/30", "p6": "14/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 70.7}
+{"variant": "bootstrap_variant_0043_chain_p5_first2_l100_std01", "checkpoint": "online_1000", "p5": "5/30", "p6": "5/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 76.3}
+{"variant": "bootstrap_variant_0043_chain_p5_first2_l100_std01", "checkpoint": "online_1250", "p5": "7/30", "p6": "24/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 77.6}
+{"variant": "bootstrap_variant_0043_chain_p5_first2_l100_std01", "checkpoint": "online_1750", "p5": "1/30", "p6": "2/30", "p7": "12/30", "p8": "30/30D", "p0": "0/30", "wall": 77.8}
+{"variant": "bootstrap_variant_0043_chain_p5_first2_l100_std01", "checkpoint": "online_2000", "p5": "4/30", "p6": "14/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 75.7}
+{"variant": "bootstrap_variant_0043_chain_p5_first2_l100_std01", "checkpoint": "online_750", "p5": "1/30", "p6": "7/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 66.7}
+{"variant": "bootstrap_variant_0043_chain_p5_first2_l100_std01", "checkpoint": "online_500", "p5": "4/30", "p6": "0/30", "p7": "2/30", "p8": "30/30D", "p0": "0/30", "wall": 73.6}
+{"variant": "bootstrap_variant_0043_chain_p5_first2_l100_std01", "checkpoint": "online_250", "p5": "1/30", "p6": "4/30", "p7": "1/30", "p8": "30/30D", "p0": "0/30", "wall": 88.0}
+{"variant": "bootstrap_variant_0044_chain_p5_first2_l100_std01_alphafreeze", "checkpoint": "online_1000", "p5": "0/30", "p6": "1/30", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 68.8}
+{"variant": "bootstrap_variant_0044_chain_p5_first2_l100_std01_alphafreeze", "checkpoint": "online_1250", "p5": "1/30", "p6": "3/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 69.1}
+{"variant": "bootstrap_variant_0044_chain_p5_first2_l100_std01_alphafreeze", "checkpoint": "online_2000", "p5": "2/30", "p6": "13/30", "p7": "16/30D", "p8": "30/30D", "p0": "0/30", "wall": 69.7}
+{"variant": "bootstrap_variant_0044_chain_p5_first2_l100_std01_alphafreeze", "checkpoint": "online_1500", "p5": "1/30", "p6": "4/30", "p7": "11/30D", "p8": "30/30D", "p0": "0/30", "wall": 78.2}
+{"variant": "bootstrap_variant_0044_chain_p5_first2_l100_std01_alphafreeze", "checkpoint": "online_500", "p5": "2/30", "p6": "4/30D", "p7": "2/30", "p8": "30/30D", "p0": "0/30", "wall": 75.8}
+{"variant": "bootstrap_variant_0044_chain_p5_first2_l100_std01_alphafreeze", "checkpoint": "online_250", "p5": "2/30", "p6": "1/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 84.4}
+{"variant": "bootstrap_variant_0044_chain_p5_first2_l100_std01_alphafreeze", "checkpoint": "online_1750", "p5": "1/30D", "p6": "8/30D", "p7": "21/30", "p8": "30/30D", "p0": "0/30", "wall": 97.8}
+{"variant": "bootstrap_variant_0044_chain_p5_first2_l100_std01_alphafreeze", "checkpoint": "online_750", "p5": "2/30", "p6": "16/30D", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 80.3}
+{"variant": "bootstrap_variant_0046_bc_first_l100_std01_long", "checkpoint": "online_2500", "p5": "5/30", "p6": "28/30D", "p7": "26/30", "p8": "30/30D", "p0": "0/30", "wall": 76.9}
+{"variant": "bootstrap_variant_0046_bc_first_l100_std01_long", "checkpoint": "online_2000", "p5": "0/30", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 80.8}
+{"variant": "bootstrap_variant_0046_bc_first_l100_std01_long", "checkpoint": "online_1500", "p5": "1/30", "p6": "16/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 80.9}
+{"variant": "bootstrap_variant_0046_bc_first_l100_std01_long", "checkpoint": "online_1000", "p5": "3/30", "p6": "12/30D", "p7": "25/30D", "p8": "30/30D", "p0": "0/30", "wall": 83.6}
+{"variant": "bootstrap_variant_0045_chain_p5_first2_l100_std01_from39", "checkpoint": "online_1000", "p5": "8/30", "p6": "11/30", "p7": "15/30", "p8": "30/30D", "p0": "0/30", "wall": 76.6}
+{"variant": "bootstrap_variant_0045_chain_p5_first2_l100_std01_from39", "checkpoint": "online_1250", "p5": "13/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 80.4}
+{"variant": "bootstrap_variant_0045_chain_p5_first2_l100_std01_from39", "checkpoint": "online_1500", "p5": "11/30", "p6": "23/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 77.9}
+{"variant": "bootstrap_variant_0045_chain_p5_first2_l100_std01_from39", "checkpoint": "online_1750", "p5": "7/30", "p6": "21/30D", "p7": "20/30D", "p8": "30/30D", "p0": "0/30", "wall": 87.6}
+{"variant": "bootstrap_variant_0045_chain_p5_first2_l100_std01_from39", "checkpoint": "online_2000", "p5": "12/30", "p6": "14/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 78.3}
+{"variant": "bootstrap_variant_0045_chain_p5_first2_l100_std01_from39", "checkpoint": "online_250", "p5": "6/30", "p6": "20/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 81.5}
+{"variant": "bootstrap_variant_0045_chain_p5_first2_l100_std01_from39", "checkpoint": "online_750", "p5": "6/30", "p6": "7/30", "p7": "6/30", "p8": "30/30D", "p0": "0/30", "wall": 76.9}
+{"variant": "bootstrap_variant_0045_chain_p5_first2_l100_std01_from39", "checkpoint": "online_500", "p5": "5/30", "p6": "16/30D", "p7": "23/30D", "p8": "30/30D", "p0": "0/30", "wall": 80.3}
+batch5 exit=0
+{"variant": "bootstrap_variant_0046_bc_first_l100_std01_long", "checkpoint": "online_3000", "p5": "14/30", "p6": "21/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 62.2}
+{"variant": "bootstrap_variant_0046_bc_first_l100_std01_long", "checkpoint": "online_3500", "p5": "2/30", "p6": "24/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 60.2}
+{"variant": "bootstrap_variant_0046_bc_first_l100_std01_long", "checkpoint": "online_4000", "p5": "5/30", "p6": "28/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 60.4}
+{"variant": "bootstrap_variant_0046_bc_first_l100_std01_long", "checkpoint": "online_500", "p5": "1/30", "p6": "3/30", "p7": "2/30", "p8": "30/30D", "p0": "0/30", "wall": 65.8}
+batch6 exit=0
+{"variant": "bootstrap_variant_0047_chain_p5_pinned_noise025_from39", "checkpoint": "online_2000", "p5": "0/30", "p6": "1/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 57.3}
+{"variant": "bootstrap_variant_0047_chain_p5_pinned_noise025_from39", "checkpoint": "online_750", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 57.5}
+{"variant": "bootstrap_variant_0047_chain_p5_pinned_noise025_from39", "checkpoint": "online_500", "p5": "0/30", "p6": "2/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 57.9}
+{"variant": "bootstrap_variant_0047_chain_p5_pinned_noise025_from39", "checkpoint": "online_250", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 58.0}
+{"variant": "bootstrap_variant_0047_chain_p5_pinned_noise025_from39", "checkpoint": "online_1750", "p5": "0/30", "p6": "8/30D", "p7": "3/30", "p8": "30/30D", "p0": "0/30", "wall": 58.3}
+{"variant": "bootstrap_variant_0047_chain_p5_pinned_noise025_from39", "checkpoint": "online_1000", "p5": "0/30", "p6": "5/30", "p7": "2/30", "p8": "30/30D", "p0": "0/30", "wall": 77.4}
+{"variant": "bootstrap_variant_0047_chain_p5_pinned_noise025_from39", "checkpoint": "online_1500", "p5": "1/30", "p6": "3/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 80.3}
+{"variant": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39", "checkpoint": "online_1500", "p5": "6/30", "p6": "22/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 55.4}
+{"variant": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39", "checkpoint": "online_1750", "p5": "11/30", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 56.0}
+{"variant": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39", "checkpoint": "online_2000", "p5": "11/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 56.2}
+{"variant": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39", "checkpoint": "online_1250", "p5": "7/30D", "p6": "21/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 57.5}
+{"variant": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39", "checkpoint": "online_1000", "p5": "10/30D", "p6": "12/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 58.0}
+{"variant": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39", "checkpoint": "online_250", "p5": "3/30", "p6": "19/30D", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 52.7}
+{"variant": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39", "checkpoint": "online_500", "p5": "2/30", "p6": "7/30D", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 52.5}
+{"variant": "bootstrap_variant_0047_chain_p5_pinned_noise025_from39", "checkpoint": "online_1250", "p5": "3/30", "p6": "2/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 142.3}
+{"variant": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39", "checkpoint": "online_750", "p5": "9/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 36.5}
+batch7 exit=0
+{"variant": "bootstrap_variant_0050_chain_p5_pinned_noise015_r2", "checkpoint": "online_250", "p5": "3/30", "p6": "19/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 67.8}
+{"variant": "bootstrap_variant_0050_chain_p5_pinned_noise015_r2", "checkpoint": "online_1750", "p5": "7/30", "p6": "5/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 68.3}
+{"variant": "bootstrap_variant_0050_chain_p5_pinned_noise015_r2", "checkpoint": "online_1250", "p5": "10/30", "p6": "4/30", "p7": "18/30D", "p8": "30/30D", "p0": "0/30", "wall": 69.6}
+{"variant": "bootstrap_variant_0050_chain_p5_pinned_noise015_r2", "checkpoint": "online_1000", "p5": "12/30D", "p6": "24/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.7}
+{"variant": "bootstrap_variant_0050_chain_p5_pinned_noise015_r2", "checkpoint": "online_1500", "p5": "9/30D", "p6": "16/30D", "p7": "8/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.8}
+{"variant": "bootstrap_variant_0050_chain_p5_pinned_noise015_r2", "checkpoint": "online_2000", "p5": "11/30", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 76.5}
+{"variant": "bootstrap_variant_0050_chain_p5_pinned_noise015_r2", "checkpoint": "online_500", "p5": "8/30D", "p6": "18/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 72.4}
+{"variant": "bootstrap_variant_0051_chain_p5_pinned_noise01_from39", "checkpoint": "online_1000", "p5": "11/30", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 71.5}
+{"variant": "bootstrap_variant_0050_chain_p5_pinned_noise015_r2", "checkpoint": "online_750", "p5": "9/30", "p6": "6/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 74.6}
+{"variant": "bootstrap_variant_0051_chain_p5_pinned_noise01_from39", "checkpoint": "online_1500", "p5": "13/30D", "p6": "17/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.3}
+{"variant": "bootstrap_variant_0051_chain_p5_pinned_noise01_from39", "checkpoint": "online_1750", "p5": "22/30D", "p6": "25/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 71.7}
+{"variant": "bootstrap_variant_0051_chain_p5_pinned_noise01_from39", "checkpoint": "online_1250", "p5": "7/30", "p6": "27/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 75.0}
+{"variant": "bootstrap_variant_0051_chain_p5_pinned_noise01_from39", "checkpoint": "online_2000", "p5": "12/30D", "p6": "22/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 63.6}
+{"variant": "bootstrap_variant_0051_chain_p5_pinned_noise01_from39", "checkpoint": "online_250", "p5": "7/30", "p6": "1/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 63.2}
+{"variant": "bootstrap_variant_0051_chain_p5_pinned_noise01_from39", "checkpoint": "online_500", "p5": "6/30", "p6": "15/30D", "p7": "5/30", "p8": "30/30D", "p0": "0/30", "wall": 67.2}
+{"variant": "bootstrap_variant_0051_chain_p5_pinned_noise01_from39", "checkpoint": "online_750", "p5": "0/30", "p6": "0/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 66.3}
+batch8 exit=0
+{"variant": "bootstrap_variant_0053_chain_p5_pinned_w55", "checkpoint": "online_1250", "p5": "8/30", "p6": "20/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 66.2}
+{"variant": "bootstrap_variant_0053_chain_p5_pinned_w55", "checkpoint": "online_1500", "p5": "4/30", "p6": "14/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 66.7}
+{"variant": "bootstrap_variant_0053_chain_p5_pinned_w55", "checkpoint": "online_750", "p5": "10/30D", "p6": "27/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 68.2}
+{"variant": "bootstrap_variant_0053_chain_p5_pinned_w55", "checkpoint": "online_1000", "p5": "0/30", "p6": "20/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 70.1}
+{"variant": "bootstrap_variant_0053_chain_p5_pinned_w55", "checkpoint": "online_500", "p5": "3/30", "p6": "8/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 69.7}
+{"variant": "bootstrap_variant_0053_chain_p5_pinned_w55", "checkpoint": "online_2000", "p5": "2/30", "p6": "4/30D", "p7": "16/30", "p8": "30/30D", "p0": "0/30", "wall": 70.6}
+{"variant": "bootstrap_variant_0053_chain_p5_pinned_w55", "checkpoint": "online_1750", "p5": "1/30", "p6": "1/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 73.2}
+{"variant": "bootstrap_variant_0053_chain_p5_pinned_w55", "checkpoint": "online_250", "p5": "0/30", "p6": "2/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 76.9}
+{"variant": "bootstrap_variant_0054_chain_p5_pinned_l1000", "checkpoint": "online_1500", "p5": "7/30", "p6": "10/30", "p7": "20/30D", "p8": "30/30D", "p0": "0/30", "wall": 59.1}
+{"variant": "bootstrap_variant_0054_chain_p5_pinned_l1000", "checkpoint": "online_1250", "p5": "13/30D", "p6": "19/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 60.7}
+{"variant": "bootstrap_variant_0054_chain_p5_pinned_l1000", "checkpoint": "online_1000", "p5": "7/30", "p6": "21/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 61.5}
+{"variant": "bootstrap_variant_0054_chain_p5_pinned_l1000", "checkpoint": "online_250", "p5": "10/30D", "p6": "21/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 59.7}
+{"variant": "bootstrap_variant_0054_chain_p5_pinned_l1000", "checkpoint": "online_2000", "p5": "6/30", "p6": "13/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 60.5}
+{"variant": "bootstrap_variant_0054_chain_p5_pinned_l1000", "checkpoint": "online_1750", "p5": "4/30", "p6": "16/30", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 62.3}
+{"variant": "bootstrap_variant_0054_chain_p5_pinned_l1000", "checkpoint": "online_500", "p5": "13/30D", "p6": "25/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 63.8}
+{"variant": "bootstrap_variant_0054_chain_p5_pinned_l1000", "checkpoint": "online_750", "p5": "7/30D", "p6": "22/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 61.6}
+{"variant": "bootstrap_variant_0055_chain_p5_pinned_std005", "checkpoint": "online_1000", "p5": "8/30D", "p6": "27/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.3}
+{"variant": "bootstrap_variant_0055_chain_p5_pinned_std005", "checkpoint": "online_1500", "p5": "10/30D", "p6": "13/30", "p7": "14/30D", "p8": "30/30D", "p0": "0/30", "wall": 75.3}
+{"variant": "bootstrap_variant_0055_chain_p5_pinned_std005", "checkpoint": "online_1250", "p5": "3/30", "p6": "8/30", "p7": "28/30", "p8": "30/30D", "p0": "0/30", "wall": 76.2}
+{"variant": "bootstrap_variant_0055_chain_p5_pinned_std005", "checkpoint": "online_1750", "p5": "14/30D", "p6": "28/30D", "p7": "27/30", "p8": "30/30D", "p0": "0/30", "wall": 85.0}
+{"variant": "bootstrap_variant_0049_chain_p5_pinned_noise015_long", "checkpoint": "online_3500", "p5": "5/30", "p6": "27/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 81.4}
+{"variant": "bootstrap_variant_0049_chain_p5_pinned_noise015_long", "checkpoint": "online_1000", "p5": "10/30D", "p6": "12/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 84.3}
+{"variant": "bootstrap_variant_0049_chain_p5_pinned_noise015_long", "checkpoint": "online_3000", "p5": "8/30", "p6": "19/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 84.1}
+{"variant": "bootstrap_variant_0049_chain_p5_pinned_noise015_long", "checkpoint": "online_2000", "p5": "11/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 85.3}
+{"variant": "bootstrap_variant_0055_chain_p5_pinned_std005", "checkpoint": "online_250", "p5": "0/30", "p6": "0/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 88.8}
+{"variant": "bootstrap_variant_0055_chain_p5_pinned_std005", "checkpoint": "online_2000", "p5": "6/30", "p6": "19/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 91.7}
+{"variant": "bootstrap_variant_0049_chain_p5_pinned_noise015_long", "checkpoint": "online_2500", "p5": "3/30", "p6": "11/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 87.8}
+{"variant": "bootstrap_variant_0055_chain_p5_pinned_std005", "checkpoint": "online_750", "p5": "1/30", "p6": "4/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 88.4}
+{"variant": "bootstrap_variant_0049_chain_p5_pinned_noise015_long", "checkpoint": "online_1500", "p5": "6/30", "p6": "22/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 93.4}
+{"variant": "bootstrap_variant_0055_chain_p5_pinned_std005", "checkpoint": "online_500", "p5": "4/30", "p6": "8/30", "p7": "15/30", "p8": "30/30D", "p0": "0/30", "wall": 96.5}
+{"variant": "bootstrap_variant_0056_chain_p5_pinned_lowlr", "checkpoint": "online_1000", "p5": "13/30", "p6": "29/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 93.8}
+{"variant": "bootstrap_variant_0056_chain_p5_pinned_lowlr", "checkpoint": "online_1250", "p5": "11/30D", "p6": "25/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 97.2}
+{"variant": "bootstrap_variant_0056_chain_p5_pinned_lowlr", "checkpoint": "online_1500", "p5": "6/30", "p6": "22/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 97.6}
+{"variant": "bootstrap_variant_0056_chain_p5_pinned_lowlr", "checkpoint": "online_1750", "p5": "14/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 90.5}
+{"variant": "bootstrap_variant_0056_chain_p5_pinned_lowlr", "checkpoint": "online_2000", "p5": "12/30D", "p6": "21/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 90.0}
+{"variant": "bootstrap_variant_0049_chain_p5_pinned_noise015_long", "checkpoint": "online_4000", "p5": "10/30", "p6": "15/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 93.9}
+{"variant": "bootstrap_variant_0052_chain_p4_pinned_noise015_from48", "checkpoint": "online_1250", "p5": "3/30", "p6": "13/30D", "p7": "25/30D", "p8": "30/30D", "p0": "0/30", "wall": 90.7}
+{"variant": "bootstrap_variant_0049_chain_p5_pinned_noise015_long", "checkpoint": "online_500", "p5": "2/30", "p6": "7/30D", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 93.2}
+{"variant": "bootstrap_variant_0056_chain_p5_pinned_lowlr", "checkpoint": "online_250", "p5": "4/30", "p6": "23/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 92.0}
+{"variant": "bootstrap_variant_0052_chain_p4_pinned_noise015_from48", "checkpoint": "online_1500", "p5": "8/30", "p6": "17/30D", "p7": "4/30", "p8": "30/30D", "p0": "0/30", "wall": 92.7}
+{"variant": "bootstrap_variant_0056_chain_p5_pinned_lowlr", "checkpoint": "online_750", "p5": "12/30D", "p6": "21/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 81.3}
+{"variant": "bootstrap_variant_0056_chain_p5_pinned_lowlr", "checkpoint": "online_500", "p5": "9/30", "p6": "23/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 89.6}
+{"variant": "bootstrap_variant_0052_chain_p4_pinned_noise015_from48", "checkpoint": "online_1000", "p5": "2/30", "p6": "5/30D", "p7": "7/30", "p8": "30/30D", "p0": "0/30", "wall": 99.1}
+batch9 exit=0
+{"variant": "bootstrap_variant_0052_chain_p4_pinned_noise015_from48", "checkpoint": "online_1750", "p5": "7/30D", "p6": "21/30D", "p7": "2/30", "p8": "30/30D", "p0": "0/30", "wall": 94.6}
+{"variant": "bootstrap_variant_0052_chain_p4_pinned_noise015_from48", "checkpoint": "online_250", "p5": "8/30", "p6": "10/30", "p7": "13/30", "p8": "30/30D", "p0": "0/30", "wall": 52.7}
+{"variant": "bootstrap_variant_0052_chain_p4_pinned_noise015_from48", "checkpoint": "online_500", "p5": "3/30", "p6": "3/30", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 52.8}
+{"variant": "bootstrap_variant_0052_chain_p4_pinned_noise015_from48", "checkpoint": "online_2000", "p5": "1/30", "p6": "3/30", "p7": "2/30", "p8": "30/30D", "p0": "0/30", "wall": 55.3}
+{"variant": "bootstrap_variant_0052_chain_p4_pinned_noise015_from48", "checkpoint": "online_750", "p5": "3/30D", "p6": "7/30", "p7": "9/30", "p8": "30/30D", "p0": "0/30", "wall": 53.5}
+batch10 exit=0
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_2000", "p5": "16/30D", "p6": "29/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 56.0}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_750", "p5": "9/30D", "p6": "15/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 57.4}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_500", "p5": "7/30D", "p6": "21/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 57.7}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_250", "p5": "20/30", "p6": "23/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 58.7}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_1250", "p5": "14/30", "p6": "29/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 60.4}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_1000", "p5": "12/30D", "p6": "28/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 61.5}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_1750", "p5": "12/30", "p6": "22/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 63.0}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_1500", "p5": "4/30", "p6": "10/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 65.1}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_1250", "p5": "4/30", "p6": "18/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 64.8}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_1000", "p5": "5/30", "p6": "17/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 67.3}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_1500", "p5": "5/30", "p6": "15/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 66.1}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_1750", "p5": "7/30D", "p6": "15/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 66.4}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_2000", "p5": "14/30D", "p6": "22/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 64.6}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_750", "p5": "11/30", "p6": "25/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 62.7}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_250", "p5": "5/30", "p6": "16/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 67.9}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_500", "p5": "8/30", "p6": "24/30D", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 71.8}
+batch11 exit=0
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_750", "p5": "13/30D", "p6": "22/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 55.4}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_500", "p5": "12/30D", "p6": "27/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 56.5}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_2000", "p5": "22/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 56.6}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_250", "p5": "11/30", "p6": "29/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 56.8}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_1000", "p5": "11/30D", "p6": "16/30", "p7": "15/30", "p8": "30/30D", "p0": "0/30", "wall": 58.6}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_1750", "p5": "5/30", "p6": "13/30", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 58.5}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_1250", "p5": "12/30D", "p6": "7/30", "p7": "5/30", "p8": "30/30D", "p0": "0/30", "wall": 59.8}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_1500", "p5": "10/30D", "p6": "21/30D", "p7": "3/30", "p8": "30/30D", "p0": "0/30", "wall": 60.5}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_1250", "p5": "1/30", "p6": "4/30", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 59.2}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_1500", "p5": "3/30", "p6": "2/30", "p7": "11/30D", "p8": "30/30D", "p0": "0/30", "wall": 61.9}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_250", "p5": "8/30", "p6": "14/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 60.6}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_2000", "p5": "0/30", "p6": "0/30", "p7": "5/30", "p8": "30/30D", "p0": "0/30", "wall": 61.4}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_1750", "p5": "5/30", "p6": "6/30", "p7": "13/30D", "p8": "30/30D", "p0": "0/30", "wall": 63.4}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_1000", "p5": "6/30", "p6": "5/30D", "p7": "17/30D", "p8": "30/30D", "p0": "0/30", "wall": 64.8}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_500", "p5": "9/30", "p6": "9/30", "p7": "4/30", "p8": "30/30D", "p0": "0/30", "wall": 64.2}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_750", "p5": "4/30", "p6": "11/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 64.8}
+batch12 exit=0
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_250", "p4": "3/30", "p5": "20/30", "p6": "23/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 90.0}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_750", "p4": "4/30", "p5": "9/30D", "p6": "15/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 100.1}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_1750", "p4": "4/30", "p5": "12/30", "p6": "22/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 100.1}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_2000", "p4": "15/30D", "p5": "16/30D", "p6": "29/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 100.6}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_1000", "p4": "3/30", "p5": "12/30D", "p6": "28/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 101.1}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_1500", "p4": "2/30", "p5": "4/30", "p6": "10/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 102.5}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_1250", "p4": "7/30", "p5": "14/30", "p6": "29/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 102.4}
+{"variant": "bootstrap_variant_0057_chain_p4_pinned_lowlr_from56", "checkpoint": "online_500", "p4": "4/30", "p5": "7/30D", "p6": "21/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 104.4}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_1000", "p4": "1/30", "p5": "5/30", "p6": "17/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 92.2}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_250", "p4": "0/30", "p5": "5/30", "p6": "16/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 97.0}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_2000", "p4": "3/30", "p5": "14/30D", "p6": "22/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 97.5}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_1500", "p4": "3/30D", "p5": "5/30", "p6": "15/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 101.3}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_1250", "p4": "4/30", "p5": "4/30", "p6": "18/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 101.2}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_750", "p4": "2/30", "p5": "11/30", "p6": "25/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 99.3}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_1750", "p4": "4/30", "p5": "7/30D", "p6": "15/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 105.4}
+{"variant": "bootstrap_variant_0058_chain_p4_pinned_noise01_lowlr_from51", "checkpoint": "online_500", "p4": "1/30", "p5": "8/30", "p6": "24/30D", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 104.2}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_1000", "p3": "4/30", "p4": "9/30", "p5": "11/30D", "p6": "16/30", "p7": "15/30", "p8": "30/30D", "p0": "0/30", "wall": 117.5}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_2000", "p3": "3/30", "p4": "12/30D", "p5": "22/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 105.0}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_750", "p3": "2/30", "p4": "7/30", "p5": "13/30D", "p6": "22/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 102.6}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_250", "p3": "0/30", "p4": "2/30", "p5": "11/30", "p6": "29/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 107.9}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_1500", "p3": "0/30", "p4": "5/30", "p5": "10/30D", "p6": "21/30D", "p7": "3/30", "p8": "30/30D", "p0": "0/30", "wall": 117.1}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_1250", "p3": "1/30", "p4": "5/30", "p5": "12/30D", "p6": "7/30", "p7": "5/30", "p8": "30/30D", "p0": "0/30", "wall": 121.0}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_1750", "p3": "5/30D", "p4": "6/30", "p5": "5/30", "p6": "13/30", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 119.8}
+{"variant": "bootstrap_variant_0059_chain_p3_pinned_lowlr_from57", "checkpoint": "online_500", "p3": "0/30D", "p4": "7/30", "p5": "12/30D", "p6": "27/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 115.5}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_1000", "p3": "0/30", "p4": "0/30", "p5": "6/30", "p6": "5/30D", "p7": "17/30D", "p8": "30/30D", "p0": "0/30", "wall": 102.0}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_1250", "p3": "0/30", "p4": "0/30", "p5": "1/30", "p6": "4/30", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 105.5}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_1750", "p3": "0/30", "p4": "0/30", "p5": "5/30", "p6": "6/30", "p7": "13/30D", "p8": "30/30D", "p0": "0/30", "wall": 108.1}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_1500", "p3": "0/30", "p4": "0/30", "p5": "3/30", "p6": "2/30", "p7": "11/30D", "p8": "30/30D", "p0": "0/30", "wall": 115.0}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_2000", "p3": "0/30", "p4": "0/30", "p5": "0/30", "p6": "0/30", "p7": "5/30", "p8": "30/30D", "p0": "0/30", "wall": 115.6}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_250", "p3": "0/30", "p4": "2/30", "p5": "8/30", "p6": "14/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 113.5}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_750", "p3": "1/30", "p4": "0/30", "p5": "4/30", "p6": "11/30", "p7": "0/30", "p8": "30/30D", "p0": "0/30", "wall": 115.1}
+{"variant": "bootstrap_variant_0060_chain_p3_pinned_noise01_lowlr_from58", "checkpoint": "online_500", "p3": "0/30", "p4": "0/30", "p5": "9/30", "p6": "9/30", "p7": "4/30", "p8": "30/30D", "p0": "0/30", "wall": 119.6}
+batch13 exit=0
+{"variant": "bootstrap_variant_0061_chain_p3_cont_from59", "checkpoint": "online_250", "p3": "2/30", "p4": "0/30", "p5": "7/30", "p6": "21/30", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 149.8}
+{"variant": "bootstrap_variant_0061_chain_p3_cont_from59", "checkpoint": "online_1000", "p3": "3/30", "p4": "6/30", "p5": "17/30", "p6": "29/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 152.1}
+{"variant": "bootstrap_variant_0061_chain_p3_cont_from59", "checkpoint": "online_2000", "p3": "3/30", "p4": "13/30", "p5": "14/30D", "p6": "29/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 156.0}
+{"variant": "bootstrap_variant_0061_chain_p3_cont_from59", "checkpoint": "online_750", "p3": "1/30", "p4": "0/30", "p5": "10/30D", "p6": "25/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 161.4}
+{"variant": "bootstrap_variant_0061_chain_p3_cont_from59", "checkpoint": "online_1250", "p3": "3/30", "p4": "0/30", "p5": "10/30D", "p6": "17/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 162.0}
+{"variant": "bootstrap_variant_0061_chain_p3_cont_from59", "checkpoint": "online_1500", "p3": "4/30", "p4": "11/30D", "p5": "9/30", "p6": "29/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 164.2}
+{"variant": "bootstrap_variant_0061_chain_p3_cont_from59", "checkpoint": "online_500", "p3": "0/30", "p4": "0/30", "p5": "4/30", "p6": "6/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 163.4}
+{"variant": "bootstrap_variant_0061_chain_p3_cont_from59", "checkpoint": "online_1750", "p3": "8/30D", "p4": "16/30D", "p5": "16/30D", "p6": "28/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 164.0}
+{"variant": "bootstrap_variant_0062_chain_p3_std005_l300_from59", "checkpoint": "online_1250", "p3": "5/30", "p4": "15/30D", "p5": "13/30", "p6": "29/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 213.1}
+{"variant": "bootstrap_variant_0062_chain_p3_std005_l300_from59", "checkpoint": "online_1500", "p3": "9/30", "p4": "18/30D", "p5": "15/30D", "p6": "28/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 212.1}
+{"variant": "bootstrap_variant_0062_chain_p3_std005_l300_from59", "checkpoint": "online_1750", "p3": "6/30", "p4": "8/30D", "p5": "14/30", "p6": "25/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 207.9}
+{"variant": "bootstrap_variant_0062_chain_p3_std005_l300_from59", "checkpoint": "online_2000", "p3": "4/30", "p4": "10/30", "p5": "16/30D", "p6": "30/30D", "p7": "30/30D", "p8": "29/30", "p0": "0/30", "wall": 212.0}
+{"variant": "bootstrap_variant_0062_chain_p3_std005_l300_from59", "checkpoint": "online_1000", "p3": "0/30", "p4": "0/30", "p5": "11/30", "p6": "14/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 226.6}
+{"variant": "bootstrap_variant_0062_chain_p3_std005_l300_from59", "checkpoint": "online_500", "p3": "5/30", "p4": "6/30D", "p5": "9/30D", "p6": "20/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 217.8}
+{"variant": "bootstrap_variant_0062_chain_p3_std005_l300_from59", "checkpoint": "online_750", "p3": "2/30", "p4": "7/30", "p5": "8/30D", "p6": "15/30", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 220.3}
+{"variant": "bootstrap_variant_0062_chain_p3_std005_l300_from59", "checkpoint": "online_250", "p3": "0/30", "p4": "3/30D", "p5": "6/30D", "p6": "7/30", "p7": "30/30", "p8": "30/30D", "p0": "0/30", "wall": 229.0}
+{"variant": "bootstrap_variant_0063_full_pinned_lowlr_noise_from57", "checkpoint": "online_1000", "p1": "0/30", "p2": "1/30", "p3": "6/30", "p4": "5/30", "p5": "20/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 243.6}
+{"variant": "bootstrap_variant_0063_full_pinned_lowlr_noise_from57", "checkpoint": "online_250", "p1": "0/30", "p2": "0/30", "p3": "0/30", "p4": "9/30", "p5": "12/30D", "p6": "25/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 230.9}
+{"variant": "bootstrap_variant_0063_full_pinned_lowlr_noise_from57", "checkpoint": "online_1500", "p1": "0/30", "p2": "0/30", "p3": "1/30", "p4": "3/30D", "p5": "9/30D", "p6": "15/30D", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 244.3}
+{"variant": "bootstrap_variant_0063_full_pinned_lowlr_noise_from57", "checkpoint": "online_2000", "p1": "0/30", "p2": "1/30", "p3": "1/30", "p4": "10/30D", "p5": "11/30", "p6": "21/30D", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 253.9}
+{"variant": "bootstrap_variant_0063_full_pinned_lowlr_noise_from57", "checkpoint": "online_1250", "p1": "0/30", "p2": "0/30", "p3": "2/30", "p4": "6/30D", "p5": "6/30", "p6": "11/30", "p7": "14/30", "p8": "30/30D", "p0": "0/30", "wall": 266.4}
+{"variant": "bootstrap_variant_0063_full_pinned_lowlr_noise_from57", "checkpoint": "online_500", "p1": "0/30", "p2": "1/30", "p3": "2/30", "p4": "6/30D", "p5": "16/30D", "p6": "23/30", "p7": "22/30", "p8": "30/30D", "p0": "0/30", "wall": 251.9}
+{"variant": "bootstrap_variant_0063_full_pinned_lowlr_noise_from57", "checkpoint": "online_1750", "p1": "0/30", "p2": "0/30", "p3": "4/30", "p4": "3/30", "p5": "5/30", "p6": "17/30D", "p7": "14/30D", "p8": "30/30D", "p0": "0/30", "wall": 270.7}
+{"variant": "bootstrap_variant_0063_full_pinned_lowlr_noise_from57", "checkpoint": "online_750", "p1": "0/30", "p2": "1/30", "p3": "3/30", "p4": "3/30", "p5": "18/30", "p6": "22/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 259.0}
+{"variant": "bootstrap_variant_0064_full_pinned_lowlr_from57", "checkpoint": "online_1000", "p1": "0/30", "p2": "0/30", "p3": "4/30D", "p4": "16/30D", "p5": "21/30D", "p6": "23/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 253.2}
+{"variant": "bootstrap_variant_0064_full_pinned_lowlr_from57", "checkpoint": "online_1250", "p1": "0/30", "p2": "0/30", "p3": "1/30", "p4": "15/30", "p5": "21/30D", "p6": "28/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 250.9}
+{"variant": "bootstrap_variant_0064_full_pinned_lowlr_from57", "checkpoint": "online_1500", "p1": "0/30", "p2": "0/30", "p3": "0/30", "p4": "17/30", "p5": "16/30", "p6": "27/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 265.4}
+{"variant": "bootstrap_variant_0064_full_pinned_lowlr_from57", "checkpoint": "online_250", "p1": "0/30", "p2": "0/30", "p3": "0/30", "p4": "12/30D", "p5": "15/30", "p6": "28/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 242.1}
+{"variant": "bootstrap_variant_0064_full_pinned_lowlr_from57", "checkpoint": "online_2000", "p1": "0/30", "p2": "0/30", "p3": "2/30", "p4": "3/30", "p5": "12/30", "p6": "27/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 260.0}
+{"variant": "bootstrap_variant_0064_full_pinned_lowlr_from57", "checkpoint": "online_1750", "p1": "0/30", "p2": "1/30", "p3": "0/30", "p4": "7/30", "p5": "18/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 265.9}
+{"variant": "bootstrap_variant_0064_full_pinned_lowlr_from57", "checkpoint": "online_750", "p1": "0/30", "p2": "0/30", "p3": "4/30", "p4": "3/30", "p5": "10/30", "p6": "19/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 260.3}
+{"variant": "bootstrap_variant_0064_full_pinned_lowlr_from57", "checkpoint": "online_500", "p1": "0/30", "p2": "0/30", "p3": "2/30", "p4": "11/30", "p5": "9/30", "p6": "30/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 267.0}
+{"variant": "bootstrap_variant_0065_chain_p3_std002_l1000_from59", "checkpoint": "online_1000", "p3": "4/30", "p4": "8/30", "p5": "16/30", "p6": "3/30", "p7": "22/30", "p8": "30/30D", "p0": "0/30", "wall": 221.2}
+{"variant": "bootstrap_variant_0065_chain_p3_std002_l1000_from59", "checkpoint": "online_1250", "p3": "9/30", "p4": "15/30D", "p5": "5/30", "p6": "2/30", "p7": "1/30", "p8": "30/30D", "p0": "0/30", "wall": 218.4}
+{"variant": "bootstrap_variant_0065_chain_p3_std002_l1000_from59", "checkpoint": "online_1500", "p3": "2/30", "p4": "12/30D", "p5": "4/30", "p6": "5/30", "p7": "1/30", "p8": "30/30D", "p0": "0/30", "wall": 226.2}
+{"variant": "bootstrap_variant_0065_chain_p3_std002_l1000_from59", "checkpoint": "online_2000", "p3": "4/30D", "p4": "15/30", "p5": "18/30D", "p6": "29/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 211.5}
+{"variant": "bootstrap_variant_0065_chain_p3_std002_l1000_from59", "checkpoint": "online_1750", "p3": "4/30", "p4": "4/30D", "p5": "3/30", "p6": "1/30", "p7": "2/30", "p8": "30/30D", "p0": "0/30", "wall": 226.3}
+{"variant": "bootstrap_variant_0065_chain_p3_std002_l1000_from59", "checkpoint": "online_250", "p3": "2/30", "p4": "0/30", "p5": "11/30D", "p6": "11/30D", "p7": "28/30D", "p8": "30/30D", "p0": "0/30", "wall": 221.2}
+{"variant": "bootstrap_variant_0065_chain_p3_std002_l1000_from59", "checkpoint": "online_500", "p3": "1/30", "p4": "7/30", "p5": "17/30D", "p6": "24/30D", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 212.7}
+{"variant": "bootstrap_variant_0065_chain_p3_std002_l1000_from59", "checkpoint": "online_750", "p3": "5/30", "p4": "21/30", "p5": "19/30D", "p6": "15/30", "p7": "27/30D", "p8": "30/30D", "p0": "0/30", "wall": 213.3}
+{"variant": "bootstrap_variant_0066_chain_p3_std002_l1000_lr3e5_from59", "checkpoint": "online_1000", "p3": "1/30", "p4": "4/30", "p5": "24/30D", "p6": "28/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 216.4}
+{"variant": "bootstrap_variant_0066_chain_p3_std002_l1000_lr3e5_from59", "checkpoint": "online_1250", "p3": "5/30", "p4": "9/30", "p5": "7/30D", "p6": "19/30", "p7": "16/30", "p8": "30/30D", "p0": "0/30", "wall": 239.0}
+{"variant": "bootstrap_variant_0066_chain_p3_std002_l1000_lr3e5_from59", "checkpoint": "online_2000", "p3": "5/30", "p4": "9/30", "p5": "11/30", "p6": "7/30", "p7": "24/30D", "p8": "30/30D", "p0": "0/30", "wall": 217.4}
+{"variant": "bootstrap_variant_0066_chain_p3_std002_l1000_lr3e5_from59", "checkpoint": "online_1750", "p3": "3/30", "p4": "9/30D", "p5": "11/30", "p6": "4/30", "p7": "25/30D", "p8": "30/30D", "p0": "0/30", "wall": 223.4}
+{"variant": "bootstrap_variant_0066_chain_p3_std002_l1000_lr3e5_from59", "checkpoint": "online_500", "p3": "1/30", "p4": "6/30D", "p5": "21/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 210.2}
+{"variant": "bootstrap_variant_0066_chain_p3_std002_l1000_lr3e5_from59", "checkpoint": "online_750", "p3": "0/30", "p4": "5/30", "p5": "24/30D", "p6": "24/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 208.7}
+{"variant": "bootstrap_variant_0066_chain_p3_std002_l1000_lr3e5_from59", "checkpoint": "online_1500", "p3": "3/30", "p4": "7/30D", "p5": "4/30", "p6": "4/30", "p7": "20/30D", "p8": "30/30D", "p0": "0/30", "wall": 238.0}
+{"variant": "bootstrap_variant_0066_chain_p3_std002_l1000_lr3e5_from59", "checkpoint": "online_250", "p3": "0/30", "p4": "4/30", "p5": "2/30", "p6": "4/30", "p7": "1/30", "p8": "30/30D", "p0": "0/30", "wall": 228.6}
+batch14 exit=0
+{"variant": "bootstrap_variant_0067_chain_p3_cont2_from61", "checkpoint": "online_1750", "p3": "5/30", "p4": "9/30D", "p5": "15/30D", "p6": "26/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 71.6}
+{"variant": "bootstrap_variant_0067_chain_p3_cont2_from61", "checkpoint": "online_1250", "p3": "1/30", "p4": "5/30", "p5": "9/30D", "p6": "29/30D", "p7": "26/30D", "p8": "30/30D", "p0": "0/30", "wall": 72.0}
+{"variant": "bootstrap_variant_0067_chain_p3_cont2_from61", "checkpoint": "online_1500", "p3": "2/30", "p4": "4/30D", "p5": "13/30D", "p6": "27/30D", "p7": "21/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.3}
+{"variant": "bootstrap_variant_0067_chain_p3_cont2_from61", "checkpoint": "online_1000", "p3": "6/30", "p4": "7/30", "p5": "9/30D", "p6": "30/30D", "p7": "29/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.4}
+{"variant": "bootstrap_variant_0067_chain_p3_cont2_from61", "checkpoint": "online_2000", "p3": "5/30", "p4": "7/30D", "p5": "10/30D", "p6": "27/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.0}
+{"variant": "bootstrap_variant_0067_chain_p3_cont2_from61", "checkpoint": "online_750", "p3": "6/30D", "p4": "16/30", "p5": "13/30", "p6": "29/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 73.1}
+{"variant": "bootstrap_variant_0067_chain_p3_cont2_from61", "checkpoint": "online_250", "p3": "3/30D", "p4": "1/30", "p5": "3/30", "p6": "18/30D", "p7": "30/30D", "p8": "30/30D", "p0": "0/30", "wall": 74.6}
+{"variant": "bootstrap_variant_0067_chain_p3_cont2_from61", "checkpoint": "online_500", "p3": "3/30", "p4": "7/30D", "p5": "6/30", "p6": "6/30", "p7": "25/30D", "p8": "30/30D", "p0": "0/30", "wall": 74.7}
+batch15 exit=0

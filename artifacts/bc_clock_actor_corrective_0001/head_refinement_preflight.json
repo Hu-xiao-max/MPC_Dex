@@ -1,0 +1,18 @@
+{
+  "status": "prepared_not_solved",
+  "rank": 86,
+  "design_shape": [
+    86,
+    257
+  ],
+  "condition_number": 83516929.99751532,
+  "final_action_max_error": 0.019959472119808197,
+  "fit_gate_threshold": 1e-06,
+  "fit_gate_met": true,
+  "residual_solves": 0,
+  "optimizer_updates": 0,
+  "physical_tests": 0,
+  "proposed_method": "One float64 minimum-norm residual mean-head correction with finaltrunk frozen",
+  "parent_numerical_review_required_before_refinement": true,
+  "no_ridge_or_scale_sweep": true
+}

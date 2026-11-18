@@ -1,0 +1,27 @@
+{
+  "alternative": 1,
+  "final_angle": -1.7005602464430407,
+  "max_angle": 0.7329899196609324,
+  "minimum_contacts": 0,
+  "maximum_tilt": 0.09521669367726764,
+  "final_contacts": 0,
+  "final_tilt": 0.09521669367726764,
+  "dropped": true,
+  "forbidden_support": false,
+  "elapsed_steps": 97,
+  "total_steps": 240,
+  "phase_reports": {
+    "initial_roll": {
+      "angle": 0.7285756455315431,
+      "contacts": 4,
+      "tilt": 0.007320423162886394,
+      "ik_error": 1.4595909071538286e-08
+    },
+    "thumb_posture_reset": {
+      "angle": -1.7005602464430407,
+      "contacts": 0,
+      "tilt": 0.09521669367726764,
+      "ik_error": 5.963734553665539e-08
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "scope": "Read-only review during bootstrap_0005; no shared numerical source edits or new physical runs",
+  "findings": [
+    {
+      "priority": "high",
+      "title": "Zero-update imported BC success is exported as SAC",
+      "locations": [
+        "scripts/train_bootstrap.py:491",
+        "scripts/train_bootstrap.py:530",
+        "scripts/train_bootstrap.py:604",
+        "scripts/train_bootstrap.py:623",
+        "mpc_dex/cli.py:422",
+        "mpc_dex/cli.py:456"
+      ],
+      "detail": "record_success stores online_updates but does not require them. Physical successes can precede learning_starts, and checkpoint writes a learned bootstrap SAC source label for all accumulated records. evaluate validates geometry/hash but unconditionally labels successful BC/checkpoint trajectories deterministic SAC."
+    },
+    {
+      "priority": "high",
+      "title": "Accumulated training traces are not one frozen policy",
+      "locations": [
+        "scripts/train_bootstrap.py:541",
+        "scripts/train_bootstrap.py:592",
+        "scripts/train_bootstrap.py:623",
+        "scripts/train_bootstrap.py:491"
+      ],
+      "detail": "Training updates occur between controls, episodes are pooled over history, and the exported file lacks a per-episode immutable actor identity. A positive update count at completion cannot show the entire episode came from one frozen SAC checkpoint."
+    },
+    {
+      "priority": "high",
+      "title": "Extraction accepts missing or contradictory learner provenance",
+      "locations": [
+        "mpc_dex/cli.py:202",
+        "mpc_dex/cli.py:245"
+      ],
+      "detail": "Physical metadata, frame counts and environment contract are validated, but not online counters, a common checkpoint hash, policy-only/SAC source, five40mm episodes, or independent force-audit file hashes. User-readable source string is copied into primitive provenance."
+    },
+    {
+      "priority": "medium",
+      "title": "Existing force-audit and joint-export CLIs are not one complete evidence bundle",
+      "locations": [
+        "scripts/audit_policy.py:288",
+        "mpc_dex/cli.py:437",
+        "mpc_dex/cli.py:504"
+      ],
+      "detail": "audit_policy saves all2ms physics and commands, including each pre-command measured joint state, but no terminal joint frame or full obs/qpos/qvel transitions. evaluate saves initial+terminal joint frames but no force audit/actions and hardcodes4 Torch threads. It cannot be assumed bit-identical to a1thread policy collection without runtime and data comparison."
+    },
+    {
+      "priority": "medium",
+      "title": "Temporal alignment and exact five-trajectory source contract are absent",
+      "locations": [
+        "mpc_dex/primitives.py:70",
+        "mpc_dex/cli.py:245"
+      ],
+      "detail": "Extraction concatenates raw frames and performs PCA; no alignment metadata or five-episode requirement. Different-length episodes implicitly receive different weight. The authors alignment algorithm is unpublished."
+    }
+  ],
+  "source_sha256": {
+    "scripts/train_bootstrap.py": "6e28ade575940b88a4c7299968aa4b8152a2212cfbc97046ed997b8e58174146",
+    "mpc_dex/cli.py": "a7c3801cf34e8a9ac36319f5ba5d814b9e7877d751a820477a86559ebdc7f1ac",
+    "mpc_dex/contracts.py": "07c7f652a0271d76a49a3447d75f162a238e3395b95bec28fe5bf87cf0ee7063",
+    "mpc_dex/primitives.py": "571b5a350b943900bbdec61fbe518f3964867d48181a3ecb8a0b74f24c48b6a2",
+    "scripts/audit_policy.py": "cf1496d88454de19fb20dfeb4726b5e9d15e66289d235723bd2b86ece7f236fe",
+    "scripts/audit_recorded_controls.py": "bd69956ad5c65e49e51c89376f82245970b678adaee60232b80e68fbb99a16a8",
+    "tests/test_cli_trajectories.py": "1ad47cc1d9bf1c64c028721db1ed40f8e3461d90b39f156d2be331c13c035aff",
+    "mpc_dex/learning.py": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c"
+  },
+  "main_gates_unchanged": {
+    "mpc_demonstrations": 20,
+    "bc_updates": 12000,
+    "critic_pretrain_updates": 50000
+  },
+  "proposed_dedicated_collector": "scripts/collect_policy_trajectories.py (separately authorized after this review)"
+}

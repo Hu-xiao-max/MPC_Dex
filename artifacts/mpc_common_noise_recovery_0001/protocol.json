@@ -1,0 +1,48 @@
+{
+  "purpose": "Five prescribed physical MPC recoveries from actual noisy fixed-mean visited states; diagnostic corrective teacher coverage only",
+  "seeds": [
+    17021,
+    17022,
+    17023,
+    17024,
+    17025
+  ],
+  "prefix_controls": 9,
+  "max_mpc_controls_per_branch": 20,
+  "planner_seed": 42,
+  "reset_seed": "source seed per branch",
+  "action_bound": 0.98,
+  "workers": 8,
+  "cem": {
+    "samples": 350,
+    "elites": 10,
+    "iterations": 3,
+    "knots": 6,
+    "horizon_seconds": 0.5,
+    "timestep_seconds": 0.1,
+    "control_seconds": 0.1
+  },
+  "cost": {
+    "position_weight": 1000.0,
+    "principal_weight": 1.0,
+    "perpendicular_weight": 100.0,
+    "workspace_radius": 0.18,
+    "rotation_progress": "retained",
+    "workers": 8
+  },
+  "reference_candidates": "archived ProjectedReferenceCEM: warm nominal plus explicitly projected bounded target reference when current actual target lies out of search; live state never reset/clipped",
+  "stop": [
+    "strict environment and independent force-supported full turn",
+    "environment termination/failure",
+    "no feasible plan",
+    "20 added MPC controls"
+  ],
+  "no_hold_or_other_prefix_branches": true,
+  "training_updates": 0,
+  "production_eligible": false,
+  "main_demonstrations": 0,
+  "source_noise_manifest_sha256": "add8a046f392e9e30253a5fcbe4b53800415a97ed6939e8b7408883037cad6fe",
+  "source_recipe_sha256": "59b99e050f8b9e15482eaebeb02d535117c2d064ac4afc984546e53be30691a2",
+  "source_prior_sha256": "1d8229b86ae66ab986db226199626b3012b12200bbd89e929a200efdc2a1a526",
+  "input_provenance_sha256": "e486013e1185b3d20c4cd32720888b504359daa05f91d7844b38de3aa1878be0"
+}

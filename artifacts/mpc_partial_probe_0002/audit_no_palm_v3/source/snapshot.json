@@ -1,0 +1,8 @@
+{
+  "purpose": "Retrospective snapshot immediately after completed v3 replay; exact observer hash agrees with report. Audit driver was subsequently extended only to archive source/configuration.",
+  "files": {
+    "env.py": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "config.json": "186274a8a43d31ac690f7da05b19ae1e6cbcb1bcffa128e7c572c214b086f23e",
+    "audit_policy.py": "cf1496d88454de19fb20dfeb4726b5e9d15e66289d235723bd2b86ece7f236fe"
+  }
+}

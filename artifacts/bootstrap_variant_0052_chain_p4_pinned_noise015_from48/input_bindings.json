@@ -1,0 +1,115 @@
+{
+  "source/": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/source",
+    "files": 51,
+    "inherited_execution_manifest_sha256": "9f321326581e50252d13867a21b67a90498f13579079200beef35e9b6a65a70a"
+  },
+  "source_config.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/source_config.json",
+    "sha256": "8177e7272e6da812e01da5cb62b0f0fe2ee241277015268dd802bde5af55d105",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "initial_grasp.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/initial_grasp.npz",
+    "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "prefix_transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_transitions.npz",
+    "sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "prefix_physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_physics.npz",
+    "sha256": "366fb79a431efb8b218d9dc7d6c39730aab9168553c736783f988c14b2a6672e",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "prefix_report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_report.json",
+    "sha256": "1faeeea26d930d16720ee66993a217bc8e1a3404476d0037a51a627658c9b29f",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "mpc_correction_pairs.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_correction_pairs.npz",
+    "sha256": "911561b96b913c2e5a757861d165db2f538cec29c7aaff73411513a6a312e37a",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "mpc_correction_pairs.metadata.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_correction_pairs.metadata.json",
+    "sha256": "44c7da2eb5891c9461d0aeb882c907948458a9c6b661e107c69e643cc9c77a2a",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "mpc_recovery_transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_recovery_transitions.npz",
+    "sha256": "072c8633a22213120887f611e143a2e49a68a8ed202daa66bb3eec2d9b130fb2",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "initial.pt": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0048_chain_p5_pinned_noise015_from39/checkpoints/online_2000/agent.pt",
+    "sha256": "b5d04893d9fd77dd72de4f7492edb669679c1de445540a331c4cf44aa0d6b1c3",
+    "inherited_from": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39/checkpoints/online_2000"
+  },
+  "initial.pt.metadata.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0048_chain_p5_pinned_noise015_from39/checkpoints/online_2000/agent.pt.metadata.json",
+    "sha256": "947dcf3484b65dd886c505dbb896ac1e39e320dc7790e428906b60c15e40c2e3",
+    "inherited_from": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39/checkpoints/online_2000"
+  },
+  "inherited_state.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0048_chain_p5_pinned_noise015_from39/checkpoints/online_2000/state.json",
+    "sha256": "b790b7b28756907b911586fb619d45c72b894b41c043572508645ad57ecce526",
+    "inherited_from": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39/checkpoints/online_2000"
+  },
+  "prior_replay_lineage_only.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0048_chain_p5_pinned_noise015_from39/checkpoints/online_2000/replay.npz",
+    "sha256": "c775164718ca0683b42022e74468a77b127e0231aebd325c480c33b345433196",
+    "inherited_from": "bootstrap_variant_0048_chain_p5_pinned_noise015_from39/checkpoints/online_2000"
+  },
+  "inputs/inherited_stage/summary.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0048_chain_p5_pinned_noise015_from39/summary.json",
+    "sha256": "b56017e05e2222c78339122a5497d0fb69e3d74b116cb82ae900883de63ada98"
+  },
+  "inputs/inherited_stage/protocol.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0048_chain_p5_pinned_noise015_from39/protocol.json",
+    "sha256": "a7ce4835481c60611f09acc0d30a40e0fe69da991707bcca578c2a687f45ad9a"
+  },
+  "inputs/inherited_stage/findings.md": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0048_chain_p5_pinned_noise015_from39/findings.md",
+    "sha256": "9f787db54576764c742cc155745dcf194c73893b86a2276eb957a9de0172651c"
+  },
+  "inputs/sac0004/findings.md": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/findings.md",
+    "sha256": "c777240baab4dcf89dff2de05e6edd86ad80814a157d2392e7d261bdf7e624f4"
+  },
+  "inputs/sac0004/summary.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/summary.json",
+    "sha256": "ee8ba0e1d3c4865e9264b02107bce863b23cb59d561329ee31fca158f6fadbb8"
+  },
+  "inputs/sac0004/protocol.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/protocol.json",
+    "sha256": "bc691749205945309f11ee30cabae5352788e6a5bf95691e2e4c24908fa81d1d"
+  },
+  "run.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/run.py",
+    "sha256": "35952eeeb8e38cfec32abbc4df9ed43f314ba50ad6a22942a8ebb4c6321451c3",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": true
+  },
+  "test_protocol.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/test_protocol.py",
+    "sha256": "e2d0a261eebe2141efa0f53708302ab738b2203af06313081d35c6d1a7dd9ed5",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": true
+  },
+  "inputs/template/prepare.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/prepare.py",
+    "sha256": "aa85b07496c56bf4e65c239c0c30449c2aa541375ac2e3ea3ff234190da8abcf",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": false
+  },
+  "inputs/template/README.md": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/README.md",
+    "sha256": "851595ce5af7ef77b321547d9989028d1d49ea814a095386aa315554c589c8e7",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": false
+  }
+}

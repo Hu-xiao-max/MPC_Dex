@@ -1,0 +1,138 @@
+{
+  "strict_actor_vs_nominal_teacher": [
+    {
+      "step": 1,
+      "observation_max_error": 0.0,
+      "action_max_error": 2.8312206268310547e-07,
+      "qpos_max_error": 7.20918025276518e-08,
+      "qvel_max_error": 1.1618020936930706e-06
+    },
+    {
+      "step": 2,
+      "observation_max_error": 7.208436727523804e-07,
+      "action_max_error": 5.781650543212891e-06,
+      "qpos_max_error": 4.607258601740938e-06,
+      "qvel_max_error": 0.00012710386768066684
+    },
+    {
+      "step": 3,
+      "observation_max_error": 4.57763671875e-05,
+      "action_max_error": 2.3543834686279297e-06,
+      "qpos_max_error": 1.9469556142737154e-05,
+      "qvel_max_error": 0.0002835833941117194
+    },
+    {
+      "step": 4,
+      "observation_max_error": 8.535385131835938e-05,
+      "action_max_error": 3.382563591003418e-06,
+      "qpos_max_error": 1.5738399953751925e-05,
+      "qvel_max_error": 0.00032730025910573946
+    },
+    {
+      "step": 5,
+      "observation_max_error": 8.14199447631836e-05,
+      "action_max_error": 1.043081283569336e-05,
+      "qpos_max_error": 2.8064093530677514e-05,
+      "qvel_max_error": 0.0009741674563923386
+    },
+    {
+      "step": 6,
+      "observation_max_error": 0.00021266937255859375,
+      "action_max_error": 4.202127456665039e-06,
+      "qpos_max_error": 6.073390147989799e-05,
+      "qvel_max_error": 0.0014807168139285842
+    },
+    {
+      "step": 7,
+      "observation_max_error": 0.00024437904357910156,
+      "action_max_error": 1.5020370483398438e-05,
+      "qpos_max_error": 5.0143996814910885e-05,
+      "qvel_max_error": 0.0014846512340489504
+    },
+    {
+      "step": 8,
+      "observation_max_error": 0.00039887428283691406,
+      "action_max_error": 2.5294721126556396e-05,
+      "qpos_max_error": 2.072027701821577e-05,
+      "qvel_max_error": 0.0006473210733424217
+    },
+    {
+      "step": 9,
+      "observation_max_error": 0.00027293339371681213,
+      "action_max_error": 1.9863247871398926e-05,
+      "qpos_max_error": 0.000821755886514175,
+      "qvel_max_error": 0.05121785271295165
+    }
+  ],
+  "continued_policy_after_success": [
+    {
+      "step": 10,
+      "closest_dataset_row_one_based": 5,
+      "observation_l2_to_closest_dataset": 17.642204837784245,
+      "action_max_difference_from_successful_fixed_hold": 1.8595712184906006,
+      "action_l2_difference_from_successful_fixed_hold": 3.4627563308828657
+    },
+    {
+      "step": 11,
+      "closest_dataset_row_one_based": 12,
+      "observation_l2_to_closest_dataset": 16.666167279546126,
+      "action_max_difference_from_successful_fixed_hold": 1.6862523555755615,
+      "action_l2_difference_from_successful_fixed_hold": 2.732564278345658
+    },
+    {
+      "step": 12,
+      "closest_dataset_row_one_based": 5,
+      "observation_l2_to_closest_dataset": 13.358851061290117,
+      "action_max_difference_from_successful_fixed_hold": 1.9527490139007568,
+      "action_l2_difference_from_successful_fixed_hold": 4.256695485102359
+    }
+  ],
+  "selected_dataset_pairs": [
+    {
+      "name": "inherited_startup_pair",
+      "rows_one_based": [
+        1,
+        2
+      ],
+      "observation_l2": 0.005414867059235589,
+      "observation_max_abs": 0.003089159494265914,
+      "action_l2": 1.7702717880169658,
+      "action_max_abs": 0.8814503140747547
+    },
+    {
+      "name": "common_correction_pair_1",
+      "rows_one_based": [
+        7,
+        10
+      ],
+      "observation_l2": 0.01308414622573447,
+      "observation_max_abs": 0.006674766540527344,
+      "action_l2": 0.0,
+      "action_max_abs": 0.0
+    },
+    {
+      "name": "common_correction_pair_2",
+      "rows_one_based": [
+        8,
+        11
+      ],
+      "observation_l2": 0.2849748190334548,
+      "observation_max_abs": 0.23353493213653564,
+      "action_l2": 0.0,
+      "action_max_abs": 0.0
+    },
+    {
+      "name": "common_correction_pair_3",
+      "rows_one_based": [
+        9,
+        12
+      ],
+      "observation_l2": 0.525219041844123,
+      "observation_max_abs": 0.32366345077753067,
+      "action_l2": 0.0,
+      "action_max_abs": 0.0
+    }
+  ],
+  "interpretation": "Late correction labels are consistent. The inherited startup pair remains nearby with different labels; this is a conditioning hypothesis, not a proven sole failure cause. Post-success observations have no supervised continuation labels in this12-pair dataset.",
+  "no_additional_policy_rollouts_or_training_updates": true
+}

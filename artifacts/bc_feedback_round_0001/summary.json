@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "production_eligible": false,
+  "purpose": "One bounded actual-feedback imitation round plus one rank-gated head correction; no SAC",
+  "original_teacher_pairs": 22,
+  "actual_mpc_correction_pairs": 3,
+  "actor_prefix_labels": 0,
+  "actual_label_identity_verified": true,
+  "additional_bc_updates": 12000,
+  "additional_critic_updates": 0,
+  "online_updates": 0,
+  "head_solves": 1,
+  "bc_evaluations": [
+    {
+      "additional_updates": 3000,
+      "strict_success": false,
+      "failure": "drop",
+      "controls": 6,
+      "peak_force_qualified_angle": 2.403574386661969
+    },
+    {
+      "additional_updates": 6000,
+      "strict_success": false,
+      "failure": "drop",
+      "controls": 6,
+      "peak_force_qualified_angle": 1.7335943226171175
+    },
+    {
+      "additional_updates": 12000,
+      "strict_success": false,
+      "failure": "drop",
+      "controls": 5,
+      "peak_force_qualified_angle": 0.026632365825426333
+    }
+  ],
+  "head_evaluation": {
+    "finger_supported_rotation_success": false,
+    "environment_failure_reason": "drop",
+    "steps": 3,
+    "max_force_qualified_angle": 0.0010155047235665383
+  },
+  "all_original_input_hashes_unchanged": true,
+  "source_frozen_directory": "source",
+  "initial_actor_sha256": "a3a9473e6388a4a2a870240582d1ca048dbf4a961866d35f2d1c3aa0ecd13374",
+  "final_bc_sha256": "f9a819636ed2c519f92e5dc13c792dd9fa1adceb3d71a7c72b64243aa2ccf0c5",
+  "final_polished_sha256": "1007a567e64637880cb62eeee191806599e63efc1a6a00275e1538e995328ee2",
+  "continuation_audits": 0,
+  "continuation_reason": "No actor reached strict qualified success",
+  "clamp_changes_actual_teacher_actions": false,
+  "clamp_metric_note": "Legacy pure_clipping metrics include float32 atanh/tanh reconstruction; not a clamp change."
+}

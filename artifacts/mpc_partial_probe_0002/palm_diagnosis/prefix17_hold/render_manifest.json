@@ -1,0 +1,8 @@
+{
+  "source_transition_sha256": "f55c47a7ddc049b91ab8bf406288e695f17416c0c1d4693fd294d78acae8bc79",
+  "source_physics_sha256": "3feeccefd0124409eff7467ea9a00e554b413794358c056f2008e8454f427702",
+  "renderer_sha256": "6836270853702ce34ab6195bbcdd3ac21fa44fb739bc1b41f6c0709c8c64f696",
+  "purpose": "Visualization of saved physical states only; quantitative evidence comes from independent strict and hold audits.",
+  "frames": 20,
+  "frame_interval_seconds": 0.1
+}

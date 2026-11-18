@@ -1,0 +1,57 @@
+
+==================================== ERRORS ====================================
+___________________ ERROR collecting tests/test_bootstrap.py ___________________
+ImportError while importing test module '/home/autel001/code/mpc_dex/tests/test_bootstrap.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_bootstrap.py:12: in <module>
+    from scripts.train_bootstrap import BootstrapRunner, parser, read_environment, sample_replay
+E   ModuleNotFoundError: No module named 'scripts.train_bootstrap'
+___________ ERROR collecting tests/test_bootstrap_demonstrations.py ____________
+ImportError while importing test module '/home/autel001/code/mpc_dex/tests/test_bootstrap_demonstrations.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_bootstrap_demonstrations.py:14: in <module>
+    from scripts.prepare_bootstrap_demonstrations import prepare
+E   ModuleNotFoundError: No module named 'scripts.prepare_bootstrap_demonstrations'
+________________ ERROR collecting tests/test_bootstrap_seed.py _________________
+ImportError while importing test module '/home/autel001/code/mpc_dex/tests/test_bootstrap_seed.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_bootstrap_seed.py:11: in <module>
+    from scripts.prepare_bootstrap_seed import prepare
+E   ModuleNotFoundError: No module named 'scripts.prepare_bootstrap_seed'
+_________________ ERROR collecting tests/test_palm_support.py __________________
+ImportError while importing test module '/home/autel001/code/mpc_dex/tests/test_palm_support.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../../.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_palm_support.py:10: in <module>
+    from scripts.train_bootstrap import restore_environment, save_environment
+E   ModuleNotFoundError: No module named 'scripts.train_bootstrap'
+____________ ERROR collecting tests/test_rollout_action_mapping.py _____________
+import file mismatch:
+imported module 'test_rollout_action_mapping' has this __file__ attribute:
+  /home/autel001/code/mpc_dex/artifacts/mpc_polished_actor_recovery_0001/source/test_rollout_action_mapping.py
+which is not the same as the test file we want to collect:
+  /home/autel001/code/mpc_dex/tests/test_rollout_action_mapping.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+=========================== short test summary info ============================
+ERROR tests/test_bootstrap.py
+ERROR tests/test_bootstrap_demonstrations.py
+ERROR tests/test_bootstrap_seed.py
+ERROR tests/test_palm_support.py
+ERROR tests/test_rollout_action_mapping.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 5 errors during collection !!!!!!!!!!!!!!!!!!!!
+5 errors in 0.97s

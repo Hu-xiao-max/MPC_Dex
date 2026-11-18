@@ -1,0 +1,11 @@
+{
+  "source_checkpoint": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0004/checkpoint_00000007/agent.pt",
+  "checkpoint_sha256": "442a87c211d9fabc06fe77d824548b9b16ea1e59d34e7e61f0419ce88ce26ea0",
+  "metadata_sha256": "a4a92f1f4182406b7a559f1d6837035c064d8171e7196442ec83b4f963c5442d",
+  "run_manifest": {
+    "checkpoint_directory": "checkpoint_00000007",
+    "environment_steps": 30000,
+    "status": "running"
+  },
+  "copied_at": "2026-09-23T18:21:31.082336+00:00"
+}

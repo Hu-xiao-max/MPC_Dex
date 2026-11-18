@@ -1,0 +1,9 @@
+# Skip-initial-hold recovery: prescribed bounded result
+
+The single authorized continuation **did not reach a strict full turn** within 20 MPC controls. It completed all 28 controls (8 prescribed prefix + 20 MPC), with no drop or palm/table/other support. Final force-qualified rotation was **5.996036960 rad** (343.55°); its peak was **6.265469558 rad** at 2.592 s, still 0.017715749 rad (1.015°) below a full turn. Raw rotation finished above 2π at 6.351219267 rad; the unchanged retained-rotation requirement correctly rejects that as success. Final support was three loaded fingers and axis tilt 0.186845246 rad.
+
+The cold-reset eight-control prefix matched every recorded observation, action, reward, next observation, terminal flag, qpos, qvel and target exactly, together with all 400 physics rows. The continuation used the same six-component measured prior, native8, corrected float32 execution mapping, 350 candidates × 3 iterations, retained scoring, tilt weight 100, ±0.98 search bound, nominal and exact-hold references, and no added slew limit. The two references replace random refinement candidates: 175 exploratory + 173 random refinement + 2 references, totaling 350. No live-state projection was performed, and no reference projection was needed.
+
+The independent full replay matched all nine transition fields and all 1,400 physics rows bit-for-bit. Input/source snapshots and hashes, actual control origins, full trajectories, physics data and reports are preserved here. No source, physical criterion, planner setting, or action was changed during execution. Wall time was 59.31 s for the run before independent replay.
+
+No extra branch, tuning, training, primitive extraction, or success-conditioned 2 s hold was performed. This remains partial diagnostic data; it does not supply a new successful no-initial-hold teacher trajectory. Source fidelity is documented in findings.json, prefix_verification.json, inputs_manifest.json and manifest.json.

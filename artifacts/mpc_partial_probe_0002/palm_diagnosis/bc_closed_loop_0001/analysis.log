@@ -1,0 +1,652 @@
+{
+  "purpose": "Quantify recorded-target distortion and closed-loop error growth, with no new training or physics trials",
+  "original_training_script_sha256": "072750e71e1821bf98b361fa58917af29112cafd7a154b81d098eb22659d0fe3",
+  "conditions": [
+    {
+      "epsilon": 0.02,
+      "evaluations": [
+        {
+          "update": 1000,
+          "teacher_singleton_action_mse": 4.576848732540384e-05,
+          "teacher_singleton_action_max_error": 0.019999980926513672,
+          "batch_vs_singleton_action_max_error": 2.980232238769531e-07,
+          "steps": [
+            {
+              "step": 1,
+              "current_observation_max_error": 0.0,
+              "current_joint_position_max_error": 0.0,
+              "current_object_position_error": 0.0,
+              "current_angle_error": 0.0,
+              "current_joint_velocity_max_error": 0.0,
+              "actual_action_max_teacher_error": 1.7881393432617188e-07,
+              "next_joint_position_max_error": 1.5336753667050118e-07,
+              "next_object_position_error": 1.0624582676043498e-08,
+              "next_generalized_velocity_max_error": 9.016253446958444e-06
+            },
+            {
+              "step": 2,
+              "current_observation_max_error": 1.5497207641601562e-06,
+              "current_joint_position_max_error": 1.7881393432617188e-07,
+              "current_object_position_error": 7.458761608347686e-09,
+              "current_angle_error": -3.3527612686157227e-08,
+              "current_joint_velocity_max_error": 1.5497207641601562e-06,
+              "actual_action_max_teacher_error": 0.019999980926513672,
+              "next_joint_position_max_error": 0.007424956659064286,
+              "next_object_position_error": 0.0002500458806209819,
+              "next_generalized_velocity_max_error": 2.342688340864834
+            },
+            {
+              "step": 3,
+              "current_observation_max_error": 0.07424962520599365,
+              "current_joint_position_max_error": 0.00742495059967041,
+              "current_object_position_error": 0.0002500460250303149,
+              "current_angle_error": -0.001486063003540039,
+              "current_joint_velocity_max_error": 0.07424962520599365,
+              "actual_action_max_teacher_error": 0.015005424618721008,
+              "next_joint_position_max_error": 0.013876429847454741,
+              "next_object_position_error": 0.0009402839943759001,
+              "next_generalized_velocity_max_error": 0.5238814225951725
+            },
+            {
+              "step": 4,
+              "current_observation_max_error": 0.1457223892211914,
+              "current_joint_position_max_error": 0.01387643814086914,
+              "current_object_position_error": 0.0009402849827893078,
+              "current_angle_error": 0.005204975605010986,
+              "current_joint_velocity_max_error": 0.1457223892211914,
+              "actual_action_max_teacher_error": 0.04331967234611511,
+              "next_joint_position_max_error": 0.020534739041009817,
+              "next_object_position_error": 0.0027504206453141038,
+              "next_generalized_velocity_max_error": 2.2649534367856354
+            },
+            {
+              "step": 5,
+              "current_observation_max_error": 0.2775331437587738,
+              "current_joint_position_max_error": 0.020534731447696686,
+              "current_object_position_error": 0.002750422339886427,
+              "current_angle_error": -0.05025434494018555,
+              "current_joint_velocity_max_error": 0.2775331437587738,
+              "actual_action_max_teacher_error": 0.08395028114318848,
+              "next_joint_position_max_error": 0.10818881884182807,
+              "next_object_position_error": 0.0025648916737320746,
+              "next_generalized_velocity_max_error": 2.496410819163182
+            },
+            {
+              "step": 6,
+              "current_observation_max_error": 1.0819491147994995,
+              "current_joint_position_max_error": 0.10818880796432495,
+              "current_object_position_error": 0.002564891939982772,
+              "current_angle_error": -0.5020986795425415,
+              "current_joint_velocity_max_error": 1.0819491147994995,
+              "actual_action_max_teacher_error": 0.22421957552433014,
+              "next_joint_position_max_error": 0.2804098841507512,
+              "next_object_position_error": 0.023479973537003197,
+              "next_generalized_velocity_max_error": 8.425235265205023
+            },
+            {
+              "step": 7,
+              "current_observation_max_error": 2.967400312423706,
+              "current_joint_position_max_error": 0.2804098129272461,
+              "current_object_position_error": 0.023479970172047615,
+              "current_angle_error": -0.4266815185546875,
+              "current_joint_velocity_max_error": 2.967400312423706,
+              "actual_action_max_teacher_error": 0.44586724042892456,
+              "next_joint_position_max_error": 0.2121511564288927,
+              "next_object_position_error": 0.14308276687781568,
+              "next_generalized_velocity_max_error": 10.141175306472993
+            }
+          ]
+        },
+        {
+          "update": 3000,
+          "teacher_singleton_action_mse": 4.5768480049446225e-05,
+          "teacher_singleton_action_max_error": 0.019999980926513672,
+          "batch_vs_singleton_action_max_error": 2.980232238769531e-07,
+          "steps": [
+            {
+              "step": 1,
+              "current_observation_max_error": 0.0,
+              "current_joint_position_max_error": 0.0,
+              "current_object_position_error": 0.0,
+              "current_angle_error": 0.0,
+              "current_joint_velocity_max_error": 0.0,
+              "actual_action_max_teacher_error": 3.2782554626464844e-07,
+              "next_joint_position_max_error": 3.0819254281944097e-07,
+              "next_object_position_error": 5.719517107532887e-08,
+              "next_generalized_velocity_max_error": 3.5804189510990625e-05
+            },
+            {
+              "step": 2,
+              "current_observation_max_error": 3.084540367126465e-06,
+              "current_joint_position_max_error": 2.980232238769531e-07,
+              "current_object_position_error": 5.34238537852616e-08,
+              "current_angle_error": -4.209578037261963e-07,
+              "current_joint_velocity_max_error": 3.084540367126465e-06,
+              "actual_action_max_teacher_error": 0.019999980926513672,
+              "next_joint_position_max_error": 0.007425422701720974,
+              "next_object_position_error": 0.0002500487055269905,
+              "next_generalized_velocity_max_error": 2.3419717037519083
+            },
+            {
+              "step": 3,
+              "current_observation_max_error": 0.07425391674041748,
+              "current_joint_position_max_error": 0.007425427436828613,
+              "current_object_position_error": 0.00025004881899803877,
+              "current_angle_error": -0.0014891624450683594,
+              "current_joint_velocity_max_error": 0.07425391674041748,
+              "actual_action_max_teacher_error": 0.01500612497329712,
+              "next_joint_position_max_error": 0.013876092981520038,
+              "next_object_position_error": 0.0009402623901437977,
+              "next_generalized_velocity_max_error": 0.5239243601463599
+            },
+            {
+              "step": 4,
+              "current_observation_max_error": 0.14571928977966309,
+              "current_joint_position_max_error": 0.013876080513000488,
+              "current_object_position_error": 0.0009402639116160572,
+              "current_angle_error": 0.0051993727684021,
+              "current_joint_velocity_max_error": 0.14571928977966309,
+              "actual_action_max_teacher_error": 0.04332277178764343,
+              "next_joint_position_max_error": 0.020536237503090582,
+              "next_object_position_error": 0.0027504987986063235,
+              "next_generalized_velocity_max_error": 2.264953764881695
+            },
+            {
+              "step": 5,
+              "current_observation_max_error": 0.2775804102420807,
+              "current_joint_position_max_error": 0.020536229014396667,
+              "current_object_position_error": 0.00275049963966012,
+              "current_angle_error": -0.05024850368499756,
+              "current_joint_velocity_max_error": 0.2775804102420807,
+              "actual_action_max_teacher_error": 0.08395445346832275,
+              "next_joint_position_max_error": 0.10815312418902756,
+              "next_object_position_error": 0.002565058518558951,
+              "next_generalized_velocity_max_error": 2.4959733166586298
+            },
+            {
+              "step": 6,
+              "current_observation_max_error": 1.0816539525985718,
+              "current_joint_position_max_error": 0.10815316438674927,
+              "current_object_position_error": 0.0025650588795542717,
+              "current_angle_error": -0.5021340847015381,
+              "current_joint_velocity_max_error": 1.0816539525985718,
+              "actual_action_max_teacher_error": 0.22419634461402893,
+              "next_joint_position_max_error": 0.2803931806728366,
+              "next_object_position_error": 0.023479184692649542,
+              "next_generalized_velocity_max_error": 8.424206927186788
+            },
+            {
+              "step": 7,
+              "current_observation_max_error": 2.9671475887298584,
+              "current_joint_position_max_error": 0.280393123626709,
+              "current_object_position_error": 0.02347918041050434,
+              "current_angle_error": -0.42659544944763184,
+              "current_joint_velocity_max_error": 2.9671475887298584,
+              "actual_action_max_teacher_error": 0.44575566053390503,
+              "next_joint_position_max_error": 0.21213393738770403,
+              "next_object_position_error": 0.14306247952102388,
+              "next_generalized_velocity_max_error": 10.146054826473208
+            }
+          ]
+        },
+        {
+          "update": 6000,
+          "teacher_singleton_action_mse": 4.576847641146742e-05,
+          "teacher_singleton_action_max_error": 0.019999980926513672,
+          "batch_vs_singleton_action_max_error": 3.5762786865234375e-07,
+          "steps": [
+            {
+              "step": 1,
+              "current_observation_max_error": 0.0,
+              "current_joint_position_max_error": 0.0,
+              "current_object_position_error": 0.0,
+              "current_angle_error": 0.0,
+              "current_joint_velocity_max_error": 0.0,
+              "actual_action_max_teacher_error": 3.5762786865234375e-07,
+              "next_joint_position_max_error": 2.461971870815205e-07,
+              "next_object_position_error": 1.6723620728796243e-08,
+              "next_generalized_velocity_max_error": 1.4956564697854446e-06
+            },
+            {
+              "step": 2,
+              "current_observation_max_error": 2.473592758178711e-06,
+              "current_joint_position_max_error": 2.384185791015625e-07,
+              "current_object_position_error": 1.7621834658143598e-08,
+              "current_angle_error": 8.568167686462402e-08,
+              "current_joint_velocity_max_error": 2.473592758178711e-06,
+              "actual_action_max_teacher_error": 0.019999980926513672,
+              "next_joint_position_max_error": 0.007425073691962325,
+              "next_object_position_error": 0.00025008142917804286,
+              "next_generalized_velocity_max_error": 2.342803641521714
+            },
+            {
+              "step": 3,
+              "current_observation_max_error": 0.07425057888031006,
+              "current_joint_position_max_error": 0.007425069808959961,
+              "current_object_position_error": 0.0002500822301954031,
+              "current_angle_error": -0.0014835000038146973,
+              "current_joint_velocity_max_error": 0.07425057888031006,
+              "actual_action_max_teacher_error": 0.014458253979682922,
+              "next_joint_position_max_error": 0.014248247626133637,
+              "next_object_position_error": 0.00085294715950655,
+              "next_generalized_velocity_max_error": 0.5836516899762652
+            },
+            {
+              "step": 4,
+              "current_observation_max_error": 0.14943289756774902,
+              "current_joint_position_max_error": 0.014248251914978027,
+              "current_object_position_error": 0.0008529477054253221,
+              "current_angle_error": 0.008937180042266846,
+              "current_joint_velocity_max_error": 0.14943289756774902,
+              "actual_action_max_teacher_error": 0.0440673828125,
+              "next_joint_position_max_error": 0.019964563153428788,
+              "next_object_position_error": 0.002736627986095623,
+              "next_generalized_velocity_max_error": 1.7712345157410259
+            },
+            {
+              "step": 5,
+              "current_observation_max_error": 0.28859055042266846,
+              "current_joint_position_max_error": 0.0199645534157753,
+              "current_object_position_error": 0.002736629219725728,
+              "current_angle_error": -0.051133155822753906,
+              "current_joint_velocity_max_error": 0.28859055042266846,
+              "actual_action_max_teacher_error": 0.0654403567314148,
+              "next_joint_position_max_error": 0.07866546369169647,
+              "next_object_position_error": 0.0035339070472665147,
+              "next_generalized_velocity_max_error": 3.4317331474257835
+            },
+            {
+              "step": 6,
+              "current_observation_max_error": 0.8126803636550903,
+              "current_joint_position_max_error": 0.07866549491882324,
+              "current_object_position_error": 0.00353390839882195,
+              "current_angle_error": -0.48258471488952637,
+              "current_joint_velocity_max_error": 0.8126803636550903,
+              "actual_action_max_teacher_error": 0.1828964203596115,
+              "next_joint_position_max_error": 0.22404860956292416,
+              "next_object_position_error": 0.01067115259943076,
+              "next_generalized_velocity_max_error": 16.174972963316264
+            },
+            {
+              "step": 7,
+              "current_observation_max_error": 2.205899953842163,
+              "current_joint_position_max_error": 0.22404861450195312,
+              "current_object_position_error": 0.010671150870621204,
+              "current_angle_error": -0.5972353219985962,
+              "current_joint_velocity_max_error": 2.205899953842163,
+              "actual_action_max_teacher_error": 0.3109206557273865,
+              "next_joint_position_max_error": 0.21401294494117173,
+              "next_object_position_error": 0.12609064920156993,
+              "next_generalized_velocity_max_error": 12.536347096478126
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "epsilon": 1e-06,
+      "evaluations": [
+        {
+          "update": 1000,
+          "teacher_singleton_action_mse": 1.94302974859846e-13,
+          "teacher_singleton_action_max_error": 2.0265579223632812e-06,
+          "batch_vs_singleton_action_max_error": 3.6135315895080566e-07,
+          "steps": [
+            {
+              "step": 1,
+              "current_observation_max_error": 0.0,
+              "current_joint_position_max_error": 0.0,
+              "current_object_position_error": 0.0,
+              "current_angle_error": 0.0,
+              "current_joint_velocity_max_error": 0.0,
+              "actual_action_max_teacher_error": 4.172325134277344e-07,
+              "next_joint_position_max_error": 2.0721158633385528e-07,
+              "next_object_position_error": 1.1745026631350561e-08,
+              "next_generalized_velocity_max_error": 6.913434022592924e-06
+            },
+            {
+              "step": 2,
+              "current_observation_max_error": 2.086162567138672e-06,
+              "current_joint_position_max_error": 1.7881393432617188e-07,
+              "current_object_position_error": 9.566619496581552e-09,
+              "current_angle_error": -1.4156103134155273e-07,
+              "current_joint_velocity_max_error": 2.086162567138672e-06,
+              "actual_action_max_teacher_error": 1.0132789611816406e-06,
+              "next_joint_position_max_error": 5.374359388077288e-07,
+              "next_object_position_error": 3.717198410612554e-08,
+              "next_generalized_velocity_max_error": 1.5724541428951966e-05
+            },
+            {
+              "step": 3,
+              "current_observation_max_error": 6.109476089477539e-06,
+              "current_joint_position_max_error": 5.364418029785156e-07,
+              "current_object_position_error": 3.6666392588813324e-08,
+              "current_angle_error": -2.6226043701171875e-06,
+              "current_joint_velocity_max_error": 6.109476089477539e-06,
+              "actual_action_max_teacher_error": 9.566545486450195e-06,
+              "next_joint_position_max_error": 3.950375355055158e-06,
+              "next_object_position_error": 5.172251184521927e-08,
+              "next_generalized_velocity_max_error": 6.026148571969259e-05
+            },
+            {
+              "step": 4,
+              "current_observation_max_error": 4.363059997558594e-05,
+              "current_joint_position_max_error": 3.933906555175781e-06,
+              "current_object_position_error": 5.186694451708718e-08,
+              "current_angle_error": -4.589557647705078e-06,
+              "current_joint_velocity_max_error": 4.363059997558594e-05,
+              "actual_action_max_teacher_error": 1.5139579772949219e-05,
+              "next_joint_position_max_error": 1.1755785952416442e-05,
+              "next_object_position_error": 4.79954461977043e-07,
+              "next_generalized_velocity_max_error": 7.486371642728695e-05
+            },
+            {
+              "step": 5,
+              "current_observation_max_error": 0.00013124942779541016,
+              "current_joint_position_max_error": 1.1742115020751953e-05,
+              "current_object_position_error": 4.806246920452395e-07,
+              "current_angle_error": -5.7220458984375e-06,
+              "current_joint_velocity_max_error": 0.00013124942779541016,
+              "actual_action_max_teacher_error": 1.9609928131103516e-05,
+              "next_joint_position_max_error": 2.843408173019979e-05,
+              "next_object_position_error": 1.8109688674069751e-06,
+              "next_generalized_velocity_max_error": 0.0006436729888869286
+            },
+            {
+              "step": 6,
+              "current_observation_max_error": 0.0001723766326904297,
+              "current_joint_position_max_error": 2.8431415557861328e-05,
+              "current_object_position_error": 1.8101978866980062e-06,
+              "current_angle_error": -0.00010061264038085938,
+              "current_joint_velocity_max_error": 0.0001723766326904297,
+              "actual_action_max_teacher_error": 0.00018610060214996338,
+              "next_joint_position_max_error": 0.00026284730748526997,
+              "next_object_position_error": 5.728237105248592e-05,
+              "next_generalized_velocity_max_error": 0.035021847734728384
+            },
+            {
+              "step": 7,
+              "current_observation_max_error": 0.002938985824584961,
+              "current_joint_position_max_error": 0.00026285648345947266,
+              "current_object_position_error": 5.72836070205085e-05,
+              "current_angle_error": -0.002938985824584961,
+              "current_joint_velocity_max_error": 0.0027391910552978516,
+              "actual_action_max_teacher_error": 0.0018101334571838379,
+              "next_joint_position_max_error": 0.009508965178623985,
+              "next_object_position_error": 0.0006333520787083627,
+              "next_generalized_velocity_max_error": 0.5099048992576775
+            },
+            {
+              "step": 8,
+              "current_observation_max_error": 0.0924612283706665,
+              "current_joint_position_max_error": 0.009508967399597168,
+              "current_object_position_error": 0.000633352086879313,
+              "current_angle_error": 0.010733842849731445,
+              "current_joint_velocity_max_error": 0.0924612283706665,
+              "actual_action_max_teacher_error": 0.05252295732498169,
+              "next_joint_position_max_error": 0.05913710820393636,
+              "next_object_position_error": 0.0027937785386698993,
+              "next_generalized_velocity_max_error": 5.8200945881867465
+            },
+            {
+              "step": 9,
+              "current_observation_max_error": 0.49628138542175293,
+              "current_joint_position_max_error": 0.059137165546417236,
+              "current_object_position_error": 0.002793778432533145,
+              "current_angle_error": 0.015465021133422852,
+              "current_joint_velocity_max_error": 0.49628138542175293,
+              "actual_action_max_teacher_error": 0.20684471726417542,
+              "next_joint_position_max_error": 0.18397178499916333,
+              "next_object_position_error": 0.005814827232850629,
+              "next_generalized_velocity_max_error": 1.6082498693025546
+            },
+            {
+              "step": 10,
+              "current_observation_max_error": 1.502537727355957,
+              "current_joint_position_max_error": 0.18397176265716553,
+              "current_object_position_error": 0.005814827978610992,
+              "current_angle_error": 0.13009071350097656,
+              "current_joint_velocity_max_error": 1.502537727355957,
+              "actual_action_max_teacher_error": 0.9571213722229004,
+              "next_joint_position_max_error": 0.6770335920525468,
+              "next_object_position_error": 0.03599868146406636,
+              "next_generalized_velocity_max_error": 4.114277253165599
+            },
+            {
+              "step": 11,
+              "current_observation_max_error": 5.292235374450684,
+              "current_joint_position_max_error": 0.677033543586731,
+              "current_object_position_error": 0.03599868342280388,
+              "current_angle_error": -0.6394927501678467,
+              "current_joint_velocity_max_error": 5.292235374450684,
+              "actual_action_max_teacher_error": 1.3423198461532593,
+              "next_joint_position_max_error": 1.078360324663792,
+              "next_object_position_error": 0.1460597718296613,
+              "next_generalized_velocity_max_error": 21.595936401477893
+            }
+          ]
+        },
+        {
+          "update": 3000,
+          "teacher_singleton_action_mse": 1.3118755485142658e-13,
+          "teacher_singleton_action_max_error": 1.0132789611816406e-06,
+          "batch_vs_singleton_action_max_error": 2.5704503059387207e-07,
+          "steps": [
+            {
+              "step": 1,
+              "current_observation_max_error": 0.0,
+              "current_joint_position_max_error": 0.0,
+              "current_object_position_error": 0.0,
+              "current_angle_error": 0.0,
+              "current_joint_velocity_max_error": 0.0,
+              "actual_action_max_teacher_error": 2.1141022443771362e-07,
+              "next_joint_position_max_error": 1.742007572635984e-07,
+              "next_object_position_error": 1.466138847216467e-08,
+              "next_generalized_velocity_max_error": 1.4511722521426407e-05
+            },
+            {
+              "step": 2,
+              "current_observation_max_error": 1.7285346984863281e-06,
+              "current_joint_position_max_error": 1.7881393432617188e-07,
+              "current_object_position_error": 1.699863005910629e-08,
+              "current_angle_error": 3.129243850708008e-07,
+              "current_joint_velocity_max_error": 1.7285346984863281e-06,
+              "actual_action_max_teacher_error": 2.16066837310791e-06,
+              "next_joint_position_max_error": 1.9115281613135693e-06,
+              "next_object_position_error": 3.770709286782639e-08,
+              "next_generalized_velocity_max_error": 9.17687201615891e-05
+            },
+            {
+              "step": 3,
+              "current_observation_max_error": 1.7523765563964844e-05,
+              "current_joint_position_max_error": 1.9073486328125e-06,
+              "current_object_position_error": 3.796514036480403e-08,
+              "current_angle_error": -2.562999725341797e-06,
+              "current_joint_velocity_max_error": 1.7523765563964844e-05,
+              "actual_action_max_teacher_error": 1.8537044525146484e-05,
+              "next_joint_position_max_error": 7.610648922407037e-06,
+              "next_object_position_error": 1.7116191474881248e-07,
+              "next_generalized_velocity_max_error": 8.643975580380214e-05
+            },
+            {
+              "step": 4,
+              "current_observation_max_error": 7.963180541992188e-05,
+              "current_joint_position_max_error": 7.62939453125e-06,
+              "current_object_position_error": 1.7124314410921215e-07,
+              "current_angle_error": -1.2934207916259766e-05,
+              "current_joint_velocity_max_error": 7.963180541992188e-05,
+              "actual_action_max_teacher_error": 2.2202730178833008e-05,
+              "next_joint_position_max_error": 1.8588660608720442e-05,
+              "next_object_position_error": 9.641709230139651e-07,
+              "next_generalized_velocity_max_error": 0.0001893818098128719
+            },
+            {
+              "step": 5,
+              "current_observation_max_error": 0.00020360946655273438,
+              "current_joint_position_max_error": 1.8596649169921875e-05,
+              "current_object_position_error": 9.6407006822119e-07,
+              "current_angle_error": -1.1682510375976562e-05,
+              "current_joint_velocity_max_error": 0.00020360946655273438,
+              "actual_action_max_teacher_error": 3.999471664428711e-05,
+              "next_joint_position_max_error": 0.00014643715325013407,
+              "next_object_position_error": 1.6942580930131736e-05,
+              "next_generalized_velocity_max_error": 0.0302309681426165
+            },
+            {
+              "step": 6,
+              "current_observation_max_error": 0.0015952587127685547,
+              "current_joint_position_max_error": 0.00014644861221313477,
+              "current_object_position_error": 1.694311504252255e-05,
+              "current_angle_error": -0.00047779083251953125,
+              "current_joint_velocity_max_error": 0.0015952587127685547,
+              "actual_action_max_teacher_error": 0.0006936490535736084,
+              "next_joint_position_max_error": 0.03181082673113317,
+              "next_object_position_error": 0.0053245696838730185,
+              "next_generalized_velocity_max_error": 3.5416869809783913
+            },
+            {
+              "step": 7,
+              "current_observation_max_error": 0.3652491569519043,
+              "current_joint_position_max_error": 0.03181082010269165,
+              "current_object_position_error": 0.005324570462107658,
+              "current_angle_error": -0.3652491569519043,
+              "current_joint_velocity_max_error": 0.31730595231056213,
+              "actual_action_max_teacher_error": 0.1644444763660431,
+              "next_joint_position_max_error": 0.1288640738308242,
+              "next_object_position_error": 0.016065673848956415,
+              "next_generalized_velocity_max_error": 0.9982169297558511
+            },
+            {
+              "step": 8,
+              "current_observation_max_error": 1.0393996238708496,
+              "current_joint_position_max_error": 0.12886404991149902,
+              "current_object_position_error": 0.016065672039985657,
+              "current_angle_error": 0.04567432403564453,
+              "current_joint_velocity_max_error": 1.0393996238708496,
+              "actual_action_max_teacher_error": 0.22648724913597107,
+              "next_joint_position_max_error": 0.18237741376111127,
+              "next_object_position_error": 0.015739864611907753,
+              "next_generalized_velocity_max_error": 5.626911549373592
+            },
+            {
+              "step": 9,
+              "current_observation_max_error": 1.763007640838623,
+              "current_joint_position_max_error": 0.1823773980140686,
+              "current_object_position_error": 0.015739863738417625,
+              "current_angle_error": -0.44136643409729004,
+              "current_joint_velocity_max_error": 1.763007640838623,
+              "actual_action_max_teacher_error": 0.5513463020324707,
+              "next_joint_position_max_error": 0.5562968655132864,
+              "next_object_position_error": 0.017102074814388177,
+              "next_generalized_velocity_max_error": 4.976429952861464
+            }
+          ]
+        },
+        {
+          "update": 6000,
+          "teacher_singleton_action_mse": 1.4168454278741527e-13,
+          "teacher_singleton_action_max_error": 1.0132789611816406e-06,
+          "batch_vs_singleton_action_max_error": 3.129243850708008e-07,
+          "steps": [
+            {
+              "step": 1,
+              "current_observation_max_error": 0.0,
+              "current_joint_position_max_error": 0.0,
+              "current_object_position_error": 0.0,
+              "current_angle_error": 0.0,
+              "current_joint_velocity_max_error": 0.0,
+              "actual_action_max_teacher_error": 3.501772880554199e-07,
+              "next_joint_position_max_error": 4.727184399477835e-07,
+              "next_object_position_error": 4.500411689648663e-08,
+              "next_generalized_velocity_max_error": 1.9296766348375627e-05
+            },
+            {
+              "step": 2,
+              "current_observation_max_error": 4.708766937255859e-06,
+              "current_joint_position_max_error": 4.76837158203125e-07,
+              "current_object_position_error": 4.474969372836313e-08,
+              "current_angle_error": -1.4156103134155273e-06,
+              "current_joint_velocity_max_error": 4.708766937255859e-06,
+              "actual_action_max_teacher_error": 3.896653652191162e-06,
+              "next_joint_position_max_error": 4.509094578386552e-06,
+              "next_object_position_error": 2.4269915547219506e-07,
+              "next_generalized_velocity_max_error": 0.00010511643100663548
+            },
+            {
+              "step": 3,
+              "current_observation_max_error": 4.038214683532715e-05,
+              "current_joint_position_max_error": 4.410743713378906e-06,
+              "current_object_position_error": 2.415987978565681e-07,
+              "current_angle_error": -1.8656253814697266e-05,
+              "current_joint_velocity_max_error": 4.038214683532715e-05,
+              "actual_action_max_teacher_error": 2.995133399963379e-05,
+              "next_joint_position_max_error": 1.4184957022655986e-05,
+              "next_object_position_error": 6.843890555811964e-07,
+              "next_generalized_velocity_max_error": 0.000162109834768831
+            },
+            {
+              "step": 4,
+              "current_observation_max_error": 0.00014162063598632812,
+              "current_joint_position_max_error": 1.4185905456542969e-05,
+              "current_object_position_error": 6.847311055935279e-07,
+              "current_angle_error": -3.719329833984375e-05,
+              "current_joint_velocity_max_error": 0.00014162063598632812,
+              "actual_action_max_teacher_error": 6.70701265335083e-05,
+              "next_joint_position_max_error": 4.78563078065708e-05,
+              "next_object_position_error": 2.8889376103176143e-06,
+              "next_generalized_velocity_max_error": 0.0007354695013293
+            },
+            {
+              "step": 5,
+              "current_observation_max_error": 0.0005423650145530701,
+              "current_joint_position_max_error": 4.792213439941406e-05,
+              "current_object_position_error": 2.8890294743177947e-06,
+              "current_angle_error": 1.430511474609375e-06,
+              "current_joint_velocity_max_error": 0.0005423650145530701,
+              "actual_action_max_teacher_error": 0.0003394186496734619,
+              "next_joint_position_max_error": 0.0002506528999985935,
+              "next_object_position_error": 2.7062049902039677e-05,
+              "next_generalized_velocity_max_error": 0.029971552189159034
+            },
+            {
+              "step": 6,
+              "current_observation_max_error": 0.002581000328063965,
+              "current_joint_position_max_error": 0.00025069713592529297,
+              "current_object_position_error": 2.7062314984505065e-05,
+              "current_angle_error": 0.0005040168762207031,
+              "current_joint_velocity_max_error": 0.002581000328063965,
+              "actual_action_max_teacher_error": 0.0011462867259979248,
+              "next_joint_position_max_error": 0.004000093165128893,
+              "next_object_position_error": 0.00023378550406505285,
+              "next_generalized_velocity_max_error": 0.2644993752256626
+            },
+            {
+              "step": 7,
+              "current_observation_max_error": 0.040988773107528687,
+              "current_joint_position_max_error": 0.0040000975131988525,
+              "current_object_position_error": 0.000233783561270684,
+              "current_angle_error": -0.01083064079284668,
+              "current_joint_velocity_max_error": 0.040988773107528687,
+              "actual_action_max_teacher_error": 0.009752392768859863,
+              "next_joint_position_max_error": 0.02727639011764202,
+              "next_object_position_error": 0.00230748694648255,
+              "next_generalized_velocity_max_error": 0.6763453493112482
+            },
+            {
+              "step": 8,
+              "current_observation_max_error": 0.2542445659637451,
+              "current_joint_position_max_error": 0.027276381850242615,
+              "current_object_position_error": 0.0023074857890605927,
+              "current_angle_error": 0.03255772590637207,
+              "current_joint_velocity_max_error": 0.2542445659637451,
+              "actual_action_max_teacher_error": 0.0980052649974823,
+              "next_joint_position_max_error": 0.10611913160152198,
+              "next_object_position_error": 0.007454651460246988,
+              "next_generalized_velocity_max_error": 2.0806856156317206
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

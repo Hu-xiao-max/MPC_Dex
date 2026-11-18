@@ -1,0 +1,12 @@
+policy cold rollout: 3 controls, failure drop
+{"b": 1, "status": "terminated", "mpc_controls": 10, "strict_force_success": false, "failure_reason": null, "final_force_qualified_angle": 6.076152944655543, "policy_control_at_state_vs_mpc_label_l2": 3.1226537227630615, "wall_seconds": 133.10580814117566}
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/cylinder_dart_0001/recover_from_policy.py", line 21, in <module>
+    planner, evaluator, search, cem = planner_for(env, 42 + b, HERE / 'native_cache'); n = 0; first = None; status = 'budget'
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/cylinder_dart_0001/common.py", line 22, in planner_for
+    low, high, search = action_search_bounds(env, protocol['action_bound'])
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/mpc_prefix6_handoff_recovery_0001/source/scripts/probe_mpc.py", line 95, in action_search_bounds
+    raise ValueError('Initial executed target is outside the action search bounds; refusing to clip it')
+ValueError: Initial executed target is outside the action search bounds; refusing to clip it

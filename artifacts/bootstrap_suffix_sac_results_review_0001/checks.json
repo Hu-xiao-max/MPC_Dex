@@ -1,0 +1,1051 @@
+{
+  "status": "complete",
+  "new_physics_steps": 0,
+  "new_optimizer_steps": 0,
+  "verified_manifests": [
+    {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/execution_manifest.json",
+      "sha256": "2e81fe0a82aa42839e1d525836df41e7f31fe770f19c3c7191a9ef17f16e5c34",
+      "files": 75
+    },
+    {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/manifest.json",
+      "sha256": "258842818fa0087aa70566996fad768fa088c1e6e3102d533c1c40f3e48edfc0",
+      "files": 4419
+    },
+    {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/initialized/manifest.json",
+      "sha256": "d501a98bfa13de947698d4abe4a260c8b386d08e9a2c26928ab7a74f37fb97d9",
+      "files": 5
+    },
+    {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/warmup_complete/manifest.json",
+      "sha256": "9a335540b70fb8410bc7d110f203cd13dc119a286456f254402e3077a26bd2c6",
+      "files": 11
+    },
+    {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/pretrained/manifest.json",
+      "sha256": "08fcb0053e0ae66dcfbf7da34f4ed302069fe976b468f128f76fe212355ea943",
+      "files": 11
+    },
+    {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_500/manifest.json",
+      "sha256": "e7e282e9f1d32d7a5902ca82d10f385d4610331c68440fcaec3b28a6075de437",
+      "files": 11
+    },
+    {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_1000/manifest.json",
+      "sha256": "70659005d7dcac112cb4b00ca264290abe5bb1bd23a3574c3d7119069587b635",
+      "files": 11
+    },
+    {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_2000/manifest.json",
+      "sha256": "acf233366ce83fda8689e14f3dbe9a81b6fd684da7a9bf4bcfec1e454a600c54",
+      "files": 11
+    }
+  ],
+  "frozen_execution_manifest_sha256": "2e81fe0a82aa42839e1d525836df41e7f31fe770f19c3c7191a9ef17f16e5c34",
+  "training": {
+    "warmup": {
+      "episodes_started": 256,
+      "completed": 256,
+      "suffix_controls": 808,
+      "strict_force_successes": 165,
+      "environment_successes": 165,
+      "independent_drops": 50,
+      "palm_violations": 44,
+      "truncated": 0,
+      "raw_suffix_reward_sum": 30483.445770688257
+    },
+    "online": {
+      "episodes_started": 754,
+      "completed": 753,
+      "suffix_controls": 2000,
+      "strict_force_successes": 532,
+      "environment_successes": 532,
+      "independent_drops": 120,
+      "palm_violations": 105,
+      "truncated": 0,
+      "raw_suffix_reward_sum": 101646.90739278667
+    }
+  },
+  "checkpoints": [
+    {
+      "checkpoint": "initialized",
+      "agent_sha256": "9439ba3136589a8d0185e8ab20679ffda1e07838f91cd33a57e5ac8d8c0b6f87",
+      "bc_updates": 12000,
+      "pretrain_updates": 0,
+      "online_updates": 0,
+      "optimizers": {
+        "critic_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        },
+        "actor_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        },
+        "alpha_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        },
+        "bc_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        }
+      }
+    },
+    {
+      "checkpoint": "warmup_complete",
+      "agent_sha256": "9439ba3136589a8d0185e8ab20679ffda1e07838f91cd33a57e5ac8d8c0b6f87",
+      "bc_updates": 12000,
+      "pretrain_updates": 0,
+      "online_updates": 0,
+      "optimizers": {
+        "critic_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        },
+        "actor_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        },
+        "alpha_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        },
+        "bc_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        }
+      }
+    },
+    {
+      "checkpoint": "pretrained",
+      "agent_sha256": "0412e101111c75ad4dd71fd8202ccd77deaca2157bbd7aae15604a7fe3dd6c32",
+      "bc_updates": 12000,
+      "pretrain_updates": 500,
+      "online_updates": 0,
+      "optimizers": {
+        "critic_optimizer": {
+          "parameter_states": 20,
+          "steps": [
+            500.0
+          ]
+        },
+        "actor_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        },
+        "alpha_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        },
+        "bc_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        }
+      }
+    },
+    {
+      "checkpoint": "online_500",
+      "agent_sha256": "59564affe820e47a2d18ae663c23cc31683c0da77bfc2da39d64da24365bfc7a",
+      "bc_updates": 12000,
+      "pretrain_updates": 500,
+      "online_updates": 500,
+      "optimizers": {
+        "critic_optimizer": {
+          "parameter_states": 20,
+          "steps": [
+            1000.0
+          ]
+        },
+        "actor_optimizer": {
+          "parameter_states": 12,
+          "steps": [
+            500.0
+          ]
+        },
+        "alpha_optimizer": {
+          "parameter_states": 1,
+          "steps": [
+            500.0
+          ]
+        },
+        "bc_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        }
+      }
+    },
+    {
+      "checkpoint": "online_1000",
+      "agent_sha256": "27a3cf02de4dcc4ff69fe72c76c7af3a7da6434bfb17f41c3541419780a1d58d",
+      "bc_updates": 12000,
+      "pretrain_updates": 500,
+      "online_updates": 1000,
+      "optimizers": {
+        "critic_optimizer": {
+          "parameter_states": 20,
+          "steps": [
+            1500.0
+          ]
+        },
+        "actor_optimizer": {
+          "parameter_states": 12,
+          "steps": [
+            1000.0
+          ]
+        },
+        "alpha_optimizer": {
+          "parameter_states": 1,
+          "steps": [
+            1000.0
+          ]
+        },
+        "bc_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        }
+      }
+    },
+    {
+      "checkpoint": "online_2000",
+      "agent_sha256": "e4a73d890963a70afc9337db7d29d345c38e192218a7b81dbd51cd6589232892",
+      "bc_updates": 12000,
+      "pretrain_updates": 500,
+      "online_updates": 2000,
+      "optimizers": {
+        "critic_optimizer": {
+          "parameter_states": 20,
+          "steps": [
+            2500.0
+          ]
+        },
+        "actor_optimizer": {
+          "parameter_states": 12,
+          "steps": [
+            2000.0
+          ]
+        },
+        "alpha_optimizer": {
+          "parameter_states": 1,
+          "steps": [
+            2000.0
+          ]
+        },
+        "bc_optimizer": {
+          "parameter_states": 0,
+          "steps": []
+        }
+      }
+    }
+  ],
+  "replay": {
+    "rows": 2808,
+    "completed_episodes": 1009,
+    "raw_rewards_and_only_executed_suffix_rows_exact": true,
+    "all_actual_next_actions_exact": true,
+    "rewards_independently_recomputed_from_physics": true,
+    "prefixes_and_evaluations_excluded": true,
+    "all_2500_minibatch_indices_and_raw_scaled_reward_means_exact": true,
+    "private_rng_final_exact": true
+  },
+  "training_rng": {
+    "training_actions_bitexact": 2808,
+    "episode_initial_states_bitexact": 1010,
+    "checkpoint_global_states_exact": [
+      "warmup_complete",
+      "pretrained",
+      "online_500",
+      "online_1000",
+      "online_2000"
+    ],
+    "evaluation_restoration_verified_from_subsequent_training": [
+      "pretraining_baseline",
+      "online_500",
+      "online_1000"
+    ],
+    "final_evaluation_restoration": "Source finally block restores saved state; no post-final training/RNG snapshot exists for an independent state comparison.",
+    "method": "Replay saved mean/std singleton Normal draws plus shape-identical update draws; no learning"
+  },
+  "calibration": [
+    {
+      "role": "warmup",
+      "episodes": 256,
+      "rows": 808,
+      "excluded_truncations": 0,
+      "forward_sum_current_entropy_excluded": true,
+      "alpha_units_verified": [
+        0.00025,
+        0.0001
+      ],
+      "heldout_never_fit": false
+    },
+    {
+      "role": "heldout",
+      "episodes": 5,
+      "rows": 26,
+      "excluded_truncations": 0,
+      "forward_sum_current_entropy_excluded": true,
+      "alpha_units_verified": [
+        0.00025,
+        0.0001
+      ],
+      "heldout_never_fit": true
+    }
+  ],
+  "evaluations": [
+    {
+      "label": "pretraining_baseline",
+      "trial": "cold_deterministic",
+      "prefix": 0,
+      "controls": 9,
+      "suffix_controls": 9,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.651565369479002,
+      "sampling_seed": 42,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "phase_deterministic",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.651565369479002,
+      "sampling_seed": 42,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "phase_stochastic_17101",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.577424017538442,
+      "sampling_seed": 17101,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "phase_stochastic_17102",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.60505325589517,
+      "sampling_seed": 17102,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "phase_stochastic_17103",
+      "prefix": 7,
+      "controls": 25,
+      "suffix_controls": 18,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": 0.37578117454841214,
+      "sampling_seed": 17103,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "phase_stochastic_17104",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.629129581082053,
+      "sampling_seed": 17104,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "phase_stochastic_17105",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.80385475887616,
+      "sampling_seed": 17105,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "retention8_deterministic",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.651565369479002,
+      "sampling_seed": 42,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "retention8_stochastic_17121",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.572346334996219,
+      "sampling_seed": 17121,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "retention8_stochastic_17122",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.5868995930717045,
+      "sampling_seed": 17122,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "retention8_stochastic_17123",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.750530721627363,
+      "sampling_seed": 17123,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "retention8_stochastic_17124",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.732749850487675,
+      "sampling_seed": 17124,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "pretraining_baseline",
+      "trial": "retention8_stochastic_17125",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.71380620937908,
+      "sampling_seed": 17125,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_500",
+      "trial": "cold_deterministic",
+      "prefix": 0,
+      "controls": 2,
+      "suffix_controls": 2,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -5.269193516853141,
+      "sampling_seed": 42,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_500",
+      "trial": "phase_deterministic",
+      "prefix": 7,
+      "controls": 12,
+      "suffix_controls": 5,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": 2.044234924778843,
+      "sampling_seed": 42,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_500",
+      "trial": "phase_stochastic_17101",
+      "prefix": 7,
+      "controls": 12,
+      "suffix_controls": 5,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": 3.5696294480640356,
+      "sampling_seed": 17101,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_500",
+      "trial": "phase_stochastic_17102",
+      "prefix": 7,
+      "controls": 10,
+      "suffix_controls": 3,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -0.2598860207099717,
+      "sampling_seed": 17102,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_500",
+      "trial": "phase_stochastic_17103",
+      "prefix": 7,
+      "controls": 11,
+      "suffix_controls": 4,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -4.7711287365388095,
+      "sampling_seed": 17103,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_500",
+      "trial": "phase_stochastic_17104",
+      "prefix": 7,
+      "controls": 10,
+      "suffix_controls": 3,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": 1.6760432009947879,
+      "sampling_seed": 17104,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_500",
+      "trial": "phase_stochastic_17105",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.606863521006229,
+      "sampling_seed": 17105,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_1000",
+      "trial": "cold_deterministic",
+      "prefix": 0,
+      "controls": 1,
+      "suffix_controls": 1,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -4.220561156141544,
+      "sampling_seed": 42,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_1000",
+      "trial": "phase_deterministic",
+      "prefix": 7,
+      "controls": 11,
+      "suffix_controls": 4,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -5.8069098914329205,
+      "sampling_seed": 42,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_1000",
+      "trial": "phase_stochastic_17101",
+      "prefix": 7,
+      "controls": 10,
+      "suffix_controls": 3,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": 0.8269865015610253,
+      "sampling_seed": 17101,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_1000",
+      "trial": "phase_stochastic_17102",
+      "prefix": 7,
+      "controls": 10,
+      "suffix_controls": 3,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": 1.7013390920260691,
+      "sampling_seed": 17102,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_1000",
+      "trial": "phase_stochastic_17103",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.6389432765636425,
+      "sampling_seed": 17103,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_1000",
+      "trial": "phase_stochastic_17104",
+      "prefix": 7,
+      "controls": 11,
+      "suffix_controls": 4,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -3.6368903318153873,
+      "sampling_seed": 17104,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_1000",
+      "trial": "phase_stochastic_17105",
+      "prefix": 7,
+      "controls": 11,
+      "suffix_controls": 4,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -3.976943392319758,
+      "sampling_seed": 17105,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "cold_deterministic",
+      "prefix": 0,
+      "controls": 1,
+      "suffix_controls": 1,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -3.7805462241279675,
+      "sampling_seed": 42,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "cold_stochastic_17111",
+      "prefix": 0,
+      "controls": 1,
+      "suffix_controls": 1,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -3.919546673327693,
+      "sampling_seed": 17111,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "cold_stochastic_17112",
+      "prefix": 0,
+      "controls": 1,
+      "suffix_controls": 1,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -4.042317780172448,
+      "sampling_seed": 17112,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "cold_stochastic_17113",
+      "prefix": 0,
+      "controls": 1,
+      "suffix_controls": 1,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -3.9710101953721213,
+      "sampling_seed": 17113,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "cold_stochastic_17114",
+      "prefix": 0,
+      "controls": 1,
+      "suffix_controls": 1,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -4.127542546332321,
+      "sampling_seed": 17114,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "cold_stochastic_17115",
+      "prefix": 0,
+      "controls": 1,
+      "suffix_controls": 1,
+      "strict_force_success": false,
+      "environment_success": false,
+      "drop": true,
+      "palm": false,
+      "failure": "drop",
+      "final_force_angle": -3.9227091935490237,
+      "sampling_seed": 17115,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "phase_deterministic",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.660177151242411,
+      "sampling_seed": 42,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "phase_stochastic_17101",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.958011154625081,
+      "sampling_seed": 17101,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "phase_stochastic_17102",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.774416378103125,
+      "sampling_seed": 17102,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "phase_stochastic_17103",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.7989754427974605,
+      "sampling_seed": 17103,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "phase_stochastic_17104",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.557732035615477,
+      "sampling_seed": 17104,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "phase_stochastic_17105",
+      "prefix": 7,
+      "controls": 9,
+      "suffix_controls": 2,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.7689144757013375,
+      "sampling_seed": 17105,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "retention8_deterministic",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.843779811070088,
+      "sampling_seed": 42,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "retention8_stochastic_17121",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.7519513314195025,
+      "sampling_seed": 17121,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "retention8_stochastic_17122",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.836423509624789,
+      "sampling_seed": 17122,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "retention8_stochastic_17123",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.687008645513644,
+      "sampling_seed": 17123,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "retention8_stochastic_17124",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.710237144259435,
+      "sampling_seed": 17124,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    },
+    {
+      "label": "online_2000",
+      "trial": "retention8_stochastic_17125",
+      "prefix": 8,
+      "controls": 9,
+      "suffix_controls": 1,
+      "strict_force_success": true,
+      "environment_success": true,
+      "drop": false,
+      "palm": false,
+      "failure": null,
+      "final_force_angle": 6.651654521658559,
+      "sampling_seed": 17125,
+      "mean_std_action_direct_logp_bitexact": true,
+      "initial_and_final_all_rng_bitexact": true
+    }
+  ],
+  "unfinished": {
+    "actual_controls": 8,
+    "prefix_controls": 7,
+    "suffix_controls": 1,
+    "terminal": false,
+    "truncated": false,
+    "pending_slot": 2807,
+    "integration_python_environment_observation_exact": true,
+    "environment_binary_hash": "9dfab0d00d7bc97c0e7f5279a8a528623de589695e5f74c114e3afc66224b4b7",
+    "automatic_resume_supported": false
+  },
+  "runtime": {
+    "device": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "dtype": "float32",
+    "shape": [
+      1,
+      60
+    ],
+    "torch": "2.14.0+cu130",
+    "threads": 1,
+    "interop_threads": 1,
+    "tf32": false,
+    "cudnn_tf32": false,
+    "matmul_precision": "highest"
+  },
+  "caveats": [
+    "Training successes are assisted and can span policy updates.",
+    "Saved final evaluations establish prescribed assisted samples, not cold skill or a robustness rate.",
+    "Checkpoint is complete evidence at an optimizer boundary, not a supported resumable runner.",
+    "No new physics or learning was performed by this review."
+  ]
+}

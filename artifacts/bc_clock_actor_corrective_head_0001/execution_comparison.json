@@ -1,0 +1,1407 @@
+{
+  "status": "complete",
+  "candidate_sha256": "35756319358e56a6a51a224ed65301fdaf1eb2ab26dc0e8f802b92e9ead40e3d",
+  "actual_actions_reconstructed_bitexact": true,
+  "full_integration_states_verified": 20,
+  "source_physics_reexecuted": false,
+  "new_optimizer_steps": 0,
+  "nominal_source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+  "recovered_source_sha256": "15863ca838750ddbc4a44169ca75b1b4a3e46c677f29e7b0941cd20436aa46b0",
+  "references": {
+    "nominal9": {
+      "rows": [
+        {
+          "control_one_based": 1,
+          "elapsed_seconds": 0.0,
+          "obs_l2": 0.0,
+          "obs_max_abs": 0.0,
+          "action_max_abs": 2.905726432800293e-07,
+          "feedback_component_action_max_abs": 0.0,
+          "reference_fit_action_max_abs": 2.905726432800293e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 1.6244938716436508e-07,
+          "post_qvel_max_abs": 2.9590993489269496e-06,
+          "groups": {
+            "q": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "position": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "quaternion": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "angles": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "qvel": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "object_velocity": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "previous_action": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 2,
+          "elapsed_seconds": 0.10000000000000007,
+          "obs_l2": 2.8878239766345097e-06,
+          "obs_max_abs": 1.6245030565187335e-06,
+          "action_max_abs": 3.5762786865234375e-07,
+          "feedback_component_action_max_abs": 3.427267074584961e-07,
+          "reference_fit_action_max_abs": 1.1920928955078125e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 3.518218867903933e-07,
+          "post_qvel_max_abs": 7.948076231834023e-06,
+          "groups": {
+            "q": {
+              "l2": 2.863847203695441e-07,
+              "max_abs": 1.7881393432617188e-07
+            },
+            "position": {
+              "l2": 5.595509437245902e-09,
+              "max_abs": 5.587935447692871e-09
+            },
+            "quaternion": {
+              "l2": 9.937832660735984e-08,
+              "max_abs": 5.960464477539063e-08
+            },
+            "angles": {
+              "l2": 1.0081566870212555e-07,
+              "max_abs": 1.0081566870212555e-07
+            },
+            "qvel": {
+              "l2": 2.826092266662455e-06,
+              "max_abs": 1.6245030565187335e-06
+            },
+            "object_velocity": {
+              "l2": 6.348773820087887e-08,
+              "max_abs": 4.525645636022091e-08
+            },
+            "previous_action": {
+              "l2": 4.966002001528139e-07,
+              "max_abs": 2.905726432800293e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 3,
+          "elapsed_seconds": 0.20000000000000015,
+          "obs_l2": 4.79548905503468e-06,
+          "obs_max_abs": 2.5033950805664062e-06,
+          "action_max_abs": 2.980232238769531e-07,
+          "feedback_component_action_max_abs": 2.086162567138672e-07,
+          "reference_fit_action_max_abs": 2.980232238769531e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.0017038126137716159,
+          "post_qvel_max_abs": 0.0692411963547368,
+          "groups": {
+            "q": {
+              "l2": 6.154738792199904e-07,
+              "max_abs": 2.980232238769531e-07
+            },
+            "position": {
+              "l2": 1.009596735042232e-08,
+              "max_abs": 9.19681042432785e-09
+            },
+            "quaternion": {
+              "l2": 4.4505917065142667e-07,
+              "max_abs": 3.2782554626464844e-07
+            },
+            "angles": {
+              "l2": 7.813913301113223e-07,
+              "max_abs": 7.748603820800781e-07
+            },
+            "qvel": {
+              "l2": 4.628579875251881e-06,
+              "max_abs": 2.5033950805664062e-06
+            },
+            "object_velocity": {
+              "l2": 1.179952991359819e-07,
+              "max_abs": 9.499490261077881e-08
+            },
+            "previous_action": {
+              "l2": 6.094921033447254e-07,
+              "max_abs": 3.5762786865234375e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 4,
+          "elapsed_seconds": 0.3000000000000002,
+          "obs_l2": 0.023823662977376696,
+          "obs_max_abs": 0.01703810691833496,
+          "action_max_abs": 9.213387966156006e-05,
+          "feedback_component_action_max_abs": 9.202957153320312e-05,
+          "reference_fit_action_max_abs": 1.9371509552001953e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.0019898798874369295,
+          "post_qvel_max_abs": 0.030978465261128102,
+          "groups": {
+            "q": {
+              "l2": 0.002352300208793118,
+              "max_abs": 0.0017037391662597656
+            },
+            "position": {
+              "l2": 8.411412758433539e-05,
+              "max_abs": 6.30691647529602e-05
+            },
+            "quaternion": {
+              "l2": 0.0019702056486002105,
+              "max_abs": 0.001623254269361496
+            },
+            "angles": {
+              "l2": 0.0020012857029842426,
+              "max_abs": 0.0020012855529785156
+            },
+            "qvel": {
+              "l2": 0.02352513916901397,
+              "max_abs": 0.01703810691833496
+            },
+            "object_velocity": {
+              "l2": 0.0008411292105231839,
+              "max_abs": 0.0006306767463684082
+            },
+            "previous_action": {
+              "l2": 4.097141946812725e-07,
+              "max_abs": 2.980232238769531e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 5,
+          "elapsed_seconds": 0.4000000000000003,
+          "obs_l2": 0.025184336809672452,
+          "obs_max_abs": 0.01585996150970459,
+          "action_max_abs": 8.153915405273438e-05,
+          "feedback_component_action_max_abs": 8.165836334228516e-05,
+          "reference_fit_action_max_abs": 1.9371509552001953e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.021402597244919927,
+          "post_qvel_max_abs": 1.230575091262832,
+          "groups": {
+            "q": {
+              "l2": 0.003562700955324844,
+              "max_abs": 0.0018191337585449219
+            },
+            "position": {
+              "l2": 7.58443296048659e-05,
+              "max_abs": 6.373971700668335e-05
+            },
+            "quaternion": {
+              "l2": 0.0021849412355259405,
+              "max_abs": 0.0016856789588928223
+            },
+            "angles": {
+              "l2": 0.004486956403079677,
+              "max_abs": 0.004015922546386719
+            },
+            "qvel": {
+              "l2": 0.024409273967606938,
+              "max_abs": 0.01585996150970459
+            },
+            "object_velocity": {
+              "l2": 0.0009018535835953813,
+              "max_abs": 0.000666104257106781
+            },
+            "previous_action": {
+              "l2": 0.00013960159683980435,
+              "max_abs": 9.213387966156006e-05
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 6,
+          "elapsed_seconds": 0.5000000000000003,
+          "obs_l2": 0.4163721962787803,
+          "obs_max_abs": 0.211533784866333,
+          "action_max_abs": 0.00011008977890014648,
+          "feedback_component_action_max_abs": 0.0001103132963180542,
+          "reference_fit_action_max_abs": 2.384185791015625e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.060844089472323226,
+          "post_qvel_max_abs": 3.081358832084275,
+          "groups": {
+            "q": {
+              "l2": 0.04161951730534345,
+              "max_abs": 0.021402597427368164
+            },
+            "position": {
+              "l2": 0.0013325210154412253,
+              "max_abs": 0.0009920019656419754
+            },
+            "quaternion": {
+              "l2": 0.0182240442365815,
+              "max_abs": 0.012799859046936035
+            },
+            "angles": {
+              "l2": 0.03133507672092055,
+              "max_abs": 0.031076669692993164
+            },
+            "qvel": {
+              "l2": 0.41245596778587207,
+              "max_abs": 0.211533784866333
+            },
+            "object_velocity": {
+              "l2": 0.014067858933862542,
+              "max_abs": 0.010557424277067184
+            },
+            "previous_action": {
+              "l2": 0.0001147276014775483,
+              "max_abs": 8.153915405273438e-05
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 7,
+          "elapsed_seconds": 0.6000000000000004,
+          "obs_l2": 0.8742875484329485,
+          "obs_max_abs": 0.7815933227539062,
+          "action_max_abs": 0.0001920834183692932,
+          "feedback_component_action_max_abs": 0.00019215047359466553,
+          "reference_fit_action_max_abs": 2.682209014892578e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.08815401750189666,
+          "post_qvel_max_abs": 3.1557354955306915,
+          "groups": {
+            "q": {
+              "l2": 0.07358341663931041,
+              "max_abs": 0.0608440637588501
+            },
+            "position": {
+              "l2": 0.007354613608222024,
+              "max_abs": 0.006368745118379593
+            },
+            "quaternion": {
+              "l2": 0.05313467754563819,
+              "max_abs": 0.0446542352437973
+            },
+            "angles": {
+              "l2": 0.06129965775518612,
+              "max_abs": 0.05283832550048828
+            },
+            "qvel": {
+              "l2": 0.8651699405793452,
+              "max_abs": 0.7815933227539062
+            },
+            "object_velocity": {
+              "l2": 0.061726189307972246,
+              "max_abs": 0.05480329692363739
+            },
+            "previous_action": {
+              "l2": 0.00013142268324254226,
+              "max_abs": 0.00011008977890014648
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 8,
+          "elapsed_seconds": 0.7000000000000005,
+          "obs_l2": 1.9528331555750083,
+          "obs_max_abs": 1.4899811744689941,
+          "action_max_abs": 0.0008983612060546875,
+          "feedback_component_action_max_abs": 0.0008984208106994629,
+          "reference_fit_action_max_abs": 1.1920928955078125e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.8121145821309819,
+          "post_qvel_max_abs": 2.8599112788016683,
+          "groups": {
+            "q": {
+              "l2": 0.15882569438407507,
+              "max_abs": 0.08815407752990723
+            },
+            "position": {
+              "l2": 0.008210987158644305,
+              "max_abs": 0.0059463139332365245
+            },
+            "quaternion": {
+              "l2": 0.09957425316480911,
+              "max_abs": 0.09574450552463531
+            },
+            "angles": {
+              "l2": 0.25029353926629444,
+              "max_abs": 0.24465274810791016
+            },
+            "qvel": {
+              "l2": 1.927168856883818,
+              "max_abs": 1.4899811744689941
+            },
+            "object_velocity": {
+              "l2": 0.04150348801187322,
+              "max_abs": 0.029670804738998413
+            },
+            "previous_action": {
+              "l2": 0.0002861023082126239,
+              "max_abs": 0.0001920834183692932
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 9,
+          "elapsed_seconds": 0.8000000000000006,
+          "obs_l2": 2.756072425147176,
+          "obs_max_abs": 1.7209806442260742,
+          "action_max_abs": 0.002039104700088501,
+          "feedback_component_action_max_abs": 0.002038806676864624,
+          "reference_fit_action_max_abs": 2.980232238769531e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.5841236841568931,
+          "post_qvel_max_abs": 2.6007324755052754,
+          "groups": {
+            "q": {
+              "l2": 0.20440502546270556,
+              "max_abs": 0.10706174373626709
+            },
+            "position": {
+              "l2": 0.01690593421260084,
+              "max_abs": 0.01651354879140854
+            },
+            "quaternion": {
+              "l2": 0.8140909697846802,
+              "max_abs": 0.5837622284889221
+            },
+            "angles": {
+              "l2": 1.7382834478178597,
+              "max_abs": 1.7209806442260742
+            },
+            "qvel": {
+              "l2": 1.95439297047279,
+              "max_abs": 1.0626260042190552
+            },
+            "object_velocity": {
+              "l2": 0.22324721439194492,
+              "max_abs": 0.2207101583480835
+            },
+            "previous_action": {
+              "l2": 0.0018258699030582143,
+              "max_abs": 0.0008983612060546875
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        }
+      ],
+      "first_action_difference_above_declared_thresholds": {
+        "1e-06": {
+          "control_one_based": 4,
+          "elapsed_seconds": 0.3000000000000002,
+          "obs_l2": 0.023823662977376696,
+          "obs_max_abs": 0.01703810691833496,
+          "action_max_abs": 9.213387966156006e-05,
+          "feedback_component_action_max_abs": 9.202957153320312e-05,
+          "reference_fit_action_max_abs": 1.9371509552001953e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.0019898798874369295,
+          "post_qvel_max_abs": 0.030978465261128102,
+          "groups": {
+            "q": {
+              "l2": 0.002352300208793118,
+              "max_abs": 0.0017037391662597656
+            },
+            "position": {
+              "l2": 8.411412758433539e-05,
+              "max_abs": 6.30691647529602e-05
+            },
+            "quaternion": {
+              "l2": 0.0019702056486002105,
+              "max_abs": 0.001623254269361496
+            },
+            "angles": {
+              "l2": 0.0020012857029842426,
+              "max_abs": 0.0020012855529785156
+            },
+            "qvel": {
+              "l2": 0.02352513916901397,
+              "max_abs": 0.01703810691833496
+            },
+            "object_velocity": {
+              "l2": 0.0008411292105231839,
+              "max_abs": 0.0006306767463684082
+            },
+            "previous_action": {
+              "l2": 4.097141946812725e-07,
+              "max_abs": 2.980232238769531e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        "0.0001": {
+          "control_one_based": 6,
+          "elapsed_seconds": 0.5000000000000003,
+          "obs_l2": 0.4163721962787803,
+          "obs_max_abs": 0.211533784866333,
+          "action_max_abs": 0.00011008977890014648,
+          "feedback_component_action_max_abs": 0.0001103132963180542,
+          "reference_fit_action_max_abs": 2.384185791015625e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.060844089472323226,
+          "post_qvel_max_abs": 3.081358832084275,
+          "groups": {
+            "q": {
+              "l2": 0.04161951730534345,
+              "max_abs": 0.021402597427368164
+            },
+            "position": {
+              "l2": 0.0013325210154412253,
+              "max_abs": 0.0009920019656419754
+            },
+            "quaternion": {
+              "l2": 0.0182240442365815,
+              "max_abs": 0.012799859046936035
+            },
+            "angles": {
+              "l2": 0.03133507672092055,
+              "max_abs": 0.031076669692993164
+            },
+            "qvel": {
+              "l2": 0.41245596778587207,
+              "max_abs": 0.211533784866333
+            },
+            "object_velocity": {
+              "l2": 0.014067858933862542,
+              "max_abs": 0.010557424277067184
+            },
+            "previous_action": {
+              "l2": 0.0001147276014775483,
+              "max_abs": 8.153915405273438e-05
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        "0.001": {
+          "control_one_based": 9,
+          "elapsed_seconds": 0.8000000000000006,
+          "obs_l2": 2.756072425147176,
+          "obs_max_abs": 1.7209806442260742,
+          "action_max_abs": 0.002039104700088501,
+          "feedback_component_action_max_abs": 0.002038806676864624,
+          "reference_fit_action_max_abs": 2.980232238769531e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.5841236841568931,
+          "post_qvel_max_abs": 2.6007324755052754,
+          "groups": {
+            "q": {
+              "l2": 0.20440502546270556,
+              "max_abs": 0.10706174373626709
+            },
+            "position": {
+              "l2": 0.01690593421260084,
+              "max_abs": 0.01651354879140854
+            },
+            "quaternion": {
+              "l2": 0.8140909697846802,
+              "max_abs": 0.5837622284889221
+            },
+            "angles": {
+              "l2": 1.7382834478178597,
+              "max_abs": 1.7209806442260742
+            },
+            "qvel": {
+              "l2": 1.95439297047279,
+              "max_abs": 1.0626260042190552
+            },
+            "object_velocity": {
+              "l2": 0.22324721439194492,
+              "max_abs": 0.2207101583480835
+            },
+            "previous_action": {
+              "l2": 0.0018258699030582143,
+              "max_abs": 0.0008983612060546875
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        "0.01": null
+      },
+      "threshold_note": "Descriptive normalized-action error thresholds, not a physical safety or success definition"
+    },
+    "recovered14": {
+      "rows": [
+        {
+          "control_one_based": 1,
+          "elapsed_seconds": 0.0,
+          "obs_l2": 0.0,
+          "obs_max_abs": 0.0,
+          "action_max_abs": 2.980232238769531e-07,
+          "feedback_component_action_max_abs": 0.0,
+          "reference_fit_action_max_abs": 2.980232238769531e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 2.0875578443657616e-07,
+          "post_qvel_max_abs": 2.874519682118234e-06,
+          "groups": {
+            "q": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "position": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "quaternion": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "angles": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "qvel": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "object_velocity": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "previous_action": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 2,
+          "elapsed_seconds": 0.10000000000000007,
+          "obs_l2": 4.151682907693416e-06,
+          "obs_max_abs": 2.087559551000595e-06,
+          "action_max_abs": 5.364418029785156e-07,
+          "feedback_component_action_max_abs": 5.364418029785156e-07,
+          "reference_fit_action_max_abs": 1.7881393432617188e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 8.485854608997201e-07,
+          "post_qvel_max_abs": 2.729088746633579e-05,
+          "groups": {
+            "q": {
+              "l2": 4.227817434967313e-07,
+              "max_abs": 1.7881393432617188e-07
+            },
+            "position": {
+              "l2": 2.399963341663627e-09,
+              "max_abs": 1.862645149230957e-09
+            },
+            "quaternion": {
+              "l2": 9.504168548508455e-08,
+              "max_abs": 7.450580596923828e-08
+            },
+            "angles": {
+              "l2": 1.4901161193847656e-07,
+              "max_abs": 1.4901161193847656e-07
+            },
+            "qvel": {
+              "l2": 4.09341652283401e-06,
+              "max_abs": 2.087559551000595e-06
+            },
+            "object_velocity": {
+              "l2": 2.6115705469507195e-08,
+              "max_abs": 1.894659362733364e-08
+            },
+            "previous_action": {
+              "l2": 5.19367462997529e-07,
+              "max_abs": 2.980232238769531e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 3,
+          "elapsed_seconds": 0.20000000000000015,
+          "obs_l2": 1.0045588633826453e-05,
+          "obs_max_abs": 7.033348083496094e-06,
+          "action_max_abs": 5.960464477539062e-07,
+          "feedback_component_action_max_abs": 6.258487701416016e-07,
+          "reference_fit_action_max_abs": 3.2782554626464844e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 2.533563624673718e-06,
+          "post_qvel_max_abs": 4.675072768245414e-05,
+          "groups": {
+            "q": {
+              "l2": 1.1400118738970258e-06,
+              "max_abs": 8.344650268554688e-07
+            },
+            "position": {
+              "l2": 3.780677194452912e-08,
+              "max_abs": 3.664172254502773e-08
+            },
+            "quaternion": {
+              "l2": 2.2724270820617676e-07,
+              "max_abs": 1.4901161193847656e-07
+            },
+            "angles": {
+              "l2": 3.332000937312528e-07,
+              "max_abs": 2.980232238769531e-07
+            },
+            "qvel": {
+              "l2": 9.911994362991171e-06,
+              "max_abs": 7.033348083496094e-06
+            },
+            "object_velocity": {
+              "l2": 3.8931177410634733e-07,
+              "max_abs": 3.809109330177307e-07
+            },
+            "previous_action": {
+              "l2": 1.0251522399673978e-06,
+              "max_abs": 5.364418029785156e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 4,
+          "elapsed_seconds": 0.3000000000000002,
+          "obs_l2": 1.2636614035229214e-05,
+          "obs_max_abs": 5.9604644775390625e-06,
+          "action_max_abs": 3.725290298461914e-07,
+          "feedback_component_action_max_abs": 3.5762786865234375e-07,
+          "reference_fit_action_max_abs": 5.960464477539063e-08,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 1.8328189479444035e-06,
+          "post_qvel_max_abs": 2.6873541464189632e-05,
+          "groups": {
+            "q": {
+              "l2": 1.378840606639995e-06,
+              "max_abs": 1.1324882507324219e-06
+            },
+            "position": {
+              "l2": 4.07446974035862e-08,
+              "max_abs": 3.4458935260772705e-08
+            },
+            "quaternion": {
+              "l2": 2.6056115508761267e-06,
+              "max_abs": 2.1457672119140625e-06
+            },
+            "angles": {
+              "l2": 5.253668486933781e-06,
+              "max_abs": 5.245208740234375e-06
+            },
+            "qvel": {
+              "l2": 1.1074440342783562e-05,
+              "max_abs": 5.9604644775390625e-06
+            },
+            "object_velocity": {
+              "l2": 4.547296321292856e-07,
+              "max_abs": 3.8743019104003906e-07
+            },
+            "previous_action": {
+              "l2": 7.354594873936812e-07,
+              "max_abs": 5.960464477539062e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 5,
+          "elapsed_seconds": 0.4000000000000003,
+          "obs_l2": 2.4643601141879874e-05,
+          "obs_max_abs": 1.5020370483398438e-05,
+          "action_max_abs": 3.5762786865234375e-07,
+          "feedback_component_action_max_abs": 2.2351741790771484e-07,
+          "reference_fit_action_max_abs": 2.086162567138672e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 2.8773173360585602e-06,
+          "post_qvel_max_abs": 9.017888269635677e-05,
+          "groups": {
+            "q": {
+              "l2": 2.9281919217037865e-06,
+              "max_abs": 1.9073486328125e-06
+            },
+            "position": {
+              "l2": 4.064078726555894e-08,
+              "max_abs": 3.725290298461914e-08
+            },
+            "quaternion": {
+              "l2": 1.9128159550104326e-06,
+              "max_abs": 1.5497207641601562e-06
+            },
+            "angles": {
+              "l2": 6.348384359213995e-06,
+              "max_abs": 5.245208740234375e-06
+            },
+            "qvel": {
+              "l2": 2.3536055089139816e-05,
+              "max_abs": 1.5020370483398438e-05
+            },
+            "object_velocity": {
+              "l2": 7.11938088614167e-07,
+              "max_abs": 5.168840289115906e-07
+            },
+            "previous_action": {
+              "l2": 5.6349248889652e-07,
+              "max_abs": 3.725290298461914e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 6,
+          "elapsed_seconds": 0.5000000000000003,
+          "obs_l2": 3.1746294233574785e-05,
+          "obs_max_abs": 1.7642974853515625e-05,
+          "action_max_abs": 3.5762786865234375e-07,
+          "feedback_component_action_max_abs": 3.427267074584961e-07,
+          "reference_fit_action_max_abs": 1.1920928955078125e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 1.0525298588970333e-05,
+          "post_qvel_max_abs": 0.00011663610065459906,
+          "groups": {
+            "q": {
+              "l2": 2.8771501306858865e-06,
+              "max_abs": 2.2649765014648438e-06
+            },
+            "position": {
+              "l2": 6.760272921606714e-08,
+              "max_abs": 5.3085386753082275e-08
+            },
+            "quaternion": {
+              "l2": 3.0321832129076047e-06,
+              "max_abs": 2.6226043701171875e-06
+            },
+            "angles": {
+              "l2": 6.9510363278929e-06,
+              "max_abs": 5.9604644775390625e-06
+            },
+            "qvel": {
+              "l2": 3.068581475266808e-05,
+              "max_abs": 1.7642974853515625e-05
+            },
+            "object_velocity": {
+              "l2": 4.5396984304356237e-07,
+              "max_abs": 3.8370490074157715e-07
+            },
+            "previous_action": {
+              "l2": 4.563746700022684e-07,
+              "max_abs": 3.5762786865234375e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 7,
+          "elapsed_seconds": 0.6000000000000004,
+          "obs_l2": 5.591193236474849e-05,
+          "obs_max_abs": 3.409385681152344e-05,
+          "action_max_abs": 7.227063179016113e-07,
+          "feedback_component_action_max_abs": 7.078051567077637e-07,
+          "reference_fit_action_max_abs": 1.1920928955078125e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 6.227491105514904e-06,
+          "post_qvel_max_abs": 6.606445007881212e-05,
+          "groups": {
+            "q": {
+              "l2": 4.8494065727272305e-06,
+              "max_abs": 3.337860107421875e-06
+            },
+            "position": {
+              "l2": 2.3001310886818964e-07,
+              "max_abs": 2.05356627702713e-07
+            },
+            "quaternion": {
+              "l2": 1.2938499013544782e-05,
+              "max_abs": 1.150369644165039e-05
+            },
+            "angles": {
+              "l2": 2.59657426450322e-05,
+              "max_abs": 2.5272369384765625e-05
+            },
+            "qvel": {
+              "l2": 4.746858161204816e-05,
+              "max_abs": 3.409385681152344e-05
+            },
+            "object_velocity": {
+              "l2": 2.7329111499572787e-06,
+              "max_abs": 2.4512410163879395e-06
+            },
+            "previous_action": {
+              "l2": 4.6361533361983434e-07,
+              "max_abs": 3.5762786865234375e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 8,
+          "elapsed_seconds": 0.7000000000000005,
+          "obs_l2": 4.8459134021060876e-05,
+          "obs_max_abs": 3.039836883544922e-05,
+          "action_max_abs": 6.966292858123779e-07,
+          "feedback_component_action_max_abs": 6.966292858123779e-07,
+          "reference_fit_action_max_abs": 2.384185791015625e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 2.1132393030420804e-05,
+          "post_qvel_max_abs": 0.0001837450116823902,
+          "groups": {
+            "q": {
+              "l2": 4.177220021882552e-06,
+              "max_abs": 3.2186508178710938e-06
+            },
+            "position": {
+              "l2": 2.4770688480716137e-07,
+              "max_abs": 2.2212043404579163e-07
+            },
+            "quaternion": {
+              "l2": 7.391588489784205e-06,
+              "max_abs": 6.67572021484375e-06
+            },
+            "angles": {
+              "l2": 2.9521573433235372e-05,
+              "max_abs": 2.5272369384765625e-05
+            },
+            "qvel": {
+              "l2": 3.740541264382862e-05,
+              "max_abs": 3.039836883544922e-05
+            },
+            "object_velocity": {
+              "l2": 2.131207230202099e-06,
+              "max_abs": 1.900363713502884e-06
+            },
+            "previous_action": {
+              "l2": 9.546342596845977e-07,
+              "max_abs": 7.227063179016113e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 9,
+          "elapsed_seconds": 0.8000000000000006,
+          "obs_l2": 0.00015827601460661025,
+          "obs_max_abs": 0.00010347366333007812,
+          "action_max_abs": 1.0281801223754883e-06,
+          "feedback_component_action_max_abs": 1.0132789611816406e-06,
+          "reference_fit_action_max_abs": 2.384185791015625e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 4.855117796900843e-05,
+          "post_qvel_max_abs": 0.00038790126153998017,
+          "groups": {
+            "q": {
+              "l2": 1.2638626981605987e-05,
+              "max_abs": 1.0311603546142578e-05
+            },
+            "position": {
+              "l2": 5.882057632474602e-07,
+              "max_abs": 5.21540641784668e-07
+            },
+            "quaternion": {
+              "l2": 2.312249516768502e-05,
+              "max_abs": 2.104043960571289e-05
+            },
+            "angles": {
+              "l2": 4.893160170928491e-05,
+              "max_abs": 4.649162292480469e-05
+            },
+            "qvel": {
+              "l2": 0.0001481240314005056,
+              "max_abs": 0.00010347366333007812
+            },
+            "object_velocity": {
+              "l2": 4.479938455028612e-06,
+              "max_abs": 4.291534423828125e-06
+            },
+            "previous_action": {
+              "l2": 1.2107709268439973e-06,
+              "max_abs": 6.966292858123779e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 10,
+          "elapsed_seconds": 0.9000000000000007,
+          "obs_l2": 0.0002534708814093218,
+          "obs_max_abs": 0.00013741850852966309,
+          "action_max_abs": 2.7626752853393555e-05,
+          "feedback_component_action_max_abs": 2.7686357498168945e-05,
+          "reference_fit_action_max_abs": 2.2351741790771484e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.007950137888577347,
+          "post_qvel_max_abs": 0.17816803461645048,
+          "groups": {
+            "q": {
+              "l2": 2.4811405803712587e-05,
+              "max_abs": 1.3828277587890625e-05
+            },
+            "position": {
+              "l2": 3.6600825682936957e-06,
+              "max_abs": 2.6347115635871887e-06
+            },
+            "quaternion": {
+              "l2": 5.252750008409778e-05,
+              "max_abs": 4.6312808990478516e-05
+            },
+            "angles": {
+              "l2": 5.5875976778306794e-05,
+              "max_abs": 4.649162292480469e-05
+            },
+            "qvel": {
+              "l2": 0.00023671757720939075,
+              "max_abs": 0.00013741850852966309
+            },
+            "object_velocity": {
+              "l2": 4.121918487193394e-05,
+              "max_abs": 2.8349459171295166e-05
+            },
+            "previous_action": {
+              "l2": 1.7291768706296276e-06,
+              "max_abs": 1.0281801223754883e-06
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 11,
+          "elapsed_seconds": 1.0000000000000007,
+          "obs_l2": 0.19133131474909565,
+          "obs_max_abs": 0.07953941822052002,
+          "action_max_abs": 0.0031014084815979004,
+          "feedback_component_action_max_abs": 0.0031014084815979004,
+          "reference_fit_action_max_abs": 0.0,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.046102768183363896,
+          "post_qvel_max_abs": 3.8117599281785757,
+          "groups": {
+            "q": {
+              "l2": 0.01901847520521358,
+              "max_abs": 0.007950127124786377
+            },
+            "position": {
+              "l2": 0.0008299278545599782,
+              "max_abs": 0.000727389007806778
+            },
+            "quaternion": {
+              "l2": 0.0029961431627916267,
+              "max_abs": 0.0029153525829315186
+            },
+            "angles": {
+              "l2": 0.0010070803039001442,
+              "max_abs": 0.0010066032409667969
+            },
+            "qvel": {
+              "l2": 0.1901752845203188,
+              "max_abs": 0.07953941822052002
+            },
+            "object_velocity": {
+              "l2": 0.008285490883109268,
+              "max_abs": 0.007260657846927643
+            },
+            "previous_action": {
+              "l2": 3.921853727920093e-05,
+              "max_abs": 2.7626752853393555e-05
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 12,
+          "elapsed_seconds": 1.1000000000000008,
+          "obs_l2": 0.7802971881322212,
+          "obs_max_abs": 0.41625355184078217,
+          "action_max_abs": 0.07797999121248722,
+          "feedback_component_action_max_abs": 0.07798001356422901,
+          "reference_fit_action_max_abs": 1.1920928955078125e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.16368856533146559,
+          "post_qvel_max_abs": 2.0667510638559765,
+          "groups": {
+            "q": {
+              "l2": 0.08792915785943445,
+              "max_abs": 0.04610276222229004
+            },
+            "position": {
+              "l2": 0.001650704661783283,
+              "max_abs": 0.0015572905540466309
+            },
+            "quaternion": {
+              "l2": 0.011269227113659687,
+              "max_abs": 0.009587466716766357
+            },
+            "angles": {
+              "l2": 0.01878576175467784,
+              "max_abs": 0.018758773803710938
+            },
+            "qvel": {
+              "l2": 0.7749209857794698,
+              "max_abs": 0.41625355184078217
+            },
+            "object_velocity": {
+              "l2": 0.011486650712582923,
+              "max_abs": 0.00829903595149517
+            },
+            "previous_action": {
+              "l2": 0.0038810448129598203,
+              "max_abs": 0.0031014084815979004
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 13,
+          "elapsed_seconds": 1.2000000000000008,
+          "obs_l2": 2.5526516313106344,
+          "obs_max_abs": 1.5621486604213715,
+          "action_max_abs": 0.27402567863464355,
+          "feedback_component_action_max_abs": 0.27402567863464355,
+          "reference_fit_action_max_abs": 2.086162567138672e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.29866037674457957,
+          "post_qvel_max_abs": 17.066838148341304,
+          "groups": {
+            "q": {
+              "l2": 0.3138528773187292,
+              "max_abs": 0.1636885665357113
+            },
+            "position": {
+              "l2": 0.0037018374398421865,
+              "max_abs": 0.002841820940375328
+            },
+            "quaternion": {
+              "l2": 0.07808031757071145,
+              "max_abs": 0.06166832149028778
+            },
+            "angles": {
+              "l2": 0.1302786401301561,
+              "max_abs": 0.1289210319519043
+            },
+            "qvel": {
+              "l2": 2.5250821813961175,
+              "max_abs": 1.5621486604213715
+            },
+            "object_velocity": {
+              "l2": 0.04431886025512524,
+              "max_abs": 0.0315850805491209
+            },
+            "previous_action": {
+              "l2": 0.12821768359540628,
+              "max_abs": 0.07797999121248722
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        {
+          "control_one_based": 14,
+          "elapsed_seconds": 1.300000000000001,
+          "obs_l2": 4.917538515365403,
+          "obs_max_abs": 2.089253069832921,
+          "action_max_abs": 0.4659726023674011,
+          "feedback_component_action_max_abs": 0.4659728407859802,
+          "reference_fit_action_max_abs": 2.384185791015625e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.5963877062103353,
+          "post_qvel_max_abs": 25.139956551519706,
+          "groups": {
+            "q": {
+              "l2": 0.6651853107658401,
+              "max_abs": 0.2986603658646345
+            },
+            "position": {
+              "l2": 0.006717798634820049,
+              "max_abs": 0.005986295640468597
+            },
+            "quaternion": {
+              "l2": 0.14350026975849997,
+              "max_abs": 0.13915788382291794
+            },
+            "angles": {
+              "l2": 0.30715462427613627,
+              "max_abs": 0.27878904342651367
+            },
+            "qvel": {
+              "l2": 4.825786839271068,
+              "max_abs": 2.089253069832921
+            },
+            "object_velocity": {
+              "l2": 0.08245523084444308,
+              "max_abs": 0.07048280816525221
+            },
+            "previous_action": {
+              "l2": 0.5742078454833183,
+              "max_abs": 0.27402567863464355
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        }
+      ],
+      "first_action_difference_above_declared_thresholds": {
+        "1e-06": {
+          "control_one_based": 9,
+          "elapsed_seconds": 0.8000000000000006,
+          "obs_l2": 0.00015827601460661025,
+          "obs_max_abs": 0.00010347366333007812,
+          "action_max_abs": 1.0281801223754883e-06,
+          "feedback_component_action_max_abs": 1.0132789611816406e-06,
+          "reference_fit_action_max_abs": 2.384185791015625e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 4.855117796900843e-05,
+          "post_qvel_max_abs": 0.00038790126153998017,
+          "groups": {
+            "q": {
+              "l2": 1.2638626981605987e-05,
+              "max_abs": 1.0311603546142578e-05
+            },
+            "position": {
+              "l2": 5.882057632474602e-07,
+              "max_abs": 5.21540641784668e-07
+            },
+            "quaternion": {
+              "l2": 2.312249516768502e-05,
+              "max_abs": 2.104043960571289e-05
+            },
+            "angles": {
+              "l2": 4.893160170928491e-05,
+              "max_abs": 4.649162292480469e-05
+            },
+            "qvel": {
+              "l2": 0.0001481240314005056,
+              "max_abs": 0.00010347366333007812
+            },
+            "object_velocity": {
+              "l2": 4.479938455028612e-06,
+              "max_abs": 4.291534423828125e-06
+            },
+            "previous_action": {
+              "l2": 1.2107709268439973e-06,
+              "max_abs": 6.966292858123779e-07
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        "0.0001": {
+          "control_one_based": 11,
+          "elapsed_seconds": 1.0000000000000007,
+          "obs_l2": 0.19133131474909565,
+          "obs_max_abs": 0.07953941822052002,
+          "action_max_abs": 0.0031014084815979004,
+          "feedback_component_action_max_abs": 0.0031014084815979004,
+          "reference_fit_action_max_abs": 0.0,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.046102768183363896,
+          "post_qvel_max_abs": 3.8117599281785757,
+          "groups": {
+            "q": {
+              "l2": 0.01901847520521358,
+              "max_abs": 0.007950127124786377
+            },
+            "position": {
+              "l2": 0.0008299278545599782,
+              "max_abs": 0.000727389007806778
+            },
+            "quaternion": {
+              "l2": 0.0029961431627916267,
+              "max_abs": 0.0029153525829315186
+            },
+            "angles": {
+              "l2": 0.0010070803039001442,
+              "max_abs": 0.0010066032409667969
+            },
+            "qvel": {
+              "l2": 0.1901752845203188,
+              "max_abs": 0.07953941822052002
+            },
+            "object_velocity": {
+              "l2": 0.008285490883109268,
+              "max_abs": 0.007260657846927643
+            },
+            "previous_action": {
+              "l2": 3.921853727920093e-05,
+              "max_abs": 2.7626752853393555e-05
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        "0.001": {
+          "control_one_based": 11,
+          "elapsed_seconds": 1.0000000000000007,
+          "obs_l2": 0.19133131474909565,
+          "obs_max_abs": 0.07953941822052002,
+          "action_max_abs": 0.0031014084815979004,
+          "feedback_component_action_max_abs": 0.0031014084815979004,
+          "reference_fit_action_max_abs": 0.0,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.046102768183363896,
+          "post_qvel_max_abs": 3.8117599281785757,
+          "groups": {
+            "q": {
+              "l2": 0.01901847520521358,
+              "max_abs": 0.007950127124786377
+            },
+            "position": {
+              "l2": 0.0008299278545599782,
+              "max_abs": 0.000727389007806778
+            },
+            "quaternion": {
+              "l2": 0.0029961431627916267,
+              "max_abs": 0.0029153525829315186
+            },
+            "angles": {
+              "l2": 0.0010070803039001442,
+              "max_abs": 0.0010066032409667969
+            },
+            "qvel": {
+              "l2": 0.1901752845203188,
+              "max_abs": 0.07953941822052002
+            },
+            "object_velocity": {
+              "l2": 0.008285490883109268,
+              "max_abs": 0.007260657846927643
+            },
+            "previous_action": {
+              "l2": 3.921853727920093e-05,
+              "max_abs": 2.7626752853393555e-05
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        },
+        "0.01": {
+          "control_one_based": 12,
+          "elapsed_seconds": 1.1000000000000008,
+          "obs_l2": 0.7802971881322212,
+          "obs_max_abs": 0.41625355184078217,
+          "action_max_abs": 0.07797999121248722,
+          "feedback_component_action_max_abs": 0.07798001356422901,
+          "reference_fit_action_max_abs": 1.1920928955078125e-07,
+          "clock_difference": 0.0,
+          "post_qpos_max_abs": 0.16368856533146559,
+          "post_qvel_max_abs": 2.0667510638559765,
+          "groups": {
+            "q": {
+              "l2": 0.08792915785943445,
+              "max_abs": 0.04610276222229004
+            },
+            "position": {
+              "l2": 0.001650704661783283,
+              "max_abs": 0.0015572905540466309
+            },
+            "quaternion": {
+              "l2": 0.011269227113659687,
+              "max_abs": 0.009587466716766357
+            },
+            "angles": {
+              "l2": 0.01878576175467784,
+              "max_abs": 0.018758773803710938
+            },
+            "qvel": {
+              "l2": 0.7749209857794698,
+              "max_abs": 0.41625355184078217
+            },
+            "object_velocity": {
+              "l2": 0.011486650712582923,
+              "max_abs": 0.00829903595149517
+            },
+            "previous_action": {
+              "l2": 0.0038810448129598203,
+              "max_abs": 0.0031014084815979004
+            },
+            "clock": {
+              "l2": 0.0,
+              "max_abs": 0.0
+            }
+          }
+        }
+      },
+      "threshold_note": "Descriptive normalized-action error thresholds, not a physical safety or success definition"
+    }
+  }
+}

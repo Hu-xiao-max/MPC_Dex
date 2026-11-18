@@ -1,0 +1,15 @@
+........................................................................ [ 29%]
+........................................................................ [ 58%]
+........................................................................ [ 87%]
+...............................                                          [100%]
+=============================== warnings summary ===============================
+tests/test_env.py::test_contact_model_and_observation_contract
+  /home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/gymnasium/utils/env_checker.py:317: UserWarning: [33mWARN: A Box observation space minimum value is -infinity. This is probably too low.[0m
+    logger.warn(
+
+tests/test_env.py::test_contact_model_and_observation_contract
+  /home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/gymnasium/utils/env_checker.py:321: UserWarning: [33mWARN: A Box observation space maximum value is infinity. This is probably too high.[0m
+    logger.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+247 passed, 2 warnings in 37.26s

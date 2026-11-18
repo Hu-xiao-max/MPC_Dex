@@ -1,0 +1,27 @@
+{
+  "latent_std_min": 0.05000000074505806,
+  "latent_std_max": 0.05000000074505806,
+  "cold_reset_std_min": 0.05000000074505806,
+  "cold_reset_std_max": 0.05000000074505806,
+  "baseline_checkpoint_sha256": "bc00ed2358e2d50e33d9634da22e8bb350bda149b56644c4dfad268bfbddd77b",
+  "raw_mean_max_abs_change": 0.0,
+  "raw_mean_rms_change": 0.0,
+  "mean_action_max_abs_change": 0.0,
+  "mean_action_rms_change": 0.0,
+  "latent_std_max_abs_change": 0.2500000111758709,
+  "latent_std_rms_change": 0.2500000111758709,
+  "actor_parameter_max_abs_change": {
+    "trunk.0.weight": 0.0,
+    "trunk.0.bias": 0.0,
+    "trunk.1.weight": 0.0,
+    "trunk.1.bias": 0.0,
+    "trunk.3.weight": 0.0,
+    "trunk.3.bias": 0.0,
+    "trunk.4.weight": 0.0,
+    "trunk.4.bias": 0.0,
+    "mean_head.weight": 0.0,
+    "mean_head.bias": 0.0,
+    "log_std_head.weight": 0.0,
+    "log_std_head.bias": 1.7917594909667969
+  }
+}

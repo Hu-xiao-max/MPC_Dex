@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "tests": 4,
+  "command": ".venv/bin/python -m pytest artifacts/bootstrap_suffix_sac_0001/test_protocol.py -q",
+  "output": "4 passed in 0.86s",
+  "synthetic_schema_math_only": true,
+  "physics_executed": false,
+  "training_executed": false,
+  "runtime_created": false,
+  "actual_reviewed_source_sha256": {
+    "prepare.py": "22630f9869149fe052cb33d9aad3b985309a9ef12a44622c4ff33773b8b4d37f",
+    "run.py": "c942719863b03d8436e7c12653a1456aa1a18bb1a5e8e3e97590a980942b853a",
+    "test_protocol.py": "dbd30b33c3fb1041b3130921ac8ddfc5072871c576f13210740ab6bbe40edb8c"
+  },
+  "archived_core_vs_live": {
+    "mpc_dex/env.py": {
+      "archived_sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+      "live_sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+      "same": true
+    },
+    "mpc_dex/bootstrap_env.py": {
+      "archived_sha256": "69a06e73d70e9e58780bbefde790dd57c22966b1e8c0134201ee497e8876fc6b",
+      "live_sha256": "69a06e73d70e9e58780bbefde790dd57c22966b1e8c0134201ee497e8876fc6b",
+      "same": true
+    },
+    "mpc_dex/learning.py": {
+      "archived_sha256": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c",
+      "live_sha256": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c",
+      "same": true
+    },
+    "mpc_dex/replay.py": {
+      "archived_sha256": "e503f61fadd58a5780fed7f6ff82d33b599d3eef00dfdaea6b9dd636cfc84311",
+      "live_sha256": "e503f61fadd58a5780fed7f6ff82d33b599d3eef00dfdaea6b9dd636cfc84311",
+      "same": true
+    },
+    "scripts/audit_policy.py": {
+      "archived_sha256": "cf1496d88454de19fb20dfeb4726b5e9d15e66289d235723bd2b86ece7f236fe",
+      "live_sha256": "cf1496d88454de19fb20dfeb4726b5e9d15e66289d235723bd2b86ece7f236fe",
+      "same": true
+    }
+  },
+  "rollback_binding_sha256": "49f7740b3fbe52421ef0a375c0c060a6968bceb53053ab6dc5e25c3014273849",
+  "final_changes_since_independent_review": [
+    "Exclude simultaneous terminated+truncated rows from complete empirical Q returns",
+    "Preserve held-out sampling seed in episode_number",
+    "Mark README as pre-launch protocol snapshot"
+  ]
+}

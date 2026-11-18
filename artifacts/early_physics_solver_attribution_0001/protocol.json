@@ -1,0 +1,15 @@
+{
+  "kind": "two-exact-first3-prefixes-extra-solver-diagnostics",
+  "branches": [
+    "nominal",
+    "head"
+  ],
+  "controls_per_branch": 3,
+  "physics_steps_per_branch": 150,
+  "total_physics_budget": 300,
+  "altered_solver_or_physics_parameters": false,
+  "extra_forward_solve_calls": false,
+  "callbacks": "Python read-only wrappers capture after existing mj_step and mj_forward",
+  "no_policy_inference_or_learning": true,
+  "source_config_transformation": "only byte-identical initial_grasp path"
+}

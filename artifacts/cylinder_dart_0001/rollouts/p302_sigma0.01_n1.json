@@ -1,0 +1,14 @@
+{
+ "planner_seed": 302,
+ "sigma": 0.01,
+ "noise_seed": 1,
+ "status": "terminated",
+ "controls": 11,
+ "strict_force_success": true,
+ "environment_success": true,
+ "failure_reason": null,
+ "final_force_qualified_angle": 6.9584315312722556,
+ "planning_seconds_total": 206.15438584750518,
+ "wall_seconds": 207.98847554717213,
+ "executed_minus_label_l2_mean": 0.03706977516412735
+}

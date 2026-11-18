@@ -1,0 +1,34 @@
+{
+  "validation": "incremental-principal-twist-with-grasp-retention-no-palm-v3",
+  "validation_result": "passed",
+  "checks": {
+    "kind_is_partial": true,
+    "zero_full_turns": true,
+    "exactly_110_transitions": true,
+    "source_hash_matches": true,
+    "replay_hash_matches": true,
+    "environment_contract_matches": true,
+    "incremental_policy_contract_matches": true,
+    "one_completed_partial_episode": true,
+    "no_terminal_transitions": true,
+    "only_final_transition_truncated": true,
+    "next_action_known_only_before_cutoff": true,
+    "partial_retained_angle": true
+  },
+  "transitions": 110,
+  "successful_full_turns": 0,
+  "retained_radians": 0.721056646480648,
+  "retained_degrees": 41.31350263319776,
+  "max_observation_replay_error": 5.960464477539063e-08,
+  "replay_sha256": "d36c01d1c766ecbc41362340303ebe17901ed0d97a4d57fd34925b9af31cf796",
+  "metadata_sha256": "ff3ac9f3736057cbcae253466786aa644cbac6d0654dbab9412f51dbcaf4434a",
+  "environment_source_sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+  "bootstrap_wrapper_sha256": "69a06e73d70e9e58780bbefde790dd57c22966b1e8c0134201ee497e8876fc6b",
+  "generator_sha256": "5eee3e13fb59f2561d0999abaa38d6befd33c1e022b74005d0aa2ffad8d57e46",
+  "preserved_artifact_hashes": {
+    "artifacts/bootstrap_seed_0002/replay.npz": "d36c01d1c766ecbc41362340303ebe17901ed0d97a4d57fd34925b9af31cf796",
+    "artifacts/bootstrap_0004/source/bootstrap_incremental_seeded.json": "b33fe96197f5ebdea66e1cf3b6d6bd0f2afb3136f6377d14ee9e5503f14f8614"
+  },
+  "command": ".venv/bin/python scripts/prepare_bootstrap_seed.py --source artifacts/rotation_probe/orbit_0.8_s8_p1_f0.npz --config configs/bootstrap_incremental_seeded.json --output artifacts/bootstrap_seed_0003/replay.npz",
+  "classification": "Partial bootstrap seed only; not a full-turn demonstration or primitive extraction input."
+}

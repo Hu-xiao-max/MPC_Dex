@@ -1,0 +1,17 @@
+{
+  "purpose": "Full2s post-success physical hold observation; strict failure is latched and all post-failure observations are postmortem only",
+  "first_success_seconds": 1.9000000000000015,
+  "first_terminal_failure": {
+    "control_step": 29,
+    "time": 2.899999999999902,
+    "drop": true,
+    "palm_support_violation": false,
+    "reason": "drop"
+  },
+  "observation_end_seconds": 3.899999999999792,
+  "post_success_observation_seconds": 1.9999999999997906,
+  "completed_successful_hold": false,
+  "post_failure_samples_are_training_or_demonstration": false,
+  "final_table_normal_force": 1.471500000000001,
+  "final_palm_normal_force": 0.0
+}

@@ -1,0 +1,12 @@
+{
+  "status": "verified",
+  "initial_changes_only": [
+    "/critics/networks.0.1.bias",
+    "/critics/networks.1.1.bias",
+    "/target_critics/networks.0.1.bias",
+    "/target_critics/networks.1.1.bias"
+  ],
+  "exact_added_train_mean": -75.82502275722553,
+  "all_500_minibatches_match_original_seed_protocol": true,
+  "minibatch_indices_sha256": "9210835f36551764ee9931df604cc6f645274b993bb1db968731e15b6c04bff9"
+}

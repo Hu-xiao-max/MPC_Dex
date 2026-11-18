@@ -1,0 +1,45 @@
+{
+  "alternative": 3,
+  "final_angle": -2.0224214230173105,
+  "max_angle": 1.0839401625061298,
+  "minimum_contacts": 0,
+  "maximum_tilt": 1.0750329253981898,
+  "final_contacts": 0,
+  "final_tilt": 1.0750329253981898,
+  "dropped": true,
+  "forbidden_support": false,
+  "elapsed_steps": 195,
+  "total_steps": 330,
+  "phase_reports": {
+    "initial_roll": {
+      "angle": 1.0839401625061298,
+      "contacts": 4,
+      "tilt": 0.018216883275669248,
+      "ik_error": 0.0015267600292355424
+    },
+    "late_thumb_reset": {
+      "angle": -0.024076843618437413,
+      "contacts": 4,
+      "tilt": 0.13645162088976587,
+      "ik_error": 0.016501316360246196
+    },
+    "finger_reset_0": {
+      "angle": 0.13934508642186083,
+      "contacts": 4,
+      "tilt": 0.22641601746611362,
+      "ik_error": 0.014046565643133967
+    },
+    "finger_reset_1": {
+      "angle": 0.13192477012382217,
+      "contacts": 4,
+      "tilt": 0.2842857918396963,
+      "ik_error": 0.016350539329462864
+    },
+    "finger_reset_2": {
+      "angle": -2.0224214230173105,
+      "contacts": 0,
+      "tilt": 1.0750329253981898,
+      "ik_error": 0.06314956127621736
+    }
+  }
+}

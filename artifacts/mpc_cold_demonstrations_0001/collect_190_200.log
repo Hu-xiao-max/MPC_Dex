@@ -1,0 +1,11 @@
+{"seed": 190, "status": "boundary", "controls": 21, "strict_force_success": true, "wall_seconds": 236.1874728400726, "stored": true}
+{"seed": 191, "status": "boundary", "controls": 32, "strict_force_success": true, "wall_seconds": 200.89867355511524, "stored": true}
+{"seed": 192, "status": "boundary", "controls": 12, "strict_force_success": true, "wall_seconds": 102.23136600409634, "stored": true}
+{"seed": 193, "status": "boundary", "controls": 14, "strict_force_success": true, "wall_seconds": 169.31118764495477, "stored": true}
+{"seed": 194, "status": "boundary", "controls": 18, "strict_force_success": true, "wall_seconds": 113.01874133711681, "stored": true}
+{"seed": 195, "status": "boundary", "controls": 17, "strict_force_success": true, "wall_seconds": 138.52732430398464, "stored": true}
+{"seed": 196, "status": "boundary", "controls": 12, "strict_force_success": true, "wall_seconds": 93.4954646169208, "stored": true}
+{"seed": 197, "status": "boundary", "controls": 32, "strict_force_success": true, "wall_seconds": 214.47263060510159, "stored": true}
+{"seed": 198, "status": "budget", "controls": 40, "strict_force_success": false, "wall_seconds": 130.05443903594278, "stored": false}
+{"seed": 199, "status": "boundary", "controls": 20, "strict_force_success": false, "wall_seconds": 155.07241668412462, "stored": false}
+exit=0

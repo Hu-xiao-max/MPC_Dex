@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "protocol": {
+    "purpose": "One fixed actual clock-actor prefix followed by corrected MPC; diagnostic visited-state corrective coverage only",
+    "seeds": [
+      42
+    ],
+    "prefix_controls": 9,
+    "max_mpc_controls_per_branch": 20,
+    "planner_seed": 42,
+    "reset_seed": 42,
+    "action_bound": 0.98,
+    "workers": 8,
+    "cem": {
+      "samples": 350,
+      "elites": 10,
+      "iterations": 3,
+      "knots": 6,
+      "horizon_seconds": 0.5,
+      "timestep_seconds": 0.1,
+      "control_seconds": 0.1
+    },
+    "cost": {
+      "position_weight": 1000.0,
+      "principal_weight": 1.0,
+      "perpendicular_weight": 100.0,
+      "workspace_radius": 0.18,
+      "rotation_progress": "retained",
+      "workers": 8
+    },
+    "reference_candidates": "archived ProjectedReferenceCEM: warm nominal plus explicitly projected bounded target reference when current actual target lies out of search; live state never reset/clipped",
+    "stop": [
+      "strict environment and independent force-supported full turn",
+      "environment termination/failure",
+      "no feasible plan",
+      "20 added MPC controls"
+    ],
+    "no_hold_or_other_prefix_branches": true,
+    "training_updates": 0,
+    "production_eligible": false,
+    "main_demonstrations": 0,
+    "source_recipe_sha256": "59b99e050f8b9e15482eaebeb02d535117c2d064ac4afc984546e53be30691a2",
+    "source_prior_sha256": "1d8229b86ae66ab986db226199626b3012b12200bbd89e929a200efdc2a1a526",
+    "input_provenance_sha256": "f84d78ae5f1875e717bdcb4770e90d70a14398fd86007c8869e67ae11690d547",
+    "source_actor_checkpoint_sha256": "fbc238202c323ecf6e2b97e5bd5c764ff085489260e3f083474bc608ef154715",
+    "source_actor_manifest_sha256": "69810f439e29dd46879b5a346a6a2b7de6d0c748a4887bffe62f30a797596af0",
+    "source_transitions_sha256": "b3bf0e5b410a2555eb0be2a5e4141176c9a2cfcaef82063cb976972e8b5cc0bb",
+    "source_physics_sha256": "e181fbdfb953f783145a055778594860ef020de8ea6ddea8d11c1a2a686dd1d0",
+    "source_original_integration_state_available": false,
+    "observation_recording": "raw60 env observations plus separate actual reset-relative float32 elapsed-time feature for 61D clock observations; no environment changes"
+  },
+  "outcomes": [
+    {
+      "seed": 42,
+      "status": "environment_boundary",
+      "mpc_controls": 5,
+      "strict_force_success": true,
+      "branch_force_qualified_angle": 4.836747969031025,
+      "final_force_qualified_angle": 6.498011614001375,
+      "maximum_force_qualified_angle": 6.980686441491276,
+      "drop": false,
+      "palm": false,
+      "no_external_support": true,
+      "report_path": "recovery/report.json"
+    }
+  ],
+  "production_eligible": false,
+  "learning_updates": 0,
+  "main_demonstrations": 0,
+  "completed_branches": 1,
+  "strict_force_successes": 1
+}

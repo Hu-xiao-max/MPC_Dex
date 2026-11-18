@@ -1,0 +1,26 @@
+{
+  "initial_0001": {
+    "manifest_files": 106,
+    "episodes": 6,
+    "all_actions_logprobs_critics_rng_bitexact": true,
+    "discounted_returns_verified": true,
+    "fullphysics_control_states_exact": true,
+    "all_true_terminal": true
+  },
+  "mid_1000_0001": {
+    "manifest_files": 106,
+    "episodes": 6,
+    "all_actions_logprobs_critics_rng_bitexact": true,
+    "discounted_returns_verified": true,
+    "fullphysics_control_states_exact": true,
+    "all_true_terminal": true
+  },
+  "final_2000_0001": {
+    "manifest_files": 106,
+    "episodes": 6,
+    "all_actions_logprobs_critics_rng_bitexact": true,
+    "discounted_returns_verified": true,
+    "fullphysics_control_states_exact": true,
+    "all_true_terminal": true
+  }
+}

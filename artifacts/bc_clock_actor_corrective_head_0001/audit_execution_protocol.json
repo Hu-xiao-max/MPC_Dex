@@ -1,0 +1,28 @@
+{
+  "parent_approved_after_numerical_review": true,
+  "strict_actual_policy_audits": 1,
+  "max_controls": 100,
+  "seed": 42,
+  "stochastic_trials": 0,
+  "post_success_continuations": 0,
+  "extra_solves": 0,
+  "optimizer_updates": 0,
+  "device": "cuda",
+  "torch_threads": 1,
+  "torch_interop_threads": 1,
+  "matmul_tf32": false,
+  "cudnn_tf32": false,
+  "clock": "actual simulator elapsed time",
+  "integration_state_capture": "reset and every actual control boundary",
+  "hashes_before_physics": {
+    "evaluate_candidate.py": "9cfc4211f12c28a65050b1836afdee2d8a298ca53c284a3f31d590afe2f766af",
+    "audit_full_state.py": "d098bcd94442349cc2d9da0e9af51ffd0646e80b56df07e850761d9a62e92074",
+    "source/scripts/audit_policy.py": "cf1496d88454de19fb20dfeb4726b5e9d15e66289d235723bd2b86ece7f236fe",
+    "source/mpc_dex/env.py": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "source/mpc_dex/learning.py": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c",
+    "policy_interface.json": "9b35ed2d9cfd0bb989738f3950c8668c9ff55f2e17a4d53f40eaec065310a149",
+    "strict_config.json": "1dd9a8908a11335384e5b20bac819adaea379c1987f5011b5bf38e95acc0ac45",
+    "candidate.pt": "35756319358e56a6a51a224ed65301fdaf1eb2ab26dc0e8f802b92e9ead40e3d",
+    "candidate.pt.metadata.json": "29e589abebb6a44134cbff7d88549ecf84492229dd056040ebe583e540dc7b20"
+  }
+}

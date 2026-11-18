@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "minimum_force_successes": 1,
+  "observed_force_successes": 0,
+  "complete_warmup_episodes": 256,
+  "screen_success_count_not_used_as_gate": true
+}

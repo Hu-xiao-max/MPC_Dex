@@ -1,0 +1,8 @@
+{"name": "tube_seed_193_j0_r0100_d0", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 144.6}
+{"name": "tube_seed_193_j0_r0100_d1", "status": "budget", "controls": 26, "mpc_controls": 25, "strict_force_success": false, "stored": false, "wall": 269.7}
+{"name": "tube_seed_193_j0_r0100_d2", "status": "budget", "controls": 26, "mpc_controls": 25, "strict_force_success": false, "stored": false, "wall": 88.1}
+{"name": "tube_seed_193_j0_r0100_d3", "status": "boundary", "controls": 26, "mpc_controls": 25, "strict_force_success": true, "stored": true, "wall": 201.3}
+{"name": "tube_seed_193_j0_r0300_d0", "status": "budget", "controls": 26, "mpc_controls": 25, "strict_force_success": false, "stored": false, "wall": 242.2}
+{"name": "tube_seed_193_j0_r0300_d1", "status": "boundary", "controls": 20, "mpc_controls": 19, "strict_force_success": true, "stored": true, "wall": 224.2}
+{"name": "tube_seed_193_j0_r0300_d2", "status": "budget", "controls": 26, "mpc_controls": 25, "strict_force_success": false, "stored": false, "wall": 398.5}
+{"name": "tube_seed_193_j0_r0300_d3", "status": "boundary", "controls": 25, "mpc_controls": 24, "strict_force_success": true, "stored": true, "wall": 334.9}

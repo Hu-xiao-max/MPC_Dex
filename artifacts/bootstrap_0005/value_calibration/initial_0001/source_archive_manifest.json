@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "source_generation": "checkpoint_00000001",
+  "environment_steps": 0,
+  "state_status": "running",
+  "online_updates": 0,
+  "bc_updates": 12000,
+  "pretrain_updates": 0,
+  "checkpoint_sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937",
+  "file_hashes": {
+    "agent.pt": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937",
+    "agent.pt.metadata.json": "fe2dce5849299bcaabf92870c1f2ac9f35f7893edcb4dc4c5b51b8af5f35b356",
+    "environment_0.npz": "a8b9c90979a6b609fa675776989c178264ba13268d77873dfd0cf1f0d8aafdd9",
+    "replay_0.npz": "e3763345aa2a14357c40a1751838529aa80bfd887fa3d4c81485bb8669d84c30",
+    "state.json": "53c8e3ab459d823da2fa365840d0db44080ae29954ef513ff140049680faec1b",
+    "torch_rng.pt": "8f3bb0d203bf38fde724827372228db645b491d76742f174bc38c2b19a50ec2e"
+  },
+  "copied_utc": "2026-09-23T20:53:18.223591+00:00"
+}

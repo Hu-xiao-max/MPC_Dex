@@ -1,0 +1,55 @@
+{
+  "alpha_convention": "targets are discounted raw returns / divisor without entropy terms; not the SAC backup",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 2000,
+    "online_updates": 7250
+  },
+  "episodes": {
+    "recorded": {
+      "rows": 5,
+      "target_normalized": [
+        1.252693864848038,
+        1.279860584830835,
+        1.1235722751873969,
+        1.1109271354283923,
+        1.142855087927612
+      ],
+      "q_normalized": [
+        [
+          1.0630711317062378,
+          1.1764863729476929,
+          1.0587570667266846,
+          1.3143384456634521,
+          1.1336712837219238
+        ],
+        [
+          1.1544747352600098,
+          1.470193862915039,
+          1.0111767053604126,
+          1.395211935043335,
+          1.0957450866699219
+        ]
+      ],
+      "critic_normalized_bias": [
+        -0.0327169294912566,
+        0.043378675405288815
+      ],
+      "critic_normalized_rmse": [
+        0.13587091171083301,
+        0.16825202393472058
+      ],
+      "first_row_deterministic_action_max_abs_difference": 0.010208502411842346,
+      "first_row_deterministic_action_l2_difference": 0.016433710232377052,
+      "first_row_latent_std_mean": 0.010007829405367374,
+      "first_row_is_prefix6_handoff": false,
+      "actor_log_prob_of_demonstration_actions": [
+        86.43875122070312,
+        88.51319122314453,
+        94.98491668701172,
+        -15844.94921875,
+        -1206.1522216796875
+      ]
+    }
+  }
+}

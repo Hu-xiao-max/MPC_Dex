@@ -1,0 +1,6 @@
+{
+ "stage": "bootstrap_variant_0080_ms_dagger_from79",
+ "attempt": 1,
+ "failure": "demonstration_gate assertion at execution start: protocol demonstration_rows counted min(8, controls) rows for every source, while the runner keeps only the MPC segment after the last policy control for DAgger sources (11 of 28); no learning update ran",
+ "fix": "prepare.py now counts demonstration_rows_available = mpc_controls for sources with policy rows; directory deleted and re-stamped"
+}

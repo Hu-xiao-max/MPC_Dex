@@ -1,0 +1,3466 @@
+{
+  "purpose": "exploratory measured-prior MPC diagnostic",
+  "production_eligible": false,
+  "environment_contract": {
+    "action_high": [
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      1.396,
+      1.163,
+      1.644,
+      1.719
+    ],
+    "action_low": [
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      0.263,
+      -0.105,
+      -0.189,
+      -0.162
+    ],
+    "environment": {
+      "contact_loss_seconds": 0.05,
+      "control_seconds": 0.1,
+      "finger_friction": 0.8,
+      "goal_heading": null,
+      "horizon_steps": 900,
+      "initial_hand_q": [
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        1.2,
+        0.3,
+        0.5,
+        0.5
+      ],
+      "initial_object_position": [
+        0.055,
+        0.0,
+        0.075
+      ],
+      "joint_kp": 3.0,
+      "joint_kv": 0.1,
+      "max_joint_force": 0.7,
+      "object_diameter": 0.04,
+      "object_friction": 0.5,
+      "object_length": 0.12,
+      "object_mass": 0.15,
+      "object_shape": "hexagonal",
+      "palm_height": 0.35,
+      "palm_support_force_tolerance": 1e-06,
+      "success_axis_tolerance_degrees": 30.0,
+      "task": "rotation",
+      "terminate_on_success": false,
+      "timestep": 0.002
+    },
+    "environment_source_sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "grasp_sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+    "joint_order": [
+      "ffj0",
+      "ffj1",
+      "ffj2",
+      "ffj3",
+      "mfj0",
+      "mfj1",
+      "mfj2",
+      "mfj3",
+      "rfj0",
+      "rfj1",
+      "rfj2",
+      "rfj3",
+      "thj0",
+      "thj1",
+      "thj2",
+      "thj3"
+    ],
+    "observation": "q16,object_position_in_palm3,object_quaternion_in_palm_wxyz4,principal_angle1,previous_angle1,finite_difference_qvel16,finite_difference_object_vel3,previous_normalized_action16; reorientation appends goal1",
+    "robot_mesh_sha256": {
+      "base_link.stl": "4060e1ae52bca21367e15a1dfab16bc7c2e81849566631b7f55e2cf376b7bc85",
+      "link_0.0.stl": "32b90a6744d472a6ffaee02cbf32eb8a5600b1da0944e86aeb9f53503a9f8ac9",
+      "link_1.0.stl": "e3dfb35b6682f62f18ca6ed0b39cb94ff627b68e0e3373cf7212390574604680",
+      "link_12.0_right.stl": "c5418fc127311eefee1d8ee69dfcfde2157d038286900bee91608d2701b00f13",
+      "link_13.0.stl": "e906896afc078a12c9c377e3a2b07f375583d3b869581f9962030cabc888be29",
+      "link_14.0.stl": "a9e4983e4bff7fc7d868b4965c9865edb2669b946434095703766202b5de01ff",
+      "link_15.0.stl": "bf963adb775b79b27649f4f5dff4ced58ef676ce86cc677de49d3810382d11e0",
+      "link_15.0_tip.stl": "a7147c765d4b6d2eb16fa14bba2e8eceec4a750bc346260893ca02aca1fd7a63",
+      "link_2.0.stl": "9c98477c65b45f5a3de1df0e1b54281da2385f4eafd057d103ab40893771c2d0",
+      "link_3.0.stl": "fe333088176395aa7d8a913aa953d3cd649c4c77753224239b78b2c99e3e314c",
+      "link_3.0_tip.stl": "9c3fa04fea0dfa1257c8a1b02d2b7d982b0d985c1ddda1edf148827944835f39"
+    },
+    "robot_xml_sha256": "cec3efe34be49c8220c23afdae0cfacbce10164a5bc7c34075b6668ee0a862a6",
+    "schema_version": 1,
+    "target": "local-simulation"
+  },
+  "primitive": {
+    "schema_version": 1,
+    "method": "mean_centered_joint_trajectory_pca",
+    "provenance": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_partial_probe_0002/palm_diagnosis/prefix17_hold/transitions.npz",
+      "source_sha256": "f55c47a7ddc049b91ab8bf406288e695f17416c0c1d4693fd294d78acae8bc79",
+      "purpose": "measured coordination prior for bootstrap diagnostic only",
+      "successful_policy": false
+    },
+    "extraction": {
+      "frames": 20,
+      "joints": 16,
+      "units": "radians",
+      "requested_explained_variance": 0.9,
+      "retained_explained_variance": 0.9128554632780201,
+      "trajectories_float64_le_sha256": "3717ba1b6f2542b841803d283fed011e1d05bc966e24eaa037ba0d48ba905cf1"
+    }
+  },
+  "diagnostic_basis": {
+    "mean": [
+      -0.1256484733554376,
+      0.9983417193777118,
+      0.7669405182791909,
+      0.44386424644260253,
+      0.03803346291432584,
+      0.9971028003179928,
+      0.882139476160741,
+      0.5770750233633712,
+      0.09730413009331332,
+      0.9972683036250352,
+      0.6760411326509275,
+      0.4156558352627622,
+      1.319942175686908,
+      0.2193194528918076,
+      1.478407390234754,
+      0.6625544159737504
+    ],
+    "basis": [
+      [
+        0.05527756402991769,
+        0.08095837034247985,
+        -0.003747288951705874,
+        0.033834422366913273
+      ],
+      [
+        -0.3794812042368431,
+        0.02779915517674877,
+        0.1704072667269942,
+        0.25202922034210357
+      ],
+      [
+        0.06522974844802491,
+        0.4479364826066104,
+        -0.018614169375954438,
+        0.04563158462734842
+      ],
+      [
+        0.3253072805587195,
+        0.24773715625542994,
+        0.560432720396721,
+        -0.0017275768817335555
+      ],
+      [
+        0.06162305233660989,
+        0.1750748434486963,
+        0.046438122428515194,
+        -0.004307034898789778
+      ],
+      [
+        -0.3565796659096982,
+        0.29138925585524084,
+        0.03791320089135283,
+        0.208429130925648
+      ],
+      [
+        0.06564496374861269,
+        -0.03176862161563488,
+        0.17848574587336447,
+        0.4090716263547988
+      ],
+      [
+        0.034597960352270626,
+        0.19221197980024796,
+        0.07880715422417713,
+        -0.2567906483893977
+      ],
+      [
+        0.07230862677094343,
+        0.3157301005850819,
+        -0.3934374705597397,
+        0.018426124317364644
+      ],
+      [
+        -0.33179559679849435,
+        0.24189122062898494,
+        0.03909230629406543,
+        0.09343191146527859
+      ],
+      [
+        0.2873980057530708,
+        0.5672848047626482,
+        -0.3308170547179059,
+        0.027058266446279542
+      ],
+      [
+        0.2537579524814672,
+        -0.19528347300219231,
+        -0.3199028699208749,
+        0.7308008845827684
+      ],
+      [
+        -0.11855610480111033,
+        0.048634069708403734,
+        0.08843012971968033,
+        -0.00429818483413181
+      ],
+      [
+        0.19918020854174404,
+        -0.0957130277108234,
+        -0.10504646480351491,
+        -0.15532666105670356
+      ],
+      [
+        -0.30916735052046246,
+        0.21332324864311944,
+        0.2007967209877004,
+        0.22678953535497406
+      ],
+      [
+        0.4413452129865479,
+        0.04428272882316523,
+        0.4331066479850861,
+        0.19250850880064937
+      ]
+    ],
+    "coefficient_min": [
+      -1.1829347036917894,
+      -0.6730708091777712,
+      -0.1847790622905308,
+      -0.20527426660329134
+    ],
+    "coefficient_max": [
+      1.2942719266304192,
+      0.39319303856170845,
+      0.5073271590844155,
+      0.4832394252075779
+    ],
+    "explained_variance_ratio": [
+      0.7275368357574504,
+      0.10330499871139708,
+      0.04836651514950251,
+      0.03364711365967016
+    ]
+  },
+  "components": 4,
+  "cem": {
+    "horizon_seconds": 0.5,
+    "knots": 6,
+    "samples": 350,
+    "elites": 10,
+    "iterations": 3,
+    "timestep_seconds": 0.1,
+    "control_seconds": 0.1
+  },
+  "cost": {
+    "position_weight": 1000.0,
+    "principal_weight": 1.0,
+    "perpendicular_weight": 100.0,
+    "workspace_radius": 0.18,
+    "workers": 4,
+    "rotation_progress": "retained"
+  },
+  "seed": 42,
+  "max_target_delta": null,
+  "requested_backend": "native",
+  "native_build": {
+    "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+    "mujoco_version": "3.14.0",
+    "transition_abi_version": 2,
+    "mujoco_runtime_version": 3014000,
+    "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+    "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+    "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+    "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+    "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "compiler_flags": [
+      "-O3",
+      "-std=c++17",
+      "-fPIC",
+      "-shared",
+      "-fno-fast-math",
+      "-ffp-contract=off"
+    ],
+    "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+    "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+    "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+  },
+  "source_hashes": {
+    "scripts/probe_mpc.py": "b2b4b2d420c7339e1f1d506585f2320e99c62f56b2c846de896bf1538fc383cc",
+    "scripts/audit_policy.py": "cf1496d88454de19fb20dfeb4726b5e9d15e66289d235723bd2b86ece7f236fe",
+    "mpc_dex/env.py": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "mpc_dex/mpc.py": "02a276ec62688dd04ff50ea94eeecbf0f16036aee7a4f03bb0e363bc20f5d83b",
+    "mpc_dex/primitives.py": "571b5a350b943900bbdec61fbe518f3964867d48181a3ecb8a0b74f24c48b6a2",
+    "mpc_dex/rollouts.py": "283e93f3bcb5e3d185f25e3c9f7927948d04fb9deb12a3f19ecd3fae0dc39143",
+    "mpc_dex/native_rollouts.py": "ab981bb1c29f6f252437d38d9c58d50b2339a9b6f371a08a7e816344ab91d789",
+    "mpc_dex/native/exact_rollout.cc": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+    "uv.lock": "ef825f66abe35c8696c809b9053b2bcbd8275b74b8219b821062441fd816085b",
+    "config": "2d81f94560cf02fef046d7ad7fcf46943fd5fd668557e0c05f87efe3a6d81210",
+    "input_trajectory": "f55c47a7ddc049b91ab8bf406288e695f17416c0c1d4693fd294d78acae8bc79"
+  },
+  "source_sha256": "b2b4b2d420c7339e1f1d506585f2320e99c62f56b2c846de896bf1538fc383cc",
+  "evaluator_sha256": "283e93f3bcb5e3d185f25e3c9f7927948d04fb9deb12a3f19ecd3fae0dc39143",
+  "status": "no_feasible_plan",
+  "steps": [
+    {
+      "step": 1,
+      "planning_seconds": 3.299807235132903,
+      "angle": 1.4526044457605394,
+      "retained_angle": 1.4526044457605394,
+      "force_qualified_angle": 1.4526044457605394,
+      "contacts": 3,
+      "tilt": 0.10232447330949725,
+      "drop": false,
+      "success": false,
+      "reward": 28.752088915210788,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.0328539759120674,
+      "planner": {
+        "best_cost": 13.542381537576887,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 8,
+            "elite_count": 8,
+            "iteration_best_cost": 13.542381537576887,
+            "best_cost": 13.542381537576887
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 10,
+            "elite_count": 10,
+            "iteration_best_cost": 18.036990893893783,
+            "best_cost": 13.542381537576887
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 10,
+            "elite_count": 10,
+            "iteration_best_cost": 15.866441950084806,
+            "best_cost": 13.542381537576887
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 28
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.05260902410373092,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.115459223846719,
+          1.115459223846719
+        ],
+        "retained_final_progress_range": [
+          1.0665066907422749,
+          1.0665066907422749
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 2,
+      "planning_seconds": 9.268900140887126,
+      "angle": 2.335599179043715,
+      "retained_angle": 2.2511486572548014,
+      "force_qualified_angle": 2.251148657254802,
+      "contacts": 3,
+      "tilt": 0.27498739096398395,
+      "drop": false,
+      "success": false,
+      "reward": 17.359894665663514,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.5618365448951226,
+      "planner": {
+        "best_cost": 17.100613540373153,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 14,
+            "elite_count": 10,
+            "iteration_best_cost": 19.79824018958637,
+            "best_cost": 19.79824018958637
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 24,
+            "elite_count": 10,
+            "iteration_best_cost": 18.720705750628376,
+            "best_cost": 18.720705750628376
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 70,
+            "elite_count": 10,
+            "iteration_best_cost": 17.100613540373153,
+            "best_cost": 17.100613540373153
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 108
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.05887507810257375,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.8779405456667333,
+          1.8779405456667333
+        ],
+        "retained_final_progress_range": [
+          1.7934900192690169,
+          1.7934900192690169
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 3,
+      "planning_seconds": 11.388878740137443,
+      "angle": 2.1200229639420147,
+      "retained_angle": 2.027327949621488,
+      "force_qualified_angle": 2.0273279496214878,
+      "contacts": 3,
+      "tilt": 0.11935007988573036,
+      "drop": false,
+      "success": false,
+      "reward": -4.611524302034009,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.279881942751028,
+      "planner": {
+        "best_cost": 20.71447994658111,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 37,
+            "elite_count": 10,
+            "iteration_best_cost": 22.940074208643093,
+            "best_cost": 22.940074208643093
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 58,
+            "elite_count": 10,
+            "iteration_best_cost": 22.316889996936357,
+            "best_cost": 22.316889996936357
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 86,
+            "elite_count": 10,
+            "iteration_best_cost": 20.71447994658111,
+            "best_cost": 20.71447994658111
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 181
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.0872821370139718,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.5352534025930802,
+          0.5352534025930802
+        ],
+        "retained_final_progress_range": [
+          0.2091354754013986,
+          0.2091354754013986
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 4,
+      "planning_seconds": 12.883471593959257,
+      "angle": 2.543170174169054,
+      "retained_angle": 2.275730261650298,
+      "force_qualified_angle": 2.275730261650297,
+      "contacts": 4,
+      "tilt": 0.2603714364683773,
+      "drop": false,
+      "success": false,
+      "reward": 8.16294420454079,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.1388466677483042,
+      "planner": {
+        "best_cost": 18.123689295058945,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 34,
+            "elite_count": 10,
+            "iteration_best_cost": 20.490820419799885,
+            "best_cost": 20.490820419799885
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 112,
+            "elite_count": 10,
+            "iteration_best_cost": 19.975882437810448,
+            "best_cost": 19.975882437810448
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 121,
+            "elite_count": 10,
+            "iteration_best_cost": 18.123689295058945,
+            "best_cost": 18.123689295058945
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 267
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.08129319897852838,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          1.045355966935334,
+          1.045355966935334
+        ],
+        "retained_final_progress_range": [
+          0.8706110703583576,
+          0.8706110703583576
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 5,
+      "planning_seconds": 11.886446208925918,
+      "angle": 2.9414191596960086,
+      "retained_angle": 2.6739792471772525,
+      "force_qualified_angle": 2.67397924717725,
+      "contacts": 3,
+      "tilt": 0.16766592632899133,
+      "drop": false,
+      "success": false,
+      "reward": 7.664979710539089,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.388166032938381,
+      "planner": {
+        "best_cost": 18.73154567593182,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 13,
+            "elite_count": 10,
+            "iteration_best_cost": 21.060584696621248,
+            "best_cost": 21.060584696621248
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 47,
+            "elite_count": 10,
+            "iteration_best_cost": 22.64425643720564,
+            "best_cost": 21.060584696621248
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 93,
+            "elite_count": 10,
+            "iteration_best_cost": 18.73154567593182,
+            "best_cost": 18.73154567593182
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 153
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.07142841001041234,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.6817666501271211,
+          0.6817666501271211
+        ],
+        "retained_final_progress_range": [
+          0.5645602101746254,
+          0.5645602101746254
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 6,
+      "planning_seconds": 11.424590970855206,
+      "angle": 3.15527470869175,
+      "retained_angle": 2.887834796172994,
+      "force_qualified_angle": 2.8878347961729904,
+      "contacts": 3,
+      "tilt": 0.0032277165213949557,
+      "drop": false,
+      "success": false,
+      "reward": 3.977110979914829,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.3890050138786598,
+      "planner": {
+        "best_cost": 19.95879796631571,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 15,
+            "elite_count": 10,
+            "iteration_best_cost": 23.877991208044477,
+            "best_cost": 23.877991208044477
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 22,
+            "elite_count": 10,
+            "iteration_best_cost": 20.57718582424301,
+            "best_cost": 20.57718582424301
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 62,
+            "elite_count": 10,
+            "iteration_best_cost": 19.95879796631571,
+            "best_cost": 19.95879796631571
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 99
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.0891954789403826,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.16316278497666467,
+          0.16316278497666467
+        ],
+        "retained_final_progress_range": [
+          0.16316278497666467,
+          0.16316278497666467
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 7,
+      "planning_seconds": 13.779156292090192,
+      "angle": 3.738286994853722,
+      "retained_angle": 3.470847082334966,
+      "force_qualified_angle": 3.470847082334964,
+      "contacts": 3,
+      "tilt": 0.21629015252113176,
+      "drop": false,
+      "success": false,
+      "reward": 11.360245723239439,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.133,
+      "planner": {
+        "best_cost": 20.39219018913096,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 9,
+            "elite_count": 9,
+            "iteration_best_cost": 20.39219018913096,
+            "best_cost": 20.39219018913096
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 22,
+            "elite_count": 10,
+            "iteration_best_cost": 25.221703394556425,
+            "best_cost": 20.39219018913096
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 52,
+            "elite_count": 10,
+            "iteration_best_cost": 21.84030760692716,
+            "best_cost": 20.39219018913096
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 83
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.07939739502035081,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -1.3222105765638723,
+          -1.3222105765638723
+        ],
+        "retained_final_progress_range": [
+          -1.3222105765638723,
+          -1.3222105765638723
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 8,
+      "planning_seconds": 17.300000122981146,
+      "angle": 3.664042830558403,
+      "retained_angle": 3.396602918039647,
+      "force_qualified_angle": 3.396602918039645,
+      "contacts": 3,
+      "tilt": 0.2391250534131014,
+      "drop": false,
+      "success": false,
+      "reward": -1.7848832859063777,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.1968516905431554,
+      "planner": {
+        "best_cost": 24.20236483947684,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 27,
+            "elite_count": 10,
+            "iteration_best_cost": 27.037814493531602,
+            "best_cost": 27.037814493531602
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 84,
+            "elite_count": 10,
+            "iteration_best_cost": 26.07736812437726,
+            "best_cost": 26.07736812437726
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 114,
+            "elite_count": 10,
+            "iteration_best_cost": 24.20236483947684,
+            "best_cost": 24.20236483947684
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 225
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.09781079599633813,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -0.4159273231358155,
+          -0.4159273231358155
+        ],
+        "retained_final_progress_range": [
+          -0.4159273231358155,
+          -0.4159273231358155
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 9,
+      "planning_seconds": 18.81901658512652,
+      "angle": 3.7035943526807706,
+      "retained_angle": 3.4361544401620145,
+      "force_qualified_angle": 3.436154440162014,
+      "contacts": 3,
+      "tilt": 0.17579991477013826,
+      "drop": false,
+      "success": false,
+      "reward": 0.4910304424473491,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.5002063916470116,
+      "planner": {
+        "best_cost": 20.041684832882293,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 61,
+            "elite_count": 10,
+            "iteration_best_cost": 22.17632914287448,
+            "best_cost": 22.17632914287448
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 105,
+            "elite_count": 10,
+            "iteration_best_cost": 20.041684832882293,
+            "best_cost": 20.041684832882293
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 175,
+            "elite_count": 10,
+            "iteration_best_cost": 20.379132113435276,
+            "best_cost": 20.041684832882293
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 341
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.06829153490252793,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.1004923908741503,
+          0.1004923908741503
+        ],
+        "retained_final_progress_range": [
+          0.08575352167577562,
+          0.08575352167577562
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 10,
+      "planning_seconds": 15.078762771794572,
+      "angle": 4.194801525098237,
+      "retained_angle": 3.9273616125794795,
+      "force_qualified_angle": 3.9273616125794795,
+      "contacts": 4,
+      "tilt": 0.14221102211531605,
+      "drop": false,
+      "success": false,
+      "reward": 9.524143448349324,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.883,
+      "planner": {
+        "best_cost": 19.198557585498754,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 13,
+            "elite_count": 10,
+            "iteration_best_cost": 20.6663318370191,
+            "best_cost": 20.6663318370191
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 21,
+            "elite_count": 10,
+            "iteration_best_cost": 19.65785254514278,
+            "best_cost": 19.65785254514278
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 64,
+            "elite_count": 10,
+            "iteration_best_cost": 19.198557585498754,
+            "best_cost": 19.198557585498754
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 98
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.07553536212071776,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -0.34055137345550646,
+          -0.34055137345550646
+        ],
+        "retained_final_progress_range": [
+          -0.34055137345550646,
+          -0.34055137345550646
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 11,
+      "planning_seconds": 14.057550325989723,
+      "angle": 4.232607122210693,
+      "retained_angle": 3.965167209691935,
+      "force_qualified_angle": 3.9651672096919373,
+      "contacts": 3,
+      "tilt": 0.17574712748496688,
+      "drop": false,
+      "success": false,
+      "reward": 0.4561119422491203,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.883,
+      "planner": {
+        "best_cost": 18.332981066962894,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 16,
+            "elite_count": 10,
+            "iteration_best_cost": 21.320385832619767,
+            "best_cost": 21.320385832619767
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 32,
+            "elite_count": 10,
+            "iteration_best_cost": 21.18888845415742,
+            "best_cost": 21.18888845415742
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 72,
+            "elite_count": 10,
+            "iteration_best_cost": 18.332981066962894,
+            "best_cost": 18.332981066962894
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 120
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.06406648689880967,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.6537316041682923,
+          0.6537316041682923
+        ],
+        "retained_final_progress_range": [
+          0.6537316041682923,
+          0.6537316041682923
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 12,
+      "planning_seconds": 13.767386583145708,
+      "angle": 4.670622319866984,
+      "retained_angle": 4.403182407348224,
+      "force_qualified_angle": 4.403182407348227,
+      "contacts": 3,
+      "tilt": 0.1721832491726557,
+      "drop": false,
+      "success": false,
+      "reward": 8.460303953125827,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.881,
+      "planner": {
+        "best_cost": 17.493058700614938,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 9,
+            "elite_count": 9,
+            "iteration_best_cost": 22.12665136669894,
+            "best_cost": 22.12665136669894
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 37,
+            "elite_count": 10,
+            "iteration_best_cost": 18.890198505553116,
+            "best_cost": 18.890198505553116
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 65,
+            "elite_count": 10,
+            "iteration_best_cost": 17.493058700614938,
+            "best_cost": 17.493058700614938
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 111
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.06936026201583445,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -0.09139669532479917,
+          -0.09139669532479917
+        ],
+        "retained_final_progress_range": [
+          -0.09139669532479917,
+          -0.09139669532479917
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 13,
+      "planning_seconds": 14.952991969883442,
+      "angle": 5.334490013889837,
+      "retained_angle": 5.067050101371076,
+      "force_qualified_angle": 5.067050101371081,
+      "contacts": 3,
+      "tilt": 0.05685534385607622,
+      "drop": false,
+      "success": false,
+      "reward": 12.977353880457045,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.881,
+      "planner": {
+        "best_cost": 17.466775872792198,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 23,
+            "elite_count": 10,
+            "iteration_best_cost": 21.049276561157683,
+            "best_cost": 21.049276561157683
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 61,
+            "elite_count": 10,
+            "iteration_best_cost": 17.466775872792198,
+            "best_cost": 17.466775872792198
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 99,
+            "elite_count": 10,
+            "iteration_best_cost": 18.07163197585207,
+            "best_cost": 17.466775872792198
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 183
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.07026989897713065,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.676385156686724,
+          0.676385156686724
+        ],
+        "retained_final_progress_range": [
+          0.6569784181694945,
+          0.6569784181694945
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 14,
+      "planning_seconds": 16.24102769396268,
+      "angle": 6.06164440635167,
+      "retained_angle": 5.794204493832909,
+      "force_qualified_angle": 5.794204493832916,
+      "contacts": 2,
+      "tilt": 0.18794455070405983,
+      "drop": false,
+      "success": false,
+      "reward": 14.243087849236666,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.8450000000000002,
+      "planner": {
+        "best_cost": 18.651192544683518,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 73,
+            "elite_count": 10,
+            "iteration_best_cost": 21.30475125651125,
+            "best_cost": 21.30475125651125
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 125,
+            "elite_count": 10,
+            "iteration_best_cost": 19.622599193086092,
+            "best_cost": 19.622599193086092
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 158,
+            "elite_count": 10,
+            "iteration_best_cost": 18.651192544683518,
+            "best_cost": 18.651192544683518
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 356
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.07371579087339342,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -0.05599008848723659,
+          -0.05599008848723659
+        ],
+        "retained_final_progress_range": [
+          -0.05599008848723659,
+          -0.05599008848723659
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 15,
+      "planning_seconds": 13.493489211890846,
+      "angle": 6.078855942469192,
+      "retained_angle": 5.811416029950432,
+      "force_qualified_angle": 5.811416029950435,
+      "contacts": 4,
+      "tilt": 0.12706742511831767,
+      "drop": false,
+      "success": false,
+      "reward": 0.04423072235044928,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.883,
+      "planner": {
+        "best_cost": 21.699764470729956,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 56,
+            "elite_count": 10,
+            "iteration_best_cost": 22.483505642985516,
+            "best_cost": 22.483505642985516
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 73,
+            "elite_count": 10,
+            "iteration_best_cost": 22.361829779097455,
+            "best_cost": 22.361829779097455
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 126,
+            "elite_count": 10,
+            "iteration_best_cost": 21.699764470729956,
+            "best_cost": 21.699764470729956
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 255
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.07551173097454011,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.35999585335672224,
+          0.35999585335672224
+        ],
+        "retained_final_progress_range": [
+          0.35999585335672224,
+          0.35999585335672224
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 16,
+      "planning_seconds": 14.348206524038687,
+      "angle": 6.163376585226588,
+      "retained_angle": 5.895936672707827,
+      "force_qualified_angle": 5.895936672707831,
+      "contacts": 4,
+      "tilt": 0.20008652621550774,
+      "drop": false,
+      "success": false,
+      "reward": 1.3904128551479047,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.1572374939150958,
+      "planner": {
+        "best_cost": 21.928416578064347,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 32,
+            "elite_count": 10,
+            "iteration_best_cost": 21.928416578064347,
+            "best_cost": 21.928416578064347
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 50,
+            "elite_count": 10,
+            "iteration_best_cost": 22.998922811880213,
+            "best_cost": 21.928416578064347
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 83,
+            "elite_count": 10,
+            "iteration_best_cost": 22.213181573120593,
+            "best_cost": 21.928416578064347
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 165
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.060415994841605425,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          0.24805948357626045,
+          0.24805948357626045
+        ],
+        "retained_final_progress_range": [
+          0.17832847057490692,
+          0.17832847057490692
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 17,
+      "planning_seconds": 11.570600325008854,
+      "angle": 6.0513460033416955,
+      "retained_angle": 5.783906090822935,
+      "force_qualified_angle": 5.783906090822941,
+      "contacts": 2,
+      "tilt": 0.1875397597496826,
+      "drop": false,
+      "success": false,
+      "reward": -2.5406116376978423,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.8450000000000002,
+      "planner": {
+        "best_cost": 23.243892337907166,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 34,
+            "elite_count": 10,
+            "iteration_best_cost": 26.503837114954244,
+            "best_cost": 26.503837114954244
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 61,
+            "elite_count": 10,
+            "iteration_best_cost": 27.57732944373821,
+            "best_cost": 26.503837114954244
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 103,
+            "elite_count": 10,
+            "iteration_best_cost": 23.243892337907166,
+            "best_cost": 23.243892337907166
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 198
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.05323683191090822,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -1.3754858301371882,
+          -1.3754858301371882
+        ],
+        "retained_final_progress_range": [
+          -1.6235638999414739,
+          -1.6235638999414739
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 18,
+      "planning_seconds": 8.607898253947496,
+      "angle": 6.178796028151928,
+      "retained_angle": 5.8707905850938005,
+      "force_qualified_angle": 5.870790585093805,
+      "contacts": 4,
+      "tilt": 0.3050984025909651,
+      "drop": false,
+      "success": false,
+      "reward": 2.249000496204652,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.8450000000000002,
+      "planner": {
+        "best_cost": 24.74078133754013,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 10,
+            "elite_count": 10,
+            "iteration_best_cost": 31.96542135172696,
+            "best_cost": 31.96542135172696
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 22,
+            "elite_count": 10,
+            "iteration_best_cost": 29.890881697797273,
+            "best_cost": 29.890881697797273
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 62,
+            "elite_count": 10,
+            "iteration_best_cost": 24.74078133754013,
+            "best_cost": 24.74078133754013
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 94
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.0589152870234102,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -0.16235672151702235,
+          -0.16235672151702235
+        ],
+        "retained_final_progress_range": [
+          -0.5951380859922536,
+          -0.5951380859922536
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 19,
+      "planning_seconds": 9.951872990932316,
+      "angle": 6.5306488438119,
+      "retained_angle": 6.1377008510609,
+      "force_qualified_angle": 6.137700851060905,
+      "contacts": 4,
+      "tilt": 0.06648996084186659,
+      "drop": false,
+      "success": false,
+      "reward": 6.7370563131994325,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.883,
+      "planner": {
+        "best_cost": 26.25303611824913,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 19,
+            "elite_count": 10,
+            "iteration_best_cost": 31.32623914197167,
+            "best_cost": 31.32623914197167
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 49,
+            "elite_count": 10,
+            "iteration_best_cost": 28.074578033563718,
+            "best_cost": 28.074578033563718
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 79,
+            "elite_count": 10,
+            "iteration_best_cost": 26.25303611824913,
+            "best_cost": 26.25303611824913
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 147
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.05263281799852848,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -1.1635032949055348,
+          -1.1635032949055348
+        ],
+        "retained_final_progress_range": [
+          -1.2487697649580412,
+          -1.2487697649580412
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 20,
+      "planning_seconds": 10.208398011978716,
+      "angle": 6.656047346168619,
+      "retained_angle": 6.263099353417619,
+      "force_qualified_angle": 6.263099353417627,
+      "contacts": 4,
+      "tilt": 0.07011034114907017,
+      "drop": false,
+      "success": false,
+      "reward": 2.2079700471343893,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 0.5683016842603683,
+      "planner": {
+        "best_cost": 32.94926247058985,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 11,
+            "elite_count": 10,
+            "iteration_best_cost": 34.36976262506066,
+            "best_cost": 34.36976262506066
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 21,
+            "elite_count": 10,
+            "iteration_best_cost": 32.94926247058985,
+            "best_cost": 32.94926247058985
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 27,
+            "elite_count": 10,
+            "iteration_best_cost": 34.179920958850474,
+            "best_cost": 32.94926247058985
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 59
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.04126528790220618,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -1.706240102005631,
+          -1.706240102005631
+        ],
+        "retained_final_progress_range": [
+          -1.8506295296273791,
+          -1.8506295296273791
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 21,
+      "planning_seconds": 6.445926060900092,
+      "angle": 6.083574821632523,
+      "retained_angle": 5.665473191413994,
+      "force_qualified_angle": 5.665473191414001,
+      "contacts": 2,
+      "tilt": 0.5447335283127976,
+      "drop": false,
+      "success": false,
+      "reward": -11.749450490721916,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.883,
+      "planner": {
+        "best_cost": 45.54144868670335,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 1,
+            "elite_count": 1,
+            "iteration_best_cost": 72.13082112603783,
+            "best_cost": 72.13082112603783
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 16,
+            "elite_count": 10,
+            "iteration_best_cost": 47.78804209873277,
+            "best_cost": 47.78804209873277
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 13,
+            "elite_count": 10,
+            "iteration_best_cost": 45.54144868670335,
+            "best_cost": 45.54144868670335
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 30
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.03018058300949633,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -0.11734610981644295,
+          -0.11734610981644295
+        ],
+        "retained_final_progress_range": [
+          -1.686454077829807,
+          -1.686454077829807
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 22,
+      "planning_seconds": 4.05137457116507,
+      "angle": 4.7701599799206855,
+      "retained_angle": 4.3520583497021565,
+      "force_qualified_angle": 4.352058349702161,
+      "contacts": 1,
+      "tilt": 0.6894300949691546,
+      "drop": false,
+      "success": false,
+      "reward": -26.568296834236758,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.833,
+      "planner": {
+        "best_cost": 43.07365561597099,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 7,
+            "elite_count": 7,
+            "iteration_best_cost": 43.07365561597099,
+            "best_cost": 43.07365561597099
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 11,
+            "elite_count": 10,
+            "iteration_best_cost": 51.82961822431007,
+            "best_cost": 43.07365561597099
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 44,
+            "elite_count": 10,
+            "iteration_best_cost": 51.17182868524763,
+            "best_cost": 43.07365561597099
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 62
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.021450715139508247,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -0.004137585614764353,
+          -0.004137585614764353
+        ],
+        "retained_final_progress_range": [
+          -1.3649868010563384,
+          -1.3649868010563384
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 23,
+      "planning_seconds": 3.9553259848617017,
+      "angle": 6.976994837348198,
+      "retained_angle": 4.537241061919731,
+      "force_qualified_angle": 4.537241061919736,
+      "contacts": 2,
+      "tilt": 0.6077323432973678,
+      "drop": false,
+      "success": false,
+      "reward": 43.83669714855026,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.883,
+      "planner": {
+        "best_cost": 47.02241670115801,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 0,
+            "elite_count": 0,
+            "iteration_best_cost": null,
+            "best_cost": null
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 1,
+            "elite_count": 1,
+            "iteration_best_cost": 58.83295905536678,
+            "best_cost": 58.83295905536678
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 11,
+            "elite_count": 10,
+            "iteration_best_cost": 47.02241670115801,
+            "best_cost": 47.02241670115801
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 12
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.030957538168877363,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -0.498298035312623,
+          -0.498298035312623
+        ],
+        "retained_final_progress_range": [
+          -3.5135696251332287,
+          -3.5135696251332287
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    },
+    {
+      "step": 24,
+      "planning_seconds": 3.133489341940731,
+      "angle": 6.902510530984223,
+      "retained_angle": 4.181410657684268,
+      "force_qualified_angle": 4.181410657684273,
+      "contacts": 1,
+      "tilt": 0.8525896823668005,
+      "drop": false,
+      "success": false,
+      "reward": -1.7896861272795015,
+      "palm_support_violation": false,
+      "peak_palm_support_force": 0.0,
+      "failure_reason": null,
+      "target_delta_max": 1.883,
+      "planner": {
+        "best_cost": 98.35905135371836,
+        "iterations": [
+          {
+            "iteration": 0,
+            "valid_candidates": 1,
+            "elite_count": 1,
+            "iteration_best_cost": 98.35905135371836,
+            "best_cost": 98.35905135371836
+          },
+          {
+            "iteration": 1,
+            "valid_candidates": 0,
+            "elite_count": 0,
+            "iteration_best_cost": null,
+            "best_cost": 98.35905135371836
+          },
+          {
+            "iteration": 2,
+            "valid_candidates": 0,
+            "elite_count": 0,
+            "iteration_best_cost": null,
+            "best_cost": 98.35905135371836
+          }
+        ],
+        "rollouts": 1050,
+        "horizon_steps": 5,
+        "timestep_seconds": 0.1,
+        "interpolation": "linear",
+        "valid_candidates": 1
+      },
+      "prediction": {
+        "candidates": 1,
+        "invalid": 0,
+        "physics_steps_per_candidate": 250,
+        "candidate_physics_steps": [
+          250
+        ],
+        "evaluated_physics_steps": 250,
+        "rejection_reasons": [
+          null
+        ],
+        "palm_support_constraint": true,
+        "palm_support_force_tolerance": 1e-06,
+        "initial_palm_support_violation": false,
+        "wall_seconds": 0.023600388783961535,
+        "early_termination_implemented": true,
+        "backend": "exact_native_step_threads",
+        "rotation_progress": "retained",
+        "raw_final_progress_range": [
+          -5.90708300351861,
+          -5.90708300351861
+        ],
+        "retained_final_progress_range": [
+          -6.2609793033956205,
+          -6.2609793033956205
+        ],
+        "native_build": {
+          "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+          "mujoco_version": "3.14.0",
+          "transition_abi_version": 2,
+          "mujoco_runtime_version": 3014000,
+          "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+          "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+          "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+          "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+          "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "compiler_flags": [
+            "-O3",
+            "-std=c++17",
+            "-fPIC",
+            "-shared",
+            "-fno-fast-math",
+            "-ffp-contract=off"
+          ],
+          "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+          "machine": "x86_64",
+          "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+          "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+          "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+        },
+        "native_boundary_fallback_candidates": 0
+      }
+    }
+  ],
+  "error": "No feasible trajectory in 1050 rollouts",
+  "last_failed_evaluation": {
+    "candidates": 350,
+    "invalid": 350,
+    "physics_steps_per_candidate": 250,
+    "candidate_physics_steps": [
+      118,
+      168,
+      151,
+      54,
+      34,
+      92,
+      57,
+      90,
+      118,
+      119,
+      38,
+      125,
+      99,
+      71,
+      38,
+      110,
+      38,
+      77,
+      104,
+      98,
+      33,
+      130,
+      53,
+      98,
+      100,
+      93,
+      79,
+      61,
+      101,
+      37,
+      87,
+      132,
+      80,
+      100,
+      38,
+      123,
+      101,
+      103,
+      47,
+      80,
+      115,
+      104,
+      33,
+      101,
+      32,
+      59,
+      81,
+      154,
+      151,
+      99,
+      79,
+      40,
+      85,
+      67,
+      97,
+      40,
+      64,
+      58,
+      145,
+      52,
+      62,
+      58,
+      32,
+      76,
+      41,
+      36,
+      55,
+      57,
+      92,
+      112,
+      115,
+      101,
+      38,
+      38,
+      56,
+      117,
+      67,
+      69,
+      94,
+      38,
+      68,
+      178,
+      142,
+      86,
+      95,
+      60,
+      74,
+      64,
+      97,
+      32,
+      42,
+      79,
+      130,
+      113,
+      30,
+      38,
+      37,
+      37,
+      125,
+      47,
+      39,
+      65,
+      63,
+      32,
+      54,
+      108,
+      38,
+      38,
+      96,
+      48,
+      39,
+      137,
+      76,
+      94,
+      101,
+      39,
+      82,
+      118,
+      97,
+      119,
+      83,
+      75,
+      32,
+      107,
+      39,
+      32,
+      38,
+      38,
+      114,
+      36,
+      77,
+      98,
+      79,
+      39,
+      38,
+      130,
+      55,
+      35,
+      93,
+      38,
+      116,
+      35,
+      79,
+      105,
+      50,
+      36,
+      39,
+      65,
+      182,
+      123,
+      38,
+      35,
+      86,
+      38,
+      110,
+      77,
+      37,
+      99,
+      38,
+      123,
+      34,
+      75,
+      38,
+      55,
+      182,
+      81,
+      37,
+      67,
+      73,
+      136,
+      193,
+      102,
+      54,
+      37,
+      32,
+      181,
+      200,
+      98,
+      117,
+      63,
+      116,
+      103,
+      83,
+      166,
+      175,
+      72,
+      135,
+      68,
+      99,
+      70,
+      175,
+      178,
+      124,
+      104,
+      148,
+      176,
+      175,
+      93,
+      177,
+      176,
+      102,
+      77,
+      95,
+      180,
+      75,
+      142,
+      72,
+      190,
+      66,
+      178,
+      93,
+      104,
+      94,
+      113,
+      175,
+      136,
+      195,
+      154,
+      177,
+      64,
+      184,
+      82,
+      90,
+      90,
+      74,
+      147,
+      152,
+      63,
+      155,
+      112,
+      101,
+      62,
+      160,
+      141,
+      76,
+      185,
+      117,
+      70,
+      84,
+      129,
+      183,
+      126,
+      130,
+      90,
+      130,
+      65,
+      167,
+      86,
+      147,
+      153,
+      135,
+      103,
+      154,
+      133,
+      99,
+      100,
+      68,
+      180,
+      185,
+      157,
+      77,
+      137,
+      119,
+      68,
+      104,
+      103,
+      66,
+      79,
+      184,
+      77,
+      80,
+      106,
+      108,
+      81,
+      94,
+      103,
+      76,
+      68,
+      70,
+      96,
+      163,
+      72,
+      176,
+      185,
+      156,
+      175,
+      154,
+      178,
+      185,
+      93,
+      177,
+      183,
+      132,
+      63,
+      97,
+      76,
+      82,
+      175,
+      141,
+      102,
+      100,
+      177,
+      112,
+      98,
+      137,
+      151,
+      69,
+      99,
+      96,
+      144,
+      176,
+      92,
+      72,
+      181,
+      136,
+      82,
+      70,
+      102,
+      177,
+      75,
+      104,
+      81,
+      82,
+      176,
+      83,
+      96,
+      139,
+      177,
+      117,
+      136,
+      90,
+      160,
+      101,
+      178,
+      72,
+      70,
+      96,
+      101,
+      97,
+      176,
+      118,
+      92,
+      99,
+      101,
+      123,
+      87,
+      92,
+      96,
+      120,
+      175
+    ],
+    "evaluated_physics_steps": 34586,
+    "rejection_reasons": [
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "palm_support",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss",
+      "contact_loss"
+    ],
+    "palm_support_constraint": true,
+    "palm_support_force_tolerance": 1e-06,
+    "initial_palm_support_violation": false,
+    "wall_seconds": 0.9459173080977052,
+    "early_termination_implemented": true,
+    "backend": "exact_native_step_threads",
+    "rotation_progress": "retained",
+    "raw_final_progress_range": null,
+    "retained_final_progress_range": null,
+    "native_build": {
+      "source_sha256": "639957a95a876bc29ebb52eb3eaa8ca39c522c6eee424500d6236a0a1fd4de8b",
+      "mujoco_version": "3.14.0",
+      "transition_abi_version": 2,
+      "mujoco_runtime_version": 3014000,
+      "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+      "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+      "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+      "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+      "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "compiler_flags": [
+        "-O3",
+        "-std=c++17",
+        "-fPIC",
+        "-shared",
+        "-fno-fast-math",
+        "-ffp-contract=off"
+      ],
+      "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+      "machine": "x86_64",
+      "build_key": "f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3",
+      "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/f5c108c95b47c5081f6647a9c471c06550c46cbd44fffbadcf92a284078da3a3/exact_rollout.so",
+      "binary_sha256": "1bb5515e5e5826d93d948d89cc3a59d55cb03180d6d7a87e0519a7b85dc8face"
+    },
+    "native_boundary_fallback_candidates": 0
+  },
+  "last_rejection_counts": {
+    "contact_loss": 349,
+    "palm_support": 1
+  },
+  "wall_seconds": 272.95582846109755
+}

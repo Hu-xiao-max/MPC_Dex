@@ -1,0 +1,14 @@
+{"variant": "bootstrap_variant_0068_ms_suffix123_from61", "checkpoint": "online_2000", "s1": "152/180 det 5/6", "s2": "142/180 det 4/6", "s3": "89/180 det 5/6", "wall": 446.3}
+ms-eval exit=0
+{"variant": "bootstrap_variant_0070_ms_suffix1to6_from68", "checkpoint": "online_2000", "s1": "205/240 det 7/8", "s1_holdout": "90/120", "s2": "141/240 det 5/8", "s2_holdout": "39/120", "s3": "67/240 det 2/8", "s3_holdout": "13/120", "s4": "46/240 det 1/8", "s4_holdout": "7/120", "s5": "57/240 det 2/8", "s5_holdout": "26/120", "s6": "24/240 det 2/8", "s6_holdout": "1/120", "wall": 1253.1}
+ms-eval-70 exit=0
+{"variant": "bootstrap_variant_0074_ms_suffix1to6_cont_from70", "checkpoint": "online_4000", "s1": "240/240 det 8/8", "s1_holdout": "60/60", "s2": "168/240 det 5/8", "s2_holdout": "28/60", "s3": "134/240 det 5/8", "s3_holdout": "24/60", "s4": "49/240 det 3/8", "s4_holdout": "5/60", "s5": "43/240 det 2/8", "s5_holdout": "0/60", "s6": "23/240 det 0/8", "s6_holdout": "2/60", "wall": 1021.3}
+ms-eval-74 exit=0
+{"variant": "bootstrap_variant_0076_ms_suffix1to8_from74", "checkpoint": "online_4000", "s1": "180/240 det 5/8", "s1_holdout": "17/60", "s2": "150/240 det 5/8", "s2_holdout": "6/60", "s3": "58/240 det 2/8", "s3_holdout": "1/60", "s4": "43/240 det 2/8", "s4_holdout": "0/60", "s5": "30/240 det 1/8", "s5_holdout": "0/60", "s6": "20/240 det 1/8", "s6_holdout": "1/60", "s7": "8/240 det 0/8", "s7_holdout": "0/60", "s8": "11/240 det 0/8", "s8_holdout": "0/60", "wall": 1323.3}
+ms-eval-76 exit=0
+{"variant": "bootstrap_variant_0078_ms_suffix1to7_from74", "checkpoint": "online_4000", "s1": "195/240 det 5/8", "s1_holdout": "27/60", "s2": "163/240 det 6/8", "s2_holdout": "0/60", "s3": "86/240 det 3/8", "s3_holdout": "0/60", "s4": "76/240 det 2/8", "s4_holdout": "21/60", "s5": "25/240 det 0/8", "s5_holdout": "3/60", "s6": "48/240 det 2/8", "s6_holdout": "30/60", "s7": "11/240 det 1/8", "s7_holdout": "0/60", "wall": 1235.1}
+ms-eval-bootstrap_variant_0078_ms_suffix1to7_from74 exit=0
+{"variant": "bootstrap_variant_0077_ms_suffix1to8_cont_from76", "checkpoint": "online_4000", "s1": "191/240 det 6/8", "s1_holdout": "40/60", "s2": "154/240 det 6/8", "s2_holdout": "2/60", "s3": "79/240 det 3/8", "s3_holdout": "1/60", "s4": "30/240 det 1/8", "s4_holdout": "0/60", "s5": "27/240 det 0/8", "s5_holdout": "0/60", "s6": "30/240 det 0/8", "s6_holdout": "3/60", "s7": "10/240 det 0/8", "s7_holdout": "1/60", "s8": "6/240 det 0/8", "s8_holdout": "0/60", "wall": 1356.0}
+ms-eval-bootstrap_variant_0077_ms_suffix1to8_cont_from76 exit=0
+{"variant": "bootstrap_variant_0079_ms_suffix1to8_weighted_from74", "checkpoint": "online_4000", "s1": "240/240 det 8/8", "s2": "182/240 det 5/8", "s3": "101/240 det 2/8", "s4": "59/240 det 2/8", "s5": "69/240 det 3/8", "s6": "39/240 det 1/8", "s7": "19/240 det 0/8", "s8": "15/240 det 1/8", "wall": 1346.6}
+ms-eval-0079 exit=0

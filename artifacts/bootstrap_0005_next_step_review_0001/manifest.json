@@ -1,0 +1,16 @@
+{
+  "actual_initial_batch_observations.npz": "10c95293a1dadf32f4bfd76f4f19c0d0c2c8cae02dac0c69bbb7c5d0c2e46154",
+  "analysis.log": "b89d6c17bfb2398ed6560bfa83c902a9f4bf3958e1101c804b9e1684bdc43a48",
+  "analyze_frozen_losses.py": "48f157962458f56faf93ac46970f7131ed99d981823d921b706941f52648d65e",
+  "finalize.py": "f92b774dfd0733fe28c202a7b30a0a41f3283ceb79aec8f40ab61702e77bd180",
+  "findings.md": "d2e3b25e283b8d2a0e33f618835014dff68442da9a2b7e9b24b50e9a726ebd0a",
+  "gradient_analysis.json": "206a3d38bb8caaf6eb33b14038c7a10208c1f861ffd2f7324b03fc0400a3810c",
+  "sources/companion_project.html": "287fa1e17253a76dd8e3f9a6dcc2693c4f88372a381fcbfc19eceb2a80747e37",
+  "sources/learning.py": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c",
+  "sources/main_project.html": "5b9b6a3fb3c3de0922af3267d8054c6316879445cb90e975eb85d11556d02924",
+  "sources/metrics.jsonl": "28ab7d4e321d97408632db16d12ebe2dd0322639c7870815890ce09462c81369",
+  "sources/replay.py": "e503f61fadd58a5780fed7f6ff82d33b599d3eef00dfdaea6b9dd636cfc84311",
+  "sources/run_config.json": "79be503a14b369d9eb91f44aba289ce3e5e42b5132f4889407e8244e1223561c",
+  "sources/train_bootstrap.py": "6e28ade575940b88a4c7299968aa4b8152a2212cfbc97046ed997b8e58174146",
+  "summary.json": "a3c0d7163ef260eb8f07eac08f7dd5373d85dcf8e8dc68f73ef754f586c1217b"
+}

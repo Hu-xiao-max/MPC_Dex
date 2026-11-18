@@ -1,0 +1,94 @@
+{
+  "counts": {
+    "warmup_complete_episodes": 0,
+    "warmup_policy_interactions": 0,
+    "online_policy_interactions": 0,
+    "physical_prefix_controls": 0,
+    "warmup_assisted_completed_episodes": 0,
+    "warmup_assisted_force_successes": 0,
+    "online_assisted_completed_episodes": 0,
+    "online_assisted_force_successes": 0,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 0,
+    "new_online_updates": 0,
+    "warmup_raw_reward_sum": 0.0,
+    "online_raw_reward_sum": 0.0,
+    "warmup_episodes_by_prefix": {
+      "6": 0
+    },
+    "warmup_force_successes_by_prefix": {
+      "6": 0
+    },
+    "online_episodes_by_prefix": {
+      "6": 0
+    },
+    "online_force_successes_by_prefix": {
+      "6": 0
+    },
+    "handoff_terminated_before_policy": 0
+  },
+  "label": "initialized",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 500,
+    "online_updates": 2000
+  },
+  "normalized_alpha": 0.00030585992499254644,
+  "raw_equivalent_alpha": 0.06117198499850929,
+  "replay_rows": 0,
+  "replay_pending_slot": null,
+  "unfinished_episode": false,
+  "inherited_learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 500,
+    "online_updates": 2000
+  },
+  "optimizer_steps": {
+    "critic": [
+      2500
+    ],
+    "actor": [
+      2000
+    ],
+    "alpha": [
+      2000
+    ]
+  },
+  "replay_policy": "fresh-stage-only online replay plus immutable 3-row demonstration buffer (demonstrations_replay.npz); pretraining batches 0.30 / online batches 0.30 demonstration share; inherited open replay archived without insertion",
+  "auxiliary_rng_states": {
+    "prefix_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 199806544970686698282588462921639883852,
+        "inc": 175609607592291228753124407452026872297
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    "demonstration_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 29496309012833465208231083004557860791,
+        "inc": 107082111774189848746074909847137742647
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    "handoff_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 210194823003045725284403332433241753067,
+        "inc": 177244196436605749359460903738108707593
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    }
+  },
+  "automatic_resume_supported": false,
+  "complete_update_boundary": true,
+  "metrics_bytes": 0,
+  "metrics_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

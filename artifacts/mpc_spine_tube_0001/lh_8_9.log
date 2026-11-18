@@ -1,0 +1,13 @@
+{"name": "track_seed_193_j8_r0100_d0", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 546.5}
+{"name": "track_seed_193_j8_r0100_d1", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 521.4}
+{"name": "track_seed_193_j8_r0100_d2", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 576.5}
+{"name": "track_seed_193_j8_r0100_d3", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 560.1}
+{"name": "track_seed_193_j8_r0100_d4", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 562.9}
+{"name": "track_seed_193_j8_r0100_d5", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 440.4}
+{"name": "track_seed_193_j8_r0300_d0", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 503.6}
+{"name": "track_seed_193_j8_r0300_d1", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 635.3}
+{"name": "track_seed_193_j8_r0300_d2", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 619.5}
+{"name": "track_seed_193_j8_r0300_d3", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 611.3}
+{"name": "track_seed_193_j8_r0300_d4", "status": "boundary", "controls": 14, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 609.8}
+{"name": "track_seed_193_j8_r0300_d5", "status": "budget", "controls": 34, "mpc_controls": 25, "strict_force_success": false, "stored": false, "wall": 1704.8}
+{"name": "track_seed_193_j9_r0100_d0", "status": "boundary", "controls": 14, "mpc_controls": 4, "strict_force_success": true, "stored": true, "wall": 672.3}

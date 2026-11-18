@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "episode": "prefix_07/deterministic",
+      "actions_raw_means_stds_log_probs_final_rng_bitexact": true,
+      "actual_controls": 9
+    },
+    {
+      "episode": "prefix_07/stochastic_17041",
+      "actions_raw_means_stds_log_probs_final_rng_bitexact": true,
+      "actual_controls": 14
+    },
+    {
+      "episode": "prefix_07/stochastic_17042",
+      "actions_raw_means_stds_log_probs_final_rng_bitexact": true,
+      "actual_controls": 9
+    },
+    {
+      "episode": "prefix_07/stochastic_17043",
+      "actions_raw_means_stds_log_probs_final_rng_bitexact": true,
+      "actual_controls": 14
+    },
+    {
+      "episode": "prefix_07/stochastic_17044",
+      "actions_raw_means_stds_log_probs_final_rng_bitexact": true,
+      "actual_controls": 9
+    },
+    {
+      "episode": "prefix_07/stochastic_17045",
+      "actions_raw_means_stds_log_probs_final_rng_bitexact": true,
+      "actual_controls": 10
+    }
+  ],
+  "new_physics_controls": 0,
+  "new_training_updates": 0,
+  "checkpoint_sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937"
+}

@@ -1,0 +1,3 @@
+{"noise_seed": 17011, "steps": 7, "finger_supported_rotation_success": false, "final_force_qualified_angle": 3.873990876332001, "max_force_qualified_angle": 3.873990876332001, "environment_failure_reason": "drop"}
+{"noise_seed": 17012, "steps": 7, "finger_supported_rotation_success": false, "final_force_qualified_angle": 3.8067618238332415, "max_force_qualified_angle": 3.8067618238332415, "environment_failure_reason": "drop"}
+{"noise_seed": 17013, "steps": 53, "finger_supported_rotation_success": false, "final_force_qualified_angle": 2.9174936537770746, "max_force_qualified_angle": 4.37369746004471, "environment_failure_reason": "drop"}

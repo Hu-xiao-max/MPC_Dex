@@ -1,0 +1,8 @@
+{
+  "reason": "Missing byte-identical archived helper import; no environment or physical execution occurred",
+  "original_provenance_sha256": "e486013e1185b3d20c4cd32720888b504359daa05f91d7844b38de3aa1878be0",
+  "corrected_provenance_sha256": "892ea154880e5bd36a276d22ebdf8786840dac504bab1da123ced1f5b0ec5568",
+  "added_dependency": "audit_helpers.py",
+  "script_unchanged": true,
+  "protocol_unchanged": true
+}

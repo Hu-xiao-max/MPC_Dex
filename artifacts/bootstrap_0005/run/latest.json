@@ -1,0 +1,5 @@
+{
+  "checkpoint_directory": "checkpoint_00000006",
+  "environment_steps": 2000,
+  "status": "budget_exhausted"
+}

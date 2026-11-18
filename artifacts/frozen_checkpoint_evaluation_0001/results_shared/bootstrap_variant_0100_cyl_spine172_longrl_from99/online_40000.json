@@ -1,0 +1,1294 @@
+{
+ "variant": "bootstrap_variant_0100_cyl_spine172_longrl_from99",
+ "checkpoint": "online_40000",
+ "agent_sha256": "b1d55b248710e9af50a2404caab9767fa2fc946dbb634f1efe2112ac284fa79c",
+ "trials_per_cell": 30,
+ "cells": {
+  "k0": {
+   "representative": "seed_172",
+   "group_size": 51,
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "rows": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2747856064824112
+    },
+    {
+     "seed": 50001,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.3051363312642197
+    },
+    {
+     "seed": 50002,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.1760660581780502
+    },
+    {
+     "seed": 50003,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": -0.038844571401263
+    },
+    {
+     "seed": 50004,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2267840630055424
+    },
+    {
+     "seed": 50005,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.3411612250241611
+    },
+    {
+     "seed": 50006,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.1391809352739202
+    },
+    {
+     "seed": 50007,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2073884476872425
+    },
+    {
+     "seed": 50008,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.660511931982918
+    },
+    {
+     "seed": 50009,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2319684507357638
+    },
+    {
+     "seed": 50010,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.3735025829706295
+    },
+    {
+     "seed": 50011,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.3524394653778413
+    },
+    {
+     "seed": 50012,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2552752923628145
+    },
+    {
+     "seed": 50013,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2985454403541723
+    },
+    {
+     "seed": 50014,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.5371036009656223
+    },
+    {
+     "seed": 50015,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.1418570987868537
+    },
+    {
+     "seed": 50016,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.4255389721636835
+    },
+    {
+     "seed": 50017,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.348267032828572
+    },
+    {
+     "seed": 50018,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2700937824942282
+    },
+    {
+     "seed": 50019,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.1528042645483156
+    },
+    {
+     "seed": 50020,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.536235398043056
+    },
+    {
+     "seed": 50021,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.099537981270937
+    },
+    {
+     "seed": 50022,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.4202877578449813
+    },
+    {
+     "seed": 50023,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.1773534166255177
+    },
+    {
+     "seed": 50024,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.4330701006415794
+    },
+    {
+     "seed": 50025,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.3545570856710931
+    },
+    {
+     "seed": 50026,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -8.243761882682962
+    },
+    {
+     "seed": 50027,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.3258672877991922
+    },
+    {
+     "seed": 50028,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2037863469113201
+    },
+    {
+     "seed": 50029,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.4217198500680432
+    },
+    {
+     "seed": 50030,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.1392237453243765
+    }
+   ]
+  },
+  "k1": {
+   "representative": "seed_172",
+   "group_size": 1,
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "rows": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.3098019892429984
+    },
+    {
+     "seed": 51001,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.9304729170600402
+    },
+    {
+     "seed": 51002,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.24052835456890523
+    },
+    {
+     "seed": 51003,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.4266632515536886
+    },
+    {
+     "seed": 51004,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.413028733176963
+    },
+    {
+     "seed": 51005,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": -0.8907304517682837
+    },
+    {
+     "seed": 51006,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.909062003328244
+    },
+    {
+     "seed": 51007,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.8223592703276911
+    },
+    {
+     "seed": 51008,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.1610017780320574
+    },
+    {
+     "seed": 51009,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.1571839358780334
+    },
+    {
+     "seed": 51010,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2857257829320672
+    },
+    {
+     "seed": 51011,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.4827842166484547
+    },
+    {
+     "seed": 51012,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.1207870063541017
+    },
+    {
+     "seed": 51013,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.0488295162679457
+    },
+    {
+     "seed": 51014,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.2511120021903082
+    },
+    {
+     "seed": 51015,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.47094664206243597
+    },
+    {
+     "seed": 51016,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": -0.38052723329093774
+    },
+    {
+     "seed": 51017,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.6535901682064105
+    },
+    {
+     "seed": 51018,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.0746728816665043
+    },
+    {
+     "seed": 51019,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.8029604466249216
+    },
+    {
+     "seed": 51020,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.08206872352589353
+    },
+    {
+     "seed": 51021,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2721823213852874
+    },
+    {
+     "seed": 51022,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -1.4209175307557238
+    },
+    {
+     "seed": 51023,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.20939748287955906
+    },
+    {
+     "seed": 51024,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.10610537297949983
+    },
+    {
+     "seed": 51025,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.8220145403760546
+    },
+    {
+     "seed": 51026,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.3179522460670857
+    },
+    {
+     "seed": 51027,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.2657522941993156
+    },
+    {
+     "seed": 51028,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -3.4183558704765957
+    },
+    {
+     "seed": 51029,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.3068776194441847
+    },
+    {
+     "seed": 51030,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.18866811448795487
+    }
+   ]
+  },
+  "k2": {
+   "representative": "seed_172",
+   "group_size": 1,
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "rows": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.031364189370927
+    },
+    {
+     "seed": 52001,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.566231189938774
+    },
+    {
+     "seed": 52002,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 2.3125821167630476
+    },
+    {
+     "seed": 52003,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.6591807796579423
+    },
+    {
+     "seed": 52004,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.9541663210830853
+    },
+    {
+     "seed": 52005,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.137787839951196
+    },
+    {
+     "seed": 52006,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.7319695381663553
+    },
+    {
+     "seed": 52007,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.8869803827249276
+    },
+    {
+     "seed": 52008,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.783721869368117
+    },
+    {
+     "seed": 52009,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.8749443136266883
+    },
+    {
+     "seed": 52010,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.9713288508636673
+    },
+    {
+     "seed": 52011,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.2346362468980523
+    },
+    {
+     "seed": 52012,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -1.4840047765508246
+    },
+    {
+     "seed": 52013,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.0266362772654585
+    },
+    {
+     "seed": 52014,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -1.602847165343515
+    },
+    {
+     "seed": 52015,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.221951166197185
+    },
+    {
+     "seed": 52016,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.9129433681847283
+    },
+    {
+     "seed": 52017,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.863858326935189
+    },
+    {
+     "seed": 52018,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.037551249049864
+    },
+    {
+     "seed": 52019,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.0471151323083046
+    },
+    {
+     "seed": 52020,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.9449315343711895
+    },
+    {
+     "seed": 52021,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.7791203229496535
+    },
+    {
+     "seed": 52022,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.8545009686244938
+    },
+    {
+     "seed": 52023,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.347777393231694
+    },
+    {
+     "seed": 52024,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.0227376183022074
+    },
+    {
+     "seed": 52025,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.2634321078537765
+    },
+    {
+     "seed": 52026,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.824125636736279
+    },
+    {
+     "seed": 52027,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.989787938384046
+    },
+    {
+     "seed": 52028,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.346743917797088
+    },
+    {
+     "seed": 52029,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.3363321943383895
+    },
+    {
+     "seed": 52030,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.360126300982841
+    }
+   ]
+  },
+  "k3": {
+   "representative": "seed_172",
+   "group_size": 1,
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "rows": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.3289382967917085
+    },
+    {
+     "seed": 53001,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.0548073519016485
+    },
+    {
+     "seed": 53002,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.88682780575246
+    },
+    {
+     "seed": 53003,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.795393090200687
+    },
+    {
+     "seed": 53004,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.874837106092308
+    },
+    {
+     "seed": 53005,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.185208917366724
+    },
+    {
+     "seed": 53006,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -1.6121322480915659
+    },
+    {
+     "seed": 53007,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.1433700984051125
+    },
+    {
+     "seed": 53008,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.6653412062816549
+    },
+    {
+     "seed": 53009,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.417898675048788
+    },
+    {
+     "seed": 53010,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.243300390669304
+    },
+    {
+     "seed": 53011,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.613819249302338
+    },
+    {
+     "seed": 53012,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.076806113124323
+    },
+    {
+     "seed": 53013,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.1849515467791845
+    },
+    {
+     "seed": 53014,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.5003050341864625
+    },
+    {
+     "seed": 53015,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.211776926804271
+    },
+    {
+     "seed": 53016,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.012131002641374
+    },
+    {
+     "seed": 53017,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.435884504427009
+    },
+    {
+     "seed": 53018,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.8448145005407115
+    },
+    {
+     "seed": 53019,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.059464012649766
+    },
+    {
+     "seed": 53020,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.019799146269027
+    },
+    {
+     "seed": 53021,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.734574685000087
+    },
+    {
+     "seed": 53022,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.6740856631020642
+    },
+    {
+     "seed": 53023,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.197288761720508
+    },
+    {
+     "seed": 53024,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.432400719260062
+    },
+    {
+     "seed": 53025,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.0366648540569114
+    },
+    {
+     "seed": 53026,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.040622570171714
+    },
+    {
+     "seed": 53027,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.8411169619175854
+    },
+    {
+     "seed": 53028,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.9829311606444121
+    },
+    {
+     "seed": 53029,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.0903775021714175
+    },
+    {
+     "seed": 53030,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 5.422784703024222
+    }
+   ]
+  },
+  "k4": {
+   "representative": "seed_172",
+   "group_size": 1,
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "rows": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -1.3250021204326436
+    },
+    {
+     "seed": 54001,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -0.040432224602857454
+    },
+    {
+     "seed": 54002,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -0.7968807890804066
+    },
+    {
+     "seed": 54003,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.12418527187771
+    },
+    {
+     "seed": 54004,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -1.4079297356278477
+    },
+    {
+     "seed": 54005,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.037653707532783326
+    },
+    {
+     "seed": 54006,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -0.0065059076232369464
+    },
+    {
+     "seed": 54007,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.6293783597747418
+    },
+    {
+     "seed": 54008,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.947466740192162
+    },
+    {
+     "seed": 54009,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -1.4786104377656584
+    },
+    {
+     "seed": 54010,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.0936581272738155
+    },
+    {
+     "seed": 54011,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.4451765255986464
+    },
+    {
+     "seed": 54012,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.8810133626280503
+    },
+    {
+     "seed": 54013,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 1.773854510913947
+    },
+    {
+     "seed": 54014,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.7404163072419103
+    },
+    {
+     "seed": 54015,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -1.1165036067831435
+    },
+    {
+     "seed": 54016,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.4467468629828675
+    },
+    {
+     "seed": 54017,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.907167812024125
+    },
+    {
+     "seed": 54018,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.520469514140912
+    },
+    {
+     "seed": 54019,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -0.30145926106324666
+    },
+    {
+     "seed": 54020,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 0.5059811251193005
+    },
+    {
+     "seed": 54021,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.014580658834375
+    },
+    {
+     "seed": 54022,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.709441305044307
+    },
+    {
+     "seed": 54023,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": 5.316024130624237
+    },
+    {
+     "seed": 54024,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.1227738933016553
+    },
+    {
+     "seed": 54025,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -2.2068217302900957
+    },
+    {
+     "seed": 54026,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop",
+     "final_force_qualified_angle": -1.1319010445067923
+    },
+    {
+     "seed": 54027,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 3.017041102203354
+    },
+    {
+     "seed": 54028,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 4.276318857125043
+    },
+    {
+     "seed": 54029,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support",
+     "final_force_qualified_angle": 4.474693922365805
+    },
+    {
+     "seed": 54030,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop",
+     "final_force_qualified_angle": 2.493700887394703
+    }
+   ]
+  }
+ },
+ "wall_seconds": 19.244326640851796
+}

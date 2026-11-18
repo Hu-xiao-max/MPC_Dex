@@ -1,0 +1,70 @@
+{
+  "seed": 17021,
+  "step2": {
+    "step": 2,
+    "action_noise_max": 1.868605613708496e-05,
+    "action_noise_l2": 3.6857816632410575e-05,
+    "conditional_mean_drift_max": 0.004212856292724609,
+    "conditional_mean_drift_l2": 0.009432882057806553,
+    "drift_to_direct_noise_l2_ratio": 255.92623002828216,
+    "observation_max": 0.00013788044452667236,
+    "joint_velocity_observation_delta_max_rad_per_s": 0.00013788044452667236,
+    "previous_action_delta_max": 1.2993812561035156e-05
+  }
+}
+{
+  "seed": 17022,
+  "step2": {
+    "step": 2,
+    "action_noise_max": 2.6658177375793457e-05,
+    "action_noise_l2": 3.7235789540502176e-05,
+    "conditional_mean_drift_max": 0.002959311008453369,
+    "conditional_mean_drift_l2": 0.006712431788333312,
+    "drift_to_direct_noise_l2_ratio": 180.2682814347754,
+    "observation_max": 0.00010139489313587546,
+    "joint_velocity_observation_delta_max_rad_per_s": 0.00010139489313587546,
+    "previous_action_delta_max": 1.1727213859558105e-05
+  }
+}
+{
+  "seed": 17023,
+  "step2": {
+    "step": 2,
+    "action_noise_max": 1.9162893295288086e-05,
+    "action_noise_l2": 4.0415512202350193e-05,
+    "conditional_mean_drift_max": 0.002070188522338867,
+    "conditional_mean_drift_l2": 0.004624588520026724,
+    "drift_to_direct_noise_l2_ratio": 114.4260772169009,
+    "observation_max": 8.820393122732639e-05,
+    "joint_velocity_observation_delta_max_rad_per_s": 8.820393122732639e-05,
+    "previous_action_delta_max": 1.6598030924797058e-05
+  }
+}
+{
+  "seed": 17024,
+  "step2": {
+    "step": 2,
+    "action_noise_max": 1.4007091522216797e-05,
+    "action_noise_l2": 2.3495540287081294e-05,
+    "conditional_mean_drift_max": 0.001482248306274414,
+    "conditional_mean_drift_l2": 0.0033317396530792376,
+    "drift_to_direct_noise_l2_ratio": 141.80306612958162,
+    "observation_max": 0.00012046901974827051,
+    "joint_velocity_observation_delta_max_rad_per_s": 0.00012046901974827051,
+    "previous_action_delta_max": 3.059208393096924e-05
+  }
+}
+{
+  "seed": 17025,
+  "step2": {
+    "step": 2,
+    "action_noise_max": 1.5288591384887695e-05,
+    "action_noise_l2": 3.279070861152304e-05,
+    "conditional_mean_drift_max": 0.0001932978630065918,
+    "conditional_mean_drift_l2": 0.00044452238291240907,
+    "drift_to_direct_noise_l2_ratio": 13.556351836696773,
+    "observation_max": 0.0002006912254728377,
+    "joint_velocity_observation_delta_max_rad_per_s": 0.0002006912254728377,
+    "previous_action_delta_max": 1.8358230590820312e-05
+  }
+}

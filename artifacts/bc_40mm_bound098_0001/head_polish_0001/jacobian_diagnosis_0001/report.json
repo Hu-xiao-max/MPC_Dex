@@ -1,0 +1,904 @@
+{
+  "purpose": "Local frozen-actor response to recorded off-teacher states; no fitting or physics",
+  "controls": 8,
+  "teacher_controls": 22,
+  "device": "cuda",
+  "torch_version": "2.14.0+cu130",
+  "numpy_version": "2.4.6",
+  "cuda_device": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "torch_threads": 1,
+  "tf32": false,
+  "source_choice": "Archived actor implementation and checkpoint used by the actual singleton CUDA audit",
+  "teacher_and_visited_actions_match_saved_values_bitwise": true,
+  "checkpoint_and_inputs_unchanged": true,
+  "actor_weights_bitwise_unchanged": true,
+  "optimizer_updates": 0,
+  "physics_steps": 0,
+  "definitions": {
+    "jacobian": "d tanh(actor_mean) / d observation, evaluated separately at each teacher observation",
+    "actual_change": "policy(visited observation) - policy(teacher observation)",
+    "linear_change": "teacher Jacobian times (visited observation - teacher observation)",
+    "total_error": "teacher-state fitting error plus state-induced action change",
+    "squared_change_explained": "1 - ||actual_change-linear_change||^2 / ||actual_change||^2",
+    "attribution": "J_group * observed_delta_group, expressed in common normalized-action units; signed projection shares sum to one for predicted change",
+    "caution": "Raw observation norms and Jacobian column magnitudes have mixed units and are not ranked. Correlated groups and signed cancellation prevent causal-importance interpretation. Autograd ignores floating-point rounding discontinuities."
+  },
+  "groups": [
+    {
+      "name": "joint_position",
+      "start": 0,
+      "stop": 16,
+      "units": "radians"
+    },
+    {
+      "name": "object_position",
+      "start": 16,
+      "stop": 19,
+      "units": "metres"
+    },
+    {
+      "name": "object_quaternion",
+      "start": 19,
+      "stop": 23,
+      "units": "unitless quaternion components wxyz"
+    },
+    {
+      "name": "principal_angles",
+      "start": 23,
+      "stop": 25,
+      "units": "radians: current and previous"
+    },
+    {
+      "name": "joint_velocity",
+      "start": 25,
+      "stop": 41,
+      "units": "radians/second: finite differences"
+    },
+    {
+      "name": "object_velocity",
+      "start": 41,
+      "stop": 44,
+      "units": "metres/second: finite differences"
+    },
+    {
+      "name": "previous_action",
+      "start": 44,
+      "stop": 60,
+      "units": "normalized absolute joint targets"
+    }
+  ],
+  "steps": [
+    {
+      "control": 1,
+      "teacher_fit_error_max_abs": 1.4901161193847656e-07,
+      "observed_teacher_action_error_max_abs": 1.4901161193847656e-07,
+      "actual_state_induced_action_change_l2": 0.0,
+      "actual_state_induced_action_change_max_abs": 0.0,
+      "linear_action_change_l2": 0.0,
+      "linear_action_change_max_abs": 0.0,
+      "predicted_teacher_action_error_max_abs": 1.4901161193847656e-07,
+      "taylor_residual_l2": 0.0,
+      "taylor_residual_max_abs": 0.0,
+      "relative_l2_taylor_error": null,
+      "squared_change_explained": null,
+      "cosine_alignment": null,
+      "groups": [
+        {
+          "group": "joint_position",
+          "observation_units": "radians",
+          "observed_group_delta_l2": 0.0,
+          "observed_group_delta_max_abs": 0.0,
+          "action_contribution_l2": 0.0,
+          "action_contribution_max_abs": 0.0,
+          "projection_fraction_of_predicted_change": null,
+          "projection_fraction_of_actual_change": null
+        },
+        {
+          "group": "object_position",
+          "observation_units": "metres",
+          "observed_group_delta_l2": 0.0,
+          "observed_group_delta_max_abs": 0.0,
+          "action_contribution_l2": 0.0,
+          "action_contribution_max_abs": 0.0,
+          "projection_fraction_of_predicted_change": null,
+          "projection_fraction_of_actual_change": null
+        },
+        {
+          "group": "object_quaternion",
+          "observation_units": "unitless quaternion components wxyz",
+          "observed_group_delta_l2": 0.0,
+          "observed_group_delta_max_abs": 0.0,
+          "action_contribution_l2": 0.0,
+          "action_contribution_max_abs": 0.0,
+          "projection_fraction_of_predicted_change": null,
+          "projection_fraction_of_actual_change": null
+        },
+        {
+          "group": "principal_angles",
+          "observation_units": "radians: current and previous",
+          "observed_group_delta_l2": 0.0,
+          "observed_group_delta_max_abs": 0.0,
+          "action_contribution_l2": 0.0,
+          "action_contribution_max_abs": 0.0,
+          "projection_fraction_of_predicted_change": null,
+          "projection_fraction_of_actual_change": null
+        },
+        {
+          "group": "joint_velocity",
+          "observation_units": "radians/second: finite differences",
+          "observed_group_delta_l2": 0.0,
+          "observed_group_delta_max_abs": 0.0,
+          "action_contribution_l2": 0.0,
+          "action_contribution_max_abs": 0.0,
+          "projection_fraction_of_predicted_change": null,
+          "projection_fraction_of_actual_change": null
+        },
+        {
+          "group": "object_velocity",
+          "observation_units": "metres/second: finite differences",
+          "observed_group_delta_l2": 0.0,
+          "observed_group_delta_max_abs": 0.0,
+          "action_contribution_l2": 0.0,
+          "action_contribution_max_abs": 0.0,
+          "projection_fraction_of_predicted_change": null,
+          "projection_fraction_of_actual_change": null
+        },
+        {
+          "group": "previous_action",
+          "observation_units": "normalized absolute joint targets",
+          "observed_group_delta_l2": 0.0,
+          "observed_group_delta_max_abs": 0.0,
+          "action_contribution_l2": 0.0,
+          "action_contribution_max_abs": 0.0,
+          "projection_fraction_of_predicted_change": null,
+          "projection_fraction_of_actual_change": null
+        }
+      ]
+    },
+    {
+      "control": 2,
+      "teacher_fit_error_max_abs": 1.1920928955078125e-07,
+      "observed_teacher_action_error_max_abs": 9.775161743164062e-06,
+      "actual_state_induced_action_change_l2": 2.3526357059128403e-05,
+      "actual_state_induced_action_change_max_abs": 9.775161743164062e-06,
+      "linear_action_change_l2": 2.3223674694885252e-05,
+      "linear_action_change_max_abs": 9.611498974137697e-06,
+      "predicted_teacher_action_error_max_abs": 9.611498974137697e-06,
+      "taylor_residual_l2": 3.680583868610234e-07,
+      "taylor_residual_max_abs": 1.649276967288782e-07,
+      "relative_l2_taylor_error": 0.01564451249022483,
+      "squared_change_explained": 0.9997552492289432,
+      "cosine_alignment": 0.9999598710710109,
+      "groups": [
+        {
+          "group": "joint_position",
+          "observation_units": "radians",
+          "observed_group_delta_l2": 1.9782714287597458e-07,
+          "observed_group_delta_max_abs": 1.1920928955078125e-07,
+          "action_contribution_l2": 1.8750247659823048e-07,
+          "action_contribution_max_abs": 8.360521264183518e-08,
+          "projection_fraction_of_predicted_change": -0.0080009323985889,
+          "projection_fraction_of_actual_change": -0.007898037898922058
+        },
+        {
+          "group": "object_position",
+          "observation_units": "metres",
+          "observed_group_delta_l2": 1.9893058914033534e-09,
+          "observed_group_delta_max_abs": 1.862645149230957e-09,
+          "action_contribution_l2": 1.5240090006205876e-09,
+          "action_contribution_max_abs": 7.046738192961755e-10,
+          "projection_fraction_of_predicted_change": 4.743271688645021e-05,
+          "projection_fraction_of_actual_change": 4.672836746038649e-05
+        },
+        {
+          "group": "object_quaternion",
+          "observation_units": "unitless quaternion components wxyz",
+          "observed_group_delta_l2": 1.075062563700154e-08,
+          "observed_group_delta_max_abs": 1.0710209608078003e-08,
+          "action_contribution_l2": 1.0319139657955657e-07,
+          "action_contribution_max_abs": 4.5158237566012005e-08,
+          "projection_fraction_of_predicted_change": 0.0043894004102570236,
+          "projection_fraction_of_actual_change": 0.004331199112368126
+        },
+        {
+          "group": "principal_angles",
+          "observation_units": "radians: current and previous",
+          "observed_group_delta_l2": 1.4319084584712982e-08,
+          "observed_group_delta_max_abs": 1.4319084584712982e-08,
+          "action_contribution_l2": 1.9882335548959568e-08,
+          "action_contribution_max_abs": 7.960722185618163e-09,
+          "projection_fraction_of_predicted_change": -0.0007798258537801074,
+          "projection_fraction_of_actual_change": -0.0007689003455841738
+        },
+        {
+          "group": "joint_velocity",
+          "observation_units": "radians/second: finite differences",
+          "observed_group_delta_l2": 1.6576959223331114e-06,
+          "observed_group_delta_max_abs": 8.373754099011421e-07,
+          "action_contribution_l2": 2.0460133264963925e-05,
+          "action_contribution_max_abs": 8.563359078136643e-06,
+          "projection_fraction_of_predicted_change": 0.8809685515796913,
+          "projection_fraction_of_actual_change": 0.8696250310423894
+        },
+        {
+          "group": "object_velocity",
+          "observation_units": "metres/second: finite differences",
+          "observed_group_delta_l2": 4.705170284314275e-08,
+          "observed_group_delta_max_abs": 4.595494829118252e-08,
+          "action_contribution_l2": 3.8064117600336467e-06,
+          "action_contribution_max_abs": 1.5979487084658364e-06,
+          "projection_fraction_of_predicted_change": 0.16377199263560163,
+          "projection_fraction_of_actual_change": 0.1616771105080329
+        },
+        {
+          "group": "previous_action",
+          "observation_units": "normalized absolute joint targets",
+          "observed_group_delta_l2": 3.044556030283311e-07,
+          "observed_group_delta_max_abs": 1.4901161193847656e-07,
+          "action_contribution_l2": 9.71926841997294e-07,
+          "action_contribution_max_abs": 4.792360414063168e-07,
+          "projection_fraction_of_predicted_change": -0.04039661909006738,
+          "projection_fraction_of_actual_change": -0.039918414195019625
+        }
+      ]
+    },
+    {
+      "control": 3,
+      "teacher_fit_error_max_abs": 1.1920928955078125e-07,
+      "observed_teacher_action_error_max_abs": 2.238154411315918e-05,
+      "actual_state_induced_action_change_l2": 2.4319370724370634e-05,
+      "actual_state_induced_action_change_max_abs": 2.238154411315918e-05,
+      "linear_action_change_l2": 2.4349170211850443e-05,
+      "linear_action_change_max_abs": 2.2390090881070797e-05,
+      "predicted_teacher_action_error_max_abs": 2.2390090881070797e-05,
+      "taylor_residual_l2": 1.1786884419358614e-07,
+      "taylor_residual_max_abs": 8.881475823791066e-08,
+      "relative_l2_taylor_error": 0.00484670617219009,
+      "squared_change_explained": 0.9999765094392804,
+      "cosine_alignment": 0.9999890189037538,
+      "groups": [
+        {
+          "group": "joint_position",
+          "observation_units": "radians",
+          "observed_group_delta_l2": 2.0273280345910044e-05,
+          "observed_group_delta_max_abs": 1.3619661331176758e-05,
+          "action_contribution_l2": 2.0344539896916061e-07,
+          "action_contribution_max_abs": 1.4758589735042182e-07,
+          "projection_fraction_of_predicted_change": 0.00736421194378601,
+          "projection_fraction_of_actual_change": 0.007371963913903171
+        },
+        {
+          "group": "object_position",
+          "observation_units": "metres",
+          "observed_group_delta_l2": 7.7387537009432e-07,
+          "observed_group_delta_max_abs": 7.678172551095486e-07,
+          "action_contribution_l2": 2.113794532791517e-08,
+          "action_contribution_max_abs": 1.4685860201969075e-08,
+          "projection_fraction_of_predicted_change": 0.0003212427944702801,
+          "projection_fraction_of_actual_change": 0.0003213390333472339
+        },
+        {
+          "group": "object_quaternion",
+          "observation_units": "unitless quaternion components wxyz",
+          "observed_group_delta_l2": 7.5020770649050525e-06,
+          "observed_group_delta_max_abs": 5.2265822887420654e-06,
+          "action_contribution_l2": 3.106634269203492e-07,
+          "action_contribution_max_abs": 1.8395713714380174e-07,
+          "projection_fraction_of_predicted_change": -0.002420095483528638,
+          "projection_fraction_of_actual_change": -0.002383656686902553
+        },
+        {
+          "group": "principal_angles",
+          "observation_units": "radians: current and previous",
+          "observed_group_delta_l2": 1.1086473175359487e-05,
+          "observed_group_delta_max_abs": 1.1086463928222656e-05,
+          "action_contribution_l2": 1.7582255907685565e-07,
+          "action_contribution_max_abs": 1.1807446557564761e-07,
+          "projection_fraction_of_predicted_change": 0.004294930961147311,
+          "projection_fraction_of_actual_change": 0.004301802527480676
+        },
+        {
+          "group": "joint_velocity",
+          "observation_units": "radians/second: finite differences",
+          "observed_group_delta_l2": 0.00020289758368536768,
+          "observed_group_delta_max_abs": 0.00013589859008789062,
+          "action_contribution_l2": 2.2715516744728715e-05,
+          "action_contribution_max_abs": 2.0824031163990675e-05,
+          "projection_fraction_of_predicted_change": 0.9327518618469349,
+          "projection_fraction_of_actual_change": 0.9338289197395131
+        },
+        {
+          "group": "object_velocity",
+          "observation_units": "metres/second: finite differences",
+          "observed_group_delta_l2": 7.723831170357054e-06,
+          "observed_group_delta_max_abs": 7.671304047107697e-06,
+          "action_contribution_l2": 5.150177813454136e-07,
+          "action_contribution_max_abs": 3.0346136165298326e-07,
+          "projection_fraction_of_predicted_change": 0.017820787902084412,
+          "projection_fraction_of_actual_change": 0.017830173258316154
+        },
+        {
+          "group": "previous_action",
+          "observation_units": "normalized absolute joint targets",
+          "observed_group_delta_l2": 2.359587935582535e-05,
+          "observed_group_delta_max_abs": 9.775161743164062e-06,
+          "action_contribution_l2": 1.052933521921906e-06,
+          "action_contribution_max_abs": 1.015876094136517e-06,
+          "projection_fraction_of_predicted_change": 0.03986706003510569,
+          "projection_fraction_of_actual_change": 0.039943803241312976
+        }
+      ]
+    },
+    {
+      "control": 4,
+      "teacher_fit_error_max_abs": 1.1920928955078125e-07,
+      "observed_teacher_action_error_max_abs": 1.9729137420654297e-05,
+      "actual_state_induced_action_change_l2": 3.432851432296754e-05,
+      "actual_state_induced_action_change_max_abs": 1.977384090423584e-05,
+      "linear_action_change_l2": 3.438251454885344e-05,
+      "linear_action_change_max_abs": 1.9792925236405967e-05,
+      "predicted_teacher_action_error_max_abs": 1.9748221752824424e-05,
+      "taylor_residual_l2": 1.8732026746158923e-07,
+      "taylor_residual_max_abs": 1.1743464820371252e-07,
+      "relative_l2_taylor_error": 0.005456696019503016,
+      "squared_change_explained": 0.9999702244685508,
+      "cosine_alignment": 0.9999863709054159,
+      "groups": [
+        {
+          "group": "joint_position",
+          "observation_units": "radians",
+          "observed_group_delta_l2": 0.00015172173775200454,
+          "observed_group_delta_max_abs": 0.00010395050048828125,
+          "action_contribution_l2": 1.1035202737109716e-06,
+          "action_contribution_max_abs": 7.123806762708226e-07,
+          "projection_fraction_of_predicted_change": -0.00809364612507414,
+          "projection_fraction_of_actual_change": -0.008078126858626213
+        },
+        {
+          "group": "object_position",
+          "observation_units": "metres",
+          "observed_group_delta_l2": 4.854793060754489e-06,
+          "observed_group_delta_max_abs": 3.4831464290618896e-06,
+          "action_contribution_l2": 7.306089926673613e-08,
+          "action_contribution_max_abs": 4.181786753768707e-08,
+          "projection_fraction_of_predicted_change": -0.00020404887590092153,
+          "projection_fraction_of_actual_change": -0.000202625948280722
+        },
+        {
+          "group": "object_quaternion",
+          "observation_units": "unitless quaternion components wxyz",
+          "observed_group_delta_l2": 0.0003011632419889727,
+          "observed_group_delta_max_abs": 0.00024825334548950195,
+          "action_contribution_l2": 4.338728456446813e-06,
+          "action_contribution_max_abs": 3.0220235024483455e-06,
+          "projection_fraction_of_predicted_change": 0.019216487185136924,
+          "projection_fraction_of_actual_change": 0.01919729389820875
+        },
+        {
+          "group": "principal_angles",
+          "observation_units": "radians: current and previous",
+          "observed_group_delta_l2": 0.0006023473650357714,
+          "observed_group_delta_max_abs": 0.0006022453308105469,
+          "action_contribution_l2": 5.918497466849896e-06,
+          "action_contribution_max_abs": 4.037695547742803e-06,
+          "projection_fraction_of_predicted_change": 0.04672820733358796,
+          "projection_fraction_of_actual_change": 0.046810741578673855
+        },
+        {
+          "group": "joint_velocity",
+          "observation_units": "radians/second: finite differences",
+          "observed_group_delta_l2": 0.0014940970649777502,
+          "observed_group_delta_max_abs": 0.0009031295776367188,
+          "action_contribution_l2": 3.2880279239104486e-05,
+          "action_contribution_max_abs": 1.7610951666746644e-05,
+          "projection_fraction_of_predicted_change": 0.9496340002590732,
+          "projection_fraction_of_actual_change": 0.9510845359987264
+        },
+        {
+          "group": "object_velocity",
+          "observation_units": "metres/second: finite differences",
+          "observed_group_delta_l2": 5.1061628837167476e-05,
+          "observed_group_delta_max_abs": 3.400444984436035e-05,
+          "action_contribution_l2": 2.689456820784584e-06,
+          "action_contribution_max_abs": 1.7351721935399134e-06,
+          "projection_fraction_of_predicted_change": -0.0036835594189034613,
+          "projection_fraction_of_actual_change": -0.0036505668986968336
+        },
+        {
+          "group": "previous_action",
+          "observation_units": "normalized absolute joint targets",
+          "observed_group_delta_l2": 2.4368497223128635e-05,
+          "observed_group_delta_max_abs": 2.238154411315918e-05,
+          "action_contribution_l2": 1.7265225040549308e-07,
+          "action_contribution_max_abs": 1.2748125401140786e-07,
+          "projection_fraction_of_predicted_change": -0.003597440357919612,
+          "projection_fraction_of_actual_change": -0.0036018593990028744
+        }
+      ]
+    },
+    {
+      "control": 5,
+      "teacher_fit_error_max_abs": 1.1920928955078125e-07,
+      "observed_teacher_action_error_max_abs": 0.0001049041748046875,
+      "actual_state_induced_action_change_l2": 0.00013043548515378643,
+      "actual_state_induced_action_change_max_abs": 0.0001048743724822998,
+      "linear_action_change_l2": 0.00013047700020952716,
+      "linear_action_change_max_abs": 0.00010494761636667665,
+      "predicted_teacher_action_error_max_abs": 0.00010497741868906434,
+      "taylor_residual_l2": 2.6158363477054163e-07,
+      "taylor_residual_max_abs": 2.161153383958836e-07,
+      "relative_l2_taylor_error": 0.002005463731454125,
+      "squared_change_explained": 0.9999959781152218,
+      "cosine_alignment": 0.9999980403325347,
+      "groups": [
+        {
+          "group": "joint_position",
+          "observation_units": "radians",
+          "observed_group_delta_l2": 0.00034653377921638727,
+          "observed_group_delta_max_abs": 0.00019979476928710938,
+          "action_contribution_l2": 9.734673052233886e-06,
+          "action_contribution_max_abs": 6.555137169877989e-06,
+          "projection_fraction_of_predicted_change": -0.038085592066375115,
+          "projection_fraction_of_actual_change": -0.03803285612386527
+        },
+        {
+          "group": "object_position",
+          "observation_units": "metres",
+          "observed_group_delta_l2": 8.254080116905326e-06,
+          "observed_group_delta_max_abs": 7.567927241325378e-06,
+          "action_contribution_l2": 8.257611877351226e-07,
+          "action_contribution_max_abs": 4.829525676111612e-07,
+          "projection_fraction_of_predicted_change": 0.003731171492336877,
+          "projection_fraction_of_actual_change": 0.003727738544851988
+        },
+        {
+          "group": "object_quaternion",
+          "observation_units": "unitless quaternion components wxyz",
+          "observed_group_delta_l2": 0.00025601362253973816,
+          "observed_group_delta_max_abs": 0.00020557641983032227,
+          "action_contribution_l2": 1.803829937967035e-05,
+          "action_contribution_max_abs": 1.1353572079542129e-05,
+          "projection_fraction_of_predicted_change": -0.05138944871237709,
+          "projection_fraction_of_actual_change": -0.05130526375835014
+        },
+        {
+          "group": "principal_angles",
+          "observation_units": "radians: current and previous",
+          "observed_group_delta_l2": 0.0007729212632612936,
+          "observed_group_delta_max_abs": 0.0006022453308105469,
+          "action_contribution_l2": 5.568022594724857e-05,
+          "action_contribution_max_abs": 3.0841765450873027e-05,
+          "projection_fraction_of_predicted_change": -0.23024608843132915,
+          "projection_fraction_of_actual_change": -0.2300022053684493
+        },
+        {
+          "group": "joint_velocity",
+          "observation_units": "radians/second: finite differences",
+          "observed_group_delta_l2": 0.0032854054186682914,
+          "observed_group_delta_max_abs": 0.0017229318618774414,
+          "action_contribution_l2": 0.00017498648814352608,
+          "action_contribution_max_abs": 0.00011896046506323921,
+          "projection_fraction_of_predicted_change": 1.2645355121982496,
+          "projection_fraction_of_actual_change": 1.2645319947205502
+        },
+        {
+          "group": "object_velocity",
+          "observation_units": "metres/second: finite differences",
+          "observed_group_delta_l2": 7.343530940553932e-05,
+          "observed_group_delta_max_abs": 6.134063005447388e-05,
+          "action_contribution_l2": 1.547647582426689e-05,
+          "action_contribution_max_abs": 7.725382485196386e-06,
+          "projection_fraction_of_predicted_change": 0.050653445819273,
+          "projection_fraction_of_actual_change": 0.0505940301243884
+        },
+        {
+          "group": "previous_action",
+          "observation_units": "normalized absolute joint targets",
+          "observed_group_delta_l2": 3.433983508673316e-05,
+          "observed_group_delta_max_abs": 1.9729137420654297e-05,
+          "action_contribution_l2": 1.5998608913123265e-06,
+          "action_contribution_max_abs": 1.0745242660717413e-06,
+          "projection_fraction_of_predicted_change": 0.0008009997002220081,
+          "projection_fraction_of_actual_change": 0.0008028819493822346
+        }
+      ]
+    },
+    {
+      "control": 6,
+      "teacher_fit_error_max_abs": 7.450580596923828e-08,
+      "observed_teacher_action_error_max_abs": 0.0009226202964782715,
+      "actual_state_induced_action_change_l2": 0.0010922377535869988,
+      "actual_state_induced_action_change_max_abs": 0.0009226500988006592,
+      "linear_action_change_l2": 0.001082991335984935,
+      "linear_action_change_max_abs": 0.0009131138277928873,
+      "predicted_teacher_action_error_max_abs": 0.0009130840254704996,
+      "taylor_residual_l2": 1.0525143659059561e-05,
+      "taylor_residual_max_abs": 9.536271007771872e-06,
+      "relative_l2_taylor_error": 0.009636311896832096,
+      "squared_change_explained": 0.999907141493027,
+      "cosine_alignment": 0.9999893132335631,
+      "groups": [
+        {
+          "group": "joint_position",
+          "observation_units": "radians",
+          "observed_group_delta_l2": 0.0006500649436493871,
+          "observed_group_delta_max_abs": 0.0004309415817260742,
+          "action_contribution_l2": 1.2185284778682284e-05,
+          "action_contribution_max_abs": 8.722553856532755e-06,
+          "projection_fraction_of_predicted_change": 0.01064492815979429,
+          "projection_fraction_of_actual_change": 0.010539695156862542
+        },
+        {
+          "group": "object_position",
+          "observation_units": "metres",
+          "observed_group_delta_l2": 1.9666786262901532e-05,
+          "observed_group_delta_max_abs": 1.58846378326416e-05,
+          "action_contribution_l2": 2.187789823870424e-06,
+          "action_contribution_max_abs": 1.8752033463962856e-06,
+          "projection_fraction_of_predicted_change": -0.0018535302712514318,
+          "projection_fraction_of_actual_change": -0.0018407507740414914
+        },
+        {
+          "group": "object_quaternion",
+          "observation_units": "unitless quaternion components wxyz",
+          "observed_group_delta_l2": 0.0008138839145538128,
+          "observed_group_delta_max_abs": 0.000709831714630127,
+          "action_contribution_l2": 5.4120302949408076e-05,
+          "action_contribution_max_abs": 5.045996828366428e-05,
+          "projection_fraction_of_predicted_change": 0.04229048292078106,
+          "projection_fraction_of_actual_change": 0.04204457751616623
+        },
+        {
+          "group": "principal_angles",
+          "observation_units": "radians: current and previous",
+          "observed_group_delta_l2": 0.0016646914472336453,
+          "observed_group_delta_max_abs": 0.0015926361083984375,
+          "action_contribution_l2": 0.00010088764063063282,
+          "action_contribution_max_abs": 9.548278462290227e-05,
+          "projection_fraction_of_predicted_change": 0.08999197272778597,
+          "projection_fraction_of_actual_change": 0.08931738956172344
+        },
+        {
+          "group": "joint_velocity",
+          "observation_units": "radians/second: finite differences",
+          "observed_group_delta_l2": 0.008389378887472562,
+          "observed_group_delta_max_abs": 0.005748748779296875,
+          "action_contribution_l2": 0.0009152277166726312,
+          "action_contribution_max_abs": 0.0007482055622798356,
+          "projection_fraction_of_predicted_change": 0.8438895610717847,
+          "projection_fraction_of_actual_change": 0.8365419424876156
+        },
+        {
+          "group": "object_velocity",
+          "observation_units": "metres/second: finite differences",
+          "observed_group_delta_l2": 0.0001248186997273983,
+          "observed_group_delta_max_abs": 8.314847946166992e-05,
+          "action_contribution_l2": 1.2865638289274689e-05,
+          "action_contribution_max_abs": 8.940459236078668e-06,
+          "projection_fraction_of_predicted_change": 0.007652668539198449,
+          "projection_fraction_of_actual_change": 0.007597552549356474
+        },
+        {
+          "group": "previous_action",
+          "observation_units": "normalized absolute joint targets",
+          "observed_group_delta_l2": 0.00013048342786606216,
+          "observed_group_delta_max_abs": 0.0001049041748046875,
+          "action_contribution_l2": 1.0612431024636207e-05,
+          "action_contribution_max_abs": 9.100603749805092e-06,
+          "projection_fraction_of_predicted_change": 0.00738391685190692,
+          "projection_fraction_of_actual_change": 0.007323424969302561
+        }
+      ]
+    },
+    {
+      "control": 7,
+      "teacher_fit_error_max_abs": 1.4901161193847656e-07,
+      "observed_teacher_action_error_max_abs": 0.000661998987197876,
+      "actual_state_induced_action_change_l2": 0.0010569881150765752,
+      "actual_state_induced_action_change_max_abs": 0.0006620883941650391,
+      "linear_action_change_l2": 0.0010577852660409678,
+      "linear_action_change_max_abs": 0.0006631852805756466,
+      "predicted_teacher_action_error_max_abs": 0.0006630958736084836,
+      "taylor_residual_l2": 1.3486463138211451e-06,
+      "taylor_residual_max_abs": 1.0968864106075844e-06,
+      "relative_l2_taylor_error": 0.0012759332811641314,
+      "squared_change_explained": 0.999998371994262,
+      "cosine_alignment": 0.999999470784042,
+      "groups": [
+        {
+          "group": "joint_position",
+          "observation_units": "radians",
+          "observed_group_delta_l2": 0.0011854482302306947,
+          "observed_group_delta_max_abs": 0.0007683038711547852,
+          "action_contribution_l2": 2.6370197561881673e-05,
+          "action_contribution_max_abs": 1.4821308648932732e-05,
+          "projection_fraction_of_predicted_change": 0.015428873398851772,
+          "projection_fraction_of_actual_change": 0.015449543989465811
+        },
+        {
+          "group": "object_position",
+          "observation_units": "metres",
+          "observed_group_delta_l2": 0.0002023031303124647,
+          "observed_group_delta_max_abs": 0.0001881420612335205,
+          "action_contribution_l2": 4.349125354183084e-06,
+          "action_contribution_max_abs": 2.9428432340639814e-06,
+          "projection_fraction_of_predicted_change": 0.0004272924095083174,
+          "projection_fraction_of_actual_change": 0.0004265460102625798
+        },
+        {
+          "group": "object_quaternion",
+          "observation_units": "unitless quaternion components wxyz",
+          "observed_group_delta_l2": 0.00369101412637015,
+          "observed_group_delta_max_abs": 0.002875030040740967,
+          "action_contribution_l2": 0.00013251691528467675,
+          "action_contribution_max_abs": 9.253994831748616e-05,
+          "projection_fraction_of_predicted_change": 0.10187652417868023,
+          "projection_fraction_of_actual_change": 0.10198570951231867
+        },
+        {
+          "group": "principal_angles",
+          "observation_units": "radians: current and previous",
+          "observed_group_delta_l2": 0.006862142387353813,
+          "observed_group_delta_max_abs": 0.006674766540527344,
+          "action_contribution_l2": 0.00014420270914936858,
+          "action_contribution_max_abs": 8.631415369464435e-05,
+          "projection_fraction_of_predicted_change": -0.0509771847951666,
+          "projection_fraction_of_actual_change": -0.05103512152568266
+        },
+        {
+          "group": "joint_velocity",
+          "observation_units": "radians/second: finite differences",
+          "observed_group_delta_l2": 0.010208462359973277,
+          "observed_group_delta_max_abs": 0.006331205368041992,
+          "action_contribution_l2": 0.0008871969526871035,
+          "action_contribution_max_abs": 0.0007019443633869832,
+          "projection_fraction_of_predicted_change": 0.7740591764922898,
+          "projection_fraction_of_actual_change": 0.7748489067333993
+        },
+        {
+          "group": "object_velocity",
+          "observation_units": "metres/second: finite differences",
+          "observed_group_delta_l2": 0.001905385171124635,
+          "observed_group_delta_max_abs": 0.0017745643854141235,
+          "action_contribution_l2": 0.0003879328691918312,
+          "action_contribution_max_abs": 0.00031234686890430075,
+          "projection_fraction_of_predicted_change": 0.12424309854667762,
+          "projection_fraction_of_actual_change": 0.1241106505135446
+        },
+        {
+          "group": "previous_action",
+          "observation_units": "normalized absolute joint targets",
+          "observed_group_delta_l2": 0.0010921943794927641,
+          "observed_group_delta_max_abs": 0.0009226202964782715,
+          "action_contribution_l2": 4.926092373867807e-05,
+          "action_contribution_max_abs": 3.439907394329339e-05,
+          "projection_fraction_of_predicted_change": 0.03494221976915897,
+          "projection_fraction_of_actual_change": 0.034967407268615136
+        }
+      ]
+    },
+    {
+      "control": 8,
+      "teacher_fit_error_max_abs": 1.1920928955078125e-07,
+      "observed_teacher_action_error_max_abs": 0.011350750923156738,
+      "actual_state_induced_action_change_l2": 0.01891539017040988,
+      "actual_state_induced_action_change_max_abs": 0.011350750923156738,
+      "linear_action_change_l2": 0.016317841133682686,
+      "linear_action_change_max_abs": 0.010216417462480346,
+      "predicted_teacher_action_error_max_abs": 0.010216417462480346,
+      "taylor_residual_l2": 0.005781955963289525,
+      "taylor_residual_max_abs": 0.0037119887306942875,
+      "relative_l2_taylor_error": 0.3056746866545991,
+      "squared_change_explained": 0.9065629859386126,
+      "cosine_alignment": 0.9567746096320654,
+      "groups": [
+        {
+          "group": "joint_position",
+          "observation_units": "radians",
+          "observed_group_delta_l2": 0.039828411949293534,
+          "observed_group_delta_max_abs": 0.02777661383152008,
+          "action_contribution_l2": 0.0014808739593187934,
+          "action_contribution_max_abs": 0.0012637870143151955,
+          "projection_fraction_of_predicted_change": 0.027623587041069726,
+          "projection_fraction_of_actual_change": 0.031926598757688524
+        },
+        {
+          "group": "object_position",
+          "observation_units": "metres",
+          "observed_group_delta_l2": 0.0038051552395802785,
+          "observed_group_delta_max_abs": 0.0030365213751792908,
+          "action_contribution_l2": 0.000181817474152271,
+          "action_contribution_max_abs": 0.00015685213062736577,
+          "projection_fraction_of_predicted_change": -0.0018959976115696386,
+          "projection_fraction_of_actual_change": -0.0026914482243379813
+        },
+        {
+          "group": "object_quaternion",
+          "observation_units": "unitless quaternion components wxyz",
+          "observed_group_delta_l2": 0.12338393701274408,
+          "observed_group_delta_max_abs": 0.10888150334358215,
+          "action_contribution_l2": 0.0065735786426855,
+          "action_contribution_max_abs": 0.00511071587950504,
+          "projection_fraction_of_predicted_change": 0.11299210065652487,
+          "projection_fraction_of_actual_change": 0.11355197066795233
+        },
+        {
+          "group": "principal_angles",
+          "observation_units": "radians: current and previous",
+          "observed_group_delta_l2": 0.23132133382841072,
+          "observed_group_delta_max_abs": 0.23122501373291016,
+          "action_contribution_l2": 0.004000643243829711,
+          "action_contribution_max_abs": 0.0030430417171700697,
+          "projection_fraction_of_predicted_change": 0.12089533254600178,
+          "projection_fraction_of_actual_change": 0.11881328338846268
+        },
+        {
+          "group": "joint_velocity",
+          "observation_units": "radians/second: finite differences",
+          "observed_group_delta_l2": 0.3975268413188666,
+          "observed_group_delta_max_abs": 0.2742958068847656,
+          "action_contribution_l2": 0.013600037847234129,
+          "action_contribution_max_abs": 0.007449969823142194,
+          "projection_fraction_of_predicted_change": 0.7271110691322611,
+          "projection_fraction_of_actual_change": 0.5778743808779304
+        },
+        {
+          "group": "object_velocity",
+          "observation_units": "metres/second: finite differences",
+          "observed_group_delta_l2": 0.036451359380862275,
+          "observed_group_delta_max_abs": 0.028483808040618896,
+          "action_contribution_l2": 0.0028482525466849854,
+          "action_contribution_max_abs": 0.002500476014674957,
+          "projection_fraction_of_predicted_change": 0.01343266953403397,
+          "projection_fraction_of_actual_change": -0.013806781669327684
+        },
+        {
+          "group": "previous_action",
+          "observation_units": "normalized absolute joint targets",
+          "observed_group_delta_l2": 0.0010569544095957717,
+          "observed_group_delta_max_abs": 0.000661998987197876,
+          "action_contribution_l2": 2.05477394525392e-05,
+          "action_contribution_max_abs": 1.7781388096618778e-05,
+          "projection_fraction_of_predicted_change": -0.00015876129832188834,
+          "projection_fraction_of_actual_change": -0.00028211748762334065
+        }
+      ]
+    }
+  ],
+  "aggregate_controls_2_to_4": {
+    "controls": [
+      2,
+      3,
+      4
+    ],
+    "relative_l2_taylor_error": 0.008910027510185018,
+    "squared_change_explained": 0.9999206114097677,
+    "group_projection_fraction_of_predicted_change": {
+      "joint_position": -0.004112148940968239,
+      "object_position": -1.087827827153402e-05,
+      "object_quaternion": 0.010218490607072979,
+      "principal_angles": 0.02478673637063428,
+      "joint_velocity": 0.929307559602578,
+      "object_velocity": 0.04084885614199851,
+      "previous_action": -0.0010386155030440236
+    },
+    "group_projection_fraction_of_actual_change": {
+      "joint_position": -0.004102281633637167,
+      "object_position": -9.843528012875217e-06,
+      "object_quaternion": 0.010162183738905092,
+      "principal_angles": 0.024654989467256947,
+      "joint_velocity": 0.927286112808641,
+      "object_velocity": 0.041203074405077006,
+      "previous_action": -0.0011685565360146654
+    }
+  },
+  "aggregate_controls_5_to_8": {
+    "controls": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "relative_l2_taylor_error": 0.3046859089748252,
+    "squared_change_explained": 0.9071664968721845,
+    "group_projection_fraction_of_predicted_change": {
+      "joint_position": 0.02749447430010997,
+      "object_position": -0.0018857766305972578,
+      "object_quaternion": 0.1126266253813062,
+      "principal_angles": 0.12002210028124878,
+      "joint_velocity": 0.72785068267516,
+      "object_velocity": 0.013871425207834309,
+      "previous_action": 2.0468784938018786e-05
+    },
+    "group_projection_fraction_of_actual_change": {
+      "joint_position": 0.03180132627403692,
+      "object_position": -0.002678653633878228,
+      "object_quaternion": 0.11327141352817954,
+      "principal_angles": 0.11817215861258078,
+      "joint_velocity": 0.579374809374108,
+      "object_velocity": -0.013304960782271969,
+      "previous_action": -0.0001475138490938643
+    }
+  },
+  "aggregate_controls_2_to_8": {
+    "controls": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "relative_l2_taylor_error": 0.30468492695452176,
+    "squared_change_explained": 0.9071670952867177,
+    "group_projection_fraction_of_predicted_change": {
+      "joint_position": 0.027494201946042966,
+      "object_position": -0.0018857604746103436,
+      "object_quaternion": 0.11262574293107457,
+      "principal_angles": 0.12002127963873707,
+      "joint_velocity": 0.7278524186277587,
+      "object_velocity": 0.013871657672181294,
+      "previous_action": 2.0459658815593986e-05
+    },
+    "group_projection_fraction_of_actual_change": {
+      "joint_position": 0.03180109463751196,
+      "object_position": -0.002678636415722875,
+      "object_quaternion": 0.11327074830635164,
+      "principal_angles": 0.11817155527510725,
+      "joint_velocity": 0.5793770539665047,
+      "object_velocity": -0.013304609117005187,
+      "previous_action": -0.00014752043647584678
+    }
+  },
+  "derivative_check": {
+    "control": 8,
+    "central_difference_fraction": 0.015625,
+    "relative_l2_error": 0.00021942617796454056,
+    "note": "Arithmetic check using policy evaluations only, no new physical transitions"
+  },
+  "input_files": {
+    "checkpoint": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/head_polish_0001/polished.pt",
+      "sha256": "a3a9473e6388a4a2a870240582d1ca048dbf4a961866d35f2d1c3aa0ecd13374"
+    },
+    "checkpoint_metadata": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/head_polish_0001/polished.pt.metadata.json",
+      "sha256": "5710ca69311521392476eb7c472cb113d3001165d9ae947cbc4d095de6595042"
+    },
+    "teacher_transitions": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/strict_first_success/transitions.npz",
+      "sha256": "daa1e0d24403730f07768dff56feb91cde17b050eafdc8fa1813d133e64793a1"
+    },
+    "visited_transitions": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/head_polish_0001/independent_audit/transitions.npz",
+      "sha256": "7f7ec220e2f7752ccc4810d2914c0580967ca1ba54d87289cf2e4b2e07b8a534"
+    },
+    "visited_audit_report": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/head_polish_0001/independent_audit/report.json",
+      "sha256": "88e1ee66c9adc32322570f17918765ba093b38867693a40b549f1adf3aaa587e"
+    },
+    "saved_teacher_predictions": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/head_polish_0001/actual_torch_teacher_predictions.npz",
+      "sha256": "b555eaf86d3e2029689168626974460fb6df6e828dc0f83c86b4435357b1b1e1"
+    },
+    "frozen_learning_source": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/source/mpc_dex/learning.py",
+      "sha256": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c"
+    },
+    "frozen_environment_source": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/source/mpc_dex/env.py",
+      "sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae"
+    },
+    "polish_report": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/head_polish_0001/report.json",
+      "sha256": "95a670431f388bf630da12d23e97f9f6b3038cf27d1a75e39ce8ebaa903c6265"
+    },
+    "polish_manifest": {
+      "path": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/head_polish_0001/manifest.json",
+      "sha256": "606e912898210f1f745c00524f28d3b9b3c30f5e610d20dac44a320d133d398d"
+    }
+  },
+  "script_sha256": "4f906fa9d2194a7722409f500ca208e709b8cbcfa0d588276e6978b25f7d6ed0",
+  "arrays_sha256": "bd33b4d0b63107cd2098d6305501fe34d325ca1a88e1e45556e0506368c40325"
+}

@@ -1,0 +1,100 @@
+{
+ "final_l2": [
+  4.74661055704928e-06,
+  4.828062628803309e-06,
+  3.7357242490543285e-06,
+  8.285903163596231e-07,
+  6.534137810376706e-06,
+  2.6475886443222407e-06,
+  2.7945934562012553e-06,
+  9.098254167838604e-07
+ ],
+ "det": {
+  "0": {
+   "success": false,
+   "controls": 8,
+   "failure": "palm_support",
+   "angle": 5.215
+  },
+  "1": {
+   "success": false,
+   "controls": 6,
+   "failure": "palm_support",
+   "angle": 5.444
+  },
+  "2": {
+   "success": true,
+   "controls": 6,
+   "failure": null,
+   "angle": 6.435
+  },
+  "3": {
+   "success": true,
+   "controls": 5,
+   "failure": null,
+   "angle": 6.645
+  }
+ },
+ "stoch_cold": [
+  {
+   "success": false,
+   "controls": 4,
+   "failure": "palm_support",
+   "angle": 4.495
+  },
+  {
+   "success": false,
+   "controls": 6,
+   "failure": "palm_support",
+   "angle": 3.62
+  },
+  {
+   "success": false,
+   "controls": 4,
+   "failure": "drop",
+   "angle": 5.019
+  },
+  {
+   "success": false,
+   "controls": 4,
+   "failure": "drop",
+   "angle": 2.754
+  },
+  {
+   "success": false,
+   "controls": 4,
+   "failure": "drop",
+   "angle": -4.602
+  },
+  {
+   "success": false,
+   "controls": 4,
+   "failure": "palm_support",
+   "angle": 3.797
+  },
+  {
+   "success": false,
+   "controls": 3,
+   "failure": "palm_support",
+   "angle": 3.825
+  },
+  {
+   "success": false,
+   "controls": 3,
+   "failure": "palm_support",
+   "angle": 0.695
+  },
+  {
+   "success": false,
+   "controls": 4,
+   "failure": "drop",
+   "angle": -4.34
+  },
+  {
+   "success": false,
+   "controls": 3,
+   "failure": "drop",
+   "angle": -2.944
+  }
+ ]
+}

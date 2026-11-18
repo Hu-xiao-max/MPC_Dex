@@ -1,0 +1,69 @@
+BC rows 993 (spine 14 + tube 979 )
+step 0 bc_loss 1.89953
+step 1000 bc_loss 0.28193
+step 2000 bc_loss 0.20758
+step 3000 bc_loss 0.17856
+step 4000 bc_loss 0.16455
+step 5000 bc_loss 0.13143
+step 6000 bc_loss 0.10841
+step 7000 bc_loss 0.09652
+step 8000 bc_loss 0.08575
+step 9000 bc_loss 0.08732
+step 10000 bc_loss 0.07679
+step 11000 bc_loss 0.07284
+step 12000 bc_loss 0.07556
+step 13000 bc_loss 0.06613
+step 14000 bc_loss 0.06768
+step 15000 bc_loss 0.06130
+step 16000 bc_loss 0.06579
+step 17000 bc_loss 0.05505
+step 18000 bc_loss 0.04434
+step 19000 bc_loss 0.04692
+step 20000 bc_loss 0.04112
+step 21000 bc_loss 0.05312
+step 22000 bc_loss 0.05303
+step 23000 bc_loss 0.03659
+step 24000 bc_loss 0.03895
+step 25000 bc_loss 0.04236
+step 26000 bc_loss 0.03654
+step 27000 bc_loss 0.04070
+step 28000 bc_loss 0.03178
+step 29000 bc_loss 0.03322
+step 30000 bc_loss 0.03872
+step 31000 bc_loss 0.03150
+step 32000 bc_loss 0.03404
+step 33000 bc_loss 0.03407
+step 34000 bc_loss 0.03402
+step 35000 bc_loss 0.03258
+step 36000 bc_loss 0.02557
+step 37000 bc_loss 0.03505
+step 38000 bc_loss 0.02701
+step 39000 bc_loss 0.02933
+step 40000 bc_loss 0.02772
+step 41000 bc_loss 0.02960
+step 42000 bc_loss 0.02486
+step 43000 bc_loss 0.02160
+step 44000 bc_loss 0.01968
+step 45000 bc_loss 0.02722
+step 46000 bc_loss 0.01743
+step 47000 bc_loss 0.02165
+step 48000 bc_loss 0.02239
+step 49000 bc_loss 0.02041
+step 50000 bc_loss 0.02566
+step 51000 bc_loss 0.02273
+step 52000 bc_loss 0.02246
+step 53000 bc_loss 0.02396
+step 54000 bc_loss 0.01798
+step 55000 bc_loss 0.02552
+step 56000 bc_loss 0.03434
+step 57000 bc_loss 0.02581
+step 58000 bc_loss 0.02247
+step 59000 bc_loss 0.02042
+step 59999 bc_loss 0.02484
+fit L2 per row: median 0.0984 max 1.924 | spine rows [0.8460000157356262, 1.9240000247955322, 1.8420000076293945, 0.9020000100135803, 0.23000000417232513, 0.07000000029802322, 0.2070000022649765, 0.07500000298023224, 0.1809999942779541, 0.12200000137090683, 0.4300000071525574, 0.09600000083446503, 0.3109999895095825, 0.3889999985694885]
+cold deterministic: (False, 2, -0.59, 'palm_support') | cold stochastic: [False, False, False, False, False]
+spine prefixes k=1..13 deterministic: [False, False, False, False, False, False, False, False, False, False, True, True, True]
+spine prefixes k=1..13 stochastic (3 each): [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 3]
+corrected-state handoffs (deterministic): successes 5 / 24
+   [('193_j11_r1000_d2', 'P', '2/2'), ('193_j6_r0300_d2', 'F', '5/7'), ('193_j7_r1000_d1', 'F', '10/6'), ('193_j0_r0300_d0', 'F', '8/10'), ('193_j2_r1000_d1', 'F', '7/8'), ('193_j9_r1000_d0', 'F', '4/4'), ('193_j6_r1000_d0', 'F', '7/5'), ('193_j2_r0100_d3', 'F', '5/11'), ('193_j2_r0100_d2', 'F', '5/11'), ('193_j12_r0100_d3', 'P', '1/1'), ('193_j12_r0100_d1', 'P', '1/1'), ('193_j7_r0300_d0', 'F', '5/6'), ('193_j7_r0100_d1', 'F', '8/5'), ('193_j10_r0100_d0', 'P', '3/3'), ('193_j3_r1000_d3', 'F', '7/10'), ('193_j2_r0100_d0', 'F', '6/10'), ('193_j7_r1000_d2', 'F', '4/6'), ('193_j4_r0100_d0', 'F', '5/9'), ('193_j10_r0300_d3', 'F', '5/3'), ('193_j5_r0300_d2', 'F', '7/7'), ('193_j5_r0100_d0', 'F', '4/8'), ('193_j12_r0300_d3', 'P', '1/1'), ('193_j8_r0100_d0', 'F', '8/4'), ('193_j9_r0300_d3', 'F', '4/4')]
+wall 69.7

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0052_chain_p4_pinned_noise015_from48/run.py", line 994, in <module>
+    main()
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0052_chain_p4_pinned_noise015_from48/run.py", line 937, in main
+    row = current.advance(command(agent, current.obs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0052_chain_p4_pinned_noise015_from48/run.py", line 416, in advance
+    assert not self.term and not self.trunc
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+exit=1

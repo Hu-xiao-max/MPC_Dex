@@ -1,0 +1,14 @@
+{
+  "source_archive_manifest.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000003/archive_manifest.json",
+    "sha256": "aff8120344ba1770a7118efc5e7ae8213d944c818c66311cf3f273bbbdc9e21d"
+  },
+  "source_run_runtime.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/runtime.json",
+    "sha256": "d1d8a6254a78f786b4a7ed6d8046d0d8f0d758f60d9789bd61d4339de1b1c109"
+  },
+  "source_run_inputs_manifest.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/inputs_manifest.json",
+    "sha256": "c34bdbcb3944975a5bbffa2f79bf64710af8354dd3f97d10abeea0b985389d39"
+  }
+}

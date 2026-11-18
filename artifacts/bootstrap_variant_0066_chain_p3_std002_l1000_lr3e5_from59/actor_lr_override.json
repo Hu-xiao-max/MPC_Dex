@@ -1,0 +1,7 @@
+{
+  "inherited_actor_lr": 0.0001,
+  "actor_lr": 3e-05,
+  "applied_after": "checkpoints/initialized",
+  "ramp": "cumulative actor_warmup_updates 5000 unchanged",
+  "later_checkpoints_carry_override": true
+}

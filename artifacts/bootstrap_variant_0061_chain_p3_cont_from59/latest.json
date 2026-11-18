@@ -1,0 +1,67 @@
+{
+  "checkpoint": "checkpoints/online_2000",
+  "files": {
+    "agent.pt": "302b6e0ccf7fb28f9c077968612f7bd344bd28388550a7f8cccc1f164f71b3a9",
+    "agent.pt.metadata.json": "324e50463a913a66efacd2d804b455dd81742670f3353dcdf680df7aa1d85372",
+    "current_episode/physics.npz": "e5bf755bd5e16c7c694caacada051053e88d647080b3bf7dc165d047546e8470",
+    "current_episode/report.json": "f3fe5728a7833976ad1a2ae960700620203f87dc73e7d909a677c32604256479",
+    "current_episode/rng_initial.pt": "e44a624ad91646c2f19555d4754b64faa999dfe8f644bdd51e645a77e7d5cf70",
+    "current_episode/transitions.npz": "71407e4f8d97d63d4b8be7c5d9609ba746dddf627493a07d97bd7a30845e04e8",
+    "environment.bin": "0c54c44b44fbe10474472eff36516793b95891334ff916501d40b07df4424cab",
+    "environment.npz": "096537c009a44885aa3ce358a1c4eedfdcf700d6e22b4b136c2c4efec1c54d3e",
+    "replay.npz": "497962b87ae1a1de49c3008c6fb5351cd43823a22b0dcbb323a947e6e0b6a9ac",
+    "rng.pt": "1832ad9352c25c29dbf48a24832926c7f4577d5cced48a99b8fa9cad6b954ed8",
+    "state.json": "320ff815f8d5de37cd01264830b596d0aed0411dbecea3c08d071f1606cd5665"
+  },
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 954,
+    "online_policy_interactions": 2000,
+    "physical_prefix_controls": 4525,
+    "warmup_assisted_completed_episodes": 256,
+    "warmup_assisted_force_successes": 77,
+    "online_assisted_completed_episodes": 573,
+    "online_assisted_force_successes": 171,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 2000,
+    "warmup_raw_reward_sum": 11486.563470659836,
+    "online_raw_reward_sum": 20553.417999082263,
+    "warmup_episodes_by_prefix": {
+      "3": 54,
+      "4+noise": 51,
+      "5+noise": 41,
+      "6+noise": 30,
+      "7+noise": 43,
+      "8+noise": 37
+    },
+    "warmup_force_successes_by_prefix": {
+      "3": 11,
+      "4+noise": 4,
+      "5+noise": 3,
+      "6+noise": 15,
+      "7+noise": 16,
+      "8+noise": 28
+    },
+    "online_episodes_by_prefix": {
+      "3": 89,
+      "4+noise": 101,
+      "5+noise": 97,
+      "6+noise": 86,
+      "7+noise": 100,
+      "8+noise": 100
+    },
+    "online_force_successes_by_prefix": {
+      "3": 5,
+      "4+noise": 1,
+      "5+noise": 10,
+      "6+noise": 28,
+      "7+noise": 60,
+      "8+noise": 67
+    },
+    "handoff_terminated_before_policy": 24
+  }
+}

@@ -1,0 +1,11 @@
+# One fixed elapsed-time BC diagnostic
+
+This separate artifact trains a fresh61-input actor on the exact same73 authentic labels and original60 observation values as the completed60D run. The added feature is decision elapsed seconds. Every appended index*0.1 value agrees with the measured source control boundary after float32 conversion (maximum float64 discrepancy1.11e-15s). Physical evaluation appends actual simulator time minus reset time and saves both original60 and augmented61 observations. The interface is explicitly diagnostic_bootstrap_elapsed_time_absolute_joint_target for rotation, not a reorientation goal or a compatible main60D policy.
+
+The fixed protocol remains seed17001, hidden256/256, mean-only Adam0.003, uniform batch256,12,000 updates, diagnostic epsilon0.01 and latent std0.3 at checkpoints. Every measured label survives clipping unchanged. No old60D weights are imported. Adding an input changes architecture and RNG consumption even under the same seed; the comparison is not a pure causal estimate. Shared environment/learning/main interfaces and the main epsilon0.02 are unchanged.
+
+All three strict physical audits failed:3k dropped after7 controls (peak force-qualified angle2.375909122rad),6k hit palm support after4 (peak3.197079780rad), and12k dropped after7 (peak1.230795701rad, final−1.495143283rad). No conditional2s continuation ran. Final actionMSE improved from0.00249010886 in60D to1.57270695e-6, maximum action error is0.00694829226, and reset hold error improved from0.841766983 to0.00635620952. Clock information supports much better fitting of the inherited startup distinction, but these actual rollouts do not establish a successful or robust policy.
+
+Exactly12,000 BC optimizer steps and the same sampled batch indices verify. Critics, target critics and temperature are unchanged within this run; critic/online counters remainzero. No head correction, extra epochs, noise trials, SAC updates, successful learned trajectory or main-stage demonstration claim is made.
+
+The inherited audit helper initially uses a generic recorded-control label, but evaluate() replaces it with diagnostic-common-noise-clock-bc-only before saving each final report. All three final records are correctly labeled; executed code remains unchanged. metadata_label_review.json binds that check to the executed helper and driver hashes.

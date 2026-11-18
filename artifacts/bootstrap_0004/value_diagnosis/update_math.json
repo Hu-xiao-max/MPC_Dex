@@ -1,0 +1,20 @@
+{
+  "batch_size": 512,
+  "terminal_rows": 2,
+  "target_formula_max_error": 0.0,
+  "terminal_target_max_error": 0.0,
+  "log_probability_well_conditioned_rows": 494,
+  "log_probability_direct_jacobian_max_error": 2.6702880859375e-05,
+  "polyak_max_error": 4.76837158203125e-07,
+  "metrics": {
+    "critic_loss": 19.912841796875,
+    "actor_loss": -96.55990600585938,
+    "alpha_loss": 5.837546348571777,
+    "alpha": 0.03340110182762146,
+    "actor_lr": 0.0003,
+    "entropy": -17.71732521057129,
+    "target_mean": 93.73414611816406,
+    "online_updates": 38985
+  },
+  "note": "One update on an independent in-memory copy. No production checkpoint, replay, source or live process changed."
+}

@@ -1,0 +1,39 @@
+{
+  "implementation": "independent-paper-reproduction",
+  "target": "local-simulation",
+  "environment": {
+    "initial_grasp": "/home/autel001/code/mpc_dex/artifacts/bc_40mm_bound098_0001/source/assets/initial_grasp_40mm.npz",
+    "object_shape": "hexagonal",
+    "object_diameter": 0.04,
+    "object_length": 0.12,
+    "object_mass": 0.15,
+    "control_seconds": 0.1,
+    "horizon_steps": 900,
+    "terminate_on_success": false
+  },
+  "learner": {},
+  "planner": {
+    "horizon_seconds": 0.5,
+    "knots": 6,
+    "samples": 350,
+    "elites": 10,
+    "iterations": 3,
+    "timestep_seconds": 0.1,
+    "control_seconds": 0.1
+  },
+  "planner_cost": {
+    "position_weight": 1000.0,
+    "principal_weight": 1.0,
+    "perpendicular_weight": 10.0,
+    "workers": 8
+  },
+  "bootstrap": {
+    "control": {
+      "max_delta_radians": 0.02,
+      "max_target_error_radians": 0.15
+    },
+    "learner": {
+      "initial_std": 0.1
+    }
+  }
+}

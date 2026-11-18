@@ -1,0 +1,1 @@
+{"failure": "KeyError s12 in the warm-up loop: a handoff at the first corrected state of a labelled source has a suffix length outside suffix_set and the per-key counters had no entry; no learning update ran (the ablation 0088, share 0, is unaffected)", "fix": "such episodes get their own key c (episode_key / multisource_keys); re-stamped"}

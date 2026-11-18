@@ -1,0 +1,23 @@
+{
+  "source_sha256": "759bca53e1cb3a836f3c925640bd65bb6c7752b48d8d98985ecdf172c0d0435a",
+  "mujoco_version": "3.14.0",
+  "mujoco_runtime_version": 3014000,
+  "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+  "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+  "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+  "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+  "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "compiler_flags": [
+    "-O3",
+    "-std=c++17",
+    "-fPIC",
+    "-shared",
+    "-fno-fast-math",
+    "-ffp-contract=off"
+  ],
+  "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "build_key": "327bc4b8c4f964087df162c59205670d14edf36b9dd673c56e8f5920037af415",
+  "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/327bc4b8c4f964087df162c59205670d14edf36b9dd673c56e8f5920037af415/exact_rollout.so",
+  "binary_sha256": "83c76ad75564e5a4b632c06bef31801b38595e22b13a24e7034968d8062f7367"
+}

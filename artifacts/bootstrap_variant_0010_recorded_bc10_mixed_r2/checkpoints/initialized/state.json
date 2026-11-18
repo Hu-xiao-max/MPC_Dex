@@ -1,0 +1,102 @@
+{
+  "counts": {
+    "warmup_complete_episodes": 0,
+    "warmup_policy_interactions": 0,
+    "online_policy_interactions": 0,
+    "physical_prefix_controls": 0,
+    "warmup_assisted_completed_episodes": 0,
+    "warmup_assisted_force_successes": 0,
+    "online_assisted_completed_episodes": 0,
+    "online_assisted_force_successes": 0,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 0,
+    "new_online_updates": 0,
+    "warmup_raw_reward_sum": 0.0,
+    "online_raw_reward_sum": 0.0,
+    "warmup_episodes_by_prefix": {
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    "warmup_force_successes_by_prefix": {
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    "online_episodes_by_prefix": {
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    "online_force_successes_by_prefix": {
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    "handoff_terminated_before_policy": 0
+  },
+  "label": "initialized",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 500,
+    "online_updates": 2000
+  },
+  "normalized_alpha": 0.00030585992499254644,
+  "raw_equivalent_alpha": 0.06117198499850929,
+  "replay_rows": 0,
+  "replay_pending_slot": null,
+  "unfinished_episode": false,
+  "inherited_learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 500,
+    "online_updates": 2000
+  },
+  "optimizer_steps": {
+    "critic": [
+      2500
+    ],
+    "actor": [
+      2000
+    ],
+    "alpha": [
+      2000
+    ]
+  },
+  "replay_policy": "fresh-stage-only online replay plus immutable 3-row demonstration buffer (demonstrations_replay.npz); pretraining batches 0.30 / online batches 0.30 demonstration share; inherited open replay archived without insertion",
+  "auxiliary_rng_states": {
+    "prefix_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 261156563220244387545444824651691089892,
+        "inc": 17475319914193932786216826625228067927
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    "demonstration_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 330919621479513899112728356275570102004,
+        "inc": 288063747686032112567261502072884138965
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    "handoff_rng": {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 98393014407850489675918351001339087728,
+        "inc": 305357906101479940842618595288506801071
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    }
+  },
+  "automatic_resume_supported": false,
+  "complete_update_boundary": true,
+  "metrics_bytes": 0,
+  "metrics_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

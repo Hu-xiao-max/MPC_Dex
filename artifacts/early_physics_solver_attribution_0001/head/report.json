@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "source_fields_bitexact": true,
+  "source_physics_rows_bitexact": 150,
+  "physics_steps": 150,
+  "controls": 3,
+  "diagnostics_records": 300,
+  "config_settings_unchanged": true,
+  "source_initial_integration_available": true,
+  "max_action_abs": 0.9799999594688416,
+  "final_info": {
+    "angle": 4.019251554988656,
+    "retained_angle": 3.8474553491720314,
+    "success": false,
+    "drop": false,
+    "palm_support_violation": false
+  }
+}

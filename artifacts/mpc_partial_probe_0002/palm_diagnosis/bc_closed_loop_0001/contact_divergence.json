@@ -1,0 +1,353 @@
+{
+  "purpose": "Contact identity instrumentation of two already evaluated fixed command sequences",
+  "source_sha256": "bc9ead2d54e23a11cf526925c7183ab8ee831de94bf6b8f31d93b1a3e3cd4e10",
+  "geom_id_map": {
+    "0": {
+      "geom_name": "table",
+      "body_name": "world"
+    },
+    "1": {
+      "geom_name": null,
+      "body_name": "palm"
+    },
+    "2": {
+      "geom_name": null,
+      "body_name": "palm"
+    },
+    "3": {
+      "geom_name": null,
+      "body_name": "ff_base"
+    },
+    "4": {
+      "geom_name": null,
+      "body_name": "ff_base"
+    },
+    "5": {
+      "geom_name": null,
+      "body_name": "ff_proximal"
+    },
+    "6": {
+      "geom_name": null,
+      "body_name": "ff_proximal"
+    },
+    "7": {
+      "geom_name": null,
+      "body_name": "ff_medial"
+    },
+    "8": {
+      "geom_name": null,
+      "body_name": "ff_medial"
+    },
+    "9": {
+      "geom_name": null,
+      "body_name": "ff_distal"
+    },
+    "10": {
+      "geom_name": null,
+      "body_name": "ff_distal"
+    },
+    "11": {
+      "geom_name": null,
+      "body_name": "ff_tip"
+    },
+    "12": {
+      "geom_name": null,
+      "body_name": "ff_tip"
+    },
+    "13": {
+      "geom_name": null,
+      "body_name": "mf_base"
+    },
+    "14": {
+      "geom_name": null,
+      "body_name": "mf_base"
+    },
+    "15": {
+      "geom_name": null,
+      "body_name": "mf_proximal"
+    },
+    "16": {
+      "geom_name": null,
+      "body_name": "mf_proximal"
+    },
+    "17": {
+      "geom_name": null,
+      "body_name": "mf_medial"
+    },
+    "18": {
+      "geom_name": null,
+      "body_name": "mf_medial"
+    },
+    "19": {
+      "geom_name": null,
+      "body_name": "mf_distal"
+    },
+    "20": {
+      "geom_name": null,
+      "body_name": "mf_distal"
+    },
+    "21": {
+      "geom_name": null,
+      "body_name": "mf_tip"
+    },
+    "22": {
+      "geom_name": null,
+      "body_name": "mf_tip"
+    },
+    "23": {
+      "geom_name": null,
+      "body_name": "rf_base"
+    },
+    "24": {
+      "geom_name": null,
+      "body_name": "rf_base"
+    },
+    "25": {
+      "geom_name": null,
+      "body_name": "rf_proximal"
+    },
+    "26": {
+      "geom_name": null,
+      "body_name": "rf_proximal"
+    },
+    "27": {
+      "geom_name": null,
+      "body_name": "rf_medial"
+    },
+    "28": {
+      "geom_name": null,
+      "body_name": "rf_medial"
+    },
+    "29": {
+      "geom_name": null,
+      "body_name": "rf_distal"
+    },
+    "30": {
+      "geom_name": null,
+      "body_name": "rf_distal"
+    },
+    "31": {
+      "geom_name": null,
+      "body_name": "rf_tip"
+    },
+    "32": {
+      "geom_name": null,
+      "body_name": "rf_tip"
+    },
+    "33": {
+      "geom_name": null,
+      "body_name": "th_base"
+    },
+    "34": {
+      "geom_name": null,
+      "body_name": "th_base"
+    },
+    "35": {
+      "geom_name": null,
+      "body_name": "th_proximal"
+    },
+    "36": {
+      "geom_name": null,
+      "body_name": "th_proximal"
+    },
+    "37": {
+      "geom_name": null,
+      "body_name": "th_medial"
+    },
+    "38": {
+      "geom_name": null,
+      "body_name": "th_medial"
+    },
+    "39": {
+      "geom_name": null,
+      "body_name": "th_distal"
+    },
+    "40": {
+      "geom_name": null,
+      "body_name": "th_distal"
+    },
+    "41": {
+      "geom_name": null,
+      "body_name": "th_tip"
+    },
+    "42": {
+      "geom_name": null,
+      "body_name": "th_tip"
+    },
+    "43": {
+      "geom_name": "object_geom",
+      "body_name": "object"
+    }
+  },
+  "first_command_max_error": 0.0,
+  "first_step_qpos_max_error": 0.0,
+  "first_step_qvel_max_error": 0.0,
+  "per_control_state_errors": [
+    {
+      "step": 1,
+      "time": 0.10000000000000007,
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0
+    },
+    {
+      "step": 2,
+      "time": 0.20000000000000015,
+      "qpos_max_error": 3.661000527177549e-07,
+      "qvel_max_error": 8.749101779725876e-07
+    },
+    {
+      "step": 3,
+      "time": 0.3000000000000002,
+      "qpos_max_error": 1.6714195988365432e-07,
+      "qvel_max_error": 1.9488757294627845e-06
+    },
+    {
+      "step": 4,
+      "time": 0.4000000000000003,
+      "qpos_max_error": 7.961870050060549e-08,
+      "qvel_max_error": 3.1604096908388613e-06
+    },
+    {
+      "step": 5,
+      "time": 0.5000000000000003,
+      "qpos_max_error": 9.823396526220662e-07,
+      "qvel_max_error": 1.4968580993209024e-05
+    },
+    {
+      "step": 6,
+      "time": 0.6000000000000004,
+      "qpos_max_error": 2.5460205208216458e-05,
+      "qvel_max_error": 0.0006970411280791122
+    },
+    {
+      "step": 7,
+      "time": 0.7000000000000005,
+      "qpos_max_error": 2.1167568345215396e-05,
+      "qvel_max_error": 0.0008867412597508562
+    },
+    {
+      "step": 8,
+      "time": 0.8000000000000006,
+      "qpos_max_error": 3.47047526725458e-05,
+      "qvel_max_error": 0.0014171078803826287
+    },
+    {
+      "step": 9,
+      "time": 0.9000000000000007,
+      "qpos_max_error": 2.3001599642441528e-05,
+      "qvel_max_error": 0.0007942954388472923
+    },
+    {
+      "step": 10,
+      "time": 1.0000000000000007,
+      "qpos_max_error": 3.317349623357946e-05,
+      "qvel_max_error": 0.0006925447107533067
+    },
+    {
+      "step": 11,
+      "time": 1.1000000000000008,
+      "qpos_max_error": 2.6090419101981732e-05,
+      "qvel_max_error": 0.00021679850316136395
+    },
+    {
+      "step": 12,
+      "time": 1.2000000000000008,
+      "qpos_max_error": 2.1786529745299044e-05,
+      "qvel_max_error": 0.0004391625251316533
+    },
+    {
+      "step": 13,
+      "time": 1.300000000000001,
+      "qpos_max_error": 0.0007408362921736324,
+      "qvel_max_error": 0.017036102364997197
+    },
+    {
+      "step": 14,
+      "time": 1.400000000000001,
+      "qpos_max_error": 0.0066570050863644925,
+      "qvel_max_error": 0.17586244841856447
+    },
+    {
+      "step": 15,
+      "time": 1.500000000000001,
+      "qpos_max_error": 0.022863819415947173,
+      "qvel_max_error": 1.2637409985500003
+    },
+    {
+      "step": 16,
+      "time": 1.6000000000000012,
+      "qpos_max_error": 1.54632316780644,
+      "qvel_max_error": 32.29183955281831
+    },
+    {
+      "step": 17,
+      "time": 1.7000000000000013,
+      "qpos_max_error": 1.719941016425986,
+      "qvel_max_error": 19.587064992352087
+    }
+  ],
+  "first_geometric_topology_difference": {
+    "physics_step": 619,
+    "time": 1.2380000000000009,
+    "exact": [
+      6,
+      8,
+      22,
+      26,
+      28,
+      38,
+      40,
+      42
+    ],
+    "clipped": [
+      6,
+      8,
+      20,
+      22,
+      26,
+      28,
+      38,
+      40,
+      42
+    ]
+  },
+  "first_loaded_topology_difference": {
+    "physics_step": 619,
+    "time": 1.2380000000000009,
+    "exact": [
+      6,
+      22,
+      26,
+      28,
+      38,
+      40,
+      42
+    ],
+    "clipped": [
+      6,
+      20,
+      22,
+      26,
+      28,
+      38,
+      40,
+      42
+    ]
+  },
+  "first_fingers_topology_difference": {
+    "physics_step": 707,
+    "time": 1.414000000000001,
+    "exact": [
+      "ff",
+      "th"
+    ],
+    "clipped": [
+      "ff",
+      "mf",
+      "rf",
+      "th"
+    ]
+  },
+  "exact_replay_qpos_max_error": 0.0,
+  "clipped_1e6_replay_qpos_max_error": 0.0
+}

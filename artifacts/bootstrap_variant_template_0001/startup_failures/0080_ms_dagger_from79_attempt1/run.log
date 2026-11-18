@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0080_ms_dagger_from79/run.py", line 1107, in <module>
+    main()
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0080_ms_dagger_from79/run.py", line 898, in main
+    assert demonstration_gate(demo, protocol)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_0080_ms_dagger_from79/run.py", line 143, in demonstration_gate
+    assert len(demo) == protocol['demonstration_rows'] and demo.episode_count == protocol['demonstration_episodes']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

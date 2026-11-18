@@ -1,0 +1,19 @@
+{
+  "counts": {
+    "bc_updates": 12000,
+    "pretrain_updates": 2000,
+    "online_policy_interactions": 500,
+    "online_updates": 245,
+    "online_completed_episodes": 207,
+    "online_cold_force_successes": 0,
+    "online_raw_reward_sum": -10334.487269465035
+  },
+  "label": "online_500",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 2000,
+    "online_updates": 245
+  },
+  "normalized_alpha": 0.051263194531202316,
+  "replay_rows": 500
+}

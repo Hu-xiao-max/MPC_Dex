@@ -1,0 +1,43 @@
+{
+  "head_transitions.npz": {
+    "original_path": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_head_0001/independent_audit/transitions.npz",
+    "sha256": "ae6992530ee9bc6aa5142431a69251bfa5702b4bd701e3363a629bba230b8f44"
+  },
+  "head_physics.npz": {
+    "original_path": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_head_0001/independent_audit/physics.npz",
+    "sha256": "e2e73ee2a1a83acb86365d9630b5655905cbcbfd94866056649f0d376ec42342"
+  },
+  "head_candidate.pt": {
+    "original_path": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_head_0001/candidate.pt",
+    "sha256": "35756319358e56a6a51a224ed65301fdaf1eb2ab26dc0e8f802b92e9ead40e3d"
+  },
+  "head_candidate.pt.metadata.json": {
+    "original_path": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_head_0001/candidate.pt.metadata.json",
+    "sha256": "29e589abebb6a44134cbff7d88549ecf84492229dd056040ebe583e540dc7b20"
+  },
+  "head_manifest.json": {
+    "original_path": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_head_0001/manifest.json",
+    "sha256": "a84ba837b638caebd34a9082d8537403f65b2211845a28b2f4e5d11ffa076bf6"
+  },
+  "head_execution_comparison.json": {
+    "original_path": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_head_0001/execution_comparison.json",
+    "sha256": "5e4ff36d40659c92b77d6c71a071443cd1e4ff84b21815f8457846adc0ecddf0"
+  },
+  "nominal_transitions.npz": {
+    "original_path": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_0001/inputs/common/nominal/transitions.npz",
+    "sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb"
+  },
+  "nominal_physics.npz": {
+    "original_path": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_0001/inputs/common/nominal/physics.npz",
+    "sha256": "20e02587038f84fb5fd4169352b4daafc0cc226dd1121418059e054b42b0393b"
+  },
+  "original_config.json": {
+    "original_path": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_head_0001/strict_config.json",
+    "sha256": "1dd9a8908a11335384e5b20bac819adaea379c1987f5011b5bf38e95acc0ac45"
+  },
+  "config_transformation": {
+    "only_change": "initial_grasp path points to byte-identical artifact-local copy",
+    "old": "/home/autel001/code/mpc_dex/artifacts/bc_clock_actor_corrective_head_0001/source/assets/initial_grasp_40mm.npz",
+    "new": "/home/autel001/code/mpc_dex/artifacts/early_physics_solver_attribution_0001/source/assets/initial_grasp_40mm.npz"
+  }
+}

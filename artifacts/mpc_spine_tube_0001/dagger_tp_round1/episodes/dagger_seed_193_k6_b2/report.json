@@ -1,0 +1,70 @@
+{
+  "status": "boundary",
+  "strict_force_success": true,
+  "controls": 14,
+  "demo_prefix_controls": 6,
+  "policy_controls": 2,
+  "mpc_controls": 6,
+  "perturbed_control_index": 7,
+  "failure_reason": null,
+  "final_force_qualified_angle": 7.425371345041246,
+  "planning_seconds_total": 396.74540937738493,
+  "wall_seconds": 399.08670666394755,
+  "hand_joint_qpos_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "cem_seed": 6249,
+  "planner_mode": "tracking",
+  "planner_floor_scale": 0.005,
+  "planner_horizon_seconds": 1.5,
+  "label_average_seeds": 1,
+  "label_average_steps": 0,
+  "label_seed_spread": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "tracking_penalty_weight": 10000.0,
+  "policy_deviation_l2": [
+    0.0013440223410725594,
+    0.00810096226632595
+  ],
+  "name": "dagger_seed_193_k6_b2",
+  "demo": "seed_193",
+  "spine": "seed_193",
+  "policy_outcome": {
+    "controls": 23,
+    "failure": "palm_support",
+    "success": false,
+    "final_angle": 2.6912095079870344
+  },
+  "policy_agent_sha256": "f0ffe25576ee6bc761a64c84ee951185cc47a7a855259fd01a4c9ad2be89a10a",
+  "perturbation_radius": null,
+  "perturbation_direction": -1,
+  "independent_audit": {
+    "bitexact_replay": true,
+    "strict_force_success": true,
+    "final_force_qualified_angle": 7.425371345041246
+  },
+  "transitions_sha256": "6916907327093ead1aa7b7c114388388dee94e86afd8eeb5974ca4bfde9b28f4",
+  "physics_sha256": "573d2de67507fd096a60fee19b344b043ac341888b4d2530e07c25f203e166e6",
+  "stored": true
+}

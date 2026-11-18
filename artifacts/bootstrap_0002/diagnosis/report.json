@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "scope": "Read-only diagnosis: immutable 10,000-transition checkpoint; no production source mutations, no training process mutation, and no artificial object motion.",
+  "checkpoint_sha256": "b4ee81eecc7293867692331d96d79ae398be28da597a8ecf6964ecaa9256e144",
+  "checkpoint_online_updates": 8984,
+  "initial_grasp_contacts": 4,
+  "trained": {
+    "mode": "trained",
+    "seed": 0,
+    "steps": 3,
+    "return_value": 93.87680595794205,
+    "angle": 11.229966037412908,
+    "drop": true,
+    "success": false,
+    "retained_angle": 1.055045449923694,
+    "unretained_angle": 10.174920587489215,
+    "zero_contact_angle": 7.011398000359979,
+    "retained_fraction": 0.30666666666666664,
+    "first_zero_contact": {
+      "time": 0.1320000000000001,
+      "angle": 3.1185679669314688,
+      "contacts": 0,
+      "tilt": 1.199057342143266,
+      "position": [
+        0.11450430546321438,
+        0.00875811046086871,
+        0.03634812894745267
+      ],
+      "displacement": 0.045498653100598634,
+      "torque_max": 0.7,
+      "torque_sq": 5.930273874648625,
+      "joint_vel_max": 7.264052542874862,
+      "object_ang_vel": 64.2452842453144,
+      "object_lin_vel": 0.9530201191151737
+    },
+    "first_bad_tilt": {
+      "time": 0.09600000000000007,
+      "angle": 1.0699493412506662,
+      "contacts": 3,
+      "tilt": 0.5303758733613095,
+      "position": [
+        0.087982417771044,
+        -0.0012649162176258226,
+        0.02716669365186988
+      ],
+      "displacement": 0.017735731920395546,
+      "torque_max": 0.511561300316882,
+      "torque_sq": 0.6604243706280266,
+      "joint_vel_max": 1.8120653046137871,
+      "object_ang_vel": 17.993498194047845,
+      "object_lin_vel": 0.38452058857171145
+    },
+    "max_object_ang_vel": 69.46098197922883,
+    "max_joint_vel": 13.148080810770914,
+    "max_target_delta": 1.6020418848395348,
+    "max_displacement": 0.2753697421173083
+  },
+  "trained_control_frames": [
+    {
+      "step": 1,
+      "reward": 22.391204062821938,
+      "angle": 1.1345602031410968,
+      "contacts": 3,
+      "tilt": 0.5565111596277521,
+      "drop": false,
+      "success": false,
+      "target_delta_max": 0.5058022735447566,
+      "target_delta_rms": 0.22639182274496542,
+      "observation_slices": {
+        "joint_q_max": 1.1978870630264282,
+        "object_p_max": 0.08879004418849945,
+        "joint_vel_max": 4.442849159240723,
+        "object_vel_max": 0.1837783306837082
+      },
+      "physics_start": 0
+    },
+    {
+      "step": 2,
+      "reward": 121.48560189512013,
+      "angle": 7.2238402978971035,
+      "contacts": 0,
+      "tilt": 1.9419218307736696,
+      "drop": false,
+      "success": false,
+      "target_delta_max": 1.534790722310543,
+      "target_delta_rms": 0.7440965969268559,
+      "observation_slices": {
+        "joint_q_max": 1.4844454526901245,
+        "object_p_max": 0.20616263151168823,
+        "joint_vel_max": 7.031378269195557,
+        "object_vel_max": 1.173725962638855
+      },
+      "physics_start": 50
+    },
+    {
+      "step": 3,
+      "reward": -50.0,
+      "angle": 11.229966037412908,
+      "contacts": 0,
+      "tilt": 1.3740582383749251,
+      "drop": true,
+      "success": false,
+      "target_delta_max": 1.6020418848395348,
+      "target_delta_rms": 0.7790964485455989,
+      "observation_slices": {
+        "joint_q_max": 1.5971468687057495,
+        "object_p_max": 0.33585625886917114,
+        "joint_vel_max": 6.9970927238464355,
+        "object_vel_max": 1.296936273574829
+      },
+      "physics_start": 100
+    }
+  ],
+  "comparisons": [
+    {
+      "mode": "hold",
+      "seed": 0,
+      "steps": 861,
+      "return_value": -315.8216705424636,
+      "angle": -1.2106118158920198,
+      "drop": true,
+      "success": false,
+      "retained_angle": -0.12883447468532006,
+      "unretained_angle": -1.0817773412066998,
+      "zero_contact_angle": -1.0817773412066998,
+      "retained_fraction": 0.9984668989547039,
+      "first_zero_contact": {
+        "time": 85.96999999998104,
+        "angle": -0.14522504046310575,
+        "contacts": 0,
+        "tilt": 0.012346606531911388,
+        "position": [
+          0.09316468830563236,
+          0.0016068806795796042,
+          0.02122083874294233
+        ],
+        "displacement": 0.023885115958979682,
+        "torque_max": 0.12459115157719314,
+        "torque_sq": 0.058317004021414175,
+        "joint_vel_max": 1.2321216914413733,
+        "object_ang_vel": 8.199069939478443,
+        "object_lin_vel": 0.12760700114319978
+      },
+      "first_bad_tilt": null,
+      "max_object_ang_vel": 8.199069939478443,
+      "max_joint_vel": 1.2346916284788814,
+      "max_target_delta": 2.9674540491519963e-08,
+      "max_displacement": 0.11793036641249272
+    },
+    {
+      "mode": "slew:0.02",
+      "seed": 0,
+      "steps": 131,
+      "return_value": -69.80472706387789,
+      "angle": 0.08539879932736494,
+      "drop": true,
+      "success": false,
+      "retained_angle": 2.0787706904227323,
+      "unretained_angle": -1.9933718910953675,
+      "zero_contact_angle": -1.8106149899560786,
+      "retained_fraction": 0.9809160305343512,
+      "first_zero_contact": {
+        "time": 12.856000000000963,
+        "angle": 2.0712926265152674,
+        "contacts": 0,
+        "tilt": 0.4364922306527753,
+        "position": [
+          0.06599853531233953,
+          0.004161666094833165,
+          -0.030847933953174932
+        ],
+        "displacement": 0.05955017924249625,
+        "torque_max": 0.7,
+        "torque_sq": 1.0293311130854206,
+        "joint_vel_max": 2.0838655938320305,
+        "object_ang_vel": 5.685262477238232,
+        "object_lin_vel": 0.39815482901032545
+      },
+      "first_bad_tilt": {
+        "time": 12.896000000000976,
+        "angle": 1.9090122023116982,
+        "contacts": 0,
+        "tilt": 0.5286662634600208,
+        "position": [
+          0.0747822023356975,
+          -0.0011471793701107618,
+          -0.045853421261272016
+        ],
+        "displacement": 0.0744495676985357,
+        "torque_max": 0.7,
+        "torque_sq": 0.6233285336906654,
+        "joint_vel_max": 1.3203584095367957,
+        "object_ang_vel": 5.684115780789024,
+        "object_lin_vel": 0.5684750890430678
+      },
+      "max_object_ang_vel": 12.179245338168172,
+      "max_joint_vel": 4.306190788649116,
+      "max_target_delta": 0.020000059247017088,
+      "max_displacement": 0.2797679921744447
+    },
+    {
+      "mode": "slew:0.05",
+      "seed": 0,
+      "steps": 135,
+      "return_value": -71.32213221037857,
+      "angle": 1.4286135365809807,
+      "drop": true,
+      "success": false,
+      "retained_angle": 0.9838715077078947,
+      "unretained_angle": 0.44474202887308606,
+      "zero_contact_angle": 0.24231452553524213,
+      "retained_fraction": 0.9528888888888889,
+      "first_zero_contact": {
+        "time": 13.414000000001149,
+        "angle": 1.040245409758071,
+        "contacts": 0,
+        "tilt": 0.9483124504810408,
+        "position": [
+          0.08662353415539976,
+          -0.01872992094048843,
+          -0.015263379900169747
+        ],
+        "displacement": 0.05053693382215869,
+        "torque_max": 0.7,
+        "torque_sq": 1.3052753132288226,
+        "joint_vel_max": 2.05008621476313,
+        "object_ang_vel": 8.598096476870454,
+        "object_lin_vel": 0.3098982657880375
+      },
+      "first_bad_tilt": {
+        "time": 12.894000000000975,
+        "angle": 1.0055850665525954,
+        "contacts": 3,
+        "tilt": 0.5257548403451757,
+        "position": [
+          0.06053777833432662,
+          -0.03443252864288203,
+          -0.0018924312878032333
+        ],
+        "displacement": 0.04752083240079414,
+        "torque_max": 0.7,
+        "torque_sq": 0.7152308556299306,
+        "joint_vel_max": 0.3302604402442651,
+        "object_ang_vel": 2.0435730771306826,
+        "object_lin_vel": 0.08055129393909852
+      },
+      "max_object_ang_vel": 14.436188195183705,
+      "max_joint_vel": 5.786854837495839,
+      "max_target_delta": 0.050000074267387395,
+      "max_displacement": 0.0856295265616511
+    },
+    {
+      "mode": "slew:0.1",
+      "seed": 0,
+      "steps": 15,
+      "return_value": -27.836197379870605,
+      "angle": 3.0645326939485362,
+      "drop": true,
+      "success": false,
+      "retained_angle": 0.37085310859160947,
+      "unretained_angle": 2.693679585356927,
+      "zero_contact_angle": 1.385438669594884,
+      "retained_fraction": 0.16533333333333333,
+      "first_zero_contact": {
+        "time": 1.426000000000001,
+        "angle": 1.7155529460495755,
+        "contacts": 0,
+        "tilt": 1.5540919693841337,
+        "position": [
+          0.11166976240443893,
+          0.012361649842330085,
+          -0.027147434416751975
+        ],
+        "displacement": 0.0701881423366508,
+        "torque_max": 0.5186214935873785,
+        "torque_sq": 1.3220146754773712,
+        "joint_vel_max": 3.2957971145581677,
+        "object_ang_vel": 19.569139888322425,
+        "object_lin_vel": 0.9220091452331954
+      },
+      "first_bad_tilt": {
+        "time": 0.25200000000000017,
+        "angle": 0.3879430730660558,
+        "contacts": 3,
+        "tilt": 0.5261936113667984,
+        "position": [
+          0.07241726319338511,
+          -0.011053944072787477,
+          0.01906818697764847
+        ],
+        "displacement": 0.015236144113661384,
+        "torque_max": 0.48730422484674785,
+        "torque_sq": 0.45069800974926966,
+        "joint_vel_max": 1.6198043930964818,
+        "object_ang_vel": 10.867138025502255,
+        "object_lin_vel": 0.40279471402809447
+      },
+      "max_object_ang_vel": 29.956703778471148,
+      "max_joint_vel": 9.347343723920716,
+      "max_target_delta": 0.10000007772445696,
+      "max_displacement": 0.15358286605386767
+    }
+  ],
+  "noise_probes": [
+    {
+      "raw_gaussian_std": 0.01,
+      "episodes": 10,
+      "drops": 10,
+      "mean_survival_seconds": 3.95,
+      "mean_terminal_angle": -0.3199832665049419,
+      "mean_return": -63.89276137209821
+    },
+    {
+      "raw_gaussian_std": 0.02,
+      "episodes": 10,
+      "drops": 10,
+      "mean_survival_seconds": 2.54,
+      "mean_terminal_angle": -0.30425915463538755,
+      "mean_return": -61.16213597349521
+    },
+    {
+      "raw_gaussian_std": 0.05,
+      "episodes": 10,
+      "drops": 10,
+      "mean_survival_seconds": 0.97,
+      "mean_terminal_angle": -0.8555837051148536,
+      "mean_return": -61.10220352823467
+    },
+    {
+      "raw_gaussian_std": 0.1,
+      "episodes": 10,
+      "drops": 10,
+      "mean_survival_seconds": 0.5,
+      "mean_terminal_angle": -1.4595614770014698,
+      "mean_return": -66.46740058533989
+    }
+  ],
+  "findings": [
+    "Optimizing the current reward rationally learns flinging: the deterministic throw yields +93.8768 in 0.3 seconds, from rewards +22.3912, +121.4856, -50. Only 1.0550 of 11.2300 radians were accumulated with >=2 finger contacts and <=30 degree axial tilt. 7.0114 radians were accumulated with zero finger contacts.",
+    "The 0.2-second endpoint has zero finger contacts and tilt 111.3 degrees yet earns +121.4856. Contact-loss grace and intermittent renewed contact defer the drop signal until step 3. This is objective exploitation, not numerical success misreporting: success is false throughout.",
+    "Action units amplify exploration. Initial raw Gaussian std .05 means approximately .0168-.0466 radians of independent joint-target noise, not .05 radians total across the hand. All 10 tested seeds dropped within the 10-second horizon, mean .97 seconds. Reducing raw std to .01 raises mean survival to only 3.95 seconds.",
+    "The learned deterministic first target changes by .5058 radians; steps 2 and 3 change by 1.5348 and 1.6020 radians. Forces hit the .7 N m bound; peak joint speed is 13.1481 rad/s and peak object angular speed 69.4610 rad/s.",
+    "Slew-limiting the exact same learned deterministic outputs to .02 rad/control-step gives 13.1-second survival and 2.0788 retained radians, with >=2 contacts and <=30-degree tilt for 98.1% of physics samples. This comparison supports incremental action limits without claiming task success.",
+    "The supposedly stable initial controls eventually drop at 86.1 seconds, following roughly 86 seconds of retained but slowly slipping grasp. Its nominal discounted time-cost-only value at gamma .995 is -59.34 for 900 steps, worse than an immediate -50 drop. The constant -.3 paper time cost is therefore counterproductive before bootstrap acquires rotation.",
+    "Observation channels have very different scales: initial joint positions reach1.19 rad, object position .0704 m, quaternion .9873; the throw yields per-control-step finite-difference joint velocity7.03 rad/s and object velocity1.30 m/s. State normalization may help but is secondary to action/reward mismatch."
+  ],
+  "recommendations": {
+    "scope": "Bootstrap simulation SAC only; preserve original environment/reward for the paper method.",
+    "actions": "Use a separately documented incremental command mapping: delta-target bounded .02 rad per 0.1-second step; clip target error from measured joint q to .15 rad. Actor mean starts at zero residual; raw std .05 then corresponds to .001 rad target perturbation. Preserve actual previous physical target in the observation so the wrapper is Markov.",
+    "reward": "Account for signed physics-step axial increments. Gate positive increments by >=2 contacts, <=30 degree tilt and bounded hand workspace. Keep all negative increments. Cap only the positive per-control-step total at .1 rad (2 reward units at multiplier20), leave negative totals uncapped. Remove the -.3 bootstrap time cost; retain drop and actual completion penalties/bonuses. Add explicit object position/tilt penalties only if needed and log components.",
+    "success": "Require a full retained physical rotation, not accumulated off-axis or airborne twist followed by reacquisition. Keep an independent conservative qualified-progress accumulator and disclose the bootstrap success criterion.",
+    "why_asymmetric": "Symmetric signed clipping can reward zero-net-angle cycles: slow forward progress accumulates rewards while a fast reverse step pays only the capped negative cost. Gating all signed increments can similarly reward held-forward/unheld-reverse cycles. Gating/capping positive increments only and charging all actual negative twist makes total progress reward <=20 times actual net axial progress.",
+    "validation": "Test command-rate and target-error bounds; adversarial forward/backward reward cycles; zero-contact and excess-tilt rotations; persistence of incremental-action state and qualified-progress state; successful extraction still requires a full physical rotation. Train fresh bootstrap weights and replay because the new action/reward semantics are incompatible with old checkpoints."
+  },
+  "artifact": "probe_results.json contains the complete 2-ms physical traces for trained, hold, and slew-limited controls. All probes use the unmodified source environment with observation-only finger_contacts instrumentation.",
+  "incremental_noise_validation": {
+    "raw_std": 0.05,
+    "max_delta_scale_radians": 0.02,
+    "target_error_bound_radians": 0.15,
+    "episodes": 10,
+    "horizon_seconds": 20,
+    "drops": 0,
+    "all_final_contacts": 4,
+    "max_target_delta_radians": 0.0040021863042362105,
+    "max_target_error_radians": 0.05562070100485761,
+    "mean_angle_radians": 0.05760072364066458,
+    "conclusion": "The same raw Gaussian exploration std .05 survives all 10 20-second episodes with bounded incremental control, versus all10 seeds dropping after mean .97seconds with absolute control. This validates initial exploration retention only, not learned rotation success."
+  }
+}

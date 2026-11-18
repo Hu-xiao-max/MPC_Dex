@@ -1,0 +1,463 @@
+{
+  "source/": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/source",
+    "files": 51,
+    "inherited_execution_manifest_sha256": "9f321326581e50252d13867a21b67a90498f13579079200beef35e9b6a65a70a"
+  },
+  "source_config.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/source_config.json",
+    "sha256": "8177e7272e6da812e01da5cb62b0f0fe2ee241277015268dd802bde5af55d105",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "initial_grasp.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/initial_grasp.npz",
+    "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "prefix_transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_transitions.npz",
+    "sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "prefix_physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_physics.npz",
+    "sha256": "366fb79a431efb8b218d9dc7d6c39730aab9168553c736783f988c14b2a6672e",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "prefix_report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prefix_report.json",
+    "sha256": "1faeeea26d930d16720ee66993a217bc8e1a3404476d0037a51a627658c9b29f",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "mpc_correction_pairs.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_correction_pairs.npz",
+    "sha256": "911561b96b913c2e5a757861d165db2f538cec29c7aaff73411513a6a312e37a",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "mpc_correction_pairs.metadata.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_correction_pairs.metadata.json",
+    "sha256": "44c7da2eb5891c9461d0aeb882c907948458a9c6b661e107c69e643cc9c77a2a",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "mpc_recovery_transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/mpc_recovery_transitions.npz",
+    "sha256": "072c8633a22213120887f611e143a2e49a68a8ed202daa66bb3eec2d9b130fb2",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "initial.pt": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/initial.pt",
+    "sha256": "e4a73d890963a70afc9337db7d29d345c38e192218a7b81dbd51cd6589232892",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "initial.pt.metadata.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/initial.pt.metadata.json",
+    "sha256": "b42fafa2ba23e130da3714b293307dfc6ccf36924b84fabc6b587513be7c3602",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "inherited_state.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/inherited_state.json",
+    "sha256": "1203098effd0c68c703a4b6921e0f416214e96b5dc1b19485ab4bd3c1cd54e85",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "prior_replay_lineage_only.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/prior_replay_lineage_only.npz",
+    "sha256": "6c981e8f943d238f76e5bb5ca0ff22cee8bf17ecee5c91c0618f02fdba6b9920",
+    "inherited_from": "bootstrap_suffix_sac_0004"
+  },
+  "inputs/sac0004/findings.md": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/findings.md",
+    "sha256": "c777240baab4dcf89dff2de05e6edd86ad80814a157d2392e7d261bdf7e624f4"
+  },
+  "inputs/sac0004/summary.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/summary.json",
+    "sha256": "ee8ba0e1d3c4865e9264b02107bce863b23cb59d561329ee31fca158f6fadbb8"
+  },
+  "inputs/sac0004/protocol.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0004/protocol.json",
+    "sha256": "bc691749205945309f11ee30cabae5352788e6a5bf95691e2e4c24908fa81d1d"
+  },
+  "run.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/run.py",
+    "sha256": "c6258436bedf71ac3d4cb243fe74496851c1ef12f2e9cf1167695b521f801be4",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": true
+  },
+  "test_protocol.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/test_protocol.py",
+    "sha256": "76a8f5996e1fee46c0904fa9f40be984708b785eb571b1b8672557c6fd980a3c",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": true
+  },
+  "inputs/template/prepare.py": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/prepare.py",
+    "sha256": "61543d38f94e077a7092e2a6dfa4ac6fef4139ebcfaded68dcd9f6164fe545b1",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": false
+  },
+  "inputs/template/README.md": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001/README.md",
+    "sha256": "851595ce5af7ef77b321547d9989028d1d49ea814a095386aa315554c589c8e7",
+    "template": "/home/autel001/code/mpc_dex/artifacts/bootstrap_variant_template_0001",
+    "pinned": false
+  },
+  "sources/seed_101/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_101/transitions.npz",
+    "sha256": "9ae42b56b8f348b6fb9ce4948e56f2755847f3ef726f70d9b0218a6e18388a50",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_101/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_101/physics.npz",
+    "sha256": "657e28cab90d826e38135b34be8ef6e0f59259e35860f5de28c22320a401a701",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_101/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_101/report.json",
+    "sha256": "5f68a391b2a919e14b62edb2efd7cdd521404222bd06417886c4df7aa47b9c14",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_102/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_102/transitions.npz",
+    "sha256": "64e1f2ebe77b126337a5b9139204e134692fa8b64dfbec4dc1b5898a16fdd4a7",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_102/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_102/physics.npz",
+    "sha256": "6c5ac88e38c01a4177ba47c7c5a17222e542d4e6e1bc64bc828e74999ed109ad",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_102/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_102/report.json",
+    "sha256": "afda494825811e81d57445bf6e5aebf8ccb57a4880f836743437f079ac8a4b0c",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_103/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_103/transitions.npz",
+    "sha256": "87d1c000317b5d12eaf9a1bd010fe1abe3213ba314c3896eeac4756363c39d43",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_103/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_103/physics.npz",
+    "sha256": "af0b8321eb703577669f734b47d66539005701d6c090398211cc75e00032e464",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_103/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_103/report.json",
+    "sha256": "e47fa21713b88c0b6c13025df419ebeb89df189f12a8f3f7da3fe84f5039f46e",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_104/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_104/transitions.npz",
+    "sha256": "c74e527e9ef49f3797fde1038c87d88722d24f7312518e784a318d2e615ca1d2",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_104/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_104/physics.npz",
+    "sha256": "30d72f967e5caa3bc32b97ff0eaa87ca6b25258dba6a3f9279ccfa4a4f2c1a1d",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_104/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_104/report.json",
+    "sha256": "f023ec14388011b1d48ca379e319a69abccf3cf57236567e71f5adc4dded66bf",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_105/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_105/transitions.npz",
+    "sha256": "ba9640aa77c4ad087e129549d05d099b919d4a88e11c05f0f0c0ca492277e294",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_105/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_105/physics.npz",
+    "sha256": "91638b57e4ba2a15563c7c8e4ffdb84fbcf2c2c95cdb4e65936387a4585f9e6f",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_105/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_105/report.json",
+    "sha256": "23fe4c2b18e0830e1044e109ffee6cf87c63af6b0c7dc697dccb3354eed59823",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_106/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_106/transitions.npz",
+    "sha256": "8a8afe07e1547908748dcf2f7b5376551f30f3a21f2c3bac0b5991c54c5c0935",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_106/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_106/physics.npz",
+    "sha256": "0285a1c324f0f68cb2fff26225e74ad7127436fc38beba18844ac0795af11b1a",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_106/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_106/report.json",
+    "sha256": "f5cdaadeea3c668fc9207e1ab68de575c835e609f1c55342e55298ba3c8959bb",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_107/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_107/transitions.npz",
+    "sha256": "0cb75618966b2bd4596bfe7aaf9049bbe9d183895efde10c02fa21847e5be240",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_107/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_107/physics.npz",
+    "sha256": "73dc02f0deb6673362b6a148e6285d34aa45b0774e7aceaa05e2e85061a3a65a",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_107/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_107/report.json",
+    "sha256": "23dc287e75b4dfc22c5c9c15228edc389b84577a609446a0292314d1ecb81798",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_108/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_108/transitions.npz",
+    "sha256": "8015b65ea2c0296ffa92bfeb90248c4d49600579b3121b86faabe001cd6b89e7",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_108/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_108/physics.npz",
+    "sha256": "3b1cce4ce7d0980f5f1c96dea1c25984ae7b34a143b74d7edf1740db1eeccfdc",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_108/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_108/report.json",
+    "sha256": "93af871d3af15de3b650d14dc0273a4c28f1c31fa90793a7a3a81311256c7790",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_109/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_109/transitions.npz",
+    "sha256": "67fbc523ffe61257164cce81dab60b4208a5ac6346890a4c400d49caff380a0e",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_109/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_109/physics.npz",
+    "sha256": "423823bd03f7a31d812f341c682afc9398b054980c731b88377cf725bd057e21",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_109/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_109/report.json",
+    "sha256": "14e05ed3b2458dff18db9a251f7bc631dbd715983f2a46dbce3acb7e9f52f0b5",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_110/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_110/transitions.npz",
+    "sha256": "b4f157298151d37790d2cd4773f0be31a095857ea90f310e75e27a3baf112f5d",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_110/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_110/physics.npz",
+    "sha256": "3492588898524f0fe2f4d4d35ef82bbe1132a986d4d1b393145b18b5d56ba8dc",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_110/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_110/report.json",
+    "sha256": "5d78ec14bcbd8affeb0cb929e579580482d27c2410b1c896e5362069dd0e4ed6",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_116/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_116/transitions.npz",
+    "sha256": "5a155ded64e3767c55f42015b4e6ff18050a5d510a2ed4f176062a9eacd7b1c1",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_116/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_116/physics.npz",
+    "sha256": "736150d2e8848d58e656aaa4860b7ae0a1bdddaa1b8af121b75ee0097e5d69a1",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_116/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_116/report.json",
+    "sha256": "ffce73e5f029e00912af86a4b64787593ee485559d44bdd7fc65d62c2636e2c0",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_117/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_117/transitions.npz",
+    "sha256": "55c54f2a3b00f367f24a2d7b6013e02f6342f88502cf21433a745e22b1ac6c0b",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_117/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_117/physics.npz",
+    "sha256": "9997a60120d8a41da6dacbbae41c868f1d752ea2e2a1957f179a38ed6541225a",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_117/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_117/report.json",
+    "sha256": "42a4905802e46d105560a8de5c62c3b88e47c5c9545c778ace81405b2633e63e",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_119/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_119/transitions.npz",
+    "sha256": "142127b8703d0cd660044cd28203c0ebc5efc928355fcb150bb336653c025c64",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_119/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_119/physics.npz",
+    "sha256": "bd69f5588329a2501a5d72113138c2c86c5abf8be5f1502dea2b4ff1026d296f",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_119/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_119/report.json",
+    "sha256": "389c8097262d41e9880907621f1ddc74cb13c5c7396a60091af16148d785046a",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_120/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_120/transitions.npz",
+    "sha256": "529d17a404acb5bb413e927bca82e4c575f11cd3bd11924d6276ab97e43033b6",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_120/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_120/physics.npz",
+    "sha256": "f1bda9f42a6efaeaa08033f0124e57dfeb484ea13ac9d92ae2bba925817eae39",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_120/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_120/report.json",
+    "sha256": "87e1fafdd61501f3ac9273b21d5f0548008dabf7078387f23154cb6113b489b8",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_121/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_121/transitions.npz",
+    "sha256": "0ea74cb6a9d879236350dd11368f792500de1ab69f731b57f4945234c2967e99",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_121/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_121/physics.npz",
+    "sha256": "5d88b79ef9ede2ef0169d066dab3a4fb5148e54f845814b89418d444ed584235",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_121/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_121/report.json",
+    "sha256": "bdb7f42a68aa4d4709fe1a8e3f64bd4905b451135f2d79457184bea21fdf322e",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_122/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_122/transitions.npz",
+    "sha256": "310b8f571a5a9efbd249bad4dc084cd5e3d8d47f89bbd4ef5e3ab3a1922ef3f8",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_122/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_122/physics.npz",
+    "sha256": "b84e21006b662df461e23fc3dc9f81bc6dfcf312f5f29fad312b6b9b70ee2452",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_122/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_122/report.json",
+    "sha256": "6f58c193591440ad86ff0b0fc674887511ac1687da56c13165bfeb9301a3a8f6",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_132/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_132/transitions.npz",
+    "sha256": "54b0d970891f5d1b12e902c97d31248f3c8e60a20f23f95c5f3b3621cb5e3dac",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_132/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_132/physics.npz",
+    "sha256": "de1188581f098b19f7aef1a7bff5a2cb7d467defb5ce2db702fba53b980a6c78",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_132/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_132/report.json",
+    "sha256": "674f8b1360bed42f34e1eaa372899310a6ce3f5cc9d6b18572aa7fbb4259c993",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_134/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_134/transitions.npz",
+    "sha256": "1dcc35bf53eaab3931a2a7c10ecfde9d34b29761c719542d50f367024456b59e",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_134/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_134/physics.npz",
+    "sha256": "df355d0d9012826631b0ce25d6bf6ecb5292e66068d75491d650320b832c6461",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_134/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_134/report.json",
+    "sha256": "faa7b0298edfa377517a5d626584b62d73ff8b5e3e786fb89858d6c2e44b2606",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_136/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_136/transitions.npz",
+    "sha256": "7ec93d090578a8440a3c94d0cdbcf65690e6e06252bbfce1add313e3aeaccb4c",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_136/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_136/physics.npz",
+    "sha256": "3c2c91b674b4b1ee0b6587892a339411ba4a652122741e60e2b655f9d038f60f",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_136/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_136/report.json",
+    "sha256": "2ea95ebf313e8022eeeed63157faffb6341872a35fa1a28c9a509febffcc8917",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_149/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_149/transitions.npz",
+    "sha256": "a805eeb4920449a3fd7c69a5d23c749436112a47d2c74b60a99ccc90ee541f8a",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_149/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_149/physics.npz",
+    "sha256": "480de07f143391cb66b67f07ce0af0868e6264bb55cdac89295517b9bf3ba5a4",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_149/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_149/report.json",
+    "sha256": "b16a12279131820c4361e41f8fed6f9521b3705dcc36a04304a2140df9e0f9c7",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_152/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_152/transitions.npz",
+    "sha256": "7a899de7e236911423f4d81b55a3d124488ffad6d9ad6de2344a830ec07242a3",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_152/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_152/physics.npz",
+    "sha256": "771b63e7d6caa1fc7da1bb93adcadc2772709dbbc6eb7dc3ddb97b8c9fb85b72",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_152/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_152/report.json",
+    "sha256": "22122d7b41b3f79f093c41674f5b37b2f36b7d0fc37fa2edc992af6109dbc977",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_153/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_153/transitions.npz",
+    "sha256": "f85150c025c446ff690d8f458bb7a907b48666e926a8382a98a516e16c01274b",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_153/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_153/physics.npz",
+    "sha256": "565aec2acabdbc8f2590031c88b97a8a6d9f8930a4dd3b2de493d1a8c21210e1",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_153/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_153/report.json",
+    "sha256": "12dcc0a1b1d6481cbfa6e43e0cb05a37ed1092bd9430890c21d62e25188fce63",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_154/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_154/transitions.npz",
+    "sha256": "26ab7c9dd5a79fc418727bdb2b4c4e99525cf0a8d4d445313fb415a2f657d5ed",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_154/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_154/physics.npz",
+    "sha256": "67c8b74e39a54d9244559e2179d2ab736b3893be52f65f4f1e470c6f13e11ccb",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_154/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_154/report.json",
+    "sha256": "fab37e7b0a02a30bc07d0cf2b13888060851af4d859e2d9975c19761659bff2a",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_155/transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_155/transitions.npz",
+    "sha256": "42117376a6615459892fbab017b736321e43f6b14d5d3e22acb73e573231c233",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_155/physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_155/physics.npz",
+    "sha256": "57e1205538250067c7c03a473a6b0af140692e8785a6c3d3a668f15fc83c6af3",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  },
+  "sources/seed_155/report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001/episodes/seed_155/report.json",
+    "sha256": "4c4ca5d4ae63600f0f8b984e21c36c8a704c110a8c6d2009760301384636efcc",
+    "demonstration_source": "/home/autel001/code/mpc_dex/artifacts/cylinder_demonstrations_0001"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "tested_prefixes": [
+    6
+  ],
+  "untested_prefixes": [
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "stochastic_successes": 0,
+  "stochastic_episodes": 5,
+  "deterministic_success": false,
+  "stop_reason": "first_stage_below_four_of_five",
+  "last_previously_supported_prefix": 7,
+  "automatic_stage_advance_supported": false,
+  "zero_success_probability_claim": false,
+  "all_assisted": true,
+  "new_learning_updates": 0,
+  "eligible_primitive": false,
+  "actual_controls": 55,
+  "physical_prefix_controls": 36,
+  "actual_suffix_controls": 19,
+  "physics_samples": 2750
+}

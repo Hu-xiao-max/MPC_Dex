@@ -1,0 +1,142 @@
+{
+  "purpose": "Actual collector integration on one immutable SAC-updated checkpoint",
+  "collector_exit_code": 2,
+  "eligible_for_primitive": false,
+  "no_eligible_joint_archive": true,
+  "new_learning_updates": 0,
+  "checkpoint": {
+    "path": "checkpoint.pt",
+    "sha256": "386be7a4e915a3b54e7bd7fc534c5b9502b84f35fd5e7139f7ec3c6ddeabc220",
+    "metadata_path": "checkpoint.pt.metadata.json",
+    "metadata_sha256": "eda989aa4c47f15fcee06747447b7375602dd0aa30cf09cc52aa3da507cadbbb"
+  },
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 0,
+    "online_updates": 1745
+  },
+  "comparisons": [
+    {
+      "episode": 0,
+      "seed": 42,
+      "controls": 7,
+      "transition_max_errors": {
+        "obs": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "next_obs": 0.0,
+        "terminated": 0.0,
+        "truncated": 0.0,
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "targets": 0.0,
+        "integration_state": 0.0
+      },
+      "all_350_physics_samples_bitexact": true,
+      "initial_terminal_joint_frames_verified": true,
+      "force_qualified_angle": 1.0032547032686967,
+      "failure_reason": "palm_support",
+      "peak_palm_support_force": 1.7862867488820415
+    },
+    {
+      "episode": 1,
+      "seed": 43,
+      "controls": 7,
+      "transition_max_errors": {
+        "obs": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "next_obs": 0.0,
+        "terminated": 0.0,
+        "truncated": 0.0,
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "targets": 0.0,
+        "integration_state": 0.0
+      },
+      "all_350_physics_samples_bitexact": true,
+      "initial_terminal_joint_frames_verified": true,
+      "force_qualified_angle": 1.0032547032686967,
+      "failure_reason": "palm_support",
+      "peak_palm_support_force": 1.7862867488820415
+    },
+    {
+      "episode": 2,
+      "seed": 44,
+      "controls": 7,
+      "transition_max_errors": {
+        "obs": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "next_obs": 0.0,
+        "terminated": 0.0,
+        "truncated": 0.0,
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "targets": 0.0,
+        "integration_state": 0.0
+      },
+      "all_350_physics_samples_bitexact": true,
+      "initial_terminal_joint_frames_verified": true,
+      "force_qualified_angle": 1.0032547032686967,
+      "failure_reason": "palm_support",
+      "peak_palm_support_force": 1.7862867488820415
+    },
+    {
+      "episode": 3,
+      "seed": 45,
+      "controls": 7,
+      "transition_max_errors": {
+        "obs": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "next_obs": 0.0,
+        "terminated": 0.0,
+        "truncated": 0.0,
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "targets": 0.0,
+        "integration_state": 0.0
+      },
+      "all_350_physics_samples_bitexact": true,
+      "initial_terminal_joint_frames_verified": true,
+      "force_qualified_angle": 1.0032547032686967,
+      "failure_reason": "palm_support",
+      "peak_palm_support_force": 1.7862867488820415
+    },
+    {
+      "episode": 4,
+      "seed": 46,
+      "controls": 7,
+      "transition_max_errors": {
+        "obs": 0.0,
+        "actions": 0.0,
+        "rewards": 0.0,
+        "next_obs": 0.0,
+        "terminated": 0.0,
+        "truncated": 0.0,
+        "qpos": 0.0,
+        "qvel": 0.0,
+        "targets": 0.0,
+        "integration_state": 0.0
+      },
+      "all_350_physics_samples_bitexact": true,
+      "initial_terminal_joint_frames_verified": true,
+      "force_qualified_angle": 1.0032547032686967,
+      "failure_reason": "palm_support",
+      "peak_palm_support_force": 1.7862867488820415
+    }
+  ],
+  "reference_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/final_2000_0001/deterministic_strict",
+  "reference_sha256": {
+    "transitions.npz": "3144680a487f3efe08618037c146d7139909618d8e28ea120d583afb8632e82b",
+    "physics.npz": "e2fc8bef5f93f0a1b1e1dd614b8abb4c70729087bbd75e8f37b3d0f04162f429",
+    "report.json": "7c2b90df50b099d112fc771d07c809783614de3c0a09a8e7c11994e57241a22c",
+    "runtime.json": "d483519d14fb2445eb45af594e1ead2f9bc2fc9778228541517fd180a615b8f4"
+  },
+  "collector_report_sha256": "fb64e6c2ee97d0f79f45cab007e3b3d81e51c1dcdaa156db3ff704b413296b5b",
+  "unique_initial_physics_states": 1,
+  "unique_measured_joint_trajectories": 1,
+  "runtime_note": "Collector disables CuDNN TF32 while reference permits it; this actor uses no CuDNN convolution. Actual commands, full integration states and all physics compare bit-exact.",
+  "robustness_or_success_claim": false
+}

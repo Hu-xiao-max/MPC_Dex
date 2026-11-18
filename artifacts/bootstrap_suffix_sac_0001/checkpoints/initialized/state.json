@@ -1,0 +1,35 @@
+{
+  "counts": {
+    "warmup_complete_episodes": 0,
+    "warmup_policy_interactions": 0,
+    "online_policy_interactions": 0,
+    "physical_prefix_controls": 0,
+    "warmup_assisted_completed_episodes": 0,
+    "warmup_assisted_force_successes": 0,
+    "online_assisted_completed_episodes": 0,
+    "online_assisted_force_successes": 0,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 0,
+    "new_online_updates": 0,
+    "warmup_raw_reward_sum": 0.0,
+    "online_raw_reward_sum": 0.0
+  },
+  "label": "initialized",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 0,
+    "online_updates": 0
+  },
+  "normalized_alpha": 0.0002500000991858542,
+  "raw_equivalent_alpha": 0.05000001983717084,
+  "replay_rows": 0,
+  "replay_pending_slot": null,
+  "unfinished_episode": false,
+  "automatic_resume_supported": false,
+  "complete_update_boundary": true,
+  "metrics_bytes": 0,
+  "metrics_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

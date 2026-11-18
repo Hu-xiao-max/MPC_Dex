@@ -1,0 +1,13 @@
+{
+  "reviewer": "/root/planner_constraints",
+  "scope": "Original uncentered500-update fit",
+  "result": "pass",
+  "checks": [
+    "256 reconstructed rows bind exactly to original online replay [9:265]",
+    "78 true-terminal episodes, no truncated or unfinished rows",
+    "Independent forward-sum empirical soft-Q returns match within5.68e-14",
+    "All20 critic Adam parameter states atstep500",
+    "Actor,alpha,counters bitexact; actor/alpha/BC optimizer states remainempty",
+    "Heldout rows have zero exact(obs,action) overlap with fitting rows; return reconstructions match"
+  ]
+}

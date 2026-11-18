@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "purpose": "Published reference values; not an executable deployment configuration",
+  "deployment_verified": false,
+  "checked_on": "2026-09-23",
+  "sources": {
+    "rl_paper": {
+      "url": "https://arxiv.org/html/2609.14878v1",
+      "title": "Real-World Reinforcement Learning with MPC Scaffolding for Dexterous Manipulation",
+      "version": "v1"
+    },
+    "project": {
+      "url": "https://real-world-rl-with-mpc.github.io/",
+      "section": "Implementation Details",
+      "inspected_html_sha256": "5b9b6a3fb3c3de0922af3267d8054c6316879445cb90e975eb85d11556d02924"
+    },
+    "mpc_paper": {
+      "url": "https://arxiv.org/html/2609.14868v1",
+      "title": "Primitive-Informed Sampling-Based MPC for Multi-Fingered Dexterous Manipulation",
+      "version": "v1",
+      "relationship": "RL paper adopts the planner formulation; companion experiment settings do not establish every RL deployment setting"
+    }
+  },
+  "rotation": {
+    "sources": ["rl_paper III-A", "project: Real-world SAC with MPC scaffolding"],
+    "hand": "16-DoF Allegro",
+    "arm": "Franka FR3",
+    "object_tracking": "OptiTrack",
+    "digital_twin": "MuJoCo",
+    "object_shape": "hexagonal",
+    "object_across_flats_mm": 45,
+    "control_hz": 10,
+    "episode_horizon_steps": 900,
+    "observation_dim": 60,
+    "action_dim": 16,
+    "action_bounds": [-1, 1],
+    "command_type": "hand joint position targets",
+    "action_to_joint_mapping": null,
+    "observation_equation_5_terms": [
+      "q_hand", "position_object_relative_to_end_effector", "orientation_object",
+      "rotation_angle_current", "rotation_angle_previous", "velocity_hand_finite_difference",
+      "velocity_object_relative_position_finite_difference", "previous_executed_action"
+    ],
+    "observation_dimension_check": {
+      "conditional_on": "orientation_object represented by 4 quaternion components",
+      "term_dimensions": [16, 3, 4, 1, 1, 16, 3, 16],
+      "sum": 60,
+      "exact_runtime_layout_verified": false
+    },
+    "reward": {
+      "progress_coefficient": 20,
+      "per_step_time_penalty": -0.3,
+      "full_rotation_bonus": 200,
+      "drop_terminal_reward": -50,
+      "drop_replaces_other_reward": true
+    },
+    "demonstrations": {
+      "episodes": 20,
+      "full_rotations_per_episode": 1,
+      "collection_minutes_approx": 12,
+      "reward_labels": "RL task reward, not planner cost",
+      "recorded_next_action_required_for_soft_sarsa": true
+    },
+    "evaluation": {
+      "policy_only_episodes_per_training_evaluation": 5,
+      "horizon_seconds": 90,
+      "success": "one full 2*pi rotation without a drop"
+    }
+  },
+  "networks": {
+    "source": "project: Real-world SAC with MPC scaffolding",
+    "actor": {
+      "input_dim": 60,
+      "hidden_sizes": [256, 256],
+      "mean_output_dim": 16,
+      "log_std_output_dim": 16,
+      "activation": "tanh",
+      "layer_norm": true,
+      "distribution": "tanh-squashed Gaussian",
+      "std_bounds": [0.00001, 5],
+      "layer_norm_placement": null
+    },
+    "critic": {
+      "ensemble_size": 10,
+      "input_dim": 76,
+      "hidden_sizes": [256, 256],
+      "output_dim": 1,
+      "activation": "tanh",
+      "layer_norm": true,
+      "layer_norm_placement": null
+    }
+  },
+  "pretraining": {
+    "sources": ["rl_paper II-B", "project: Real-world SAC with MPC scaffolding"],
+    "stage_order": ["behavior_cloning", "soft_sarsa"],
+    "behavior_cloning": {
+      "gradient_steps": 12000,
+      "learning_rate": 0.003,
+      "batch_size": 256,
+      "target": "atanh(clip(demo_action, -1 + epsilon, 1 - epsilon))",
+      "loss": "mean squared error of pre-tanh mean",
+      "action_clip_epsilon": 0.02,
+      "episode_sampling": "softmax over episode returns",
+      "episode_sampling_temperature": null,
+      "std_loss_weight": 0,
+      "std_after_training": 0.3,
+      "final_std_head_weights_after_training": 0
+    },
+    "soft_sarsa": {
+      "gradient_steps": 50000,
+      "learning_rate": 0.00003,
+      "batch_size": 256,
+      "optimizer": "Adam",
+      "discount": 0.995,
+      "polyak_tau": 0.01,
+      "effective_temperature": 0.02,
+      "next_action": "recorded demonstration next action",
+      "actor_frozen": true,
+      "cql_enabled": false,
+      "learning_rate_warmup_enabled": false,
+      "target_critic_selection": null,
+      "target_critic_selection_issue": "target_critic_count"
+    }
+  },
+  "online_sac": {
+    "source": "project: Real-world SAC with MPC scaffolding",
+    "discount": 0.995,
+    "optimizer": "Adam",
+    "actor_learning_rate": 0.0003,
+    "actor_linear_warmup_updates": 200000,
+    "actor_warmup_initial_learning_rate": null,
+    "critic_learning_rate": 0.00003,
+    "temperature_learning_rate": 0.0001,
+    "batch_size": 256,
+    "update_to_data_ratio": 8,
+    "polyak_tau": 0.01,
+    "temperature_auto_tuned": true,
+    "temperature_initial": 0.05,
+    "target_entropy": -16,
+    "entropy_backup": true,
+    "target_critic_selection": null,
+    "target_critic_selection_issue": "target_critic_count",
+    "replay": {
+      "reported_capacity": 1000000,
+      "capacity_scope": "Project table does not disambiguate capacity per buffer versus combined",
+      "offline_sample_fraction": 0.3,
+      "online_sample_fraction": 0.7,
+      "offline_dataset_fixed": true,
+      "online_buffer_contains": ["MPC-controlled transitions", "policy-controlled transitions"]
+    },
+    "scheduler": {
+      "source": "rl_paper II-D",
+      "initial_policy_probability": 0.5,
+      "ramp_environment_steps": 6000,
+      "chunk_steps": 40,
+      "policy_probability": "0.5 + 0.5 * min(environment_step / 6000, 1)",
+      "selection_frequency": "once per chunk",
+      "blend_actions": false
+    }
+  },
+  "adaptation": {
+    "source": "rl_paper III-C",
+    "objects": [
+      {"shape": "hexagonal", "across_flats_mm": 35},
+      {"shape": "circular", "diameter_mm": 55}
+    ],
+    "initialize_from_nominal_policy": true,
+    "update_planner_object_geometry": true,
+    "repeat_pretraining": false,
+    "collect_new_offline_mpc_dataset": false,
+    "reuse_nominal_replay_buffer": false,
+    "use_online_mpc_guidance": true,
+    "retain_observation_action_reward_definition": true
+  },
+  "reorientation": {
+    "source": "rl_paper III-D",
+    "axis": "perpendicular to object principal axis",
+    "goal_heading_range_degrees": [-20, 20],
+    "observation_addition": "desired object heading",
+    "exact_observation_dim": null,
+    "reward_progress": "decrease in absolute heading error",
+    "reward_other_terms": "same time penalty, success bonus, drop penalty as rotation",
+    "success_heading_error_degrees": 5,
+    "success_dwell_seconds": 0.5,
+    "evaluation_timeout_seconds": 10,
+    "mpc_initialization_interaction_minutes_approx": 7
+  },
+  "companion_mpc": {
+    "source": "mpc_paper II, III-A, III-B1",
+    "scope": "Companion hand-only experiments; verify values against RL controller assets",
+    "optimizer": "cross-entropy method",
+    "horizon_seconds": 0.5,
+    "spline_knots": 6,
+    "rollouts": 350,
+    "elites": 10,
+    "cem_iterations_per_update": null,
+    "simulation_timestep_seconds": null,
+    "spline_interpolation_method": null,
+    "exploration_candidate_fraction": 0.5,
+    "refinement_candidate_fraction": 0.5,
+    "residual_std_exploration_floor_rad": 1.0,
+    "residual_std_refinement_floor_rad": 0.1,
+    "primitive_std_exploration_floor": "coefficient_max - coefficient_min from extraction data",
+    "primitive_std_refinement_floor": "0.3 * (coefficient_max - coefficient_min)",
+    "state_sync_hz_approx": 100,
+    "low_level_command_hz": 333,
+    "reported_compute": "AMD Ryzen Threadripper PRO 7995WX, 192 threads",
+    "reported_update_milliseconds_approx": 38,
+    "rotation_primitive": {
+      "method": "PCA on mean-centered simulated SAC joint trajectories",
+      "explained_variance_threshold": 0.9,
+      "components": 4,
+      "extraction_object_across_flats_mm": 40,
+      "extraction_policy_domain_randomization": false,
+      "basis_file": null,
+      "mean_posture_file": null,
+      "coefficient_range_file": null
+    },
+    "rotation_command": "mean_posture + primitive_basis * coefficients + joint_residual",
+    "rotation_objective_terms": ["position error", "principal-axis angle error", "other-axis orientation error"],
+    "rotation_objective_weights": null,
+    "rotation_desired_angle": "one revolution ahead of measured orientation at each replan",
+    "rotation_constraint": "reject rollout on object-table contact",
+    "check_constraints_every_simulated_transition": true,
+    "invalid_rollout_failure_cost": null
+  },
+  "ppo_comparator": {
+    "source": "project: PPO sim-to-real baseline",
+    "scope": "Comparison baseline, not the requested MPC-scaffolded SAC method",
+    "stable_baselines3_version": "2.8.0",
+    "unlisted_settings": "library defaults as reported by source; not locally verified",
+    "parallel_environments": 192,
+    "rollout_steps_per_environment": 128,
+    "minibatch_size": 8192,
+    "epochs": 10,
+    "learning_rate": 0.0003,
+    "optimizer": "Adam",
+    "discount": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "normalize_advantage": true,
+    "entropy_coefficient": 0.01,
+    "value_coefficient": 0.5,
+    "max_gradient_norm": 0.5,
+    "total_timesteps": 15000000,
+    "control_hz": 10,
+    "episode_horizon_steps": 900,
+    "action_ema_alpha": 0.5,
+    "randomization": {
+      "reset_distribution": "uniform",
+      "object_size_scale": [1.0, 1.05],
+      "rescale_mass_and_inertia_with_size": true,
+      "object_mass_kg": [0.15, 0.20],
+      "sliding_friction_object": [0.3, 0.5],
+      "sliding_friction_fingertips": [0.5, 0.8],
+      "sliding_friction_other_hand_geometries": [0.1, 0.3],
+      "pd_gain_scale": [0.6, 1.2],
+      "initial_object_y_offset_m": [-0.01, 0.01],
+      "per_step_noise_distribution": "Gaussian",
+      "observation_noise_std": {
+        "object_position_m": 0.01,
+        "quaternion": 0.04,
+        "joint_position": 0.05,
+        "joint_velocity": 0.2,
+        "object_velocity": 0.04,
+        "yaw": 0.05,
+        "previous_action": 0.05
+      },
+      "action_noise_std": 0.02,
+      "external_force_perturbations": false
+    }
+  },
+  "unresolved": [
+    {
+      "id": "target_critic_count",
+      "rl_paper_II_B2": "Minimum over all 10 target critics; text says architecture maintained online",
+      "project_critic_network_row": "2 randomly subsampled critics per target, REDQ-style",
+      "selected_behavior": null,
+      "resolution_required": "Authoritative implementation or explicit reproduction choice, recorded before training"
+    },
+    {
+      "id": "observation_and_action_contract",
+      "known": "Equation (5) lists semantic terms; project reports 60 inputs and 16 outputs",
+      "unknown": [
+        "runtime joint order and signs", "quaternion component convention and frame",
+        "object/end-effector transforms", "angle unwrapping and sign",
+        "finite-difference timing and filtering", "normalization",
+        "normalized-action to joint-target mapping", "initial previous action"
+      ]
+    }
+  ],
+  "required_assets_not_supplied_in_inspected_material": [
+    "deployable source and environment/dependency specification",
+    "compatible actor checkpoint and preprocessing metadata for policy inference",
+    "calibrated MuJoCo model, object geometry, meshes and physical parameters",
+    "PCA basis, mean posture and coefficient ranges for primitive-informed MPC",
+    "MPC demonstration transitions including next actions for pretraining, or hardware collection capability",
+    "hardware transport and hand-controller configuration",
+    "tracking calibration, frame transforms and observation/action contract",
+    "initial grasp, reset procedure and task termination implementation",
+    "selected deployment target and access to its required devices"
+  ]
+}

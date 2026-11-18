@@ -1,0 +1,3 @@
+{"period": 0.5, "seed": 42, "status": "budget", "controls": 12, "strict_force_success": false, "failure_reason": null, "wall_seconds": 82.86695946101099}
+{"period": 0.5, "seed": 43, "status": "budget", "controls": 12, "strict_force_success": false, "failure_reason": null, "wall_seconds": 108.77730688638985}
+{"period": 0.5, "seed": 44, "status": "budget", "controls": 12, "strict_force_success": false, "failure_reason": null, "wall_seconds": 125.76070156600326}

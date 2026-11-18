@@ -1,0 +1,8 @@
+{"event": "initial_actor_imported", "environment_steps": 0, "wall_seconds": 2.441822193097323, "checkpoint_path": "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/head_polish/polished.pt", "checkpoint_sha256": "bc00ed2358e2d50e33d9634da22e8bb350bda149b56644c4dfad268bfbddd77b", "metadata_sha256": "99d63bc4931501dba277364d898a43f18b2fbf4cc2f0066a2f1f57412c2e20eb", "source_stage": "diagnostic-common-continuation-head-refinement", "source_learner_config": {"actor_critic_reduction": "mean", "actor_lr": 0.0003, "actor_warmup_updates": 200000, "alpha_lr": 0.0001, "bc_action_epsilon": 0.02, "bc_lr": 0.003, "critic_lr": 3e-05, "discount": 0.995, "ensemble_size": 2, "hidden_sizes": [256, 256], "initial_alpha": 0.05, "initial_std": 0.3, "max_std": 5.0, "min_std": 1e-05, "online_target_critics": 2, "pretrain_alpha": 0.02, "target_entropy": -16.0, "tau": 0.01}, "source_counters": {"bc_updates": 12000, "pretrain_updates": 0, "online_updates": 0}, "source_std_initialized": true, "imported_components": ["actor.trunk", "actor.mean_head"], "imported_bc_updates": 12000, "import_semantics": "Mean only; bootstrap-config std and fresh critics, targets, optimizers, alpha; no source successes", "new_bc_updates": 0, "new_critic_updates": 0, "new_online_updates": 0, "successful_full_turns": 0}
+{"event": "stopped", "environment_steps": 0, "wall_seconds": 2.5280349939130247, "status": "budget_exhausted", "completed_episodes": 0, "successful_trajectory_episodes": 0, "online_updates": 0}
+{
+  "source_actor_means_and_actions_bitexact": true,
+  "cuda_singleton_and_batch_one_actions_bitexact": true,
+  "online_updates": 0,
+  "bootstrap_environment_steps": 0
+}

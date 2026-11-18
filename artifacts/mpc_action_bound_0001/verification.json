@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "default_limits_equal_previous": true,
+    "default_sampling_decoding_exact_references_False_slew_None": true,
+    "default_sampling_decoding_exact_references_False_slew_0.02": true,
+    "default_sampling_decoding_exact_references_True_slew_None": true,
+    "default_sampling_decoding_exact_references_True_slew_0.02": true,
+    "effective_bound_is_inward_float32": true,
+    "endpoint_round_trips_exact": true,
+    "endpoint_normalized_actions_within_effective_bound": true,
+    "all_candidates_and_round_trips_bounded_slew_None": true,
+    "exact_hold_preserved_slew_None": true,
+    "all_candidates_and_round_trips_bounded_slew_0.02": true,
+    "exact_hold_preserved_slew_0.02": true,
+    "invalid_values_rejected": true,
+    "outside_initial_target_rejected_without_clipping": true,
+    "environment_limits_and_initial_target_unchanged": true,
+    "single_actual_native_plan_executed": true,
+    "selected_executed_target_bounded": true,
+    "reference_sampling_budget_unchanged": true,
+    "physical_step_no_drop_or_palm_support": true,
+    "frozen_numerical_sources_unchanged": true
+  },
+  "physical_plans": 1,
+  "additional_verification_plans": 0,
+  "physical_execution_steps": 1,
+  "requested_bound": 0.98,
+  "effective_bound": 0.9799998998641968,
+  "selected_action_abs_max": 0.6794583797454834,
+  "probe_source_sha256": "b015062e20a929a1c04d11680441f786faf0bc63c024dfc6ca09cc8fd8332dd9",
+  "historical_probe_source_sha256": "e9d76d1eb58260b0228e5cd50758e2c20460cea6dab14a88f1f672e8da82b070"
+}

@@ -1,0 +1,4 @@
+kNN k=5 scale=True: training rows 287; held-out regression L2 median 0.0126 p90 0.0281
+cold: (False, 9, 'palm_support') | spine prefixes k=1..13: [False, False, False, False, False, False, False, False, True, True, True, True, True]
+training branches: handoffs 9/30; j<=9: 9/30; by j {0: '0/5', 3: '0/7', 6: '3/10', 8: '6/8'}
+held-out branches: handoffs 0/5; j<=9: 0/5; by j {0: '0/1', 3: '0/1', 6: '0/1', 8: '0/2'}

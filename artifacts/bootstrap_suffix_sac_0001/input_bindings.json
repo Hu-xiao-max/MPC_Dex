@@ -1,0 +1,34 @@
+{
+  "initial.pt": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/checkpoint.pt",
+    "sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937"
+  },
+  "initial.pt.metadata.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/checkpoint.pt.metadata.json",
+    "sha256": "fe2dce5849299bcaabf92870c1f2ac9f35f7893edcb4dc4c5b51b8af5f35b356"
+  },
+  "source_config.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/config.json",
+    "sha256": "67b955f71b9a5b22696cc0de859752f78a82498e150940b510495e826bd43d7c"
+  },
+  "initial_grasp.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/initial_grasp.npz",
+    "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54"
+  },
+  "source_report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/report.json",
+    "sha256": "7316bcf01a85d096b4a1a2086cf59be8078dc4f19045c4bd7e29c4ac2cfea1dc"
+  },
+  "prefix_transitions.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/deterministic_strict/transitions.npz",
+    "sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f"
+  },
+  "prefix_physics.npz": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/deterministic_strict/physics.npz",
+    "sha256": "366fb79a431efb8b218d9dc7d6c39730aab9168553c736783f988c14b2a6672e"
+  },
+  "prefix_report.json": {
+    "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/deterministic_strict/report.json",
+    "sha256": "1faeeea26d930d16720ee66993a217bc8e1a3404476d0037a51a627658c9b29f"
+  }
+}

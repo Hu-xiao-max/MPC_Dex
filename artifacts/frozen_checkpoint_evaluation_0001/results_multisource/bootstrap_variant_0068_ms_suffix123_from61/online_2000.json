@@ -1,0 +1,2710 @@
+{
+ "variant": "bootstrap_variant_0068_ms_suffix123_from61",
+ "checkpoint": "online_2000",
+ "agent_sha256": "731c6e3c62535e53da53d2222a2df11387d67b5777a09f3ca6909d4e5826021b",
+ "trials_per_cell": 30,
+ "holdout_source_names": [],
+ "cells": {
+  "seed_136:s1": {
+   "deterministic_success": false,
+   "stochastic_successes": 1,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 9,
+     "failure": "drop"
+    },
+    {
+     "seed": 41001,
+     "deterministic": false,
+     "success": false,
+     "controls": 12,
+     "failure": "drop"
+    },
+    {
+     "seed": 41002,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41003,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 41004,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 41005,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41006,
+     "deterministic": false,
+     "success": false,
+     "controls": 10,
+     "failure": "drop"
+    },
+    {
+     "seed": 41007,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41008,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41009,
+     "deterministic": false,
+     "success": false,
+     "controls": 9,
+     "failure": "drop"
+    },
+    {
+     "seed": 41010,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41011,
+     "deterministic": false,
+     "success": false,
+     "controls": 7,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41012,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 41013,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 41014,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41015,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 41016,
+     "deterministic": false,
+     "success": false,
+     "controls": 16,
+     "failure": "drop"
+    },
+    {
+     "seed": 41017,
+     "deterministic": false,
+     "success": false,
+     "controls": 13,
+     "failure": "drop"
+    },
+    {
+     "seed": 41018,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41019,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41020,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 41021,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41022,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 41023,
+     "deterministic": false,
+     "success": false,
+     "controls": 7,
+     "failure": "drop"
+    },
+    {
+     "seed": 41024,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41025,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 41026,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 41027,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41028,
+     "deterministic": false,
+     "success": true,
+     "controls": 4,
+     "failure": null
+    },
+    {
+     "seed": 41029,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 41030,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    }
+   ],
+   "holdout": true
+  },
+  "seed_136:s2": {
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42001,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42002,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42003,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42004,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42005,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42006,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42007,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42008,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42009,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42010,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42011,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42012,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42013,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42014,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42015,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42016,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42017,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42018,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42019,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42020,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42021,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42022,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42023,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42024,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42025,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42026,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42027,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42028,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42029,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 42030,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    }
+   ],
+   "holdout": true
+  },
+  "seed_136:s3": {
+   "deterministic_success": false,
+   "stochastic_successes": 3,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 43001,
+     "deterministic": false,
+     "success": true,
+     "controls": 7,
+     "failure": null
+    },
+    {
+     "seed": 43002,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43003,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43004,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43005,
+     "deterministic": false,
+     "success": true,
+     "controls": 4,
+     "failure": null
+    },
+    {
+     "seed": 43006,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43007,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43008,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 43009,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43010,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43011,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 43012,
+     "deterministic": false,
+     "success": true,
+     "controls": 4,
+     "failure": null
+    },
+    {
+     "seed": 43013,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43014,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43015,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43016,
+     "deterministic": false,
+     "success": false,
+     "controls": 8,
+     "failure": "drop"
+    },
+    {
+     "seed": 43017,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 43018,
+     "deterministic": false,
+     "success": false,
+     "controls": 8,
+     "failure": "drop"
+    },
+    {
+     "seed": 43019,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43020,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43021,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 43022,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43023,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43024,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43025,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43026,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43027,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 43028,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43029,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43030,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    }
+   ],
+   "holdout": true
+  },
+  "seed_139:s1": {
+   "deterministic_success": true,
+   "stochastic_successes": 30,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41001,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41002,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41003,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41004,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41005,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41006,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41007,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41008,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41009,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41010,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41011,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41012,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41013,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41014,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41015,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41016,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41017,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41018,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41019,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41020,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41021,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41022,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41023,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41024,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41025,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41026,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41027,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41028,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41029,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    },
+    {
+     "seed": 41030,
+     "deterministic": false,
+     "success": true,
+     "controls": 1,
+     "failure": null
+    }
+   ],
+   "holdout": true
+  },
+  "seed_139:s2": {
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42001,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42002,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42003,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42004,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42005,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42006,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42007,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42008,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42009,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42010,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 42011,
+     "deterministic": false,
+     "success": false,
+     "controls": 7,
+     "failure": "drop"
+    },
+    {
+     "seed": 42012,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42013,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 42014,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42015,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42016,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42017,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42018,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42019,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42020,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42021,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42022,
+     "deterministic": false,
+     "success": false,
+     "controls": 6,
+     "failure": "drop"
+    },
+    {
+     "seed": 42023,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42024,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42025,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42026,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42027,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42028,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42029,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42030,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    }
+   ],
+   "holdout": true
+  },
+  "seed_139:s3": {
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43001,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43002,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43003,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43004,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43005,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43006,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43007,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43008,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43009,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43010,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 43011,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43012,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43013,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43014,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43015,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43016,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 43017,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43018,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43019,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43020,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43021,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43022,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43023,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43024,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 43025,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 43026,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 43027,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    },
+    {
+     "seed": 43028,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43029,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43030,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    }
+   ],
+   "holdout": true
+  },
+  "seed_129:s1": {
+   "deterministic_success": true,
+   "stochastic_successes": 30,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41001,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41002,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41003,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41004,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41005,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41006,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41007,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41008,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41009,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41010,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41011,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41012,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41013,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41014,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41015,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41016,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41017,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41018,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41019,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41020,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41021,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41022,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41023,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41024,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41025,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41026,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41027,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41028,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41029,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    },
+    {
+     "seed": 41030,
+     "deterministic": false,
+     "success": true,
+     "controls": 2,
+     "failure": null
+    }
+   ],
+   "holdout": true
+  },
+  "seed_129:s2": {
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42001,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42002,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42003,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42004,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42005,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42006,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42007,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42008,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42009,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42010,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42011,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42012,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42013,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42014,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42015,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42016,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42017,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42018,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42019,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42020,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42021,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42022,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42023,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42024,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42025,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42026,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42027,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42028,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42029,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 42030,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    }
+   ],
+   "holdout": true
+  },
+  "seed_129:s3": {
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 3,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43001,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43002,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43003,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43004,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43005,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43006,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43007,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43008,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43009,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43010,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43011,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43012,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43013,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43014,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43015,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43016,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43017,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43018,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43019,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43020,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43021,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43022,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43023,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43024,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43025,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43026,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43027,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 43028,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43029,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "palm_support"
+    },
+    {
+     "seed": 43030,
+     "deterministic": false,
+     "success": false,
+     "controls": 5,
+     "failure": "drop"
+    }
+   ],
+   "holdout": true
+  },
+  "seed_128:s1": {
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41001,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41002,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41003,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41004,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41005,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41006,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41007,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41008,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41009,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41010,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41011,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41012,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 41013,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41014,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41015,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41016,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41017,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41018,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41019,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41020,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41021,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41022,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41023,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41024,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41025,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 41026,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41027,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41028,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41029,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 41030,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    }
+   ],
+   "holdout": true
+  },
+  "seed_128:s2": {
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 42001,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42002,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 42003,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42004,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42005,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 42006,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 42007,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42008,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42009,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42010,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 42011,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42012,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42013,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42014,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42015,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 42016,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 42017,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42018,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42019,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42020,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42021,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 42022,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42023,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42024,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42025,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42026,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42027,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42028,
+     "deterministic": false,
+     "success": false,
+     "controls": 4,
+     "failure": "drop"
+    },
+    {
+     "seed": 42029,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    },
+    {
+     "seed": 42030,
+     "deterministic": false,
+     "success": false,
+     "controls": 3,
+     "failure": "drop"
+    }
+   ],
+   "holdout": true
+  },
+  "seed_128:s3": {
+   "deterministic_success": false,
+   "stochastic_successes": 0,
+   "stochastic_trials": 30,
+   "trials": [
+    {
+     "seed": 42,
+     "deterministic": true,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43001,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43002,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43003,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43004,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43005,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43006,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43007,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43008,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43009,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43010,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43011,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43012,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43013,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43014,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43015,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43016,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43017,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43018,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43019,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43020,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43021,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43022,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43023,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43024,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43025,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43026,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43027,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43028,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43029,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    },
+    {
+     "seed": 43030,
+     "deterministic": false,
+     "success": false,
+     "controls": 2,
+     "failure": "drop"
+    }
+   ],
+   "holdout": true
+  }
+ },
+ "wall_seconds": 526.7084300369024
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/autel001/code/mpc_dex/artifacts/planner_action_mapping_0002/run.py", line 39, in <module>
+    prior=PrimitiveBasis.from_trajectories(np.vstack((initial,prior_q[:,env.q_ids])),provenance={'purpose':'diagnostic mapping audit','successful_policy':False})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/autel001/code/mpc_dex/mpc_dex/primitives.py", line 130, in from_trajectories
+    return cls(
+           ^^^^
+  File "<string>", line 9, in __init__
+  File "/home/autel001/code/mpc_dex/mpc_dex/primitives.py", line 63, in __post_init__
+    raise ValueError("primitive metadata requires provenance.source")
+ValueError: primitive metadata requires provenance.source

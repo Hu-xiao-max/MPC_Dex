@@ -1,0 +1,126 @@
+{
+  "mujoco_version": "3.14.0",
+  "physics_timestep": 0.002,
+  "planner_timestep": 0.01,
+  "scenarios": [
+    {
+      "workers": 1,
+      "candidates": 100,
+      "horizon_seconds": 0.1,
+      "iterations": 3,
+      "python_seconds": [
+        0.45185409602709115,
+        0.41603082907386124,
+        0.42891915002837777
+      ],
+      "python_median_seconds": 0.42891915002837777,
+      "python_evaluated_physics_steps": 5000,
+      "python_invalid": 0,
+      "native_seconds": [
+        0.3755666969809681,
+        0.3678962530102581,
+        0.3758869911544025
+      ],
+      "native_median_seconds": 0.3755666969809681,
+      "native_evaluated_physics_steps": 5000,
+      "native_invalid": 0,
+      "speedup": 1.1420585304189346,
+      "estimated_three_iteration_native_seconds": 1.1267000909429044
+    },
+    {
+      "workers": 1,
+      "candidates": 350,
+      "horizon_seconds": 0.5,
+      "iterations": 3,
+      "python_seconds": [
+        7.540501890005544,
+        7.6114297460298985,
+        7.633805060060695
+      ],
+      "python_median_seconds": 7.6114297460298985,
+      "python_evaluated_physics_steps": 87500,
+      "python_invalid": 0,
+      "native_seconds": [
+        6.353711948962882,
+        6.3743004240095615,
+        6.342673033941537
+      ],
+      "native_median_seconds": 6.353711948962882,
+      "native_evaluated_physics_steps": 87500,
+      "native_invalid": 0,
+      "speedup": 1.1979500813335289,
+      "estimated_three_iteration_native_seconds": 19.061135846888646
+    },
+    {
+      "workers": 8,
+      "candidates": 100,
+      "horizon_seconds": 0.1,
+      "iterations": 3,
+      "python_seconds": [
+        0.27539669489488006,
+        0.28267321013845503,
+        0.24872982688248158
+      ],
+      "python_median_seconds": 0.27539669489488006,
+      "python_evaluated_physics_steps": 5000,
+      "python_invalid": 0,
+      "native_seconds": [
+        0.08202540897764266,
+        0.07523627299815416,
+        0.08569749700836837
+      ],
+      "native_median_seconds": 0.08202540897764266,
+      "native_evaluated_physics_steps": 5000,
+      "native_invalid": 0,
+      "speedup": 3.35745591917675,
+      "estimated_three_iteration_native_seconds": 0.24607622693292797
+    },
+    {
+      "workers": 8,
+      "candidates": 350,
+      "horizon_seconds": 0.5,
+      "iterations": 3,
+      "python_seconds": [
+        4.84339938708581,
+        4.456340067088604,
+        4.474029039032757
+      ],
+      "python_median_seconds": 4.474029039032757,
+      "python_evaluated_physics_steps": 87500,
+      "python_invalid": 0,
+      "native_seconds": [
+        1.4055399529170245,
+        1.4080311150755733,
+        1.385282751871273
+      ],
+      "native_median_seconds": 1.4055399529170245,
+      "native_evaluated_physics_steps": 87500,
+      "native_invalid": 0,
+      "speedup": 3.183138999177834,
+      "estimated_three_iteration_native_seconds": 4.2166198587510735
+    }
+  ],
+  "native_provenance": {
+    "source_sha256": "1e8b652b7315608a787f252660341d1664ecc0632d7fc60cb7fda0aae9e34d4b",
+    "mujoco_version": "3.14.0",
+    "mujoco_runtime_version": 3014000,
+    "mujoco_library": "/home/autel001/code/mpc_dex/.venv/lib/python3.11/site-packages/mujoco/libmujoco.so.3.14.0",
+    "mujoco_library_sha256": "5e7623e30f55bf324d4c9648379ebeba5bcd153ee0304c52eac74bf8d441000b",
+    "headers_sha256": "85ac59777d08f58e14a82780e748bd7be35b734df6622b5d02bed16a4c33ba7f",
+    "compiler": "/usr/bin/x86_64-linux-gnu-g++-13",
+    "compiler_version": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "compiler_flags": [
+      "-O3",
+      "-std=c++17",
+      "-fPIC",
+      "-shared",
+      "-fno-fast-math",
+      "-ffp-contract=off"
+    ],
+    "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "build_key": "9b97ce1b9027125c07731c950a44e9ac9da2c38483d13dffe2c07690eb935644",
+    "binary": "/home/autel001/code/mpc_dex/artifacts/native_rollouts/9b97ce1b9027125c07731c950a44e9ac9da2c38483d13dffe2c07690eb935644/exact_rollout.so",
+    "binary_sha256": "8e8519ee546381d1501425bcc0ccba04ff5ec3159fedb859e7dc3cc6efc90bcd"
+  }
+}

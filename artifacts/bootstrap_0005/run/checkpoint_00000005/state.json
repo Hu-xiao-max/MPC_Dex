@@ -1,0 +1,220 @@
+{
+  "environment_steps": 2000,
+  "completed_episodes": 644,
+  "drops": 415,
+  "successes": 0,
+  "evaluations": 4,
+  "eval_successes": 0,
+  "generation": 5,
+  "next_eval": 2500,
+  "next_checkpoint": 2500,
+  "next_log": 2100,
+  "status": "running",
+  "provenance": {
+    "implementation": "independent-paper-reproduction",
+    "stage": "simulation-sac-bootstrap",
+    "environment": {
+      "object_shape": "hexagonal",
+      "object_diameter": 0.04,
+      "object_length": 0.12,
+      "object_mass": 0.15,
+      "object_friction": 0.5,
+      "finger_friction": 0.8,
+      "timestep": 0.002,
+      "control_seconds": 0.1,
+      "horizon_steps": 100,
+      "terminate_on_success": true,
+      "joint_kp": 3.0,
+      "joint_kv": 0.1,
+      "max_joint_force": 0.7,
+      "contact_loss_seconds": 0.05,
+      "success_axis_tolerance_degrees": 30.0,
+      "palm_support_force_tolerance": 1e-06,
+      "palm_height": 0.35,
+      "initial_object_position": [
+        0.055,
+        0.0,
+        0.075
+      ],
+      "initial_hand_q": [
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        1.2,
+        0.3,
+        0.5,
+        0.5
+      ],
+      "initial_grasp": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/source/assets/initial_grasp_40mm.npz",
+      "task": "rotation",
+      "goal_heading": null,
+      "render_width": 640,
+      "render_height": 480
+    },
+    "initial_grasp_sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+    "environment_source_sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "learning_source_sha256": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c",
+    "bootstrap_source_sha256": "6e28ade575940b88a4c7299968aa4b8152a2212cfbc97046ed997b8e58174146",
+    "mujoco_version": "3.14.0",
+    "torch_version": "2.14.0+cu130",
+    "numpy_version": "2.4.6",
+    "inference_runtime": {
+      "device": "cuda:0",
+      "cuda_device": {
+        "index": 0,
+        "model": "NVIDIA GeForce RTX 4080 Laptop GPU",
+        "capability": [
+          8,
+          9
+        ]
+      },
+      "torch_threads": 1,
+      "torch_interop_threads": 1,
+      "float32_matmul_precision": "highest",
+      "matmul_allow_tf32": false,
+      "cudnn_allow_tf32": false,
+      "deterministic_algorithms": false,
+      "deterministic_warn_only": false,
+      "cudnn_deterministic": false,
+      "cudnn_benchmark": false,
+      "torch_version": "2.14.0+cu130",
+      "cuda_version": "13.0",
+      "cudnn_version": 92400,
+      "python_version": "3.11.15",
+      "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39"
+    },
+    "num_envs": 1,
+    "seed": 17031,
+    "batch_size": 256,
+    "learning_starts": 256,
+    "updates_per_step": 1,
+    "replay_capacity": 1000000,
+    "eval_every": 500,
+    "bootstrap_settings": {
+      "learner": {
+        "ensemble_size": 2,
+        "online_target_critics": 2,
+        "initial_std": 0.05,
+        "actor_warmup_updates": 5000
+      },
+      "seed": {
+        "replay": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/inputs/replay.npz",
+        "bc_updates": 0,
+        "critic_updates": 0
+      }
+    },
+    "seed_replay_sha256": "fdfc5087956d8ec534a323333281e2bd36e02fe9f8605b9289630ec3042eed41",
+    "seed_metadata_sha256": "a79e2bac4b97a558943926f2f1ba6c248d2ad39c28f6032b893b2dfa53e58d60",
+    "demonstration_successes": 1,
+    "initial_actor": {
+      "checkpoint_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/inputs/initial_actor.pt",
+      "checkpoint_sha256": "bc00ed2358e2d50e33d9634da22e8bb350bda149b56644c4dfad268bfbddd77b",
+      "metadata_sha256": "99d63bc4931501dba277364d898a43f18b2fbf4cc2f0066a2f1f57412c2e20eb",
+      "source_stage": "diagnostic-common-continuation-head-refinement",
+      "source_learner_config": {
+        "actor_critic_reduction": "mean",
+        "actor_lr": 0.0003,
+        "actor_warmup_updates": 200000,
+        "alpha_lr": 0.0001,
+        "bc_action_epsilon": 0.02,
+        "bc_lr": 0.003,
+        "critic_lr": 3e-05,
+        "discount": 0.995,
+        "ensemble_size": 2,
+        "hidden_sizes": [
+          256,
+          256
+        ],
+        "initial_alpha": 0.05,
+        "initial_std": 0.3,
+        "max_std": 5.0,
+        "min_std": 1e-05,
+        "online_target_critics": 2,
+        "pretrain_alpha": 0.02,
+        "target_entropy": -16.0,
+        "tau": 0.01
+      },
+      "source_counters": {
+        "bc_updates": 12000,
+        "pretrain_updates": 0,
+        "online_updates": 0
+      },
+      "source_std_initialized": true,
+      "imported_components": [
+        "actor.trunk",
+        "actor.mean_head"
+      ],
+      "imported_bc_updates": 12000,
+      "import_semantics": "Mean only; bootstrap-config std and fresh critics, targets, optimizers, alpha; no source successes"
+    },
+    "policy_interface": {
+      "kind": "absolute_joint_target"
+    },
+    "reward": "unchanged paper rotation reward",
+    "hardware_verified": false,
+    "paper_performance_verified": false,
+    "companion_40mm_geometry": true,
+    "created_at": "2026-09-23T20:53:18.208326+00:00"
+  },
+  "rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 77083438447435578004705265466202917487,
+      "inc": 189865475762613389603345196096779973531
+    },
+    "has_uint32": 0,
+    "uinteger": 1602184603
+  },
+  "elapsed_seconds": 51.20764579484239,
+  "latest_metrics": {
+    "critic_loss": 137.221923828125,
+    "actor_loss": 27.837860107421875,
+    "alpha_loss": 34.19843673706055,
+    "alpha": 0.058026157319545746,
+    "actor_lr": 0.00010469999999999998,
+    "entropy": -28.012428283691406,
+    "target_mean": -44.5467529296875,
+    "online_updates": 1745
+  },
+  "learner_config": {
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "ensemble_size": 2,
+    "online_target_critics": 2,
+    "actor_critic_reduction": "mean",
+    "min_std": 1e-05,
+    "max_std": 5.0,
+    "bc_lr": 0.003,
+    "bc_action_epsilon": 0.02,
+    "initial_std": 0.05,
+    "critic_lr": 0.0003,
+    "actor_lr": 0.0003,
+    "actor_warmup_updates": 5000,
+    "alpha_lr": 0.0001,
+    "initial_alpha": 0.05,
+    "pretrain_alpha": 0.02,
+    "discount": 0.995,
+    "tau": 0.01,
+    "target_entropy": -16.0
+  },
+  "successful_trajectory_episodes": 0,
+  "replay_transitions": 2009,
+  "online_updates": 1745,
+  "bc_updates": 12000,
+  "pretrain_updates": 0,
+  "imported_bc_updates": 12000,
+  "bootstrap_bc_updates": 0,
+  "demonstration_successes": 1,
+  "target_steps": 2000
+}

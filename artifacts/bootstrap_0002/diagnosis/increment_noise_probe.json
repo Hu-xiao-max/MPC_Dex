@@ -1,0 +1,102 @@
+[
+  {
+    "seed": 0,
+    "steps": 200,
+    "angle": 0.039600811067177756,
+    "drop": false,
+    "contacts": 4,
+    "tilt": 0.030671777722654982,
+    "max_target_delta": 0.0038507511419038076,
+    "max_target_error": 0.05045856238623325
+  },
+  {
+    "seed": 1,
+    "steps": 200,
+    "angle": 0.053881590149423376,
+    "drop": false,
+    "contacts": 4,
+    "tilt": 0.020655706873054784,
+    "max_target_delta": 0.003708242783004412,
+    "max_target_error": 0.049996818754686645
+  },
+  {
+    "seed": 2,
+    "steps": 200,
+    "angle": 0.0474211384914273,
+    "drop": false,
+    "contacts": 4,
+    "tilt": 0.018326182310327465,
+    "max_target_delta": 0.003631419005291847,
+    "max_target_error": 0.049053640744514126
+  },
+  {
+    "seed": 3,
+    "steps": 200,
+    "angle": 0.08747978943118591,
+    "drop": false,
+    "contacts": 4,
+    "tilt": 0.01975567042245032,
+    "max_target_delta": 0.0038382638017423476,
+    "max_target_error": 0.04951527523824173
+  },
+  {
+    "seed": 4,
+    "steps": 200,
+    "angle": 0.07562303627316347,
+    "drop": false,
+    "contacts": 4,
+    "tilt": 0.004770804985866298,
+    "max_target_delta": 0.0040021863042362105,
+    "max_target_error": 0.04958312016241995
+  },
+  {
+    "seed": 5,
+    "steps": 200,
+    "angle": 0.07377341431753447,
+    "drop": false,
+    "contacts": 4,
+    "tilt": 0.016207510600453535,
+    "max_target_delta": 0.0034541216439778477,
+    "max_target_error": 0.05166252938511473
+  },
+  {
+    "seed": 6,
+    "steps": 200,
+    "angle": 0.02714205921606882,
+    "drop": false,
+    "contacts": 4,
+    "tilt": 0.025636993545618922,
+    "max_target_delta": 0.003628825324992202,
+    "max_target_error": 0.048863743593557496
+  },
+  {
+    "seed": 7,
+    "steps": 200,
+    "angle": 0.04144794137743588,
+    "drop": false,
+    "contacts": 4,
+    "tilt": 0.020712199724898493,
+    "max_target_delta": 0.0036207297640397096,
+    "max_target_error": 0.05562070100485761
+  },
+  {
+    "seed": 8,
+    "steps": 200,
+    "angle": 0.05359928340308233,
+    "drop": false,
+    "contacts": 4,
+    "tilt": 0.024588784993210232,
+    "max_target_delta": 0.003578920920048523,
+    "max_target_error": 0.04955065899304478
+  },
+  {
+    "seed": 9,
+    "steps": 200,
+    "angle": 0.07603817268014652,
+    "drop": false,
+    "contacts": 4,
+    "tilt": 0.02909184267149258,
+    "max_target_delta": 0.0035466118136746605,
+    "max_target_error": 0.0480950511264544
+  }
+]

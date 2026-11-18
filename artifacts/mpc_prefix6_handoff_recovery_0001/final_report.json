@@ -1,0 +1,58 @@
+{
+  "status": "environment_boundary",
+  "strict_force_success": true,
+  "prefix_controls": 6,
+  "mpc_corrections": 5,
+  "total_controls": 11,
+  "physics_samples": 550,
+  "handoff_seconds": 0.6000000000000004,
+  "handoff_force_qualified_angle": 5.258153506437236,
+  "final_seconds": 1.1000000000000008,
+  "final_raw_angle": 6.54247211744486,
+  "final_retained_angle": 6.370676600897465,
+  "final_force_qualified_angle": 6.370676600897465,
+  "maximum_force_qualified_angle": 6.370676600897465,
+  "first_force_fullturn_physics_seconds": 1.0680000000000007,
+  "final_loaded_fingers": 4,
+  "final_axis_tilt_radians": 0.15609677479501774,
+  "independent_drop": false,
+  "palm_support": false,
+  "no_external_support": true,
+  "environment_failure_reason": null,
+  "prefix_all_fields_and_physics_bitexact": true,
+  "full_execution_independently_replayed_bitexact": true,
+  "projected_reference_batches": 3,
+  "maximum_reference_projection_radians": 2.7492642401538703e-07,
+  "total_planning_seconds": 25.543854870833457,
+  "wall_seconds": 25.906050785910338,
+  "recorded_continuation_comparison": [
+    {
+      "recorded_control_same_index_max_abs_difference": 0.8126756548881531,
+      "recorded_control_same_index_l2_difference": 1.005350947380066,
+      "control": 7
+    },
+    {
+      "recorded_control_same_index_max_abs_difference": 1.1904042959213257,
+      "recorded_control_same_index_l2_difference": 2.6131136417388916,
+      "control": 8
+    },
+    {
+      "recorded_control_same_index_max_abs_difference": 1.265973687171936,
+      "recorded_control_same_index_l2_difference": 2.470010280609131,
+      "control": 9
+    }
+  ],
+  "known_nominal_continuation": "The recorded controls 7-9 of the same source trajectory already complete the turn from this handoff (source prefix_report success at 9 controls). MPC output is an independent feedback-derived label set, not proof that a positive action exists; the runner reports the distance between its first correction and recorded control 7.",
+  "no_post_success_continuation_or_hold": true,
+  "no_alternate_prefix_or_parameter_sweep": true,
+  "policy_inference": false,
+  "production_eligible": false,
+  "main_demonstrations": 0,
+  "SAC_successes": 0,
+  "learning_updates": 0,
+  "trajectory_sha256": "072c8633a22213120887f611e143a2e49a68a8ed202daa66bb3eec2d9b130fb2",
+  "physics_sha256": "faabc82278de4db9d3f3f892eb881238f2e57affc1870120187603ed3587a26e",
+  "independent_audit_sha256": "ad4096c39f8577f73e9f0349755069b34893d4c5c42458a68b6611bacffd1834",
+  "correction_pairs_sha256": "911561b96b913c2e5a757861d165db2f538cec29c7aaff73411513a6a312e37a",
+  "correction_pairs_metadata_sha256": "44c7da2eb5891c9461d0aeb882c907948458a9c6b661e107c69e643cc9c77a2a"
+}

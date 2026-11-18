@@ -1,0 +1,38 @@
+{
+ "variant": "bootstrap_variant_0099_cyl_spine172_from96",
+ "checkpoint": "online_3500",
+ "policy_controls": 3,
+ "policy_failure": "drop",
+ "branches": [
+  {
+   "b": 1,
+   "status": "terminated",
+   "mpc_controls": 15,
+   "strict_force_success": true,
+   "failure_reason": null,
+   "final_force_qualified_angle": 6.292675736604768,
+   "policy_control_at_state_vs_mpc_label_l2": 2.720118284225464,
+   "wall_seconds": 241.41886206297204
+  },
+  {
+   "b": 2,
+   "status": "no_feasible_plan",
+   "mpc_controls": 0,
+   "strict_force_success": false,
+   "failure_reason": null,
+   "final_force_qualified_angle": 2.031022891901115,
+   "policy_control_at_state_vs_mpc_label_l2": null,
+   "wall_seconds": 1.9272429500706494
+  },
+  {
+   "b": 3,
+   "status": "terminated_before_handoff",
+   "mpc_controls": 0,
+   "strict_force_success": false,
+   "failure_reason": "drop",
+   "final_force_qualified_angle": -1.2406102639593153,
+   "policy_control_at_state_vs_mpc_label_l2": null,
+   "wall_seconds": 0.2678873287513852
+  }
+ ]
+}

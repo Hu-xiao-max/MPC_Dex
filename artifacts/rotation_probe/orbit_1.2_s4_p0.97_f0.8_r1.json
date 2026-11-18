@@ -1,0 +1,18 @@
+{
+  "target": 1.2,
+  "seconds": 4.0,
+  "preload": 0.97,
+  "follow": 0.8,
+  "preload_seconds": 1.0,
+  "final_angle": 0.9342649467461287,
+  "max_angle": 1.0055479917884804,
+  "minimum_contacts": 4,
+  "maximum_axis_tilt": 0.0271223706482698,
+  "final_contacts": 4,
+  "final_tilt": 0.012355164656901535,
+  "dropped": false,
+  "forbidden_support": false,
+  "elapsed_steps": 70,
+  "max_ik_error": 0.0022198506276860713,
+  "wall_seconds": 1.1551207869779319
+}

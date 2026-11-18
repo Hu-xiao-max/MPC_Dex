@@ -1,0 +1,33 @@
+# Recorded-only BC with mixed prefixes: the handoff mean is fitted, prefix-6 succeeds only stochastically at online 500, prefix-7 retention holds deterministically but decays stochastically
+
+**Variant 5 (`recorded_bc10_mixed`) ran its full budget (exit 0, 591.8 s): prefix set {6,7,8}, three recorded demonstration rows (source controls 7-9, no MPC), actor BC lambda 10 on all rows, otherwise SAC0004 settings and seeds.** The supervised pull did what it was asked: the deterministic actor mean at the prefix-6 handoff moved from L2 .413 to .030 of recorded control 7. It did not produce a deterministic prefix-6 pass at any checkpoint. Frozen prefix-6 successes exist only at online 500, for 2 of 5 stochastic seeds, and vanish by online 1,000. Prefix-8 retention is essentially intact (6/6, 5/6, 6/6, 6/6 at baseline / online 500 / 1,000 / 2,000); prefix-7 retention keeps its deterministic pass at every checkpoint but its stochastic trials fall 5/5, 4/5, 3/5, 2/5. Cold trials fail at every point, 0/6 at the end.
+
+## Actual execution
+
+- Inherited SAC0001 final checkpoint (SHA `e4a73d89...`); final counters BC 12,000 / pretraining 1,000 / online 4,000, optimizer steps critic 5,000 and actor/alpha 4,000, as prescribed; all metric counters strictly monotone.
+- Warm-up: 256 frozen-actor episodes sampled uniformly over prefixes 6/7/8 (105/71/80), 549 suffix rows; prefix 6 dropped 105/105 after 2-5 controls, prefix 7 succeeded 71/71 (2 controls each), prefix 8 80/80 (1 control). The 151 warm-up successes are informational; the learning gate is the verified 3-row demonstration buffer.
+- Pretraining: 500 mixed updates (77 demonstration + 179 on-policy rows per batch, 40-64 entropy-free bootstrap rows, mean 51), critic loss .248 to .0031. Demonstration-row bias -.677/-.619 to -.005/+.058 (RMSE .007/.103); 549 warm-up rows RMSE .248/.273 to .066/.066; 15 held-out prefix-6 rows RMSE .329/.339 to .031/.037.
+- Online: 2,000 interactions, 720 completed assisted episodes (241/229/250 by prefix), 384 force-qualified successes: prefix 6 32/241 (first at episode 33, update 2,108; 11/73, 6/57, 7/52, 8/59 per 500-update block; 28 of 32 in 3 suffix controls), prefix 7 125/229, prefix 8 227/250. Failures by recorded reason: prefix 6 172 drops and 37 palm-support; prefix 7 69 drops, 33 palm, 2 environment successes ending at 6.24 rad force-qualified, below 2 pi; prefix 8 19 drops, 2 palm, 2 below 2 pi. No truncation, no handoff terminated before the policy, no perturbed handoffs. All 976 episode reports and all 81 evaluation trials have `prefix_physics_bitexact` true; 6,816 physical prefix controls never entered replay. The last episode closed at interaction 2,000; online replay holds 2,549 rows.
+- BC term: lambda-weighted loss .110 at the first update, .0011 by update 500, .0006-.0025 afterwards (mean .0013). Learned alpha .000305893 to .000376820, nondecreasing (raw-equivalent .0612 to .0754); handoff-row latent std .067, .085, .124, .166 at baseline/500/1,000/2,000. Demonstration critic bias after online 500/1,000/2,000: -.33/-.26, -.33/-.34, -.29/-.18.
+
+## Frozen evaluations
+
+| Checkpoint | Prefix-6 det. | Prefix-6 stoch. 17501-17505 | Prefix-7 det. | Prefix-7 stoch. 17521-17525 | Prefix-8 det. | Prefix-8 stoch. 17531-17535 | Noisy | Cold det. | Cold stoch. 17511-17515 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| pretraining_baseline (online 2,000 counter) | Drop after 3 (peak 5.34 rad) | 0/5, all drops after 3 | Pass, 2 controls, 4 fingers | 5/5 | Pass, 1 control | 5/5 | not scheduled | Drop, control 1 | not scheduled |
+| online_500 | Drop after 5 (peak 5.79) | 2/5 (17503, 17505 pass after 3 controls, 4 fingers; 17501/17502/17504 drop after 4/8/5) | Pass, 2 | 4/5 (17525 palm support after 3) | Pass, 1 | 4/5 (17535 drop after 3) | none | Drop, 2 | not scheduled |
+| online_1000 | Drop after 4 (peak 5.33) | 0/5, all drops after 4-6 | Pass, 2 | 3/5 (17524, 17525 palm support) | Pass, 1 | 5/5 | none | Drop, 3 | not scheduled |
+| online_2000 | Drop after 11 (peak 5.68) | 0/5, all drops after 4-7 (17505 peaked 6.75 rad then dropped) | Pass, 3 | 2/5 (17522, 17525 drop; 17524 palm support) | Pass, 1 | 5/5 | none | Drop, 4 | 0/5 (3 drops, 2 palm support; 2-3 controls) |
+
+All 81 evaluation trials (19 at each of the first three points, 24 at online_2000) terminated (none truncated), prefix_physics_bitexact true, perturbed_last_prefix_control false, handoff_terminated_before_policy false; every evaluation summary reports training_rng_restored true and learner_tensors_and_counters_unchanged true.
+
+## Interpretation and scope
+
+The hypothesis was that BC toward recorded control 7 fixes the handoff mean while prefix-7/8 episodes in the stream prevent forgetting. Half of that is observed: prefix-8 competence and the prefix-7 deterministic completion survive 2,000 updates, unlike SAC0004, where prefix-7 retention was 0/6 by online 500 (SAC0003 measured retention only at baseline, 6/6, and online 2,000, 0/6), and the on-policy prefix-6 stream now contains 32 successes rather than SAC0004's 2. But a deterministic first control within L2 .030 of recorded control 7 still ends in a drop after 3-11 controls, while trials started from the exact recorded state 7 pass; the artifact does not measure the state the policy's own control 7 produces, so whether the failure is a state deviation or a later-control error is not decided here. The only frozen prefix-6 completions are two stochastic draws at online 500; by 2,000 the widened sampling spread (std .166, alpha rising) coincides with prefix-7 stochastic decay to 2/5 while prefix-6 stochastic is 0/5, as it was at baseline and 1,000. The stage does not separate these effects; the first-row variant (0004) and the seed replicate (variant 10) are the designated follow-ups.
+
+Single seed; no replicate in this artifact. Every training episode is assisted and demonstration-mixed and is not primitive evidence; the online_500 2/5 is a frozen stochastic result on two seeds, not a deterministic pass. Cold-reset trials fail at every checkpoint, so no checkpoint here is deployment-eligible or a valid initialization without a separate decision. No trajectory was exported.
+
+Inputs and protocol: `protocol.json`, `execution_manifest.json`, `input_bindings.json`; results: `summary.json`, `warmup_record.json`, `metrics.jsonl`, `episodes/`, `evaluations/`, `checkpoints/`, `demonstration_buffer.json`, `demonstration_calibration_*.json`, `warmup_calibration_*`, `heldout_calibration_*`; final hashes: `manifest.json`.
+
+
+_Audit note: drafted by an auditing agent from the artifact files and independently refuted-checked; 6 claim(s) corrected by the verifier before writing._

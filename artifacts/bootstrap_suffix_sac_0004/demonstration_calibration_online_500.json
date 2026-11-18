@@ -1,0 +1,90 @@
+{
+  "alpha_convention": "targets are discounted raw returns / divisor without entropy terms; not the SAC backup",
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 1000,
+    "online_updates": 2500
+  },
+  "episodes": {
+    "mpc": {
+      "rows": 5,
+      "target_normalized": [
+        1.0820567052508618,
+        1.0901335945505393,
+        1.1251311723782762,
+        1.0764218422834793,
+        1.04743422981994
+      ],
+      "q_normalized": [
+        [
+          1.2155036926269531,
+          0.9724920392036438,
+          1.1175724267959595,
+          1.1323723793029785,
+          0.9964731931686401
+        ],
+        [
+          1.2184258699417114,
+          0.989931583404541,
+          1.1292364597320557,
+          1.1319483518600464,
+          0.9990493059158325
+        ]
+      ],
+      "critic_normalized_bias": [
+        0.002647237363015709,
+        0.009482805314218102
+      ],
+      "critic_normalized_rmse": [
+        0.08652428383790878,
+        0.08255681634777685
+      ],
+      "handoff_deterministic_action_max_abs_difference": 1.6717177629470825,
+      "handoff_deterministic_action_l2_difference": 2.0059666633605957,
+      "handoff_latent_std_mean": 0.21290045976638794,
+      "actor_log_prob_of_demonstration_actions": [
+        -1407.8433837890625,
+        -1219.8634033203125,
+        -755.2035522460938,
+        -975.3135986328125,
+        -176.48562622070312
+      ]
+    },
+    "recorded": {
+      "rows": 3,
+      "target_normalized": [
+        1.1235722751873969,
+        1.1109271354283923,
+        1.142855087927612
+      ],
+      "q_normalized": [
+        [
+          1.1884922981262207,
+          0.831946849822998,
+          1.1250953674316406
+        ],
+        [
+          1.1998491287231445,
+          0.8327825665473938,
+          1.1095298528671265
+        ]
+      ],
+      "critic_normalized_bias": [
+        -0.07727332772084727,
+        -0.07839765013524547
+      ],
+      "critic_normalized_rmse": [
+        0.1656904913857358,
+        0.1676237163760417
+      ],
+      "handoff_deterministic_action_max_abs_difference": 1.6626274585723877,
+      "handoff_deterministic_action_l2_difference": 1.7805378437042236,
+      "handoff_latent_std_mean": 0.21290045976638794,
+      "actor_log_prob_of_demonstration_actions": [
+        -544.8079833984375,
+        -2415.032958984375,
+        -887.6893310546875
+      ]
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "kind": "diagnostic-prefix-assisted-suffix-sac-continuation",
+  "status": "frozen-ready-for-separate-explicit-execution",
+  "prefix_controls": 6,
+  "fixed_prefix_stage": true,
+  "automatic_stage_advancement": false,
+  "train_seed": 17091,
+  "physical_reset_seed": 42,
+  "warmup_complete_episodes": 256,
+  "minimum_warmup_force_successes_to_train": 1,
+  "warmup_gate": "Require >=1 actual strict force-qualified success in these 256 episodes, irrespective of five-screen outcomes; otherwise finish data-only before learning.",
+  "critic_pretrain_updates": 500,
+  "online_policy_interactions": 2000,
+  "checkpoints": [
+    500,
+    1000,
+    2000
+  ],
+  "inherited_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 500,
+    "online_updates": 2000
+  },
+  "expected_final_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 1000,
+    "online_updates": 4000
+  },
+  "inherited_optimizer_steps": {
+    "critic": 2500,
+    "actor": 2000,
+    "alpha": 2000
+  },
+  "expected_final_optimizer_steps": {
+    "critic": 5000,
+    "actor": 4000,
+    "alpha": 4000
+  },
+  "batch_size": 256,
+  "utd": 1,
+  "replay_capacity": 100000,
+  "raw_reward_divisor": 200.0,
+  "inherited_learned_alpha": 0.00030585992499254644,
+  "pretrain_alpha": 0.0001,
+  "actor_warmup_updates": 5000,
+  "eval_deterministic_seed": 42,
+  "eval_phase_stochastic_seeds": [
+    17201,
+    17202,
+    17203,
+    17204,
+    17205
+  ],
+  "eval_final_cold_stochastic_seeds": [
+    17211,
+    17212,
+    17213,
+    17214,
+    17215
+  ],
+  "retention_prefix_controls": 7,
+  "retention_stochastic_seeds": [
+    17221,
+    17222,
+    17223,
+    17224,
+    17225
+  ],
+  "retention_evaluation_points": [
+    "pretraining_baseline",
+    "online_2000"
+  ],
+  "evaluation_points": [
+    "pretraining_baseline",
+    "online_500",
+    "online_1000",
+    "online_2000"
+  ],
+  "physical_horizon_including_prefix": 100,
+  "policy_interface": {
+    "kind": "absolute_joint_target"
+  },
+  "learner_import": "Full exact network, target, optimizer, counter, learned alpha and learned std import; no resets",
+  "replay": "Fresh empty stage-specific replay; only actual new-stage policy suffix transitions; old replay copied as lineage only",
+  "prior_open_replay_semantics": "Preserve source open row unchanged; never import, finish, discard in source, or connect it to a new reset",
+  "replay_tradeoff": "Stage-specific frozen-policy successors suit SoftSARSA and avoid dominance by prior-stage rows; retention evaluation measures possible forgetting.",
+  "pretrain": "Unchanged SACAgent.pretrain_critic_step; actual next actions; sampled raw rewards / 200",
+  "online": "Unchanged SACAgent.update; sampled raw rewards / 200; one update per actual policy step; cumulative LR ramp",
+  "sampling": "Singleton batch (1,60) CUDA float32 actor.sample; direct sampled log probability; new global seed17091",
+  "normalization_caveat": "Reward/entropy units remain those of SAC0001; inherited learned alpha is not reset. This changes stage, replay distribution and collection seed, not a pure isolated causal comparison.",
+  "complete_episode_definition": "Environment terminated or horizon truncated; any truncated return tail remains unknown",
+  "warmup_alpha_for_calibration": 0.00030585992499254644,
+  "pretrain_calibration_alpha_caveat": "Report inherited learned online alpha separately from unchanged .0001 SoftSARSA objective.",
+  "no_prefix_rows_in_replay": true,
+  "no_trajectory_export": true,
+  "eligible_for_primitive": false,
+  "main_mpc_dataset_eligible": false,
+  "new_bc_updates": 0,
+  "head_refinement": false,
+  "extra_epochs": false,
+  "post_success_continuation": false,
+  "resume_implementation": false,
+  "checkpoint_semantics": "New curriculum stage with fresh reset/replay/RNG; full learner continuation, not exact environment resume",
+  "future_checkpoint_use": "A later trained 60D checkpoint requires a new frozen cold-policy collection; assisted episodes are never primitive evidence.",
+  "source_bindings": {
+    "initial.pt": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_2000/agent.pt",
+      "sha256": "e4a73d890963a70afc9337db7d29d345c38e192218a7b81dbd51cd6589232892",
+      "inherited_manifest_key": "checkpoints/online_2000/agent.pt"
+    },
+    "initial.pt.metadata.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_2000/agent.pt.metadata.json",
+      "sha256": "b42fafa2ba23e130da3714b293307dfc6ccf36924b84fabc6b587513be7c3602",
+      "inherited_manifest_key": "checkpoints/online_2000/agent.pt.metadata.json"
+    },
+    "inherited_state.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_2000/state.json",
+      "sha256": "1203098effd0c68c703a4b6921e0f416214e96b5dc1b19485ab4bd3c1cd54e85",
+      "inherited_manifest_key": "checkpoints/online_2000/state.json"
+    },
+    "prior_replay_lineage_only.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/checkpoints/online_2000/replay.npz",
+      "sha256": "6c981e8f943d238f76e5bb5ca0ff22cee8bf17ecee5c91c0618f02fdba6b9920",
+      "inherited_manifest_key": "checkpoints/online_2000/replay.npz"
+    },
+    "source_config.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/config.json",
+      "sha256": "8177e7272e6da812e01da5cb62b0f0fe2ee241277015268dd802bde5af55d105",
+      "inherited_manifest_key": "config.json"
+    },
+    "initial_grasp.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/initial_grasp.npz",
+      "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+      "inherited_manifest_key": "initial_grasp.npz"
+    },
+    "source_summary.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/summary.json",
+      "sha256": "c3ff68e65308cda8abf3733f9bce1c97ff6c2bbf7d87d7edeb4f71f36f8abd93",
+      "inherited_manifest_key": "summary.json"
+    },
+    "source_protocol.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/protocol.json",
+      "sha256": "d2129fcf68413d7eaf77aac428d4d00098634fef54d9ed0e7753bb32e506e1f2",
+      "inherited_manifest_key": "protocol.json"
+    },
+    "prefix_transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/prefix_transitions.npz",
+      "sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f",
+      "inherited_manifest_key": "prefix_transitions.npz"
+    },
+    "prefix_physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/prefix_physics.npz",
+      "sha256": "366fb79a431efb8b218d9dc7d6c39730aab9168553c736783f988c14b2a6672e",
+      "inherited_manifest_key": "prefix_physics.npz"
+    },
+    "prefix_report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/prefix_report.json",
+      "sha256": "1faeeea26d930d16720ee66993a217bc8e1a3404476d0037a51a627658c9b29f",
+      "inherited_manifest_key": "prefix_report.json"
+    },
+    "source_manifest.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/manifest.json",
+      "sha256": "258842818fa0087aa70566996fad768fa088c1e6e3102d533c1c40f3e48edfc0"
+    }
+  },
+  "stage_binding": {
+    "selected_prefix_controls": 6,
+    "selected_by": "Explicit root selection for gated actual warm-up, not supported-stage claim",
+    "screen_stochastic_successes": 0,
+    "screen_stochastic_episodes": 5,
+    "screen_deterministic_success": false,
+    "screen_all_manifest_files_verified": true,
+    "screen_manifest_sha256": "c3a10cea3d4f509d51e40e3965f76119df5e2ff86274cf694dbd7d0944c12ad8",
+    "screen_checkpoint_sha256": "e4a73d890963a70afc9337db7d29d345c38e192218a7b81dbd51cd6589232892",
+    "original_prefix_transitions_sha256": "7b75bef17b559652bc7733b081dc03e4edaf012f46bfd0d11a349b5d4d816d8f",
+    "files": {
+      "manifest.json": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/manifest.json",
+        "local_path": "stage_reference/manifest.json",
+        "sha256": "c3a10cea3d4f509d51e40e3965f76119df5e2ff86274cf694dbd7d0944c12ad8"
+      },
+      "recommendation.json": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/recommendation.json",
+        "local_path": "stage_reference/recommendation.json",
+        "sha256": "d5233a26574f2728236fcda2ca0782b010987a234033fe1a486f9abeb85df637"
+      },
+      "summary.json": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/summary.json",
+        "local_path": "stage_reference/summary.json",
+        "sha256": "0447e734bbdc3b6c1e87dbec9c3013983fb1404c02ab99abfe43d102281899c8"
+      },
+      "protocol.json": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/protocol.json",
+        "local_path": "stage_reference/protocol.json",
+        "sha256": "ee65f2cf5b8ab4818031b5d91e06f7a4bea57ccc617032ccd5ce0effd25e0b83"
+      },
+      "findings.md": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/findings.md",
+        "local_path": "stage_reference/findings.md",
+        "sha256": "4a16996c80f9b673159ae4c2ba33ac989ef1265f0d95ff9f2b6e99e8d5675b3a"
+      },
+      "sampling_verification.json": {
+        "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_rollback_0001/sampling_verification.json",
+        "local_path": "stage_reference/sampling_verification.json",
+        "sha256": "4ab23be88c37474a6bb552fa7feb1c370ec947091aa2781b18204ced747190b9"
+      }
+    }
+  }
+}

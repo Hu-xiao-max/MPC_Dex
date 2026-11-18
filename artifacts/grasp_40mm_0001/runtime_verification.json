@@ -1,0 +1,31 @@
+{
+  "configuration": "configs/bootstrap_40mm.json",
+  "object_diameter_m": 0.04,
+  "grasp_sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+  "checks": {
+    "main_absolute": {
+      "elapsed_seconds": 6,
+      "controls": 60,
+      "min_fingers": 4,
+      "max_displacement_m": 0.0015220846898291722,
+      "angle_radians": 0.05937662689495503,
+      "retained_angle_radians": 0.05937662689495503,
+      "axis_tilt_radians": 0.0045838811589501,
+      "success": false,
+      "drop": false,
+      "forbidden_contact": false
+    },
+    "bootstrap_increment": {
+      "elapsed_seconds": 6,
+      "controls": 60,
+      "min_fingers": 4,
+      "max_displacement_m": 0.0015220846898291722,
+      "angle_radians": 0.05937662689495503,
+      "retained_angle_radians": 0.05937662689495503,
+      "axis_tilt_radians": 0.0045838811589501,
+      "success": false,
+      "drop": false,
+      "forbidden_contact": false
+    }
+  }
+}

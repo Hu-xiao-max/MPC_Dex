@@ -1,0 +1,76 @@
+{
+  "status": "complete",
+  "dataset_rows": 86,
+  "observation_dimension": 61,
+  "bc_updates": 12000,
+  "critic_updates": 0,
+  "online_updates": 0,
+  "head_residual_solves": 1,
+  "strict_actual_policy_audits": 1,
+  "stochastic_trials": 0,
+  "post_success_continuations": 0,
+  "strict_force_success": false,
+  "steps": 19,
+  "failure_reason": "drop",
+  "peak_force_angle": 5.644944168493362,
+  "peak_time_seconds": 1.370000000000001,
+  "final_force_angle": -0.7386271206044743,
+  "independent_drop": true,
+  "palm": false,
+  "full_integration_states_verified": 20,
+  "exact_candidate_inference_reconstruction": true,
+  "first_nominal_action_difference_gt_1e_3": {
+    "control_one_based": 9,
+    "elapsed_seconds": 0.8000000000000006,
+    "obs_l2": 2.756072425147176,
+    "obs_max_abs": 1.7209806442260742,
+    "action_max_abs": 0.002039104700088501,
+    "feedback_component_action_max_abs": 0.002038806676864624,
+    "reference_fit_action_max_abs": 2.980232238769531e-07,
+    "clock_difference": 0.0,
+    "post_qpos_max_abs": 0.5841236841568931,
+    "post_qvel_max_abs": 2.6007324755052754,
+    "groups": {
+      "q": {
+        "l2": 0.20440502546270556,
+        "max_abs": 0.10706174373626709
+      },
+      "position": {
+        "l2": 0.01690593421260084,
+        "max_abs": 0.01651354879140854
+      },
+      "quaternion": {
+        "l2": 0.8140909697846802,
+        "max_abs": 0.5837622284889221
+      },
+      "angles": {
+        "l2": 1.7382834478178597,
+        "max_abs": 1.7209806442260742
+      },
+      "qvel": {
+        "l2": 1.95439297047279,
+        "max_abs": 1.0626260042190552
+      },
+      "object_velocity": {
+        "l2": 0.22324721439194492,
+        "max_abs": 0.2207101583480835
+      },
+      "previous_action": {
+        "l2": 0.0018258699030582143,
+        "max_abs": 0.0008983612060546875
+      },
+      "clock": {
+        "l2": 0.0,
+        "max_abs": 0.0
+      }
+    }
+  },
+  "head_correction_norm": 7.071814739463641,
+  "head_weight_norm": 7.7055255729426,
+  "feature_condition": 83516929.99751537,
+  "training_action_max_error": 4.76837158203125e-07,
+  "candidate_sha256": "35756319358e56a6a51a224ed65301fdaf1eb2ab26dc0e8f802b92e9ead40e3d",
+  "production_eligible": false,
+  "main_demonstrations": 0,
+  "sac_success_claim": false
+}

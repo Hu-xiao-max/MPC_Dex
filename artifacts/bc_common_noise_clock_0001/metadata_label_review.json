@@ -1,0 +1,14 @@
+{
+  "executed_helper_sha256": "e9cb1b76014b43eb7e1e1c72d68b8f460b8b82673685ed5789a9a18af4c567cd",
+  "executed_training_driver_sha256": "6b6454a20e58e0fb1d24ed06ae75095817676de967e02c63104d0afabb9bcc8d",
+  "inherited_temporary_helper_policy_kind": "recorded-control-replay",
+  "final_policy_kind": "diagnostic-common-noise-clock-bc-only",
+  "all_three_final_audit_reports_correct": true,
+  "source_files_changed_after_execution": false,
+  "explanation": "evaluate() already overwrites the inherited helper default with the actual learned-policy diagnostic kind before every final report is saved. Review found no mislabeled final report; executed source is preserved unchanged.",
+  "final_audit_hashes": {
+    "bc/audit_03000/report.json": "32a9d6311aa9a06f4fd9ec2e4cf981ab93dd327fc6e38c709a2f5861dcc12b2e",
+    "bc/audit_06000/report.json": "b8e253273e2e03777fde9335fa7aa0a68e6fd3a4eb85a7aff8e256f41862f9df",
+    "bc/audit_12000/report.json": "070118b49931c7550c0c1a6d25f3f2cf976d4087d8aae326807d7290cda4a6ac"
+  }
+}

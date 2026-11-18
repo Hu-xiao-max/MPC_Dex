@@ -1,0 +1,54 @@
+{
+  "status": "complete_sac_stage",
+  "learning_started": true,
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 812,
+    "online_policy_interactions": 2000,
+    "physical_prefix_controls": 2106,
+    "warmup_assisted_completed_episodes": 256,
+    "warmup_assisted_force_successes": 0,
+    "online_assisted_completed_episodes": 94,
+    "online_assisted_force_successes": 2,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 2000,
+    "warmup_raw_reward_sum": -24784.282436023794,
+    "online_raw_reward_sum": -5537.120450791321
+  },
+  "runtime": {
+    "torch": "2.14.0+cu130",
+    "mujoco": "3.14.0",
+    "numpy": "2.4.6",
+    "python": "3.11.15 (main, Jun 23 2026, 15:19:43) [Clang 22.1.3 ]",
+    "device": "NVIDIA GeForce RTX 4080 Laptop GPU",
+    "threads": 1,
+    "interop_threads": 1,
+    "tf32": false,
+    "matmul_precision": "highest",
+    "frozen_execution_manifest_sha256": "9f321326581e50252d13867a21b67a90498f13579079200beef35e9b6a65a70a"
+  },
+  "demonstration_rows": 8,
+  "offline_fraction": 0.3,
+  "inherited_learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 500,
+    "online_updates": 2000
+  },
+  "learner_counters": {
+    "bc_updates": 12000,
+    "pretrain_updates": 1000,
+    "online_updates": 4000
+  },
+  "unfinished_last_suffix": true,
+  "fixed_prefix_controls": 6,
+  "eligible_for_primitive": false,
+  "main_mpc_dataset_eligible": false,
+  "trajectory_exported": false,
+  "reward_divisor": 200.0,
+  "wall_seconds": 225.11501652002335,
+  "caveat": "Reward/entropy units remain those of SAC0001; inherited learned alpha is not reset. The 30/70 repetition of 8 rows and the changed reset curriculum remain confounds; only the pretraining target changed relative to SAC0003."
+}

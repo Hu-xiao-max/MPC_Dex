@@ -1,0 +1,384 @@
+{
+  "purpose": "Read-only comparison of direct sampled action noise and conditional neural mean drift against the successful deterministic trajectory",
+  "inference": "The causal contribution of feedback requires the separate fixed-mean physical comparison; these measured drift ratios alone are not a causal proof.",
+  "action_units": "normalized joint-target actions for both numerator and denominator",
+  "observation_slices": "60-entry rotation contract; velocity[25:41],previous_action[44:60]",
+  "no_new_training_or_physics": true,
+  "production_eligible": false,
+  "inputs": {
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/head_polish/independent_audit/transitions.npz": "bea7b655dc699e109e0b7eb0d95b40843c2d86df385ddc0e64e78f9a0fbfb422",
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/bootstrap_exploration_minstd_0001/stochastic_seed_17021/transitions.npz": "3d4d5921386049abd0db756d581eb3fdf0e7c015a6287e1201d0bba052711649",
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/bootstrap_exploration_minstd_0001/stochastic_seed_17022/transitions.npz": "e5f78391e8c8bec45b2363670596031bfa50a24826dd6c2585df9dd2ab5f7230",
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/bootstrap_exploration_minstd_0001/stochastic_seed_17023/transitions.npz": "8712e861243367ddc01e0e0ab9bec0ac6f65cc909ff501e6fb7711d693355bc0",
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/bootstrap_exploration_minstd_0001/stochastic_seed_17024/transitions.npz": "412a523cdc77465979e6cadb9f866ce2378f397b9745a9dc686f455dca7cf706",
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/bootstrap_exploration_minstd_0001/stochastic_seed_17025/transitions.npz": "dfa74446f103121027398b8ace24b8fb9906df633b379d9dee4be27ffcbbc8df"
+  },
+  "results": [
+    {
+      "seed": 17021,
+      "rows": [
+        {
+          "step": 1,
+          "action_noise_max": 1.2993812561035156e-05,
+          "action_noise_l2": 3.0457244372397077e-05,
+          "conditional_mean_drift_max": 0.0,
+          "conditional_mean_drift_l2": 0.0,
+          "drift_to_direct_noise_l2_ratio": 0.0,
+          "observation_max": 0.0,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.0,
+          "previous_action_delta_max": 0.0
+        },
+        {
+          "step": 2,
+          "action_noise_max": 1.868605613708496e-05,
+          "action_noise_l2": 3.6857816632410575e-05,
+          "conditional_mean_drift_max": 0.004212856292724609,
+          "conditional_mean_drift_l2": 0.009432882057806553,
+          "drift_to_direct_noise_l2_ratio": 255.92623002828216,
+          "observation_max": 0.00013788044452667236,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.00013788044452667236,
+          "previous_action_delta_max": 1.2993812561035156e-05
+        },
+        {
+          "step": 3,
+          "action_noise_max": 9.179115295410156e-06,
+          "action_noise_l2": 1.3104247549678002e-05,
+          "conditional_mean_drift_max": 0.007715731859207153,
+          "conditional_mean_drift_l2": 0.008574702266001304,
+          "drift_to_direct_noise_l2_ratio": 654.345259694976,
+          "observation_max": 0.07285130023956299,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.07285130023956299,
+          "previous_action_delta_max": 0.004221916198730469
+        },
+        {
+          "step": 4,
+          "action_noise_max": 2.142786979675293e-05,
+          "action_noise_l2": 2.809539159692737e-05,
+          "conditional_mean_drift_max": 0.01602274179458618,
+          "conditional_mean_drift_l2": 0.02105615821433086,
+          "drift_to_direct_noise_l2_ratio": 749.4523840925445,
+          "observation_max": 0.3119215965270996,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.3119215965270996,
+          "previous_action_delta_max": 0.007718563079833984
+        },
+        {
+          "step": 5,
+          "action_noise_max": 1.4998018741607666e-05,
+          "action_noise_l2": 1.719796879312905e-05,
+          "conditional_mean_drift_max": 0.19738072156906128,
+          "conditional_mean_drift_l2": 0.28600764094473197,
+          "drift_to_direct_noise_l2_ratio": 16630.31514855394,
+          "observation_max": 1.570580631494522,
+          "joint_velocity_observation_delta_max_rad_per_s": 1.570580631494522,
+          "previous_action_delta_max": 0.016033530235290527
+        }
+      ]
+    },
+    {
+      "seed": 17022,
+      "rows": [
+        {
+          "step": 1,
+          "action_noise_max": 1.1727213859558105e-05,
+          "action_noise_l2": 2.491346286787254e-05,
+          "conditional_mean_drift_max": 0.0,
+          "conditional_mean_drift_l2": 0.0,
+          "drift_to_direct_noise_l2_ratio": 0.0,
+          "observation_max": 0.0,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.0,
+          "previous_action_delta_max": 0.0
+        },
+        {
+          "step": 2,
+          "action_noise_max": 2.6658177375793457e-05,
+          "action_noise_l2": 3.7235789540502176e-05,
+          "conditional_mean_drift_max": 0.002959311008453369,
+          "conditional_mean_drift_l2": 0.006712431788333312,
+          "drift_to_direct_noise_l2_ratio": 180.2682814347754,
+          "observation_max": 0.00010139489313587546,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.00010139489313587546,
+          "previous_action_delta_max": 1.1727213859558105e-05
+        },
+        {
+          "step": 3,
+          "action_noise_max": 1.5467405319213867e-05,
+          "action_noise_l2": 1.717911956245483e-05,
+          "conditional_mean_drift_max": 0.011173367500305176,
+          "conditional_mean_drift_l2": 0.012481906456834562,
+          "drift_to_direct_noise_l2_ratio": 726.5742817294268,
+          "observation_max": 0.0761498212814331,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.0761498212814331,
+          "previous_action_delta_max": 0.0029572248458862305
+        },
+        {
+          "step": 4,
+          "action_noise_max": 9.387731552124023e-06,
+          "action_noise_l2": 1.6724739648078965e-05,
+          "conditional_mean_drift_max": 0.01593412458896637,
+          "conditional_mean_drift_l2": 0.022331184105360502,
+          "drift_to_direct_noise_l2_ratio": 1335.2186386904687,
+          "observation_max": 0.36602354049682617,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.36602354049682617,
+          "previous_action_delta_max": 0.01117292046546936
+        }
+      ]
+    },
+    {
+      "seed": 17023,
+      "rows": [
+        {
+          "step": 1,
+          "action_noise_max": 1.6598030924797058e-05,
+          "action_noise_l2": 3.076463101420895e-05,
+          "conditional_mean_drift_max": 0.0,
+          "conditional_mean_drift_l2": 0.0,
+          "drift_to_direct_noise_l2_ratio": 0.0,
+          "observation_max": 0.0,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.0,
+          "previous_action_delta_max": 0.0
+        },
+        {
+          "step": 2,
+          "action_noise_max": 1.9162893295288086e-05,
+          "action_noise_l2": 4.0415512202350193e-05,
+          "conditional_mean_drift_max": 0.002070188522338867,
+          "conditional_mean_drift_l2": 0.004624588520026724,
+          "drift_to_direct_noise_l2_ratio": 114.4260772169009,
+          "observation_max": 8.820393122732639e-05,
+          "joint_velocity_observation_delta_max_rad_per_s": 8.820393122732639e-05,
+          "previous_action_delta_max": 1.6598030924797058e-05
+        },
+        {
+          "step": 3,
+          "action_noise_max": 1.3738870620727539e-05,
+          "action_noise_l2": 1.9873680416018292e-05,
+          "conditional_mean_drift_max": 0.009685635566711426,
+          "conditional_mean_drift_l2": 0.009875829902508437,
+          "drift_to_direct_noise_l2_ratio": 496.93009527055017,
+          "observation_max": 0.08824914693832397,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.08824914693832397,
+          "previous_action_delta_max": 0.0020698904991149902
+        },
+        {
+          "step": 4,
+          "action_noise_max": 1.4886260032653809e-05,
+          "action_noise_l2": 2.5325955875164485e-05,
+          "conditional_mean_drift_max": 0.006987541913986206,
+          "conditional_mean_drift_l2": 0.010764601658410537,
+          "drift_to_direct_noise_l2_ratio": 425.0422653925051,
+          "observation_max": 0.1584615707397461,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.1584615707397461,
+          "previous_action_delta_max": 0.009677886962890625
+        },
+        {
+          "step": 5,
+          "action_noise_max": 1.1712312698364258e-05,
+          "action_noise_l2": 1.9456015405274537e-05,
+          "conditional_mean_drift_max": 0.02023988962173462,
+          "conditional_mean_drift_l2": 0.030930046415338128,
+          "drift_to_direct_noise_l2_ratio": 1589.7420808452368,
+          "observation_max": 0.3347357511520386,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.3347357511520386,
+          "previous_action_delta_max": 0.00699402391910553
+        },
+        {
+          "step": 6,
+          "action_noise_max": 1.3209879398345947e-05,
+          "action_noise_l2": 1.6701232168625943e-05,
+          "conditional_mean_drift_max": 0.5247779190540314,
+          "conditional_mean_drift_l2": 0.6009616675368243,
+          "drift_to_direct_noise_l2_ratio": 35983.07367199884,
+          "observation_max": 0.7023921012878418,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.7023921012878418,
+          "previous_action_delta_max": 0.020251601934432983
+        },
+        {
+          "step": 7,
+          "action_noise_max": 5.0067901611328125e-06,
+          "action_noise_l2": 6.714523420347721e-06,
+          "conditional_mean_drift_max": 0.056841135025024414,
+          "conditional_mean_drift_l2": 0.09192441001404714,
+          "drift_to_direct_noise_l2_ratio": 13690.384895446043,
+          "observation_max": 1.9389785528182983,
+          "joint_velocity_observation_delta_max_rad_per_s": 1.9389785528182983,
+          "previous_action_delta_max": 0.524770200252533
+        },
+        {
+          "step": 8,
+          "action_noise_max": 1.8388032913208008e-05,
+          "action_noise_l2": 3.23806051978089e-05,
+          "conditional_mean_drift_max": 0.07350806146860123,
+          "conditional_mean_drift_l2": 0.11615132347586046,
+          "drift_to_direct_noise_l2_ratio": 3587.064626071908,
+          "observation_max": 1.0996530652046204,
+          "joint_velocity_observation_delta_max_rad_per_s": 1.0996530652046204,
+          "previous_action_delta_max": 0.05684170126914978
+        },
+        {
+          "step": 9,
+          "action_noise_max": 1.0594725608825684e-05,
+          "action_noise_l2": 1.7054357829170387e-05,
+          "conditional_mean_drift_max": 0.9020679024979472,
+          "conditional_mean_drift_l2": 1.5104378910161351,
+          "drift_to_direct_noise_l2_ratio": 88566.09590028819,
+          "observation_max": 1.7336809635162354,
+          "joint_velocity_observation_delta_max_rad_per_s": 1.3627218008041382,
+          "previous_action_delta_max": 0.07351290434598923
+        }
+      ]
+    },
+    {
+      "seed": 17024,
+      "rows": [
+        {
+          "step": 1,
+          "action_noise_max": 3.059208393096924e-05,
+          "action_noise_l2": 4.4423138364509443e-05,
+          "conditional_mean_drift_max": 0.0,
+          "conditional_mean_drift_l2": 0.0,
+          "drift_to_direct_noise_l2_ratio": 0.0,
+          "observation_max": 0.0,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.0,
+          "previous_action_delta_max": 0.0
+        },
+        {
+          "step": 2,
+          "action_noise_max": 1.4007091522216797e-05,
+          "action_noise_l2": 2.3495540287081294e-05,
+          "conditional_mean_drift_max": 0.001482248306274414,
+          "conditional_mean_drift_l2": 0.0033317396530792376,
+          "drift_to_direct_noise_l2_ratio": 141.80306612958162,
+          "observation_max": 0.00012046901974827051,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.00012046901974827051,
+          "previous_action_delta_max": 3.059208393096924e-05
+        },
+        {
+          "step": 3,
+          "action_noise_max": 7.212162017822266e-06,
+          "action_noise_l2": 8.804152829436193e-06,
+          "conditional_mean_drift_max": 0.009957730770111084,
+          "conditional_mean_drift_l2": 0.011573609197457783,
+          "drift_to_direct_noise_l2_ratio": 1314.562504953579,
+          "observation_max": 0.060189247131347656,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.060189247131347656,
+          "previous_action_delta_max": 0.0014804601669311523
+        },
+        {
+          "step": 4,
+          "action_noise_max": 1.2040138244628906e-05,
+          "action_noise_l2": 2.204419688443821e-05,
+          "conditional_mean_drift_max": 0.0179147869348526,
+          "conditional_mean_drift_l2": 0.021175199001028176,
+          "drift_to_direct_noise_l2_ratio": 960.5792904152706,
+          "observation_max": 0.4136381149291992,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.4136381149291992,
+          "previous_action_delta_max": 0.009962260723114014
+        },
+        {
+          "step": 5,
+          "action_noise_max": 1.3887882232666016e-05,
+          "action_noise_l2": 1.96829223305093e-05,
+          "conditional_mean_drift_max": 0.028357408940792084,
+          "conditional_mean_drift_l2": 0.05092932679154844,
+          "drift_to_direct_noise_l2_ratio": 2587.4880739942764,
+          "observation_max": 0.5167747735977173,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.5167747735977173,
+          "previous_action_delta_max": 0.017917022109031677
+        },
+        {
+          "step": 6,
+          "action_noise_max": 8.553266525268555e-06,
+          "action_noise_l2": 9.506423447706956e-06,
+          "conditional_mean_drift_max": 0.5354317426681519,
+          "conditional_mean_drift_l2": 0.6274220849257379,
+          "drift_to_direct_noise_l2_ratio": 65999.80406690997,
+          "observation_max": 0.8546987771987915,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.8546987771987915,
+          "previous_action_delta_max": 0.028364218771457672
+        },
+        {
+          "step": 7,
+          "action_noise_max": 7.62939453125e-06,
+          "action_noise_l2": 8.874939461057005e-06,
+          "conditional_mean_drift_max": 1.6654383540153503,
+          "conditional_mean_drift_l2": 2.0655657968891363,
+          "drift_to_direct_noise_l2_ratio": 232741.3956965885,
+          "observation_max": 2.0337142944335938,
+          "joint_velocity_observation_delta_max_rad_per_s": 2.0337142944335938,
+          "previous_action_delta_max": 0.5354231894016266
+        },
+        {
+          "step": 8,
+          "action_noise_max": 9.417533874511719e-06,
+          "action_noise_l2": 1.5736105985624736e-05,
+          "conditional_mean_drift_max": 1.032090812921524,
+          "conditional_mean_drift_l2": 1.8668135820329872,
+          "drift_to_direct_noise_l2_ratio": 118632.4992814843,
+          "observation_max": 9.954724073410034,
+          "joint_velocity_observation_delta_max_rad_per_s": 9.954724073410034,
+          "previous_action_delta_max": 1.6654401421546936
+        }
+      ]
+    },
+    {
+      "seed": 17025,
+      "rows": [
+        {
+          "step": 1,
+          "action_noise_max": 1.8358230590820312e-05,
+          "action_noise_l2": 3.8786042485249244e-05,
+          "conditional_mean_drift_max": 0.0,
+          "conditional_mean_drift_l2": 0.0,
+          "drift_to_direct_noise_l2_ratio": 0.0,
+          "observation_max": 0.0,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.0,
+          "previous_action_delta_max": 0.0
+        },
+        {
+          "step": 2,
+          "action_noise_max": 1.5288591384887695e-05,
+          "action_noise_l2": 3.279070861152304e-05,
+          "conditional_mean_drift_max": 0.0001932978630065918,
+          "conditional_mean_drift_l2": 0.00044452238291240907,
+          "drift_to_direct_noise_l2_ratio": 13.556351836696773,
+          "observation_max": 0.0002006912254728377,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.0002006912254728377,
+          "previous_action_delta_max": 1.8358230590820312e-05
+        },
+        {
+          "step": 3,
+          "action_noise_max": 1.2308359146118164e-05,
+          "action_noise_l2": 1.5271996485607686e-05,
+          "conditional_mean_drift_max": 6.896257400512695e-05,
+          "conditional_mean_drift_l2": 8.17404687946566e-05,
+          "drift_to_direct_noise_l2_ratio": 5.352310607960703,
+          "observation_max": 0.0020906925201416016,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.0020906925201416016,
+          "previous_action_delta_max": 0.00018852949142456055
+        },
+        {
+          "step": 4,
+          "action_noise_max": 1.138448715209961e-05,
+          "action_noise_l2": 2.124490695739152e-05,
+          "conditional_mean_drift_max": 0.0006371885538101196,
+          "conditional_mean_drift_l2": 0.0012810332787733403,
+          "drift_to_direct_noise_l2_ratio": 60.2983708680185,
+          "observation_max": 0.03276205062866211,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.03276205062866211,
+          "previous_action_delta_max": 6.633996963500977e-05
+        },
+        {
+          "step": 5,
+          "action_noise_max": 9.968876838684082e-06,
+          "action_noise_l2": 1.3874023393349765e-05,
+          "conditional_mean_drift_max": 0.06890720129013062,
+          "conditional_mean_drift_l2": 0.08184093220101306,
+          "drift_to_direct_noise_l2_ratio": 5898.860761633274,
+          "observation_max": 0.5353219509124756,
+          "joint_velocity_observation_delta_max_rad_per_s": 0.5353219509124756,
+          "previous_action_delta_max": 0.0006368160247802734
+        }
+      ]
+    }
+  ]
+}

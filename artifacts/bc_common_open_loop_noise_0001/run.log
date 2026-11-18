@@ -1,0 +1,6 @@
+FIXED_MEANS_VERIFIED {"commands": 9, "bitexact": true, "effective_std": 1.0000003385357559e-05}
+{"seed": 17021, "steps": 9, "classification": "partial_at_nine_control_cap", "force": 3.683945202688155, "drop": false, "palm": false, "shared_draws_bitexact": 5}
+{"seed": 17022, "steps": 9, "classification": "partial_at_nine_control_cap", "force": 5.646855008263025, "drop": false, "palm": false, "shared_draws_bitexact": 4}
+{"seed": 17023, "steps": 9, "classification": "partial_at_nine_control_cap", "force": 4.559690095226062, "drop": false, "palm": false, "shared_draws_bitexact": 9}
+{"seed": 17024, "steps": 9, "classification": "partial_at_nine_control_cap", "force": 5.413046938190781, "drop": false, "palm": false, "shared_draws_bitexact": 8}
+{"seed": 17025, "steps": 9, "classification": "partial_at_nine_control_cap", "force": 4.5245526285974105, "drop": false, "palm": false, "shared_draws_bitexact": 5}

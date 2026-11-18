@@ -1,0 +1,1 @@
+{"failure": "validate_checkpoint contract mismatch at start: the geometry-transfer path validated the inherited checkpoint (saved by 0089 under the cylinder contract) against the archived hexagon environment; no learning update ran", "fix": "run.py validates against the stage environment first and falls back to the archived environment (transfer); re-stamped"}

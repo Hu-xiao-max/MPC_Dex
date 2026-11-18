@@ -1,0 +1,17 @@
+{
+  "order": "0312",
+  "lift": 0.0,
+  "gait_seconds": 1.0,
+  "cycles": 2,
+  "final_angle": 1.0337604524970823,
+  "max_angle": 1.0337604524970823,
+  "minimum_contacts": 0,
+  "maximum_tilt": 1.671920234995393,
+  "final_contacts": 0,
+  "final_tilt": 1.671920234995393,
+  "dropped": true,
+  "forbidden_support": false,
+  "elapsed_steps": 61,
+  "total_steps": 210,
+  "phase_at_end": "reset_1"
+}

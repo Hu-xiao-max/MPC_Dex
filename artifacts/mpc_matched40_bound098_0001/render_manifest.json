@@ -1,0 +1,10 @@
+{
+  "source_transition_sha256": "f360aca4e95d8a11ba6109ae0efbf678d88c67d8138881ad9e26bea386752148",
+  "renderer_sha256": "83631a0aa7c477622bc895b7aea88920919703cfcb94bf3fe9eef9ea54172ec9",
+  "purpose": "Actual replay matches first22 recorded qpos/qvel states bit-for-bit, then holds20furthercommands; quantitative independent audit saved separately.",
+  "frames": 43,
+  "frame_interval_seconds": 0.1,
+  "final_force_qualified_angle": 6.698618171603354,
+  "final_drop": false,
+  "final_palm_violation": false
+}

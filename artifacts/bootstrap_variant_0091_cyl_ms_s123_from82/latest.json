@@ -1,0 +1,55 @@
+{
+  "checkpoint": "checkpoints/online_2000",
+  "files": {
+    "agent.pt": "92dec493769eb9fd172a463bb282a4b74f198c423fc59c534bc00dd07da0e43b",
+    "agent.pt.metadata.json": "088c4cf4dda7d9ec6fa87e43e36a7119e28d1cce262684bc4d865ab1b33156ce",
+    "current_episode/physics.npz": "c165551789e3c8b425c3a1a417522297900e0974b437974f3dcbf7077d30d944",
+    "current_episode/report.json": "8ea10c924e46b0e836c2852caf9efe7073f9c652b9dcb92c359c2424d64fac08",
+    "current_episode/rng_initial.pt": "54a1a652b1aa85c619ba8eaa117501c753f54b29eaa6c985cfa72cc23fb00f3c",
+    "current_episode/transitions.npz": "0af6e4805326a37c6e8c0bebf7bc58b5c71e2408170201d6bcbae49cafb3a8ad",
+    "environment.bin": "7d32e4a1574e3bbb44dc524a9e04a35cec7b8dfd5101082951431ca35f588ca6",
+    "environment.npz": "34ceb5c4322284b259f75d145f91e59a391e020e587bc6703486e915ee38420c",
+    "replay.npz": "718d64f93217541c13a358de535236cbc08a6852330ea1ee5edf5585c4363638",
+    "rng.pt": "8691cc162ba4587603a3209b39ed50ccfdaaec06e77b19442ef90a672e3494f0",
+    "state.json": "ee6494bed8d35b458c6687fdb1357b1fca8f9b83801e7c9a3e0eb1176c888beb"
+  },
+  "counts": {
+    "warmup_complete_episodes": 256,
+    "warmup_policy_interactions": 889,
+    "online_policy_interactions": 2000,
+    "physical_prefix_controls": 12609,
+    "warmup_assisted_completed_episodes": 256,
+    "warmup_assisted_force_successes": 46,
+    "online_assisted_completed_episodes": 735,
+    "online_assisted_force_successes": 488,
+    "warmup_cold_completed_episodes": 0,
+    "warmup_cold_force_successes": 0,
+    "online_cold_completed_episodes": 0,
+    "online_cold_force_successes": 0,
+    "new_pretrain_updates": 500,
+    "new_online_updates": 2000,
+    "warmup_raw_reward_sum": -2033.509609010286,
+    "online_raw_reward_sum": 108800.48334349242,
+    "warmup_episodes_by_prefix": {
+      "s1": 99,
+      "s2": 72,
+      "s3": 85
+    },
+    "warmup_force_successes_by_prefix": {
+      "s1": 33,
+      "s2": 9,
+      "s3": 4
+    },
+    "online_episodes_by_prefix": {
+      "s1": 250,
+      "s2": 238,
+      "s3": 247
+    },
+    "online_force_successes_by_prefix": {
+      "s1": 226,
+      "s2": 148,
+      "s3": 114
+    },
+    "handoff_terminated_before_policy": 0
+  }
+}

@@ -1,0 +1,1704 @@
+{
+  "status": "complete",
+  "kind": "diagnostic-supervised-corrective-pairs",
+  "pairs": 73,
+  "original_common_pairs": 12,
+  "new_noisy_prefix_pairs": 40,
+  "new_actual_mpc_correction_pairs": 21,
+  "excluded_identical_reset_noisy_labels": 5,
+  "exact_duplicate_observation_pairs": 0,
+  "exact_label_conflicts": 0,
+  "labels_are_original_float32": true,
+  "deduplicated_rows": 0,
+  "production_eligible": false,
+  "main_demonstrations": 0,
+  "sac_updates": 0,
+  "policy_only_success_claim": false,
+  "source_manifest_checks": {
+    "common": {
+      "root": "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001",
+      "manifest_sha256": "60ef769e63317c34a9f2d405acdbb5913958ede5064393fc1f5a67b200ab6c3f",
+      "verified_files": 149
+    },
+    "recovery": {
+      "root": "/home/autel001/code/mpc_dex/artifacts/mpc_common_noise_recovery_0001",
+      "manifest_sha256": "be1a96b6445f86d1891159b9723d5cff0831b8ba34d694f4b991afb354d14e46",
+      "verified_files": 164
+    }
+  },
+  "sources": [
+    {
+      "seed": 17021,
+      "full_recorded_rows": 16,
+      "included_prefix_rows": 8,
+      "included_mpc_rows": 7,
+      "final_force_qualified_angle": 6.636884726045375,
+      "strict_force_success": true,
+      "independent_transition_and_physics_bitexact": true,
+      "post_success_hold_executed": false
+    },
+    {
+      "seed": 17022,
+      "full_recorded_rows": 10,
+      "included_prefix_rows": 8,
+      "included_mpc_rows": 1,
+      "final_force_qualified_angle": 6.4290238022426305,
+      "strict_force_success": true,
+      "independent_transition_and_physics_bitexact": true,
+      "post_success_hold_executed": false
+    },
+    {
+      "seed": 17023,
+      "full_recorded_rows": 15,
+      "included_prefix_rows": 8,
+      "included_mpc_rows": 6,
+      "final_force_qualified_angle": 6.472274470950402,
+      "strict_force_success": true,
+      "independent_transition_and_physics_bitexact": true,
+      "post_success_hold_executed": false
+    },
+    {
+      "seed": 17024,
+      "full_recorded_rows": 12,
+      "included_prefix_rows": 8,
+      "included_mpc_rows": 3,
+      "final_force_qualified_angle": 6.480114119489824,
+      "strict_force_success": true,
+      "independent_transition_and_physics_bitexact": true,
+      "post_success_hold_executed": false
+    },
+    {
+      "seed": 17025,
+      "full_recorded_rows": 13,
+      "included_prefix_rows": 8,
+      "included_mpc_rows": 4,
+      "final_force_qualified_angle": 6.6203392629852775,
+      "strict_force_success": true,
+      "independent_transition_and_physics_bitexact": true,
+      "post_success_hold_executed": false
+    }
+  ],
+  "source_rows_bitexact": true,
+  "environment_contract": {
+    "action_high": [
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      0.47,
+      1.61,
+      1.709,
+      1.618,
+      1.396,
+      1.163,
+      1.644,
+      1.719
+    ],
+    "action_low": [
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      -0.47,
+      -0.196,
+      -0.174,
+      -0.227,
+      0.263,
+      -0.105,
+      -0.189,
+      -0.162
+    ],
+    "environment": {
+      "contact_loss_seconds": 0.05,
+      "control_seconds": 0.1,
+      "finger_friction": 0.8,
+      "goal_heading": null,
+      "horizon_steps": 100,
+      "initial_hand_q": [
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        0.0,
+        0.7,
+        0.7,
+        0.5,
+        1.2,
+        0.3,
+        0.5,
+        0.5
+      ],
+      "initial_object_position": [
+        0.055,
+        0.0,
+        0.075
+      ],
+      "joint_kp": 3.0,
+      "joint_kv": 0.1,
+      "max_joint_force": 0.7,
+      "object_diameter": 0.04,
+      "object_friction": 0.5,
+      "object_length": 0.12,
+      "object_mass": 0.15,
+      "object_shape": "hexagonal",
+      "palm_height": 0.35,
+      "palm_support_force_tolerance": 1e-06,
+      "success_axis_tolerance_degrees": 30.0,
+      "task": "rotation",
+      "terminate_on_success": true,
+      "timestep": 0.002
+    },
+    "environment_source_sha256": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "grasp_sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54",
+    "joint_order": [
+      "ffj0",
+      "ffj1",
+      "ffj2",
+      "ffj3",
+      "mfj0",
+      "mfj1",
+      "mfj2",
+      "mfj3",
+      "rfj0",
+      "rfj1",
+      "rfj2",
+      "rfj3",
+      "thj0",
+      "thj1",
+      "thj2",
+      "thj3"
+    ],
+    "observation": "q16,object_position_in_palm3,object_quaternion_in_palm_wxyz4,principal_angle1,previous_angle1,finite_difference_qvel16,finite_difference_object_vel3,previous_normalized_action16; reorientation appends goal1",
+    "robot_mesh_sha256": {
+      "base_link.stl": "4060e1ae52bca21367e15a1dfab16bc7c2e81849566631b7f55e2cf376b7bc85",
+      "link_0.0.stl": "32b90a6744d472a6ffaee02cbf32eb8a5600b1da0944e86aeb9f53503a9f8ac9",
+      "link_1.0.stl": "e3dfb35b6682f62f18ca6ed0b39cb94ff627b68e0e3373cf7212390574604680",
+      "link_12.0_right.stl": "c5418fc127311eefee1d8ee69dfcfde2157d038286900bee91608d2701b00f13",
+      "link_13.0.stl": "e906896afc078a12c9c377e3a2b07f375583d3b869581f9962030cabc888be29",
+      "link_14.0.stl": "a9e4983e4bff7fc7d868b4965c9865edb2669b946434095703766202b5de01ff",
+      "link_15.0.stl": "bf963adb775b79b27649f4f5dff4ced58ef676ce86cc677de49d3810382d11e0",
+      "link_15.0_tip.stl": "a7147c765d4b6d2eb16fa14bba2e8eceec4a750bc346260893ca02aca1fd7a63",
+      "link_2.0.stl": "9c98477c65b45f5a3de1df0e1b54281da2385f4eafd057d103ab40893771c2d0",
+      "link_3.0.stl": "fe333088176395aa7d8a913aa953d3cd649c4c77753224239b78b2c99e3e314c",
+      "link_3.0_tip.stl": "9c3fa04fea0dfa1257c8a1b02d2b7d982b0d985c1ddda1edf148827944835f39"
+    },
+    "robot_xml_sha256": "cec3efe34be49c8220c23afdae0cfacbce10164a5bc7c34075b6668ee0a862a6",
+    "schema_version": 1,
+    "target": "local-simulation"
+  },
+  "bc_clipping": {
+    "source_main_epsilon": 0.02,
+    "diagnostic_epsilon": 0.01,
+    "action_abs_max": 0.9800015091896057,
+    "source_changed_scalars": 99,
+    "source_changed_rows": 31,
+    "source_max_action_change": 1.4901161193847656e-06,
+    "diagnostic_changed_scalars": 0,
+    "diagnostic_identity_verified": true,
+    "reason": "Preserve all authentic noisy labels; source .02 clamp alters recorded commands"
+  },
+  "conditioning": {
+    "distance_convention": "Unscaled mixed-unit observation norms are descriptive, not causal physical sensitivities",
+    "closest_pairs": [
+      {
+        "first": 2,
+        "second": 28,
+        "first_source": {
+          "dataset_row_one_based": 2,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 2,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 28,
+          "source_label": "recovery_17022",
+          "source_path": "inputs/recovery/seed_17022/transitions.npz",
+          "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.00016955535225066947,
+        "observation_max_abs": 0.00010194990318268538,
+        "action_l2": 3.669505266366658e-05,
+        "action_max_abs": 2.7954578399658203e-05,
+        "latent_l2": 5.606727789724832e-05,
+        "latent_max_abs": 2.937018871307373e-05,
+        "latent_l2_per_raw_observation_l2": 0.3306724155446231,
+        "observation_groups": {
+          "q": {
+            "l2": 1.6342550061902135e-05,
+            "max_abs": 1.0192394256591797e-05
+          },
+          "position": {
+            "l2": 2.8633971876535556e-07,
+            "max_abs": 1.9726576283574104e-07
+          },
+          "quaternion": {
+            "l2": 1.508935943737055e-05,
+            "max_abs": 1.4141201972961426e-05
+          },
+          "angles": {
+            "l2": 2.8588110581040382e-05,
+            "max_abs": 2.8588110581040382e-05
+          },
+          "qvel": {
+            "l2": 0.00016373904829671427,
+            "max_abs": 0.00010194990318268538
+          },
+          "object_velocity": {
+            "l2": 2.8800861708808137e-06,
+            "max_abs": 1.9729104678845033e-06
+          },
+          "previous_action": {
+            "l2": 2.4861956391219487e-05,
+            "max_abs": 1.17570161819458e-05
+          }
+        }
+      },
+      {
+        "first": 2,
+        "second": 37,
+        "first_source": {
+          "dataset_row_one_based": 2,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 2,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 37,
+          "source_label": "recovery_17023",
+          "source_path": "inputs/recovery/seed_17023/transitions.npz",
+          "source_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.00020370705626294796,
+        "observation_max_abs": 8.783838711678982e-05,
+        "action_l2": 4.0393766419770026e-05,
+        "action_max_abs": 2.0429491996765137e-05,
+        "latent_l2": 5.859582424482009e-05,
+        "latent_max_abs": 2.4974346160888672e-05,
+        "latent_l2_per_raw_observation_l2": 0.28764749400326994,
+        "observation_groups": {
+          "q": {
+            "l2": 1.998170145083531e-05,
+            "max_abs": 8.821487426757812e-06
+          },
+          "position": {
+            "l2": 6.423623218091574e-07,
+            "max_abs": 4.544854164123535e-07
+          },
+          "quaternion": {
+            "l2": 1.1233858742719067e-05,
+            "max_abs": 7.424503564834595e-06
+          },
+          "angles": {
+            "l2": 1.2942589819431305e-05,
+            "max_abs": 1.2942589819431305e-05
+          },
+          "qvel": {
+            "l2": 0.00019953462403235226,
+            "max_abs": 8.783838711678982e-05
+          },
+          "object_velocity": {
+            "l2": 6.415838667781443e-06,
+            "max_abs": 4.540575901046395e-06
+          },
+          "previous_action": {
+            "l2": 3.0788705105354526e-05,
+            "max_abs": 1.6648322343826294e-05
+          }
+        }
+      },
+      {
+        "first": 13,
+        "second": 28,
+        "first_source": {
+          "dataset_row_one_based": 13,
+          "source_label": "recovery_17021",
+          "source_path": "inputs/recovery/seed_17021/transitions.npz",
+          "source_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 28,
+          "source_label": "recovery_17022",
+          "source_path": "inputs/recovery/seed_17022/transitions.npz",
+          "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.000220100526917545,
+        "observation_max_abs": 0.00013802130706608295,
+        "action_l2": 5.5935493720351514e-05,
+        "action_max_abs": 4.322826862335205e-05,
+        "latent_l2": 7.59173114062793e-05,
+        "latent_max_abs": 4.5418739318847656e-05,
+        "latent_l2_per_raw_observation_l2": 0.3449210797878724,
+        "observation_groups": {
+          "q": {
+            "l2": 2.145718605977169e-05,
+            "max_abs": 1.3768672943115234e-05
+          },
+          "position": {
+            "l2": 4.241652319175326e-07,
+            "max_abs": 3.650784492492676e-07
+          },
+          "quaternion": {
+            "l2": 1.1956481441070699e-05,
+            "max_abs": 1.1160969734191895e-05
+          },
+          "angles": {
+            "l2": 2.2605760022997856e-05,
+            "max_abs": 2.2605760022997856e-05
+          },
+          "qvel": {
+            "l2": 0.00021458128720980697,
+            "max_abs": 0.00013802130706608295
+          },
+          "object_velocity": {
+            "l2": 4.279601287875488e-06,
+            "max_abs": 3.694469342008233e-06
+          },
+          "previous_action": {
+            "l2": 3.5584119451862745e-05,
+            "max_abs": 1.6897916793823242e-05
+          }
+        }
+      },
+      {
+        "first": 2,
+        "second": 51,
+        "first_source": {
+          "dataset_row_one_based": 2,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 2,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 51,
+          "source_label": "recovery_17024",
+          "source_path": "inputs/recovery/seed_17024/transitions.npz",
+          "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.00022717733507834724,
+        "observation_max_abs": 0.00011990685015916824,
+        "action_l2": 2.6814174808717958e-05,
+        "action_max_abs": 1.3530254364013672e-05,
+        "latent_l2": 5.0317898596265675e-05,
+        "latent_max_abs": 2.6941299438476562e-05,
+        "latent_l2_per_raw_observation_l2": 0.22149171958070735,
+        "observation_groups": {
+          "q": {
+            "l2": 2.2108277672622673e-05,
+            "max_abs": 1.1980533599853516e-05
+          },
+          "position": {
+            "l2": 4.425611754449002e-07,
+            "max_abs": 3.2782554626464844e-07
+          },
+          "quaternion": {
+            "l2": 5.925216621818013e-06,
+            "max_abs": 4.463596269488335e-06
+          },
+          "angles": {
+            "l2": 7.780850864946842e-06,
+            "max_abs": 7.780850864946842e-06
+          },
+          "qvel": {
+            "l2": 0.00022140264960810986,
+            "max_abs": 0.00011990685015916824
+          },
+          "object_velocity": {
+            "l2": 4.4477890723880454e-06,
+            "max_abs": 3.2779353205114603e-06
+          },
+          "previous_action": {
+            "l2": 4.4564603195068766e-05,
+            "max_abs": 3.063678741455078e-05
+          }
+        }
+      },
+      {
+        "first": 2,
+        "second": 13,
+        "first_source": {
+          "dataset_row_one_based": 2,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 2,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 13,
+          "source_label": "recovery_17021",
+          "source_path": "inputs/recovery/seed_17021/transitions.npz",
+          "source_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.00025281403764054684,
+        "observation_max_abs": 0.0001374275889247656,
+        "action_l2": 2.976694838910073e-05,
+        "action_max_abs": 1.5273690223693848e-05,
+        "latent_l2": 5.215305514721932e-05,
+        "latent_max_abs": 3.147125244140625e-05,
+        "latent_l2_per_raw_observation_l2": 0.2062901871824498,
+        "observation_groups": {
+          "q": {
+            "l2": 2.430199910282325e-05,
+            "max_abs": 1.3709068298339844e-05
+          },
+          "position": {
+            "l2": 5.626715130875277e-07,
+            "max_abs": 5.587935447692871e-07
+          },
+          "quaternion": {
+            "l2": 2.565919753289759e-05,
+            "max_abs": 2.530217170715332e-05
+          },
+          "angles": {
+            "l2": 5.119387060403824e-05,
+            "max_abs": 5.119387060403824e-05
+          },
+          "qvel": {
+            "l2": 0.0002430841536264391,
+            "max_abs": 0.0001374275889247656
+          },
+          "object_velocity": {
+            "l2": 5.688530906371415e-06,
+            "max_abs": 5.649577360600233e-06
+          },
+          "previous_action": {
+            "l2": 3.037370466176836e-05,
+            "max_abs": 1.2978911399841309e-05
+          }
+        }
+      },
+      {
+        "first": 28,
+        "second": 37,
+        "first_source": {
+          "dataset_row_one_based": 28,
+          "source_label": "recovery_17022",
+          "source_path": "inputs/recovery/seed_17022/transitions.npz",
+          "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 37,
+          "source_label": "recovery_17023",
+          "source_path": "inputs/recovery/seed_17023/transitions.npz",
+          "source_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.0002815543288845222,
+        "observation_max_abs": 0.00015854439698159695,
+        "action_l2": 3.6731453019159835e-05,
+        "action_max_abs": 1.9624829292297363e-05,
+        "latent_l2": 5.9744891557802366e-05,
+        "latent_max_abs": 2.849102020263672e-05,
+        "latent_l2_per_raw_observation_l2": 0.21219667193363015,
+        "observation_groups": {
+          "q": {
+            "l2": 2.7414998211774075e-05,
+            "max_abs": 1.5854835510253906e-05
+          },
+          "position": {
+            "l2": 7.344968144753082e-07,
+            "max_abs": 6.48200511932373e-07
+          },
+          "quaternion": {
+            "l2": 2.12399535267415e-05,
+            "max_abs": 2.0518898963928223e-05
+          },
+          "angles": {
+            "l2": 4.153070040047169e-05,
+            "max_abs": 4.153070040047169e-05
+          },
+          "qvel": {
+            "l2": 0.00027382745928272685,
+            "max_abs": 0.00015854439698159695
+          },
+          "object_velocity": {
+            "l2": 7.357198334125056e-06,
+            "max_abs": 6.495683919638395e-06
+          },
+          "previous_action": {
+            "l2": 3.618256451605772e-05,
+            "max_abs": 1.6897916793823242e-05
+          }
+        }
+      },
+      {
+        "first": 28,
+        "second": 51,
+        "first_source": {
+          "dataset_row_one_based": 28,
+          "source_label": "recovery_17022",
+          "source_path": "inputs/recovery/seed_17022/transitions.npz",
+          "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 51,
+          "source_label": "recovery_17024",
+          "source_path": "inputs/recovery/seed_17024/transitions.npz",
+          "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.00028298974400123376,
+        "observation_max_abs": 0.0001610748004168272,
+        "action_l2": 3.598628268724982e-05,
+        "action_max_abs": 2.1129846572875977e-05,
+        "latent_l2": 4.5025561804269464e-05,
+        "latent_max_abs": 2.2202730178833008e-05,
+        "latent_l2_per_raw_observation_l2": 0.15910669117419735,
+        "observation_groups": {
+          "q": {
+            "l2": 2.721402089093157e-05,
+            "max_abs": 1.609325408935547e-05
+          },
+          "position": {
+            "l2": 4.0387305723566807e-07,
+            "max_abs": 4.023313522338867e-07
+          },
+          "quaternion": {
+            "l2": 2.011642307427708e-05,
+            "max_abs": 1.800060272216797e-05
+          },
+          "angles": {
+            "l2": 3.6368961445987225e-05,
+            "max_abs": 3.6368961445987225e-05
+          },
+          "qvel": {
+            "l2": 0.00027213889223002776,
+            "max_abs": 0.0001610748004168272
+          },
+          "object_velocity": {
+            "l2": 4.054426132662138e-06,
+            "max_abs": 4.039560735691339e-06
+          },
+          "previous_action": {
+            "l2": 5.948985034415971e-05,
+            "max_abs": 3.6776065826416016e-05
+          }
+        }
+      },
+      {
+        "first": 2,
+        "second": 62,
+        "first_source": {
+          "dataset_row_one_based": 2,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 2,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 62,
+          "source_label": "recovery_17025",
+          "source_path": "inputs/recovery/seed_17025/transitions.npz",
+          "source_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.0002865893233812661,
+        "observation_max_abs": 0.00020013621542602777,
+        "action_l2": 3.11791940973764e-05,
+        "action_max_abs": 1.5527009963989258e-05,
+        "latent_l2": 5.0154501804712835e-05,
+        "latent_max_abs": 2.0802021026611328e-05,
+        "latent_l2_per_raw_observation_l2": 0.17500478110271206,
+        "observation_groups": {
+          "q": {
+            "l2": 2.823368520362658e-05,
+            "max_abs": 2.002716064453125e-05
+          },
+          "position": {
+            "l2": 1.5799892453364563e-07,
+            "max_abs": 1.043081283569336e-07
+          },
+          "quaternion": {
+            "l2": 1.0157413037305006e-05,
+            "max_abs": 7.341615855693817e-06
+          },
+          "angles": {
+            "l2": 9.881448931992054e-06,
+            "max_abs": 9.881448931992054e-06
+          },
+          "qvel": {
+            "l2": 0.00028220868344823544,
+            "max_abs": 0.00020013621542602777
+          },
+          "object_velocity": {
+            "l2": 1.5480449813956356e-06,
+            "max_abs": 1.0073708835989237e-06
+          },
+          "previous_action": {
+            "l2": 3.861762295685115e-05,
+            "max_abs": 1.837313175201416e-05
+          }
+        }
+      },
+      {
+        "first": 37,
+        "second": 51,
+        "first_source": {
+          "dataset_row_one_based": 37,
+          "source_label": "recovery_17023",
+          "source_path": "inputs/recovery/seed_17023/transitions.npz",
+          "source_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 51,
+          "source_label": "recovery_17024",
+          "source_path": "inputs/recovery/seed_17024/transitions.npz",
+          "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.00030049586765434975,
+        "observation_max_abs": 0.00015781400725245476,
+        "action_l2": 3.57177166010836e-05,
+        "action_max_abs": 2.1696090698242188e-05,
+        "latent_l2": 4.650718057276657e-05,
+        "latent_max_abs": 2.3484230041503906e-05,
+        "latent_l2_per_raw_observation_l2": 0.15476812022673872,
+        "observation_groups": {
+          "q": {
+            "l2": 2.937172434019706e-05,
+            "max_abs": 1.5795230865478516e-05
+          },
+          "position": {
+            "l2": 6.768327241512225e-07,
+            "max_abs": 6.407499313354492e-07
+          },
+          "quaternion": {
+            "l2": 1.329729876980054e-05,
+            "max_abs": 1.188809983432293e-05
+          },
+          "angles": {
+            "l2": 5.161738954484463e-06,
+            "max_abs": 5.161738954484463e-06
+          },
+          "qvel": {
+            "l2": 0.0002938128830096115,
+            "max_abs": 0.00015781400725245476
+          },
+          "object_velocity": {
+            "l2": 6.816979101173877e-06,
+            "max_abs": 6.455607945099473e-06
+          },
+          "previous_action": {
+            "l2": 5.346650403752213e-05,
+            "max_abs": 2.779066562652588e-05
+          }
+        }
+      },
+      {
+        "first": 3,
+        "second": 52,
+        "first_source": {
+          "dataset_row_one_based": 3,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 3,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 52,
+          "source_label": "recovery_17024",
+          "source_path": "inputs/recovery/seed_17024/transitions.npz",
+          "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+          "source_row_one_based": 3,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.0003061944462304566,
+        "observation_max_abs": 0.0001569986343383789,
+        "action_l2": 1.04425993811657e-05,
+        "action_max_abs": 7.3015689849853516e-06,
+        "latent_l2": 3.58663118538031e-05,
+        "latent_max_abs": 2.1219253540039062e-05,
+        "latent_l2_per_raw_observation_l2": 0.11713573611589415,
+        "observation_groups": {
+          "q": {
+            "l2": 3.401877988748626e-05,
+            "max_abs": 1.806020736694336e-05
+          },
+          "position": {
+            "l2": 2.1404400583817878e-07,
+            "max_abs": 1.4528632164001465e-07
+          },
+          "quaternion": {
+            "l2": 2.8057707635827084e-05,
+            "max_abs": 2.3037195205688477e-05
+          },
+          "angles": {
+            "l2": 5.491347672696373e-05,
+            "max_abs": 5.435943603515625e-05
+          },
+          "qvel": {
+            "l2": 0.0002967443025609516,
+            "max_abs": 0.0001569986343383789
+          },
+          "object_velocity": {
+            "l2": 4.337020339806421e-06,
+            "max_abs": 4.187226295471191e-06
+          },
+          "previous_action": {
+            "l2": 2.6814174808717958e-05,
+            "max_abs": 1.3530254364013672e-05
+          }
+        }
+      },
+      {
+        "first": 3,
+        "second": 14,
+        "first_source": {
+          "dataset_row_one_based": 3,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 3,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 14,
+          "source_label": "recovery_17021",
+          "source_path": "inputs/recovery/seed_17021/transitions.npz",
+          "source_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+          "source_row_one_based": 3,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.0003244422274060313,
+        "observation_max_abs": 0.0001919269561767578,
+        "action_l2": 1.3284516831979844e-05,
+        "action_max_abs": 8.285045623779297e-06,
+        "latent_l2": 5.239355074799741e-05,
+        "latent_max_abs": 3.62396240234375e-05,
+        "latent_l2_per_raw_observation_l2": 0.16148807498608433,
+        "observation_groups": {
+          "q": {
+            "l2": 3.038625192256317e-05,
+            "max_abs": 1.7195940017700195e-05
+          },
+          "position": {
+            "l2": 1.1180836618544918e-06,
+            "max_abs": 1.0319054126739502e-06
+          },
+          "quaternion": {
+            "l2": 1.6697786719617772e-05,
+            "max_abs": 1.0877847671508789e-05
+          },
+          "angles": {
+            "l2": 5.564817787655235e-05,
+            "max_abs": 5.119387060403824e-05
+          },
+          "qvel": {
+            "l2": 0.0003162821839097643,
+            "max_abs": 0.0001919269561767578
+          },
+          "object_velocity": {
+            "l2": 6.49289224975662e-06,
+            "max_abs": 4.678964614868164e-06
+          },
+          "previous_action": {
+            "l2": 2.976694838910073e-05,
+            "max_abs": 1.5273690223693848e-05
+          }
+        }
+      },
+      {
+        "first": 37,
+        "second": 62,
+        "first_source": {
+          "dataset_row_one_based": 37,
+          "source_label": "recovery_17023",
+          "source_path": "inputs/recovery/seed_17023/transitions.npz",
+          "source_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 62,
+          "source_label": "recovery_17025",
+          "source_path": "inputs/recovery/seed_17025/transitions.npz",
+          "source_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.00032745136543039664,
+        "observation_max_abs": 0.00019107284606434405,
+        "action_l2": 4.6032241134964036e-05,
+        "action_max_abs": 2.7507543563842773e-05,
+        "latent_l2": 5.41453433042731e-05,
+        "latent_max_abs": 2.8133392333984375e-05,
+        "latent_l2_per_raw_observation_l2": 0.16535384799237396,
+        "observation_groups": {
+          "q": {
+            "l2": 3.2160837754870145e-05,
+            "max_abs": 1.9073486328125e-05
+          },
+          "position": {
+            "l2": 5.013105759842926e-07,
+            "max_abs": 3.501772880554199e-07
+          },
+          "quaternion": {
+            "l2": 1.3077805072565091e-05,
+            "max_abs": 1.2761447578668594e-05
+          },
+          "angles": {
+            "l2": 3.061140887439251e-06,
+            "max_abs": 3.061140887439251e-06
+          },
+          "qvel": {
+            "l2": 0.00032200890546373387,
+            "max_abs": 0.00019107284606434405
+          },
+          "object_velocity": {
+            "l2": 5.034553970996413e-06,
+            "max_abs": 3.5332050174474716e-06
+          },
+          "previous_action": {
+            "l2": 4.789931548733191e-05,
+            "max_abs": 1.9120052456855774e-05
+          }
+        }
+      }
+    ],
+    "largest_latent_slopes": [
+      {
+        "first": 1,
+        "second": 37,
+        "first_source": {
+          "dataset_row_one_based": 1,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 1,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 37,
+          "source_label": "recovery_17023",
+          "source_path": "inputs/recovery/seed_17023/transitions.npz",
+          "source_sha256": "5650ec617ad6b8bff85c16162c74396f55b910520eecbc36c203a09074c3d3bd",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.005405055509703439,
+        "observation_max_abs": 0.0030036289244890213,
+        "action_l2": 1.770267724846842,
+        "action_max_abs": 0.8814447708427906,
+        "latent_l2": 3.273078752834289,
+        "latent_max_abs": 2.17165070772171,
+        "latent_l2_per_raw_observation_l2": 605.5587675202015,
+        "observation_groups": {
+          "q": {
+            "l2": 0.0005165664192591427,
+            "max_abs": 0.00030034780502319336
+          },
+          "position": {
+            "l2": 2.8550853245728947e-05,
+            "max_abs": 2.800673246383667e-05
+          },
+          "quaternion": {
+            "l2": 0.0006659171578293825,
+            "max_abs": 0.000651821494102478
+          },
+          "angles": {
+            "l2": 0.0013184448471292853,
+            "max_abs": 0.0013184448471292853
+          },
+          "qvel": {
+            "l2": 0.005165536116474929,
+            "max_abs": 0.0030036289244890213
+          },
+          "object_velocity": {
+            "l2": 0.00028550876565517296,
+            "max_abs": 0.0002800671791192144
+          },
+          "previous_action": {
+            "l2": 3.0788705105354526e-05,
+            "max_abs": 1.6648322343826294e-05
+          }
+        }
+      },
+      {
+        "first": 1,
+        "second": 2,
+        "first_source": {
+          "dataset_row_one_based": 1,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 1,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 2,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 2,
+          "origin": "original_teacher_prefix"
+        },
+        "observation_l2": 0.005414867059235589,
+        "observation_max_abs": 0.003089159494265914,
+        "action_l2": 1.7702717880169658,
+        "action_max_abs": 0.8814503140747547,
+        "latent_l2": 3.273108495595296,
+        "latent_max_abs": 2.1716747879981995,
+        "latent_l2_per_raw_observation_l2": 604.4670090307549,
+        "observation_groups": {
+          "q": {
+            "l2": 0.0005180549327431444,
+            "max_abs": 0.0003089308738708496
+          },
+          "position": {
+            "l2": 2.9000174399071e-05,
+            "max_abs": 2.8461217880249023e-05
+          },
+          "quaternion": {
+            "l2": 0.0006585570087565231,
+            "max_abs": 0.0006454437971115112
+          },
+          "angles": {
+            "l2": 0.001305502257309854,
+            "max_abs": 0.001305502257309854
+          },
+          "qvel": {
+            "l2": 0.005179713588675338,
+            "max_abs": 0.003089159494265914
+          },
+          "object_velocity": {
+            "l2": 0.0002899948403137103,
+            "max_abs": 0.0002846077550202608
+          },
+          "previous_action": {
+            "l2": 0.0,
+            "max_abs": 0.0
+          }
+        }
+      },
+      {
+        "first": 1,
+        "second": 62,
+        "first_source": {
+          "dataset_row_one_based": 1,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 1,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 62,
+          "source_label": "recovery_17025",
+          "source_path": "inputs/recovery/seed_17025/transitions.npz",
+          "source_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.005426115382923268,
+        "observation_max_abs": 0.003142312867566943,
+        "action_l2": 1.7702699608378136,
+        "action_max_abs": 0.8814464397728443,
+        "latent_l2": 3.273083449581894,
+        "latent_max_abs": 2.171659767627716,
+        "latent_l2_per_raw_observation_l2": 603.2093345974062,
+        "observation_groups": {
+          "q": {
+            "l2": 0.0005188891461813895,
+            "max_abs": 0.0003142356872558594
+          },
+          "position": {
+            "l2": 2.8884472040941525e-05,
+            "max_abs": 2.835690975189209e-05
+          },
+          "quaternion": {
+            "l2": 0.0006626795839739475,
+            "max_abs": 0.0006502866744995117
+          },
+          "angles": {
+            "l2": 0.001315383706241846,
+            "max_abs": 0.001315383706241846
+          },
+          "qvel": {
+            "l2": 0.005188287682114594,
+            "max_abs": 0.003142312867566943
+          },
+          "object_velocity": {
+            "l2": 0.0002888753558185759,
+            "max_abs": 0.0002836003841366619
+          },
+          "previous_action": {
+            "l2": 3.861762295685115e-05,
+            "max_abs": 1.837313175201416e-05
+          }
+        }
+      },
+      {
+        "first": 1,
+        "second": 51,
+        "first_source": {
+          "dataset_row_one_based": 1,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 1,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 51,
+          "source_label": "recovery_17024",
+          "source_path": "inputs/recovery/seed_17024/transitions.npz",
+          "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.005435947997525882,
+        "observation_max_abs": 0.00309347384609282,
+        "action_l2": 1.770265932511023,
+        "action_max_abs": 0.8814426846802235,
+        "latent_l2": 3.2730717847849213,
+        "latent_max_abs": 2.171647846698761,
+        "latent_l2_per_raw_observation_l2": 602.1160957158949,
+        "observation_groups": {
+          "q": {
+            "l2": 0.0005199239498564698,
+            "max_abs": 0.00030934810638427734
+          },
+          "position": {
+            "l2": 2.9143752925577004e-05,
+            "max_abs": 2.864748239517212e-05
+          },
+          "quaternion": {
+            "l2": 0.0006623143420979926,
+            "max_abs": 0.0006493031978607178
+          },
+          "angles": {
+            "l2": 0.0013132831081748009,
+            "max_abs": 0.0013132831081748009
+          },
+          "qvel": {
+            "l2": 0.005198849832548402,
+            "max_abs": 0.00309347384609282
+          },
+          "object_velocity": {
+            "l2": 0.000291482357312179,
+            "max_abs": 0.0002865227870643139
+          },
+          "previous_action": {
+            "l2": 4.4564603195068766e-05,
+            "max_abs": 3.063678741455078e-05
+          }
+        }
+      },
+      {
+        "first": 1,
+        "second": 28,
+        "first_source": {
+          "dataset_row_one_based": 1,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 1,
+          "origin": "original_teacher_prefix"
+        },
+        "second_source": {
+          "dataset_row_one_based": 28,
+          "source_label": "recovery_17022",
+          "source_path": "inputs/recovery/seed_17022/transitions.npz",
+          "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+          "source_row_one_based": 2,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.005453252178283152,
+        "observation_max_abs": 0.0031621733214706182,
+        "action_l2": 1.7702705754490853,
+        "action_max_abs": 0.8814424462616444,
+        "latent_l2": 3.2730837648582165,
+        "latent_max_abs": 2.1716628670692444,
+        "latent_l2_per_raw_observation_l2": 600.2076665173922,
+        "observation_groups": {
+          "q": {
+            "l2": 0.0005228130676255496,
+            "max_abs": 0.00031620264053344727
+          },
+          "position": {
+            "l2": 2.9218055041146954e-05,
+            "max_abs": 2.8654932975769043e-05
+          },
+          "quaternion": {
+            "l2": 0.0006449361893966462,
+            "max_abs": 0.0006313025951385498
+          },
+          "angles": {
+            "l2": 0.0012769141467288136,
+            "max_abs": 0.0012769141467288136
+          },
+          "qvel": {
+            "l2": 0.005227936887915069,
+            "max_abs": 0.0031621733214706182
+          },
+          "object_velocity": {
+            "l2": 0.00029219424039699925,
+            "max_abs": 0.0002865628630388528
+          },
+          "previous_action": {
+            "l2": 2.4861956391219487e-05,
+            "max_abs": 1.17570161819458e-05
+          }
+        }
+      }
+    ],
+    "closest_new_correction_pairs": [
+      {
+        "first": 7,
+        "second": 56,
+        "first_source": {
+          "dataset_row_one_based": 7,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 7,
+          "origin": "nominal_mpc_correction"
+        },
+        "second_source": {
+          "dataset_row_one_based": 56,
+          "source_label": "recovery_17024",
+          "source_path": "inputs/recovery/seed_17024/transitions.npz",
+          "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+          "source_row_one_based": 7,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.3995855685536644,
+        "observation_max_abs": 0.22045671939849854,
+        "action_l2": 2.750061679989481e-05,
+        "action_max_abs": 1.9371509552001953e-05,
+        "latent_l2": 4.636709832775983e-05,
+        "latent_max_abs": 2.2649765014648438e-05,
+        "latent_l2_per_raw_observation_l2": 0.00011603797027903104,
+        "observation_groups": {
+          "q": {
+            "l2": 0.033250060116345785,
+            "max_abs": 0.01896408572793007
+          },
+          "position": {
+            "l2": 0.0015914821310450955,
+            "max_abs": 0.0013226419687271118
+          },
+          "quaternion": {
+            "l2": 0.05184499686971135,
+            "max_abs": 0.04624658823013306
+          },
+          "angles": {
+            "l2": 0.09172516370172419,
+            "max_abs": 0.08760738372802734
+          },
+          "qvel": {
+            "l2": 0.383703742231976,
+            "max_abs": 0.22045671939849854
+          },
+          "object_velocity": {
+            "l2": 0.01518406825712126,
+            "max_abs": 0.01485450565814972
+          },
+          "previous_action": {
+            "l2": 1.3966140654989461e-05,
+            "max_abs": 9.5367431640625e-06
+          }
+        }
+      },
+      {
+        "first": 10,
+        "second": 56,
+        "first_source": {
+          "dataset_row_one_based": 10,
+          "source_label": "common_actor_recovery",
+          "source_path": "inputs/common/recovery/transitions.npz",
+          "source_sha256": "7a96e2d121449d44260341e3f042261440dea037a7b16ca516995e0dea2a850d",
+          "source_row_one_based": 7,
+          "origin": "actual_actor_state_mpc_correction"
+        },
+        "second_source": {
+          "dataset_row_one_based": 56,
+          "source_label": "recovery_17024",
+          "source_path": "inputs/recovery/seed_17024/transitions.npz",
+          "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+          "source_row_one_based": 7,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.39975552782535245,
+        "observation_max_abs": 0.22329533100128174,
+        "action_l2": 2.750061679989481e-05,
+        "action_max_abs": 1.9371509552001953e-05,
+        "latent_l2": 4.636709832775983e-05,
+        "latent_max_abs": 2.2649765014648438e-05,
+        "latent_l2_per_raw_observation_l2": 0.00011598863580447339,
+        "observation_groups": {
+          "q": {
+            "l2": 0.033182945689287056,
+            "max_abs": 0.019397299736738205
+          },
+          "position": {
+            "l2": 0.0016226476175316543,
+            "max_abs": 0.0012653109151870012
+          },
+          "quaternion": {
+            "l2": 0.049284528731909395,
+            "max_abs": 0.04337155818939209
+          },
+          "angles": {
+            "l2": 0.08589316084691818,
+            "max_abs": 0.0809326171875
+          },
+          "qvel": {
+            "l2": 0.3855732652447197,
+            "max_abs": 0.22329533100128174
+          },
+          "object_velocity": {
+            "l2": 0.015039233040059545,
+            "max_abs": 0.014236129820346832
+          },
+          "previous_action": {
+            "l2": 0.001104491968336819,
+            "max_abs": 0.000932157039642334
+          }
+        }
+      },
+      {
+        "first": 7,
+        "second": 33,
+        "first_source": {
+          "dataset_row_one_based": 7,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 7,
+          "origin": "nominal_mpc_correction"
+        },
+        "second_source": {
+          "dataset_row_one_based": 33,
+          "source_label": "recovery_17022",
+          "source_path": "inputs/recovery/seed_17022/transitions.npz",
+          "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+          "source_row_one_based": 7,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.40124875709750907,
+        "observation_max_abs": 0.22162842750549316,
+        "action_l2": 2.9843034354763346e-05,
+        "action_max_abs": 2.0444393157958984e-05,
+        "latent_l2": 6.281662267490422e-05,
+        "latent_max_abs": 3.7670135498046875e-05,
+        "latent_l2_per_raw_observation_l2": 0.0001565528155882584,
+        "observation_groups": {
+          "q": {
+            "l2": 0.03336265450558954,
+            "max_abs": 0.019126538187265396
+          },
+          "position": {
+            "l2": 0.001584754569888211,
+            "max_abs": 0.0013094459427520633
+          },
+          "quaternion": {
+            "l2": 0.05169181829894655,
+            "max_abs": 0.046009719371795654
+          },
+          "angles": {
+            "l2": 0.0913218502358203,
+            "max_abs": 0.08702898025512695
+          },
+          "qvel": {
+            "l2": 0.38554423946632205,
+            "max_abs": 0.22162842750549316
+          },
+          "object_velocity": {
+            "l2": 0.015129492771221671,
+            "max_abs": 0.014754951000213623
+          },
+          "previous_action": {
+            "l2": 1.9049035079438957e-05,
+            "max_abs": 1.537799835205078e-05
+          }
+        }
+      },
+      {
+        "first": 10,
+        "second": 33,
+        "first_source": {
+          "dataset_row_one_based": 10,
+          "source_label": "common_actor_recovery",
+          "source_path": "inputs/common/recovery/transitions.npz",
+          "source_sha256": "7a96e2d121449d44260341e3f042261440dea037a7b16ca516995e0dea2a850d",
+          "source_row_one_based": 7,
+          "origin": "actual_actor_state_mpc_correction"
+        },
+        "second_source": {
+          "dataset_row_one_based": 33,
+          "source_label": "recovery_17022",
+          "source_path": "inputs/recovery/seed_17022/transitions.npz",
+          "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+          "source_row_one_based": 7,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.40146611885939404,
+        "observation_max_abs": 0.22446703910827637,
+        "action_l2": 2.9843034354763346e-05,
+        "action_max_abs": 2.0444393157958984e-05,
+        "latent_l2": 6.281662267490422e-05,
+        "latent_max_abs": 3.7670135498046875e-05,
+        "latent_l2_per_raw_observation_l2": 0.00015646805477227474,
+        "observation_groups": {
+          "q": {
+            "l2": 0.033301177577361125,
+            "max_abs": 0.019559752196073532
+          },
+          "position": {
+            "l2": 0.001619918191534123,
+            "max_abs": 0.0012521148892119527
+          },
+          "quaternion": {
+            "l2": 0.049160999519834006,
+            "max_abs": 0.04313468933105469
+          },
+          "angles": {
+            "l2": 0.08551672363886315,
+            "max_abs": 0.08035421371459961
+          },
+          "qvel": {
+            "l2": 0.3874359994859425,
+            "max_abs": 0.22446703910827637
+          },
+          "object_velocity": {
+            "l2": 0.015022107157761786,
+            "max_abs": 0.014136575162410736
+          },
+          "previous_action": {
+            "l2": 0.0011048675004506241,
+            "max_abs": 0.0009379982948303223
+          }
+        }
+      },
+      {
+        "first": 10,
+        "second": 18,
+        "first_source": {
+          "dataset_row_one_based": 10,
+          "source_label": "common_actor_recovery",
+          "source_path": "inputs/common/recovery/transitions.npz",
+          "source_sha256": "7a96e2d121449d44260341e3f042261440dea037a7b16ca516995e0dea2a850d",
+          "source_row_one_based": 7,
+          "origin": "actual_actor_state_mpc_correction"
+        },
+        "second_source": {
+          "dataset_row_one_based": 18,
+          "source_label": "recovery_17021",
+          "source_path": "inputs/recovery/seed_17021/transitions.npz",
+          "source_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+          "source_row_one_based": 7,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.6287523900813525,
+        "observation_max_abs": 0.36711621284484863,
+        "action_l2": 4.0539681891794345e-05,
+        "action_max_abs": 2.625584602355957e-05,
+        "latent_l2": 5.6913642616063724e-05,
+        "latent_max_abs": 2.8371810913085938e-05,
+        "latent_l2_per_raw_observation_l2": 9.051837180086079e-05,
+        "observation_groups": {
+          "q": {
+            "l2": 0.06211108479301927,
+            "max_abs": 0.036858558654785156
+          },
+          "position": {
+            "l2": 0.007415980870207416,
+            "max_abs": 0.00602586567401886
+          },
+          "quaternion": {
+            "l2": 0.08693398829400134,
+            "max_abs": 0.06834875792264938
+          },
+          "angles": {
+            "l2": 0.115666075988509,
+            "max_abs": 0.11465692520141602
+          },
+          "qvel": {
+            "l2": 0.604123481296963,
+            "max_abs": 0.36711621284484863
+          },
+          "object_velocity": {
+            "l2": 0.07425807126270605,
+            "max_abs": 0.05879706144332886
+          },
+          "previous_action": {
+            "l2": 0.001087726656887653,
+            "max_abs": 0.0009140968322753906
+          }
+        }
+      },
+      {
+        "first": 7,
+        "second": 18,
+        "first_source": {
+          "dataset_row_one_based": 7,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 7,
+          "origin": "nominal_mpc_correction"
+        },
+        "second_source": {
+          "dataset_row_one_based": 18,
+          "source_label": "recovery_17021",
+          "source_path": "inputs/recovery/seed_17021/transitions.npz",
+          "source_sha256": "d40cfdbc06d33a71c6082ec779e5f62afe1c8f8a2486f83e4a186e17d38003a5",
+          "source_row_one_based": 7,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.6353241126916288,
+        "observation_max_abs": 0.36738038063049316,
+        "action_l2": 4.0539681891794345e-05,
+        "action_max_abs": 2.625584602355957e-05,
+        "latent_l2": 5.6913642616063724e-05,
+        "latent_max_abs": 2.8371810913085938e-05,
+        "latent_l2_per_raw_observation_l2": 8.958205973789043e-05,
+        "observation_groups": {
+          "q": {
+            "l2": 0.06271406557144008,
+            "max_abs": 0.036939382553100586
+          },
+          "position": {
+            "l2": 0.007605275853101067,
+            "max_abs": 0.00621400773525238
+          },
+          "quaternion": {
+            "l2": 0.09006121330534501,
+            "max_abs": 0.06960710883140564
+          },
+          "angles": {
+            "l2": 0.12249452304895407,
+            "max_abs": 0.12133169174194336
+          },
+          "qvel": {
+            "l2": 0.608887927024429,
+            "max_abs": 0.36738038063049316
+          },
+          "object_velocity": {
+            "l2": 0.07606178952491781,
+            "max_abs": 0.06057162582874298
+          },
+          "previous_action": {
+            "l2": 1.025885157844442e-05,
+            "max_abs": 8.52346420288086e-06
+          }
+        }
+      },
+      {
+        "first": 36,
+        "second": 59,
+        "first_source": {
+          "dataset_row_one_based": 36,
+          "source_label": "recovery_17022",
+          "source_path": "inputs/recovery/seed_17022/transitions.npz",
+          "source_sha256": "839e8fb056ffe77d93d7dc2e55de1ab694ca3f7f46326b1122bbf037b075334c",
+          "source_row_one_based": 10,
+          "origin": "actual_corrected_native_mpc"
+        },
+        "second_source": {
+          "dataset_row_one_based": 59,
+          "source_label": "recovery_17024",
+          "source_path": "inputs/recovery/seed_17024/transitions.npz",
+          "source_sha256": "bd1ac9d2dc0c6cf59a31dae7c1f7e44f9a0b33b56e805303cacadd0dc7797d05",
+          "source_row_one_based": 10,
+          "origin": "actual_corrected_native_mpc"
+        },
+        "observation_l2": 0.7557529579733084,
+        "observation_max_abs": 0.3811626434326172,
+        "action_l2": 1.1015360897358513,
+        "action_max_abs": 0.6556402742862701,
+        "latent_l2": 2.5754272181351374,
+        "latent_max_abs": 1.747147262096405,
+        "latent_l2_per_raw_observation_l2": 3.4077633318718625,
+        "observation_groups": {
+          "q": {
+            "l2": 0.08133949431014695,
+            "max_abs": 0.05973231792449951
+          },
+          "position": {
+            "l2": 0.00307162326203847,
+            "max_abs": 0.0023997854441404343
+          },
+          "quaternion": {
+            "l2": 0.11004173193635372,
+            "max_abs": 0.10792671144008636
+          },
+          "angles": {
+            "l2": 0.26298120813690246,
+            "max_abs": 0.23381757736206055
+          },
+          "qvel": {
+            "l2": 0.6941809089461017,
+            "max_abs": 0.3811626434326172
+          },
+          "object_velocity": {
+            "l2": 0.03716923338155312,
+            "max_abs": 0.0331854373216629
+          },
+          "previous_action": {
+            "l2": 2.0620516578882534e-05,
+            "max_abs": 1.4007091522216797e-05
+          }
+        }
+      },
+      {
+        "first": 7,
+        "second": 67,
+        "first_source": {
+          "dataset_row_one_based": 7,
+          "source_label": "common_nominal",
+          "source_path": "inputs/common/nominal/transitions.npz",
+          "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+          "source_row_one_based": 7,
+          "origin": "nominal_mpc_correction"
+        },
+        "second_source": {
+          "dataset_row_one_based": 67,
+          "source_label": "recovery_17025",
+          "source_path": "inputs/recovery/seed_17025/transitions.npz",
+          "source_sha256": "a0e44eba3b33fd39448dd7b6f16c9478a6e3296267a562bdd75e7fc9e44b8191",
+          "source_row_one_based": 7,
+          "origin": "recorded_fixed_mean_noisy_prefix"
+        },
+        "observation_l2": 0.8102831154456893,
+        "observation_max_abs": 0.4826531410217285,
+        "action_l2": 3.0411478482619724e-05,
+        "action_max_abs": 2.321600914001465e-05,
+        "latent_l2": 6.065624877787269e-05,
+        "latent_max_abs": 2.86102294921875e-05,
+        "latent_l2_per_raw_observation_l2": 7.485809295743406e-05,
+        "observation_groups": {
+          "q": {
+            "l2": 0.06722286107264688,
+            "max_abs": 0.0363616943359375
+          },
+          "position": {
+            "l2": 0.014357801390113806,
+            "max_abs": 0.01299763098359108
+          },
+          "quaternion": {
+            "l2": 0.24015017815497897,
+            "max_abs": 0.19607755541801453
+          },
+          "angles": {
+            "l2": 0.48298783026675274,
+            "max_abs": 0.4826531410217285
+          },
+          "qvel": {
+            "l2": 0.5859395005703306,
+            "max_abs": 0.3732790946960449
+          },
+          "object_velocity": {
+            "l2": 0.1325111958891279,
+            "max_abs": 0.12197337299585342
+          },
+          "previous_action": {
+            "l2": 6.825902996604103e-06,
+            "max_abs": 4.976987838745117e-06
+          }
+        }
+      }
+    ],
+    "inherited_startup_pair": {
+      "first": 1,
+      "second": 2,
+      "first_source": {
+        "dataset_row_one_based": 1,
+        "source_label": "common_nominal",
+        "source_path": "inputs/common/nominal/transitions.npz",
+        "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+        "source_row_one_based": 1,
+        "origin": "original_teacher_prefix"
+      },
+      "second_source": {
+        "dataset_row_one_based": 2,
+        "source_label": "common_nominal",
+        "source_path": "inputs/common/nominal/transitions.npz",
+        "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+        "source_row_one_based": 2,
+        "origin": "original_teacher_prefix"
+      },
+      "observation_l2": 0.005414867059235589,
+      "observation_max_abs": 0.003089159494265914,
+      "action_l2": 1.7702717880169658,
+      "action_max_abs": 0.8814503140747547,
+      "latent_l2": 3.273108495595296,
+      "latent_max_abs": 2.1716747879981995,
+      "latent_l2_per_raw_observation_l2": 604.4670090307549,
+      "observation_groups": {
+        "q": {
+          "l2": 0.0005180549327431444,
+          "max_abs": 0.0003089308738708496
+        },
+        "position": {
+          "l2": 2.9000174399071e-05,
+          "max_abs": 2.8461217880249023e-05
+        },
+        "quaternion": {
+          "l2": 0.0006585570087565231,
+          "max_abs": 0.0006454437971115112
+        },
+        "angles": {
+          "l2": 0.001305502257309854,
+          "max_abs": 0.001305502257309854
+        },
+        "qvel": {
+          "l2": 0.005179713588675338,
+          "max_abs": 0.003089159494265914
+        },
+        "object_velocity": {
+          "l2": 0.0002899948403137103,
+          "max_abs": 0.0002846077550202608
+        },
+        "previous_action": {
+          "l2": 0.0,
+          "max_abs": 0.0
+        }
+      }
+    }
+  },
+  "remaining_issue": "Inherited near-stationary startup hold-versus-motion labels remain; no exact contradiction. New noisy feedback states are authentic supervised coverage, not a robustness guarantee."
+}

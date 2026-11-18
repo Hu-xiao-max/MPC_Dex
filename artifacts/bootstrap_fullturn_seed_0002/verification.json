@@ -1,0 +1,44 @@
+{
+  "classification": "One verified MPC diagnostic demonstration; not a SAC policy success, production primitive, or main-method MPC dataset.",
+  "transitions": 22,
+  "demonstration_successes": 1,
+  "sac_successes": 0,
+  "source_commands": 60,
+  "unused_tail_commands": 38,
+  "retained_angle": 6.337595308501611,
+  "force_qualified_angle": 6.287874648934319,
+  "final_contacts": 3,
+  "final_loaded_fingers": 3,
+  "final_axis_tilt_radians": 0.027819344860093624,
+  "peak_support_normal_forces": {
+    "palm": 0.0,
+    "table": 0.0,
+    "other": 0.0
+  },
+  "max_replay_errors": {
+    "obs": 0.0,
+    "next_obs": 0.0,
+    "qpos": 0.0,
+    "qvel": 0.0
+  },
+  "action_conversion": {
+    "source_dtype": "float32",
+    "effective_dtype": "float32",
+    "max_absolute_difference": 0.0,
+    "applied_before_physics": true
+  },
+  "max_absolute_action": 0.9799998998641968,
+  "default_bc_action_epsilon": 0.02,
+  "default_bc_clamp_changes_actions": false,
+  "stored_actions_equal_executed_and_independently_audited": true,
+  "terminal_transition_index": 21,
+  "known_next_actions": 21,
+  "terminal_next_action_valid": false,
+  "loader_contract_validation": "passed",
+  "replay_sha256": "69f74bed08e92fdbd1f41c4a174cd4c37ce5658ff5e6936e5555ddeea2945014",
+  "metadata_sha256": "fdebbf4b8c686b08ada50a009e1432f190a8498b11da2d9e351614567140e58a",
+  "config_sha256": "265ad0c5b801541a0c8ec7abed91af72d2506651174cb9842fe5514f243fb10c",
+  "config_equals_seed_0001": true,
+  "preserved_seed_0001_sha256": "e20aee06f218396486785efeecf98ef45fa16f38e107ee4b6cbf3e2b3979eb4e",
+  "preserved_seed_0001_metadata_sha256": "fe6a5ea300dc0426d166f7f4de398e22d3a759b5a2d123c051306bafad7aa837"
+}

@@ -1,0 +1,31 @@
+rows 413 (distinct observations 287; spine x10; training branches 36, held-out branches 5 with 40 correction rows)
+step 0 bc_loss 3.62473 heldout 1.8413
+step 5000 bc_loss 0.04464 heldout 0.0311
+step 10000 bc_loss 0.00118 heldout 0.0238
+step 15000 bc_loss 0.00072 heldout 0.0239
+step 20000 bc_loss 0.00030 heldout 0.0200
+step 25000 bc_loss 0.00033 heldout 0.0215
+step 30000 bc_loss 0.00015 heldout 0.0229
+step 35000 bc_loss 0.00013 heldout 0.0271
+step 40000 bc_loss 0.00013 heldout 0.0234
+step 45000 bc_loss 0.00029 heldout 0.0224
+step 50000 bc_loss 0.00007 heldout 0.0273
+step 55000 bc_loss 0.00007 heldout 0.0249
+step 60000 bc_loss 0.00005 heldout 0.0241
+step 65000 bc_loss 0.00003 heldout 0.0263
+step 70000 bc_loss 0.00003 heldout 0.0282
+step 75000 bc_loss 0.00004 heldout 0.0310
+step 80000 bc_loss 0.00002 heldout 0.0305
+step 85000 bc_loss 0.00002 heldout 0.0268
+step 90000 bc_loss 0.00002 heldout 0.0288
+step 95000 bc_loss 0.00002 heldout 0.0262
+step 99999 bc_loss 0.00002 heldout 0.0269
+early stop: best held-out L2 0.0200 at step 20000
+training fit over 287 distinct rows: action-space L2 median 0.0124 p90 0.0193 max 0.037 (row track_seed_193_j6_r0030_d1); atanh-space MSE 0.00042 | spine rows [0.014000000432133675, 0.017000000923871994, 0.02199999988079071, 0.013000000268220901, 0.014999999664723873, 0.0020000000949949026, 0.006000000052154064, 0.014000000432133675, 0.017999999225139618, 0.010999999940395355, 0.013000000268220901, 0.009999999776482582, 0.010999999940395355, 0.0010000000474974513]
+HELD-OUT regression (chaos-free generalisation): 40 rows, action-space L2 median 0.0200 p90 0.0812 max 2.656; atanh-space MSE 0.04405
+cold {'det': {'ok': False, 'controls': 7, 'angle': -0.22, 'fail': 'drop'}, 'stoch': [False, False, False, False, False]} 
+spine det k1.. [False, False, False, False, False, False, True, False, False, True, True, True, True] 
+spine stoch3 [0, 0, 0, 0, 0, 1, 1, 1, 1, 3, 3, 3, 3]
+training branches: corrected-state handoffs (deterministic) 4/24; informative cells j<=9: 4/24; by (order, j) {'o1j0': '0/2', 'o1j3': '0/5', 'o1j6': '1/5', 'o1j8': '3/12'}
+held-out branches: corrected-state handoffs (deterministic) 0/5; informative cells j<=9: 0/5; by (order, j) {'o1j0': '0/1', 'o1j3': '0/1', 'o1j6': '0/1', 'o1j8': '0/2'}
+wall 414.3

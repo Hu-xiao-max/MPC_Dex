@@ -1,0 +1,260 @@
+{
+  "rows": 210,
+  "episodes": 35,
+  "sources": [
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_100",
+      "rows": 6,
+      "raw_return": 226.90103377303885,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_101",
+      "rows": 6,
+      "raw_return": 271.40928883912204,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_102",
+      "rows": 6,
+      "raw_return": 267.7200318422696,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_104",
+      "rows": 6,
+      "raw_return": 246.19724005705572,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_105",
+      "rows": 6,
+      "raw_return": 251.6063393179808,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_106",
+      "rows": 6,
+      "raw_return": 302.37761033264826,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_107",
+      "rows": 6,
+      "raw_return": 291.12812799275576,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_108",
+      "rows": 6,
+      "raw_return": 250.7215093252282,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_110",
+      "rows": 6,
+      "raw_return": 229.0548732926311,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_112",
+      "rows": 6,
+      "raw_return": 247.06820340964455,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_116",
+      "rows": 6,
+      "raw_return": 254.54371214011442,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_117",
+      "rows": 6,
+      "raw_return": 281.5919069944986,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_118",
+      "rows": 6,
+      "raw_return": 272.689185980354,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_119",
+      "rows": 6,
+      "raw_return": 248.83221024450597,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_120",
+      "rows": 6,
+      "raw_return": 235.93993749521184,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_122",
+      "rows": 6,
+      "raw_return": 254.26748588775263,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_126",
+      "rows": 6,
+      "raw_return": 231.83706187215776,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_127",
+      "rows": 6,
+      "raw_return": 239.91156239306332,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_128",
+      "rows": 6,
+      "raw_return": 231.11409005630458,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_129",
+      "rows": 6,
+      "raw_return": 274.9983271203763,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_130",
+      "rows": 6,
+      "raw_return": 203.83340155489068,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_131",
+      "rows": 6,
+      "raw_return": 282.1590940714523,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_132",
+      "rows": 6,
+      "raw_return": 336.9312447288355,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_136",
+      "rows": 6,
+      "raw_return": 283.840733680757,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_139",
+      "rows": 6,
+      "raw_return": 235.26575764627478,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_140",
+      "rows": 6,
+      "raw_return": 220.78923964130126,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_141",
+      "rows": 6,
+      "raw_return": 237.14011589992037,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_146",
+      "rows": 6,
+      "raw_return": 235.0911190696762,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_147",
+      "rows": 6,
+      "raw_return": 246.74598468963296,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_148",
+      "rows": 6,
+      "raw_return": 230.112418969052,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_149",
+      "rows": 6,
+      "raw_return": 300.5781286330997,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_151",
+      "rows": 6,
+      "raw_return": 258.71861623931454,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_153",
+      "rows": 6,
+      "raw_return": 281.0567195679877,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_154",
+      "rows": 6,
+      "raw_return": 235.96068298502487,
+      "first_row_is_handoff_for_suffix": 6
+    },
+    {
+      "origin": "verified_cold_reset_mpc_demonstration_suffix",
+      "source": "seed_155",
+      "rows": 6,
+      "raw_return": 276.08936561252176,
+      "first_row_is_handoff_for_suffix": 6
+    }
+  ],
+  "pretrain_offline_fraction": 0.3,
+  "online_offline_fraction": 0.3,
+  "batch_demonstration_rows": {
+    "pretrain": 77,
+    "online": 77
+  },
+  "collected_prefix_rows_never_appended": "physically replayed (and, when enabled, perturbed) prefix controls of collected episodes are never appended to the online replay; the demonstration buffer separately holds the recorded source rows listed in demonstration_recorded_rows, which may coincide with source transitions that prefix replay re-executes",
+  "immutable_during_stage": true,
+  "replay_sha256": "34b4856d53ca879bc10cbefba249c3d1b5414a0c1b0ca06078c95220052aa53c"
+}

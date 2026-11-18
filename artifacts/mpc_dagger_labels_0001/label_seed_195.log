@@ -1,0 +1,14 @@
+{"name": "dagger_seed_195_s1_b0", "status": "boundary", "controls": 17, "policy_controls": 0, "mpc_controls": 1, "strict_force_success": true, "stored": true, "wall": 4.2}
+{"name": "dagger_seed_195_s1_b1", "status": "no_feasible_plan", "controls": 17, "policy_controls": 1, "mpc_controls": 0, "strict_force_success": false, "stored": false, "wall": 1.7}
+{"name": "dagger_seed_195_s2_b0", "status": "boundary", "controls": 17, "policy_controls": 0, "mpc_controls": 2, "strict_force_success": true, "stored": true, "wall": 8.3}
+{"name": "dagger_seed_195_s2_b1", "status": "no_feasible_plan", "controls": 16, "policy_controls": 1, "mpc_controls": 0, "strict_force_success": false, "stored": false, "wall": 1.9}
+{"name": "dagger_seed_195_s3_b0", "status": "boundary", "controls": 23, "policy_controls": 0, "mpc_controls": 9, "strict_force_success": true, "stored": true, "wall": 70.3}
+{"name": "dagger_seed_195_s3_b1", "status": "boundary", "controls": 20, "policy_controls": 1, "mpc_controls": 5, "strict_force_success": true, "stored": true, "wall": 31.3}
+{"name": "dagger_seed_195_s3_b2", "status": "no_feasible_plan", "controls": 16, "policy_controls": 2, "mpc_controls": 0, "strict_force_success": false, "stored": false, "wall": 1.7}
+{"name": "dagger_seed_195_s4_b0", "status": "boundary", "controls": 16, "policy_controls": 0, "mpc_controls": 3, "strict_force_success": true, "stored": true, "wall": 18.8}
+{"name": "dagger_seed_195_s4_b1", "status": "no_feasible_plan", "controls": 14, "policy_controls": 1, "mpc_controls": 0, "strict_force_success": false, "stored": false, "wall": 2.7}
+{"name": "dagger_seed_195_s4_b2", "status": "boundary", "controls": 28, "policy_controls": 2, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 83.3}
+{"name": "dagger_seed_195_s4_b3", "status": "budget", "controls": 36, "policy_controls": 3, "mpc_controls": 20, "strict_force_success": false, "stored": false, "wall": 43.9}
+{"name": "dagger_seed_195_s5_b0", "status": "boundary", "controls": 19, "policy_controls": 0, "mpc_controls": 7, "strict_force_success": true, "stored": true, "wall": 50.8}
+{"name": "dagger_seed_195_s6_b0", "status": "boundary", "controls": 19, "policy_controls": 0, "mpc_controls": 8, "strict_force_success": true, "stored": true, "wall": 42.5}
+{"name": "dagger_seed_195_s6_b1", "status": "no_feasible_plan", "controls": 12, "policy_controls": 1, "mpc_controls": 0, "strict_force_success": false, "stored": false, "wall": 1.3}

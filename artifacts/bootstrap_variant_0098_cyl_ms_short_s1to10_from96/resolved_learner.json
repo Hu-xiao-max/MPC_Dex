@@ -1,0 +1,23 @@
+{
+  "hidden_sizes": [
+    256,
+    256
+  ],
+  "ensemble_size": 2,
+  "online_target_critics": 2,
+  "actor_critic_reduction": "mean",
+  "min_std": 1e-05,
+  "max_std": 5.0,
+  "bc_lr": 0.003,
+  "bc_action_epsilon": 0.02,
+  "initial_std": 0.05,
+  "critic_lr": 0.0003,
+  "actor_lr": 0.0001,
+  "actor_warmup_updates": 5000,
+  "alpha_lr": 0.0001,
+  "initial_alpha": 0.00025,
+  "pretrain_alpha": 0.0001,
+  "discount": 0.995,
+  "tau": 0.01,
+  "target_entropy": -16.0
+}

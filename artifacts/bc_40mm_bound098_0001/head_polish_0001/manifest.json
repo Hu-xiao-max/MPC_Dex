@@ -1,0 +1,19 @@
+{
+  "actual_torch_teacher_predictions.npz": "b555eaf86d3e2029689168626974460fb6df6e828dc0f83c86b4435357b1b1e1",
+  "baseline.pt": "d2cc00f36b34f0146f89185c859d181345cf13b4c00fbbbb58590ad9c74b84ca",
+  "baseline.pt.metadata.json": "06299b5493ffc2f4a15a4cc62129cca614ddef86ba8277440914101612c3f0de",
+  "findings.md": "920b1afd1a7d0d9b1f9e44dba6abcb0f4951b482e6c4738460bd2fdf88ba6af9",
+  "independent_audit/commands.json": "1802905b5e6e69781bbef8ddbdbff2ffb5cbea508b1bb4962a8afc6fee7f787f",
+  "independent_audit/physics.npz": "c46261d0d49698185a5492c0f0e945c537636d21bba27641c822d057141d3a83",
+  "independent_audit/report.json": "88e1ee66c9adc32322570f17918765ba093b38867693a40b549f1adf3aaa587e",
+  "independent_audit/transitions.npz": "7f7ec220e2f7752ccc4810d2914c0580967ca1ba54d87289cf2e4b2e07b8a534",
+  "polish.log": "20e3bda5ef35cc31a1ee051b4402ae2d8e411aab9052e5ef9ae1d780bd46dc59",
+  "polish.py": "f2aa23ff8cedfabe314783143f40a0ab116d0c21e022c040183e219e12896162",
+  "polished.pt": "a3a9473e6388a4a2a870240582d1ca048dbf4a961866d35f2d1c3aa0ecd13374",
+  "polished.pt.metadata.json": "5710ca69311521392476eb7c472cb113d3001165d9ae947cbc4d095de6595042",
+  "proof.json": "5185d7ef9a90c103eccb57bda2243cabfdb3453f150783bd88eb4db12342601a",
+  "report.json": "95a670431f388bf630da12d23e97f9f6b3038cf27d1a75e39ce8ebaa903c6265",
+  "solve_inputs_and_result.npz": "3c911fd48d5ccdd1a1191c0b03ec97382babd23d301b93cf1f1fd9d69b6f5d8a",
+  "verify.log": "5185d7ef9a90c103eccb57bda2243cabfdb3453f150783bd88eb4db12342601a",
+  "verify.py": "084a62d7c3396bc37e416c299fe27bb2bfef940c0e0eadd00bd3300ecb4f77ed"
+}

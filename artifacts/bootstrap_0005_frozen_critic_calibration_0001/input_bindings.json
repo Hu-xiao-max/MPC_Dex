@@ -1,0 +1,146 @@
+{
+  "initial_agent.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/agent.pt",
+    "sha256": "66681b0f9651b21edb39ef94cb9827e8dcb1ab08249ac7e82010f81c114cf937"
+  },
+  "initial_agent.pt.metadata.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/agent.pt.metadata.json",
+    "sha256": "fe2dce5849299bcaabf92870c1f2ac9f35f7893edcb4dc4c5b51b8af5f35b356"
+  },
+  "initial_environment_0.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/environment_0.npz",
+    "sha256": "a8b9c90979a6b609fa675776989c178264ba13268d77873dfd0cf1f0d8aafdd9"
+  },
+  "initial_state.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/state.json",
+    "sha256": "53c8e3ab459d823da2fa365840d0db44080ae29954ef513ff140049680faec1b"
+  },
+  "initial_torch_rng.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/torch_rng.pt",
+    "sha256": "8f3bb0d203bf38fde724827372228db645b491d76742f174bc38c2b19a50ec2e"
+  },
+  "initial_replay_0.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/replay_0.npz",
+    "sha256": "e3763345aa2a14357c40a1751838529aa80bfd887fa3d4c81485bb8669d84c30"
+  },
+  "initial_archive_manifest.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000001/archive_manifest.json",
+    "sha256": "d1f0ba50b448b90650514d017779f2e4d86752ee29e6690781d339c6d5dfed99"
+  },
+  "actual_final_replay.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/checkpoints/checkpoint_00000006/replay_0.npz",
+    "sha256": "066b12419d91f2f6f99ed98d143a4b5187a9b9da13e5a5053bf801cfd49290f6"
+  },
+  "source_config.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/config.json",
+    "sha256": "79be503a14b369d9eb91f44aba289ce3e5e42b5132f4889407e8244e1223561c"
+  },
+  "heldout_17041/report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17041/report.json",
+    "sha256": "9a0af1f5d630b687e0cc040fdb4fb4f2eac9a1fd34acd21b2af7b88a90b1c570"
+  },
+  "heldout_17041/transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17041/transitions.npz",
+    "sha256": "8309b40f5c03d8eb3e5e2c03e21d5f41a1b82a1d1a4d5b32acef78169b7886ce"
+  },
+  "heldout_17041/physics.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17041/physics.npz",
+    "sha256": "a536bb1d2572fc9bcb6b70887414edb7cab75acf7d40e0643f2599dfd7124d02"
+  },
+  "heldout_17041/torch_rng_initial.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17041/torch_rng_initial.pt",
+    "sha256": "fb6b92901ac9627a3e87c03d13d58cba5555f83a305d0b6bfb10172eed7612f6"
+  },
+  "heldout_17041/torch_rng_final.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17041/torch_rng_final.pt",
+    "sha256": "1c1ba3a71045f28e898df7d16bf6d2a1d5762d1fab9d910fef4529cdf0274803"
+  },
+  "heldout_17042/report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17042/report.json",
+    "sha256": "13dc37a2948e10248c58f1aecd18642a49a2ea8d456230e8694a2640c424a157"
+  },
+  "heldout_17042/transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17042/transitions.npz",
+    "sha256": "da0e4891177fe7e83f3cdddaff29956189255f2433b859a2fd3f351e4b695667"
+  },
+  "heldout_17042/physics.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17042/physics.npz",
+    "sha256": "0738ba7ea7e905c8ec93bb1c9de8aac59d9f0d806082adebc00a142c876549b0"
+  },
+  "heldout_17042/torch_rng_initial.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17042/torch_rng_initial.pt",
+    "sha256": "12e107ed0d65575e9011428c1ac4a4a9743a680d81554a4ba385d85216f0d97e"
+  },
+  "heldout_17042/torch_rng_final.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17042/torch_rng_final.pt",
+    "sha256": "05089b8cdfd65afa4aef3328fcc60dc5c3e47559add51a96e2d0236bbe821359"
+  },
+  "heldout_17043/report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17043/report.json",
+    "sha256": "558999006287db11f0aab43179a2a26e6c692a0b26660afda394ec75cdfb6825"
+  },
+  "heldout_17043/transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17043/transitions.npz",
+    "sha256": "66dfe24d8b3cf0a49074c07644003d91528bc2e91cb7ca64ea44bc05bcc1808a"
+  },
+  "heldout_17043/physics.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17043/physics.npz",
+    "sha256": "4259315775302ecd96cee42e03bccb2804b44db3ecb599d9d5a821a23514cee7"
+  },
+  "heldout_17043/torch_rng_initial.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17043/torch_rng_initial.pt",
+    "sha256": "725fa91cbcfb68837b0b43e20bbea7dc46f5a15683c2a5898377ebfd8dd71d47"
+  },
+  "heldout_17043/torch_rng_final.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17043/torch_rng_final.pt",
+    "sha256": "9f20d7b321eff82b215d61c42c5e3dbaf30cd1b31d35e1d1eec422e22730baef"
+  },
+  "heldout_17044/report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17044/report.json",
+    "sha256": "9cef4b0bf7734827c298a12dcf69770d0ef88b47376cf3f7c42e713b5f108e10"
+  },
+  "heldout_17044/transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17044/transitions.npz",
+    "sha256": "0a0d2754574b20e3e8e193bab5d84198cc63f710ad747f219c721f795dfe546f"
+  },
+  "heldout_17044/physics.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17044/physics.npz",
+    "sha256": "f84a7ab1f0babdde178922141a4e3c44eafccda3943da648a403d6f0d9f5d840"
+  },
+  "heldout_17044/torch_rng_initial.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17044/torch_rng_initial.pt",
+    "sha256": "4dd56045c278df7d193efa489967d79e39f259da5129927c21d2bb69ebadead7"
+  },
+  "heldout_17044/torch_rng_final.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17044/torch_rng_final.pt",
+    "sha256": "d77fe480b2f6ea14288faa61730e1dcbf1c713350e529c1e1b33718afdf7b836"
+  },
+  "heldout_17045/report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17045/report.json",
+    "sha256": "88a7ac6f7e9e4a646678d2cbab88b745ebec5f7b69983b8d1f6af35d78c48569"
+  },
+  "heldout_17045/transitions.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17045/transitions.npz",
+    "sha256": "8229a224a59545a27bdc7e770796b1f89eae8852ddd9eaaa5b807c6f1d3e2e95"
+  },
+  "heldout_17045/physics.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17045/physics.npz",
+    "sha256": "0b3b09a1ce6cea9519fc41722ff8271720eaf69d8120fc571b13393038d7fcef"
+  },
+  "heldout_17045/torch_rng_initial.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17045/torch_rng_initial.pt",
+    "sha256": "d7ca9775917832da611090f272c302e761eafe7651441a4092d0fccd2048ef63"
+  },
+  "heldout_17045/torch_rng_final.pt": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/stochastic_seed_17045/torch_rng_final.pt",
+    "sha256": "e874ceae279522a7960c750b2a6723dc47c102deb23a954fbca71aa97c2b6a50"
+  },
+  "heldout_source_report.json": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/value_calibration/initial_0001/report.json",
+    "sha256": "7316bcf01a85d096b4a1a2086cf59be8078dc4f19045c4bd7e29c4ac2cfea1dc"
+  },
+  "initial_grasp.npz": {
+    "source_path": "/home/autel001/code/mpc_dex/artifacts/bootstrap_0005/source/assets/initial_grasp_40mm.npz",
+    "sha256": "62c44b0d395f0e1f74e698990498693a9cd07fe9eb8db5640c260a5156e6be54"
+  }
+}

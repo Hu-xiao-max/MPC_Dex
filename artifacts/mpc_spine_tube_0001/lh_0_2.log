@@ -1,0 +1,9 @@
+{"name": "track_seed_193_j0_r0100_d0", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 746.8}
+{"name": "track_seed_193_j0_r0100_d1", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 859.9}
+{"name": "track_seed_193_j0_r0100_d2", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 850.2}
+{"name": "track_seed_193_j0_r0100_d3", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 750.4}
+{"name": "track_seed_193_j0_r0100_d4", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 925.0}
+{"name": "track_seed_193_j0_r0100_d5", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 1031.0}
+{"name": "track_seed_193_j0_r0300_d0", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 990.7}
+{"name": "track_seed_193_j0_r0300_d1", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 1195.3}
+{"name": "track_seed_193_j0_r0300_d2", "status": "boundary", "controls": 14, "mpc_controls": 13, "strict_force_success": true, "stored": true, "wall": 1205.7}

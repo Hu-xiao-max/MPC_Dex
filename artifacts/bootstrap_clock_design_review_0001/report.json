@@ -1,0 +1,87 @@
+{
+  "status": "complete",
+  "review_only": true,
+  "implementation_changes": 0,
+  "training_updates": 0,
+  "physical_rollouts": 0,
+  "recommendation": "Clock is the smaller isolated representation test if selected later, but is not an established physical remedy or evidence of noise-tolerant SAC initialization. Actual corrective-feedback coverage or separately bounded fresh SAC with realized-return/critic-calibration monitoring addresses the missing adaptive-feedback evidence more directly; neither is proven. No experiment was run or assigned in this review.",
+  "supported": {
+    "startup_observations_distinct_but_near": true,
+    "late_common_labels_equal": true,
+    "feedback_amplifies_matched_noise": true,
+    "direct_noise_prevents_recorded_nine_control_turn_in_all_five_trials": true,
+    "fixed_mean_remains_retained_without_failure_through_nine_controls": true,
+    "matched_horizon_feedback_palm_failures": 4,
+    "additional_feedback_palm_failure_outside_nine_control_cap": 1
+  },
+  "not_established": [
+    "Clock-conditioned BC improves sampled behavior",
+    "Clock alone produces noise-tolerant full turns",
+    "Five cases estimate a population success rate",
+    "No-feedback behavior survives beyond the nine-control cutoff",
+    "The author bootstrap uses a clock",
+    "Current diagnostic actor is a SAC policy or eligible production primitive"
+  ],
+  "proposed_clock": {
+    "implementation": "Future artifact-local policy adapter only; not implemented",
+    "base_observation_dim": 60,
+    "policy_observation_dim": 61,
+    "index": 60,
+    "encoding": "float32(env.steps * control_seconds)",
+    "units": "seconds since real episode reset",
+    "origin": "same cold-reset origin across original and recovery branches",
+    "wrap_or_success_reset": false,
+    "main60_interface_unchanged": true,
+    "distinct_bootstrap_only_metadata_kind_required": true
+  },
+  "coordinate_calculation": {
+    "formula": "sqrt(original_observation_L2^2 + 0.1^2)",
+    "original_observation_l2": 0.005414867059235589,
+    "proposed_augmented_observation_l2": 0.10014649662004756,
+    "action_l2": 1.7702717880169658,
+    "original_action_ratio": 326.9280240218627,
+    "proposed_action_ratio": 17.67682193350525,
+    "note": "Mixed-unit coordinate distances, not a physical metric or a learned-Jacobian prediction"
+  },
+  "root_reported_feedback_drift_ratio": [
+    14,
+    256
+  ],
+  "reset_settling_assessment": "Actual hold can be moved into an explicitly audited prelude but changes reset responsibility and episode accounting. Rebasing additionally affects angle references, progress, finite-difference history, failure history and resume lifecycle; clock is less invasive.",
+  "input_hashes": {
+    "/home/autel001/code/mpc_dex/mpc_dex/env.py": "c6ad90eebf08a983bb8a8f44d421e049f04fcb9075d6b6650b809cc3fba8edae",
+    "/home/autel001/code/mpc_dex/mpc_dex/bootstrap_env.py": "69a06e73d70e9e58780bbefde790dd57c22966b1e8c0134201ee497e8876fc6b",
+    "/home/autel001/code/mpc_dex/mpc_dex/learning.py": "37ff5b106aef6a81ff6dfd96cec45745f1ce1add6c628080070215d02f66f11c",
+    "/home/autel001/code/mpc_dex/mpc_dex/contracts.py": "07c7f652a0271d76a49a3447d75f162a238e3395b95bec28fe5bf87cf0ee7063",
+    "/home/autel001/code/mpc_dex/mpc_dex/cli.py": "a7c3801cf34e8a9ac36319f5ba5d814b9e7877d751a820477a86559ebdc7f1ac",
+    "/home/autel001/code/mpc_dex/scripts/train_bootstrap.py": "6e28ade575940b88a4c7299968aa4b8152a2212cfbc97046ed997b8e58174146",
+    "/home/autel001/code/mpc_dex/artifacts/sources/planner-paper.html": "d065102411a0abbb3337c65c25d3af2b2b32ccedcbaf19a737f6708e691f9da5",
+    "/home/autel001/code/mpc_dex/artifacts/sources/paper.html": "f8bc24a91d77d832fe4203a76c28dd28b7f20f904a22b9f65bfae91f9fb8596a",
+    "/home/autel001/code/mpc_dex/artifacts/common_continuation_dataset_review_0001/report.json": "c18be7f2e8c33778b57d2b6077c59e1584ebfad1f981368b928812b3b6079885",
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/supervised_pairs.npz": "23126ecf39b909198bff637a82b27c25e331da784620e2f437759aca02504c7d",
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/head_polish/report.json": "c2ce4f0a2bb14bea4b796a585536ea7b4ba75de56404f94e300fd493518e487b",
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_continuation_0001/bootstrap_exploration_minstd_0001/report.json": "d960742a68f83479e9bd121efd7143469e31b847f814969971682b66aa94fad3",
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_open_loop_noise_0001/report.json": "cc55978271fd288225e62256c6d3ab57b9310ef742c921dab72d62e0997fd188",
+    "/home/autel001/code/mpc_dex/artifacts/bc_common_open_loop_noise_0001/comparison.json": "0d0345ae2711dafbbec1058d62c7c91d6c9435fe30e393a5cd6794afac139326"
+  },
+  "findings_sha256": "1595681a1cd1be0bfe87c36b8c7cf201525ab8e23f1b32c07b8eb7223d6b4616",
+  "minimum_proof_if_selected_later": {
+    "fresh_actor_61_16": true,
+    "data_pairs": 12,
+    "same_actual_labels": true,
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "seed": 17001,
+    "mean_only_bc_updates": 12000,
+    "lr": 0.003,
+    "batch_size": 256,
+    "epsilon": 0.02,
+    "optional_head_solve": "At most one under existing max-fit-error>1e-6/full-rank rule",
+    "evaluation": "One selected final deterministic policy, same5 existing-minstd1e-5 seeds, independent force audits and actual2s policy aftermath for a qualified clone",
+    "no_sweeps": true,
+    "no_lower_noise_floor": true,
+    "no_SAC": true
+  }
+}

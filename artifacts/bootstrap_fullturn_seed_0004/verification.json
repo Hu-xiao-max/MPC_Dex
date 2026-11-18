@@ -1,0 +1,14 @@
+{
+  "replay_sha256": "fdfc5087956d8ec534a323333281e2bd36e02fe9f8605b9289630ec3042eed41",
+  "metadata_sha256": "8f535bc295a6ebce37568cee5aa4a5e8fd013320b126409d983b88b23e533de1",
+  "source_sha256": "29a0e448db77a04b0916fa961673131fef6cf8d03b7f74a8ba9f37a39ebbdcbb",
+  "source_unchanged": true,
+  "transitions": 9,
+  "episodes": 1,
+  "stored_actions_equal_executed": true,
+  "bc_epsilon_02_clamp_bitexact": true,
+  "next_actions_are_actual_successors": true,
+  "terminal_next_action_invalid": true,
+  "all_recorded_states_replay_bitexact": true,
+  "training_launched": false
+}

@@ -1,0 +1,257 @@
+{
+  "schema_version": 1,
+  "kind": "demonstration-initialized-cold-sac",
+  "status": "frozen-ready-for-separate-explicit-execution",
+  "purpose": "Artifact-level replica of the paper stages BC -> Soft-SARSA critic -> online SAC from cold reset, initialized from verified cold-reset MPC demonstrations produced with the measured diagnostic prior (not a SAC-derived primitive; a disclosed deviation). No MPC scaffolding chunks in the online phase.",
+  "demonstration_collection": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001",
+  "demonstration_episodes": [
+    "seed_100",
+    "seed_101",
+    "seed_102",
+    "seed_104",
+    "seed_105",
+    "seed_106",
+    "seed_110",
+    "seed_112",
+    "seed_120",
+    "seed_130",
+    "seed_131",
+    "seed_132"
+  ],
+  "demonstration_count": 12,
+  "train_seed": 30001,
+  "demonstration_seed": 30002,
+  "physical_reset_seed": 42,
+  "bc_updates": 12000,
+  "bc_sampling": "episode-weighted (softmax return / 1) as in the archived learner",
+  "critic_pretrain_updates": 2000,
+  "online_policy_interactions": 4000,
+  "checkpoints": [
+    500,
+    1000,
+    1500,
+    2000,
+    2500,
+    3000,
+    3500,
+    4000
+  ],
+  "learning_starts": 256,
+  "batch_size": 256,
+  "replay_capacity": 100000,
+  "offline_fraction": 0.3,
+  "raw_reward_divisor": 200.0,
+  "utd": 1,
+  "eval_deterministic_seed": 42,
+  "eval_stochastic_seeds": [
+    30102,
+    30103,
+    30104,
+    30105,
+    30106,
+    30107,
+    30108,
+    30109,
+    30110,
+    30111
+  ],
+  "eval_stochastic_trials": 10,
+  "evaluation": "cold deterministic plus stochastic trials at bc_complete, pretrained and every online checkpoint; separate environments, training RNG restored, nothing enters replay",
+  "learner": "fresh SACAgent with the SAC0001 LearnerConfig; BC mean-only then initialize_std; archived pretrain_critic_step and update",
+  "eligible_for_primitive": false,
+  "main_mpc_dataset_eligible": false,
+  "no_trajectory_export": true,
+  "source_bindings": {
+    "source/": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_prefix6_handoff_recovery_0001/source",
+      "files": 51,
+      "execution_manifest_sha256": "c9c3243ab788bc1aa69986a6990de6aabf487fd0dd8c167e776d584cbc352920"
+    },
+    "run.py": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/demo_bc_sac_template_0001/run.py",
+      "sha256": "f2734d67b5d5a0aed3731ca09c302cc7323274074fb8e2771f2effa244b9bac1"
+    },
+    "prepare_used.py": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/demo_bc_sac_template_0001/prepare.py",
+      "sha256": "0dc4ae15632ebaeed48e52d2879c1d9b347de58c50dca666a883ae1022fff2bd"
+    },
+    "config.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_prefix6_handoff_recovery_0001/config.json",
+      "sha256": "827f7420ee9ae64f1fb7d03a5ff5c7b05813e0eb42ca5e13d395b98985f9baf6",
+      "initial_grasp_rebound": true
+    },
+    "learner_config.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/bootstrap_suffix_sac_0001/initial.pt.metadata.json",
+      "sha256": "fe2dce5849299bcaabf92870c1f2ac9f35f7893edcb4dc4c5b51b8af5f35b356",
+      "note": "SAC0001 LearnerConfig (architecture, learning rates, initial std .05, discount, tau); networks are fresh"
+    },
+    "demonstrations/seed_100/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_100/transitions.npz",
+      "sha256": "7175a143894a11d93feac6891ebc45b1f550a1a179b9b98d11231fa53347dd16"
+    },
+    "demonstrations/seed_100/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_100/physics.npz",
+      "sha256": "8c629292c715d7545228616171111c8af4ad4928d06fcb64dceae27246d7df92"
+    },
+    "demonstrations/seed_100/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_100/report.json",
+      "sha256": "928ab6672b10e6b834b0bc1d1f2de6827ae983a6c7e716140319d53cee46c0ae"
+    },
+    "demonstrations/seed_101/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_101/transitions.npz",
+      "sha256": "8e4943fbc3d0d75e540881757ad724b70cd3c805859ebf6ee48379fa0d9bd979"
+    },
+    "demonstrations/seed_101/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_101/physics.npz",
+      "sha256": "450ed1c3e82f72e396a5e39066b42eff47f86e2d83a3039b55edbf1fef27fb1a"
+    },
+    "demonstrations/seed_101/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_101/report.json",
+      "sha256": "925c89b07adbf171fae60c331ecc13da0c30c09b2699eaf10b444021a1411882"
+    },
+    "demonstrations/seed_102/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_102/transitions.npz",
+      "sha256": "9f2ca0b15e922725ad34dc1e240281eb07d3f399756bcfa57910ee4899ae512c"
+    },
+    "demonstrations/seed_102/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_102/physics.npz",
+      "sha256": "b1569d39259bcf6617756fbae14cbb80aadb9d67517a088cce23ded0cde91530"
+    },
+    "demonstrations/seed_102/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_102/report.json",
+      "sha256": "870c0698af8c335840d5900882f72427e8363169575869dba4b84df84c4885cf"
+    },
+    "demonstrations/seed_104/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_104/transitions.npz",
+      "sha256": "c464ff4cd0d50f1110ab66056434537fac156afc34d6e96f4b144b3d1260f0f5"
+    },
+    "demonstrations/seed_104/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_104/physics.npz",
+      "sha256": "8828da8ac63a33bc54102f8f8891c21c790ad663d356b38606cbca6b6da4d34e"
+    },
+    "demonstrations/seed_104/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_104/report.json",
+      "sha256": "4787090056b9a90756837dff02a93ac22ffff112c4ed893a35a66e0953ac5a50"
+    },
+    "demonstrations/seed_105/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_105/transitions.npz",
+      "sha256": "dacc81cc4731b4f091ac12bca79e10a99836343c2ce86ada0a90f0cf98be7660"
+    },
+    "demonstrations/seed_105/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_105/physics.npz",
+      "sha256": "bb8605f23aeb6b30342dd305d76e47b1970e9c1826dc750f72b1b62bed33ab18"
+    },
+    "demonstrations/seed_105/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_105/report.json",
+      "sha256": "24af997d83c43ee21a0d7e1e1b3e24d96996cdab53fedb1b624a2bf6b1f0c67d"
+    },
+    "demonstrations/seed_106/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_106/transitions.npz",
+      "sha256": "fcf4b4d24ffd65b1a72d640ce933711861649f46a284026368c40e0b80dc2782"
+    },
+    "demonstrations/seed_106/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_106/physics.npz",
+      "sha256": "2d52cb448c19a285077f8607f087d253b579e0ace0fff9bd43389ee5a280a7d2"
+    },
+    "demonstrations/seed_106/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_106/report.json",
+      "sha256": "63a5be46d0deff1b3ddf749345df3c29f3b18ee6a049a088bb0e765af1f3f86c"
+    },
+    "demonstrations/seed_110/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_110/transitions.npz",
+      "sha256": "f0fd86b90933f0ded952e8019b1d034c771f5d6357a93fbeb24eb3609c54f677"
+    },
+    "demonstrations/seed_110/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_110/physics.npz",
+      "sha256": "c827abe30bd41b7a974d84833196a32c86c541190fb3f4bc7715ffccf1b5ecf4"
+    },
+    "demonstrations/seed_110/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_110/report.json",
+      "sha256": "a69a26cc9dc0717b302b323f0d19e3f174a8fefe274201eb0fa3b02bebb32b3d"
+    },
+    "demonstrations/seed_112/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_112/transitions.npz",
+      "sha256": "a18e39015a8203158b28515d205f8c12ef792069da71b87fcf840aef3ee2d4b7"
+    },
+    "demonstrations/seed_112/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_112/physics.npz",
+      "sha256": "6024bc1f7754866c04161a654786a5c759f399d54bb96bb8366123207adeef5d"
+    },
+    "demonstrations/seed_112/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_112/report.json",
+      "sha256": "0c897eeb7f6a3085b69b443d0bf016326475e425c0daaef1566c74162c94c327"
+    },
+    "demonstrations/seed_120/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_120/transitions.npz",
+      "sha256": "61c43afa3ec8f17cbf8ab5cbfaa03736563bd29a32e945b6f29806b4ee680566"
+    },
+    "demonstrations/seed_120/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_120/physics.npz",
+      "sha256": "af9ef8c7244a796f44c3a9669d60369733be0637f6f7592fb02a8ff50fb552c1"
+    },
+    "demonstrations/seed_120/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_120/report.json",
+      "sha256": "48ccc3c4313fa069c7bb67a5114a4db05a3ec37e2299619d209f334acdd396d1"
+    },
+    "demonstrations/seed_130/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_130/transitions.npz",
+      "sha256": "8f0aee9701618e33a589a8c35cef91c79cac708032d1ae5f59ad0cfaa3c66142"
+    },
+    "demonstrations/seed_130/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_130/physics.npz",
+      "sha256": "6928e826b169974dcd524967455e1c18092fef8f3fa2b1aa1b85ab25356f5491"
+    },
+    "demonstrations/seed_130/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_130/report.json",
+      "sha256": "6739cb7a09ced90c30aadd864e366d87e5956ec40bb0c12b4b1267a99529f329"
+    },
+    "demonstrations/seed_131/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_131/transitions.npz",
+      "sha256": "2c046808dc6884a85baa5a56b7f1d8af833e123d8f890f348fac085f8e10aee6"
+    },
+    "demonstrations/seed_131/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_131/physics.npz",
+      "sha256": "8ecc5cf3dafef048bbff4a626e5a82a1e9905cc680e1898d58b9a56adc228801"
+    },
+    "demonstrations/seed_131/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_131/report.json",
+      "sha256": "ab71ca1da5d85f566ae7fddeabb9649067f9c22505ac7f433640b4e7c359dba0"
+    },
+    "demonstrations/seed_132/transitions.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_132/transitions.npz",
+      "sha256": "ffc8f937f154539df6862e00d4d5b5a9f9c35ca912b81476aa72f12b820988f1"
+    },
+    "demonstrations/seed_132/physics.npz": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_132/physics.npz",
+      "sha256": "97cbd2d97058a23367b5981a7441d0fea766c4d216bd75d44fcde01a37215689"
+    },
+    "demonstrations/seed_132/report.json": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/episodes/seed_132/report.json",
+      "sha256": "fb4a7dbbe6c8e0bae2738978672566c0801c59fd69148319b1e7c62cc128ac4e"
+    },
+    "inputs_collection_attempts_100_110.jsonl": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/attempts_100_110.jsonl",
+      "sha256": "0db705fac80b05e5c4461f853679c5b72fd4e16d4735e75b8db1aee38ae111b0"
+    },
+    "inputs_collection_attempts_110_120.jsonl": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/attempts_110_120.jsonl",
+      "sha256": "765289170facc162bfb7f4c7b9b811c834f2cfd591de7c11478f8250e3377412"
+    },
+    "inputs_collection_attempts_120_130.jsonl": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/attempts_120_130.jsonl",
+      "sha256": "f85f85816684777450f451e31fe5768df82880d02fb16650ae60d9aa7f7e3f54"
+    },
+    "inputs_collection_attempts_130_140.jsonl": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/attempts_130_140.jsonl",
+      "sha256": "9ca4ed10e1c78f93cdfe41fa2e9148dc1f126a0cffae9ccfddf005fd7910c4f7"
+    },
+    "inputs_collection_collect.py": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/collect.py",
+      "sha256": "5ebf74e7e01379ff6890ecdfca3753fe9c57bef0e41e71d4ff5a3dfdb4a5052b"
+    },
+    "inputs_collection_README.md": {
+      "source": "/home/autel001/code/mpc_dex/artifacts/mpc_cold_demonstrations_0001/README.md",
+      "sha256": "fc84817b1c9022367f3cc94ba1463eaa08f0c0695c53b4bf0226fc0447af9fbd"
+    }
+  }
+}

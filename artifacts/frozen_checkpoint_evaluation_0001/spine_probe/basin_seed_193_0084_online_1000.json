@@ -1,0 +1,310 @@
+{
+ "0": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 0
+  },
+  "0.003": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.01": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.03": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  }
+ },
+ "1": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 0
+  },
+  "0.003": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.01": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.03": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  }
+ },
+ "2": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 0
+  },
+  "0.003": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.01": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.03": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  }
+ },
+ "3": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 0
+  },
+  "0.003": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.01": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.03": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  }
+ },
+ "4": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 0
+  },
+  "0.003": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.01": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.03": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  }
+ },
+ "5": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 0
+  },
+  "0.003": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.01": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.03": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  }
+ },
+ "6": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 0
+  },
+  "0.003": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.01": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.03": {
+   "hold": 1,
+   "tail": 0,
+   "policy": 0
+  }
+ },
+ "7": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 0
+  },
+  "0.003": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.01": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.03": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  }
+ },
+ "8": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 0
+  },
+  "0.003": {
+   "hold": 1,
+   "tail": 1,
+   "policy": 0
+  },
+  "0.01": {
+   "hold": 1,
+   "tail": 1,
+   "policy": 1
+  },
+  "0.03": {
+   "hold": 0,
+   "tail": 0,
+   "policy": 0
+  }
+ },
+ "9": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.003": {
+   "hold": 3,
+   "tail": 3,
+   "policy": 3
+  },
+  "0.01": {
+   "hold": 2,
+   "tail": 0,
+   "policy": 0
+  },
+  "0.03": {
+   "hold": 2,
+   "tail": 0,
+   "policy": 0
+  }
+ },
+ "10": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.003": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.01": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.03": {
+   "hold": 4,
+   "tail": 2,
+   "policy": 2
+  }
+ },
+ "11": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.003": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.01": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.03": {
+   "hold": 3,
+   "tail": 4,
+   "policy": 4
+  }
+ },
+ "12": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.003": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.01": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.03": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  }
+ },
+ "13": {
+  "0.0": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.003": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.01": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  },
+  "0.03": {
+   "hold": 4,
+   "tail": 4,
+   "policy": 4
+  }
+ }
+}
